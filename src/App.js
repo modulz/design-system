@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
+import Button from './Button';
 
 function App() {
   return (
     <div className="App">
       <p>
-        few
+        <Button>few</Button>
       </p>
     </div>
   );
