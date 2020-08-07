@@ -5,9 +5,11 @@ import Button from './Button';
 function App() {
   return (
     <div className="App">
-      <p>
-        <Button>few</Button>
-      </p>
+      <Button>Button</Button>
+      <Button size="large">Button</Button>
+      <Button color="blue">Button</Button>
+      <Button color="green">Button</Button>
+      <Button color="red">Button</Button>
     </div>
   );
 }
