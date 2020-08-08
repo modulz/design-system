@@ -19,37 +19,48 @@ const Button = styled.button(
     userSelect: 'none',
 
     backgroundColor: 'white',
-    boxShadow: 'inset 0 0 0 1px gainsboro',
+    boxShadow: 'inset 0 0 0 1px hsl(206,12%,86%)',
     borderRadius: '1',
     color: 'gray900',
     py: '6px',
     px: 2,
     fontSize: 2,
     fontWeight: '500',
+
+    ':hover': {
+      boxShadow: 'inset 0 0 0 1px hsl(206,12%,78%)',
+    },
   },
   {
     size: {
       large: {
-        py: 2,
+        py: '9px',
         px: 3,
         fontSize: 3,
       },
     },
     color: {
       blue: {
-        backgroundColor: 'royalblue',
+        backgroundColor: 'blue500',
         boxShadow: 'none',
         color: 'white',
+        ':hover': {
+          boxShadow: 'none',
+        },
       },
       green: {
-        backgroundColor: 'green',
+        backgroundColor: 'green500',
         boxShadow: 'none',
         color: 'white',
+        ':hover': {
+          boxShadow: 'none',
+        },
       },
       red: {
-        backgroundColor: 'tomato',
-        boxShadow: 'none',
-        color: 'white',
+        color: 'red600',
+        ':hover': {
+          boxShadow: 'none',
+        },
       }
     },
   },
