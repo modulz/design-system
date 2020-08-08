@@ -4,7 +4,7 @@ const Button = styled.button(
   {
     alignItems: 'center',
     appearance: 'none',
-    backgroundColor: 'hsl(0 0% 90%)',
+    backgroundColor: 'transparent',
     borderWidth: '0',
     boxSizing: 'border-box',
     display: 'inline-flex',
@@ -14,27 +14,41 @@ const Button = styled.button(
     justifyContent: 'center',
     lineHeight: '1',
     outline: 'none',
-    padding: '3px 6px',
+    padding: '0',
     textDecoration: 'none',
     userSelect: 'none',
+    ':disabled': {
+      pointerEvents: 'none'
+    },
+    '::before': {
+      boxSizing: 'border-box',
+    },
+    '::after': {
+      boxSizing: 'border-box',
+    },
 
     backgroundColor: 'white',
-    boxShadow: 'inset 0 0 0 1px hsl(206,12%,86%)',
+    boxShadow: 'inset 0 0 0 1px hsl(206,10%,84%)',
     borderRadius: '1',
     color: 'gray900',
-    py: '6px',
+    height: 5,
     px: 2,
     fontSize: 2,
     fontWeight: '500',
 
     ':hover': {
-      boxShadow: 'inset 0 0 0 1px hsl(206,12%,78%)',
+      boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+    },
+
+    ':active': {
+      backgroundColor: 'gray100',
+      boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
     },
   },
   {
     size: {
       large: {
-        py: '9px',
+        height: 6,
         px: 3,
         fontSize: 3,
       },
@@ -45,6 +59,11 @@ const Button = styled.button(
         boxShadow: 'none',
         color: 'white',
         ':hover': {
+          backgroundColor: 'blue600',
+          boxShadow: 'none',
+        },
+        ':active': {
+          backgroundColor: 'blue600',
           boxShadow: 'none',
         },
       },
@@ -53,15 +72,33 @@ const Button = styled.button(
         boxShadow: 'none',
         color: 'white',
         ':hover': {
+          backgroundColor: 'green600',
+          boxShadow: 'none',
+        },
+        ':active': {
+          backgroundColor: 'green600',
           boxShadow: 'none',
         },
       },
       red: {
         color: 'red600',
-        ':hover': {
-          boxShadow: 'none',
-        },
       }
+    },
+    state: {
+      active: {
+        backgroundColor: 'gray300',
+        boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+        ':hover': {
+          boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+        },
+        ':active': {
+          backgroundColor: 'gray300',
+        },
+      },
+      disabled: {
+        backgroundColor: 'gray200',
+        color: 'gray500',
+      },
     },
   },
 );
