@@ -2,6 +2,7 @@ import { styled } from './config'
 
 const Button = styled.button(
   {
+    // Reset
     alignItems: 'center',
     appearance: 'none',
     backgroundColor: 'transparent',
@@ -27,6 +28,7 @@ const Button = styled.button(
       boxSizing: 'border-box',
     },
 
+    // Custom
     backgroundColor: 'white',
     boxShadow: 'inset 0 0 0 1px hsl(206,10%,84%)',
     borderRadius: '1',
@@ -35,9 +37,16 @@ const Button = styled.button(
     px: 2,
     fontSize: 2,
     fontWeight: '500',
+    transition: 'all 50ms linear',
 
-    ':hover': {
-      boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+    motion: {
+      transition: 'none',
+    },
+
+    hover: {
+      ':hover': {
+        boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+      },
     },
 
     ':active': {
@@ -55,9 +64,9 @@ const Button = styled.button(
     },
     color: {
       blue: {
-        backgroundColor: 'blue500',
-        boxShadow: 'none',
-        color: 'white',
+        backgroundColor: 'blue100',
+        boxShadow: 'inset 0 0 0 1px hsl(206,80%,80%)',
+        color: 'blue600',
         ':hover': {
           backgroundColor: 'blue600',
           boxShadow: 'none',
@@ -68,9 +77,9 @@ const Button = styled.button(
         },
       },
       green: {
-        backgroundColor: 'green500',
-        boxShadow: 'none',
-        color: 'white',
+        backgroundColor: 'green100',
+        boxShadow: 'inset 0 0 0 1px hsl(152,56%,78%)',
+        color: 'green600',
         ':hover': {
           backgroundColor: 'green600',
           boxShadow: 'none',

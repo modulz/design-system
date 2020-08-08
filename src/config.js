@@ -1,6 +1,6 @@
 import { createStyled } from '@stitches/styled';
 
-export const { styled, css } = createStyled({
+const { styled, css } = createStyled({
   tokens: {
     colors: {
       gray100: "hsl(206,22%,99%)",
@@ -15,21 +15,21 @@ export const { styled, css } = createStyled({
       blue100: "hsl(206,100%,99%)",
       blue200: "hsl(206,100%,99%)",
       blue300: "hsl(206,80%,84%)",
-      blue400: "hsl(206,80%,80%)",
+      blue400: "hsl(206,94%,81%)",
       blue500: "hsl(206,100%,50%)",
-      blue600: "hsl(206,100%,48%)",
+      blue600: "hsl(206,100%,44%)",
       blue700: "hsl(206,32%,10%)",
       blue800: "hsl(206,38%,7%)",
       blue900: "hsl(206,40%,5%)",
-      green100: "hsl(146,12%,5%)",
-      green200: "hsl(146,12%,5%)",
-      green300: "hsl(146,12%,5%)",
-      green400: "hsl(146,12%,5%)",
-      green500: "hsl(146,75%,45%)",
-      green600: "hsl(146,75%,43%)",
-      green700: "hsl(146,12%,5%)",
-      green800: "hsl(146,12%,5%)",
-      green900: "hsl(146,12%,5%)",
+      green100: "hsl(152,75%,99%)",
+      green200: "hsl(152,75%,97%)",
+      green300: "hsl(152,56%,86%)",
+      green400: "hsl(152,56%,78%)",
+      green500: "hsl(152,56%,75%)",
+      green600: "hsl(152,56%,35%)",
+      green700: "hsl(152,12%,5%)",
+      green800: "hsl(152,12%,5%)",
+      green900: "hsl(152,12%,5%)",
       red100: "hsl(342,12%,5%)",
       red200: "hsl(342,12%,5%)",
       red300: "hsl(342,12%,5%)",
@@ -87,6 +87,23 @@ export const { styled, css } = createStyled({
       2: '8px',
       3: '16px',
     },
+    zIndices: {
+      1: '100',
+      2: '200',
+      3: '300',
+      4: '400',
+      max: '999',
+    },
+  },
+  screens: {
+    bp1: (rule) => `@media (min-width: 520px) { ${rule} }`,
+    bp2: (rule) => `@media (min-width: 900px) { ${rule} }`,
+    bp3: (rule) => `@media (min-width: 1200px) { ${rule} }`,
+    bp4: (rule) => `@media (min-width: 1800px) { ${rule} }`,
+    motion: (rule) => `@media (prefers-reduced-motion: reduce) { ${rule} }`,
+    hover: (rule) => `@media (hover: hover) { ${rule} }`,
+    dark: (rule) => `@media (prefers-color-scheme: dark) { ${rule} }`,
+    light: (rule) => `@media (prefers-color-scheme: light) { ${rule} }`,
   },
   utils: {
     p: (config) => (value) => ({
@@ -143,3 +160,5 @@ export const { styled, css } = createStyled({
     }),
   },
 });
+
+export { styled };

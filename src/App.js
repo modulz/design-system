@@ -37,6 +37,8 @@ function App() {
         <Button state="disabled" css={{ mr: 6 }} disabled>Disabled</Button>
       </Box>
 
+      <Box css={{ position: 'absolute', top: '400px', left: '800px', bottom: 0, width: '160px', height: '250px', borderRadius: 2, boxShadow: '0 16px 32px -10px hsl(206deg 12% 5% / 25%), 0 8px 16px -15px hsl(0deg 0% 0% / 10%)' }}></Box>
+
       <Box css={{ position: 'absolute', top: 0, left: 0, bottom: 0, width: '245px', borderRightWidth: '1px', borderRightStyle: 'solid', borderColor: 'gray300' }}></Box>
       <Box css={{ position: 'absolute', top: 0, right: 0, bottom: 0, width: '245px', borderLeftWidth: '1px', borderLeftStyle: 'solid', borderColor: 'gray300' }}></Box>
     </div>
