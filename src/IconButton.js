@@ -31,14 +31,14 @@ const IconButton = styled.button(
 
     // Custom
     backgroundColor: 'white',
-    boxShadow: 'inset 0 0 0 1px hsl(206,10%,84%)',
+    border: '1px solid gray400',
     borderRadius: 'round',
-    color: 'text',
+    color: 'hiContrast',
     height: 5,
     width: 5,
     transition: 'all 40ms linear',
     ':hover': {
-      boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+      borderColor: 'gray500',
     },
     ':active': {
       backgroundColor: 'gray100',

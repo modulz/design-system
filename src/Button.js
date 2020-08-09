@@ -33,7 +33,7 @@ const Button = styled.button(
     backgroundColor: 'white',
     boxShadow: 'inset 0 0 0 1px hsl(206,10%,84%)',
     borderRadius: 1,
-    color: 'text',
+    color: 'black',
     height: 5,
     px: 2,
     fontSize: 2,
