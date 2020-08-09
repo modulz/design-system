@@ -48,6 +48,10 @@ const { styled, css } = createStyled({
       yellow700: "hsl(42,12%,5%)",
       yellow800: "hsl(42,12%,5%)",
       yellow900: "hsl(42,12%,5%)",
+
+      line: "gray300",
+      lightText: "gray600",
+      text: "gray900",
     },
     space: {
       1: '4px',
@@ -100,7 +104,7 @@ const { styled, css } = createStyled({
     bp2: (rule) => `@media (min-width: 900px) { ${rule} }`,
     bp3: (rule) => `@media (min-width: 1200px) { ${rule} }`,
     bp4: (rule) => `@media (min-width: 1800px) { ${rule} }`,
-    motion: (rule) => `@media (prefers-reduced-motion: reduce) { ${rule} }`,
+    motion: (rule) => `@media (prefers-reduced-motion) { ${rule} }`,
     hover: (rule) => `@media (hover: hover) { ${rule} }`,
     dark: (rule) => `@media (prefers-color-scheme: dark) { ${rule} }`,
     light: (rule) => `@media (prefers-color-scheme: light) { ${rule} }`,
@@ -161,4 +165,12 @@ const { styled, css } = createStyled({
   },
 });
 
-export { styled };
+export const darkTheme = css.theme({
+  colors: {
+    line: "gray700",
+    lightText: "gray600",
+    text: "white",
+  },
+});
+
+export { styled, css };

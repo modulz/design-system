@@ -3,6 +3,7 @@ import './App.css';
 import Button from './Button';
 import Box from './Box';
 import Flex from './Flex';
+import { darkTheme } from '@stitches/styled';
 
 function App() {
   return (
@@ -24,18 +25,30 @@ function App() {
               <path d="M8 13V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </Box>
-          Button
+          Large
         </Button>
       </Flex>
       <Flex css={{ alignItems: 'center', mb: 6, gap: '32px' }}>
         <Button>Button</Button>
-        <Button color="blue">Button</Button>
-        <Button color="green">Button</Button>
-        <Button color="red">Button</Button>
+        <Button color="blue">Blue</Button>
+        <Button color="green">Green</Button>
+        <Button color="red">Red</Button>
+      </Flex>
+      <Flex css={{ alignItems: 'center', mb: 6, gap: '32px' }}>
+        <Button disabled>Disabled</Button>
+        <Button color="blue" disabled>Disabled</Button>
+        <Button color="green" disabled>Disabled</Button>
+        <Button color="red" disabled>Disabled</Button>
+      </Flex>
+      <Flex css={{ alignItems: 'center', mb: 6, gap: '32px' }}>
+        <Button variant="ghost">Ghost</Button>
+        <Button color="blue" variant="ghost">Ghost</Button>
+        <Button color="green" variant="ghost">Ghost</Button>
+        <Button color="red" variant="ghost">Ghost</Button>
       </Flex>
       <Flex css={{ alignItems: 'center', gap: '32px' }}>
-        <Button state="active">Following</Button>
-        <Button state="disabled" disabled>Disabled</Button>
+        <Button state="active">Active</Button>
+        <Button state="waiting">Waiting</Button>
       </Flex>
 
       <Box css={{ position: 'absolute', top: '400px', left: '800px', bottom: 0, width: '160px', height: '250px', borderRadius: 2, boxShadow: '0 16px 32px -10px hsl(206deg 12% 5% / 25%), 0 8px 16px -15px hsl(0deg 0% 0% / 10%)' }}></Box>
