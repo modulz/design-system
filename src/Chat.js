@@ -8,10 +8,18 @@ import Grid from './Grid';
 import Badge from './Badge';
 import { darkTheme } from './config';
 
-function App() {
+function Chat() {
   return (
     <Box className={darkTheme} css={{ backgroundColor: 'loContrast', height: '100%' }}>
       <Flex css={{ height: '100%' }}>
+        <Box css={{ width: '245px', borderRightWidth: '1px', borderRightStyle: 'solid', borderColor: 'line' }}>
+
+        </Box>
+
+        <Box css={{ width: '245px', borderRightWidth: '1px', borderRightStyle: 'solid', borderColor: 'line' }}>
+
+        </Box>
+
         <Box css={{ width: '245px', borderRightWidth: '1px', borderRightStyle: 'solid', borderColor: 'line' }}>
 
         </Box>
@@ -150,4 +158,4 @@ function App() {
   );
 }
 
-export default App;
+export default Chat;
