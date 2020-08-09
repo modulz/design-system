@@ -90,6 +90,7 @@ const { styled, css } = createStyled({
       1: '4px',
       2: '8px',
       3: '16px',
+      round: '50%',
     },
     zIndices: {
       1: '100',

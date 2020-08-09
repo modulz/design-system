@@ -1,6 +1,6 @@
 import { styled } from './config'
 
-const Button = styled.button(
+const IconButton = styled.button(
   {
     // Reset
     alignItems: 'center',
@@ -32,12 +32,10 @@ const Button = styled.button(
     // Custom
     backgroundColor: 'white',
     boxShadow: 'inset 0 0 0 1px hsl(206,10%,84%)',
-    borderRadius: 1,
+    borderRadius: 'round',
     color: 'text',
     height: 5,
-    px: 2,
-    fontSize: 2,
-    fontWeight: '500',
+    width: 5,
     transition: 'all 40ms linear',
 
     ':hover': {
@@ -62,43 +60,26 @@ const Button = styled.button(
     size: {
       large: {
         height: 6,
-        px: 3,
-        fontSize: 3,
+        width: 6,
       },
     },
     variant: {
-      blue: {
-        backgroundColor: 'blue100',
-        boxShadow: 'inset 0 0 0 1px hsl(206,80%,80%)',
-        color: 'blue600',
-        ':hover': {
-          backgroundColor: 'blue600',
-          boxShadow: 'none',
-        },
-        ':active': {
-          backgroundColor: 'blue600',
-          boxShadow: 'none',
-        },
-      },
-      green: {
-        backgroundColor: 'green100',
-        boxShadow: 'inset 0 0 0 1px hsl(152,56%,78%)',
-        color: 'green600',
-        ':hover': {
-          backgroundColor: 'green600',
-          boxShadow: 'none',
-        },
-        ':active': {
-          backgroundColor: 'green600',
-          boxShadow: 'none',
-        },
-      },
-      red: {
-        color: 'red600',
-      },
       ghost: {
         backgroundColor: 'transparent',
         boxShadow: 'none',
+        ':hover': {
+          backgroundColor: 'gray200',
+          boxShadow: 'none',
+        },
+        ':active': {
+          backgroundColor: 'gray300',
+        },
+        green: {
+          backgroundColor: 'green600',
+        },
+      },
+      raised: {
+        boxShadow: '0 15px 32px 0 16px 32px -10px hsl(206deg 12% 5% / 25%), 0 8px 16px -15px hsl(0deg 0% 0% / 10%)',
         ':hover': {
           backgroundColor: 'gray200',
           boxShadow: 'none',
@@ -133,4 +114,4 @@ const Button = styled.button(
   },
 );
 
-export default Button
+export default IconButton
