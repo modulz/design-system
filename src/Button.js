@@ -39,23 +39,17 @@ const Button = styled.button(
     fontSize: 2,
     fontWeight: '500',
     transition: 'all 40ms linear',
-
     ':hover': {
       boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
     },
-
     ':active': {
       backgroundColor: 'gray100',
       boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
     },
-
     ':disabled': {
       backgroundColor: 'gray200',
       boxShadow: 'inset 0 0 0 1px hsl(206,10%,84%)',
       color: 'gray500',
-      ':hover': {
-        boxShadow: 'inset 0 0 0 1px hsl(206,10%,84%)',
-      },
     },
   },
   {
@@ -105,6 +99,7 @@ const Button = styled.button(
         },
         ':active': {
           backgroundColor: 'gray300',
+          boxShadow: 'none',
         },
       },
     },

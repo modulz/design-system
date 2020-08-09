@@ -63,13 +63,31 @@ function App() {
             </IconButton>
           </Flex>
           <Flex css={{ alignItems: 'center', mb: 6, gap: '32px' }}>
-            <IconButton variant="ghost">
+            <IconButton aria-label="Add something" variant="ghost">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 <path d="M8 13V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               </svg>
             </IconButton>
-            <IconButton variant="raised">
+            <IconButton aria-label="Add something" variant="raised">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 13V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </IconButton>
+            <IconButton aria-label="Add something" size="large" variant="raised">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 13V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </IconButton>
+            <IconButton aria-label="Add something" size="xl" variant="raised">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 13V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </IconButton>
+            <IconButton aria-label="Add something" size="xxl" variant="raised">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 <path d="M8 13V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -77,13 +95,21 @@ function App() {
             </IconButton>
           </Flex>
           <Flex css={{ alignItems: 'center', mb: 6, gap: '32px' }}>
-            <IconButton state="active">
+            <IconButton aria-label="Add something" state="active">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 <path d="M8 13V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               </svg>
             </IconButton>
-            <IconButton state="waiting">
+            <IconButton aria-label="Add something" state="waiting">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 13V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </IconButton>
+          </Flex>
+          <Flex css={{ alignItems: 'center', mb: 6, gap: '32px' }}>
+            <IconButton aria-label="Add something" disabled>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 <path d="M8 13V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>

@@ -37,23 +37,18 @@ const IconButton = styled.button(
     height: 5,
     width: 5,
     transition: 'all 40ms linear',
-
     ':hover': {
       boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
     },
-
     ':active': {
       backgroundColor: 'gray100',
       boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
     },
-
     ':disabled': {
-      backgroundColor: 'gray200',
-      boxShadow: 'inset 0 0 0 1px hsl(206,10%,84%)',
+      backgroundColor: 'transparent',
+      boxShadow: 'none',
       color: 'gray500',
-      ':hover': {
-        boxShadow: 'inset 0 0 0 1px hsl(206,10%,84%)',
-      },
+      pointerEvents: 'none'
     },
   },
   {
@@ -61,6 +56,14 @@ const IconButton = styled.button(
       large: {
         height: 6,
         width: 6,
+      },
+      xl: {
+        height: 7,
+        width: 7,
+      },
+      xxl: {
+        height: 8,
+        width: 8,
       },
     },
     variant: {
@@ -73,16 +76,13 @@ const IconButton = styled.button(
         },
         ':active': {
           backgroundColor: 'gray300',
-        },
-        green: {
-          backgroundColor: 'green600',
+          boxShadow: 'none',
         },
       },
       raised: {
-        boxShadow: '0 15px 32px 0 16px 32px -10px hsl(206deg 12% 5% / 25%), 0 8px 16px -15px hsl(0deg 0% 0% / 10%)',
+        boxShadow: '0 16px 32px hsl(206deg 12% 5% / 25%), 0 3px 5px hsl(0deg 0% 0% / 10%)',
         ':hover': {
-          backgroundColor: 'gray200',
-          boxShadow: 'none',
+          boxShadow: '0 16px 32px hsl(206deg 12% 5% / 25%), 0 3px 5px hsl(0deg 0% 0% / 10%)',
         },
         ':active': {
           backgroundColor: 'gray300',
