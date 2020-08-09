@@ -72,7 +72,7 @@ const Button = styled.button(
         fontSize: 3,
       },
     },
-    color: {
+    variant: {
       blue: {
         backgroundColor: 'blue100',
         boxShadow: 'inset 0 0 0 1px hsl(206,80%,80%)',
@@ -109,9 +109,7 @@ const Button = styled.button(
       },
       red: {
         color: 'red600',
-      }
-    },
-    variant: {
+      },
       ghost: {
         backgroundColor: 'transparent',
         boxShadow: 'none',

@@ -33,23 +33,13 @@ function App() {
           </Flex>
           <Flex css={{ alignItems: 'center', mb: 6, gap: '32px' }}>
             <Button>Button</Button>
-            <Button color="blue">Blue</Button>
-            <Button color="green">Green</Button>
-            <Button color="red">Red</Button>
-          </Flex>
-          <Flex css={{ alignItems: 'center', mb: 6, gap: '32px' }}>
-            <Button disabled>Disabled</Button>
-            <Button color="blue" disabled>Disabled</Button>
-            <Button color="green" disabled>Disabled</Button>
-            <Button color="red" disabled>Disabled</Button>
-          </Flex>
-          <Flex css={{ alignItems: 'center', mb: 6, gap: '32px' }}>
+            <Button variant="blue">Blue</Button>
+            <Button variant="green">Green</Button>
+            <Button variant="red">Red</Button>
             <Button variant="ghost">Ghost</Button>
-            <Button color="blue" variant="ghost">Ghost</Button>
-            <Button color="green" variant="ghost">Ghost</Button>
-            <Button color="red" variant="ghost">Ghost</Button>
           </Flex>
           <Flex css={{ alignItems: 'center', gap: '32px' }}>
+            <Button state="active">Disabled</Button>
             <Button state="active">Active</Button>
             <Button state="waiting">Waiting</Button>
           </Flex>
