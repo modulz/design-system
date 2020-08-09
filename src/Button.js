@@ -30,26 +30,25 @@ const Button = styled.button(
     },
 
     // Custom
-    backgroundColor: 'white',
-    boxShadow: 'inset 0 0 0 1px hsl(206,10%,84%)',
+    backgroundColor: 'loContrast',
+    border: '1px solid border',
     borderRadius: 1,
-    color: 'black',
+    color: 'hiContrast',
     height: 5,
     px: 2,
     fontSize: 2,
     fontWeight: '500',
-    transition: 'all 40ms linear',
     ':hover': {
-      boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+      borderColor: 'borderHover',
     },
     ':active': {
-      backgroundColor: 'gray100',
-      boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+      backgroundColor: 'bgsubtle',
+      borderColor: 'borderHover',
     },
     ':disabled': {
-      backgroundColor: 'gray200',
-      boxShadow: 'inset 0 0 0 1px hsl(206,10%,84%)',
-      color: 'gray500',
+      backgroundColor: 'bg',
+      borderColor: 'border',
+      color: 'border',
     },
   },
   {
@@ -92,14 +91,14 @@ const Button = styled.button(
       },
       ghost: {
         backgroundColor: 'transparent',
-        boxShadow: 'none',
+        borderColor: 'loContrast',
         ':hover': {
-          backgroundColor: 'gray200',
-          boxShadow: 'none',
+          backgroundColor: 'bg',
+          borderColor: 'loContrast',
         },
         ':active': {
-          backgroundColor: 'gray300',
-          boxShadow: 'none',
+          backgroundColor: 'line',
+          borderColor: 'loContrast',
         },
       },
     },

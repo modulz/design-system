@@ -11,7 +11,7 @@ function App() {
   return (
     <Box className={darkTheme} css={{ backgroundColor: 'loContrast', height: '100%' }}>
       <Flex css={{ height: '100%' }}>
-        <Box css={{ width: '245px', borderRightWidth: '1px', borderRightStyle: 'solid', borderColor: 'gray300' }}>
+        <Box css={{ width: '245px', borderRightWidth: '1px', borderRightStyle: 'solid', borderColor: 'line' }}>
 
         </Box>
 
@@ -126,7 +126,7 @@ function App() {
           </Grid>
         </Box>
 
-        <Box css={{ width: '245px', borderLeftWidth: '1px', borderLeftStyle: 'solid', borderColor: 'gray300' }}>
+        <Box css={{ width: '245px', borderLeftWidth: '1px', borderLeftStyle: 'solid', borderColor: 'line' }}>
 
         </Box>
       </Flex>
