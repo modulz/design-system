@@ -139,10 +139,41 @@ function App() {
 
         <Flex css={{ flexGrow: 1 }}>
           <Box css={{ flexBasis: 0, flexGrow: 1, borderRightWidth: '1px', borderRightStyle: 'solid', borderColor: 'line' }}>
+            <Flex css={{ alignItems: 'center', justifyContent: 'space-between', px: 4, py: 2, mr: -2 }}>
+              <Box>
+                <Text as="h5" size="4" css={{ fontWeight: '500', mb: 2 }}>styling-lib</Text>
+                <Flex>
+                  <Button variant="ghost">Add a topic</Button>
+                </Flex>
+              </Box>
+              <Box>
+                <IconButton aria-label="Add something" size="large" variant="ghost">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M8 13V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </IconButton>
+              </Box>
+            </Flex>
+            <Flex css={{ px: 4, py: 2 }}>
+              <Box css={{ width: 6, height: 6, flexShrink: 0, borderRadius: 1, backgroundColor: 'bg', mr: 2 }}></Box>
+              <Text as="p" size="3" css={{ lineHeight: '20px' }}>So after playing with Stitches for a while, here are some issues I've listed:</Text>
+            </Flex>
+            <Flex css={{ px: 4, py: 2 }}>
+              <Box css={{ width: 6, height: 6, flexShrink: 0, borderRadius: 1, backgroundColor: 'bg', mr: 2 }}></Box>
+              <Text as="p" size="3" css={{ lineHeight: '20px' }}>Shorthand properties don't work. We need to write a parser to convert shorthand properties to longhand properties.</Text>
+            </Flex>
+            <Flex css={{ px: 4, py: 2 }}>
+              <Box css={{ width: 6, height: 6, flexShrink: 0, borderRadius: 1, backgroundColor: 'bg', mr: 2 }}></Box>
+              <Text as="p" size="3" css={{ lineHeight: '20px' }}>The current variant syntax is very confusing in long files. If possible, we should revert to our older syntax with a separate variant block.</Text>
+            </Flex>
+          </Box>
+
+          <Box css={{ flexBasis: 0, flexGrow: 1, borderRightWidth: '1px', borderRightStyle: 'solid', borderColor: 'line' }}>
             <Box css={{ px: 4, py: 2 }}>
               <Text as="h5" size="4" css={{ fontWeight: '500', mb: 2 }}>styling-lib</Text>
               <Flex>
-                <Text as="p" size="2" css={{ color: 'text' }}>Add a topic</Text>
+                <Button variant="ghost">Add a topic</Button>
               </Flex>
             </Box>
             <Flex css={{ px: 4, py: 2 }}>
@@ -163,7 +194,7 @@ function App() {
             <Box css={{ px: 4, py: 2 }}>
               <Text as="h5" size="4" css={{ fontWeight: '500', mb: 2 }}>styling-lib</Text>
               <Flex>
-                <Text as="p" size="2" css={{ color: 'text' }}>Add a topic</Text>
+                <Button variant="ghost">Add a topic</Button>
               </Flex>
             </Box>
             <Flex css={{ px: 4, py: 2 }}>
@@ -184,28 +215,7 @@ function App() {
             <Box css={{ px: 4, py: 2 }}>
               <Text as="h5" size="4" css={{ fontWeight: '500', mb: 2 }}>styling-lib</Text>
               <Flex>
-                <Text as="p" size="2" css={{ color: 'text' }}>Add a topic</Text>
-              </Flex>
-            </Box>
-            <Flex css={{ px: 4, py: 2 }}>
-              <Box css={{ width: 6, height: 6, flexShrink: 0, borderRadius: 1, backgroundColor: 'bg', mr: 2 }}></Box>
-              <Text as="p" size="3" css={{ lineHeight: '20px' }}>So after playing with Stitches for a while, here are some issues I've listed:</Text>
-            </Flex>
-            <Flex css={{ px: 4, py: 2 }}>
-              <Box css={{ width: 6, height: 6, flexShrink: 0, borderRadius: 1, backgroundColor: 'bg', mr: 2 }}></Box>
-              <Text as="p" size="3" css={{ lineHeight: '20px' }}>Shorthand properties don't work. We need to write a parser to convert shorthand properties to longhand properties.</Text>
-            </Flex>
-            <Flex css={{ px: 4, py: 2 }}>
-              <Box css={{ width: 6, height: 6, flexShrink: 0, borderRadius: 1, backgroundColor: 'bg', mr: 2 }}></Box>
-              <Text as="p" size="3" css={{ lineHeight: '20px' }}>The current variant syntax is very confusing in long files. If possible, we should revert to our older syntax with a separate variant block.</Text>
-            </Flex>
-          </Box>
-
-          <Box css={{ flexBasis: 0, flexGrow: 1, borderRightWidth: '1px', borderRightStyle: 'solid', borderColor: 'line' }}>
-            <Box css={{ px: 4, py: 2 }}>
-              <Text as="h5" size="4" css={{ fontWeight: '500', mb: 2 }}>styling-lib</Text>
-              <Flex>
-                <Text as="p" size="2" css={{ color: 'text' }}>Add a topic</Text>
+                <Button variant="ghost">Add a topic</Button>
               </Flex>
             </Box>
             <Flex css={{ px: 4, py: 2 }}>

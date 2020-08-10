@@ -69,10 +69,9 @@ const IconButton = styled.button(
     variant: {
       ghost: {
         backgroundColor: 'transparent',
-        boxShadow: 'none',
+        borderColor: 'loContrast',
         ':hover': {
-          backgroundColor: 'gray200',
-          boxShadow: 'none',
+          backgroundColor: 'bg',
         },
         ':active': {
           backgroundColor: 'gray300',

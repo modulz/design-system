@@ -152,10 +152,10 @@ const { styled, css } = createStyled({
 export const darkTheme = css.theme({
   colors: {
     hiContrast: "white",
-    loContrast: "hsl(206,8%,7%)",
+    loContrast: "hsl(206,8%,8%)",
     bgsubtle: "hsl(206,8%,9%)",
-    bg: "hsl(206,7%,12%)",
-    line: "hsl(206,7%,14%)",
+    bg: "hsl(206,7%,15%)",
+    line: "hsl(206,7%,16%)",
     border: "hsl(206,7%,24%)",
     borderHover: "hsl(206,7%,30%)",
     text: "hsl(206,5%,50%)",
