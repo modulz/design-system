@@ -71,7 +71,7 @@ const IconButton = styled.button(
         backgroundColor: 'transparent',
         borderColor: 'loContrast',
         ':hover': {
-          backgroundColor: 'bg',
+          backgroundColor: 'gray200',
         },
         ':active': {
           backgroundColor: 'gray300',

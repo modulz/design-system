@@ -31,7 +31,7 @@ const Button = styled.button(
 
     // Custom
     backgroundColor: 'loContrast',
-    border: '1px solid border',
+    border: '1px solid gray400',
     borderRadius: 1,
     color: 'hiContrast',
     height: 5,
@@ -39,16 +39,16 @@ const Button = styled.button(
     fontSize: 2,
     fontWeight: '500',
     ':hover': {
-      borderColor: 'borderHover',
+      borderColor: 'gray500',
     },
     ':active': {
-      backgroundColor: 'bgsubtle',
-      borderColor: 'borderHover',
+      backgroundColor: 'gray100',
+      borderColor: 'gray500',
     },
     ':disabled': {
-      backgroundColor: 'bg',
-      borderColor: 'border',
-      color: 'border',
+      backgroundColor: 'gray200',
+      borderColor: 'gray400',
+      color: 'gray400',
     },
   },
   {
@@ -61,29 +61,25 @@ const Button = styled.button(
     },
     variant: {
       blue: {
-        backgroundColor: 'blue100',
-        boxShadow: 'inset 0 0 0 1px hsl(206,80%,80%)',
-        color: 'blue600',
+        backgroundColor: 'blue500',
+        borderWidth: '0',
+        color: 'white',
         ':hover': {
           backgroundColor: 'blue600',
-          boxShadow: 'none',
         },
         ':active': {
           backgroundColor: 'blue600',
-          boxShadow: 'none',
         },
       },
       green: {
-        backgroundColor: 'green100',
-        boxShadow: 'inset 0 0 0 1px hsl(152,56%,78%)',
-        color: 'green600',
+        backgroundColor: 'green500',
+        borderWidth: '0',
+        color: 'white',
         ':hover': {
           backgroundColor: 'green600',
-          boxShadow: 'none',
         },
         ':active': {
           backgroundColor: 'green600',
-          boxShadow: 'none',
         },
       },
       red: {

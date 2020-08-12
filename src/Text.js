@@ -6,10 +6,6 @@ const Text = styled.span(
     lineHeight: '1',
     margin: 0,
     fontWeight: '400',
-
-    // Custom
-    color: 'hiContrast',
-    fontSize: 3,
   },
   {
     size: {
@@ -30,15 +26,19 @@ const Text = styled.span(
       },
       6: {
         fontSize: 6,
+        letterSpacing: '-.012em'
       },
       7: {
         fontSize: 7,
+        letterSpacing: '-.021em'
       },
       8: {
         fontSize: 8,
+        letterSpacing: '-.034em'
       },
       9: {
         fontSize: 9,
+        letterSpacing: '-.055em'
       },
     },
   },
