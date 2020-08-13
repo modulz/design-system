@@ -8,6 +8,7 @@ import Grid from './Grid';
 import Badge from './Badge';
 import Text from './Text';
 import Divider from './Divider';
+import Card from './Card';
 import { darkTheme } from './config';
 
 function App() {
@@ -202,6 +203,18 @@ function App() {
             <Divider />
             <Divider size="large" css={{ mt: 9 }} />
             <Divider orientation="vertical" css={{ ml: 5 }} />
+            <Card css={{ p: 4, m: 4 }}>
+              <Text as="p" size="3" css={{ lineHeight: '20px', mb: 4 }}>The current variant syntax is very confusing in long files. If possible, we should revert to our older syntax with a separate variant block.</Text>
+              <Button>
+                <Box css={{ mr: '1' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M8 13V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </Box>
+                Button
+              </Button>
+            </Card>
           </Box>
 
           <Box css={{ flexBasis: 0, flexGrow: 1, borderRightWidth: '1px', borderRightStyle: 'solid', borderColor: 'gray300' }}>

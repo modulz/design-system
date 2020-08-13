@@ -70,9 +70,9 @@ const { styled, css } = createStyled({
       9: '59px',
     },
     radii: {
-      1: '4px',
-      2: '8px',
-      3: '16px',
+      1: '3px',
+      2: '5px',
+      3: '15px',
       round: '50%',
     },
     zIndices: {
