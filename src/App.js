@@ -7,6 +7,7 @@ import Flex from './Flex';
 import Grid from './Grid';
 import Badge from './Badge';
 import Text from './Text';
+import Divider from './Divider';
 import { darkTheme } from './config';
 
 function App() {
@@ -198,6 +199,9 @@ function App() {
             <Text as="p" size="7" css={{ lineHeight: '50px', fontWeight: '500' }}>This is a text component</Text>
             <Text as="p" size="8" css={{ lineHeight: '35px', fontWeight: '500' }}>This is a text component</Text>
             <Text as="p" size="9" css={{ lineHeight: '50px', fontWeight: '500' }}>This is a text component</Text>
+            <Divider />
+            <Divider size="large" css={{ mt: 9 }} />
+            <Divider orientation="vertical" css={{ ml: 5 }} />
           </Box>
 
           <Box css={{ flexBasis: 0, flexGrow: 1, borderRightWidth: '1px', borderRightStyle: 'solid', borderColor: 'gray300' }}>

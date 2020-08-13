@@ -6,6 +6,9 @@ const Text = styled.span(
     lineHeight: '1',
     margin: 0,
     fontWeight: '400',
+
+    // Custom
+    color: 'hiContrast',
   },
   {
     size: {
