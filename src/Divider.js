@@ -3,6 +3,7 @@ import { styled } from './config'
 const Divider = styled.div(
   {
     // Reset
+    boxSizing: 'border-box',
     flexShrink: 0,
 
     height: '1px',
