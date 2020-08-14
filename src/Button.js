@@ -63,7 +63,7 @@ const Button = styled.button(
       blue: {
         backgroundColor: 'blue500',
         borderWidth: '0',
-        color: 'white',
+        color: 'loContrast',
         ':hover': {
           backgroundColor: 'blue600',
         },
@@ -87,14 +87,13 @@ const Button = styled.button(
       },
       ghost: {
         backgroundColor: 'transparent',
-        borderColor: 'loContrast',
+        borderWidth: '0',
+        fontWeight: '400',
         ':hover': {
-          backgroundColor: 'bg',
-          borderColor: 'loContrast',
+          backgroundColor: 'gray200',
         },
         ':active': {
-          backgroundColor: 'line',
-          borderColor: 'loContrast',
+          backgroundColor: 'gray300',
         },
       },
     },

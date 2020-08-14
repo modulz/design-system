@@ -42,11 +42,9 @@ const IconButton = styled.button(
     },
     ':active': {
       backgroundColor: 'gray100',
-      boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
     },
     ':disabled': {
       backgroundColor: 'transparent',
-      boxShadow: 'none',
       color: 'gray500',
       pointerEvents: 'none'
     },
@@ -69,13 +67,12 @@ const IconButton = styled.button(
     variant: {
       ghost: {
         backgroundColor: 'transparent',
-        borderColor: 'loContrast',
+        borderWidth: '0',
         ':hover': {
           backgroundColor: 'gray200',
         },
         ':active': {
           backgroundColor: 'gray300',
-          boxShadow: 'none',
         },
       },
       raised: {

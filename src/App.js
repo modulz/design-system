@@ -14,7 +14,7 @@ import { darkTheme } from './config';
 function App() {
   return (
     // className={darkTheme}
-    <Box css={{ backgroundColor: 'loContrast', height: '100%' }}>
+    <Box className={darkTheme} css={{ backgroundColor: 'loContrast', minHeight: '100%' }}>
       <Flex css={{ height: '100%' }}>
         <Box css={{ width: '250px', flexShrink: 0, borderRightWidth: '1px', borderRightStyle: 'solid', borderColor: 'gray300' }}>
         <Grid css={{ gridTemplateColumns: 'repeat(1, minmax(0, 1fr))' }}>
@@ -127,7 +127,7 @@ function App() {
 
           <Box>
             <Flex css={{ alignItems: 'center', mb: 6, gap: '32px' }}>
-              <Badge>Badge</Badge>
+              <Badge>Coming soon</Badge>
             </Flex>
             <Flex css={{ alignItems: 'center', mb: 6, gap: '32px' }}>
               <Badge>Badge</Badge>
@@ -215,6 +215,27 @@ function App() {
                 Button
               </Button>
             </Card>
+            <Text as="p" size="3" css={{ lineHeight: '20px', color: 'blue600', my: 6 }}>This is a link</Text>
+            
+
+            <Box css={{ backgroundColor: 'blue300', py: 2, px: 4 }}>
+              <Text as="p" size="1" css={{ color: 'loContrast' }}>This is a link</Text>
+            </Box>
+            <Box css={{ backgroundColor: 'blue100', py: 2, px: 4, pl: 5 }}>
+              <Text as="p" size="1" css={{  color: 'loContrast' }}>This is a link</Text>
+            </Box>
+            <Box css={{ backgroundColor: 'blue200', py: 2, px: 4, pl: 5 }}>
+              <Text as="p" size="1" css={{  color: 'loContrast' }}>This is a link</Text>
+            </Box>
+            <Box css={{ backgroundColor: 'blue100', py: 2, px: 4, pl: 5 }}>
+              <Text as="p" size="1" css={{  color: 'loContrast' }}>This is a link</Text>
+            </Box>
+
+            
+            <Box css={{ backgroundColor: 'blue100', px: 2, pl: 5, my: 9 }}>
+              fe
+            </Box>
+            
           </Box>
 
           <Box css={{ flexBasis: 0, flexGrow: 1, borderRightWidth: '1px', borderRightStyle: 'solid', borderColor: 'gray300' }}>
