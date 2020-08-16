@@ -9,7 +9,7 @@ const Divider = styled.div(
     height: '1px',
     backgroundColor: 'gray300',
     borderRadius: 1,
-    width: 2
+    width: 3
   },
   {
     size: {
@@ -20,7 +20,7 @@ const Divider = styled.div(
     orientation: {
       vertical: {
         width: '1px',
-        height: 2,
+        height: 3,
       },
     },
   },

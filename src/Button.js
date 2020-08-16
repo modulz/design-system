@@ -63,7 +63,7 @@ const Button = styled.button(
       blue: {
         backgroundColor: 'blue500',
         borderWidth: '0',
-        color: 'loContrast',
+        color: 'white',
         ':hover': {
           backgroundColor: 'blue600',
         },

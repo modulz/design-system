@@ -30,7 +30,7 @@ const IconButton = styled.button(
     },
 
     // Custom
-    backgroundColor: 'white',
+    backgroundColor: 'loContrast',
     border: '1px solid gray400',
     borderRadius: 'round',
     color: 'hiContrast',
