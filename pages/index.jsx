@@ -22,7 +22,8 @@ function Home() {
           width: '100%',
           backgroundColor: 'loContrast',
           py: 2,
-          borderBottom: '1px solid',
+          borderBottomWidth: '1px',
+          borderBottomStyle: 'solid',
           borderBottomColor: 'gray300',
         }}
       >
