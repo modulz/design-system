@@ -5,37 +5,44 @@ const { styled, css } = createStyled({
     colors: {
       hiContrast: "hsl(206,10%,5%)",
       loContrast: "white",
+
       canvas: 'hsl(0,0%,93%)',
+
       gray100: "hsl(206,22%,99%)",
       gray200: "hsl(206,12%,97%)",
       gray300: "hsl(206,11%,92%)",
       gray400: "hsl(206,10%,84%)",
       gray500: "hsl(206,10%,76%)",
       gray600: "hsl(206,10%,44%)",
+
       blue100: "hsl(206,100%,99%)",
       blue200: "hsl(206,100%,97%)",
       blue300: "hsl(206,100%,92%)",
       blue400: "hsl(206,100%,84%)",
       blue500: "hsl(206,100%,50%)",
       blue600: "hsl(206,100%,40%)",
+
       purple100: "hsl(252,100%,99%)",
       purple200: "hsl(252,100%,98%)",
       purple300: "hsl(252,100%,94%)",
       purple400: "hsl(252,75%,84%)",
       purple500: "hsl(252,78%,60%)",
       purple600: "hsl(252,70%,44%)",
+
       green100: "hsl(152,75%,98%)",
       green200: "hsl(152,75%,96%)",
       green300: "hsl(152,56%,86%)",
       green400: "hsl(152,56%,78%)",
       green500: "hsl(152,56%,45%)",
       green600: "hsl(152,57%,33%)",
+
       red100: "hsl(342,100%,98%)",
       red200: "hsl(342,100%,96%)",
       red300: "hsl(342,100%,86%)",
       red400: "hsl(342,90%,78%)",
       red500: "hsl(342,80%,45%)",
       red600: "hsl(342,68%,48%)",
+
       yellow100: "hsl(52,100%,98%)",
       yellow200: "hsl(52,100%,96%)",
       yellow300: "hsl(52,100%,86%)",
@@ -165,7 +172,9 @@ export const darkTheme = css.theme({
   colors: {
     hiContrast: "hsl(206,2%,84%)",
     loContrast: "hsl(206,8%,8%)",
+
     canvas: 'hsl(0,0%,15%)',
+    
     gray100: "hsl(206,8%,12%)",
     gray200: "hsl(206,7%,12%)",
     gray300: "hsl(206,7%,15%)",
