@@ -1,4 +1,4 @@
-import { styled } from './config'
+import { styled } from '../css'
 
 const TreeItem = styled.div(
   {

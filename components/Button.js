@@ -1,6 +1,6 @@
-import { styled } from './config'
+import { styled } from '../css'
 
-const IconButton = styled.button(
+const Button = styled.button(
   {
     // Reset
     alignItems: 'center',
@@ -32,53 +32,65 @@ const IconButton = styled.button(
     // Custom
     backgroundColor: 'loContrast',
     border: '1px solid gray400',
-    borderRadius: 'round',
+    borderRadius: 1,
     color: 'hiContrast',
     height: 5,
-    width: 5,
-    transition: 'all 40ms linear',
+    px: 2,
+    fontSize: 2,
+    fontWeight: '500',
     ':hover': {
       borderColor: 'gray500',
     },
     ':active': {
       backgroundColor: 'gray100',
+      borderColor: 'gray500',
     },
     ':disabled': {
-      backgroundColor: 'transparent',
-      color: 'gray500',
-      pointerEvents: 'none'
+      backgroundColor: 'gray200',
+      borderColor: 'gray400',
+      color: 'gray400',
     },
   },
   {
     size: {
       large: {
         height: 6,
-        width: 6,
-      },
-      xl: {
-        height: 7,
-        width: 7,
-      },
-      xxl: {
-        height: 8,
-        width: 8,
+        px: 3,
+        fontSize: 3,
       },
     },
     variant: {
+      blue: {
+        backgroundColor: 'blue500',
+        borderWidth: '0',
+        color: 'white',
+        ':hover': {
+          backgroundColor: 'blue600',
+        },
+        ':active': {
+          backgroundColor: 'blue600',
+        },
+      },
+      green: {
+        backgroundColor: 'green500',
+        borderWidth: '0',
+        color: 'white',
+        ':hover': {
+          backgroundColor: 'green600',
+        },
+        ':active': {
+          backgroundColor: 'green600',
+        },
+      },
+      red: {
+        color: 'red600',
+      },
       ghost: {
         backgroundColor: 'transparent',
         borderWidth: '0',
+        fontWeight: '400',
         ':hover': {
           backgroundColor: 'gray200',
-        },
-        ':active': {
-          backgroundColor: 'gray300',
-        },
-      },
-      raised: {
-        boxShadow: '0 16px 32px hsl(206deg 12% 5% / 25%), 0 3px 5px hsl(0deg 0% 0% / 10%)',
-        ':hover': {
-          boxShadow: '0 16px 32px hsl(206deg 12% 5% / 25%), 0 3px 5px hsl(0deg 0% 0% / 10%)',
         },
         ':active': {
           backgroundColor: 'gray300',
@@ -110,4 +122,4 @@ const IconButton = styled.button(
   },
 );
 
-export default IconButton
+export default Button

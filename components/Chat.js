@@ -6,7 +6,7 @@ import Box from './Box';
 import Flex from './Flex';
 import Grid from './Grid';
 import Badge from './Badge';
-import { darkTheme } from './config';
+import { darkTheme } from '../css';
 
 function Chat() {
   return (

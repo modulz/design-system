@@ -174,7 +174,7 @@ export const darkTheme = css.theme({
     loContrast: "hsl(206,8%,8%)",
 
     canvas: 'hsl(0,0%,15%)',
-    
+
     gray100: "hsl(206,8%,12%)",
     gray200: "hsl(206,7%,12%)",
     gray300: "hsl(206,7%,15%)",
