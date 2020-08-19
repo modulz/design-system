@@ -17,3 +17,8 @@ body {
 svg {
   vertical-align: middle;
 }
+
+#__next,
+.theme-0 {
+  height: 100%;
+}

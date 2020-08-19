@@ -13,14 +13,14 @@ const { styled, css } = createStyled({
       gray300: "hsl(206,11%,92%)",
       gray400: "hsl(206,10%,84%)",
       gray500: "hsl(206,10%,76%)",
-      gray600: "hsl(206,10%,44%)",
+      gray600: "hsl(206,10%,46%)",
 
       blue100: "hsl(206,100%,99%)",
       blue200: "hsl(206,100%,97%)",
       blue300: "hsl(206,100%,92%)",
       blue400: "hsl(206,100%,84%)",
       blue500: "hsl(206,100%,50%)",
-      blue600: "hsl(206,100%,40%)",
+      blue600: "hsl(206,100%,48%)",
 
       purple100: "hsl(252,100%,99%)",
       purple200: "hsl(252,100%,98%)",
@@ -165,12 +165,43 @@ const { styled, css } = createStyled({
       marginTop: value,
       marginBottom: value,
     }),
+
+    ta: (config) => (value) => ({ textAlign: value }),
+
+    fd: (config) => (value) => ({ flexDirection: value }),
+    fw: (config) => (value) => ({ flexWrap: value }),
+
+    ai: (config) => (value) => ({ alignItems: value }),
+    ac: (config) => (value) => ({ alignContent: value }),
+    jc: (config) => (value) => ({ justifyContent: value }),
+    as: (config) => (value) => ({ alignSelf: value }),
+    fg: (config) => (value) => ({ flexGrow: value }),
+    fs: (config) => (value) => ({ flexShrink: value }),
+    fb: (config) => (value) => ({ flexBasis: value }),
+
+    bc: (config) => (value) => ({ backgroundColor: value }),
+
+    br: (config) => (value) => ({ borderRadius: value }),
+    btrr: (config) => (value) => ({ borderTopRightRadius: value }),
+    bbrr: (config) => (value) => ({ borderBottomRightRadius: value }),
+    bblr: (config) => (value) => ({ borderBottomLeftRadius: value }),
+    btlr: (config) => (value) => ({ borderTopLeftRadius: value }),
+
+    bs: (config) => (value) => ({ boxShadow: value }),
+
+    lh: (config) => (value) => ({ lineHeight: value }),
+
+    ox: (config) => (value) => ({ overflowX: value }),
+    oy: (config) => (value) => ({ overflowY: value }),
+
+    pe: (config) => (value) => ({ pointerEvents: value }),
+    us: (config) => (value) => ({ userSelect: value }),
   },
 });
 
 export const darkTheme = css.theme({
   colors: {
-    hiContrast: "hsl(206,2%,84%)",
+    hiContrast: "hsl(206,2%,93%)",
     loContrast: "hsl(206,8%,8%)",
 
     canvas: 'hsl(0,0%,15%)',
@@ -187,16 +218,21 @@ export const darkTheme = css.theme({
     blue300: "hsl(211,55%,16%)",
     blue400: "hsl(209,100%,84%)",
     blue500: "hsl(206,100%,50%)",
-    blue600: "hsl(206,100%,40%)",
+    blue600: "hsl(206,100%,56%)",
 
     purple100: "hsl(252,50%,10%)",
     purple200: "hsl(252,22%,14%)",
     purple300: "hsl(252,33%,20%)",
     purple400: "hsl(252,75%,84%)",
     purple500: "hsl(252,78%,60%)",
-    purple600: "hsl(252,70%,44%)",
-
     purple600: "hsl(252,78%,71%)",
+
+    yellow100: "hsl(52,50%,10%)",
+    yellow200: "hsl(52,22%,14%)",
+    yellow300: "hsl(52,33%,20%)",
+    yellow400: "hsl(52,75%,78%)",
+    yellow500: "hsl(52,78%,45%)",
+    yellow600: "hsl(52,78%,34%)",
   },
 });
 

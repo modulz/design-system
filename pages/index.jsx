@@ -8,6 +8,7 @@ import Badge from '../components/Badge';
 import Text from '../components/Text';
 import Divider from '../components/Divider';
 import Card from '../components/Card';
+import Input from '../components/Input';
 import TreeItem from '../components/TreeItem';
 import { darkTheme } from '../css';
 
@@ -158,15 +159,8 @@ function Home() {
             </IconButton>
             <Button variant="blue">
               <Box css={{ mr: '1' }}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path d="M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                  <path d="M8 13V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3C8 2.72386 7.77614 2.5 7.5 2.5C7.22386 2.5 7 2.72386 7 3V7H3C2.72386 7 2.5 7.22386 2.5 7.5C2.5 7.77614 2.72386 8 3 8H7V12C7 12.2761 7.22386 12.5 7.5 12.5C7.77614 12.5 8 12.2761 8 12V8H12C12.2761 8 12.5 7.77614 12.5 7.5C12.5 7.22386 12.2761 7 12 7H8V3Z" fill="currentColor"/>
                 </svg>
               </Box>
               Share
@@ -643,6 +637,98 @@ function Home() {
             </Box>
             <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
           </TreeItem>
+          <TreeItem variant="yellowSelected" css={{ px: 4 }}>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="7.5" cy="7.5" r="6" stroke="currentColor" />
+              <path
+                d="M9.5 5.5L6.83333 9.5L5.5 8.13736"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+          </TreeItem>
+          <TreeItem variant="yellowHighlighted" css={{ px: 4, pl: 6 }}>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="7.5" cy="7.5" r="6" stroke="currentColor" />
+              <path
+                d="M9.5 5.5L6.83333 9.5L5.5 8.13736"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+          </TreeItem>
+          <TreeItem variant="yellowHighlighted" css={{ px: 4, pl: 8 }}>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="7.5" cy="7.5" r="6" stroke="currentColor" />
+              <path
+                d="M9.5 5.5L6.83333 9.5L5.5 8.13736"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+          </TreeItem>
+          <TreeItem variant="yellowHighlighted" css={{ px: 4, pl: 8 }}>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="7.5" cy="7.5" r="6" stroke="currentColor" />
+              <path
+                d="M9.5 5.5L6.83333 9.5L5.5 8.13736"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+          </TreeItem>
+          <TreeItem variant="yellowHighlighted" css={{ px: 4, pl: 8 }}>
+            <Box css={{ color: 'purple600' }}>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="7.5" cy="7.5" r="6" stroke="currentColor" />
+                <path
+                  d="M9.5 5.5L6.83333 9.5L5.5 8.13736"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </Box>
+            <Text css={{ ml: 2, color: 'purple600' }}>Flex</Text>
+          </TreeItem>
           <TreeItem css={{ px: 4 }}>
             <Box css={{ color: 'gray500' }}>
               <svg
@@ -754,9 +840,19 @@ function Home() {
             borderLeftWidth: '1px',
             borderLeftStyle: 'solid',
             borderColor: 'canvas',
+            p: 3,
           }}
         >
-          <Card css={{ p: 3, m: 3 }}>
+          <Box css={{ mb: 3 }}>
+            <Input placeholder="This is an input" cursor="default" />
+          </Box>
+          <Box css={{ mb: 3 }}>
+            <Input size="large" placeholder="This is a large input" />
+          </Box>
+          <Box css={{ mb: 3 }}>
+            <Input variant="ghost" placeholder="This is a ghost input" />
+          </Box>
+          <Card css={{ p: 3 }}>
             <Text as="p" size="2" css={{ lineHeight: '20px', mb: 1 }}>
               If possible, we should revert to our older syntax with a separate variant block.
             </Text>

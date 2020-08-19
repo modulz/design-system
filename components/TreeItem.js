@@ -43,6 +43,12 @@ const TreeItem = styled.div(
       purpleHighlighted: {
         backgroundColor: 'purple200',
       },
+      yellowSelected: {
+        backgroundColor: 'yellow300',
+      },
+      yellowHighlighted: {
+        backgroundColor: 'yellow200',
+      },
     },
   },
 );

@@ -9,7 +9,6 @@ const Container = styled.div(
     // Custom
     ml: 'auto',
     mr: 'auto',
-    width: '90%',
     px: 5,
   },
   {

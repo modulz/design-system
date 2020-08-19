@@ -18,7 +18,7 @@ const Button = styled.button(
     padding: '0',
     textDecoration: 'none',
     userSelect: 'none',
-    webkitTapHighlightColor: 'transparent',
+    WebkitTapHighlightColor: 'rgba(0,0,0,0)',
     ':disabled': {
       pointerEvents: 'none'
     },
