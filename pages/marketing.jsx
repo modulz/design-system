@@ -8,6 +8,7 @@ import Grid from '../components/Grid';
 import Badge from '../components/Badge';
 import Text from '../components/Text';
 import Divider from '../components/Divider';
+import Input from '../components/Input';
 import Card from '../components/Card';
 import TreeItem from '../components/TreeItem';
 import { darkTheme } from '../css';
@@ -42,19 +43,22 @@ function Marketing() {
         <Text as="h1" size="9" css={{ fontWeight: '500', textAlign: 'center', mb: 4 }}>The modern styling library</Text>
       </Container>
       <Container size="2">
-        <Text as="h2" size="6" css={{ color: 'gray600', textAlign: 'center', lineHeight: '30px' }}>Near-zero runtime, server-side rendering, multi-variant support, and best-in-class developer experience.</Text>
+        <Text as="h2" size="6" css={{ color: 'gray600', textAlign: 'center', lineHeight: '30px' }}>Near-zero runtime, server-side rendering, multi-variant support, and a best-in-class developer experience.</Text>
         <Flex css={{ justifyContent: 'center' }}>
           <Text size="5" css={{ color: 'blue600', mt: 7 }}>Documentation</Text>
         </Flex>
       </Container>
       <Container size="2">
         <Flex css={{ justifyContent: 'center', mt: 7 }}>
-          <Badge>Coming soon</Badge>
-          <Badge variant="blue">New</Badge>
-          <Badge  variant="green">Approved</Badge>
-          <Badge variant="yellow">Pending</Badge>
-          <Badge variant="red">Failed</Badge>
+          <Badge css={{ mx: 3 }}>Coming soon</Badge>
+          <Badge variant="blue" css={{ mx: 3 }}>New</Badge>
+          <Badge  variant="green" css={{ mx: 3 }}>Approved</Badge>
+          <Badge variant="yellow" css={{ mx: 3 }}>Pending</Badge>
+          <Badge variant="red" css={{ mx: 3 }}>Failed</Badge>
         </Flex>
+      </Container>
+      <Container size="2">
+        <Input css={{ mt: 7 }} />
       </Container>
     </Box>
   );

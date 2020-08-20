@@ -26,7 +26,7 @@ const Input = styled.input(
     },
 
     // Custom
-    boxShadow: 'inset 0 0 0 1px gainsboro',
+    boxShadow: 'inset 0 0 0 1px gray300',
     borderRadius: 1,
     color: 'hiContrast',
     p: 1,
@@ -59,11 +59,11 @@ const Input = styled.input(
     variant: {
       ghost: {
         boxShadow: 'none',
+        ':hover': {
+          boxShadow: 'inset 0 0 0 1px gray300',
+        },
         ':focus': {
           boxShadow: 'rgb(96, 179, 251) 0px 0px 0px 1px inset, rgb(96, 179, 251) 0px 0px 0px 1px',
-        },
-        ':hover': {
-          boxShadow: 'inset 0 0 0 1px gainsboro',
         },
       },
     },
