@@ -59,6 +59,9 @@ const Input = styled.input(
     variant: {
       ghost: {
         boxShadow: 'none',
+        ':focus': {
+          boxShadow: 'rgb(96, 179, 251) 0px 0px 0px 1px inset, rgb(96, 179, 251) 0px 0px 0px 1px',
+        },
         ':hover': {
           boxShadow: 'inset 0 0 0 1px gainsboro',
         },

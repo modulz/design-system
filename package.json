@@ -10,7 +10,7 @@
   "dependencies": {
     "@modulz/radix-icons": "^2.4.0",
     "@next/mdx": "^9.5.1",
-    "@stitches/styled": "^8.0.2",
+    "@stitches/styled": "^9.0.0-alpha.0",
     "next": "9.5.1",
     "react": "16.13.1",
     "react-dom": "16.13.1"

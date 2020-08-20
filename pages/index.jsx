@@ -904,7 +904,7 @@ function Home() {
           backgroundColor: 'loContrast',
           borderRadius: 2,
           boxShadow:
-            '0 16px 32px -10px hsl(206deg 12% 5% / 25%), 0 8px 16px -15px hsl(0deg 0% 0% / 10%)',
+            '0 0.4px 0px -10px rgba(0, 0, 0, 0.043), 0 0.9px 0.3px -10px rgba(0, 0, 0, 0.063), 0 1.6px 0.8px -10px rgba(0, 0, 0, 0.077), 0 2.5px 1.8px -10px rgba(0, 0, 0, 0.09), 0 3.9px 3.5px -10px rgba(0, 0, 0, 0.103), 0 6px 6.6px -10px rgba(0, 0, 0, 0.117), 0 10px 13.5px -10px rgba(0, 0, 0, 0.137), 0 20px 35px -10px rgba(0, 0, 0, 0.18)',
         }}
       ></Box>
     </Box>

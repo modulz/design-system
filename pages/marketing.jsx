@@ -47,6 +47,15 @@ function Marketing() {
           <Text size="5" css={{ color: 'blue600', mt: 7 }}>Documentation</Text>
         </Flex>
       </Container>
+      <Container size="2">
+        <Flex css={{ justifyContent: 'center', mt: 7 }}>
+          <Badge>Coming soon</Badge>
+          <Badge variant="blue">New</Badge>
+          <Badge  variant="green">Approved</Badge>
+          <Badge variant="yellow">Pending</Badge>
+          <Badge variant="red">Failed</Badge>
+        </Flex>
+      </Container>
     </Box>
   );
 }

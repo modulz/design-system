@@ -18,7 +18,7 @@ const Badge = styled.span(
     padding: '0',
     textDecoration: 'none',
     userSelect: 'none',
-    webkitTapHighlightColor: 'transparent',
+    WebkitTapHighlightColor: 'rgba(0,0,0,0)',
     ':disabled': {
       pointerEvents: 'none'
     },
@@ -35,33 +35,34 @@ const Badge = styled.span(
     color: 'gray600',
     fontFamily: 'mono',
     height: 3,
-    px: 2,
-    fontSize: 1,
+    px: 1,
+    fontSize: '11px',
     fontWeight: '500',
+    whiteSpace: 'nowrap'
   },
   {
     size: {
       large: {
-        height: 6,
+        height: 5,
         px: 3,
-        fontSize: 3,
+        fontSize: 2,
       },
     },
     variant: {
       blue: {
-        backgroundColor: 'blue100',
+        backgroundColor: 'blue200',
         color: 'blue600',
       },
       green: {
-        backgroundColor: 'green100',
+        backgroundColor: 'green200',
         color: 'green600',
       },
       red: {
-        backgroundColor: 'red100',
+        backgroundColor: 'red200',
         color: 'red600',
       },
       yellow: {
-        backgroundColor: 'yellow100',
+        backgroundColor: 'yellow200',
         color: 'yellow600',
       },
     },
