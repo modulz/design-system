@@ -6,7 +6,7 @@ const Button = styled.button(
     alignItems: 'center',
     appearance: 'none',
     backgroundColor: 'transparent',
-    borderWidth: '0',
+    boxShadow: 'none',
     boxSizing: 'border-box',
     display: 'inline-flex',
     flexShrink: '0',
@@ -31,7 +31,8 @@ const Button = styled.button(
 
     // Custom
     backgroundColor: 'loContrast',
-    border: '1px solid gray400',
+    border: 'none',
+    boxShadow: 'inset 0 0 0 1px gray400',
     borderRadius: 1,
     color: 'hiContrast',
     height: 5,
@@ -39,15 +40,15 @@ const Button = styled.button(
     fontSize: 2,
     fontWeight: '500',
     ':hover': {
-      borderColor: 'gray500',
+      boxShadow: 'inset 0 0 0 1px gray500',
     },
     ':active': {
       backgroundColor: 'gray100',
-      borderColor: 'gray500',
+      boxShadow: 'inset 0 0 0 1px gray500',
     },
     ':disabled': {
       backgroundColor: 'gray200',
-      borderColor: 'gray400',
+      boxShadow: 'inset 0 0 0 1px gray400',
       color: 'gray400',
     },
   },
@@ -62,24 +63,28 @@ const Button = styled.button(
     variant: {
       blue: {
         backgroundColor: 'blue500',
-        borderWidth: '0',
+        boxShadow: 'none',
         color: 'white',
         ':hover': {
           backgroundColor: 'blue600',
+          boxShadow: 'none',
         },
         ':active': {
           backgroundColor: 'blue600',
+          boxShadow: 'none',
         },
       },
       green: {
         backgroundColor: 'green500',
-        borderWidth: '0',
+        boxShadow: 'none',
         color: 'white',
         ':hover': {
           backgroundColor: 'green600',
+          boxShadow: 'none',
         },
         ':active': {
           backgroundColor: 'green600',
+          boxShadow: 'none',
         },
       },
       red: {
@@ -87,13 +92,15 @@ const Button = styled.button(
       },
       ghost: {
         backgroundColor: 'transparent',
-        borderWidth: '0',
+        boxShadow: 'none',
         fontWeight: '400',
         ':hover': {
           backgroundColor: 'gray200',
+          boxShadow: 'none',
         },
         ':active': {
           backgroundColor: 'gray300',
+          boxShadow: 'none',
         },
       },
     },

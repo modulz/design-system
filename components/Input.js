@@ -33,7 +33,7 @@ const Input = styled.input(
     fontSize: 1,
     fontVariantNumeric: 'tabular-nums',
     ':focus': {
-      boxShadow: 'rgb(96, 179, 251) 0px 0px 0px 1px inset, rgb(96, 179, 251) 0px 0px 0px 1px',
+      boxShadow: 'blue500 0px 0px 0px 1px inset, rgb(96, 179, 251) 0px 0px 0px 1px',
     },
     ':read-only': {
       color: 'gray500',

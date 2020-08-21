@@ -33,11 +33,9 @@ const Badge = styled.span(
     backgroundColor: 'gray200',
     borderRadius: 'pill',
     color: 'gray600',
-    fontFamily: 'mono',
     height: 3,
     px: 1,
-    fontSize: '11px',
-    fontWeight: '500',
+    fontSize: '1',
     whiteSpace: 'nowrap'
   },
   {

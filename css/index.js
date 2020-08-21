@@ -27,7 +27,7 @@ const { styled, css } = createStyled({
       purple300: "hsl(252,100%,94%)",
       purple400: "hsl(252,75%,84%)",
       purple500: "hsl(252,78%,60%)",
-      purple600: "hsl(252,70%,44%)",
+      purple600: "hsl(252,80%,53%)",
 
       green100: "hsl(152,75%,98%)",
       green200: "hsl(152,72%,95%)",
