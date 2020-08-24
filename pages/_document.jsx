@@ -23,7 +23,7 @@ export default class Document extends NextDocument {
             {initialProps.styles}
 
             {extractedStyles.map((content, index) => (
-              <style key={index}>{content}</style>
+              <style key={index} dangerouslySetInnerHTML={{ __html: content }} />
             ))}
           </>
         ),
