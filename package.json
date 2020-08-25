@@ -1,6 +1,6 @@
 {
-  "name": "design-system",
-  "version": "0.1.0",
+  "name": "@modulz/design-system",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
