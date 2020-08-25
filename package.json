@@ -1,17 +1,17 @@
 {
   "name": "@modulz/design-system",
   "version": "0.0.1-1",
-  "main": "index.js",
+  "main": "dist/index.js",
   "files": [
-    "components",
-    "css"
+    "dist"
   ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "prettier": "prettier './**/*.{js,jsx,ts,tsx,json,yml,yaml,css,md,mdx}' --write",
-    "ds:release": "np",
+    "ds:build": "parcel index.js",
+    "ds:release": "np --no-2fa",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "np": "^6.4.0",
+    "parcel": "2.0.0-beta.1",
     "prettier": "^2.0.5"
   }
 }
