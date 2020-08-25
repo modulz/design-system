@@ -1,4 +1,4 @@
-import { styled } from '../css'
+import { styled } from '../css';
 
 const Input = styled.input(
   {
@@ -16,7 +16,7 @@ const Input = styled.input(
     width: '100%',
     WebkitTapHighlightColor: 'rgba(0,0,0,0)',
     ':disabled': {
-      pointerEvents: 'none'
+      pointerEvents: 'none',
     },
     '::before': {
       boxSizing: 'border-box',
@@ -44,8 +44,8 @@ const Input = styled.input(
       cursor: 'not-allowed',
     },
     '::placeholder': {
-      color: 'gray500'
-    } 
+      color: 'gray500',
+    },
   },
   {
     size: {
@@ -68,11 +68,11 @@ const Input = styled.input(
       },
     },
     cursor: {
-        default: {
-            cursor: 'default',
-        },
+      default: {
+        cursor: 'default',
+      },
     },
-  },
+  }
 );
 
-export default Input
+export default Input;

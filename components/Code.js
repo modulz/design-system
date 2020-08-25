@@ -1,4 +1,4 @@
-import { styled } from '../css'
+import { styled } from '../css';
 
 const Code = styled.code(
   {
@@ -35,7 +35,7 @@ const Code = styled.code(
       width: 'calc(100% + 6px)',
       height: 'calc(100% + 6px)',
       zIndex: -1,
-    }
+    },
   },
   {
     size: {
@@ -54,7 +54,7 @@ const Code = styled.code(
         color: 'green600',
       },
     },
-  },
+  }
 );
 
-export default Code
+export default Code;

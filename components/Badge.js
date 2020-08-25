@@ -1,4 +1,4 @@
-import { styled } from '../css'
+import { styled } from '../css';
 
 const Badge = styled.span(
   {
@@ -20,7 +20,7 @@ const Badge = styled.span(
     userSelect: 'none',
     WebkitTapHighlightColor: 'rgba(0,0,0,0)',
     ':disabled': {
-      pointerEvents: 'none'
+      pointerEvents: 'none',
     },
     '::before': {
       boxSizing: 'border-box',
@@ -36,7 +36,7 @@ const Badge = styled.span(
     height: 3,
     px: 1,
     fontSize: '1',
-    whiteSpace: 'nowrap'
+    whiteSpace: 'nowrap',
   },
   {
     size: {
@@ -64,7 +64,7 @@ const Badge = styled.span(
         color: 'yellow600',
       },
     },
-  },
+  }
 );
 
-export default Badge
+export default Badge;

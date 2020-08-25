@@ -1,4 +1,4 @@
-import { styled } from '../css'
+import { styled } from '../css';
 
 const Divider = styled.div(
   {
@@ -9,7 +9,7 @@ const Divider = styled.div(
     height: '1px',
     backgroundColor: 'gray300',
     borderRadius: 1,
-    width: 3
+    width: 3,
   },
   {
     size: {
@@ -23,7 +23,7 @@ const Divider = styled.div(
         height: 3,
       },
     },
-  },
+  }
 );
 
-export default Divider
+export default Divider;

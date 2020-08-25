@@ -1,4 +1,4 @@
-import { styled } from '../css'
+import { styled } from '../css';
 
 const Text = styled.span(
   {
@@ -29,22 +29,22 @@ const Text = styled.span(
       },
       6: {
         fontSize: 6,
-        letterSpacing: '-.012em'
+        letterSpacing: '-.012em',
       },
       7: {
         fontSize: 7,
-        letterSpacing: '-.021em'
+        letterSpacing: '-.021em',
       },
       8: {
         fontSize: 8,
-        letterSpacing: '-.034em'
+        letterSpacing: '-.034em',
       },
       9: {
         fontSize: 9,
-        letterSpacing: '-.055em'
+        letterSpacing: '-.055em',
       },
     },
-  },
+  }
 );
 
-export default Text
+export default Text;

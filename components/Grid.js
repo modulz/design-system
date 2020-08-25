@@ -1,9 +1,7 @@
-import { styled } from '../css'
+import { styled } from '../css';
 
-const Grid = styled.div(
-  {
-    display: 'grid'
-  },
-);
+const Grid = styled.div({
+  display: 'grid',
+});
 
-export default Grid
+export default Grid;

@@ -1,4 +1,4 @@
-import { styled } from '../css'
+import { styled } from '../css';
 
 const IconButton = styled.button(
   {
@@ -20,7 +20,7 @@ const IconButton = styled.button(
     userSelect: 'none',
     webkitTapHighlightColor: 'transparent',
     ':disabled': {
-      pointerEvents: 'none'
+      pointerEvents: 'none',
     },
     '::before': {
       boxSizing: 'border-box',
@@ -46,7 +46,7 @@ const IconButton = styled.button(
     ':disabled': {
       backgroundColor: 'transparent',
       color: 'gray500',
-      pointerEvents: 'none'
+      pointerEvents: 'none',
     },
   },
   {
@@ -107,7 +107,7 @@ const IconButton = styled.button(
         },
       },
     },
-  },
+  }
 );
 
-export default IconButton
+export default IconButton;

@@ -1,4 +1,4 @@
-import { styled } from '../css'
+import { styled } from '../css';
 
 const Container = styled.div(
   {
@@ -29,7 +29,7 @@ const Container = styled.div(
         maxWidth: 'none',
       },
     },
-  },
+  }
 );
 
-export default Container
+export default Container;

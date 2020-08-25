@@ -1,9 +1,7 @@
-import { styled } from '../css'
+import { styled } from '../css';
 
-const Flex = styled.div(
-  {
-    display: 'flex'
-  },
-);
+const Flex = styled.div({
+  display: 'flex',
+});
 
-export default Flex
+export default Flex;

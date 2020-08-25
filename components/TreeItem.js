@@ -1,4 +1,4 @@
-import { styled } from '../css'
+import { styled } from '../css';
 
 const TreeItem = styled.div(
   {
@@ -10,7 +10,7 @@ const TreeItem = styled.div(
     userSelect: 'none',
     webkitTapHighlightColor: 'transparent',
     ':disabled': {
-      pointerEvents: 'none'
+      pointerEvents: 'none',
     },
     '::before': {
       boxSizing: 'border-box',
@@ -23,7 +23,7 @@ const TreeItem = styled.div(
     height: '29px',
     px: 2,
     fontSize: '1',
-    color: 'hiContrast'
+    color: 'hiContrast',
   },
   {
     variant: {
@@ -50,7 +50,7 @@ const TreeItem = styled.div(
         backgroundColor: 'yellow200',
       },
     },
-  },
+  }
 );
 
-export default TreeItem
+export default TreeItem;

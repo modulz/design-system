@@ -1,4 +1,4 @@
-import { styled } from '../css'
+import { styled } from '../css';
 
 const Button = styled.button(
   {
@@ -20,7 +20,7 @@ const Button = styled.button(
     userSelect: 'none',
     WebkitTapHighlightColor: 'rgba(0,0,0,0)',
     ':disabled': {
-      pointerEvents: 'none'
+      pointerEvents: 'none',
     },
     '::before': {
       boxSizing: 'border-box',
@@ -126,7 +126,7 @@ const Button = styled.button(
         },
       },
     },
-  },
+  }
 );
 
-export default Button
+export default Button;

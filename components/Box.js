@@ -1,9 +1,7 @@
-import { styled } from '../css'
+import { styled } from '../css';
 
-const Box = styled.div(
-  {
-    boxSizing: 'border-box'
-  },
-);
+const Box = styled.div({
+  boxSizing: 'border-box',
+});
 
-export default Box
+export default Box;
