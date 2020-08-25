@@ -4,7 +4,7 @@
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
+    "jsx": "preserve",
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -15,8 +15,18 @@
     "strict": true,
     "target": "es5",
     "noImplicitAny": false,
-    "lib": ["dom", "es2017"]
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "allowJs": true,
+    "isolatedModules": true
   },
-  "include": ["css/**/*"],
-  "exclude": ["node_modules", "pages"]
+  "include": [
+    "css/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "pages"
+  ]
 }
