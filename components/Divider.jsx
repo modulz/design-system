@@ -6,7 +6,7 @@ export const Divider = styled.div(
     boxSizing: 'border-box',
     flexShrink: 0,
 
-    height: '1',
+    height: '1px',
     backgroundColor: 'gray300',
     borderRadius: '1',
     width: '3',

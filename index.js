@@ -13,4 +13,4 @@ export { Input } from './components/Input';
 export { Text } from './components/Text';
 export { TreeItem } from './components/TreeItem';
 
-export { css, styled, darkTheme } from './css';
+export { css, styled, theme, darkTheme, darkThemeClass } from './css';
