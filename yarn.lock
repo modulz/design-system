@@ -1043,20 +1043,20 @@
   resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-9.5.1.tgz#fe257fafe1a7f1c0c6e818017fa65b5ee45c5eca"
   integrity sha512-A19z/E6f08RXfBRc2STQ+5qo7iSPif7mNcww9dZAVli3Idu4umGP5dbpL71Hz1vyRs1eMUEylXTpXsY2WzY07g==
 
-"@stitches/css@^9.0.0-alpha.0":
-  version "9.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@stitches/css/-/css-9.0.0-alpha.0.tgz#075098dc2fcce10d70f4fa261962742288f76d4c"
-  integrity sha512-JV1ujIhNLF+ZSwlcpevHhPnbJAMgdBni3P7dAXibtriKksQO4Bk9fQAS9yHbkiEj3puV73wBS3QDcJdFF2Czyg==
+"@stitches/css@^9.0.0-alpha.1":
+  version "9.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@stitches/css/-/css-9.0.0-alpha.1.tgz#0eddcd4718cca3a7c473b61cbac181a7e57028c3"
+  integrity sha512-BEf5BHoQYohsVWaF3mylXbyr6vstqIvdZ1irY+M2y68SLWek3xQDodH1z1aimFhELl8gCuOzAAoXwGYJuega9w==
   dependencies:
     "@types/node" "^13.11.1"
     tslib "^1.11.1"
 
-"@stitches/styled@^9.0.0-alpha.0":
-  version "9.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@stitches/styled/-/styled-9.0.0-alpha.0.tgz#7c63300af4518316b795c918034aa9041c49a34f"
-  integrity sha512-IGqQ6eCqRL1nq3SWLcqmSRNsOqdasX8iuJ4g3rgrEL7HFznEnORyW2mlFVrto1YWEjsBD1YGAZUxZDecQrgl3w==
+"@stitches/styled@9.0.0-alpha.2":
+  version "9.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@stitches/styled/-/styled-9.0.0-alpha.2.tgz#fcf4be000080a4348a0acdd990e462441fd64e67"
+  integrity sha512-W9Q3/1XTFx9MLjdqnWAJRbQOv0YyJpWqfEPAU5uqcIouCBHtOFlKPeLXaV4YmXWzHJMH0J+DmEmFZcZAP7vr/w==
   dependencies:
-    "@stitches/css" "^9.0.0-alpha.0"
+    "@stitches/css" "^9.0.0-alpha.1"
     "@types/node" "^13.11.1"
     tslib "^1.11.1"
 
