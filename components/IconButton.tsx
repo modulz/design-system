@@ -1,15 +1,15 @@
 import { styled } from '../css';
 
-export const Button = styled.button(
+export const IconButton = styled.button(
   {
     // Reset
     alignItems: 'center',
     appearance: 'none',
-    backgroundColor: 'transparent',
-    boxShadow: 'none',
+    // backgroundColor: 'transparent',
+    borderWidth: '0',
     boxSizing: 'border-box',
     display: 'inline-flex',
-    flexShrink: '0',
+    flexShrink: 0,
     fontFamily: 'inherit',
     fontSize: '14px',
     justifyContent: 'center',
@@ -18,10 +18,10 @@ export const Button = styled.button(
     padding: '0',
     textDecoration: 'none',
     userSelect: 'none',
-    WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-    ':disabled': {
-      pointerEvents: 'none',
-    },
+    WebkitTapHighlightColor: 'transparent',
+    // ':disabled': {
+    //   pointerEvents: 'none',
+    // },
     '::before': {
       boxSizing: 'border-box',
     },
@@ -31,76 +31,57 @@ export const Button = styled.button(
 
     // Custom
     backgroundColor: 'loContrast',
-    border: 'none',
-    boxShadow: 'inset 0 0 0 1px gray400',
-    borderRadius: 1,
+    border: '1px solid gray400',
+    borderRadius: 'round',
     color: 'hiContrast',
-    height: 5,
-    px: 2,
-    fontSize: 2,
-    fontWeight: '500',
+    height: '5',
+    width: '5',
+    transition: 'all 40ms linear',
     ':hover': {
-      boxShadow: 'inset 0 0 0 1px gray500',
+      borderColor: 'gray500',
     },
     ':active': {
       backgroundColor: 'gray100',
-      boxShadow: 'inset 0 0 0 1px gray500',
     },
     ':disabled': {
-      backgroundColor: 'gray200',
-      boxShadow: 'inset 0 0 0 1px gray400',
-      color: 'gray400',
+      pointerEvents: 'none',
+      backgroundColor: 'transparent',
+      color: 'gray500',
     },
   },
   {
     size: {
       large: {
-        height: 6,
-        px: 3,
-        fontSize: 3,
+        height: '6',
+        width: '6',
+      },
+      xl: {
+        height: '7',
+        width: '7',
+      },
+      xxl: {
+        height: '8',
+        width: '8',
       },
     },
     variant: {
-      blue: {
-        backgroundColor: 'blue500',
-        boxShadow: 'none',
-        color: 'white',
-        ':hover': {
-          backgroundColor: 'blue600',
-          boxShadow: 'none',
-        },
-        ':active': {
-          backgroundColor: 'blue600',
-          boxShadow: 'none',
-        },
-      },
-      green: {
-        backgroundColor: 'green500',
-        boxShadow: 'none',
-        color: 'white',
-        ':hover': {
-          backgroundColor: 'green600',
-          boxShadow: 'none',
-        },
-        ':active': {
-          backgroundColor: 'green600',
-          boxShadow: 'none',
-        },
-      },
-      red: {
-        color: 'red600',
-      },
       ghost: {
         backgroundColor: 'transparent',
-        boxShadow: 'none',
-        fontWeight: '400',
+        borderWidth: '0',
         ':hover': {
           backgroundColor: 'gray200',
-          boxShadow: 'none',
         },
         ':active': {
           backgroundColor: 'gray300',
-          boxShadow: 'none',
+        },
+      },
+      raised: {
+        boxShadow: '0 16px 32px hsl(206deg 12% 5% / 25%), 0 3px 5px hsl(0deg 0% 0% / 10%)',
+        ':hover': {
+          boxShadow: '0 16px 32px hsl(206deg 12% 5% / 25%), 0 3px 5px hsl(0deg 0% 0% / 10%)',
+        },
+        ':active': {
+          backgroundColor: 'gray300',
         },
       },
     },
@@ -128,5 +109,3 @@ export const Button = styled.button(
     },
   }
 );
-
-export default Button;

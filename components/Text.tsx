@@ -5,42 +5,42 @@ export const Text = styled.span(
     // Reset
     lineHeight: '1',
     margin: '0',
-    fontWeight: '400',
+    fontWeight: 400,
 
     // Custom
     color: 'hiContrast',
   },
   {
     size: {
-      1: {
-        fontSize: 1,
+      '1': {
+        fontSize: '1',
       },
-      2: {
-        fontSize: 2,
+      '2': {
+        fontSize: '2',
       },
-      3: {
-        fontSize: 3,
+      '3': {
+        fontSize: '3',
       },
-      4: {
-        fontSize: 4,
+      '4': {
+        fontSize: '4',
       },
-      5: {
-        fontSize: 5,
+      '5': {
+        fontSize: '5',
       },
-      6: {
-        fontSize: 6,
+      '6': {
+        fontSize: '6',
         letterSpacing: '-.012em',
       },
-      7: {
-        fontSize: 7,
+      '7': {
+        fontSize: '7',
         letterSpacing: '-.021em',
       },
-      8: {
-        fontSize: 8,
+      '8': {
+        fontSize: '8',
         letterSpacing: '-.034em',
       },
-      9: {
-        fontSize: 9,
+      '9': {
+        fontSize: '9',
         letterSpacing: '-.055em',
       },
     },

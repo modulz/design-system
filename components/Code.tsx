@@ -6,7 +6,7 @@ export const Code = styled.code(
     backgroundColor: 'transparent',
     borderWidth: '0',
     boxSizing: 'border-box',
-    lineHeight: '1',
+    // lineHeight: '1',
     '::before': {
       boxSizing: 'border-box',
     },
@@ -40,8 +40,8 @@ export const Code = styled.code(
   {
     size: {
       large: {
-        px: 3,
-        fontSize: 2,
+        px: '3',
+        fontSize: '2',
       },
     },
     variant: {

@@ -4,28 +4,28 @@ export const Container = styled.div(
   {
     // Reset
     boxSizing: 'border-box',
-    flexShrink: '0',
+    flexShrink: 0,
 
     // Custom
     ml: 'auto',
     mr: 'auto',
-    px: 5,
+    px: '5',
   },
   {
     size: {
-      1: {
+      '1': {
         maxWidth: '300px',
       },
-      2: {
+      '2': {
         maxWidth: '585px',
       },
-      3: {
+      '3': {
         maxWidth: '865px',
       },
-      3: {
+      '4': {
         maxWidth: '1145px',
       },
-      4: {
+      '5': {
         maxWidth: 'none',
       },
     },

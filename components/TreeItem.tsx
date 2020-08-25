@@ -8,7 +8,7 @@ export const TreeItem = styled.div(
     display: 'flex',
     lineHeight: '1',
     userSelect: 'none',
-    webkitTapHighlightColor: 'transparent',
+    WebkitTapHighlightColor: 'transparent',
     ':disabled': {
       pointerEvents: 'none',
     },
@@ -21,7 +21,7 @@ export const TreeItem = styled.div(
 
     // Custom
     height: '29px',
-    px: 2,
+    px: '2',
     fontSize: '1',
     color: 'hiContrast',
   },
