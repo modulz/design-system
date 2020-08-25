@@ -6,8 +6,8 @@ import {
   TUtilityFirstCss,
   createCss,
   hashString,
-} from "@stitches/css";
-import * as React from "react";
+} from '@stitches/css';
+import * as React from 'react';
 
 interface IntrinsicElements {
   // HTML
@@ -193,11 +193,7 @@ interface IntrinsicElements {
 
 type ElKeys = keyof IntrinsicElements;
 
-type PolymorphicProps<
-  P,
-  E extends string | React.ComponentType,
-  T extends string
-> = P & {
+type PolymorphicProps<P, E extends string | React.ComponentType, T extends string> = P & {
   as?: E;
   forwardedAs?: E;
 } & (E extends ElKeys
@@ -212,19 +208,16 @@ type PolymorphicProps<
 
 export interface PolymorphicComponent<P, T extends string>
   extends React.ForwardRefExoticComponent<PolymorphicProps<P, T, T>> {
-  (
-    props: PolymorphicProps<P, T, T> & { as?: never; forwardedAs?: never }
-  ): React.ReactElement<PolymorphicProps<P, T, T>>;
+  (props: PolymorphicProps<P, T, T> & { as?: never; forwardedAs?: never }): React.ReactElement<
+    PolymorphicProps<P, T, T>
+  >;
   <E extends string | React.ComponentType = T>(
     props: PolymorphicProps<P, E, T>
   ): React.ReactElement<PolymorphicProps<P, E, T>>;
 }
 
 export interface IBaseStyled<CSS, BREAKPOINTS> {
-  <E extends string | React.ComponentType>(
-    element: E,
-    css?: CSS
-  ): E extends ElKeys
+  <E extends string | React.ComponentType>(element: E, css?: CSS): E extends ElKeys
     ? PolymorphicComponent<{ css?: CSS | (string & {}) }, E>
     : E extends PolymorphicComponent<infer EP, infer EE>
     ? PolymorphicComponent<EP & { css?: CSS | (string & {}) }, EE>
@@ -248,7 +241,7 @@ export interface IBaseStyled<CSS, BREAKPOINTS> {
             | ({
                 [S in keyof BREAKPOINTS]?: keyof V[P];
               } & {
-                ""?: keyof V[P];
+                ''?: keyof V[P];
               })
         : keyof V[P] | false | null | undefined;
     }
@@ -294,11 +287,7 @@ export interface IBaseStyled<CSS, BREAKPOINTS> {
     : never;
 }
 
-interface IStyledConstructor<
-  E extends string | React.ComponentType,
-  CSS,
-  BREAKPOINTS
-> {
+interface IStyledConstructor<E extends string | React.ComponentType, CSS, BREAKPOINTS> {
   (cb: CSS): E extends ElKeys
     ? PolymorphicComponent<
         {
@@ -337,7 +326,7 @@ interface IStyledConstructor<
             | ({
                 [S in keyof BREAKPOINTS]?: keyof V[P];
               } & {
-                ""?: keyof V[P];
+                ''?: keyof V[P];
               })
         : keyof V[P] | false | null | undefined;
     }
@@ -379,20 +368,18 @@ let hasWarnedInlineStyle = false;
 export const createStyled = <
   T extends TConfig,
   CSS = T extends { utilityFirst: true } ? TUtilityFirstCss<T> : TDefaultCss<T>,
-  BREAKPOINTS = T["breakpoints"]
+  BREAKPOINTS = T['breakpoints']
 >(
   config: T
 ): {
   css: TCss<T>;
   styled: IBaseStyled<CSS, BREAKPOINTS> &
     IStyled<CSS, BREAKPOINTS> & {
-      Box: <E extends ElKeys>(
-        props: JSX.IntrinsicElements[E] & { as?: E }
-      ) => JSX.Element;
+      Box: <E extends ElKeys>(props: JSX.IntrinsicElements[E] & { as?: E }) => JSX.Element;
     };
 } => {
   const css = createCss(config);
-  const defaultElement = "div";
+  const defaultElement = 'div';
   const Box = React.forwardRef((props: any, ref: React.Ref<Element>) => {
     const Element = props.as || defaultElement;
 
@@ -415,17 +402,14 @@ export const createStyled = <
     const as = currentAs;
 
     const baseStyles: any = css(baseStyling);
-    const evaluatedVariantMap: Map<
-      string,
-      Map<string, { [key: string]: string }>
-    > = new Map();
+    const evaluatedVariantMap: Map<string, Map<string, { [key: string]: string }>> = new Map();
     // tslint:disable-next-line
     for (const variantName in variants) {
       const variantMap: Map<string, { [key: string]: string }> = new Map();
       // tslint:disable-next-line
       for (const variant in variants[variantName]) {
         const breakpoints: { [key: string]: string } = {
-          "": css(variants[variantName][variant]),
+          '': css(variants[variantName][variant]),
         };
         if (configBreakpoints) {
           // tslint:disable-next-line
@@ -444,70 +428,60 @@ export const createStyled = <
       `${JSON.stringify(baseStyling)}${JSON.stringify(variants)}`
     )}`;
 
-    const StitchesComponent = React.forwardRef(
-      (props: any, ref: React.Ref<Element>) => {
-        const memoStyled = React.useMemo(() => props.css, []); // We want this to only eval once
+    const StitchesComponent = React.forwardRef((props: any, ref: React.Ref<Element>) => {
+      const memoStyled = React.useMemo(() => props.css, []); // We want this to only eval once
 
-        // Check the memoCompsition's identity to warn the user
-        // remove in production
-        if (process.env.NODE_ENV === "development") {
-          if (memoStyled !== props.css && !hasWarnedInlineStyle) {
-            // tslint:disable-next-line
-            console.warn(
-              "@stitches/styled : The css prop should ideally not be dynamic. Define it outside your component using the css composer, or use a memo hook"
-            );
-            hasWarnedInlineStyle = true;
-          }
+      // Check the memoCompsition's identity to warn the user
+      // remove in production
+      if (process.env.NODE_ENV === 'development') {
+        if (memoStyled !== props.css && !hasWarnedInlineStyle) {
+          // tslint:disable-next-line
+          console.warn(
+            '@stitches/styled : The css prop should ideally not be dynamic. Define it outside your component using the css composer, or use a memo hook'
+          );
+          hasWarnedInlineStyle = true;
         }
-
-        const compositions = [baseStyles];
-
-        const propsWithoutVariantsAndCssProp: any = {};
-
-        for (const propName in props) {
-          if (propName in variants) {
-            const breakpoints = evaluatedVariantMap.get(propName);
-
-            // check if prop value is a string and not an empty string
-            // otherwise assume its a responsive object
-            if (
-              typeof props[propName] === "string" &&
-              Boolean(props[propName])
-            ) {
-              // if a variant value has been provided, check it exists
-              // this prevents invalid variant values from crashing
-              if (breakpoints?.get(props[propName])) {
-                compositions.push(breakpoints?.get(props[propName])![""]);
-              }
-            } else if (props[propName]) {
-              // tslint:disable-next-line
-              for (const breakpoint in props[propName]) {
-                compositions.push(
-                  breakpoints?.get(props[propName][breakpoint])![breakpoint]
-                );
-              }
-            }
-          } else {
-            propsWithoutVariantsAndCssProp[propName] = props[propName];
-          }
-        }
-
-        if (propsWithoutVariantsAndCssProp.css) {
-          compositions.push(propsWithoutVariantsAndCssProp.css);
-          propsWithoutVariantsAndCssProp.css = undefined;
-        }
-
-        return React.createElement(Component, {
-          ...propsWithoutVariantsAndCssProp,
-          as: props.as || as,
-          ref,
-          className: `${stitchesComponentId} ${css(
-            ...compositions,
-            props.className
-          )}`,
-        });
       }
-    );
+
+      const compositions = [baseStyles];
+
+      const propsWithoutVariantsAndCssProp: any = {};
+
+      for (const propName in props) {
+        if (propName in variants) {
+          const breakpoints = evaluatedVariantMap.get(propName);
+
+          // check if prop value is a string and not an empty string
+          // otherwise assume its a responsive object
+          if (typeof props[propName] === 'string' && Boolean(props[propName])) {
+            // if a variant value has been provided, check it exists
+            // this prevents invalid variant values from crashing
+            if (breakpoints?.get(props[propName])) {
+              compositions.push(breakpoints?.get(props[propName])!['']);
+            }
+          } else if (props[propName]) {
+            // tslint:disable-next-line
+            for (const breakpoint in props[propName]) {
+              compositions.push(breakpoints?.get(props[propName][breakpoint])![breakpoint]);
+            }
+          }
+        } else {
+          propsWithoutVariantsAndCssProp[propName] = props[propName];
+        }
+      }
+
+      if (propsWithoutVariantsAndCssProp.css) {
+        compositions.push(propsWithoutVariantsAndCssProp.css);
+        propsWithoutVariantsAndCssProp.css = undefined;
+      }
+
+      return React.createElement(Component, {
+        ...propsWithoutVariantsAndCssProp,
+        as: props.as || as,
+        ref,
+        className: `${stitchesComponentId} ${css(...compositions, props.className)}`,
+      });
+    });
 
     StitchesComponent.toString = () => `.${stitchesComponentId}`;
 
@@ -517,14 +491,14 @@ export const createStyled = <
   // tslint:disable-next-line
   const styledProxy = new Proxy(() => {}, {
     get(_, prop) {
-      if (prop === "Box") {
+      if (prop === 'Box') {
         return Box;
       }
       currentAs = String(prop);
       return styledInstance;
     },
     apply(_, __, [Element, styling, variants]) {
-      if (typeof Element === "string") {
+      if (typeof Element === 'string') {
         currentAs = Element;
         return styledInstance(styling, variants);
       }
