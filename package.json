@@ -2,6 +2,10 @@
   "name": "@modulz/design-system",
   "version": "0.0.0",
   "private": true,
+  "main": "components/index.js",
+  "files": [
+    "components"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

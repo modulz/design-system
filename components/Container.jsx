@@ -1,6 +1,6 @@
 import { styled } from '../css';
 
-const Container = styled.div(
+export const Container = styled.div(
   {
     // Reset
     boxSizing: 'border-box',
@@ -31,5 +31,3 @@ const Container = styled.div(
     },
   }
 );
-
-export default Container;

@@ -1,6 +1,6 @@
 import { styled } from '../css';
 
-const Input = styled.input(
+export const Input = styled.input(
   {
     // Reset
     appearance: 'none',
@@ -74,5 +74,3 @@ const Input = styled.input(
     },
   }
 );
-
-export default Input;

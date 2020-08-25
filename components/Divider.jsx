@@ -1,6 +1,6 @@
 import { styled } from '../css';
 
-const Divider = styled.div(
+export const Divider = styled.div(
   {
     // Reset
     boxSizing: 'border-box',
@@ -25,5 +25,3 @@ const Divider = styled.div(
     },
   }
 );
-
-export default Divider;

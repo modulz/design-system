@@ -1,6 +1,6 @@
 import { styled } from '../css';
 
-const IconButton = styled.button(
+export const IconButton = styled.button(
   {
     // Reset
     alignItems: 'center',
@@ -109,5 +109,3 @@ const IconButton = styled.button(
     },
   }
 );
-
-export default IconButton;

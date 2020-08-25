@@ -1,6 +1,6 @@
 import { styled } from '../css';
 
-const Card = styled.div({
+export const Card = styled.div({
   // Reset
   boxSizing: 'border-box',
   flexShrink: '0',
@@ -9,5 +9,3 @@ const Card = styled.div({
   border: '1px solid gray400',
   borderRadius: 2,
 });
-
-export default Card;

@@ -1,6 +1,6 @@
 import { styled } from '../css';
 
-const Text = styled.span(
+export const Text = styled.span(
   {
     // Reset
     lineHeight: '1',
@@ -46,5 +46,3 @@ const Text = styled.span(
     },
   }
 );
-
-export default Text;

@@ -1,15 +1,15 @@
 import React from 'react';
-import Button from '../components/Button';
-import IconButton from '../components/IconButton';
-import Box from '../components/Box';
-import Flex from '../components/Flex';
-import Grid from '../components/Grid';
-import Badge from '../components/Badge';
-import Text from '../components/Text';
-import Divider from '../components/Divider';
-import Card from '../components/Card';
-import Input from '../components/Input';
-import TreeItem from '../components/TreeItem';
+import { Button } from '../components/Button';
+import { IconButton } from '../components/IconButton';
+import { Box } from '../components/Box';
+import { Flex } from '../components/Flex';
+import { Grid } from '../components/Grid';
+import { Badge } from '../components/Badge';
+import { Text } from '../components/Text';
+import { Divider } from '../components/Divider';
+import { Card } from '../components/Card';
+import { Input } from '../components/Input';
+import { TreeItem } from '../components/TreeItem';
 import { darkTheme } from '../css';
 
 function Home() {

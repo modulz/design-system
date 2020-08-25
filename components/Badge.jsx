@@ -1,6 +1,6 @@
 import { styled } from '../css';
 
-const Badge = styled.span(
+export const Badge = styled.span(
   {
     // Reset
     alignItems: 'center',
@@ -66,5 +66,3 @@ const Badge = styled.span(
     },
   }
 );
-
-export default Badge;

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import '../styles.css';
 import { darkTheme } from '../css';
 import { SwitchIcon } from '@modulz/radix-icons';
-import IconButton from '../components/IconButton';
+import { IconButton } from '../components/IconButton';
 
 function App({ Component, pageProps }) {
   const [theme, setTheme] = React.useState(darkTheme);

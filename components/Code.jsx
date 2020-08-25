@@ -1,6 +1,6 @@
 import { styled } from '../css';
 
-const Code = styled.code(
+export const Code = styled.code(
   {
     // Reset
     backgroundColor: 'transparent',
@@ -56,5 +56,3 @@ const Code = styled.code(
     },
   }
 );
-
-export default Code;

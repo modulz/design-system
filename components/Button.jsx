@@ -1,6 +1,6 @@
 import { styled } from '../css';
 
-const Button = styled.button(
+export const Button = styled.button(
   {
     // Reset
     alignItems: 'center',

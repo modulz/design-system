@@ -1,6 +1,6 @@
 import { styled } from '../css';
 
-const TreeItem = styled.div(
+export const TreeItem = styled.div(
   {
     // Reset
     alignItems: 'center',
@@ -52,5 +52,3 @@ const TreeItem = styled.div(
     },
   }
 );
-
-export default TreeItem;
