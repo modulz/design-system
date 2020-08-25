@@ -10,8 +10,8 @@
     "build": "next build",
     "start": "next start",
     "prettier": "prettier './**/*.{js,jsx,ts,tsx,json,yml,yaml,css,md,mdx}' --write",
-    "ds:build": "parcel index.js",
-    "ds:release": "np --no-2fa",
+    "ds:build": "parcel build index.js",
+    "ds:release": "yarn ds:build && np --no-2fa",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
