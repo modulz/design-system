@@ -104,7 +104,8 @@ const theme = {
 
 const { styled, css } = createStyled({
   tokens: theme,
-  screens: {
+  breakpoints: {
+    default: (rule) => rule,
     bp1: (rule) => `@media (min-width: 520px) { ${rule} }`,
     bp2: (rule) => `@media (min-width: 900px) { ${rule} }`,
     bp3: (rule) => `@media (min-width: 1200px) { ${rule} }`,
