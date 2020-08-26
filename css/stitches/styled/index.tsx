@@ -6,7 +6,7 @@ import {
   TUtilityFirstCss,
   createCss,
   hashString,
-} from '@stitches/css';
+} from '../css';
 import * as React from 'react';
 
 interface IntrinsicElements {
