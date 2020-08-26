@@ -1,6 +1,6 @@
 {
   "name": "@modulz/design-system",
-  "version": "0.0.0",
+  "version": "0.0.1-4",
   "private": true,
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -13,7 +13,7 @@
     "build": "next build",
     "start": "next start",
     "prettier": "prettier './**/*.{js,jsx,ts,tsx,json,yml,yaml,css,md,mdx}' --write",
-    "ds:rollup": "rollup -c",
+    "ds:build": "rollup -c",
     "ds:release": "yarn ds:build && np"
   },
   "dependencies": {
