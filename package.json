@@ -13,6 +13,7 @@
     "build": "next build",
     "start": "next start",
     "prettier": "prettier './**/*.{js,jsx,ts,tsx,json,yml,yaml,css,md,mdx}' --write",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "ds:build": "rollup -c",
     "ds:release": "yarn ds:build && np"
   },
