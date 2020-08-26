@@ -37,6 +37,7 @@ export const Button = styled.button(
     color: 'hiContrast',
     height: '5',
     px: '2',
+    fontFamily: 'untitled',
     fontSize: '2',
     fontWeight: 500,
     ':hover': {
