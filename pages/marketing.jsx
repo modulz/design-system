@@ -7,6 +7,7 @@ import { Flex } from '../components/Flex';
 import { Grid } from '../components/Grid';
 import { Badge } from '../components/Badge';
 import { Text } from '../components/Text';
+import { Link } from '../components/Link';
 import { Divider } from '../components/Divider';
 import { Code } from '../components/Code';
 import { Input } from '../components/Input';
@@ -188,6 +189,17 @@ function Marketing() {
             mt: 4,
           }}
         ></Flex>
+      </Container>
+      <Container size="2" css={{ my: 7 }}>
+        <Text size="4" as="p" css={{ lineHeight: '25px' }}>
+          There are 5 variants to choose from. Use is for
+          positive states. <Link css={{}} href="#">This is a link</Link> Traditional business literature won’t help you solve it- most of that
+          stuff is focused on life after product/market fit, after the Trough of Sorrow. A lot of
+          startup stuff is focused on the initial phases, when you don’t have a team, idea, or
+          investors.
+        </Text>
+        <Link variant="blue" css={{}} href="#">This is a link</Link>
+        <Link variant="subtle" css={{}} href="#">This is a link</Link>
       </Container>
     </Box>
   );
