@@ -1,16 +1,15 @@
 import { styled } from '../css';
 
-export const Text = styled.span(
-  {
-    // Reset
-    lineHeight: '1',
-    margin: '0',
-    fontWeight: 400,
+export const Text = styled.span({
+  // Reset
+  lineHeight: '1',
+  margin: '0',
+  fontWeight: 400,
 
-    // Custom
-    color: 'hiContrast',
-  },
-  {
+  // Custom
+  color: 'hiContrast',
+
+  variants: {
     size: {
       '1': {
         fontSize: '1',
@@ -44,5 +43,5 @@ export const Text = styled.span(
         letterSpacing: '-.055em',
       },
     },
-  }
-);
+  },
+});

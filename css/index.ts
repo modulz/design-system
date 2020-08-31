@@ -153,7 +153,7 @@ export const darkTheme = {
   },
 };
 
-const { styled, css } = createStyled({
+export const { styled, css } = createStyled({
   tokens: theme,
   breakpoints: {
     default: (rule) => rule,
@@ -167,55 +167,55 @@ const { styled, css } = createStyled({
     light: (rule) => `@media (prefers-color-scheme: light) { ${rule} }`,
   },
   utils: {
-    p: (config) => (value) => ({
+    p: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       paddingTop: value,
       paddingBottom: value,
       paddingLeft: value,
       paddingRight: value,
     }),
-    pt: (config) => (value) => ({
+    pt: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       paddingTop: value,
     }),
-    pr: (config) => (value) => ({
+    pr: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       paddingRight: value,
     }),
-    pb: (config) => (value) => ({
+    pb: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       paddingBottom: value,
     }),
-    pl: (config) => (value) => ({
+    pl: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       paddingLeft: value,
     }),
-    px: (config) => (value) => ({
+    px: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       paddingLeft: value,
       paddingRight: value,
     }),
-    py: (config) => (value) => ({
+    py: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       paddingTop: value,
       paddingBottom: value,
     }),
-    m: (config) => (value) => ({
+    m: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       marginTop: value,
       marginBottom: value,
       marginLeft: value,
       marginRight: value,
     }),
-    mt: (config) => (value) => ({
+    mt: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       marginTop: value,
     }),
-    mr: (config) => (value) => ({
+    mr: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       marginRight: value,
     }),
-    mb: (config) => (value) => ({
+    mb: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       marginBottom: value,
     }),
-    ml: (config) => (value) => ({
+    ml: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       marginLeft: value,
     }),
-    mx: (config) => (value) => ({
+    mx: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       marginLeft: value,
       marginRight: value,
     }),
-    my: (config) => (value) => ({
+    my: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
       marginTop: value,
       marginBottom: value,
     }),
@@ -233,23 +233,23 @@ const { styled, css } = createStyled({
     fs: (config) => (value) => ({ flexShrink: value }),
     fb: (config) => (value) => ({ flexBasis: value }),
 
-    bc: (config) => (value) => ({
+    bc: (config) => (value: keyof typeof theme['colors'] | (string & {})) => ({
       backgroundColor: value,
     }),
 
-    br: (config) => (value) => ({
+    br: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
       borderRadius: value,
     }),
-    btrr: (config) => (value) => ({
+    btrr: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
       borderTopRightRadius: value,
     }),
-    bbrr: (config) => (value) => ({
+    bbrr: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
       borderBottomRightRadius: value,
     }),
-    bblr: (config) => (value) => ({
+    bblr: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
       borderBottomLeftRadius: value,
     }),
-    btlr: (config) => (value) => ({
+    btlr: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
       borderTopLeftRadius: value,
     }),
 
@@ -266,5 +266,3 @@ const { styled, css } = createStyled({
 });
 
 export const darkThemeClass = css.theme(darkTheme);
-
-export { styled, css };

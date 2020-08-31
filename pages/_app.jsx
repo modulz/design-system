@@ -1,12 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
 import '../styles.css';
-import { darkTheme } from '../css';
+import { darkThemeClass } from '../css';
 import { SwitchIcon } from '@modulz/radix-icons';
 import { IconButton } from '../components/IconButton';
 
 function App({ Component, pageProps }) {
-  const [theme, setTheme] = React.useState(darkTheme);
+  const [theme, setTheme] = React.useState(darkThemeClass);
+  console.log(darkThemeClass);
 
   return (
     <div className={theme}>
@@ -20,7 +21,7 @@ function App({ Component, pageProps }) {
 
       <IconButton
         style={{ position: 'fixed', zIndex: 999, left: 15, bottom: 15 }}
-        onClick={() => setTheme(theme ? undefined : darkTheme)}
+        onClick={() => setTheme(theme ? undefined : darkThemeClass)}
       >
         <SwitchIcon />
       </IconButton>
