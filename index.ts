@@ -10,6 +10,7 @@ export { Grid } from './components/Grid';
 export { IconButton } from './components/IconButton';
 export { Image } from './components/Image';
 export { Input } from './components/Input';
+export { Link } from './components/Link';
 export { Text } from './components/Text';
 export { TreeItem } from './components/TreeItem';
 

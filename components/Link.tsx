@@ -4,7 +4,7 @@ export const Link = styled.a({
   // Reset
   boxSizing: 'border-box',
   flexShrink: 0,
-  lineHeight: '1',
+  // lineHeight: '1',
   outline: 'none',
   textDecoration: 'none',
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',
@@ -41,14 +41,14 @@ export const Link = styled.a({
         borderColor: 'transparent',
         ':hover': {
           borderColor: 'blue300',
-        }
+        },
       },
       subtle: {
         color: 'gray600',
         borderColor: 'transparent',
         ':hover': {
           borderColor: 'gray300',
-        }
+        },
       },
     },
   },
