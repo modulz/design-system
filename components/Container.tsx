@@ -1,17 +1,16 @@
 import { styled } from '../css';
 
-export const Container = styled.div(
-  {
-    // Reset
-    boxSizing: 'border-box',
-    flexShrink: 0,
+export const Container = styled.div({
+  // Reset
+  boxSizing: 'border-box',
+  flexShrink: 0,
 
-    // Custom
-    ml: 'auto',
-    mr: 'auto',
-    px: '5',
-  },
-  {
+  // Custom
+  ml: 'auto',
+  mr: 'auto',
+  px: '5',
+
+  variants: {
     size: {
       '1': {
         maxWidth: '300px',
@@ -29,5 +28,5 @@ export const Container = styled.div(
         maxWidth: 'none',
       },
     },
-  }
-);
+  },
+});

@@ -1,55 +1,54 @@
 import { styled } from '../css';
 
-export const IconButton = styled.button(
-  {
-    // Reset
-    alignItems: 'center',
-    appearance: 'none',
-    // backgroundColor: 'transparent',
-    borderWidth: '0',
+export const IconButton = styled.button({
+  // Reset
+  alignItems: 'center',
+  appearance: 'none',
+  // backgroundColor: 'transparent',
+  borderWidth: '0',
+  boxSizing: 'border-box',
+  display: 'inline-flex',
+  flexShrink: 0,
+  fontFamily: 'inherit',
+  fontSize: '14px',
+  justifyContent: 'center',
+  lineHeight: '1',
+  outline: 'none',
+  padding: '0',
+  textDecoration: 'none',
+  userSelect: 'none',
+  WebkitTapHighlightColor: 'transparent',
+  // ':disabled': {
+  //   pointerEvents: 'none',
+  // },
+  '::before': {
     boxSizing: 'border-box',
-    display: 'inline-flex',
-    flexShrink: 0,
-    fontFamily: 'inherit',
-    fontSize: '14px',
-    justifyContent: 'center',
-    lineHeight: '1',
-    outline: 'none',
-    padding: '0',
-    textDecoration: 'none',
-    userSelect: 'none',
-    WebkitTapHighlightColor: 'transparent',
-    // ':disabled': {
-    //   pointerEvents: 'none',
-    // },
-    '::before': {
-      boxSizing: 'border-box',
-    },
-    '::after': {
-      boxSizing: 'border-box',
-    },
-
-    // Custom
-    backgroundColor: 'loContrast',
-    border: '1px solid gray400',
-    borderRadius: 'round',
-    color: 'hiContrast',
-    height: '5',
-    width: '5',
-    transition: 'all 40ms linear',
-    ':hover': {
-      borderColor: 'gray500',
-    },
-    ':active': {
-      backgroundColor: 'gray100',
-    },
-    ':disabled': {
-      pointerEvents: 'none',
-      backgroundColor: 'transparent',
-      color: 'gray500',
-    },
   },
-  {
+  '::after': {
+    boxSizing: 'border-box',
+  },
+
+  // Custom
+  backgroundColor: 'loContrast',
+  border: '1px solid gray400',
+  borderRadius: 'round',
+  color: 'hiContrast',
+  height: '5',
+  width: '5',
+  transition: 'all 40ms linear',
+  ':hover': {
+    borderColor: 'gray500',
+  },
+  ':active': {
+    backgroundColor: 'gray100',
+  },
+  ':disabled': {
+    pointerEvents: 'none',
+    backgroundColor: 'transparent',
+    color: 'gray500',
+  },
+
+  variants: {
     size: {
       large: {
         height: '6',
@@ -107,5 +106,5 @@ export const IconButton = styled.button(
         },
       },
     },
-  }
-);
+  },
+});

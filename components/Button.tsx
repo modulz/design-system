@@ -1,59 +1,58 @@
 import { styled } from '../css';
 
-export const Button = styled.button(
-  {
-    // Reset
-    alignItems: 'center',
-    appearance: 'none',
-    // backgroundColor: 'transparent',
-    // boxShadow: 'none',
+export const Button = styled.button({
+  // Reset
+  alignItems: 'center',
+  appearance: 'none',
+  // backgroundColor: 'transparent',
+  // boxShadow: 'none',
+  boxSizing: 'border-box',
+  display: 'inline-flex',
+  // flexShrink: '0',
+  fontFamily: 'inherit',
+  // fontSize: '14px',
+  justifyContent: 'center',
+  lineHeight: '1',
+  outline: 'none',
+  padding: '0',
+  textDecoration: 'none',
+  userSelect: 'none',
+  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+  // ':disabled': {
+  //   pointerEvents: 'none',
+  // },
+  '::before': {
     boxSizing: 'border-box',
-    display: 'inline-flex',
-    // flexShrink: '0',
-    fontFamily: 'inherit',
-    // fontSize: '14px',
-    justifyContent: 'center',
-    lineHeight: '1',
-    outline: 'none',
-    padding: '0',
-    textDecoration: 'none',
-    userSelect: 'none',
-    WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-    // ':disabled': {
-    //   pointerEvents: 'none',
-    // },
-    '::before': {
-      boxSizing: 'border-box',
-    },
-    '::after': {
-      boxSizing: 'border-box',
-    },
-
-    // Custom
-    backgroundColor: 'loContrast',
-    border: 'none',
-    boxShadow: 'inset 0 0 0 1px gray400',
-    borderRadius: '1',
-    color: 'hiContrast',
-    height: '5',
-    px: '2',
-    fontSize: '2',
-    fontWeight: 500,
-    ':hover': {
-      boxShadow: 'inset 0 0 0 1px gray500',
-    },
-    ':active': {
-      backgroundColor: 'gray100',
-      boxShadow: 'inset 0 0 0 1px gray500',
-    },
-    ':disabled': {
-      pointerEvents: 'none',
-      backgroundColor: 'gray200',
-      boxShadow: 'inset 0 0 0 1px gray400',
-      color: 'gray400',
-    },
   },
-  {
+  '::after': {
+    boxSizing: 'border-box',
+  },
+
+  // Custom
+  backgroundColor: 'loContrast',
+  border: 'none',
+  boxShadow: 'inset 0 0 0 1px gray400',
+  borderRadius: '1',
+  color: 'hiContrast',
+  height: '5',
+  px: '2',
+  fontSize: '2',
+  fontWeight: 500,
+  ':hover': {
+    boxShadow: 'inset 0 0 0 1px gray500',
+  },
+  ':active': {
+    backgroundColor: 'gray100',
+    boxShadow: 'inset 0 0 0 1px gray500',
+  },
+  ':disabled': {
+    pointerEvents: 'none',
+    backgroundColor: 'gray200',
+    boxShadow: 'inset 0 0 0 1px gray400',
+    color: 'gray400',
+  },
+
+  variants: {
     size: {
       large: {
         height: '6',
@@ -127,5 +126,5 @@ export const Button = styled.button(
         },
       },
     },
-  }
-);
+  },
+});
