@@ -9,7 +9,7 @@ export const Button = styled.button({
   boxSizing: 'border-box',
   display: 'inline-flex',
   // flexShrink: '0',
-  fontFamily: 'inherit',
+  // fontFamily: 'inherit',
   // fontSize: '14px',
   justifyContent: 'center',
   lineHeight: '1',
@@ -35,7 +35,8 @@ export const Button = styled.button({
   borderRadius: '1',
   color: 'hiContrast',
   height: '5',
-  px: '2',
+	px: '2',
+	fontFamily: 'untitled',
   fontSize: '2',
   fontWeight: 500,
   ':hover': {
