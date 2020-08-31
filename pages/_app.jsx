@@ -7,7 +7,6 @@ import { IconButton } from '../components/IconButton';
 
 function App({ Component, pageProps }) {
   const [theme, setTheme] = React.useState(darkThemeClass);
-  console.log(darkThemeClass);
 
   return (
     <div className={theme}>
