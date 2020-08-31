@@ -263,12 +263,12 @@ export const { styled, css } = createStyled({
     pe: (config) => (value) => ({ pointerEvents: value }),
     us: (config) => (value) => ({ userSelect: value }),
 
-    size: () => (value: keyof typeof theme['sizes'] | (string & {})) => ({
+    size: (config) => (value: keyof typeof theme['sizes'] | (string & {})) => ({
       width: value,
       height: value,
     }),
 
-    linearGradient: () => (value) => ({
+    linearGradient: (config) => (value) => ({
       backgroundImage: `linear-gradient(${value})`,
     }),
   },
