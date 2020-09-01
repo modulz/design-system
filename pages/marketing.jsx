@@ -17,7 +17,7 @@ import { darkTheme } from '../css';
 
 function Marketing() {
   return (
-    <Box css={{ bc: 'loContrast', minHeight: '100%' }}>
+    <Box css={{ bc: '$loContrast', minHeight: '100%' }}>
       <Box as="header" css={{ py: 4 }}>
         <Container size="4">
           <Flex css={{ justifyContent: 'space-between' }}>
@@ -64,13 +64,13 @@ function Marketing() {
               </svg>
             </IconButton>
             <Flex>
-              <Text size="3" css={{ color: 'gray600', ml: 7 }}>
+              <Text size="3" css={{ color: '$gray600', ml: 7 }}>
                 Documentation
               </Text>
-              <Text size="3" css={{ color: 'gray600', ml: 7 }}>
+              <Text size="3" css={{ color: '$gray600', ml: 7 }}>
                 About
               </Text>
-              <Text size="3" css={{ color: 'gray600', ml: 7 }}>
+              <Text size="3" css={{ color: '$gray600', ml: 7 }}>
                 Blog
               </Text>
             </Flex>
@@ -83,12 +83,12 @@ function Marketing() {
         </Text>
       </Container>
       <Container size="2">
-        <Text as="h2" size="6" css={{ color: 'gray600', textAlign: 'center', lineHeight: '30px' }}>
+        <Text as="h2" size="6" css={{ color: '$gray600', textAlign: 'center', lineHeight: '30px' }}>
           Near-zero runtime, server-side rendering, multi-variant support, and a best-in-class
           developer experience.
         </Text>
         <Flex css={{ justifyContent: 'center' }}>
-          <Text size="5" css={{ color: 'blue600', mt: 9 }}>
+          <Text size="5" css={{ color: '$blue600', mt: 9 }}>
             Documentation
           </Text>
         </Flex>
@@ -127,9 +127,9 @@ function Marketing() {
           css={{
             width: 4,
             height: 4,
-            backgroundColor: 'blue300',
-            boxShadow: 'inset 0 0 0 1px blue400',
-            color: 'blue600',
+            backgroundColor: '$blue300',
+            boxShadow: 'inset 0 0 0 1px $blue400',
+            color: '$blue600',
             borderRadius: '3px',
             alignItems: 'center',
             justifyContent: 'center',
@@ -154,8 +154,8 @@ function Marketing() {
           css={{
             width: 4,
             height: 4,
-            boxShadow: 'inset 0 0 0 1px gray400',
-            color: 'blue600',
+            boxShadow: 'inset 0 0 0 1px $gray400',
+            color: '$blue600',
             borderRadius: '3px',
             alignItems: 'center',
             justifyContent: 'center',
@@ -168,21 +168,23 @@ function Marketing() {
           css={{
             width: 4,
             height: 4,
-            boxShadow: 'inset 0 0 0 1px blue500',
-            color: 'blue600',
+            boxShadow: 'inset 0 0 0 1px $blue500',
+            color: '$blue600',
             borderRadius: '50%',
             alignItems: 'center',
             justifyContent: 'center',
           }}
         >
-          <Box css={{ width: 2, height: 2, backgroundColor: 'blue500', borderRadius: '50%' }}></Box>
+          <Box
+            css={{ width: 2, height: 2, backgroundColor: '$blue500', borderRadius: '50%' }}
+          ></Box>
         </Flex>
         <Flex
           css={{
             width: 4,
             height: 4,
-            boxShadow: 'inset 0 0 0 1px gray400',
-            color: 'blue600',
+            boxShadow: 'inset 0 0 0 1px $gray400',
+            color: '$blue600',
             borderRadius: '50%',
             alignItems: 'center',
             justifyContent: 'center',
@@ -192,14 +194,20 @@ function Marketing() {
       </Container>
       <Container size="2" css={{ my: 7 }}>
         <Text size="4" as="p" css={{ lineHeight: '25px' }}>
-          There are 5 variants to choose from. Use is for
-          positive states. <Link css={{}} href="#">This is a link</Link> Traditional business literature won’t help you solve it- most of that
-          stuff is focused on life after product/market fit, after the Trough of Sorrow. A lot of
-          startup stuff is focused on the initial phases, when you don’t have a team, idea, or
-          investors.
+          There are 5 variants to choose from. Use is for positive states.{' '}
+          <Link css={{}} href="#">
+            This is a link
+          </Link>{' '}
+          Traditional business literature won’t help you solve it- most of that stuff is focused on
+          life after product/market fit, after the Trough of Sorrow. A lot of startup stuff is
+          focused on the initial phases, when you don’t have a team, idea, or investors.
         </Text>
-        <Link variant="blue" css={{}} href="#">This is a link</Link>
-        <Link variant="subtle" css={{}} href="#">This is a link</Link>
+        <Link variant="blue" css={{}} href="#">
+          This is a link
+        </Link>
+        <Link variant="subtle" css={{}} href="#">
+          This is a link
+        </Link>
       </Container>
     </Box>
   );

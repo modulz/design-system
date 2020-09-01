@@ -13,9 +13,9 @@ export const Code = styled.code({
   },
 
   // Custom
-  backgroundColor: 'purple200',
-  color: 'purple600',
-  fontFamily: 'mono',
+  backgroundColor: '$purple200',
+  color: '$purple600',
+  fontFamily: '$mono',
   mx: '.05em',
   pl: '.35em',
   pr: '.25em',
@@ -27,18 +27,18 @@ export const Code = styled.code({
   variants: {
     size: {
       large: {
-        px: '3',
-        fontSize: '2',
+        px: '$3',
+        fontSize: '$2',
       },
     },
     variant: {
       blue: {
-        backgroundColor: 'blue200',
-        color: 'blue600',
+        backgroundColor: '$blue200',
+        color: '$blue600',
       },
       green: {
-        backgroundColor: 'green200',
-        color: 'green600',
+        backgroundColor: '$green200',
+        color: '$green600',
       },
     },
   },

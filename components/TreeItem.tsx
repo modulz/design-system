@@ -20,33 +20,33 @@ export const TreeItem = styled.div({
 
   // Custom
   height: '29px',
-  px: '2',
-  fontSize: '1',
-  color: 'hiContrast',
+  px: '$2',
+  fontSize: '$1',
+  color: '$hiContrast',
 
   variants: {
     variant: {
       blue: {
-        backgroundColor: 'blue300',
+        backgroundColor: '$blue300',
       },
       blueHighlighted: {
-        backgroundColor: 'blue200',
+        backgroundColor: '$blue200',
       },
       purple: {
-        backgroundColor: 'purple300',
-        color: 'purple600',
+        backgroundColor: '$purple300',
+        color: '$purple600',
       },
       purpleSelected: {
-        backgroundColor: 'purple300',
+        backgroundColor: '$purple300',
       },
       purpleHighlighted: {
-        backgroundColor: 'purple200',
+        backgroundColor: '$purple200',
       },
       yellowSelected: {
-        backgroundColor: 'yellow300',
+        backgroundColor: '$yellow300',
       },
       yellowHighlighted: {
-        backgroundColor: 'yellow200',
+        backgroundColor: '$yellow200',
       },
     },
   },

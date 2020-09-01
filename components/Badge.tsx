@@ -29,38 +29,38 @@ export const Badge = styled.span({
   },
 
   // Custom
-  backgroundColor: 'gray200',
-  borderRadius: 'pill',
-  color: 'gray600',
-  height: '3',
-  px: '1',
-  fontSize: '1',
+  backgroundColor: '$gray200',
+  borderRadius: '$pill',
+  color: '$gray600',
+  height: '$3',
+  px: '$1',
+  fontSize: '$1',
   whiteSpace: 'nowrap',
 
   variants: {
     size: {
       large: {
-        height: '5',
-        px: '3',
-        fontSize: '2',
+        height: '$5',
+        px: '$3',
+        fontSize: '$2',
       },
     },
     variant: {
       blue: {
-        backgroundColor: 'blue200',
-        color: 'blue600',
+        backgroundColor: '$blue200',
+        color: '$blue600',
       },
       green: {
-        backgroundColor: 'green200',
-        color: 'green600',
+        backgroundColor: '$green200',
+        color: '$green600',
       },
       red: {
-        backgroundColor: 'red200',
-        color: 'red600',
+        backgroundColor: '$red200',
+        color: '$red600',
       },
       yellow: {
-        backgroundColor: 'yellow200',
-        color: 'yellow600',
+        backgroundColor: '$yellow200',
+        color: '$yellow600',
       },
     },
   },

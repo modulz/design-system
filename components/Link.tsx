@@ -19,35 +19,35 @@ export const Link = styled.a({
   },
 
   // Custom
-  color: 'hiContrast',
-  borderBottom: '1px solid gray400',
+  color: '$hiContrast',
+  borderBottom: '1px solid $gray400',
   lineHeight: 'inherit',
   transition: 'all 50ms linear',
   ':hover': {
-    borderColor: 'gray500',
+    borderColor: '$gray500',
   },
   variants: {
     size: {
       large: {
-        height: '5',
-        px: '3',
-        fontSize: '2',
+        height: '$5',
+        px: '$3',
+        fontSize: '$2',
       },
     },
     variant: {
       blue: {
-        color: 'blue600',
+        color: '$blue600',
         textDecoration: 'none',
         borderColor: 'transparent',
         ':hover': {
-          borderColor: 'blue300',
+          borderColor: '$blue300',
         },
       },
       subtle: {
-        color: 'gray600',
+        color: '$gray600',
         borderColor: 'transparent',
         ':hover': {
-          borderColor: 'gray300',
+          borderColor: '$gray300',
         },
       },
     },

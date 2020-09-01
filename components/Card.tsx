@@ -6,6 +6,6 @@ export const Card = styled.div({
   flexShrink: 0,
 
   // Custom
-  border: '1px solid gray400',
-  borderRadius: '2',
+  border: '1px solid $gray400',
+  borderRadius: '$2',
 });

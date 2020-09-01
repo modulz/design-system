@@ -21,14 +21,14 @@ function Home() {
           top: 0,
           left: 0,
           width: '100%',
-          backgroundColor: 'loContrast',
-          py: 2,
+          backgroundColor: '$loContrast',
+          py: '$2',
           borderBottomWidth: '1px',
           borderBottomStyle: 'solid',
-          borderBottomColor: 'gray300',
+          borderBottomColor: '$gray300',
         }}
       >
-        <Flex css={{ justifyContent: 'space-between', px: 2 }}>
+        <Flex css={{ justifyContent: 'space-between', px: '$2' }}>
           <Flex>
             <IconButton variant="ghost">
               <svg
@@ -158,7 +158,7 @@ function Home() {
               </svg>
             </IconButton>
             <Button variant="blue">
-              <Box css={{ mr: '1' }}>
+              <Box css={{ mr: '$1' }}>
                 <svg
                   width="15"
                   height="15"
@@ -176,7 +176,7 @@ function Home() {
               </Box>
               Share
             </Button>
-            <Divider orientation="vertical" css={{ mx: 3 }} />
+            <Divider orientation="vertical" css={{ mx: '$3' }} />
             <IconButton variant="ghost">
               <svg
                 width="15"
@@ -204,14 +204,14 @@ function Home() {
             left: 0,
             bottom: 0,
             width: '250px',
-            backgroundColor: 'loContrast',
+            backgroundColor: '$loContrast',
             borderRightWidth: '1px',
             borderRightStyle: 'solid',
-            borderColor: 'canvas',
+            borderColor: '$canvas',
           }}
         >
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'gray500' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500' }}>
               <svg
                 width="15"
                 height="15"
@@ -223,10 +223,10 @@ function Home() {
                 <circle cx="7.5" cy="7.5" r="2.5" fill="currentColor" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'gray500' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500' }}>
               <svg
                 width="15"
                 height="15"
@@ -238,10 +238,10 @@ function Home() {
                 <circle cx="10.5" cy="7.5" r="4" stroke="currentColor" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'gray500' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500' }}>
               <svg
                 width="15"
                 height="15"
@@ -254,10 +254,10 @@ function Home() {
                 <path d="M10.5 7.5H14.5" stroke="currentColor" strokeLinecap="round" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'gray500' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500' }}>
               <svg
                 width="15"
                 height="15"
@@ -285,10 +285,10 @@ function Home() {
                 />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'gray500' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500' }}>
               <svg
                 width="15"
                 height="15"
@@ -300,10 +300,10 @@ function Home() {
                 <circle cx="7.5" cy="7.5" r="2.5" fill="currentColor" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="blue" css={{ px: 4 }}>
-            <Box css={{ color: 'gray500' }}>
+          <TreeItem variant="blue" css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500' }}>
               <svg
                 width="15"
                 height="15"
@@ -315,10 +315,10 @@ function Home() {
                 <circle cx="10.5" cy="7.5" r="4" stroke="currentColor" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="blueHighlighted" css={{ px: 4, pl: 6 }}>
-            <Box css={{ color: 'gray500' }}>
+          <TreeItem variant="blueHighlighted" css={{ px: '$4', pl: '$6' }}>
+            <Box css={{ color: '$gray500' }}>
               <svg
                 width="15"
                 height="15"
@@ -330,10 +330,10 @@ function Home() {
                 <circle cx="10.5" cy="7.5" r="4" stroke="currentColor" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="blueHighlighted" css={{ px: 4, pl: 8 }}>
-            <Box css={{ color: 'gray500' }}>
+          <TreeItem variant="blueHighlighted" css={{ px: '$4', pl: '$8' }}>
+            <Box css={{ color: '$gray500' }}>
               <svg
                 width="15"
                 height="15"
@@ -345,10 +345,10 @@ function Home() {
                 <circle cx="10.5" cy="7.5" r="4" stroke="currentColor" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="blueHighlighted" css={{ px: 4, pl: 8 }}>
-            <Box css={{ color: 'purple600' }}>
+          <TreeItem variant="blueHighlighted" css={{ px: '$4', pl: '$8' }}>
+            <Box css={{ color: '$purple600' }}>
               <svg
                 width="15"
                 height="15"
@@ -360,10 +360,10 @@ function Home() {
                 <circle cx="10.5" cy="7.5" r="4" stroke="currentColor" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'purple600' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: '$purple600' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="blueHighlighted" css={{ px: 4, pl: 8 }}>
-            <Box css={{ color: 'purple600' }}>
+          <TreeItem variant="blueHighlighted" css={{ px: '$4', pl: '$8' }}>
+            <Box css={{ color: '$purple600' }}>
               <svg
                 width="15"
                 height="15"
@@ -375,10 +375,10 @@ function Home() {
                 <circle cx="10.5" cy="7.5" r="4" stroke="currentColor" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'purple600' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: '$purple600' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'gray500', mr: 2 }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500', mr: '$2' }}>
               <svg
                 width="15"
                 height="15"
@@ -397,8 +397,8 @@ function Home() {
             </Box>
             Flex
           </TreeItem>
-          <TreeItem css={{ px: 4, pl: 6 }}>
-            <Box css={{ color: 'gray500', mr: 2 }}>
+          <TreeItem css={{ px: '$4', pl: '$6' }}>
+            <Box css={{ color: '$gray500', mr: '$2' }}>
               <svg
                 width="15"
                 height="15"
@@ -417,8 +417,8 @@ function Home() {
             </Box>
             Flex
           </TreeItem>
-          <TreeItem css={{ px: 4, pl: 8 }}>
-            <Box css={{ color: 'gray500', mr: 2 }}>
+          <TreeItem css={{ px: '$4', pl: '$8' }}>
+            <Box css={{ color: '$gray500', mr: '$2' }}>
               <svg
                 width="15"
                 height="15"
@@ -437,8 +437,8 @@ function Home() {
             </Box>
             Button
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'gray500', mr: 2 }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500', mr: '$2' }}>
               <svg
                 width="15"
                 height="15"
@@ -457,8 +457,8 @@ function Home() {
             </Box>
             Flex
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'gray500', mr: 2 }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500', mr: '$2' }}>
               <svg
                 width="15"
                 height="15"
@@ -477,7 +477,7 @@ function Home() {
             </Box>
             Flex
           </TreeItem>
-          <TreeItem variant="purpleSelected" css={{ px: 4 }}>
+          <TreeItem variant="purpleSelected" css={{ px: '$4' }}>
             <svg
               width="15"
               height="15"
@@ -493,9 +493,9 @@ function Home() {
                 strokeLinejoin="round"
               />
             </svg>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="purpleHighlighted" css={{ px: 4, pl: 6 }}>
+          <TreeItem variant="purpleHighlighted" css={{ px: '$4', pl: '$6' }}>
             <svg
               width="15"
               height="15"
@@ -511,9 +511,9 @@ function Home() {
                 strokeLinejoin="round"
               />
             </svg>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="purpleHighlighted" css={{ px: 4, pl: 8 }}>
+          <TreeItem variant="purpleHighlighted" css={{ px: '$4', pl: '$8' }}>
             <svg
               width="15"
               height="15"
@@ -529,9 +529,9 @@ function Home() {
                 strokeLinejoin="round"
               />
             </svg>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="purpleHighlighted" css={{ px: 4, pl: 8 }}>
+          <TreeItem variant="purpleHighlighted" css={{ px: '$4', pl: '$8' }}>
             <svg
               width="15"
               height="15"
@@ -547,10 +547,10 @@ function Home() {
                 strokeLinejoin="round"
               />
             </svg>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="purpleHighlighted" css={{ px: 4, pl: 8 }}>
-            <Box css={{ color: 'purple600' }}>
+          <TreeItem variant="purpleHighlighted" css={{ px: '$4', pl: '$8' }}>
+            <Box css={{ color: '$purple600' }}>
               <svg
                 width="15"
                 height="15"
@@ -567,10 +567,10 @@ function Home() {
                 />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'purple600' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: '$purple600' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'gray500' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500' }}>
               <svg
                 width="15"
                 height="15"
@@ -587,10 +587,10 @@ function Home() {
                 />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'gray500' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500' }}>
               <svg
                 width="15"
                 height="15"
@@ -602,10 +602,10 @@ function Home() {
                 <circle cx="7.5" cy="7.5" r="2.5" fill="currentColor" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'gray500' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500' }}>
               <svg
                 width="15"
                 height="15"
@@ -617,10 +617,10 @@ function Home() {
                 <circle cx="10.5" cy="7.5" r="4" stroke="currentColor" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'gray500' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500' }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"
@@ -646,9 +646,9 @@ function Home() {
                 />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="yellowSelected" css={{ px: 4 }}>
+          <TreeItem variant="yellowSelected" css={{ px: '$4' }}>
             <svg
               width="15"
               height="15"
@@ -664,9 +664,9 @@ function Home() {
                 strokeLinejoin="round"
               />
             </svg>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="yellowHighlighted" css={{ px: 4, pl: 6 }}>
+          <TreeItem variant="yellowHighlighted" css={{ px: '$4', pl: '$6' }}>
             <svg
               width="15"
               height="15"
@@ -682,9 +682,9 @@ function Home() {
                 strokeLinejoin="round"
               />
             </svg>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="yellowHighlighted" css={{ px: 4, pl: 8 }}>
+          <TreeItem variant="yellowHighlighted" css={{ px: '$4', pl: '$8' }}>
             <svg
               width="15"
               height="15"
@@ -700,9 +700,9 @@ function Home() {
                 strokeLinejoin="round"
               />
             </svg>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="yellowHighlighted" css={{ px: 4, pl: 8 }}>
+          <TreeItem variant="yellowHighlighted" css={{ px: '$4', pl: '$8' }}>
             <svg
               width="15"
               height="15"
@@ -718,10 +718,10 @@ function Home() {
                 strokeLinejoin="round"
               />
             </svg>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem variant="yellowHighlighted" css={{ px: 4, pl: 8 }}>
-            <Box css={{ color: 'purple600' }}>
+          <TreeItem variant="yellowHighlighted" css={{ px: '$4', pl: '$8' }}>
+            <Box css={{ color: '$purple600' }}>
               <svg
                 width="15"
                 height="15"
@@ -738,10 +738,10 @@ function Home() {
                 />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'purple600' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: '$purple600' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'gray500' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$gray500' }}>
               <svg
                 width="15"
                 height="15"
@@ -758,10 +758,10 @@ function Home() {
                 />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'purple600' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$purple600' }}>
               <svg
                 width="15"
                 height="15"
@@ -773,10 +773,10 @@ function Home() {
                 <circle cx="7.5" cy="7.5" r="2.5" fill="currentColor" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'purple600' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$purple600' }}>
               <svg
                 width="15"
                 height="15"
@@ -788,10 +788,10 @@ function Home() {
                 <circle cx="10.5" cy="7.5" r="4" stroke="currentColor" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'purple600' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$purple600' }}>
               <svg
                 width="15"
                 height="15"
@@ -804,10 +804,10 @@ function Home() {
                 <path d="M10.5 7.5H14.5" stroke="currentColor" strokeLinecap="round" />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
-          <TreeItem css={{ px: 4 }}>
-            <Box css={{ color: 'purple600' }}>
+          <TreeItem css={{ px: '$4' }}>
+            <Box css={{ color: '$purple600' }}>
               <svg
                 width="15"
                 height="15"
@@ -835,10 +835,10 @@ function Home() {
                 />
               </svg>
             </Box>
-            <Text css={{ ml: 2, color: 'inherit' }}>Flex</Text>
+            <Text css={{ ml: '$2', color: 'inherit' }}>Flex</Text>
           </TreeItem>
         </Box>
-        <Box css={{ backgroundColor: 'canvas', height: '100vh', width: '100vw' }}></Box>
+        <Box css={{ backgroundColor: '$canvas', height: '100vh', width: '100vw' }}></Box>
         <Box
           css={{
             position: 'absolute',
@@ -847,31 +847,31 @@ function Home() {
             bottom: 0,
             width: '250px',
             flexShrink: 0,
-            backgroundColor: 'loContrast',
+            backgroundColor: '$loContrast',
             borderLeftWidth: '1px',
             borderLeftStyle: 'solid',
-            borderColor: 'canvas',
-            p: 3,
+            borderColor: '$canvas',
+            p: '$3',
           }}
         >
-          <Box css={{ mb: 3 }}>
+          <Box css={{ mb: '$3' }}>
             <Input placeholder="This is an input" cursor="default" />
           </Box>
-          <Box css={{ mb: 3 }}>
+          <Box css={{ mb: '$3' }}>
             <Input size="large" placeholder="This is a large input" />
           </Box>
-          <Box css={{ mb: 3 }}>
+          <Box css={{ mb: '$3' }}>
             <Input variant="ghost" placeholder="This is a ghost input" />
           </Box>
-          <Card css={{ p: 3 }}>
-            <Text as="p" size="2" css={{ lineHeight: '20px', mb: 1 }}>
+          <Card css={{ p: '$3' }}>
+            <Text as="p" size="2" css={{ lineHeight: '20px', mb: '$1' }}>
               If possible, we should revert to our older syntax with a separate variant block.
             </Text>
-            <Text as="p" size="2" css={{ lineHeight: '20px', color: 'gray600', mb: 2 }}>
+            <Text as="p" size="2" css={{ lineHeight: '20px', color: '$gray600', mb: '$2' }}>
               The current variant syntax is very confusing in long files.
             </Text>
             <Button>
-              <Box css={{ mr: '1' }}>
+              <Box css={{ mr: '$1' }}>
                 <svg
                   width="15"
                   height="15"
@@ -890,7 +890,7 @@ function Home() {
               Button
             </Button>
           </Card>
-          <Text as="p" size="3" css={{ lineHeight: '20px', color: 'blue600', my: 6 }}>
+          <Text as="p" size="3" css={{ lineHeight: '20px', color: '$blue600', my: 6 }}>
             This is a link
           </Text>
         </Box>
@@ -916,8 +916,8 @@ function Home() {
           bottom: 0,
           width: '160px',
           height: '250px',
-          backgroundColor: 'loContrast',
-          borderRadius: 2,
+          backgroundColor: '$loContrast',
+          borderRadius: '$2',
           boxShadow:
             '0 0.4px 0px -10px rgba(0, 0, 0, 0.043), 0 0.9px 0.3px -10px rgba(0, 0, 0, 0.063), 0 1.6px 0.8px -10px rgba(0, 0, 0, 0.077), 0 2.5px 1.8px -10px rgba(0, 0, 0, 0.09), 0 3.9px 3.5px -10px rgba(0, 0, 0, 0.103), 0 6px 6.6px -10px rgba(0, 0, 0, 0.117), 0 10px 13.5px -10px rgba(0, 0, 0, 0.137), 0 20px 35px -10px rgba(0, 0, 0, 0.18)',
         }}
