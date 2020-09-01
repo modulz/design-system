@@ -1,4 +1,4 @@
-import { createStyled } from '@stitches/styled';
+import { createStyled } from '@stitches/react';
 
 export const theme = {
   colors: {
