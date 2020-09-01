@@ -2,7 +2,6 @@ import { styled } from '../css';
 
 export const Code = styled.code({
   // Reset
-  backgroundColor: 'transparent',
   borderWidth: '0',
   boxSizing: 'border-box',
   // lineHeight: '1',
