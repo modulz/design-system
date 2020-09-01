@@ -14,27 +14,16 @@ export const Code = styled.code({
   },
 
   // Custom
+  backgroundColor: 'purple200',
   color: 'purple600',
-  position: 'relative',
   fontFamily: 'mono',
   mx: '.05em',
-  // pl: '.35em',
-  // pr: '.25em',
+  pl: '.35em',
+  pr: '.25em',
   // py: '.05em',
   // pb: '.125em',
-  fontSize: 'max(12px, 90%)',
-  lineHeight: '20px',
+  fontSize: 'max(12px, 85%)',
   whiteSpace: 'nowrap',
-  '&::after': {
-    backgroundColor: 'purple200',
-    content: "''",
-    position: 'absolute',
-    top: '-3px',
-    left: '-3px',
-    width: 'calc(100% + 6px)',
-    height: 'calc(100% + 6px)',
-    zIndex: -1,
-  },
 
   variants: {
     size: {
