@@ -103,7 +103,6 @@ export const theme = {
 };
 
 export const darkTheme = {
-  colors: {
     hiContrast: 'hsl(206,2%,93%)',
     loContrast: 'hsl(206,8%,8%)',
 
@@ -150,8 +149,7 @@ export const darkTheme = {
     yellow400: 'hsl(52,75%,78%)',
     yellow500: 'hsl(52,78%,45%)',
     yellow600: 'hsl(52,90%,45%)',
-  },
-};
+} as const;
 
 export const { styled, css } = createStyled({
   tokens: theme,

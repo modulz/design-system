@@ -1012,6 +1012,14 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@hadihallak/css@^9.0.0-alpha.9":
+  version "9.0.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/@hadihallak/css/-/css-9.0.0-alpha.9.tgz#72ffad3febf2d7e044b3859b9d9af3c003b7dfb3"
+  integrity sha512-JwLKcbgL3rqSWFaJzoCdV5fvh+eZNRWGgUnBDJ0UY+F6FYVm3ghVUVH0xjEL6z/cSGvlxYlKrKXFT9ZbJ1INOA==
+  dependencies:
+    "@types/node" "^13.11.1"
+    tslib "^1.11.1"
+
 "@modulz/radix-icons@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@modulz/radix-icons/-/radix-icons-2.4.0.tgz#62bb73265d39aa990a3adfb089f00cecbaf791c5"
@@ -1069,20 +1077,12 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-2.1.1.tgz#ceff6a28a5b4867c2dd4a1ba513de278ccbe8bb1"
   integrity sha512-/aPsuoj/1Dw/kzhkgz+ES6TxG0zfTMGLwuK2ZG00k/iJzYHTLCE8mVU8EPqEOp/lmxPoq1C1C9RYToRKb2KEfg==
 
-"@stitches/css@^9.0.0-alpha.5":
-  version "9.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@stitches/css/-/css-9.0.0-alpha.5.tgz#af991759894dc7fbc4d51d8b7e3c252e051fa81a"
-  integrity sha512-uS0LhNOfEQzIbwxY/xt20qte35LsMOxKl1jSd5aGefRY0vwLAygYuNUKsKVnp1Lq1jrxA/7JgeMe/Sc3rQMAkw==
+"@stitches/styled@npm:@hadihallak/styled@9.0.0-alpha.9":
+  version "9.0.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/@hadihallak/styled/-/styled-9.0.0-alpha.9.tgz#960c1b29d70dc69c2ae94f3263a714150e7b7a6f"
+  integrity sha512-8nhhbAnPTqu2Kh+dAwSQIT1kuD2jE7fBRwc2I9Jt3ScNmrTubPBXyrzut/oT932tFE8LZ8BB91zf14jIpDdnGw==
   dependencies:
-    "@types/node" "^13.11.1"
-    tslib "^1.11.1"
-
-"@stitches/styled@9.0.0-alpha.5":
-  version "9.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@stitches/styled/-/styled-9.0.0-alpha.5.tgz#e09c929ea91238985d2fd03e8d2d1f5ad3f3e544"
-  integrity sha512-e+ORCeOZoRRzWL7l9rn7bZWtkT97E1+ctgxyVDBxBlPjFo8G+H6UO/Y9OhsyXjvq3B8euq5KczsoGbUtefl0Yg==
-  dependencies:
-    "@stitches/css" "^9.0.0-alpha.5"
+    "@hadihallak/css" "^9.0.0-alpha.9"
     "@types/node" "^13.11.1"
     tslib "^1.11.1"
 
