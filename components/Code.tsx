@@ -19,8 +19,8 @@ export const Code = styled.code({
   mx: '.05em',
   pl: '.35em',
   pr: '.25em',
-  // py: '.05em',
-  // pb: '.125em',
+  py: '.05em',
+  pb: '.125em',
   fontSize: 'max(12px, 85%)',
   whiteSpace: 'nowrap',
 
