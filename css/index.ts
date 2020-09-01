@@ -154,15 +154,15 @@ export const darkTheme = {
 export const { styled, css } = createStyled({
   tokens: theme,
   breakpoints: {
-    '@default': (rule) => rule,
-    '@bp1': (rule) => `@media (min-width: 520px) { ${rule} }`,
-    '@bp2': (rule) => `@media (min-width: 900px) { ${rule} }`,
-    '@bp3': (rule) => `@media (min-width: 1200px) { ${rule} }`,
-    '@bp4': (rule) => `@media (min-width: 1800px) { ${rule} }`,
-    '@motion': (rule) => `@media (prefers-reduced-motion) { ${rule} }`,
-    '@hover': (rule) => `@media (hover: hover) { ${rule} }`,
-    '@dark': (rule) => `@media (prefers-color-scheme: dark) { ${rule} }`,
-    '@light': (rule) => `@media (prefers-color-scheme: light) { ${rule} }`,
+    default: (rule) => rule,
+    bp1: (rule) => `@media (min-width: 520px) { ${rule} }`,
+    bp2: (rule) => `@media (min-width: 900px) { ${rule} }`,
+    bp3: (rule) => `@media (min-width: 1200px) { ${rule} }`,
+    bp4: (rule) => `@media (min-width: 1800px) { ${rule} }`,
+    motion: (rule) => `@media (prefers-reduced-motion) { ${rule} }`,
+    hover: (rule) => `@media (hover: hover) { ${rule} }`,
+    dark: (rule) => `@media (prefers-color-scheme: dark) { ${rule} }`,
+    light: (rule) => `@media (prefers-color-scheme: light) { ${rule} }`,
   },
   utils: {
     p: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
