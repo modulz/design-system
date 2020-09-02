@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import '../styles.css';
-import { darkThemeClass } from '../css';
+import { darkThemeClass } from '../stitches.config';
 import { SwitchIcon } from '@modulz/radix-icons';
 import { IconButton } from '../components/IconButton';
 

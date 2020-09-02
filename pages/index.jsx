@@ -10,7 +10,7 @@ import { Divider } from '../components/Divider';
 import { Card } from '../components/Card';
 import { Input } from '../components/Input';
 import { TreeItem } from '../components/TreeItem';
-import { darkTheme } from '../css';
+import { darkTheme } from '../stitches.config';
 
 function Home() {
   return (

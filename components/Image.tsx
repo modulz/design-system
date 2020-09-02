@@ -1,4 +1,4 @@
-import { styled } from '../css';
+import { styled } from '../stitches.config';
 
 export const Image = styled.img({
   // Reset

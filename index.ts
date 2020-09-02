@@ -14,4 +14,4 @@ export { Link } from './components/Link';
 export { Text } from './components/Text';
 export { TreeItem } from './components/TreeItem';
 
-export { css, styled, theme, darkTheme, darkThemeClass } from './css';
+export { css, styled, theme, darkTheme, darkThemeClass } from './stitches.config';

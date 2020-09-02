@@ -13,7 +13,7 @@ import { Code } from '../components/Code';
 import { Input } from '../components/Input';
 import { Card } from '../components/Card';
 import { TreeItem } from '../components/TreeItem';
-import { darkTheme } from '../css';
+import { darkTheme } from '../stitches.config';
 
 function Marketing() {
   return (
