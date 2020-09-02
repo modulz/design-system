@@ -4,7 +4,6 @@ export const Link = styled.a({
   // Reset
   boxSizing: 'border-box',
   flexShrink: 0,
-  // lineHeight: '1',
   outline: 'none',
   textDecoration: 'none',
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',

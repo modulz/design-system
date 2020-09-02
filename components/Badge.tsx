@@ -4,13 +4,11 @@ export const Badge = styled.span({
   // Reset
   alignItems: 'center',
   appearance: 'none',
-  // backgroundColor: 'transparent',
   borderWidth: '0',
   boxSizing: 'border-box',
   display: 'inline-flex',
   flexShrink: 0,
   fontFamily: 'inherit',
-  // fontSize: '14px',
   justifyContent: 'center',
   lineHeight: '1',
   outline: 'none',

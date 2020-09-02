@@ -8,15 +8,11 @@ export const Input = styled.input({
   boxSizing: 'border-box',
   flexShrink: 0,
   fontFamily: 'inherit',
-  // fontSize: '14px',
   lineHeight: '1',
   outline: 'none',
   padding: '0',
   width: '100%',
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-  // ':disabled': {
-  //   pointerEvents: 'none',
-  // },
   '::before': {
     boxSizing: 'border-box',
   },

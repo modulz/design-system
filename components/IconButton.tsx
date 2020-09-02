@@ -4,7 +4,6 @@ export const IconButton = styled.button({
   // Reset
   alignItems: 'center',
   appearance: 'none',
-  // backgroundColor: 'transparent',
   borderWidth: '0',
   boxSizing: 'border-box',
   display: 'inline-flex',
@@ -18,9 +17,6 @@ export const IconButton = styled.button({
   textDecoration: 'none',
   userSelect: 'none',
   WebkitTapHighlightColor: 'transparent',
-  // ':disabled': {
-  //   pointerEvents: 'none',
-  // },
   '::before': {
     boxSizing: 'border-box',
   },

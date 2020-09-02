@@ -4,13 +4,8 @@ export const Button = styled.button({
   // Reset
   alignItems: 'center',
   appearance: 'none',
-  // backgroundColor: 'transparent',
-  // boxShadow: 'none',
   boxSizing: 'border-box',
   display: 'inline-flex',
-  // flexShrink: '0',
-  // fontFamily: 'inherit',
-  // fontSize: '14px',
   justifyContent: 'center',
   lineHeight: '1',
   outline: 'none',
@@ -18,9 +13,6 @@ export const Button = styled.button({
   textDecoration: 'none',
   userSelect: 'none',
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-  // ':disabled': {
-  //   pointerEvents: 'none',
-  // },
   '::before': {
     boxSizing: 'border-box',
   },

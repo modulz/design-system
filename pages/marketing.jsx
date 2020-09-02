@@ -70,31 +70,35 @@ function Marketing() {
               <Text size="3" css={{ color: '$gray600', ml: 7 }}>
                 About
               </Text>
-              <Text size="3" css={{ color: '$gray600', ml: 7 }}>
+              <Text size="3" css={{ color: '$gray600', ml: '$7' }}>
                 Blog
               </Text>
             </Flex>
           </Flex>
         </Container>
       </Box>
-      <Container size="3" css={{ pt: 7 }}>
-        <Text as="h1" size="9" css={{ fontWeight: '500', textAlign: 'center', mb: 4 }}>
+
+      <Container size="3" css={{ pt: '$7' }}>
+        <Text as="h1" size="9">
           The modern styling library
         </Text>
       </Container>
+
       <Container size="2">
-        <Text as="h2" size="6" css={{ color: '$gray600', textAlign: 'center', lineHeight: '30px' }}>
+        <Text as="h2" size="6">
           Near-zero runtime, server-side rendering, multi-variant support, and a best-in-class
           developer experience.
         </Text>
+
         <Flex css={{ justifyContent: 'center' }}>
-          <Text size="5" css={{ color: '$blue600', mt: 9 }}>
+          <Text size="5" css={{ color: '$blue600', mt: '$9' }}>
             Documentation
           </Text>
         </Flex>
       </Container>
+
       <Container size="2">
-        <Flex css={{ justifyContent: 'center', mt: 9 }}>
+        <Flex css={{ justifyContent: 'center', mt: '$9' }}>
           <Badge css={{ mx: 3 }}>Coming soon</Badge>
           <Badge variant="blue" css={{ mx: 3 }}>
             New
