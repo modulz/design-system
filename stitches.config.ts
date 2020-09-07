@@ -272,4 +272,4 @@ export const { styled, css } = createStyled({
   },
 });
 
-export const darkThemeClass = css.theme(darkTheme);
+export const darkThemeClass = css.theme({ colors: darkTheme });

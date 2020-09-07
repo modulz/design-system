@@ -19,7 +19,7 @@
   "dependencies": {
     "@modulz/radix-icons": "^2.4.0",
     "@next/mdx": "^9.5.1",
-    "@stitches/react": "0.0.1",
+    "@stitches/react": "^0.0.2",
     "next": "9.5.1",
     "react": "16.13.1",
     "react-dom": "16.13.1"
