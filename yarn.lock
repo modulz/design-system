@@ -1012,6 +1012,66 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@interop-ui/react-debug-context@0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-debug-context/-/react-debug-context-0.0.1-1.tgz#223ef90e512857826d073a43b806f57256df76c2"
+  integrity sha512-DpWWIsGPtSLL3NZocT3x1XAI92MxapdRWk2ZMQ1+RG+JQki8EJiN1+2EuzPwmxt7C7tDz7aMK1K0DYsFQDyNDg==
+  dependencies:
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+
+"@interop-ui/react-dialog@^0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-dialog/-/react-dialog-0.0.1-1.tgz#ec5a043dde718aaeb6cadad6d3b7c58b775f71a1"
+  integrity sha512-puiqIIvG0cLhvhqTye9KFfD0NyNUkI9tK+skBsgWYcbzqbgVPE8vGJKk1BwgzRXN9bH5PN61RIQr5BaXnZZQwQ==
+  dependencies:
+    "@interop-ui/react-debug-context" "0.0.1-1"
+    "@interop-ui/react-lock" "0.0.1-1"
+    "@interop-ui/react-portal" "0.0.1-1"
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+    react-remove-scroll "^2.3.0"
+
+"@interop-ui/react-lock@0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-lock/-/react-lock-0.0.1-1.tgz#ae554b422719d706ee1f5310590b50dcbe4cbe3d"
+  integrity sha512-XJxP/grHdyErXNT6qGCF02Dc7JKFgOEa6FtwjBu9maBCZOszXcVvp0LQ44xq3Zd93i3FlTeyANGCG6HixAVkrA==
+  dependencies:
+    "@interop-ui/react-debug-context" "0.0.1-1"
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/tabbable" "0.0.1-0"
+    "@interop-ui/utils" "0.0.1-1"
+    aria-hidden "^1.1.1"
+
+"@interop-ui/react-portal@0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-portal/-/react-portal-0.0.1-1.tgz#d7d3dee2ca732eba1b0447068ab9621cfcadd29f"
+  integrity sha512-kgXEG2ajJfiyTnhKzQPknh+JB1bOU+36rimnQyZbIKwDKpiTrIJE+3EUGPiUkczwrR4NT7ZLbL4aa7hxvvJ+hw==
+  dependencies:
+    "@interop-ui/react-debug-context" "0.0.1-1"
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+
+"@interop-ui/react-utils@0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-utils/-/react-utils-0.0.1-1.tgz#ab6b13b5b99e2b1e70065726ab1d5d0724c98711"
+  integrity sha512-g5eXMyUX2JQsG8yshL4E7JLGkKAu2NESypINAiu4lO/U4vzBHuE4QlaRPG8qBq8ua+jpFl/jBQZp1lNaeZ5sdg==
+  dependencies:
+    "@interop-ui/utils" "0.0.1-1"
+
+"@interop-ui/tabbable@0.0.1-0":
+  version "0.0.1-0"
+  resolved "https://registry.yarnpkg.com/@interop-ui/tabbable/-/tabbable-0.0.1-0.tgz#cfbb563c9bee501833dcc93117a36148d01ff442"
+  integrity sha512-yeaCbQQp7B9Haskzb3AIstToN+HZzrfBQLkA7ZjnGXhvoI3Vgxenz1SD2IoN4jPBYRmDL3iLztE23F7LKDs3Kw==
+
+"@interop-ui/utils@0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/utils/-/utils-0.0.1-1.tgz#f992b2d321ecb480838aa0fd6d86925f85e533bb"
+  integrity sha512-PQZDiS8TZw58DHRIjSROtDrncg2J09ZJmzG6UwcbxmgR46ydNQ+v9vzbnGONhmSlnzU/f4FL9khBd1U9t6g9Lg==
+  dependencies:
+    lodash.camelcase "^4.3.0"
+    lodash.kebabcase "^4.1.1"
+
 "@modulz/radix-icons@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@modulz/radix-icons/-/radix-icons-2.4.0.tgz#62bb73265d39aa990a3adfb089f00cecbaf791c5"
@@ -1536,6 +1596,13 @@ argparse@^1.0.7:
   integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
   dependencies:
     sprintf-js "~1.0.2"
+
+aria-hidden@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/aria-hidden/-/aria-hidden-1.1.1.tgz#0c356026d3f65e2bd487a3adb73f0c586be2c37e"
+  integrity sha512-M7zYxCcOQPOaxGHoMTKUFD2UNcVFTp9ycrdStLcTPLf8zgTXC3+YcGe+UuzSh5X1BX/0/PtS8xTNy4xyH/6xtw==
+  dependencies:
+    tslib "^1.0.0"
 
 arity-n@^1.0.4:
   version "1.0.4"
@@ -2792,6 +2859,11 @@ des.js@^1.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
 
+detect-node-es@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/detect-node-es/-/detect-node-es-1.0.0.tgz#c0318b9e539a5256ca780dd9575c9345af05b8ed"
+  integrity sha512-S4AHriUkTX9FoFvL4G8hXDcx6t3gp2HpfCza3Q0v6S78gul2hKWifLQbeW+ZF89+hSm2ZIc/uF3J97ZgytgTRg==
+
 diffie-hellman@^5.0.0:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/diffie-hellman/-/diffie-hellman-5.0.3.tgz#40e8ee98f55a2149607146921c63e1ae5f3d2875"
@@ -3337,6 +3409,11 @@ function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
+
+get-nonce@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/get-nonce/-/get-nonce-1.0.1.tgz#fdf3f0278073820d2ce9426c18f07481b1e0cdf3"
+  integrity sha512-FJhYRoDaiatfEkUK8HKlicmu/3SGFD51q3itKDGoSTysQJBnfOcxU5GxnhE1E6soB76MbT0MBtnKJuXyAx+96Q==
 
 get-stream@^4.1.0:
   version "4.1.0"
@@ -4356,6 +4433,16 @@ locate-path@^5.0.0:
   integrity sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
   dependencies:
     p-locate "^4.1.0"
+
+lodash.camelcase@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
+  integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
+
+lodash.kebabcase@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz#8489b1cb0d29ff88195cceca448ff6d6cc295c36"
+  integrity sha1-hImxyw0p/4gZXM7KRI/21swpXDY=
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
@@ -5921,6 +6008,34 @@ react-refresh@0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
+react-remove-scroll-bar@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-remove-scroll-bar/-/react-remove-scroll-bar-2.1.0.tgz#edafe9b42a42c0dad9bdd10712772a1f9a39d7b9"
+  integrity sha512-5X5Y5YIPjIPrAoMJxf6Pfa7RLNGCgwZ95TdnVPgPuMftRfO8DaC7F4KP1b5eiO8hHbe7u+wZNDbYN5WUTpv7+g==
+  dependencies:
+    react-style-singleton "^2.1.0"
+    tslib "^1.0.0"
+
+react-remove-scroll@^2.3.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/react-remove-scroll/-/react-remove-scroll-2.4.0.tgz#190c16eb508c5927595935499e8f5dd9ab0e75cf"
+  integrity sha512-BZIO3GaEs0Or1OhA5C//n1ibUP1HdjJmqUVUsOCMxwoIpaCocbB9TFKwHOkBa/nyYy3slirqXeiPYGwdSDiseA==
+  dependencies:
+    react-remove-scroll-bar "^2.1.0"
+    react-style-singleton "^2.1.0"
+    tslib "^1.0.0"
+    use-callback-ref "^1.2.3"
+    use-sidecar "^1.0.1"
+
+react-style-singleton@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-style-singleton/-/react-style-singleton-2.1.0.tgz#7396885332e9729957f9df51f08cadbfc164e1c4"
+  integrity sha512-DH4ED+YABC1dhvSDYGGreAHmfuTXj6+ezT3CmHoqIEfxNgEYfIMoOtmbRp42JsUst3IPqBTDL+8r4TF7EWhIHw==
+  dependencies:
+    get-nonce "^1.0.0"
+    invariant "^2.2.4"
+    tslib "^1.0.0"
+
 react@16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
@@ -6985,7 +7100,7 @@ tslib@2.0.1:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.1.tgz#410eb0d113e5b6356490eec749603725b021b43e"
   integrity sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
 
-tslib@^1.11.1, tslib@^1.9.0:
+tslib@^1.0.0, tslib@^1.11.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
@@ -7189,6 +7304,19 @@ url@^0.11.0:
   dependencies:
     punycode "1.3.2"
     querystring "0.2.0"
+
+use-callback-ref@^1.2.3:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/use-callback-ref/-/use-callback-ref-1.2.4.tgz#d86d1577bfd0b955b6e04aaf5971025f406bea3c"
+  integrity sha512-rXpsyvOnqdScyied4Uglsp14qzag1JIemLeTWGKbwpotWht57hbP78aNT+Q4wdFKQfQibbUX4fb6Qb4y11aVOQ==
+
+use-sidecar@^1.0.1:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/use-sidecar/-/use-sidecar-1.0.3.tgz#17a4e567d4830c0c0ee100040e85a7fe68611e0f"
+  integrity sha512-ygJwGUBeQfWgDls7uTrlEDzJUUR67L8Rm14v/KfFtYCdHhtjHZx1Krb3DIQl3/Q5dJGfXLEQ02RY8BdNBv87SQ==
+  dependencies:
+    detect-node-es "^1.0.0"
+    tslib "^1.9.3"
 
 use-subscription@1.4.1:
   version "1.4.1"

@@ -14,11 +14,13 @@ import { Input } from '../components/Input';
 import { Card } from '../components/Card';
 import { TreeItem } from '../components/TreeItem';
 import { darkTheme } from '../stitches.config';
+import { Dialog, styles } from '@interop-ui/react-dialog';
 
 function Marketing() {
   return (
     <Box css={{ bc: '$loContrast', minHeight: '100%' }}>
-      <Box as="header" css={{ py: 4 }}>
+      
+      <Box as="header" css={{ py: '$4' }}>
         <Container size="4">
           <Flex css={{ justifyContent: 'space-between' }}>
             <IconButton variant="ghost" size="large">
@@ -79,13 +81,13 @@ function Marketing() {
       </Box>
 
       <Container size="3" css={{ pt: '$7' }}>
-        <Text as="h1" size="9">
+        <Text as="h1" size="9" css={{ ta: 'center', fontWeight: '500', lineHeight: '55px', mb: '$3' }}>
           The modern styling library
         </Text>
       </Container>
 
       <Container size="2">
-        <Text as="h2" size="6">
+        <Text as="h2" size="6" css={{ ta: 'center', color: '$gray600', lineHeight: '30px' }}>
           Near-zero runtime, server-side rendering, multi-variant support, and a best-in-class
           developer experience.
         </Text>
@@ -196,7 +198,7 @@ function Marketing() {
           }}
         ></Flex>
       </Container>
-      <Container size="2" css={{ my: 7 }}>
+      <Container size="2" css={{ my: '$7' }}>
         <Text size="4" as="p" css={{ lineHeight: '25px' }}>
           There are 5 variants to choose from. Use is for positive states.{' '}
           <Link css={{}} href="#">
@@ -212,6 +214,47 @@ function Marketing() {
         <Link variant="subtle" css={{}} href="#">
           This is a link
         </Link>
+      </Container>
+      
+      <Container size="2" css={{ py: '$7' }}>
+        <Dialog>
+          <Dialog.Trigger as={Button}>Open</Dialog.Trigger>
+          <Dialog.Overlay style={{
+            ...styles.overlay,
+            backgroundColor: 'rgba(0,0,0,.15)'
+            }}
+          />
+          <Dialog.Content style={{
+            ...styles.content,
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            background: 'white',
+            minWidth: 200,
+            maxWidth: 'fit-content',
+            maxHeight: '85vh',
+            padding: 25,
+            borderRadius: 5,
+            backgroundColor: 'white',
+            boxShadow: 'rgba(14, 18, 22, 0.35) 0px 10px 38px -10px, rgba(14, 18, 22, 0.2) 0px 10px 20px -15px',
+            marginTop: '-5vh',
+          }}>
+            <Text size={5} as="h6" css={{ fontWeight: 500 }}>Dialog Heading</Text>
+            <Text size={3} as="p" css={{ lineHeight: '20px' }}>There are 5 variants to choose from. Use is for positive states. This is a link Traditional business literature won’t help you solve it- most of that stuff is focused on life after product/market fit, after the Trough of Sorrow. A lot of startup stuff is focused on the initial phases, when you don’t have a team, idea, or investors.</Text>
+            <Box css={{
+              position: 'absolute',
+              top: 0,
+              right: 0,
+              margin: '$2',
+            }}>
+              <Dialog.Close as={IconButton} variant="ghost" aria-label="Close">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645C11.1583 3.45118 10.8417 3.45118 10.6464 3.64645L7.5 6.79289L4.35355 3.64645C4.15829 3.45118 3.84171 3.45118 3.64645 3.64645C3.45118 3.84171 3.45118 4.15829 3.64645 4.35355L6.79289 7.5L3.64645 10.6464C3.45118 10.8417 3.45118 11.1583 3.64645 11.3536C3.84171 11.5488 4.15829 11.5488 4.35355 11.3536L7.5 8.20711L10.6464 11.3536C10.8417 11.5488 11.1583 11.5488 11.3536 11.3536C11.5488 11.1583 11.5488 10.8417 11.3536 10.6464L8.20711 7.5L11.3536 4.35355Z" fill="currentColor"/>
+                </svg>
+              </Dialog.Close>
+            </Box>
+          </Dialog.Content>
+        </Dialog>
       </Container>
     </Box>
   );

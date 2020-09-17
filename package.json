@@ -17,6 +17,7 @@
     "ds:release": "yarn ds:build && np"
   },
   "dependencies": {
+    "@interop-ui/react-dialog": "^0.0.1-1",
     "@modulz/radix-icons": "^2.4.0",
     "@next/mdx": "^9.5.1",
     "@stitches/react": "^0.0.2",
