@@ -38,6 +38,9 @@ export const Button = styled.button({
     backgroundColor: '$gray100',
     boxShadow: 'inset 0 0 0 1px $gray500',
   },
+  ':focus': {
+    boxShadow: 'inset 0 0 0 1px $gray500, 0 0 0 1px $gray500',
+  },
   ':disabled': {
     pointerEvents: 'none',
     backgroundColor: '$gray200',
@@ -66,6 +69,9 @@ export const Button = styled.button({
           backgroundColor: '$blue600',
           boxShadow: 'none',
         },
+        ':focus': {
+          boxShadow: 'inset 0 0 0 1px $blue500, 0 0 0 1px $blue500',
+        },
       },
       green: {
         backgroundColor: '$green500',
@@ -79,9 +85,15 @@ export const Button = styled.button({
           backgroundColor: '$green600',
           boxShadow: 'none',
         },
+        ':focus': {
+          boxShadow: 'inset 0 0 0 1px $green500, 0 0 0 1px $green500',
+        },
       },
       red: {
         color: '$red600',
+        ':focus': {
+          boxShadow: 'inset 0 0 0 1px $red500, 0 0 0 1px $red500',
+        },
       },
       ghost: {
         backgroundColor: 'transparent',

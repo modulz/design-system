@@ -122,9 +122,23 @@ function Marketing() {
         </Flex>
       </Container>
       <Container size="2">
-        <Input placeholder="Search components..." css={{ mt: 7 }} />
+        <Flex css={{ gap: '$6', mt: '$9' }}>
+          <Button>Button</Button>
+          <Button variant="blue">
+            Important
+          </Button>
+          <Button variant="green">
+            Secure
+          </Button>
+          <Button variant="red">
+            Warning
+          </Button>
+        </Flex>
       </Container>
-      <Container size="2" css={{ mt: 7 }}>
+      <Container size="2">
+        <Input placeholder="Search components..." css={{ mt: '$7' }} />
+      </Container>
+      <Container size="2" css={{ mt: '$7' }}>
         <Text size="4" as="p" css={{ lineHeight: '25px' }}>
           There are 5 variants to choose from. Use <Code>console.log('Radix').console</Code> is for
           positive states. Traditional business literature won’t help you solve it- most of that
@@ -133,7 +147,7 @@ function Marketing() {
           investors.
         </Text>
       </Container>
-      <Container size="2" css={{ mt: 7 }}>
+      <Container size="2" css={{ mt: '$7' }}>
         <Flex
           css={{
             width: 4,
@@ -174,7 +188,7 @@ function Marketing() {
           }}
         ></Flex>
       </Container>
-      <Container size="2" css={{ mt: 7 }}>
+      <Container size="2" css={{ mt: '$7' }}>
         <Flex
           css={{
             width: 4,
