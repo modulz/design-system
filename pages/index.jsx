@@ -12,6 +12,8 @@ import { Input } from '../components/Input';
 import { TreeItem } from '../components/TreeItem';
 import { darkTheme } from '../stitches.config';
 
+import { Tooltip, styles } from '@interop-ui/react-tooltip';
+
 function Home() {
   return (
     <Box css={{ minHeight: '100%' }}>
@@ -157,6 +159,15 @@ function Home() {
                 />
               </svg>
             </IconButton>
+            <Tooltip>
+              <Tooltip.Trigger style={{ margin: 100 }}>Hover or Focus me</Tooltip.Trigger>
+              <Tooltip.Position sideOffset={5}>
+                <Tooltip.Content aria-label="Even better done this way!">
+                  Nicely done!
+                </Tooltip.Content>
+                <Tooltip.Arrow style={{ ...styles.arrow }} offset={10} />
+              </Tooltip.Position>
+            </Tooltip>
             <Button variant="blue">
               <Box css={{ mr: '$1' }}>
                 <svg

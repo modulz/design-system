@@ -1012,6 +1012,22 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@interop-ui/popper@0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/popper/-/popper-0.0.1-1.tgz#4e479cd27b74363bc37f1b83637880934d41d49f"
+  integrity sha512-B5R52S/ge5eNmttsS/1OOKfrYc9q5iffCJbcD0zfQZNCiqPIQoQ+KJhw66j9sdlsv7jkNpdanFK1fz8XVN1x9w==
+  dependencies:
+    "@interop-ui/utils" "0.0.1-1"
+    csstype "^2.6.11"
+
+"@interop-ui/react-arrow@0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-arrow/-/react-arrow-0.0.1-1.tgz#d31d00ea096a962c48da17c85942cfbda7ca16d6"
+  integrity sha512-eQ533a9ZBRre2fgJoFYpj41or2F6ESmA5Pyf8Of+T9vGIWKIJNkj8/ZnAZtJkN3FIoUNmiUfEkCJcG0b+JXM+A==
+  dependencies:
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+
 "@interop-ui/react-debug-context@0.0.1-1":
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-debug-context/-/react-debug-context-0.0.1-1.tgz#223ef90e512857826d073a43b806f57256df76c2"
@@ -1043,6 +1059,31 @@
     "@interop-ui/utils" "0.0.1-1"
     aria-hidden "^1.1.1"
 
+"@interop-ui/react-popover@0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-popover/-/react-popover-0.0.1-1.tgz#7578e9744ca3c5886d6cb4cd064a7f0ee89a3149"
+  integrity sha512-pvPXuW4jStcwIX7EKDnvRVtuNwsNcr3Ob6VZf0Tk1cL7KEPWnCUKTVe3fqXMPVh6qwqbYnrh1eI7EIJ990akCQ==
+  dependencies:
+    "@interop-ui/react-debug-context" "0.0.1-1"
+    "@interop-ui/react-lock" "0.0.1-1"
+    "@interop-ui/react-popper" "0.0.1-0"
+    "@interop-ui/react-portal" "0.0.1-1"
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+    react-remove-scroll "^2.3.0"
+
+"@interop-ui/react-popper@0.0.1-0":
+  version "0.0.1-0"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-popper/-/react-popper-0.0.1-0.tgz#cda14b4590db79f449f2aeb57d6933b24e19e4c7"
+  integrity sha512-fCpfKQ7+Or9w/g45oGGv5eGQW1G7ledKkfBRwQvhbagoZ7+3Zkz+Nhm3jXMWUheM6Ek4Lc1+TCkErlDVS/uyvA==
+  dependencies:
+    "@interop-ui/popper" "0.0.1-1"
+    "@interop-ui/react-arrow" "0.0.1-1"
+    "@interop-ui/react-debug-context" "0.0.1-1"
+    "@interop-ui/react-use-size" "0.0.1-1"
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+
 "@interop-ui/react-portal@0.0.1-1":
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-portal/-/react-portal-0.0.1-1.tgz#d7d3dee2ca732eba1b0447068ab9621cfcadd29f"
@@ -1052,11 +1093,41 @@
     "@interop-ui/react-utils" "0.0.1-1"
     "@interop-ui/utils" "0.0.1-1"
 
+"@interop-ui/react-tooltip@^0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-tooltip/-/react-tooltip-0.0.1-1.tgz#fd17aa69beff50affdd0fe6296eeddf658bac6f0"
+  integrity sha512-FtAuLP/47vrzwVA24GGV0YuxQv3OoEGW5k38DWyUh9phqajne7GiFhCa6873geHjcq17D9v/fEs8A0cSvGt4ow==
+  dependencies:
+    "@interop-ui/popper" "0.0.1-1"
+    "@interop-ui/react-arrow" "0.0.1-1"
+    "@interop-ui/react-popover" "0.0.1-1"
+    "@interop-ui/react-portal" "0.0.1-1"
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/react-visually-hidden" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+
+"@interop-ui/react-use-size@0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-use-size/-/react-use-size-0.0.1-1.tgz#a9f32272ce0b8167af98b2e871a23a98d21b19a8"
+  integrity sha512-vyPJ/7Lyyso3iDvOz4nzRKMOknK066744eMEH11zTDKjRj3HZ/1pkQTOQW2oPvFHwPFm0fuiZ/lLrG2fAOOuFw==
+  dependencies:
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+    resize-observer-polyfill "^1.5.1"
+
 "@interop-ui/react-utils@0.0.1-1":
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-utils/-/react-utils-0.0.1-1.tgz#ab6b13b5b99e2b1e70065726ab1d5d0724c98711"
   integrity sha512-g5eXMyUX2JQsG8yshL4E7JLGkKAu2NESypINAiu4lO/U4vzBHuE4QlaRPG8qBq8ua+jpFl/jBQZp1lNaeZ5sdg==
   dependencies:
+    "@interop-ui/utils" "0.0.1-1"
+
+"@interop-ui/react-visually-hidden@0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-visually-hidden/-/react-visually-hidden-0.0.1-1.tgz#e154a45447ec674fd6100b44cf1db29d0141aa22"
+  integrity sha512-lrEEkXkIkbWzh3XIYZFZH6asDcfvLo4MHQswTPanxHUjq6K0EaoVZJMBT2s+weR/dCM9l/FXum3xOJ7swohkSA==
+  dependencies:
+    "@interop-ui/react-utils" "0.0.1-1"
     "@interop-ui/utils" "0.0.1-1"
 
 "@interop-ui/tabbable@0.0.1-0":
@@ -2717,6 +2788,11 @@ csso@^4.0.2:
   integrity sha512-NL3spysxUkcrOgnpsT4Xdl2aiEiBG6bXswAABQVHcMrfjjBisFOKwLDOmf4wf32aPdcJws1zds2B0Rg+jqMyHQ==
   dependencies:
     css-tree "1.0.0-alpha.39"
+
+csstype@^2.6.11:
+  version "2.6.13"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.13.tgz#a6893015b90e84dd6e85d0e3b442a1e84f2dbe0f"
+  integrity sha512-ul26pfSQTZW8dcOnD2iiJssfXw0gdNVX9IJDH/X3K5DGPfj+fUYe3kB+swUY6BF3oZDxaID3AJt+9/ojSAE05A==
 
 csstype@^3.0.2:
   version "3.0.3"
@@ -6204,6 +6280,11 @@ repeat-string@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/repeat-string/-/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
   integrity sha1-jcrkcOHIirwtYA//Sndihtp15jc=
+
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
 
 resolve-from@^3.0.0:
   version "3.0.0"
