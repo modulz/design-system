@@ -11,6 +11,7 @@ import { Link } from '../components/Link';
 import { Divider } from '../components/Divider';
 import { Code } from '../components/Code';
 import { Input } from '../components/Input';
+import { Image } from '../components/Image';
 import { Card } from '../components/Card';
 import { TreeItem } from '../components/TreeItem';
 import { darkTheme } from '../stitches.config';
@@ -18,6 +19,7 @@ import { Dialog, styles } from '@interop-ui/react-dialog';
 import { Tooltip } from '@interop-ui/react-tooltip';
 import { Popover } from '@interop-ui/react-popover';
 import { Accordion } from '@interop-ui/react-accordion';
+import { Avatar } from '@interop-ui/react-avatar';
 
 function Marketing() {
   return (
@@ -377,6 +379,29 @@ function Marketing() {
             </Accordion.Panel>
           </Accordion.Item>
         </Accordion>
+      </Container>
+      <Container size="2" css={{ py: '$7' }}>
+        <Avatar as={Box} css={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: 35,
+          height: 35,
+          borderRadius: '50%',
+          overflow: 'hidden',
+          boxShadow: 'inset 0 0 0 1px rgba(0,0,0,.15)',
+          backgroundColor: '$gray600',
+          linearGradient: '0deg, purple 0%, pink 100%',
+        }}>
+          <Avatar.Image
+            alt="John Smith"
+            as={Image}
+            // src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+          />
+          <Avatar.Fallback as={Text} size={5} css={{ color: '$loContrast' }}>
+            C
+          </Avatar.Fallback>
+        </Avatar>
       </Container>
     </Box>
   );

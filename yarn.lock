@@ -1037,6 +1037,15 @@
     "@interop-ui/react-utils" "0.0.1-1"
     "@interop-ui/utils" "0.0.1-1"
 
+"@interop-ui/react-avatar@^0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-avatar/-/react-avatar-0.0.1-1.tgz#0f8899201bfbe0fca60fdbb9e639d9fc93da8688"
+  integrity sha512-caZ/BtEPHgmk5J2f4P4BV4+iApbJ1yBnGjkZD1+i6apFXF2AIjfgODOnCZ5wbGPQtjLb5pvqWE1/QGBeGWRyhg==
+  dependencies:
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+    "@modulz/radix-icons" "^2.4.1"
+
 "@interop-ui/react-collapsible@0.0.1-1":
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-collapsible/-/react-collapsible-0.0.1-1.tgz#838f791e46ba2827db20ca189b50a1694b1f7352"
@@ -1164,6 +1173,11 @@
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@modulz/radix-icons/-/radix-icons-2.4.0.tgz#62bb73265d39aa990a3adfb089f00cecbaf791c5"
   integrity sha512-19pLQSJtzVtlOon86QC3gigjoigumIvAch79wXl3/yyaWsip6n2CgPHKu/5hKhjK2qYCr84b0VmZkmj1krAl/w==
+
+"@modulz/radix-icons@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@modulz/radix-icons/-/radix-icons-2.4.1.tgz#3423adcc4cf647fe44f5c3a21d10ddd61876a949"
+  integrity sha512-U5/v/x+QnPiazReaNnQBV1wAQ5I3mRiycJclbQd+YiWQQMFNmj91AFHZE+mxntipAPfmslTnJfYRUX4DQVjr5g==
 
 "@next/mdx@^9.5.1":
   version "9.5.2"
