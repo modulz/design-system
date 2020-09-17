@@ -15,9 +15,9 @@ import { Image } from '../components/Image';
 import { Card } from '../components/Card';
 import { TreeItem } from '../components/TreeItem';
 import { darkTheme } from '../stitches.config';
-import { Dialog, styles } from '@interop-ui/react-dialog';
-import { Tooltip } from '@interop-ui/react-tooltip';
-import { Popover } from '@interop-ui/react-popover';
+import { Dialog, styles as dialogStyles } from '@interop-ui/react-dialog';
+import { Tooltip, styles as tooltipStyles } from '@interop-ui/react-tooltip';
+import { Popover, styles as popoverStyles } from '@interop-ui/react-popover';
 import { Accordion } from '@interop-ui/react-accordion';
 import { Avatar } from '@interop-ui/react-avatar';
 import { Tabs } from '@interop-ui/react-tabs';
@@ -240,12 +240,12 @@ function Marketing() {
         <Dialog>
           <Dialog.Trigger as={Button}>Open</Dialog.Trigger>
           <Dialog.Overlay style={{
-            ...styles.overlay,
+            ...dialogStyles.overlay,
             backgroundColor: 'rgba(0,0,0,.15)'
             }}
           />
           <Dialog.Content as={Box} css={{
-            ...styles.content,
+            ...dialogStyles.content,
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
@@ -262,22 +262,21 @@ function Marketing() {
             <Text size={3} as="p" css={{ lineHeight: '25px' }}>There are 5 variants to choose from. Use is for positive states. This is a link Traditional business literature won’t help you solve it- most of that stuff is focused on life after product/market fit, after the Trough of Sorrow.</Text>
             <Popover>
               <Popover.Trigger as={Button}>Open</Popover.Trigger>
-              <Popover.Position sideOffset={10}>
+              <Popover.Position sideOffset={0}>
                 <Popover.Content
                   style={{
-                    boxSizing: 'border-box',
+                    ...popoverStyles.content,
                     backgroundColor: 'white',
                     width: 250,
                     height: 150,
                     padding: 20,
-                    border: '10px solid tomato',
                     borderRadius: 5,
                     boxShadow: 'rgba(22, 23, 24, 0.35) 0px 10px 38px -10px, rgba(22, 23, 24, 0.2) 0px 10px 20px -15px',
                   }}
                 >
                   <Popover.Close as={Button} variant="ghost">Close</Popover.Close>
                 </Popover.Content>
-                <Popover.Arrow width={50} height={20} style={{ width: 13, height: 7 }} />
+                <Popover.Arrow width={13} height={7} style={{ ...popoverStyles.arrow, fill: 'white' }} />
               </Popover.Position>
             </Popover>
             <Box css={{
@@ -310,6 +309,7 @@ function Marketing() {
                     offset={0}
                     width={13}
                     height={7}
+                    style={{ ...tooltipStyles.arrow, fill: 'black' }}
                   />
                 </Tooltip.Position>
               </Tooltip>
@@ -323,7 +323,7 @@ function Marketing() {
           <Popover.Position side="left" align="end">
             <Popover.Content
               style={{
-                boxSizing: 'border-box',
+                ...popoverStyles.content,
                 backgroundColor: 'white',
                 padding: 20,
                 borderRadius: 5,
