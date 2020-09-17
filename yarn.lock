@@ -1020,10 +1020,27 @@
     "@interop-ui/utils" "0.0.1-1"
     csstype "^2.6.11"
 
+"@interop-ui/react-accordion@^0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-accordion/-/react-accordion-0.0.1-1.tgz#f150d2846ce8b19973cb7ee0a1cde6f969a3a63d"
+  integrity sha512-nBOi81ZgisLLu53u/oe+h4OVEud6PIVoQuqKO11ue9ow/9xealLlKhQi8ONt4O0vwi/aPz4gfz3uKxq2Om525A==
+  dependencies:
+    "@interop-ui/react-collapsible" "0.0.1-1"
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+
 "@interop-ui/react-arrow@0.0.1-1":
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-arrow/-/react-arrow-0.0.1-1.tgz#d31d00ea096a962c48da17c85942cfbda7ca16d6"
   integrity sha512-eQ533a9ZBRre2fgJoFYpj41or2F6ESmA5Pyf8Of+T9vGIWKIJNkj8/ZnAZtJkN3FIoUNmiUfEkCJcG0b+JXM+A==
+  dependencies:
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+
+"@interop-ui/react-collapsible@0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-collapsible/-/react-collapsible-0.0.1-1.tgz#838f791e46ba2827db20ca189b50a1694b1f7352"
+  integrity sha512-hYNvEKvv2ezWCasZPOj/l/mMUutOzjztSb2tCqb2kyxgPlLDC01Tz8fstZCbjKSn64PNyWjp5JI91DJ26aKveQ==
   dependencies:
     "@interop-ui/react-utils" "0.0.1-1"
     "@interop-ui/utils" "0.0.1-1"
