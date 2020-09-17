@@ -1119,6 +1119,14 @@
     "@interop-ui/react-utils" "0.0.1-1"
     "@interop-ui/utils" "0.0.1-1"
 
+"@interop-ui/react-tabs@^0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-tabs/-/react-tabs-0.0.1-1.tgz#ea39feef174cf0c4778553c3f102066b948065ae"
+  integrity sha512-Zy4a/hFx+MGtUqzPBgEePK4jX4liAYrsOA5TZbf1MWVF3KJshxQGnH17urH0DNd2AmPHvGSF4AM1jIJlPrHdgg==
+  dependencies:
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+
 "@interop-ui/react-tooltip@^0.0.1-1":
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-tooltip/-/react-tooltip-0.0.1-1.tgz#fd17aa69beff50affdd0fe6296eeddf658bac6f0"
