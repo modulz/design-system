@@ -71,10 +71,10 @@ function Marketing() {
               </svg>
             </IconButton>
             <Flex>
-              <Text size="3" css={{ color: '$gray600', ml: 7 }}>
+              <Text size="3" css={{ color: '$gray600', ml: '$7' }}>
                 Documentation
               </Text>
-              <Text size="3" css={{ color: '$gray600', ml: 7 }}>
+              <Text size="3" css={{ color: '$gray600', ml: '$7' }}>
                 About
               </Text>
               <Text size="3" css={{ color: '$gray600', ml: '$7' }}>
