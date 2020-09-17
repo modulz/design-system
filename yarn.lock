@@ -1059,7 +1059,7 @@
     "@interop-ui/utils" "0.0.1-1"
     aria-hidden "^1.1.1"
 
-"@interop-ui/react-popover@0.0.1-1":
+"@interop-ui/react-popover@0.0.1-1", "@interop-ui/react-popover@^0.0.1-1":
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-popover/-/react-popover-0.0.1-1.tgz#7578e9744ca3c5886d6cb4cd064a7f0ee89a3149"
   integrity sha512-pvPXuW4jStcwIX7EKDnvRVtuNwsNcr3Ob6VZf0Tk1cL7KEPWnCUKTVe3fqXMPVh6qwqbYnrh1eI7EIJ990akCQ==

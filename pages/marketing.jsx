@@ -16,6 +16,7 @@ import { TreeItem } from '../components/TreeItem';
 import { darkTheme } from '../stitches.config';
 import { Dialog, styles } from '@interop-ui/react-dialog';
 import { Tooltip } from '@interop-ui/react-tooltip';
+import { Popover } from '@interop-ui/react-popover';
 
 function Marketing() {
   return (
@@ -241,6 +242,26 @@ function Marketing() {
           }}>
             <Text size={5} as="h6" css={{ fontWeight: 500, mb: '$3' }}>Dialog Heading</Text>
             <Text size={3} as="p" css={{ lineHeight: '25px' }}>There are 5 variants to choose from. Use is for positive states. This is a link Traditional business literature won’t help you solve it- most of that stuff is focused on life after product/market fit, after the Trough of Sorrow.</Text>
+            <Popover>
+              <Popover.Trigger as={Button}>Open</Popover.Trigger>
+              <Popover.Position sideOffset={10}>
+                <Popover.Content
+                  style={{
+                    boxSizing: 'border-box',
+                    backgroundColor: 'white',
+                    width: 250,
+                    height: 150,
+                    padding: 20,
+                    border: '10px solid tomato',
+                    borderRadius: 5,
+                    boxShadow: 'rgba(22, 23, 24, 0.35) 0px 10px 38px -10px, rgba(22, 23, 24, 0.2) 0px 10px 20px -15px',
+                  }}
+                >
+                  <Popover.Close as={Button} variant="ghost">Close</Popover.Close>
+                </Popover.Content>
+                <Popover.Arrow width={50} height={20} style={{ width: 13, height: 7 }} />
+              </Popover.Position>
+            </Popover>
             <Box css={{
               position: 'absolute',
               top: 0,
@@ -269,16 +290,56 @@ function Marketing() {
                   </Tooltip.Content>
                   <Tooltip.Arrow
                     offset={0}
-                    style={{
-                      width: 13,
-                      height: 7
-                    }}
+                    width={13}
+                    height={7}
                   />
                 </Tooltip.Position>
               </Tooltip>
             </Box>
           </Dialog.Content>
         </Dialog>
+      </Container>
+      <Container size="2" css={{ py: '$7' }}>
+        <Popover>
+          <Popover.Trigger as={Button}>Open</Popover.Trigger>
+          <Popover.Position side="left" align="end">
+            <Popover.Content
+              style={{
+                boxSizing: 'border-box',
+                backgroundColor: 'white',
+                padding: 20,
+                borderRadius: 5,
+                boxShadow: 'rgba(22, 23, 24, 0.35) 0px 10px 38px -10px, rgba(22, 23, 24, 0.2) 0px 10px 20px -15px',
+              }}
+            >
+              <Popover.Close as={IconButton} variant="ghost" aria-label="Close">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645C11.1583 3.45118 10.8417 3.45118 10.6464 3.64645L7.5 6.79289L4.35355 3.64645C4.15829 3.45118 3.84171 3.45118 3.64645 3.64645C3.45118 3.84171 3.45118 4.15829 3.64645 4.35355L6.79289 7.5L3.64645 10.6464C3.45118 10.8417 3.45118 11.1583 3.64645 11.3536C3.84171 11.5488 4.15829 11.5488 4.35355 11.3536L7.5 8.20711L10.6464 11.3536C10.8417 11.5488 11.1583 11.5488 11.3536 11.3536C11.5488 11.1583 11.5488 10.8417 11.3536 10.6464L8.20711 7.5L11.3536 4.35355Z" fill="currentColor"/>
+                </svg>
+              </Popover.Close>
+              <Popover>
+                <Popover.Trigger as={Button}>Open</Popover.Trigger>
+                <Popover.Position side="left" align="end">
+                  <Popover.Content
+                    style={{
+                      boxSizing: 'border-box',
+                      backgroundColor: 'white',
+                      padding: 20,
+                      borderRadius: 5,
+                      boxShadow: 'rgba(22, 23, 24, 0.35) 0px 10px 38px -10px, rgba(22, 23, 24, 0.2) 0px 10px 20px -15px',
+                    }}
+                  >
+                    <Popover.Close as={IconButton} variant="ghost" aria-label="Close">
+                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645C11.1583 3.45118 10.8417 3.45118 10.6464 3.64645L7.5 6.79289L4.35355 3.64645C4.15829 3.45118 3.84171 3.45118 3.64645 3.64645C3.45118 3.84171 3.45118 4.15829 3.64645 4.35355L6.79289 7.5L3.64645 10.6464C3.45118 10.8417 3.45118 11.1583 3.64645 11.3536C3.84171 11.5488 4.15829 11.5488 4.35355 11.3536L7.5 8.20711L10.6464 11.3536C10.8417 11.5488 11.1583 11.5488 11.3536 11.3536C11.5488 11.1583 11.5488 10.8417 11.3536 10.6464L8.20711 7.5L11.3536 4.35355Z" fill="currentColor"/>
+                      </svg>
+                    </Popover.Close>
+                  </Popover.Content>
+                </Popover.Position>
+              </Popover>
+            </Popover.Content>
+          </Popover.Position>
+        </Popover>
       </Container>
     </Box>
   );
