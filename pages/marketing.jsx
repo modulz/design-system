@@ -27,7 +27,7 @@ import { Checkbox as CheckboxPrimitive, styles as checkboxStyles } from '@intero
 
 function Marketing() {
   return (
-    <Box css={{ bc: '$loContrast', minHeight: '100%', mb: '$9' }}>
+    <Box css={{ bc: '$loContrast', minHeight: '100%', pb: '$9' }}>
       
       <Box as="header" css={{ py: '$4' }}>
         <Container size="4">
@@ -633,6 +633,80 @@ function Marketing() {
           </Checkbox>
           <Text size={2} css={{ ml: '$2' }}>Checkbox label</Text>
         </Button>
+      </Container>
+
+      <Container size="4" css={{ py: '$7' }}>
+        <Container size="4" css={{ py: '$7' }}>
+        <Box css={{ height: 35, backgroundColor: '$hiContrast' }}></Box>
+        <Box css={{ height: 35, backgroundColor: '$canvas' }}></Box>
+        </Container>
+        <Grid css={{
+          gridTemplateColumns: 'repeat(6, minmax(0, 1fr))',
+          gap: '$5'
+        }}>
+          <Flex css={{ fd: 'column', gap: 2 }}>
+            <Box css={{ height: 35, backgroundColor: '$gray100' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$gray200' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$gray300' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$gray400' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$gray500' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$gray600' }}></Box>
+          </Flex>
+          <Flex css={{ fd: 'column', gap: 2 }}>
+            <Box css={{ height: 35, backgroundColor: '$blue100' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$blue200' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$blue300' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$blue400' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$blue500' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$blue600' }}></Box>
+          </Flex>
+          <Flex css={{ fd: 'column', gap: 2 }}>
+            <Box css={{ height: 35, backgroundColor: '$green100' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$green200' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$green300' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$green400' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$green500' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$green600' }}></Box>
+          </Flex>
+          <Flex css={{ fd: 'column', gap: 2 }}>
+            <Box css={{ height: 35, backgroundColor: '$red100' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$red200' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$red300' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$red400' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$red500' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$red600' }}></Box>
+          </Flex>
+          <Flex css={{ fd: 'column', gap: 2 }}>
+            <Box css={{ height: 35, backgroundColor: '$yellow100' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$yellow200' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$yellow300' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$yellow400' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$yellow500' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$yellow600' }}></Box>
+          </Flex>
+          <Flex css={{ fd: 'column', gap: 2 }}>
+            <Box css={{ height: 35, backgroundColor: '$purple100' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$purple200' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$purple300' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$purple400' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$purple500' }}></Box>
+            <Box css={{ height: 35, backgroundColor: '$purple600' }}></Box>
+          </Flex>
+        </Grid>
+      </Container>
+
+      <Container size="4" css={{ py: '$7' }}>
+        <Flex css={{ fd: 'column', gap: '$4' }}>
+          <Text size={9} as="h1" css={{ fontWeight: 500, lineHeight: '55px' }}>The quick brown fox jumped</Text>
+          <Text size={8} as="h2" css={{ fontWeight: 500, lineHeight: '37px' }}>The quick brown fox jumped</Text>
+          <Text size={7} as="h3" css={{ fontWeight: 500, lineHeight: '30px' }}>The quick brown fox jumped</Text>
+          <Text size={6} as="p" css={{ color: '$gray600', lineHeight: '30px' }}>The quick brown fox jumped over the lazy dog.</Text>
+          <Text size={5} as="p" css={{ lineHeight: '29px' }}>The quick brown fox jumped over the lazy dog.</Text>
+          <Text size={4} as="p" css={{ lineHeight: '29px' }}>The quick brown fox jumped over the lazy dog.</Text>
+          <Text size={3} as="p" css={{ lineHeight: '25px' }}>The quick brown fox jumped over the lazy dog.</Text>
+          <Text size={2} as="p" css={{ lineHeight: '20px' }}>The quick brown fox jumped over the lazy dog.</Text>
+          <Text size={1} as="p" css={{ color: '$gray600', lineHeight: '20px' }}>The quick brown fox jumped over the lazy dog.</Text>
+        </Flex>
       </Container>
       
     </Box>
