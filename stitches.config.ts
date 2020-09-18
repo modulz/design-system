@@ -165,55 +165,56 @@ export const { styled, css } = createStyled({
     light: (rule) => `@media (prefers-color-scheme: light) { ${rule} }`,
   },
   utils: {
-    p: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+    p: (config) => (value) => ({
       paddingTop: value,
       paddingBottom: value,
       paddingLeft: value,
       paddingRight: value,
     }),
-    pt: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+    pt: (config) => (value) => ({
       paddingTop: value,
     }),
-    pr: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+    pr: (config) => (value) => ({
       paddingRight: value,
     }),
-    pb: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+    pb: (config) => (value) => ({
       paddingBottom: value,
     }),
-    pl: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+    pl: (config) => (value) => ({
       paddingLeft: value,
     }),
-    px: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+    px: (config) => (value) => ({
       paddingLeft: value,
       paddingRight: value,
     }),
-    py: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+    py: (config) => (value) => ({
       paddingTop: value,
       paddingBottom: value,
     }),
-    m: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+
+    m: (config) => (value) => ({
       marginTop: value,
       marginBottom: value,
       marginLeft: value,
       marginRight: value,
     }),
-    mt: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+    mt: (config) => (value) => ({
       marginTop: value,
     }),
-    mr: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+    mr: (config) => (value) => ({
       marginRight: value,
     }),
-    mb: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+    mb: (config) => (value) => ({
       marginBottom: value,
     }),
-    ml: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+    ml: (config) => (value) => ({
       marginLeft: value,
     }),
-    mx: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+    mx: (config) => (value) => ({
       marginLeft: value,
       marginRight: value,
     }),
-    my: (config) => (value: keyof typeof theme['space'] | (string & {})) => ({
+    my: (config) => (value) => ({
       marginTop: value,
       marginBottom: value,
     }),
@@ -231,25 +232,25 @@ export const { styled, css } = createStyled({
     fs: (config) => (value) => ({ flexShrink: value }),
     fb: (config) => (value) => ({ flexBasis: value }),
 
-    bc: (config) => (value: keyof typeof theme['colors'] | (string & {})) => ({
-      backgroundColor: value,
-    }),
-
-    br: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
-      borderRadius: value,
-    }),
-    btrr: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
-      borderTopRightRadius: value,
-    }),
-    bbrr: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
-      borderBottomRightRadius: value,
-    }),
-    bblr: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
-      borderBottomLeftRadius: value,
-    }),
-    btlr: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
-      borderTopLeftRadius: value,
-    }),
+    // bc: (config) => (value: keyof typeof theme['colors'] | (string & {})) => ({
+    //   backgroundColor: value,
+    // }),
+    //
+    // br: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
+    //   borderRadius: value,
+    // }),
+    // btrr: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
+    //   borderTopRightRadius: value,
+    // }),
+    // bbrr: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
+    //   borderBottomRightRadius: value,
+    // }),
+    // bblr: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
+    //   borderBottomLeftRadius: value,
+    // }),
+    // btlr: (config) => (value: keyof typeof theme['radii'] | (string & {})) => ({
+    //   borderTopLeftRadius: value,
+    // }),
 
     bs: (config) => (value) => ({ boxShadow: value }),
 
@@ -261,10 +262,10 @@ export const { styled, css } = createStyled({
     pe: (config) => (value) => ({ pointerEvents: value }),
     us: (config) => (value) => ({ userSelect: value }),
 
-    size: (config) => (value: keyof typeof theme['sizes'] | (string & {})) => ({
-      width: value,
-      height: value,
-    }),
+    // size: (config) => (value: keyof typeof theme['sizes'] | (string & {})) => ({
+    //   width: value,
+    //   height: value,
+    // }),
 
     linearGradient: (config) => (value) => ({
       backgroundImage: `linear-gradient(${value})`,

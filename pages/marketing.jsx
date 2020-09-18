@@ -21,6 +21,7 @@ import { Popover, styles as popoverStyles } from '@interop-ui/react-popover';
 import { Accordion } from '@interop-ui/react-accordion';
 import { Avatar } from '@interop-ui/react-avatar';
 import { Tabs } from '@interop-ui/react-tabs';
+import { SimpleToggle } from '../components/ToggleButton';
 
 function Marketing() {
   return (
@@ -596,6 +597,10 @@ function Marketing() {
             </Popover.Content>
           </Popover.Position>
         </Popover>
+      </Container>
+      
+      <Container size="2" css={{ py: '$7' }}>
+        <SimpleToggle>Toggle</SimpleToggle>
       </Container>
       
     </Box>

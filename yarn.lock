@@ -1127,6 +1127,14 @@
     "@interop-ui/react-utils" "0.0.1-1"
     "@interop-ui/utils" "0.0.1-1"
 
+"@interop-ui/react-toggle-button@^0.0.1-2":
+  version "0.0.1-2"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-toggle-button/-/react-toggle-button-0.0.1-2.tgz#839ef6c7adfcda6e59e230a9bae4e54918fa868f"
+  integrity sha512-tF66EFZq8OXwYM7Gx0j8bymQxd+Kzm3KDOnbAn/ygc7sgHvhudknx3PrD+Y2Wzs3cAj2QlEXxMsZcxmPmAIfXQ==
+  dependencies:
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+
 "@interop-ui/react-tooltip@^0.0.1-1":
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-tooltip/-/react-tooltip-0.0.1-1.tgz#fd17aa69beff50affdd0fe6296eeddf658bac6f0"
@@ -1239,20 +1247,20 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-2.1.1.tgz#ceff6a28a5b4867c2dd4a1ba513de278ccbe8bb1"
   integrity sha512-/aPsuoj/1Dw/kzhkgz+ES6TxG0zfTMGLwuK2ZG00k/iJzYHTLCE8mVU8EPqEOp/lmxPoq1C1C9RYToRKb2KEfg==
 
-"@stitches/core@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@stitches/core/-/core-0.0.2.tgz#027b965cd3745ee113094279766d6e7ad777bb3e"
-  integrity sha512-fvwZcUbb/cqV52+g+nGbwo8NbLt+Zpz7TSik+EwjtJd5Y3cpPOK0UZ+3hvMLlvqIPIzzcQULgrVuU08XkTdPfw==
+"@stitches/core@^0.0.3-canary.1":
+  version "0.0.3-canary.1"
+  resolved "https://registry.yarnpkg.com/@stitches/core/-/core-0.0.3-canary.1.tgz#cae76be9388889090df83cab7e7ba90d2233d1ab"
+  integrity sha512-HhTTkax8Yz6LMDXwVaPk9ZhEA167bUWHABPbIQFpmIIzuYtQ4W8Ju4i/0yR+/kOl2bqaV/zrx11nXEBPDQPj1g==
   dependencies:
     "@types/node" "^13.11.1"
     tslib "^1.11.1"
 
-"@stitches/react@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.0.2.tgz#5cc246212b0c65df34cc2dac3320782340b518ea"
-  integrity sha512-ftd00ioQZ/gCxoR5AYVySPxVlK2J7UMc4Q0cK9IRJ+xEGBnKV+p+03E3jQt+be6k7BfRiSIlLEVHrbTN3jgqfA==
+"@stitches/react@^0.0.3-canary.1":
+  version "0.0.3-canary.1"
+  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.0.3-canary.1.tgz#80a0eb66910db7f506399feb0df4e50ce5a9e9e2"
+  integrity sha512-PGFUhGXM1IB5e8ruU/fzqtUdiujYiKkpYguO6L5XI2InOvm9+5zaLeoWvuCKifHD5ntjq09RxcCLK/pdq1V5SA==
   dependencies:
-    "@stitches/core" "^0.0.2"
+    "@stitches/core" "^0.0.3-canary.1"
     "@types/node" "^13.11.1"
     "@types/react-test-renderer" "^16.9.3"
     tslib "^1.11.1"
