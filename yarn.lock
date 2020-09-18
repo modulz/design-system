@@ -1046,6 +1046,14 @@
     "@interop-ui/utils" "0.0.1-1"
     "@modulz/radix-icons" "^2.4.1"
 
+"@interop-ui/react-checkbox@^0.0.1-2":
+  version "0.0.1-2"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-checkbox/-/react-checkbox-0.0.1-2.tgz#8b4b82891395bc6cb3dc3b54d83c0b606552a36d"
+  integrity sha512-gvpuZ41vt8k5aof+wwunMi9ZOzLgG1FHqRKNQsk2+PIXHcYHjZzptzwx8Ax4GAXt8Kudwd4sDT7Zbp+ywS6YxQ==
+  dependencies:
+    "@interop-ui/react-utils" "0.0.1-1"
+    "@interop-ui/utils" "0.0.1-1"
+
 "@interop-ui/react-collapsible@0.0.1-1":
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-collapsible/-/react-collapsible-0.0.1-1.tgz#838f791e46ba2827db20ca189b50a1694b1f7352"
