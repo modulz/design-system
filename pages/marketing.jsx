@@ -491,6 +491,113 @@ function Marketing() {
           </Tabs.Panel>
         </Tabs>
       </Container>
+      
+      <Container size="2" css={{ py: '$7' }}>
+        <Popover>
+          <Popover.Trigger as={Button}>Open</Popover.Trigger>
+          <Popover.Position side="top">
+            <Popover.Content
+              style={{
+                boxSizing: 'border-box',
+                backgroundColor: 'white',
+                borderRadius: 5,
+                boxShadow: 'rgba(22, 23, 24, 0.35) 0px 10px 38px -10px, rgba(22, 23, 24, 0.2) 0px 10px 20px -15px',
+                width: 300,
+              }}
+            >
+              <Text size={4} as="h6" css={{ fontWeight: 500 }}>fwefewfw  w few fw</Text>
+              <Popover.Close as={IconButton} variant="ghost" aria-label="Close">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645C11.1583 3.45118 10.8417 3.45118 10.6464 3.64645L7.5 6.79289L4.35355 3.64645C4.15829 3.45118 3.84171 3.45118 3.64645 3.64645C3.45118 3.84171 3.45118 4.15829 3.64645 4.35355L6.79289 7.5L3.64645 10.6464C3.45118 10.8417 3.45118 11.1583 3.64645 11.3536C3.84171 11.5488 4.15829 11.5488 4.35355 11.3536L7.5 8.20711L10.6464 11.3536C10.8417 11.5488 11.1583 11.5488 11.3536 11.3536C11.5488 11.1583 11.5488 10.8417 11.3536 10.6464L8.20711 7.5L11.3536 4.35355Z" fill="currentColor"/>
+                </svg>
+              </Popover.Close>
+              <Tabs defaultSelectedId="tab3">
+                <Tabs.List aria-label="Tabs example" style={{ display: 'flex' }}>
+                  <Tabs.Tab
+                    as={Box}
+                    id="tab1"
+                    css={{
+                      height: '$5',
+                      display: 'inline-flex',
+                      lineHeight: 1,
+                      px: '$2',
+                      userSelect: 'none',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    }}>
+                    <Box css={{ mr: '$1' }}>
+                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 0.5C5.5 0.223858 5.72386 0 6 0H7.5H9C9.27614 0 9.5 0.223858 9.5 0.5C9.5 0.776142 9.27614 1 9 1H8V2.11922C9.09835 2.20409 10.119 2.56622 10.992 3.13572C11.0116 3.10851 11.0336 3.08252 11.0581 3.05806L11.8581 2.25806C12.1021 2.01398 12.4979 2.01398 12.7419 2.25806C12.986 2.50214 12.986 2.89786 12.7419 3.14194L11.9671 3.91682C13.1595 5.07925 13.9 6.70314 13.9 8.49998C13.9 12.0346 11.0346 14.9 7.5 14.9C3.96538 14.9 1.1 12.0346 1.1 8.49998C1.1 5.13362 3.69906 2.3743 7 2.11922V1H6C5.72386 1 5.5 0.776142 5.5 0.5ZM2.1 8.49998C2.1 5.51764 4.51766 3.09998 7.5 3.09998C10.4823 3.09998 12.9 5.51764 12.9 8.49998C12.9 11.4823 10.4823 13.9 7.5 13.9C4.51766 13.9 2.1 11.4823 2.1 8.49998ZM8 4.5C8 4.22386 7.77614 4 7.5 4C7.22386 4 7 4.22386 7 4.5V9.5C7 9.77614 7.22386 10 7.5 10C7.77614 10 8 9.77614 8 9.5V4.5Z" fill="#282B2E"/>
+                      </svg>
+                    </Box>
+                    <Text size={2}>Tab 1</Text>
+                  </Tabs.Tab>
+                  <Tabs.Tab
+                    as={Box}
+                    id="tab2"
+                    css={{
+                      height: '$5',
+                      display: 'inline-flex',
+                      lineHeight: 1,
+                      px: '$2',
+                      userSelect: 'none',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    }}>
+                    <Box css={{ mr: '$1' }}>
+                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 0.5C5.5 0.223858 5.72386 0 6 0H7.5H9C9.27614 0 9.5 0.223858 9.5 0.5C9.5 0.776142 9.27614 1 9 1H8V2.11922C9.09835 2.20409 10.119 2.56622 10.992 3.13572C11.0116 3.10851 11.0336 3.08252 11.0581 3.05806L11.8581 2.25806C12.1021 2.01398 12.4979 2.01398 12.7419 2.25806C12.986 2.50214 12.986 2.89786 12.7419 3.14194L11.9671 3.91682C13.1595 5.07925 13.9 6.70314 13.9 8.49998C13.9 12.0346 11.0346 14.9 7.5 14.9C3.96538 14.9 1.1 12.0346 1.1 8.49998C1.1 5.13362 3.69906 2.3743 7 2.11922V1H6C5.72386 1 5.5 0.776142 5.5 0.5ZM2.1 8.49998C2.1 5.51764 4.51766 3.09998 7.5 3.09998C10.4823 3.09998 12.9 5.51764 12.9 8.49998C12.9 11.4823 10.4823 13.9 7.5 13.9C4.51766 13.9 2.1 11.4823 2.1 8.49998ZM8 4.5C8 4.22386 7.77614 4 7.5 4C7.22386 4 7 4.22386 7 4.5V9.5C7 9.77614 7.22386 10 7.5 10C7.77614 10 8 9.77614 8 9.5V4.5Z" fill="#282B2E"/>
+                      </svg>
+                    </Box>
+                    <Text size={2}>Tab 2</Text>
+                  </Tabs.Tab>
+                  <Tabs.Tab
+                    as={Box}
+                    id="tab3"
+                    css={{
+                      height: '$5',
+                      display: 'inline-flex',
+                      lineHeight: 1,
+                      px: '$2',
+                      userSelect: 'none',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    }}>
+                    <Box css={{ mr: '$1' }}>
+                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 0.5C5.5 0.223858 5.72386 0 6 0H7.5H9C9.27614 0 9.5 0.223858 9.5 0.5C9.5 0.776142 9.27614 1 9 1H8V2.11922C9.09835 2.20409 10.119 2.56622 10.992 3.13572C11.0116 3.10851 11.0336 3.08252 11.0581 3.05806L11.8581 2.25806C12.1021 2.01398 12.4979 2.01398 12.7419 2.25806C12.986 2.50214 12.986 2.89786 12.7419 3.14194L11.9671 3.91682C13.1595 5.07925 13.9 6.70314 13.9 8.49998C13.9 12.0346 11.0346 14.9 7.5 14.9C3.96538 14.9 1.1 12.0346 1.1 8.49998C1.1 5.13362 3.69906 2.3743 7 2.11922V1H6C5.72386 1 5.5 0.776142 5.5 0.5ZM2.1 8.49998C2.1 5.51764 4.51766 3.09998 7.5 3.09998C10.4823 3.09998 12.9 5.51764 12.9 8.49998C12.9 11.4823 10.4823 13.9 7.5 13.9C4.51766 13.9 2.1 11.4823 2.1 8.49998ZM8 4.5C8 4.22386 7.77614 4 7.5 4C7.22386 4 7 4.22386 7 4.5V9.5C7 9.77614 7.22386 10 7.5 10C7.77614 10 8 9.77614 8 9.5V4.5Z" fill="#282B2E"/>
+                      </svg>
+                    </Box>
+                    <Text size={2}>Tab 3</Text>
+                  </Tabs.Tab>
+                </Tabs.List>
+                <Divider css={{ width: '100%', mb: '$4' }} />
+                <Tabs.Panel id="tab1">
+                  <Box css={{ p: '$3' }}>
+                    <Input placeholder="Search" />
+                  </Box>
+                  <Box>
+                    <Text size={2} as="p" css={{ lineHeight: '20px' }}>Hi Colm, Now that the summer is over it'd be great to re-ignite our earlier discussions.</Text>
+                  </Box>
+                </Tabs.Panel>
+                <Tabs.Panel id="tab2">
+                  <Box css={{ p: '$3' }}>
+                    <Input placeholder="Search" />
+                  </Box>
+                  <Text size={3} as="p" css={{ lineHeight: '20px' }}>I discussed Modulz with the team last week and we'd be interested in exploring the round you're looking to raise.</Text>
+                </Tabs.Panel>
+                <Tabs.Panel id="tab3">
+                  <Box css={{ p: '$3' }}>
+                    <Input placeholder="Search" />
+                  </Box>
+                  <Text size={3} as="p" css={{ lineHeight: '20px' }}>Would you be open to a follow-up call with myself and our General Partner Jos? Happy to jump on a quick call to discuss.</Text>
+                </Tabs.Panel>
+              </Tabs>
+            </Popover.Content>
+          </Popover.Position>
+        </Popover>
+      </Container>
+      
     </Box>
   );
 }
