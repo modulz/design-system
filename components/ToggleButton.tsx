@@ -3,15 +3,34 @@ import { ToggleButton, styles as togglebuttonStyles } from '@interop-ui/react-to
 
 export const SimpleToggle = styled(ToggleButton, {
   ...togglebuttonStyles.root,
-  backgroundColor: '$gray200',
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: '$hiContrast',
+  height: '$5',
+  width: '$5',
+  transition: 'all 40ms linear',
 
   ':hover': {
-    color: 'blue',
+    backgroundColor: '$gray300',
   },
+
   '&[data-state="on"]': {
-    color: 'red',
+    backgroundColor: '$gray400',
     ':hover': {
-      color: 'green'
-    }
+      backgroundColor: '$gray400',
+    },
   },
+
+  variants: {
+    shape: {
+      circle: {
+        backgroundColor: 'transparent',
+        borderRadius: '$round',
+      },
+      square: {
+        borderRadius: '$1',
+      },
+    }
+  }
 });
