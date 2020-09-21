@@ -584,7 +584,7 @@ function Home() {
               </Accordion.Panel>
             </Accordion.Item>
             <Accordion.Item value="four" style={{ lineHeight: 1, }}>
-              <Accordion.Button style={{ width: '100%', border: 'none', display: 'inline-flex', padding: 0, lineHeight: 1, verticalAlign: 'middle' }}>Four</Accordion.Button>
+              <Accordion.Button style={{ width: '100%', border: 'none', display: 'inline-flex', padding: '0', lineHeight: 1, verticalAlign: 'middle' }}>Four</Accordion.Button>
               <Accordion.Panel>
                 <Text size={3}>I’m an investor with Menlo Ventures.  I’ve been impressed by what you have been building at Modulz and wanted to reach out. It’s an area that I’ve been spending time in alongside with my colleague, who formerly lead product and growth at Evernote. Would love to connect with you if you are open to it.</Text>
               </Accordion.Panel>
@@ -1332,7 +1332,7 @@ function Home() {
           <Text size={1}>Button</Text>
         </MenuItem>
         <MenuItem css={{ backgroundColor: '$green200', pl: 100 }}>
-          <Box css={{ mr: '$2' }}>0,
+          <Box css={{ mr: '$2' }}>
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 4C8.567 4 7 5.567 7 7.5C7 9.433 8.567 11 10.5 11C12.433 11 14 9.433 14 7.5C14 5.567 12.433 4 10.5 4ZM7.67133 11C6.65183 10.175 6 8.91363 6 7.5C6 6.08637 6.65183 4.82498 7.67133 4H4.5C2.567 4 1 5.567 1 7.5C1 9.433 2.567 11 4.5 11H7.67133ZM0 7.5C0 5.01472 2.01472 3 4.5 3H10.5C12.9853 3 15 5.01472 15 7.5C15 9.98528 12.9853 12 10.5 12H4.5C2.01472 12 0 9.98528 0 7.5Z" fill="#282B2E"/>
             </svg>
