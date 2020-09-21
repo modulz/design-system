@@ -2,7 +2,7 @@ import { styled } from '../stitches.config';
 import { Checkbox as checkboxPrimitive, styles as checkboxStyles } from '@interop-ui/react-checkbox';
 
 export const Checkbox = styled(checkboxPrimitive, {
-  ...checkboxStyles.root,
+  ...(checkboxStyles.root as any),
   width: 25,
   height: 25,
   boxShadow: 'inset 0 0 0 1px $gray400',
