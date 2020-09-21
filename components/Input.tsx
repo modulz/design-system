@@ -24,8 +24,6 @@ export const Input = styled.input({
   boxShadow: 'inset 0 0 0 1px $gray600',
   borderRadius: '$1',
   color: '$hiContrast',
-  p: '$1',
-  fontSize: '$1',
   fontVariantNumeric: 'tabular-nums',
   ':focus': {
     boxShadow: 'inset 0px 0px 0px 1px $blue800, 0px 0px 0px 1px $blue800',
@@ -45,10 +43,14 @@ export const Input = styled.input({
 
   variants: {
     size: {
-      large: {
-        pt: '9px',
+      1: {
+        p: '$1',
+        fontSize: '$1',
+      },
+      2: {
+        pt: 8,
         px: '$2',
-        pb: '$2',
+        pb: 8,
         fontSize: '$3',
       },
     },

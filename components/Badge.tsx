@@ -29,15 +29,17 @@ export const Badge = styled.span({
   // Custom
   backgroundColor: '$gray200',
   borderRadius: '$pill',
-  color: '$gray600',
-  height: '$3',
-  px: '$1',
-  fontSize: '$1',
+  color: '$gray900',
   whiteSpace: 'nowrap',
 
   variants: {
     size: {
-      large: {
+      1: {
+        height: '$3',
+        px: '$1',
+        fontSize: '$1',
+      },
+      2: {
         height: '$5',
         px: '$3',
         fontSize: '$2',
