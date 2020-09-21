@@ -359,8 +359,8 @@ function Marketing() {
               </Popover>
               <Box css={{
                 position: 'absolute',
-                top: 0,
-                right: 0,
+                top: '0',
+                right: '0',
                 margin: '$2',
               }}>
                 <Tooltip>
@@ -558,7 +558,7 @@ function Marketing() {
         <Container size="2">
           <Accordion>
             <Accordion.Item value="one" style={{ lineHeight: 1, }}>
-              <Accordion.Button style={{ width: '100%', border: 'none', display: 'inline-flex', padding: 0, lineHeight: 1, verticalAlign: 'middle' }}>
+              <Accordion.Button style={{ width: '100%', border: 'none', display: 'inline-flex', padding: '0', lineHeight: 1, verticalAlign: 'middle' }}>
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645C11.1583 3.45118 10.8417 3.45118 10.6464 3.64645L7.5 6.79289L4.35355 3.64645C4.15829 3.45118 3.84171 3.45118 3.64645 3.64645C3.45118 3.84171 3.45118 4.15829 3.64645 4.35355L6.79289 7.5L3.64645 10.6464C3.45118 10.8417 3.45118 11.1583 3.64645 11.3536C3.84171 11.5488 4.15829 11.5488 4.35355 11.3536L7.5 8.20711L10.6464 11.3536C10.8417 11.5488 11.1583 11.5488 11.3536 11.3536C11.5488 11.1583 11.5488 10.8417 11.3536 10.6464L8.20711 7.5L11.3536 4.35355Z" fill="currentColor"/>
                 </svg>
@@ -568,7 +568,7 @@ function Marketing() {
               </Accordion.Panel>
             </Accordion.Item>
             <Accordion.Item value="two" style={{ lineHeight: 1, }}>
-              <Accordion.Button style={{ width: '100%', border: 'none', display: 'inline-flex', padding: 0, lineHeight: 1, verticalAlign: 'middle' }}>
+              <Accordion.Button style={{ width: '100%', border: 'none', display: 'inline-flex', padding: '0', lineHeight: 1, verticalAlign: 'middle' }}>
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645C11.1583 3.45118 10.8417 3.45118 10.6464 3.64645L7.5 6.79289L4.35355 3.64645C4.15829 3.45118 3.84171 3.45118 3.64645 3.64645C3.45118 3.84171 3.45118 4.15829 3.64645 4.35355L6.79289 7.5L3.64645 10.6464C3.45118 10.8417 3.45118 11.1583 3.64645 11.3536C3.84171 11.5488 4.15829 11.5488 4.35355 11.3536L7.5 8.20711L10.6464 11.3536C10.8417 11.5488 11.1583 11.5488 11.3536 11.3536C11.5488 11.1583 11.5488 10.8417 11.3536 10.6464L8.20711 7.5L11.3536 4.35355Z" fill="currentColor"/>
                 </svg>
@@ -578,7 +578,7 @@ function Marketing() {
               </Accordion.Panel>
             </Accordion.Item>
             <Accordion.Item value="three" disabled style={{ lineHeight: 1, }}>
-              <Accordion.Button style={{ width: '100%', border: 'none', display: 'inline-flex', padding: 0, lineHeight: 1, verticalAlign: 'middle' }}>Three (disabled)</Accordion.Button>
+              <Accordion.Button style={{ width: '100%', border: 'none', display: 'inline-flex', padding: '0', lineHeight: 1, verticalAlign: 'middle' }}>Three (disabled)</Accordion.Button>
               <Accordion.Panel>
                 <Text size={3}>I’m an investor with Menlo Ventures.  I’ve been impressed by what you have been building at Modulz and wanted to reach out. It’s an area that I’ve been spending time in alongside with my colleague, who formerly lead product and growth at Evernote. Would love to connect with you if you are open to it.</Text>
               </Accordion.Panel>
@@ -1107,12 +1107,12 @@ function Marketing() {
           <Text size={4} as="p" css={{ color: '$hiContrast', lineHeight: '25px', mb: '$4' }}>Here we are testing <Code>gray500</Code> for its suitability as a separator. It should subtle, though visible on all backgrounds.</Text>
 
           <Flex css={{ position: 'relative' }}>
-            <Box css={{ fb: 0, fg: 1, height: 160, backgroundColor: '$loContrast' }}></Box>
-            <Box css={{ fb: 0, fg: 1, height: 160, backgroundColor: '$gray100' }}></Box>
-            <Box css={{ fb: 0, fg: 1, height: 160, backgroundColor: '$gray200' }}></Box>
-            <Box css={{ fb: 0, fg: 1, height: 160, backgroundColor: '$gray300' }}></Box>
-            <Box css={{ fb: 0, fg: 1, height: 160, backgroundColor: '$gray400' }}></Box>
-            <Box css={{ position: 'absolute', top: '50%', left: 0, width: '100%', height: 1, backgroundColor: '$gray500' }}></Box>
+            <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$loContrast' }}></Box>
+            <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray100' }}></Box>
+            <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray200' }}></Box>
+            <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray300' }}></Box>
+            <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray400' }}></Box>
+            <Box css={{ position: 'absolute', top: '50%', left: '0', width: '100%', height: 1, backgroundColor: '$gray500' }}></Box>
           </Flex>
         </Container>
       </Section>
@@ -1122,7 +1122,7 @@ function Marketing() {
 
 
 
-      <Box css={{ position: 'fixed', top: 0, left: 0, bottom: 0, width: 250, borderRight: '1px solid $gray500', oy: 'scroll', py: '$1' }}>
+      <Box css={{ position: 'fixed', top: '0', left: '0', bottom: '0', width: 250, borderRight: '1px solid $gray500', oy: 'scroll', py: '$1' }}>
         <MenuItem>
           <Box css={{ mr: '$2' }}>
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
