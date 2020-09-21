@@ -6,7 +6,6 @@ export const MenuItem = styled.div({
   appearance: 'none',
   borderWidth: '0',
   boxSizing: 'border-box',
-  display: 'inline-flex',
   flexShrink: 0,
   fontFamily: 'inherit',
   justifyContent: 'center',
