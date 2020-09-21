@@ -63,11 +63,13 @@ export const theme = {
     $violet200: 'hsl(252,100%,98%)',
     $violet300: 'hsl(252,100%,94%)',
     $violet400: 'hsl(252,75%,84%)',
-    $violet500: 'hsl(252,78%,60%)',
-    $violet600: 'hsl(252,80%,53%)',
-    $violet700: 'hsl(252,10%,44%)',
-    $violet800: 'hsl(252,10%,44%)',
-    $violet900: 'hsl(252,10%,44%)',
+
+    $violet500: 'hsl(252,75%,84%)',
+    $violet600: 'hsl(252,75%,84%)',
+
+    $violet700: 'hsl(252,80%,70%)',
+    $violet800: 'hsl(252,78%,60%)',
+    $violet900: 'hsl(252,80%,53%)',
 
     $indigo100: 'hsl(226,100%,99%)',
     $indigo200: 'hsl(226,100%,98%)',
