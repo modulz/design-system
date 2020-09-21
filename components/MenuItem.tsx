@@ -1,6 +1,6 @@
 import { styled } from '../stitches.config';
 
-export const Badge = styled.span({
+export const MenuItem = styled.div({
   // Reset
   alignItems: 'center',
   appearance: 'none',
@@ -27,13 +27,16 @@ export const Badge = styled.span({
   },
 
   // Custom
-  backgroundColor: '$gray200',
-  borderRadius: '$pill',
-  color: '$gray600',
-  height: '$3',
+  ':hover': {
+    backgroundColor: '$gray300',
+  },
+
+  display: 'flex',
+  jc: 'flex-start',
+  minHeight: 31,
   px: '$1',
-  fontSize: '$1',
   whiteSpace: 'nowrap',
+  pl: '$3',
 
   variants: {
     size: {

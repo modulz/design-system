@@ -21,14 +21,14 @@ export const Input = styled.input({
   },
 
   // Custom
-  boxShadow: 'inset 0 0 0 1px $gray300',
+  boxShadow: 'inset 0 0 0 1px $gray600',
   borderRadius: '$1',
   color: '$hiContrast',
   p: '$1',
   fontSize: '$1',
   fontVariantNumeric: 'tabular-nums',
   ':focus': {
-    boxShadow: '$blue500 0px 0px 0px 1px inset, rgb(96, 179, 251) 0px 0px 0px 1px',
+    boxShadow: 'inset 0px 0px 0px 1px $blue800, 0px 0px 0px 1px $blue800',
   },
   ':read-only': {
     color: '$gray500',
@@ -40,7 +40,7 @@ export const Input = styled.input({
     cursor: 'not-allowed',
   },
   '::placeholder': {
-    color: '$gray500',
+    color: '$gray800',
   },
 
   variants: {
@@ -49,7 +49,7 @@ export const Input = styled.input({
         pt: '9px',
         px: '$2',
         pb: '$2',
-        fontSize: '$2',
+        fontSize: '$3',
       },
     },
     variant: {

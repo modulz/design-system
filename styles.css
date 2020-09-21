@@ -1,6 +1,6 @@
 html,
 body,
-#root {
+#root, {
   height: 100%;
 }
 
@@ -11,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsl(206, 10%, 5%);
+  line-height: 1;
 }
 
 svg {

@@ -1,18 +1,21 @@
 import { styled } from '../stitches.config';
 
-export const Divider = styled.div({
+export const Separator = styled.div({
   // Reset
   boxSizing: 'border-box',
   flexShrink: 0,
 
   height: '1px',
-  backgroundColor: '$gray300',
+  backgroundColor: '$gray500',
   borderRadius: '$1',
   width: '$3',
 
   variants: {
     size: {
-      large: {
+      1: {
+        width: '$3',
+      },
+      2: {
         width: '$7',
       },
     },

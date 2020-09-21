@@ -13,18 +13,15 @@ export const Container = styled.div({
   variants: {
     size: {
       '1': {
-        maxWidth: '300px',
+        maxWidth: '430px',
       },
       '2': {
-        maxWidth: '585px',
+        maxWidth: '715px',
       },
       '3': {
-        maxWidth: '865px',
-      },
-      '4': {
         maxWidth: '1145px',
       },
-      '5': {
+      '4': {
         maxWidth: 'none',
       },
     },

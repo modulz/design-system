@@ -23,7 +23,7 @@ export const Button = styled.button({
   // Custom
   backgroundColor: '$loContrast',
   border: 'none',
-  boxShadow: 'inset 0 0 0 1px $gray400',
+  boxShadow: 'inset 0 0 0 1px $gray600',
   borderRadius: '$1',
   color: '$hiContrast',
   height: '$5',
@@ -32,14 +32,14 @@ export const Button = styled.button({
   fontSize: '$2',
   fontWeight: 500,
   ':hover': {
-    boxShadow: 'inset 0 0 0 1px $gray500',
+    boxShadow: 'inset 0 0 0 1px $gray700',
   },
   ':active': {
     backgroundColor: '$gray100',
-    boxShadow: 'inset 0 0 0 1px $gray500',
+    boxShadow: 'inset 0 0 0 1px $gray700',
   },
   ':focus': {
-    boxShadow: 'inset 0 0 0 1px $gray500, 0 0 0 1px $gray500',
+    boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
   },
   ':disabled': {
     pointerEvents: 'none',
@@ -58,7 +58,7 @@ export const Button = styled.button({
     },
     variant: {
       blue: {
-        backgroundColor: '$blue500',
+        backgroundColor: '$blue800',
         boxShadow: 'none',
         color: 'white',
         ':hover': {

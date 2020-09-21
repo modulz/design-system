@@ -5,6 +5,7 @@ export const Text = styled.span({
   lineHeight: '1',
   margin: '0',
   fontWeight: 400,
+  fontVariantNumeric: 'tabular-nums',
 
   // Custom
   color: '$hiContrast',
@@ -33,14 +34,17 @@ export const Text = styled.span({
       '7': {
         fontSize: '$7',
         letterSpacing: '-.021em',
+        fontWeight: 500,
       },
       '8': {
         fontSize: '$8',
         letterSpacing: '-.034em',
+        fontWeight: 500,
       },
       '9': {
         fontSize: '$9',
         letterSpacing: '-.055em',
+        fontWeight: 500,
       },
     },
   },
