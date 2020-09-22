@@ -90,7 +90,7 @@ export const Button = styled.button({
         },
       },
       red: {
-        color: '$red600',
+        color: '$red900',
         ':focus': {
           boxShadow: 'inset 0 0 0 1px $red500, 0 0 0 1px $red500',
         },

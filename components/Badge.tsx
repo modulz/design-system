@@ -48,19 +48,19 @@ export const Badge = styled.span({
     variant: {
       red: {
         backgroundColor: '$red200',
-        color: '$red600',
+        color: '$red900',
       },
       crimson: {
         backgroundColor: '$crimson200',
-        color: '$crimson600',
+        color: '$crimson900',
       },
       pink: {
         backgroundColor: '$pink200',
-        color: '$pink600',
+        color: '$pink900',
       },
       purple: {
         backgroundColor: '$purple200',
-        color: '$purple600',
+        color: '$purple900',
       },
       violet: {
         backgroundColor: '$violet200',
@@ -68,43 +68,43 @@ export const Badge = styled.span({
       },
       indigo: {
         backgroundColor: '$indigo200',
-        color: '$indigo600',
+        color: '$indigo900',
       },
       blue: {
         backgroundColor: '$blue200',
-        color: '$blue600',
+        color: '$blue900',
       },
       turquoise: {
         backgroundColor: '$turquoise200',
-        color: '$turquoise600',
+        color: '$turquoise900',
       },
       teal: {
         backgroundColor: '$teal200',
-        color: '$teal600',
+        color: '$teal900',
       },
       green: {
         backgroundColor: '$green200',
-        color: '$green600',
+        color: '$green900',
       },
       lime: {
         backgroundColor: '$lime200',
-        color: '$lime600',
+        color: '$lime900',
       },
       yellow: {
         backgroundColor: '$yellow200',
-        color: '$yellow600',
+        color: '$yellow900',
       },
       orange: {
         backgroundColor: '$orange200',
-        color: '$orange600',
+        color: '$orange900',
       },
       gold: {
         backgroundColor: '$gold200',
-        color: '$gold600',
+        color: '$gold900',
       },
       bronze: {
         backgroundColor: '$bronze200',
-        color: '$bronze600',
+        color: '$bronze900',
       },
     },
   },

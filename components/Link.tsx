@@ -35,7 +35,7 @@ export const Link = styled.a({
     },
     variant: {
       blue: {
-        color: '$blue600',
+        color: '$blue900',
         textDecoration: 'none',
         borderColor: 'transparent',
         ':hover': {
