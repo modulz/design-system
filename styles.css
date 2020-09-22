@@ -1,8 +1,4 @@
-html,
-body,
-#root, {
-  height: 100%;
-}
+html { overflow-y: hidden; }
 
 body {
   margin: 0;
@@ -19,7 +15,11 @@ svg {
   vertical-align: middle;
 }
 
+html,
+body,
+#root,
 #__next,
+#__next > div,
 .theme-0 {
   height: 100%;
 }

@@ -2,8 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import '../styles.css';
 import { darkThemeClass } from '../stitches.config';
-import { SwitchIcon } from '@modulz/radix-icons';
-import { IconButton } from '../components/IconButton';
+import { Button } from '../components/Button';
 
 function App({ Component, pageProps }) {
   const [theme, setTheme] = React.useState(darkThemeClass);
@@ -18,12 +17,13 @@ function App({ Component, pageProps }) {
 
       <Component {...pageProps} />
 
-      <IconButton
-        style={{ position: 'fixed', zIndex: 999, left: 15, bottom: 15 }}
+      <Button
+        variant="ghost"
+        style={{ position: 'fixed', zIndex: 999, left: 260, top: 15 }}
         onClick={() => setTheme(theme ? undefined : darkThemeClass)}
       >
-        <SwitchIcon />
-      </IconButton>
+        Toggle theme
+      </Button>
     </div>
   );
 }

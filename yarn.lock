@@ -1182,7 +1182,7 @@
     "@interop-ui/utils" "0.0.1-1"
     resize-observer-polyfill "^1.5.1"
 
-"@interop-ui/react-utils@0.0.1-1":
+"@interop-ui/react-utils@0.0.1-1", "@interop-ui/react-utils@^0.0.1-1":
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-utils/-/react-utils-0.0.1-1.tgz#ab6b13b5b99e2b1e70065726ab1d5d0724c98711"
   integrity sha512-g5eXMyUX2JQsG8yshL4E7JLGkKAu2NESypINAiu4lO/U4vzBHuE4QlaRPG8qBq8ua+jpFl/jBQZp1lNaeZ5sdg==

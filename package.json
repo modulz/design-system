@@ -26,6 +26,7 @@
     "@interop-ui/react-tabs": "^0.0.1-1",
     "@interop-ui/react-toggle-button": "^0.0.1-2",
     "@interop-ui/react-tooltip": "^0.0.1-1",
+    "@interop-ui/react-utils": "^0.0.1-1",
     "@modulz/radix-icons": "^2.4.0",
     "@next/mdx": "^9.5.1",
     "@stitches/react": "^0.0.3-canary.1",

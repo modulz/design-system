@@ -64,7 +64,7 @@ export const Badge = styled.span({
       },
       violet: {
         backgroundColor: '$violet200',
-        color: '$violet600',
+        color: '$violet900',
       },
       indigo: {
         backgroundColor: '$indigo200',
