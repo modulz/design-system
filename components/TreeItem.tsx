@@ -26,27 +26,77 @@ export const TreeItem = styled.div({
 
   variants: {
     variant: {
-      blue: {
-        backgroundColor: '$blue300',
+      gray: {
+        backgroundColor: '$gray200',
+        ':hover': {
+          backgroundColor: '$gray300',
+        },
+        ':active': {
+          backgroundColor: '$gray400',
+        },
       },
-      blueHighlighted: {
+      blue: {
         backgroundColor: '$blue200',
+        ':hover': {
+          backgroundColor: '$blue300',
+        },
+        ':active': {
+          backgroundColor: '$blue400',
+        },
+      },
+      red: {
+        backgroundColor: '$red200',
+        ':hover': {
+          backgroundColor: '$red300',
+        },
+        ':active': {
+          backgroundColor: '$red400',
+        },
       },
       purple: {
-        backgroundColor: '$purple300',
-        color: '$purple600',
-      },
-      purpleSelected: {
-        backgroundColor: '$purple300',
-      },
-      purpleHighlighted: {
         backgroundColor: '$purple200',
+        ':hover': {
+          backgroundColor: '$purple300',
+        },
+        ':active': {
+          backgroundColor: '$purple400',
+        },
       },
-      yellowSelected: {
-        backgroundColor: '$yellow300',
+      violet: {
+        backgroundColor: '$violet200',
+        ':hover': {
+          backgroundColor: '$violet300',
+        },
+        ':active': {
+          backgroundColor: '$violet400',
+        },
       },
-      yellowHighlighted: {
+      orange: {
+        backgroundColor: '$orange200',
+        ':hover': {
+          backgroundColor: '$orange300',
+        },
+        ':active': {
+          backgroundColor: '$orange400',
+        },
+      },
+      green: {
+        backgroundColor: '$green200',
+        ':hover': {
+          backgroundColor: '$green300',
+        },
+        ':active': {
+          backgroundColor: '$green400',
+        },
+      },
+      yellow: {
         backgroundColor: '$yellow200',
+        ':hover': {
+          backgroundColor: '$yellow300',
+        },
+        ':active': {
+          backgroundColor: '$yellow400',
+        },
       },
     },
   },

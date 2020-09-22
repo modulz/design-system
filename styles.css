@@ -23,3 +23,8 @@ body,
 .theme-0 {
   height: 100%;
 }
+
+#__next {
+  position: relative;
+  z-index: 0;
+}

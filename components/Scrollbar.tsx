@@ -199,7 +199,7 @@ export const ScrollArea = (props: ScrollAreaProps) => {
             width: 'calc(100% - 4px)',
             height: 'calc(100% - 4px)',
             // Match Radix hue on grays
-            backgroundColor: 'hsla(212, 5%, 50%, 0.3)',
+            backgroundColor: 'hsla(206, 5%, 50%, 0.3)',
             borderRadius: '9999px',
           },
         }}
