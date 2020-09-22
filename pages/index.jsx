@@ -36,7 +36,7 @@ import { Color } from '../composites/Color';
 
 function Home() {
   return (
-    <Box css={{ bc: '$loContrast', height: '100%', mx: 250 }}>
+    <Box css={{ bc: '$loContrast', height: '100%', px: 250 }}>
       <ScrollArea>
       
         <Section size={3}>
