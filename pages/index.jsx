@@ -30,6 +30,7 @@ import { Checkbox as CheckboxPrimitive, styles as checkboxStyles } from '@intero
 import { Switch } from '../components/Switch';
 import { ScrollArea } from '../components/Scrollbar';
 import { Overlay } from '../components/Overlay';
+import { Panel } from '../components/Panel';
 
 import { Title } from '../composites/Title';
 import { Subtitle } from '../composites/Subtitle';
@@ -394,18 +395,15 @@ function Home() {
             <Dialog>
               <Dialog.Trigger as={Button}>Dialog</Dialog.Trigger>
               <Dialog.Overlay as={Overlay} style={{ ...dialogStyles.overlay }} />
-              <Dialog.Content as={Box} css={{
+              <Dialog.Content as={Panel} css={{
                 ...dialogStyles.content,
                 top: '50%',
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
-                backgroundColor: '$loContrast',
                 minWidth: 200,
                 maxWidth: 'fit-content',
                 maxHeight: '85vh',
                 padding: 20,
-                borderRadius: 5,
-                boxShadow: 'rgba(14, 18, 22, 0.35) 0px 10px 38px -10px, rgba(14, 18, 22, 0.2) 0px 10px 20px -15px',
                 marginTop: '-5vh',
               }}>
                 <Text size={5} as="h6" css={{ fontWeight: 500, mb: '$3' }}>Dialog Heading</Text>
