@@ -10,11 +10,14 @@ export function Subheading(props) {
       }}
       css={{
         fontWeight: 500,
+        ...props.css,
         initial: {
-          lineHeight: '25px'
+          lineHeight: '25px',
+          ...props.initial,
         },
         bp2: {
-          lineHeight: '30px'
+          lineHeight: '30px',
+          ...props.bp2,
         }
       }}
       {...props}

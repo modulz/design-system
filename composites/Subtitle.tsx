@@ -11,13 +11,15 @@ export function Subtitle(props) {
       {...props}
       css={{
         color: '$gray900',
+        ...props.css,
         initial: {
-          lineHeight: '27px'
+          lineHeight: '27px',
+          ...props.initial,
         },
         bp2: {
-          lineHeight: '29px'
+          lineHeight: '29px',
+          ...props.bp2,
         },
-        ...props.css
       }}
      />
   );
