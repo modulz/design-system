@@ -29,6 +29,7 @@ import { Checkbox } from '../components/Checkbox';
 import { Checkbox as CheckboxPrimitive, styles as checkboxStyles } from '@interop-ui/react-checkbox';
 import { Switch } from '../components/Switch';
 import { ScrollArea } from '../components/Scrollbar';
+import { Overlay } from '../components/Overlay';
 
 import { Title } from '../composites/Title';
 import { Subtitle } from '../composites/Subtitle';
@@ -392,11 +393,7 @@ function Home() {
           <Container size="2">
             <Dialog>
               <Dialog.Trigger as={Button}>Dialog</Dialog.Trigger>
-              <Dialog.Overlay style={{
-                ...dialogStyles.overlay,
-                backgroundColor: 'rgba(0,0,0,.15)'
-                }}
-              />
+              <Dialog.Overlay as={Overlay} style={{ ...dialogStyles.overlay }} />
               <Dialog.Content as={Box} css={{
                 ...dialogStyles.content,
                 top: '50%',
