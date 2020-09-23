@@ -117,43 +117,93 @@ function Home() {
 
         <Section size={3}>
           <Container size="2">
+            <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mb: '$8', mb: '$1' }}>Tracking test</Text>
+            <Text size="4" as="p" css={{ lineHeight: '27px', mb: '$7' }}>Tracking should be tight and sexi.</Text>
+          </Container>
+          <Container size="2">
             <Flex css={{ fd: 'column', gap: '$4' }}>
               <Flex css={{ ai: 'center' }}>
-                <Text size={2} css={{ color: '$gray900', mr: '$6' }}>900</Text>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>900</Text>
                 <Text size={9} as="h1" css={{ fontWeight: 500, lineHeight: '55px' }}>The quick brown fox</Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
-                <Text size={2} css={{ color: '$gray900', mr: '$6' }}>800</Text>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>800</Text>
                 <Text size={8} as="h2" css={{ fontWeight: 500, lineHeight: '37px' }}>The quick brown fox jumped</Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
-                <Text size={2} css={{ color: '$gray900', mr: '$6' }}>700</Text>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>700</Text>
                 <Text size={7} as="h3" css={{ fontWeight: 500, lineHeight: '30px' }}>The quick brown fox jumped</Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
-                <Text size={2} css={{ color: '$gray900', mr: '$6' }}>600</Text>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>600</Text>
                 <Text size={6} as="p" css={{ lineHeight: '30px' }}>The quick brown fox jumped over the lazy dog.</Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
-                <Text size={2} css={{ color: '$gray900', mr: '$6' }}>500</Text>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>500</Text>
                 <Text size={5} as="p" css={{ lineHeight: '29px' }}>The quick brown fox jumped over the lazy dog.</Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
-                <Text size={2} css={{ color: '$gray900', mr: '$6' }}>400</Text>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>400</Text>
                 <Text size={4} as="p" css={{ lineHeight: '29px' }}>The quick brown fox jumped over the lazy dog.</Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
-                <Text size={2} css={{ color: '$gray900', mr: '$6' }}>300</Text>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>300</Text>
                 <Text size={3} as="p" css={{ lineHeight: '25px' }}>The quick brown fox jumped over the lazy dog.</Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
-                <Text size={2} css={{ color: '$gray900', mr: '$6' }}>200</Text>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>200</Text>
                 <Text size={2} as="p" css={{ lineHeight: '20px' }}>The quick brown fox jumped over the lazy dog.</Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
-                <Text size={2} css={{ color: '$gray900', mr: '$6' }}>100</Text>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>100</Text>
                 <Text size={1} as="p" css={{ lineHeight: '20px' }}>The quick brown fox jumped over the lazy dog.</Text>
               </Flex>
+            </Flex>
+          </Container>
+
+          <Container size="2">
+            <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>Corrective indent test</Text>
+            <Text size="4" as="p" css={{ lineHeight: '27px', mb: '$7' }}>Text should be aligned with the yellow box along the left edge. There's some optical shit going on here too, so this is not gospel.</Text>
+          </Container>
+          <Container size="2">
+            <Flex css={{ fd: 'column', gap: '$4', position: 'relative' }}>
+              <Flex css={{ ai: 'center' }}>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>900</Text>
+                <Text size={9} as="h1" css={{ fontWeight: 500, lineHeight: '55px' }}>The quick brown fox</Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>800</Text>
+                <Text size={8} as="h2" css={{ fontWeight: 500, lineHeight: '37px' }}>The quick brown fox jumped</Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>700</Text>
+                <Text size={7} as="h3" css={{ fontWeight: 500, lineHeight: '30px' }}>The quick brown fox jumped</Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>600</Text>
+                <Text size={6} as="p" css={{ lineHeight: '30px' }}>The quick brown fox jumped over the lazy dog.</Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>500</Text>
+                <Text size={5} as="p" css={{ lineHeight: '29px' }}>The quick brown fox jumped over the lazy dog.</Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>400</Text>
+                <Text size={4} as="p" css={{ lineHeight: '29px' }}>The quick brown fox jumped over the lazy dog.</Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>300</Text>
+                <Text size={3} as="p" css={{ lineHeight: '25px' }}>The quick brown fox jumped over the lazy dog.</Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>200</Text>
+                <Text size={2} as="p" css={{ lineHeight: '20px' }}>The quick brown fox jumped over the lazy dog.</Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size={2} css={{ color: '$gray900', width: '65px' }}>100</Text>
+                <Text size={1} as="p" css={{ lineHeight: '20px' }}>The quick brown fox jumped over the lazy dog.</Text>
+              </Flex>
+              <Box css={{ position: 'absolute', top: '0', left: '65px', right: '0', bottom: '0', background: '$yellow500', zIndex: '-1'  }}></Box>
             </Flex>
           </Container>
         </Section>
