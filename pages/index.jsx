@@ -30,6 +30,8 @@ import { Checkbox as CheckboxPrimitive, styles as checkboxStyles } from '@intero
 import { Switch } from '../components/Switch';
 import { ScrollArea } from '../components/Scrollbar';
 
+import { Title } from '../composites/Title';
+
 import { Layers } from '../composites/Layers';
 import { Properties } from '../composites/Properties';
 import { Color } from '../composites/Color';
@@ -41,9 +43,9 @@ function Home() {
       
         <Section size={3}>
           <Container size="2">
-            <Text as="h1" size="9" css={{ ta: 'center', fontWeight: '500', lineHeight: '55px', mb: '$3' }}>
+            <Title css={{ ta: 'center', mb: '$3' }}>
               Radix UI test suite
-            </Text>
+            </Title>
             <Text as="h2" size="6" css={{ ta: 'center', color: '$gray900', lineHeight: '30px' }}>
               An environment for testing tokens, theming, and components on Radix UI design system.
             </Text>
@@ -205,6 +207,17 @@ function Home() {
               </Flex>
               <Box css={{ position: 'absolute', top: '0', left: '65px', right: '0', bottom: '0', background: '$yellow500', zIndex: '-1'  }}></Box>
             </Flex>
+          </Container>
+
+          <Container size="2">
+            <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>Text components</Text>
+            <Text size="4" as="p" css={{ lineHeight: '27px', mb: '$7' }}>A set of pre-formatted components for setting text.</Text>
+
+            <Title>Title</Title>
+            <Title>Subtitle</Title>
+            <Title>Heading</Title>
+            <Title>Subheading</Title>
+            <Title>Paragraph</Title>
           </Container>
         </Section>
 
