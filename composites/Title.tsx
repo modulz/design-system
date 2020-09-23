@@ -8,16 +8,17 @@ export function Title(props) {
         initial: '8',
         bp2: '9'
       }}
+      {...props}
       css={{
         fontWeight: 500,
         initial: {
-          lineHeight: '35px'
+          lineHeight: '35px',
         },
         bp2: {
           lineHeight: '55px'
-        }
+        },
+        {...props.css}
       }}
-      {...props}
      />
   );
 }

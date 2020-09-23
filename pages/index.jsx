@@ -50,9 +50,10 @@ function Home() {
             <Title css={{ ta: 'center', mb: '$3' }}>
               Radix UI test suite
             </Title>
-            <Text as="h2" size="6" css={{ ta: 'center', color: '$gray900', lineHeight: '30px' }}>
+            <Subtitle css={{ ta: 'center' }}>
               An environment for testing tokens, theming, and components on Radix UI design system.
-            </Text>
+            </Subtitle>
+            <Subtitle>This is a subtitle, used to support a title or heading. It defaults to h2 but can be rendered as any h level.</Subtitle>
           </Container>
         </Section>
 
