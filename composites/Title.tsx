@@ -6,19 +6,21 @@ export function Title(props) {
       as="h1"
       size={{
         initial: '8',
-        bp2: '9'
+        bp2: '9',
       }}
       {...props}
       css={{
         fontWeight: 500,
+        ...props.css,
         initial: {
           lineHeight: '35px',
+          ...props.initial,
         },
         bp2: {
-          lineHeight: '55px'
+          lineHeight: '55px',
+          ...props.bp2,
         },
-        {...props.css}
       }}
-     />
+    />
   );
 }

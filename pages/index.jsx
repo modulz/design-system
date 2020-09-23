@@ -44,7 +44,7 @@ function Home() {
   return (
     <Box css={{ bc: '$loContrast', height: '100%', px: 250 }}>
       <ScrollArea>
-      
+
         <Section size={3}>
           <Container size="2">
             <Title css={{ ta: 'center', mb: '$3' }}>
@@ -217,7 +217,7 @@ function Home() {
           <Container size="2">
             <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>Text components</Text>
             <Text size="4" as="p" css={{ lineHeight: '27px', mb: '$7' }}>A set of pre-formatted components for setting text.</Text>
-            
+
             <Flex css={{ fd: 'column', gap: '$6' }}>
               <Title>This is a title</Title>
               <Subtitle>This is a subtitle, used to support a title or heading. It defaults to h2 but can be rendered as any h level.</Subtitle>
@@ -291,7 +291,7 @@ function Home() {
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-        
+
         <Section size={3}>
           <Container size="2">
             <Flex css={{ gap: '$6' }}>
@@ -347,7 +347,7 @@ function Home() {
           </Link>
           </Container>
         </Section>
-        
+
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
@@ -388,7 +388,7 @@ function Home() {
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-        
+
         <Section size={3}>
           <Container size="2">
             <Dialog>
@@ -476,7 +476,7 @@ function Home() {
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-        
+
         <Section size={3}>
           <Container size="2">
             <Popover>
@@ -626,11 +626,11 @@ function Home() {
             </Popover>
           </Container>
         </Section>
-        
+
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-        
+
         <Section size={3}>
           <Container size="2">
             <Accordion>
@@ -675,7 +675,7 @@ function Home() {
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-        
+
         <Section size={3}>
           <Container size="2">
             <Avatar as={Box} css={{
@@ -704,7 +704,7 @@ function Home() {
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-        
+
         <Section size={3}>
           <Container size="2" css={{ py: '$7' }}>
             <Tabs defaultSelectedId="tab3">
@@ -784,7 +784,7 @@ function Home() {
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-        
+
         <Section size={3}>
           <Container size="2">
             <Grid css={{
@@ -919,7 +919,7 @@ function Home() {
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-        
+
         <Section size={3}>
           <Container size="2" css={{ py: '$7' }}>
             <Checkbox>
@@ -955,13 +955,13 @@ function Home() {
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-        
+
         <Color />
       </ScrollArea>
 
       <Layers />
       <Properties />
-      
+
     </Box>
   );
 }
