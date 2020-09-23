@@ -126,7 +126,7 @@ function Home() {
         <Section size={3}>
           <Container size="2">
             <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mb: '$8', mb: '$1' }}>Tracking test</Text>
-            <Text size="4" as="p" css={{ lineHeight: '27px', mb: '$7' }}>Tracking should be tight and sexi.</Text>
+            <Paragraph css={{ mb: '$7' }}>Tracking should be tight and sexi.</Paragraph>
           </Container>
           <Container size="2">
             <Flex css={{ fd: 'column', gap: '$4' }}>
@@ -171,7 +171,7 @@ function Home() {
 
           <Container size="2">
             <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>Corrective indent test</Text>
-            <Text size="4" as="p" css={{ lineHeight: '27px', mb: '$7' }}>Text should be aligned with the yellow box along the left edge. There's some optical shit going on here too, so this is not gospel.</Text>
+            <Paragraph css={{ mb: '$7' }}>Text should be aligned with the yellow box along the left edge. There's some optical shit going on here too, so this is not gospel.</Paragraph>
           </Container>
           <Container size="2">
             <Flex css={{ fd: 'column', gap: '$4', position: 'relative' }}>
@@ -217,7 +217,7 @@ function Home() {
 
           <Container size="2">
             <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>Text components</Text>
-            <Text size="4" as="p" css={{ lineHeight: '27px', mb: '$7' }}>A set of pre-formatted components for setting text.</Text>
+            <Paragraph css={{ mb: '$7' }}>A set of pre-formatted components for setting text.</Paragraph>
 
             <Flex css={{ fd: 'column', gap: '$6' }}>
               <Title>This is a title</Title>
@@ -331,21 +331,21 @@ function Home() {
               </Text>
             </Flex>
 
-            <Text size="4" as="p" css={{ lineHeight: '25px' }}>
-            There are 5 variants to choose from. Use is for positive states.{' '}
-            <Link css={{}} href="#">
+            <Paragraph>
+              There are 5 variants to choose from. Use is for positive states.{' '}
+              <Link css={{}} href="#">
+                This is a link
+              </Link>{' '}
+              Traditional business literature won’t help you solve it- most of that stuff is focused on
+              life after product/market fit, after the Trough of Sorrow. A lot of startup stuff is
+              focused on the initial phases, when you don’t have a team, idea, or investors.
+            </Paragraph>
+            <Link variant="blue" css={{}} href="#">
               This is a link
-            </Link>{' '}
-            Traditional business literature won’t help you solve it- most of that stuff is focused on
-            life after product/market fit, after the Trough of Sorrow. A lot of startup stuff is
-            focused on the initial phases, when you don’t have a team, idea, or investors.
-          </Text>
-          <Link variant="blue" css={{}} href="#">
-            This is a link
-          </Link>
-          <Link variant="subtle" css={{}} href="#">
-            This is a link
-          </Link>
+            </Link>
+            <Link variant="subtle" css={{}} href="#">
+              This is a link
+            </Link>
           </Container>
         </Section>
 
@@ -366,13 +366,13 @@ function Home() {
 
         <Section size={3}>
           <Container size="2">
-            <Text size="4" as="p" css={{ lineHeight: '25px' }}>
+            <Paragraph>
               There are 5 variants to choose from. Use <Code>console.log('Radix').console</Code> is for
               positive states. Traditional business literature won’t help you solve it- most of that
               stuff is focused on life after product/market fit, after the Trough of Sorrow. A lot of
               startup stuff is focused on the initial phases, when you don’t have a team, idea, or
               investors.
-            </Text>
+            </Paragraph>
           </Container>
         </Section>
 

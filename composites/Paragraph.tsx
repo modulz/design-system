@@ -8,6 +8,7 @@ export function Paragraph(props) {
         initial: '3',
         bp2: '4'
       }}
+      {...props}
       css={{
         ...props.css,
         initial: {
@@ -19,7 +20,6 @@ export function Paragraph(props) {
           ...props.bp2,
         }
       }}
-      {...props}
      />
   );
 }

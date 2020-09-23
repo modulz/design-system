@@ -7,6 +7,7 @@ import { Container } from '../components/Container';
 import { Grid } from '../components/Grid';
 import { Code } from '../components/Code';
 import { Flex } from '../components/Flex';
+import { Paragraph } from '../composites/Paragraph';
 
 export function Color() {
   return (
@@ -248,7 +249,7 @@ export function Color() {
 
       <Container size="2">
         <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>Warm & cool hues</Text>
-        <Text size="4" as="p" css={{ color: '$hiContrast', lineHeight: '27px', mb: '$7' }}>There are 8 warm hues and 8 cool hues. All <Code>800</Code> colors should be balanced optically, especially if they are adjacent on the spectrum.</Text>
+        <Paragraph css={{ mb: '$7' }}>There are 8 warm hues and 8 cool hues. All <Code>800</Code> colors should be balanced optically, especially if they are adjacent on the spectrum.</Paragraph>
       </Container>
 
       <Container size="3">
@@ -279,7 +280,7 @@ export function Color() {
       </Container>
 
       <Container size="2">
-        <Text size="4" as="p" css={{ color: '$hiContrast', lineHeight: '27px', my: '$7' }}>All <Code>200</Code> colors should be balanced optically, especially if they are adjacent on the spectrum.</Text>
+        <Paragraph css={{ my: '$7' }}>All <Code>200</Code> colors should be balanced optically, especially if they are adjacent on the spectrum.</Paragraph>
       </Container>
 
       <Container size="3">
@@ -311,7 +312,7 @@ export function Color() {
 
       <Container size="2">
         <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>Text color test</Text>
-        <Text size="4" as="p" css={{ lineHeight: '27px', mb: '$7' }}>The <Code>900</Code> text color should look good and pass AA on all background colors. Text should also pass on the <Code>800</Code> backgrounds.</Text>
+        <Paragraph css={{ mb: '$7' }}>The <Code>900</Code> text color should look good and pass AA on all background colors. Text should also pass on the <Code>800</Code> backgrounds.</Paragraph>
       </Container>
 
       <Container size="3">
@@ -519,7 +520,7 @@ export function Color() {
         
       <Container size="2">
         <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>Lines</Text>
-        <Text size="4" as="p" css={{ lineHeight: '27px', mb: '$7' }}>The <Code>500</Code> line should be very subtle, but visible on all backgrounds.</Text>
+        <Paragraph css={{ mb: '$7' }}>The <Code>500</Code> line should be very subtle, but visible on all backgrounds.</Paragraph>
       </Container>
 
       <Container size="2">
@@ -534,7 +535,7 @@ export function Color() {
       </Container>
       
       <Container size="2">
-        <Text size="4" as="p" css={{ lineHeight: '27px', my: '$7' }}>These <Code>500</Code> lines should have a nice constrast against the <Code>100</Code> background. Make sure the borders don't look too harsh or vibrant.</Text>
+        <Paragraph css={{ my: '$7' }}>These <Code>500</Code> lines should have a nice constrast against the <Code>100</Code> background. Make sure the borders don't look too harsh or vibrant.</Paragraph>
       </Container>
 
       <Container size="3">
