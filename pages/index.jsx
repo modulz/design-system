@@ -31,6 +31,10 @@ import { Switch } from '../components/Switch';
 import { ScrollArea } from '../components/Scrollbar';
 
 import { Title } from '../composites/Title';
+import { Subtitle } from '../composites/Subtitle';
+import { Heading } from '../composites/Heading';
+import { Subheading } from '../composites/Subheading';
+import { Paragraph } from '../composites/Paragraph';
 
 import { Layers } from '../composites/Layers';
 import { Properties } from '../composites/Properties';
@@ -212,12 +216,14 @@ function Home() {
           <Container size="2">
             <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>Text components</Text>
             <Text size="4" as="p" css={{ lineHeight: '27px', mb: '$7' }}>A set of pre-formatted components for setting text.</Text>
-
-            <Title>Title</Title>
-            <Title>Subtitle</Title>
-            <Title>Heading</Title>
-            <Title>Subheading</Title>
-            <Title>Paragraph</Title>
+            
+            <Flex css={{ fd: 'column', gap: '$6' }}>
+              <Title>This is a title</Title>
+              <Subtitle>This is a subtitle, used to support a title or heading. It defaults to h2 but can be rendered as any h level.</Subtitle>
+              <Heading>This is a large heading</Heading>
+              <Subheading>This is a small heading</Subheading>
+              <Paragraph>This is a really long paragraph of text, to demonstrate prose text, like for example, the kind you might read in a blog post. The reason we're using prose here is because the most common use case for this container size is longform text. So we're previewing some longform text here so we can make sure the container width provides an optimal line length for this font size.</Paragraph>
+            </Flex>
           </Container>
         </Section>
 

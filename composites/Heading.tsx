@@ -1,20 +1,20 @@
 import { Text } from '../components/Text';
 
-export function Title(props) {
+export function Heading(props) {
   return (
     <Text
-      as="h1"
+      as="h3"
       size={{
-        initial: '8',
-        bp2: '9'
+        initial: '6',
+        bp2: '7'
       }}
       css={{
         fontWeight: 500,
         initial: {
-          lineHeight: '35px'
+          lineHeight: '25px'
         },
         bp2: {
-          lineHeight: '55px'
+          lineHeight: '30px'
         }
       }}
       {...props}
