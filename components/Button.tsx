@@ -31,6 +31,8 @@ export const Button = styled.button({
   fontFamily: '$untitled',
   fontSize: '$2',
   fontWeight: 500,
+  fontVariantNumeric: 'tabular-nums',
+  
   ':hover': {
     boxShadow: 'inset 0 0 0 1px $gray700',
   },
