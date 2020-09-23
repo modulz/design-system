@@ -29,11 +29,11 @@ export const Text = styled.span({
       },
       '6': {
         fontSize: '$6',
-        letterSpacing: '-.012em',
+        letterSpacing: '-.016em',
       },
       '7': {
         fontSize: '$7',
-        letterSpacing: '-.021em',
+        letterSpacing: '-.031em',
         textIndent: '-.005em',
       },
       '8': {

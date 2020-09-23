@@ -94,7 +94,7 @@ function Home() {
             </Box>
           </Container>
           <Container size="2" css={{ my: '$9' }}>
-            <Text as="p" size="4" css={{ lineHeight: '27px' }}>This is a really long paragraph of text, to demonstrate prose text, like for example, the kind you might read in a blog post. The reason we're using prose here is because the most common use case for this container size is longform text. So we're previewing some longform text here so we can make sure the container width provides an optimal line length for this font size.</Text>
+            <Paragraph>This is a really long paragraph of text, to demonstrate prose text, like for example, the kind you might read in a blog post. The reason we're using prose here is because the most common use case for this container size is longform text. So we're previewing some longform text here so we can make sure the container width provides an optimal line length for this font size.</Paragraph>
           </Container>
           <Container size="3" css={{ my: '$9' }}>
             <Grid css={{
