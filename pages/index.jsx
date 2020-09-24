@@ -751,7 +751,7 @@ function Home() {
               </Flex>
               <Flex css={{ gap: '$6' }}>
                 <Popover>
-                  <Popover.Trigger as={MyAvatar} size="3" interactive>
+                  <Popover.Trigger as={props => <MyAvatar as="button" {...props} />} size="3" interactive>
                     <Avatar.Image
                       alt="John Smith"
                       src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"

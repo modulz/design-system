@@ -7,6 +7,8 @@ export const MyAvatar = styled(AvatarPrimitive, {
   borderRadius: '50%',
   boxShadow: 'inset 0px 0px 1px rgba(0, 0, 0, 0.12)',
   backgroundImage: 'linear-gradient(gray, black)',
+  border: 'none',
+  outline: 'none',
 
   '[data-interop-avatar-image]': {
     ...(styles.image as any),
@@ -53,7 +55,7 @@ export const MyAvatar = styled(AvatarPrimitive, {
           backgroundColor: 'rgba(0,0,0,.1)',
           opacity: '0',
           pointerEvents: 'none',
-          transition: 'opacity 50ms linear'
+          transition: 'opacity 40ms linear'
         },
         ':hover': {
           '::after': {
