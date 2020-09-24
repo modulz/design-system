@@ -13,7 +13,6 @@ export const MyAvatar = styled(AvatarPrimitive, {
   },
 
   '[data-interop-avatar-fallback]': {
-    ...(styles.fallback as any),
     color: 'white',
     fontSize: '$6',
     textTransform: 'uppercase',
