@@ -33,9 +33,8 @@ export const MenuItem = styled.div({
   display: 'flex',
   jc: 'flex-start',
   minHeight: 31,
-  px: '$1',
+  px: '$4',
   whiteSpace: 'nowrap',
-  pl: '$3',
 
   variants: {
     size: {
