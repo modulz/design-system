@@ -675,7 +675,7 @@ function Home() {
         <Section size={3}>
           <Container size="2">
             <Flex css={{ fd: 'column', gap: '$6' }}>
-              <Flex css={{ gap: '$6' }}>
+              <Flex css={{ ai: 'center', gap: '$6' }}>
                 <Avatar as={MyAvatar} size="1">
                   <Avatar.Image
                     alt="John Smith"
@@ -722,6 +722,48 @@ function Home() {
                   </Avatar.Fallback>
                 </Avatar>
               </Flex>
+              <Flex css={{ ai: 'center', gap: '$6' }}>
+                <Avatar as={MyAvatar} size="1">
+                  <Avatar.Image
+                    alt="John Smith"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+                <Avatar as={MyAvatar} size="2">
+                  <Avatar.Image
+                    alt="John Smith"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+                <Avatar as={MyAvatar} size="3">
+                  <Avatar.Image
+                    alt="John Smith"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+                <Avatar as={MyAvatar} size="4">
+                  <Avatar.Image
+                    alt="John Smith"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+                <Avatar as={MyAvatar} size="5">
+                  <Avatar.Image
+                    alt="John Smith"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+              </Flex>
               <Flex css={{ gap: '$6' }}>
                 <Avatar as={MyAvatar} size="3">
                   <Avatar.Image
@@ -750,6 +792,7 @@ function Home() {
                 </Avatar>
               </Flex>
               <Flex css={{ gap: '$6' }}>
+              Interactive avatar with tooltip and popover
                 <Popover>
                   <Popover.Trigger as={props => <MyAvatar as="button" {...props} />} size="3" interactive>
                     <Avatar.Image
@@ -777,6 +820,209 @@ function Home() {
                     </Popover.Content>
                   </Popover.Position>
                 </Popover>
+              </Flex>
+              <Subheading>Grouped avatars</Subheading>
+              <Flex>
+                <Tooltip>
+                  <Tooltip.Trigger as={props => <MyAvatar {...props} />} size="2">
+                    <Avatar.Image
+                      alt="John Smith"
+                      src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+                    />
+                    <Avatar.Fallback>C</Avatar.Fallback>
+                  </Tooltip.Trigger>
+                  <Tooltip.Position side="top">
+                    <Tooltip.Content
+                      aria-label="Close"
+                      as={Box}
+                      css={{
+                        backgroundColor: '$hiContrast',
+                        borderRadius: '$2',
+                        padding: '$1 $2',
+                        maxWidth: 300,
+                      }}>
+                      <Text size={1} css={{ lineHeight: '17px', color: '$loContrast' }}>Close</Text>
+                    </Tooltip.Content>
+                    <Tooltip.Arrow
+                      offset={0}
+                      width={13}
+                      height={7}
+                      style={{ ...tooltipStyles.arrow, fill: 'black' }}
+                    />
+                  </Tooltip.Position>
+                </Tooltip>
+                
+                <Avatar as={MyAvatar} size="2">
+                  <Avatar.Image
+                    alt="John Smith"
+                    src="https://pbs.twimg.com/profile_images/1252219162891558915/bhGC7mRF_400x400.jpg"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+                <Avatar as={MyAvatar} size="2" inactive>
+                  <Avatar.Image
+                    alt="John Smith"
+                    src="https://pbs.twimg.com/profile_images/1293852807024521218/1u__xCFD_400x400.jpg"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+                <Avatar as={MyAvatar} size="2" inactive>
+                  <Avatar.Image
+                    alt="John Smith"
+                    src="https://pbs.twimg.com/profile_images/458877686861934592/ZE4eMufU_400x400.jpeg"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+                <Avatar as={MyAvatar} size="2" inactive>
+                  <Avatar.Image
+                    alt="John Smith"
+                    src="https://pbs.twimg.com/profile_images/1291172746785783808/0_SAzNGP_400x400.jpg"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+              </Flex>
+              <Subheading>Nested avatars</Subheading>
+              <Flex>
+                <Avatar as={MyAvatar} size="2">
+                  <Avatar.Image
+                    alt="John Smith"
+                    src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+                <Avatar as={MyAvatar} size="2">
+                  <Avatar.Image
+                    alt="John Smith"
+                    src="https://pbs.twimg.com/profile_images/1293852807024521218/1u__xCFD_400x400.jpg"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+                <Avatar as={MyAvatar} size="2">
+                  <Avatar.Image
+                    alt="John Smith"
+                    src="https://pbs.twimg.com/profile_images/1252219162891558915/bhGC7mRF_400x400.jpg"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+                <Avatar as={MyAvatar} size="2">
+                  <Avatar.Image
+                    alt="John Smith"
+                    src="https://pbs.twimg.com/profile_images/458877686861934592/ZE4eMufU_400x400.jpeg"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+                <Avatar as={MyAvatar} size="2">
+                  <Avatar.Image
+                    alt="John Smith"
+                    src="https://pbs.twimg.com/profile_images/1291172746785783808/0_SAzNGP_400x400.jpg"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+              </Flex>
+              <Subheading>Avatar with status</Subheading>
+              <Flex>
+                <Avatar as={MyAvatar} size="2">
+                  <Avatar.Image
+                    alt="John Smith"
+                    src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+              </Flex>
+              <Subheading>Avatar with icon</Subheading>
+              <Flex>
+                <Avatar as={MyAvatar} size="2">
+                  <Avatar.Image
+                    alt="John Smith"
+                    src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+                  />
+                  <Avatar.Fallback>
+                    C
+                  </Avatar.Fallback>
+                </Avatar>
+              </Flex>
+              <Subheading>Story avatars</Subheading>
+              <Flex css={{ gap: '$3' }}>
+                <button style={{ border: 'none', backgroundColor: 'transparent' }}>
+                  <Avatar as={MyAvatar} size="5">
+                    <Avatar.Image
+                      alt="John Smith"
+                      src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+                    />
+                    <Avatar.Fallback>
+                      C
+                    </Avatar.Fallback>
+                  </Avatar>
+                  <Text size="1" css={{ display: 'block', mt: '$1' }}>username</Text>
+                </button>
+                <button style={{ border: 'none', backgroundColor: 'transparent' }}>
+                  <Avatar as={MyAvatar} size="5">
+                    <Avatar.Image
+                      alt="John Smith"
+                      src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+                    />
+                    <Avatar.Fallback>
+                      C
+                    </Avatar.Fallback>
+                  </Avatar>
+                  <Text size="1" css={{ display: 'block', mt: '$1' }}>username</Text>
+                </button>
+                <button style={{ border: 'none', backgroundColor: 'transparent' }}>
+                  <Avatar as={MyAvatar} size="5">
+                    <Avatar.Image
+                      alt="John Smith"
+                      src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+                    />
+                    <Avatar.Fallback>
+                      C
+                    </Avatar.Fallback>
+                  </Avatar>
+                  <Text size="1" css={{ display: 'block', mt: '$1' }}>username</Text>
+                </button>
+                <button style={{ border: 'none', backgroundColor: 'transparent' }}>
+                  <Avatar as={MyAvatar} size="5">
+                    <Avatar.Image
+                      alt="John Smith"
+                      src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+                    />
+                    <Avatar.Fallback>
+                      C
+                    </Avatar.Fallback>
+                  </Avatar>
+                  <Text size="1" css={{ display: 'block', mt: '$1' }}>username</Text>
+                </button>
+                <button style={{ border: 'none', backgroundColor: 'transparent' }}>
+                  <Avatar as={MyAvatar} size="5">
+                    <Avatar.Image
+                      alt="John Smith"
+                      src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+                    />
+                    <Avatar.Fallback>
+                      C
+                    </Avatar.Fallback>
+                  </Avatar>
+                  <Text size="1" css={{ display: 'block', mt: '$1' }}>username</Text>
+                </button>
               </Flex>
             </Flex>
           </Container>

@@ -16,7 +16,6 @@ export const MyAvatar = styled(AvatarPrimitive, {
 
   '[data-interop-avatar-fallback]': {
     color: 'white',
-    fontSize: '$6',
     textTransform: 'uppercase',
   },
 
@@ -25,23 +24,50 @@ export const MyAvatar = styled(AvatarPrimitive, {
       1: {
         width: '$3',
         height: '$3',
+        '[data-interop-avatar-fallback]': {
+          fontSize: '11px',
+        },
       },
       2: {
         width: '$5',
         height: '$5',
+        '[data-interop-avatar-fallback]': {
+          fontSize: '$3',
+        },
       },
       3: {
         width: '$6',
         height: '$6',
+        '[data-interop-avatar-fallback]': {
+          fontSize: '$6',
+        },
       },
       4: {
         width: '$7',
         height: '$7',
+        '[data-interop-avatar-fallback]': {
+          fontSize: '$7',
+        },
       },
       5: {
+        width: '$8',
+        height: '$8',
+        '[data-interop-avatar-fallback]': {
+          fontSize: '$9',
+        },
+      },
+      6: {
         width: '$9',
         height: '$9',
+        '[data-interop-avatar-fallback]': {
+          fontSize: '$9',
+        },
       },
+    },
+    inactive: {
+      true: {
+        opacity: '.3',
+      }
     },
     interactive: {
       true: {
