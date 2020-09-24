@@ -674,6 +674,7 @@ function Home() {
 
         <Section size={3}>
           <Container size="2">
+            <Subheading>Avatar sizes</Subheading>
             <Flex css={{ fd: 'column', gap: '$6' }}>
               <Flex css={{ ai: 'center', gap: '$6' }}>
                 <Avatar as={MyAvatar} size="1">
@@ -722,6 +723,7 @@ function Home() {
                   </Avatar.Fallback>
                 </Avatar>
               </Flex>
+              <Subheading>Avatar fallback</Subheading>
               <Flex css={{ ai: 'center', gap: '$6' }}>
                 <Avatar as={MyAvatar} size="1">
                   <Avatar.Image
@@ -764,6 +766,7 @@ function Home() {
                   </Avatar.Fallback>
                 </Avatar>
               </Flex>
+              <Subheading>Interactive avatar</Subheading>
               <Flex css={{ gap: '$6' }}>
                 <Avatar as={MyAvatar} size="3">
                   <Avatar.Image
@@ -791,8 +794,8 @@ function Home() {
                   </Avatar.Fallback>
                 </Avatar>
               </Flex>
+              <Subheading>Interactive avatar with tooltip and popover</Subheading>
               <Flex css={{ gap: '$6' }}>
-              Interactive avatar with tooltip and popover
                 <Popover>
                   <Popover.Trigger as={props => <MyAvatar as="button" {...props} />} size="3" interactive>
                     <Avatar.Image
@@ -891,7 +894,7 @@ function Home() {
               </Flex>
               <Subheading>Nested avatars</Subheading>
               <Flex>
-                <Avatar as={MyAvatar} size="2">
+                <Avatar as={MyAvatar} size="4">
                   <Avatar.Image
                     alt="John Smith"
                     src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
@@ -904,33 +907,6 @@ function Home() {
                   <Avatar.Image
                     alt="John Smith"
                     src="https://pbs.twimg.com/profile_images/1293852807024521218/1u__xCFD_400x400.jpg"
-                  />
-                  <Avatar.Fallback>
-                    C
-                  </Avatar.Fallback>
-                </Avatar>
-                <Avatar as={MyAvatar} size="2">
-                  <Avatar.Image
-                    alt="John Smith"
-                    src="https://pbs.twimg.com/profile_images/1252219162891558915/bhGC7mRF_400x400.jpg"
-                  />
-                  <Avatar.Fallback>
-                    C
-                  </Avatar.Fallback>
-                </Avatar>
-                <Avatar as={MyAvatar} size="2">
-                  <Avatar.Image
-                    alt="John Smith"
-                    src="https://pbs.twimg.com/profile_images/458877686861934592/ZE4eMufU_400x400.jpeg"
-                  />
-                  <Avatar.Fallback>
-                    C
-                  </Avatar.Fallback>
-                </Avatar>
-                <Avatar as={MyAvatar} size="2">
-                  <Avatar.Image
-                    alt="John Smith"
-                    src="https://pbs.twimg.com/profile_images/1291172746785783808/0_SAzNGP_400x400.jpg"
                   />
                   <Avatar.Fallback>
                     C
