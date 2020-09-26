@@ -26,14 +26,14 @@ export const IconButton = styled.button({
 
   // Custom
   backgroundColor: '$loContrast',
-  border: '1px solid $gray400',
+  border: '1px solid $gray600',
   borderRadius: '$round',
   color: '$hiContrast',
   height: '$5',
   width: '$5',
   transition: 'all 40ms linear',
   ':hover': {
-    borderColor: '$gray500',
+    borderColor: '$gray700',
   },
   ':active': {
     backgroundColor: '$gray100',
