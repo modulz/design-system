@@ -17,6 +17,7 @@ export const IconButton = styled.button({
   textDecoration: 'none',
   userSelect: 'none',
   WebkitTapHighlightColor: 'transparent',
+  color: '$hiContrast',
   '::before': {
     boxSizing: 'border-box',
   },
