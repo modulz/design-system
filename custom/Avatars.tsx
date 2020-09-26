@@ -21,12 +21,12 @@ import { Tooltip, styles as tooltipStyles } from '@interop-ui/react-tooltip';
 
 export function Avatars() {
   return (
-    <Section size={3}>
+    <Section size="3">
       <Container size="2">
         <Subheading>Avatar sizes</Subheading>
         <Flex css={{ fd: 'column', gap: '$6' }}>
           <Flex css={{ ai: 'center', gap: '$6' }}>
-            <Avatar as={MyAvatar} size="1" shape="square" shape="square">
+            <Avatar as={MyAvatar} size="1" shape="square">
               <Avatar.Image
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
@@ -146,7 +146,7 @@ export function Avatars() {
           <Subheading>Interactive avatar with tooltip and popover</Subheading>
           <Flex css={{ gap: '$6' }}>
             <Popover>
-              <Popover.Trigger as={props => <MyAvatar as="button" {...props} />} size="3" interactive>
+              {/* <Popover.Trigger as={props => <MyAvatar as="button" {...props} />} size="3" interactive>
                 <Avatar.Image
                   alt="John Smith"
                   src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
@@ -170,7 +170,7 @@ export function Avatars() {
                   <MenuItem><Text size="2">One more?</Text></MenuItem>
                   <MenuItem><Text size="2">Sure why not</Text></MenuItem>
                 </Popover.Content>
-              </Popover.Position>
+              </Popover.Position> */}
             </Popover>
           </Flex>
           <Subheading>Grouped avatars</Subheading>
@@ -178,7 +178,7 @@ export function Avatars() {
             <AvatarGroup>
               <AvatarNestedItem>
                 <Tooltip>
-                  <Tooltip.Trigger as={props => <MyAvatar {...props} />} size="2" inactive>
+                  {/* <Tooltip.Trigger as={props => <MyAvatar {...props} />} size="2" inactive>
                     <Avatar.Image
                       alt="John Smith"
                       src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
@@ -195,7 +195,7 @@ export function Avatars() {
                         padding: '$1 $2',
                         maxWidth: 300,
                       }}>
-                      <Text size={1} css={{ lineHeight: '17px', color: '$loContrast' }}>Close</Text>
+                      <Text size="1" css={{ lineHeight: '17px', color: '$loContrast' }}>Close</Text>
                     </Tooltip.Content>
                     <Tooltip.Arrow
                       offset={0}
@@ -203,7 +203,7 @@ export function Avatars() {
                       height={7}
                       style={{ ...tooltipStyles.arrow, fill: 'black' }}
                     />
-                  </Tooltip.Position>
+                  </Tooltip.Position> */}
                 </Tooltip>
               </AvatarNestedItem>
               <AvatarNestedItem>

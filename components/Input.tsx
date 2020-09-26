@@ -44,11 +44,11 @@ export const Input = styled.input({
 
   variants: {
     size: {
-      1: {
+      '1': {
         p: '$1',
         fontSize: '$1',
       },
-      2: {
+      '2': {
         pt: 8,
         px: '$2',
         pb: 8,

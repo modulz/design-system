@@ -27,11 +27,11 @@ export function Properties() {
               </Box>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Width</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -44,11 +44,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Height</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -61,11 +61,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Min. Width</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -78,11 +78,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Max. Width</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -95,11 +95,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Min. Height</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -112,11 +112,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Max. Height</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -129,11 +129,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Padding</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -146,11 +146,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Padding X</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -163,11 +163,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Padding Y</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -180,11 +180,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Padding Top</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -197,11 +197,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Padding Right</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -214,11 +214,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Padding Bottom</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -231,11 +231,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Padding Left</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -248,11 +248,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Overflow</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Select css={{ width: '100%' }}>
                     <option value="option1" label="Visible">fewfew</option>
                     <option value="option2" label="Hidden">fewfew</option>
@@ -291,11 +291,11 @@ export function Properties() {
               </Box>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Typeface</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Select css={{ width: '100%' }}>
                     <option value="option1" label="Untitled"></option>
                     <option value="option2" label="Repeat X"></option>
@@ -312,11 +312,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Size</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="16" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -329,11 +329,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Style</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Select css={{ width: '100%' }}>
                     <option value="option1" label="Normal"></option>
                     <option value="option2" label="Italic"></option>
@@ -352,10 +352,10 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Color</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box>
                   <IconButton variant="ghost">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
@@ -388,7 +388,7 @@ export function Properties() {
                     </svg>
                   </IconButton>
                 </Box>
-                <Box css={{ flexGrow: '1' }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="b5b5b5" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -401,11 +401,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Line Height</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="1" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -418,11 +418,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Tracking</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -435,11 +435,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Case</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Select css={{ width: '100%' }}>
                     <option value="option1" label="As Typed"></option>
                     <option value="option2" label="Lowercase"></option>
@@ -523,16 +523,16 @@ export function Properties() {
                   </svg>
                 </IconButton>
               </Box>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Input size="1" cursor="default" value="0" css={{ borderTopRightRadius: 0, borderBottomRightRadius: 0, width: 'calc(100% + 1px)' }} />
               </Box>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Input size="1" cursor="default" value="0" css={{ borderRadius: 0, width: 'calc(100% + 1px)' }} />
               </Box>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Input size="1" cursor="default" value="0" css={{ borderRadius: 0, width: 'calc(100% + 1px)' }} />
               </Box>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Input size="1" cursor="default" value="0" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
               </Box>
               <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -583,16 +583,16 @@ export function Properties() {
                   </svg>
                 </IconButton>
               </Box>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Input size="1" cursor="default" value="0" css={{ borderTopRightRadius: 0, borderBottomRightRadius: 0, width: 'calc(100% + 1px)' }} />
               </Box>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Input size="1" cursor="default" value="0" css={{ borderRadius: 0, width: 'calc(100% + 1px)' }} />
               </Box>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Input size="1" cursor="default" value="0" css={{ borderRadius: 0, width: 'calc(100% + 1px)' }} />
               </Box>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Input size="1" cursor="default" value="0" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
               </Box>
               <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -604,22 +604,22 @@ export function Properties() {
               </Box>
             </Flex>
             <Flex css={{ pl: '68px', pr: '40px', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 {/* <Tooltip label="X Offset" side="bottom" align="center"> */}
                   <Text size="1" css={{ color: '$gray900', display: 'block', textAlign: 'center' }} style={{ lineHeight: 1 }}>X</Text>
                 {/* </Tooltip> */}
               </Box>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 {/* <Tooltip label="Y Offset" side="bottom" align="center"> */}
                   <Text size="1" css={{ color: '$gray900', display: 'block', textAlign: 'center' }} style={{ lineHeight: 1 }}>Y</Text>
                 {/* </Tooltip> */}
               </Box>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 {/* <Tooltip label="Blur" side="bottom" align="center"> */}
                   <Text size="1" css={{ color: '$gray900', display: 'block', textAlign: 'center' }} style={{ lineHeight: 1 }}>B</Text>
                 {/* </Tooltip> */}
               </Box>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 {/* <Tooltip label="Spread" side="bottom" align="center"> */}
                   <Text size="1" css={{ color: '$gray900', display: 'block', textAlign: 'center' }} style={{ lineHeight: 1 }}>S</Text>
                 {/* </Tooltip> */}
@@ -647,7 +647,7 @@ export function Properties() {
               </Box>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ mr: '$1', ml: '-$1' }}>
                   <IconButton variant="ghost">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -655,7 +655,7 @@ export function Properties() {
                     </svg>
                   </IconButton>
                 </Box>
-                <Box css={{ flexGrow: '1' }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                     <option value="option1" label="Brightness">Brightness</option>
                     <option value="option2" label="Brightness">Brightness</option>
@@ -663,8 +663,8 @@ export function Properties() {
                   </Select>
                 </Box>
               </Flex>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="5" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -677,7 +677,7 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ mr: '$1', ml: '-$1' }}>
                   <IconButton variant="ghost">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -685,7 +685,7 @@ export function Properties() {
                     </svg>
                   </IconButton>
                 </Box>
-                <Box css={{ flexGrow: '1' }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                     <option value="option1" label="Brightness">Brightness</option>
                     <option value="option2" label="Blur">Blur</option>
@@ -693,8 +693,8 @@ export function Properties() {
                   </Select>
                 </Box>
               </Flex>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="100%" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -737,15 +737,15 @@ export function Properties() {
               </Box>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                   <option value="option1" label="Rotate"></option>
                   <option value="option2" label="Repeat X"></option>
                   <option value="option3" label="Repeat Y"></option>
                 </Select>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0°" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -758,15 +758,15 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                   <option value="option1" label="Rotate X"></option>
                   <option value="option2" label="Repeat X"></option>
                   <option value="option3" label="Repeat Y"></option>
                 </Select>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0°" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -779,15 +779,15 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                   <option value="option1" label="Rotate Y"></option>
                   <option value="option2" label="Repeat X"></option>
                   <option value="option3" label="Repeat Y"></option>
                 </Select>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0°" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -800,15 +800,15 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                   <option value="option1" label="Rotate Z"></option>
                   <option value="option2" label="Repeat X"></option>
                   <option value="option3" label="Repeat Y"></option>
                 </Select>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0°" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -821,15 +821,15 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                   <option value="option1" label="Scale"></option>
                   <option value="option2" label="Repeat X"></option>
                   <option value="option3" label="Repeat Y"></option>
                 </Select>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="100%" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -842,15 +842,15 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                   <option value="option1" label="Scale X"></option>
                   <option value="option2" label="Repeat X"></option>
                   <option value="option3" label="Repeat Y"></option>
                 </Select>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="100%" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -863,15 +863,15 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                   <option value="option1" label="Scale Y"></option>
                   <option value="option2" label="Repeat X"></option>
                   <option value="option3" label="Repeat Y"></option>
                 </Select>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="100%" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -884,15 +884,15 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                   <option value="option1" label="Scale Z"></option>
                   <option value="option2" label="Repeat X"></option>
                   <option value="option3" label="Repeat Y"></option>
                 </Select>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="100%" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -905,15 +905,15 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                   <option value="option1" label="Skew X"></option>
                   <option value="option2" label="Repeat X"></option>
                   <option value="option3" label="Repeat Y"></option>
                 </Select>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0°" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -926,15 +926,15 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                   <option value="option1" label="Skew Y"></option>
                   <option value="option2" label="Repeat X"></option>
                   <option value="option3" label="Repeat Y"></option>
                 </Select>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0°" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -947,15 +947,15 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                   <option value="option1" label="Translate X"></option>
                   <option value="option2" label="Repeat X"></option>
                   <option value="option3" label="Repeat Y"></option>
                 </Select>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -968,15 +968,15 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                   <option value="option1" label="Translate Y"></option>
                   <option value="option2" label="Repeat X"></option>
                   <option value="option3" label="Repeat Y"></option>
                 </Select>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -989,15 +989,15 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                   <option value="option1" label="Translate Z"></option>
                   <option value="option2" label="Repeat X"></option>
                   <option value="option3" label="Repeat Y"></option>
                 </Select>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -1010,11 +1010,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Origin</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Select css={{ width: '100%'}}>
                     <option value="option1" label="Center"></option>
                     <option value="option2" label="Top"></option>
@@ -1037,11 +1037,11 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Perspective</Text>
               </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="0°" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -1080,7 +1080,7 @@ export function Properties() {
               </Box>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ mr: '$1', ml: '-$1' }}>
                   <IconButton variant="ghost">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
@@ -1088,7 +1088,7 @@ export function Properties() {
                     </svg>
                   </IconButton>
                 </Box>
-                <Box css={{ flexGrow: '1' }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                     <option value="option1" label="Fill"></option>
                     <option value="option2" label="Repeat X"></option>
@@ -1096,8 +1096,8 @@ export function Properties() {
                   </Select>
                 </Box>
               </Flex>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="100ms" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
@@ -1110,7 +1110,7 @@ export function Properties() {
               </Flex>
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ mr: '$1', ml: '-$1' }}>
                   <IconButton variant="ghost">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
@@ -1118,7 +1118,7 @@ export function Properties() {
                     </svg>
                   </IconButton>
                 </Box>
-                <Box css={{ flexGrow: '1' }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Select css={{ width: 'calc(100% + 1px)', borderTopRightRadius: 0, borderBottomRightRadius: 0 }}>
                     <option value="option1" label="Transform"></option>
                     <option value="option2" label="Repeat X"></option>
@@ -1126,8 +1126,8 @@ export function Properties() {
                   </Select>
                 </Box>
               </Flex>
-              <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Box css={{ flexGrow: '1' }}>
+              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
+                <Box css={{ flexGrow: 1 }}>
                   <Input size="1" cursor="default" value="100ms" css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
