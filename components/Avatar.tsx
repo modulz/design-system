@@ -4,7 +4,6 @@ import { Avatar as AvatarPrimitive, styles } from '@interop-ui/react-avatar';
 export const MyAvatar = styled(AvatarPrimitive, {
   ...(styles.root as any),
   position: 'relative',
-  borderRadius: '50%',
   boxShadow: 'inset 0px 0px 1px rgba(0, 0, 0, 0.12)',
   backgroundImage: 'linear-gradient(gray, black)',
   border: 'none',
@@ -64,6 +63,14 @@ export const MyAvatar = styled(AvatarPrimitive, {
         },
       },
     },
+    shape: {
+      'square': {
+        borderRadius: '$2',
+      },
+      'circle': {
+        borderRadius: '50%',
+      },
+    },
     inactive: {
       true: {
         opacity: '.3',
@@ -92,3 +99,16 @@ export const MyAvatar = styled(AvatarPrimitive, {
     }
   },
 });
+
+export const AvatarNestedItem = styled.div({
+  boxShadow: '0 0 0 2px $loContrast',
+  borderRadius: '50%',
+})
+
+export const AvatarGroup = styled.div({
+  display: 'flex',
+  flexDirection: 'row-reverse',
+  [`${AvatarNestedItem}:nth-child(n+2)`]: {
+    marginRight: '-$1',
+  },
+})
