@@ -16,7 +16,7 @@ export function Properties() {
           <Box css={{ borderTop: '1px solid $gray300', py: '$1' }}>
             <Flex css={{ px: '$3', my: '$1', alignItems: 'center', justifyContent: 'space-between' }}>
               <Box>
-                <Text size={1} css={{ fontWeight: '500' }}>Layout</Text>
+                <Text size="1" css={{ fontWeight: '500' }}>Layout</Text>
               </Box>
               <Box css={{ mr: '-$1' }}>
                 <IconButton variant="ghost">
@@ -28,7 +28,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Width</Text>
+                <Text size="1">Width</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -45,7 +45,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Height</Text>
+                <Text size="1">Height</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -62,7 +62,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Min. Width</Text>
+                <Text size="1">Min. Width</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -79,7 +79,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Max. Width</Text>
+                <Text size="1">Max. Width</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -96,7 +96,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Min. Height</Text>
+                <Text size="1">Min. Height</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -113,7 +113,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Max. Height</Text>
+                <Text size="1">Max. Height</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -130,7 +130,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Padding</Text>
+                <Text size="1">Padding</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -147,7 +147,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Padding X</Text>
+                <Text size="1">Padding X</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -164,7 +164,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Padding Y</Text>
+                <Text size="1">Padding Y</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -181,7 +181,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Padding Top</Text>
+                <Text size="1">Padding Top</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -198,7 +198,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Padding Right</Text>
+                <Text size="1">Padding Right</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -215,7 +215,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Padding Bottom</Text>
+                <Text size="1">Padding Bottom</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -232,7 +232,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Padding Left</Text>
+                <Text size="1">Padding Left</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -249,7 +249,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Overflow</Text>
+                <Text size="1">Overflow</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -280,7 +280,7 @@ export function Properties() {
           <Box css={{ borderTop: '1px solid $gray500', py: '$1' }}>
             <Flex css={{ px: '$3', my: '$1', alignItems: 'center', justifyContent: 'space-between' }}>
               <Box>
-                <Text size={1} css={{ fontWeight: '500' }}>Text</Text>
+                <Text size="1" css={{ fontWeight: '500' }}>Text</Text>
               </Box>
               <Box css={{ mr: '-$1' }}>
                 <IconButton variant="ghost">
@@ -292,7 +292,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Typeface</Text>
+                <Text size="1">Typeface</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -313,7 +313,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Size</Text>
+                <Text size="1">Size</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -330,7 +330,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Style</Text>
+                <Text size="1">Style</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -353,7 +353,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Color</Text>
+                <Text size="1">Color</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box>
@@ -402,7 +402,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Line Height</Text>
+                <Text size="1">Line Height</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -419,7 +419,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Tracking</Text>
+                <Text size="1">Tracking</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -436,7 +436,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Case</Text>
+                <Text size="1">Case</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -473,7 +473,7 @@ export function Properties() {
           <Box css={{ borderTop: '1px solid $gray500', py: '$1' }}>
             <Flex css={{ px: '$3', my: '$1', alignItems: 'center', justifyContent: 'space-between' }}>
               <Box>
-                <Text size={1} css={{ fontWeight: '500' }}>Shadow</Text>
+                <Text size="1" css={{ fontWeight: '500' }}>Shadow</Text>
               </Box>
               <Box css={{ mr: '-$1' }}>
                 <IconButton variant="ghost">
@@ -636,7 +636,7 @@ export function Properties() {
           <Box css={{ borderTop: '1px solid $gray500', py: '$1' }}>
             <Flex css={{ px: '$3', my: '$1', alignItems: 'center', justifyContent: 'space-between' }}>
               <Box>
-                <Text size={1} css={{ fontWeight: '500' }}>Filter</Text>
+                <Text size="1" css={{ fontWeight: '500' }}>Filter</Text>
               </Box>
               <Box css={{ mr: '-$1' }}>
                 <IconButton variant="ghost">
@@ -726,7 +726,7 @@ export function Properties() {
           <Box css={{ borderTop: '1px solid $gray500', py: '$1' }}>
             <Flex css={{ px: '$3', my: '$1', alignItems: 'center', justifyContent: 'space-between' }}>
               <Box>
-                <Text size={1} css={{ fontWeight: '500' }}>Transform</Text>
+                <Text size="1" css={{ fontWeight: '500' }}>Transform</Text>
               </Box>
               <Box css={{ mr: '-$1' }}>
                 <IconButton variant="ghost">
@@ -1011,7 +1011,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Origin</Text>
+                <Text size="1">Origin</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -1038,7 +1038,7 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: '1' }}>
-                <Text size={1}>Perspective</Text>
+                <Text size="1">Perspective</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: '1' }}>
                 <Box css={{ flexGrow: '1' }}>
@@ -1069,7 +1069,7 @@ export function Properties() {
           <Box css={{ borderTop: '1px solid $gray500', py: '$1' }}>
             <Flex css={{ px: '$3', my: '$1', alignItems: 'center', justifyContent: 'space-between' }}>
               <Box>
-                <Text size={1} css={{ fontWeight: '500' }}>Transition</Text>
+                <Text size="1" css={{ fontWeight: '500' }}>Transition</Text>
               </Box>
               <Box css={{ mr: '-$1' }}>
                 <IconButton variant="ghost">
