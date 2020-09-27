@@ -1,9 +1,9 @@
 import { styled } from '../stitches.config';
+import { Separator as SeparatorPrimitive, styles } from '@interop-ui/react-separator';
 
-export const Separator = styled.div({
-  // Reset
-  boxSizing: 'border-box',
-  flexShrink: 0,
+export const Separator = styled(SeparatorPrimitive, {
+  ...(styles.root as any),
+  // flexShrink: 0,
 
   height: '1px',
   backgroundColor: '$gray500',

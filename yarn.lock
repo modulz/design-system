@@ -1136,6 +1136,14 @@
     "@interop-ui/react-utils" "0.0.1-1"
     "@interop-ui/utils" "0.0.1-1"
 
+"@interop-ui/react-separator@^0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-separator/-/react-separator-0.0.1-1.tgz#fd532c118ca552fe5b3fe7de4132d1215878e61d"
+  integrity sha512-6op9hZKQMF1/VCa4BUoxpHhOAisxRCOIOpk4CF2l6h9wh+8LqED6lVex6pSxgkc/5sS4732vL2GklNR2q1UJgg==
+  dependencies:
+    "@interop-ui/react-utils" "0.0.1-3"
+    "@interop-ui/utils" "0.0.1-2"
+
 "@interop-ui/react-switch@^0.0.1-2":
   version "0.0.1-2"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-switch/-/react-switch-0.0.1-2.tgz#b22ff900c901d357c9a413d348691731c685e1a8"
@@ -1189,6 +1197,13 @@
   dependencies:
     "@interop-ui/utils" "0.0.1-1"
 
+"@interop-ui/react-utils@0.0.1-3":
+  version "0.0.1-3"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-utils/-/react-utils-0.0.1-3.tgz#0ff51f6ea2a377749c6764edcf2e12c5aae85190"
+  integrity sha512-QxumbFZ98ujO/h0z6UCcKMaCluWSPn6u2cTUYDmN2ouWkSYMxlfbdgTBLjjlHQ8aMwX+vz7x86zaLhL8hb4l5A==
+  dependencies:
+    "@interop-ui/utils" "0.0.1-2"
+
 "@interop-ui/react-visually-hidden@0.0.1-1":
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-visually-hidden/-/react-visually-hidden-0.0.1-1.tgz#e154a45447ec674fd6100b44cf1db29d0141aa22"
@@ -1206,6 +1221,14 @@
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/utils/-/utils-0.0.1-1.tgz#f992b2d321ecb480838aa0fd6d86925f85e533bb"
   integrity sha512-PQZDiS8TZw58DHRIjSROtDrncg2J09ZJmzG6UwcbxmgR46ydNQ+v9vzbnGONhmSlnzU/f4FL9khBd1U9t6g9Lg==
+  dependencies:
+    lodash.camelcase "^4.3.0"
+    lodash.kebabcase "^4.1.1"
+
+"@interop-ui/utils@0.0.1-2":
+  version "0.0.1-2"
+  resolved "https://registry.yarnpkg.com/@interop-ui/utils/-/utils-0.0.1-2.tgz#58a92b590b29b84037066e954431d6c98fc29e91"
+  integrity sha512-NXEJlynyCo9RdWI15EcvIy11aBz0RYyqV+CVS1seo/5UcMBXaBPTNPipx2GXXtTLQpkfSqckN1+/aAK8BcOuBw==
   dependencies:
     lodash.camelcase "^4.3.0"
     lodash.kebabcase "^4.1.1"
