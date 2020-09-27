@@ -127,16 +127,16 @@ function Home() {
           <MyAvatar size="2" shape="circle">
             C
           </MyAvatar>
-          <Button variant="blue" css={{ ml: 3 }}>
+          <Button variant="blue" css={{ ml: '$3' }}>
             Share
           </Button>
-          <IconButton css={{ ml: 2 }}>
+          <IconButton variant="ghost" css={{ ml: '$2' }}>
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
               <path d="M3.5 14.5V0.5L11.5 7.5L3.5 14.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </IconButton>
           <Box css={{ width: '50px', flexShrink: '0', textAlign: 'center'}}>
-            <Text size={1} css={{ color: 'gray700', userSelect: 'none' }}>100%</Text>
+            <Text size="1" css={{ color: '$gray900', userSelect: 'none' }}>100%</Text>
           </Box>
         </Flex>
       </Flex>
@@ -148,7 +148,7 @@ function Home() {
 
 
 
-    <Box css={{ bc: '$loContrast', height: '100%', px: 250, pt: '46px' }}>
+    <Box css={{ bc: '$loContrast', height: '100%', px: 250, pt: '36px' }}>
       <ScrollArea>
 
         <Section size={3}>
