@@ -1038,6 +1038,15 @@
     "@interop-ui/react-utils" "0.0.1-1"
     "@interop-ui/utils" "0.0.1-1"
 
+"@interop-ui/react-alert-dialog@^0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-alert-dialog/-/react-alert-dialog-0.0.1-1.tgz#2dc31482eeca471acee7e584e6944886d8002cc5"
+  integrity sha512-AulP0cccjDuL9n3nZHQLIEJCnXJ/C27Mnorf5+iYjyele/HdmGhbM/Hukv7dlf3O6N6+pphplQKQMkAB9sbnmA==
+  dependencies:
+    "@interop-ui/react-dialog" "0.0.1-3"
+    "@interop-ui/react-utils" "0.0.1-3"
+    "@interop-ui/utils" "0.0.1-2"
+
 "@interop-ui/react-arrow@0.0.1-1":
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-arrow/-/react-arrow-0.0.1-1.tgz#d31d00ea096a962c48da17c85942cfbda7ca16d6"
@@ -1079,6 +1088,26 @@
     "@interop-ui/react-utils" "0.0.1-1"
     "@interop-ui/utils" "0.0.1-1"
 
+"@interop-ui/react-debug-context@0.0.1-3":
+  version "0.0.1-3"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-debug-context/-/react-debug-context-0.0.1-3.tgz#6a02cfbc503933aa23d7b4ccff563eff135e9ece"
+  integrity sha512-IHJr1gQ4zTL9gHaHbkfYNLtdhHT5sB0363e+5tAEsNRBrhj/WymfdWeZyvKZRgBmiB3loHuhc7N/emOSneeCZg==
+  dependencies:
+    "@interop-ui/react-utils" "0.0.1-3"
+    "@interop-ui/utils" "0.0.1-2"
+
+"@interop-ui/react-dialog@0.0.1-3":
+  version "0.0.1-3"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-dialog/-/react-dialog-0.0.1-3.tgz#a69f5301fa86774e7924cdbc0dc7817fccf7e2f6"
+  integrity sha512-bm81IYAQKCdKVw8uVFkUv7TZBvoqmEPKWVObJUU0rlQDRGqwPLGbw1WyOvAEek6pg7tnI4LgJmy6e/arNxgdIg==
+  dependencies:
+    "@interop-ui/react-debug-context" "0.0.1-3"
+    "@interop-ui/react-lock" "0.0.1-3"
+    "@interop-ui/react-portal" "0.0.1-3"
+    "@interop-ui/react-utils" "0.0.1-3"
+    "@interop-ui/utils" "0.0.1-2"
+    react-remove-scroll "^2.3.0"
+
 "@interop-ui/react-dialog@^0.0.1-1":
   version "0.0.1-1"
   resolved "https://registry.yarnpkg.com/@interop-ui/react-dialog/-/react-dialog-0.0.1-1.tgz#ec5a043dde718aaeb6cadad6d3b7c58b775f71a1"
@@ -1100,6 +1129,17 @@
     "@interop-ui/react-utils" "0.0.1-1"
     "@interop-ui/tabbable" "0.0.1-0"
     "@interop-ui/utils" "0.0.1-1"
+    aria-hidden "^1.1.1"
+
+"@interop-ui/react-lock@0.0.1-3":
+  version "0.0.1-3"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-lock/-/react-lock-0.0.1-3.tgz#cbdd1e5678149d20024e24d7280148b432fdd21c"
+  integrity sha512-3XQU98Y+Zx0R/I0nZ6UVJVHt1yqdah8dZcMa0YAd3RZ7VeK+3drDfF+E7zsUfC7fsOfubeP5YgbNp6AmD5I76g==
+  dependencies:
+    "@interop-ui/react-debug-context" "0.0.1-3"
+    "@interop-ui/react-utils" "0.0.1-3"
+    "@interop-ui/tabbable" "0.0.1-2"
+    "@interop-ui/utils" "0.0.1-2"
     aria-hidden "^1.1.1"
 
 "@interop-ui/react-popover@0.0.1-1", "@interop-ui/react-popover@^0.0.1-1":
@@ -1135,6 +1175,15 @@
     "@interop-ui/react-debug-context" "0.0.1-1"
     "@interop-ui/react-utils" "0.0.1-1"
     "@interop-ui/utils" "0.0.1-1"
+
+"@interop-ui/react-portal@0.0.1-3":
+  version "0.0.1-3"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-portal/-/react-portal-0.0.1-3.tgz#c9f073a379a95a1a4894686e2d8379bc9eb65ca5"
+  integrity sha512-vIcJ2kee9voKqfBWTaihlbKWnWxkWC2ZNITsYljY1Z2mMjiAOZ6H4w2SSzGpKtmfoJ4PzyxJdB4ubxi/vFS9/Q==
+  dependencies:
+    "@interop-ui/react-debug-context" "0.0.1-3"
+    "@interop-ui/react-utils" "0.0.1-3"
+    "@interop-ui/utils" "0.0.1-2"
 
 "@interop-ui/react-separator@^0.0.1-1":
   version "0.0.1-1"
@@ -1216,6 +1265,11 @@
   version "0.0.1-0"
   resolved "https://registry.yarnpkg.com/@interop-ui/tabbable/-/tabbable-0.0.1-0.tgz#cfbb563c9bee501833dcc93117a36148d01ff442"
   integrity sha512-yeaCbQQp7B9Haskzb3AIstToN+HZzrfBQLkA7ZjnGXhvoI3Vgxenz1SD2IoN4jPBYRmDL3iLztE23F7LKDs3Kw==
+
+"@interop-ui/tabbable@0.0.1-2":
+  version "0.0.1-2"
+  resolved "https://registry.yarnpkg.com/@interop-ui/tabbable/-/tabbable-0.0.1-2.tgz#b725f59f3629a05a540ce2202b91d6bb340de833"
+  integrity sha512-GdSKki0QXHd2EcKrrn68PP9ccsTVdFoCbBJxDQ9ZgeTp9qwfW/RFR4TD+8O1LEB18eELg2lzXnNhqYTGaLPljA==
 
 "@interop-ui/utils@0.0.1-1":
   version "0.0.1-1"

@@ -36,6 +36,7 @@ import { Tooltip, styles as tooltipStyles } from '@interop-ui/react-tooltip';
 import { Popover, styles as popoverStyles } from '@interop-ui/react-popover';
 import { Accordion } from '@interop-ui/react-accordion';
 import { Avatar } from '@interop-ui/react-avatar';
+import { AlertDialog, styles as alertDialogStyles } from '@interop-ui/react-alert-dialog';
 
 import { Title } from '../composites/Title';
 import { Subtitle } from '../composites/Subtitle';
@@ -487,6 +488,41 @@ function Home() {
         <Section size={3}>
           <Container size="2">
             <Switch />
+          </Container>
+        </Section>
+
+        <Flex css={{ jc: 'center' }}>
+          <Separator size="2" />
+        </Flex>
+
+        <Section size={3}>
+          <Container size="2">
+            <AlertDialog>
+              <AlertDialog.Trigger as={Button}>Alert Dialog</AlertDialog.Trigger>
+              <AlertDialog.Overlay as={Overlay} style={{ ...alertDialogStyles.overlay }} />
+              <AlertDialog.Content
+                as={Panel}
+                css={{
+                  ...alertDialogStyles.content,
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  minWidth: 200,
+                  maxWidth: 'fit-content',
+                  maxHeight: '85vh',
+                  padding: 20,
+                  marginTop: '-5vh',
+                }}>
+                <AlertDialog.Title as={Subheading}>Are you sure?</AlertDialog.Title>
+                <AlertDialog.Description as={Text} css={{ mt: '$2' }}>
+                  This will do a very dangerous thing. Thar be dragons!
+                </AlertDialog.Description>
+                <Flex css={{ jc: 'flex-end', gap: '$3', mt: '$5' }}>
+                  <AlertDialog.Cancel as={Button} variant="ghost">Cancel</AlertDialog.Cancel>
+                  <AlertDialog.Action as={Button} variant="red">Delete</AlertDialog.Action>
+                </Flex>
+              </AlertDialog.Content>
+            </AlertDialog>
           </Container>
         </Section>
 
