@@ -50,7 +50,105 @@ import { Avatars } from '../custom/Avatars';
 
 function Home() {
   return (
-    <Box css={{ bc: '$loContrast', height: '100%', px: 250 }}>
+
+    <Box css={{ height: '100%' }}>
+
+    <Box css={{ position: 'absolute', top: '0', left: '0', width: '100%', py: '$1', px: '$2', backgroundColor: '$loContrast', borderBottom: '1px solid $gray500' }}>
+      <Flex css={{ alignItems: 'center', justifyContent: 'space-between' }}>
+        <Flex css={{ alignItems: 'center' }}>
+          <Box css={{ mr: '$1' }}>
+            <IconButton variant="ghost">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                <path d="M2.5 2.5H12.5" stroke="currentColor" stroke-linecap="round"/>
+                <path d="M2.5 7.5H12.5" stroke="currentColor" stroke-linecap="round"/>
+                <path d="M2.5 12.5H12.5" stroke="currentColor" stroke-linecap="round"/>
+              </svg>
+            </IconButton>
+          </Box>
+          <Button variant="ghost" css={{ fontWeight: '400' }}>
+            Drafts
+          </Button>
+          <Text css={{ color: '$gray500' }}>
+            /
+          </Text>
+          <Button variant="ghost" css={{ fontWeight: '400' }}>
+            Untitled
+          </Button>
+        </Flex>
+        <Flex>
+          <Box css={{ mr: '$2' }}>
+            <Tooltip label="Insert (Cmd+P)" side="bottom" align="center">
+              <IconButton variant="ghost">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.2">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 3V2H6.5V3V6.5H3H2V8.5H3H6.5V12V13H8.5V12V8.5H12H13V6.5H12H8.5V3Z" fill="#0488FC"/>
+                  </g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3C8 2.72386 7.77614 2.5 7.5 2.5C7.22386 2.5 7 2.72386 7 3V7H3C2.72386 7 2.5 7.22386 2.5 7.5C2.5 7.77614 2.72386 8 3 8H7V12C7 12.2761 7.22386 12.5 7.5 12.5C7.77614 12.5 8 12.2761 8 12V8H12C12.2761 8 12.5 7.77614 12.5 7.5C12.5 7.22386 12.2761 7 12 7H8V3Z" fill="#0488FC"/>
+                </svg>
+              </IconButton>
+            </Tooltip>
+          </Box>
+          <Box css={{ mr: '$2' }}>
+            <Tooltip label="Frame (F)" side="bottom" align="center">
+              <IconButton variant="ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1 3.5C1 3.22386 1.22386 3 1.5 3H13.5C13.7761 3 14 3.22386 14 3.5C14 3.77614 13.7761 4 13.5 4H1.5C1.22386 4 1 3.77614 1 3.5Z" fill="#0488FC"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z" fill="#0488FC"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 1C3.77614 1 4 1.22386 4 1.5V13.5C4 13.7761 3.77614 14 3.5 14C3.22386 14 3 13.7761 3 13.5V1.5C3 1.22386 3.22386 1 3.5 1Z" fill="#0488FC"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 1C11.7761 1 12 1.22386 12 1.5V13.5C12 13.7761 11.7761 14 11.5 14C11.2239 14 11 13.7761 11 13.5V1.5C11 1.22386 11.2239 1 11.5 1Z" fill="#0488FC"/>
+                  <rect x="4" y="4" width="7" height="7" fill="#CDE7FE"/>
+                </svg>
+              </IconButton>
+            </Tooltip>
+          </Box>
+          <Box css={{ mr: '$2' }}>
+            <Tooltip label="Box (B)" side="bottom" align="center">
+              <IconButton variant="ghost">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.2">
+                    <path d="M12 2.5H3C2.72386 2.5 2.5 2.72386 2.5 3V12C2.5 12.2761 2.72386 12.5 3 12.5H12C12.2761 12.5 12.5 12.2761 12.5 12V3C12.5 2.72386 12.2761 2.5 12 2.5Z" fill="#0488FC"/>
+                  </g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2 3C2 2.44772 2.44772 2 3 2H12C12.5522 2 13 2.44769 13 3V12C13 12.5522 12.5522 13 12 13H3C2.44769 13 2 12.5522 2 12V3ZM12 3H3V12H12V3Z" fill="#0488FC"/>
+                </svg>
+              </IconButton>
+            </Tooltip>
+          </Box>
+          <Box css={{ mr: '$2' }}>
+            <Tooltip label="Text (T)" side="bottom" align="center">
+              <IconButton variant="ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 2.05C3.22386 2.05 3 2.27386 3 2.55V4.2C3 4.47615 3.22386 4.7 3.5 4.7C3.77614 4.7 4 4.47615 4 4.2V3.05H7V11.95H6C5.72386 11.95 5.5 12.1739 5.5 12.45C5.5 12.7261 5.72386 12.95 6 12.95H7.5H9C9.27614 12.95 9.5 12.7261 9.5 12.45C9.5 12.1739 9.27614 11.95 9 11.95H8V3.05H11V4.2C11 4.47615 11.2239 4.7 11.5 4.7C11.7761 4.7 12 4.47615 12 4.2V2.55C12 2.27386 11.7761 2.05 11.5 2.05H7.5H3.5Z" fill="#0488FC"/>
+                </svg>
+              </IconButton>
+            </Tooltip>
+          </Box>
+        </Flex>
+        <Flex css={{ alignItems: 'center' }}>
+          <MyAvatar size="2" shape="circle">
+            C
+          </MyAvatar>
+          <Button variant="blue" css={{ ml: 3 }}>
+            Share
+          </Button>
+          <IconButton css={{ ml: 2 }}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <path d="M3.5 14.5V0.5L11.5 7.5L3.5 14.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </IconButton>
+          <Box css={{ width: '50px', flexShrink: '0', textAlign: 'center'}}>
+            <Text size={1} css={{ color: 'gray700', userSelect: 'none' }}>100%</Text>
+          </Box>
+        </Flex>
+      </Flex>
+    </Box>
+
+
+
+
+
+
+
+    <Box css={{ bc: '$loContrast', height: '100%', px: 250, pt: '46px' }}>
       <ScrollArea>
 
         <Section size={3}>
@@ -938,6 +1036,8 @@ function Home() {
 
       <Layers />
       <Properties />
+
+    </Box>
 
     </Box>
   );

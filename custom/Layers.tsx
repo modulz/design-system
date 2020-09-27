@@ -5,7 +5,7 @@ import { ScrollArea } from '../components/Scrollbar';
 
 export function Layers() {
   return (
-    <Box css={{ position: 'fixed', top: '0', left: '0', bottom: '0', width: "250px", borderRight: '1px solid $gray500', py: '$1' }}>
+    <Box css={{ position: 'fixed', top: '36px', left: '0', bottom: '0', width: "250px", borderRight: '1px solid $gray500', py: '$1' }}>
       <ScrollArea>
         <TreeItem>
           <Box css={{ mr: '$2' }}>
