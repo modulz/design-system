@@ -29,7 +29,6 @@ export const IconButton = styled.button({
   backgroundColor: '$loContrast',
   border: '1px solid $gray600',
   borderRadius: '$round',
-  color: '$hiContrast',
   height: '$5',
   width: '$5',
   transition: 'all 40ms linear',
