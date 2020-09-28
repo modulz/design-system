@@ -1064,13 +1064,14 @@
     "@interop-ui/utils" "0.0.1-1"
     "@modulz/radix-icons" "^2.4.1"
 
-"@interop-ui/react-checkbox@^0.0.1-2":
-  version "0.0.1-2"
-  resolved "https://registry.yarnpkg.com/@interop-ui/react-checkbox/-/react-checkbox-0.0.1-2.tgz#8b4b82891395bc6cb3dc3b54d83c0b606552a36d"
-  integrity sha512-gvpuZ41vt8k5aof+wwunMi9ZOzLgG1FHqRKNQsk2+PIXHcYHjZzptzwx8Ax4GAXt8Kudwd4sDT7Zbp+ywS6YxQ==
+"@interop-ui/react-checkbox@^0.0.1-5":
+  version "0.0.1-5"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-checkbox/-/react-checkbox-0.0.1-5.tgz#5ad7dc79b0fd826b0ff51d2986647ccc4a1d08b9"
+  integrity sha512-IH0I1XnKwlyjcDQP4gn4scRjYY1qNOhizt1CTwIuQnjZm6NAk/B+5JC+K26TK8qMZ+mFZnWh/e3z/Z1HzT44rQ==
   dependencies:
-    "@interop-ui/react-utils" "0.0.1-1"
-    "@interop-ui/utils" "0.0.1-1"
+    "@interop-ui/react-label" "0.0.1-1"
+    "@interop-ui/react-utils" "0.0.1-3"
+    "@interop-ui/utils" "0.0.1-2"
 
 "@interop-ui/react-collapsible@0.0.1-1":
   version "0.0.1-1"
@@ -1119,6 +1120,14 @@
     "@interop-ui/react-utils" "0.0.1-1"
     "@interop-ui/utils" "0.0.1-1"
     react-remove-scroll "^2.3.0"
+
+"@interop-ui/react-label@0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-label/-/react-label-0.0.1-1.tgz#9869591272b37a9c5941dcce6d48318d1068a343"
+  integrity sha512-5yyEfzfJOU6SLKHzo66JB+EKk35LLDaCYkgc3nhWpI7SOABMTW4A3WYHibwCZ0ly0iPMAqW6QS0yiHTcePEnMg==
+  dependencies:
+    "@interop-ui/react-utils" "0.0.1-3"
+    "@interop-ui/utils" "0.0.1-2"
 
 "@interop-ui/react-lock@0.0.1-1":
   version "0.0.1-1"
@@ -1201,13 +1210,14 @@
     "@interop-ui/react-utils" "0.0.1-3"
     "@interop-ui/utils" "0.0.1-2"
 
-"@interop-ui/react-switch@^0.0.1-2":
-  version "0.0.1-2"
-  resolved "https://registry.yarnpkg.com/@interop-ui/react-switch/-/react-switch-0.0.1-2.tgz#b22ff900c901d357c9a413d348691731c685e1a8"
-  integrity sha512-yY2UEtSiEJjOW1A5LxHoPj6I87OaHoP+SMAxczZwioRvSJkyGmY9hUXPn3suW4qoRMsgmzC1Dc3R49I88d3QqQ==
+"@interop-ui/react-switch@^0.0.1-4":
+  version "0.0.1-4"
+  resolved "https://registry.yarnpkg.com/@interop-ui/react-switch/-/react-switch-0.0.1-4.tgz#ffde90ed76a847ae929c510fa6119859431298fa"
+  integrity sha512-dY5+r5pYXifRJMSXfOH/JZsMg+hDU2XOMVDRzGXJl66kv16t0CaK0bbDjCjRqizdu2BoBsUjkaQUtW4RDWBzXg==
   dependencies:
-    "@interop-ui/react-utils" "0.0.1-1"
-    "@interop-ui/utils" "0.0.1-1"
+    "@interop-ui/react-label" "0.0.1-1"
+    "@interop-ui/react-utils" "0.0.1-3"
+    "@interop-ui/utils" "0.0.1-2"
 
 "@interop-ui/react-tabs@^0.0.1-1":
   version "0.0.1-1"

@@ -23,14 +23,14 @@ import { AvatarNestedItem } from '../components/Avatar';
 import { Tabs } from '@interop-ui/react-tabs';
 import { SimpleToggle } from '../components/ToggleButton';
 import { SimpleSwitch } from '../components/Switch';
-import { Checkbox } from '../components/Checkbox';
 import { Switch } from '../components/Switch';
 import { Status } from '../components/Status';
 import { ScrollArea } from '../components/Scrollbar';
 import { Overlay } from '../components/Overlay';
 import { Panel } from '../components/Panel';
 
-import { Checkbox as CheckboxPrimitive, styles as checkboxStyles } from '@interop-ui/react-checkbox';
+import { Checkbox, styles as checkboxStyles } from '@interop-ui/react-checkbox';
+import { Label, styles as labelStyles } from '@interop-ui/react-label';
 import { Dialog, styles as dialogStyles } from '@interop-ui/react-dialog';
 import { Tooltip, styles as tooltipStyles } from '@interop-ui/react-tooltip';
 import { Popover, styles as popoverStyles } from '@interop-ui/react-popover';
@@ -488,7 +488,7 @@ function Home() {
 
         <Section size={3}>
           <Container size="2">
-            <Switch />
+            {/* <Switch /> */}
           </Container>
         </Section>
 
@@ -1062,33 +1062,12 @@ function Home() {
 
         <Section size={3}>
           <Container size="2" css={{ py: '$7' }}>
-            <Checkbox>
-              <CheckboxPrimitive.Indicator style={{ ...checkboxStyles.indicator }}>
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.467 3.72686C11.7559 3.91576 11.8369 4.30309 11.648 4.592L7.39803 11.092C7.29787 11.2452 7.1356 11.3468 6.95405 11.3699C6.77251 11.3931 6.58992 11.3355 6.4545 11.2124L3.7045 8.71243C3.44909 8.48024 3.43027 8.08496 3.66246 7.82954C3.89465 7.57413 4.28993 7.55531 4.54534 7.7875L6.75295 9.79442L10.6018 3.90793C10.7907 3.61903 11.178 3.53796 11.467 3.72686Z" fill="currentColor"/>
-                </svg>
-              </CheckboxPrimitive.Indicator>
-            </Checkbox>
-            <Button variant="ghost" size="large" as="label">
-              <Checkbox>
-                <CheckboxPrimitive.Indicator style={{ ...checkboxStyles.indicator }}>
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.467 3.72686C11.7559 3.91576 11.8369 4.30309 11.648 4.592L7.39803 11.092C7.29787 11.2452 7.1356 11.3468 6.95405 11.3699C6.77251 11.3931 6.58992 11.3355 6.4545 11.2124L3.7045 8.71243C3.44909 8.48024 3.43027 8.08496 3.66246 7.82954C3.89465 7.57413 4.28993 7.55531 4.54534 7.7875L6.75295 9.79442L10.6018 3.90793C10.7907 3.61903 11.178 3.53796 11.467 3.72686Z" fill="currentColor"/>
-                  </svg>
-                </CheckboxPrimitive.Indicator>
+            <Label style={labelStyles.root}>
+              <span>fwefwe</span>
+              <Checkbox onCheckedChange={() => props.onCheckedChange()} style={checkboxStyles.root}>
+                <Checkbox.Indicator style={checkboxStyles.indicator} />
               </Checkbox>
-              <Text size={2} css={{ ml: '$2' }}>Checkbox label</Text>
-            </Button>
-            <Button variant="ghost" size="large" as="label">
-              <Checkbox>
-                <CheckboxPrimitive.Indicator style={{ ...checkboxStyles.indicator }}>
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.467 3.72686C11.7559 3.91576 11.8369 4.30309 11.648 4.592L7.39803 11.092C7.29787 11.2452 7.1356 11.3468 6.95405 11.3699C6.77251 11.3931 6.58992 11.3355 6.4545 11.2124L3.7045 8.71243C3.44909 8.48024 3.43027 8.08496 3.66246 7.82954C3.89465 7.57413 4.28993 7.55531 4.54534 7.7875L6.75295 9.79442L10.6018 3.90793C10.7907 3.61903 11.178 3.53796 11.467 3.72686Z" fill="currentColor"/>
-                  </svg>
-                </CheckboxPrimitive.Indicator>
-              </Checkbox>
-              <Text size={2} css={{ ml: '$2' }}>Checkbox label</Text>
-            </Button>
+            </Label>
           </Container>
         </Section>
 
