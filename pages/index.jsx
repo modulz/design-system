@@ -37,6 +37,7 @@ import { Popover, styles as popoverStyles } from '@interop-ui/react-popover';
 import { Accordion } from '@interop-ui/react-accordion';
 import { Avatar } from '@interop-ui/react-avatar';
 import { AlertDialog, styles as alertDialogStyles } from '@interop-ui/react-alert-dialog';
+import { ProgressBar, styles as progressBarStyles } from '@interop-ui/react-progress-bar';
 
 import { Title } from '../composites/Title';
 import { Subtitle } from '../composites/Subtitle';
@@ -499,8 +500,8 @@ function Home() {
           <Container size="2">
             <AlertDialog>
               <AlertDialog.Trigger as={Button}>Alert Dialog</AlertDialog.Trigger>
-              <AlertDialog.Overlay as={Overlay} style={{ ...alertDialogStyles.overlay }} />
-              <AlertDialog.Content
+              <AlertDialog.Overlay as={Overlay} />
+              {/* <AlertDialog.Content
                 as={Panel}
                 css={{
                   ...alertDialogStyles.content,
@@ -521,7 +522,7 @@ function Home() {
                   <AlertDialog.Cancel as={Button} variant="ghost">Cancel</AlertDialog.Cancel>
                   <AlertDialog.Action as={Button} variant="red">Delete</AlertDialog.Action>
                 </Flex>
-              </AlertDialog.Content>
+              </AlertDialog.Content> */}
             </AlertDialog>
           </Container>
         </Section>
@@ -604,6 +605,34 @@ function Home() {
                 </Box>
               </Dialog.Content>
             </Dialog>
+          </Container>
+        </Section>
+
+        <Flex css={{ jc: 'center' }}>
+          <Separator size="2" />
+        </Flex>
+
+        <Section size={3}>
+          <Container size="2">
+            <ProgressBar
+              max="100"
+              value="75"
+              style={{
+                ...progressBarStyles.root,
+                height: '5px',
+                overflow: 'hidden',
+                borderRadius: '999px',
+                background: 'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)'
+              }}>
+                <ProgressBar.Indicator
+                  style={{
+                    ...progressBarStyles.indicator,
+                    width: '100%',
+                    background: 'gainsboro',
+                    transform: 'translateX(75%)'
+                  }}
+                />
+            </ProgressBar>
           </Container>
         </Section>
 
