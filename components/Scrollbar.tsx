@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flex } from '../components/Flex';
 import { Box } from '../components/Box';
-import { useIsomorphicLayoutEffect } from '@interop-ui/react-utils';
+import { useLayoutEffect } from '@interop-ui/react-utils';
 
 type Point = {
   x: number;
@@ -27,7 +27,7 @@ export const ScrollArea = (props: ScrollAreaProps) => {
     typeof document === 'undefined' ? '' : document.body.style.pointerEvents
   );
 
-  useIsomorphicLayoutEffect(() => {
+  useLayoutEffect(() => {
     const wrapperEl = wrapperRef.current;
     const contentEl = contentRef.current;
     const thumbEl = thumbRef.current;
