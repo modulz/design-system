@@ -12,10 +12,10 @@ export const Separator = styled(SeparatorPrimitive, {
 
   variants: {
     size: {
-      1: {
+      '1': {
         width: '$3',
       },
-      2: {
+      '2': {
         width: '$7',
       },
     },
