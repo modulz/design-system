@@ -13,5 +13,6 @@ export { Input } from './components/Input';
 export { Link } from './components/Link';
 export { Text } from './components/Text';
 export { TreeItem } from './components/TreeItem';
+export { Select } from './components/Select';
 
 export { css, styled, theme, darkTheme, darkThemeClass } from './stitches.config';
