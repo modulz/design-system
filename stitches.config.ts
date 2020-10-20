@@ -1,5 +1,7 @@
 import { createStyled } from '@stitches/react';
 
+export * from '@stitches/react';
+
 export const theme = {
   colors: {
     $hiContrast: 'hsl(206,10%,5%)',

@@ -1,6 +1,8 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesProps } from '../stitches.config';
 
-export const Badge = styled.span({
+export type BadgeProps = StitchesProps<typeof Badge>;
+
+export const Badge = styled('span', {
   // Reset
   alignItems: 'center',
   appearance: 'none',

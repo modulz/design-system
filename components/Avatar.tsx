@@ -1,10 +1,9 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesVariants } from '../stitches.config';
 import {
   Avatar as AvatarPrimitive,
   styles,
   AvatarProps as AvatarPrimitiveProps,
 } from '@interop-ui/react-avatar';
-import { StitchesVariants } from '@stitches/react';
 
 export const StyledAvatar = styled(AvatarPrimitive, {
   ...styles.root,
