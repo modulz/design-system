@@ -1,5 +1,5 @@
 import { styled } from '../stitches.config';
-import { Avatar as AvatarPrimitive, styles } from '@interop-ui/react-avatar';
+import { Avatar as AvatarPrimitive, styles, AvatarProps as AvatarPrimitiveProps } from '@interop-ui/react-avatar';
 import { StitchesVariants } from '@stitches/react';
 
 export const StyledAvatar = styled(AvatarPrimitive, {
@@ -114,17 +114,17 @@ export const AvatarGroup = styled.div({
   },
 });
 
-type AvatarProps = {
+export type AvatarProps = {
   alt?: string;
   src?: string;
   fallback?: React.ReactNode;
-} & StitchesVariants<typeof StyledAvatar>;
+} AvatarPrimitiveProps & StitchesVariants<typeof StyledAvatar>;
 
-export function Avatar({ alt, src, fallback: initials, ...props }: AvatarProps) {
+export function Avatar({ alt, src, fallback, ...props }: AvatarProps) {
   return (
     <StyledAvatar {...props}>
       <AvatarPrimitive.Image alt={alt} src={src} />
-      <AvatarPrimitive.Fallback>{initials}</AvatarPrimitive.Fallback>
+      <AvatarPrimitive.Fallback>{fallback}</AvatarPrimitive.Fallback>
     </StyledAvatar>
   );
 }

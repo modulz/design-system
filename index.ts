@@ -1,3 +1,6 @@
+export { Avatar } from './components/Avatar';
+export type { AvatarProps } from './components/Avatar';
+
 export { Badge } from './components/Badge';
 export { Box } from './components/Box';
 export { Button } from './components/Button';
