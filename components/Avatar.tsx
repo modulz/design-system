@@ -1,5 +1,9 @@
 import { styled } from '../stitches.config';
-import { Avatar as AvatarPrimitive, styles, AvatarProps as AvatarPrimitiveProps } from '@interop-ui/react-avatar';
+import {
+  Avatar as AvatarPrimitive,
+  styles,
+  AvatarProps as AvatarPrimitiveProps,
+} from '@interop-ui/react-avatar';
 import { StitchesVariants } from '@stitches/react';
 
 export const StyledAvatar = styled(AvatarPrimitive, {
@@ -10,58 +14,31 @@ export const StyledAvatar = styled(AvatarPrimitive, {
   border: 'none',
   outline: 'none',
 
-  '& [data-interop-avatar-image]': {
-    ...styles.image,
-  },
-
-  '[data-interop-avatar-fallback]': {
-    color: 'white',
-    textTransform: 'uppercase',
-  },
-
   variants: {
     size: {
       1: {
         width: '$3',
         height: '$3',
-        '[data-interop-avatar-fallback]': {
-          fontSize: '11px',
-        },
       },
       2: {
         width: '$5',
         height: '$5',
-        '[data-interop-avatar-fallback]': {
-          fontSize: '$3',
-        },
       },
       3: {
         width: '$6',
         height: '$6',
-        '[data-interop-avatar-fallback]': {
-          fontSize: '$6',
-        },
       },
       4: {
         width: '$7',
         height: '$7',
-        '[data-interop-avatar-fallback]': {
-          fontSize: '$7',
-        },
       },
       5: {
         width: '$8',
         height: '$8',
-        '[data-interop-avatar-fallback]': {
-          fontSize: '$9',
-        },
       },
       6: {
         width: '$9',
         height: '$9',
-        '[data-interop-avatar-fallback]': {
-          fontSize: '$9',
-        },
       },
     },
     shape: {
@@ -101,6 +78,38 @@ export const StyledAvatar = styled(AvatarPrimitive, {
   },
 });
 
+const AvatarImage = styled(AvatarPrimitive.Image, {
+  ...styles.image,
+});
+
+const AvatarFallback = styled(AvatarPrimitive.Fallback, {
+  color: 'white',
+  textTransform: 'uppercase',
+
+  variants: {
+    size: {
+      1: {
+        fontSize: '11px',
+      },
+      2: {
+        fontSize: '$3',
+      },
+      3: {
+        fontSize: '$6',
+      },
+      4: {
+        fontSize: '$7',
+      },
+      5: {
+        fontSize: '$9',
+      },
+      6: {
+        fontSize: '$9',
+      },
+    },
+  },
+});
+
 export const AvatarNestedItem = styled.div({
   boxShadow: '0 0 0 2px $loContrast',
   borderRadius: '50%',
@@ -114,17 +123,18 @@ export const AvatarGroup = styled.div({
   },
 });
 
-export type AvatarProps = {
-  alt?: string;
-  src?: string;
-  fallback?: React.ReactNode;
-} AvatarPrimitiveProps & StitchesVariants<typeof StyledAvatar>;
+export type AvatarProps = AvatarPrimitiveProps &
+  StitchesVariants<typeof StyledAvatar> & {
+    alt?: string;
+    src?: string;
+    fallback?: React.ReactNode;
+  };
 
-export function Avatar({ alt, src, fallback, ...props }: AvatarProps) {
+export function Avatar({ alt, src, fallback, size, ...props }: AvatarProps) {
   return (
-    <StyledAvatar {...props}>
-      <AvatarPrimitive.Image alt={alt} src={src} />
-      <AvatarPrimitive.Fallback>{fallback}</AvatarPrimitive.Fallback>
+    <StyledAvatar {...props} size={size}>
+      <AvatarImage alt={alt} src={src} />
+      <AvatarFallback size={size}>{fallback}</AvatarFallback>
     </StyledAvatar>
   );
 }
