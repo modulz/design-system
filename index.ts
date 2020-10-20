@@ -5,6 +5,8 @@ export { Badge } from './components/Badge';
 export type { BadgeProps } from './components/Badge';
 
 export { Box } from './components/Box';
+export type { BoxProps } from './components/Box';
+
 export { Button } from './components/Button';
 export { Card } from './components/Card';
 export { Code } from './components/Code';
