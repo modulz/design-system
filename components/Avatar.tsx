@@ -1,16 +1,17 @@
 import { styled } from '../stitches.config';
 import { Avatar as AvatarPrimitive, styles } from '@interop-ui/react-avatar';
+import { StitchesVariants } from '@stitches/react';
 
-export const MyAvatar = styled(AvatarPrimitive, {
-  ...(styles.root as any),
+export const StyledAvatar = styled(AvatarPrimitive, {
+  ...styles.root,
   position: 'relative',
   boxShadow: 'inset 0px 0px 1px rgba(0, 0, 0, 0.12)',
   backgroundImage: 'linear-gradient(gray, black)',
   border: 'none',
   outline: 'none',
 
-  '[data-interop-avatar-image]': {
-    ...(styles.image as any),
+  '& [data-interop-avatar-image]': {
+    ...styles.image,
   },
 
   '[data-interop-avatar-fallback]': {
@@ -64,17 +65,17 @@ export const MyAvatar = styled(AvatarPrimitive, {
       },
     },
     shape: {
-      'square': {
+      square: {
         borderRadius: '$2',
       },
-      'circle': {
+      circle: {
         borderRadius: '50%',
       },
     },
     inactive: {
       true: {
         opacity: '.3',
-      }
+      },
     },
     interactive: {
       true: {
@@ -88,22 +89,22 @@ export const MyAvatar = styled(AvatarPrimitive, {
           backgroundColor: 'rgba(0,0,0,.1)',
           opacity: '0',
           pointerEvents: 'none',
-          transition: 'opacity 40ms linear'
+          transition: 'opacity 40ms linear',
         },
         ':hover': {
           '::after': {
             opacity: '1',
           },
-        }
-      }
-    }
+        },
+      },
+    },
   },
 });
 
 export const AvatarNestedItem = styled.div({
   boxShadow: '0 0 0 2px $loContrast',
   borderRadius: '50%',
-})
+});
 
 export const AvatarGroup = styled.div({
   display: 'flex',
@@ -111,4 +112,19 @@ export const AvatarGroup = styled.div({
   [`${AvatarNestedItem}:nth-child(n+2)`]: {
     marginRight: '-$1',
   },
-})
+});
+
+type AvatarProps = {
+  alt?: string;
+  src?: string;
+  fallback?: React.ReactNode;
+} & StitchesVariants<typeof StyledAvatar>;
+
+export function Avatar({ alt, src, fallback: initials, ...props }: AvatarProps) {
+  return (
+    <StyledAvatar {...props}>
+      <AvatarPrimitive.Image alt={alt} src={src} />
+      <AvatarPrimitive.Fallback>{initials}</AvatarPrimitive.Fallback>
+    </StyledAvatar>
+  );
+}
