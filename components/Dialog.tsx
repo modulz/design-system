@@ -2,17 +2,28 @@ import {
   Dialog as DialogPrimitive,
   DialogContentProps,
   DialogProps as DialogPrimitiveProps,
-  DialogTriggerProps,
   styles,
 } from '@interop-ui/react-dialog';
 import { Overlay } from './Overlay';
 import { Panel } from './Panel';
+import { Button } from './Button';
 
-export function DialogButton(props: DialogTriggerProps) {
-  return <DialogPrimitive.Trigger {...props} />;
+export type DialogProps = DialogPrimitiveProps & {
+  children: React.ReactNode;
+};
+
+export function Dialog({ children }: DialogProps) {
+  return (
+    <DialogPrimitive>
+      <DialogPrimitive.Overlay as={Overlay} css={styles.overlay} />
+      {children}
+    </DialogPrimitive>
+  );
 }
 
-export function DialogContent(props: DialogContentProps) {
+Dialog.Trigger = DialogPrimitive.Trigger;
+
+function DialogContent({ children, ...props }: DialogContentProps) {
   return (
     <DialogPrimitive.Content
       as={Panel}
@@ -28,19 +39,14 @@ export function DialogContent(props: DialogContentProps) {
         padding: 20,
         marginTop: '-5vh',
       }}
-    />
-  );
-}
-
-export type DialogProps = DialogPrimitiveProps & {
-  children: React.ReactNode;
-};
-
-export function Dialog({ children }: DialogProps) {
-  return (
-    <DialogPrimitive>
-      <DialogPrimitive.Overlay as={Overlay} css={styles.overlay} />
+    >
       {children}
-    </DialogPrimitive>
+      <Dialog.Close as={Button} css={{ position: 'absolute', top: '$2', right: '$2' }}>
+        X
+      </Dialog.Close>
+    </DialogPrimitive.Content>
   );
 }
+
+Dialog.Content = DialogContent;
+Dialog.Close = DialogPrimitive.Close;

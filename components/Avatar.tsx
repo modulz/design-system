@@ -1,4 +1,4 @@
-import { styled, StitchesVariants } from '../stitches.config';
+import { styled, StitchesProps } from '../stitches.config';
 import {
   Avatar as AvatarPrimitive,
   styles,
@@ -123,15 +123,22 @@ export const AvatarGroup = styled.div({
 });
 
 export type AvatarProps = AvatarPrimitiveProps &
-  StitchesVariants<typeof StyledAvatar> & {
+  StitchesProps<typeof StyledAvatar> & {
     alt?: string;
     src?: string;
     fallback?: React.ReactNode;
   };
 
-export function Avatar({ alt, src, fallback, size, ...props }: AvatarProps) {
+export function Avatar({
+  alt,
+  src,
+  fallback,
+  size = '2',
+  shape = 'square',
+  ...props
+}: AvatarProps) {
   return (
-    <StyledAvatar {...props} size={size}>
+    <StyledAvatar {...props} size={size} shape={shape}>
       <AvatarImage alt={alt} src={src} />
       <AvatarFallback size={size}>{fallback}</AvatarFallback>
     </StyledAvatar>

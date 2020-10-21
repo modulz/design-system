@@ -765,8 +765,8 @@ function Home() {
           <Section size={3}>
             <Container size="2">
               <Dialog>
-                <DialogButton as={Button}>Open dialog</DialogButton>
-                <DialogContent>
+                <Dialog.Trigger as={Button}>Open dialog</Dialog.Trigger>
+                <Dialog.Content>
                   <Text size={5} as="h6" css={{ fontWeight: 500, mb: '$3' }}>
                     Dialog Heading
                   </Text>
@@ -775,7 +775,7 @@ function Home() {
                     Traditional business literature won’t help you solve it- most of that stuff is
                     focused on life after product/market fit, after the Trough of Sorrow.
                   </Text>
-                </DialogContent>
+                </Dialog.Content>
               </Dialog>
 
               <DialogPrimitive>
