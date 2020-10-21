@@ -28,10 +28,11 @@ import { Status } from '../components/Status';
 import { ScrollArea } from '../components/Scrollbar';
 import { Overlay } from '../components/Overlay';
 import { Panel } from '../components/Panel';
+import { Dialog, DialogContent, DialogButton } from '../components/Dialog';
 
 import { Checkbox, styles as checkboxStyles } from '@interop-ui/react-checkbox';
 import { Label, styles as labelStyles } from '@interop-ui/react-label';
-import { Dialog, styles as dialogStyles } from '@interop-ui/react-dialog';
+import { Dialog as DialogPrimitive, styles as dialogStyles } from '@interop-ui/react-dialog';
 import { Tooltip, styles as tooltipStyles } from '@interop-ui/react-tooltip';
 import { Popover, styles as popoverStyles } from '@interop-ui/react-popover';
 import { Accordion } from '@interop-ui/react-accordion';
@@ -764,9 +765,23 @@ function Home() {
           <Section size={3}>
             <Container size="2">
               <Dialog>
-                <Dialog.Trigger as={Button}>Dialog</Dialog.Trigger>
-                <Dialog.Overlay as={Overlay} style={{ ...dialogStyles.overlay }} />
-                <Dialog.Content
+                <DialogButton as={Button}>Open dialog</DialogButton>
+                <DialogContent>
+                  <Text size={5} as="h6" css={{ fontWeight: 500, mb: '$3' }}>
+                    Dialog Heading
+                  </Text>
+                  <Text size={3} as="p" css={{ lineHeight: '25px' }}>
+                    There are 5 variants to choose from. Use is for positive states. This is a link
+                    Traditional business literature won’t help you solve it- most of that stuff is
+                    focused on life after product/market fit, after the Trough of Sorrow.
+                  </Text>
+                </DialogContent>
+              </Dialog>
+
+              <DialogPrimitive>
+                <DialogPrimitive.Trigger as={Button}>Dialog</DialogPrimitive.Trigger>
+                <DialogPrimitive.Overlay as={Overlay} style={{ ...dialogStyles.overlay }} />
+                <DialogPrimitive.Content
                   as={Panel}
                   css={{
                     ...dialogStyles.content,
@@ -824,7 +839,7 @@ function Home() {
                   >
                     <Tooltip>
                       <Tooltip.Trigger as="div">
-                        <Dialog.Close as={IconButton} variant="ghost" aria-label="Close">
+                        <DialogPrimitive.Close as={IconButton} variant="ghost" aria-label="Close">
                           <svg
                             width="15"
                             height="15"
@@ -839,7 +854,7 @@ function Home() {
                               fill="currentColor"
                             />
                           </svg>
-                        </Dialog.Close>
+                        </DialogPrimitive.Close>
                       </Tooltip.Trigger>
                       <Tooltip.Position side="top" align="center" sideOffset={0}>
                         <Tooltip.Content
@@ -865,8 +880,8 @@ function Home() {
                       </Tooltip.Position>
                     </Tooltip>
                   </Box>
-                </Dialog.Content>
-              </Dialog>
+                </DialogPrimitive.Content>
+              </DialogPrimitive>
             </Container>
           </Section>
 
