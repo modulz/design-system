@@ -323,6 +323,7 @@ export function Avatars() {
                 <Status size="2" color="gray"></Status>
               </Box>
             </Box>
+
             <Box
               css={{
                 position: 'relative',

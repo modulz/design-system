@@ -4,6 +4,9 @@ import {
   styles,
   AvatarProps as AvatarPrimitiveProps,
 } from '@interop-ui/react-avatar';
+import { Box } from './Box';
+import { Status } from './Status';
+import type { StatusVariants } from './Status';
 
 export const StyledAvatar = styled(AvatarPrimitive, {
   ...styles.root,
@@ -122,11 +125,14 @@ export const AvatarGroup = styled.div({
   },
 });
 
+type Colors = Pick<StatusVariants, 'color'>;
+
 export type AvatarProps = AvatarPrimitiveProps &
   StitchesProps<typeof StyledAvatar> & {
     alt?: string;
     src?: string;
     fallback?: React.ReactNode;
+    statusColor?: Colors['color'];
   };
 
 export function Avatar({
@@ -135,12 +141,36 @@ export function Avatar({
   fallback,
   size = '2',
   shape = 'square',
+  css,
+  statusColor,
   ...props
 }: AvatarProps) {
   return (
-    <StyledAvatar {...props} size={size} shape={shape}>
-      <AvatarImage alt={alt} src={src} />
-      <AvatarFallback size={size}>{fallback}</AvatarFallback>
-    </StyledAvatar>
+    <Box
+      css={{
+        ...(css as any),
+        position: 'relative',
+        height: 'fit-content',
+        width: 'fit-content',
+      }}
+    >
+      <StyledAvatar {...props} size={size} shape={shape}>
+        <AvatarImage alt={alt} src={src} />
+        <AvatarFallback size={size}>{fallback}</AvatarFallback>
+      </StyledAvatar>
+      <Box
+        css={{
+          position: 'absolute',
+          bottom: '0',
+          right: '0',
+          boxShadow: '0 0 0 3px $loContrast',
+          borderRadius: '$round',
+          mr: '-3px',
+          mb: '-3px',
+        }}
+      >
+        {statusColor && <Status size={size > 2 ? '2' : '1'} color={statusColor} />}
+      </Box>
+    </Box>
   );
 }

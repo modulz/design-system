@@ -19,12 +19,17 @@ export default function Closed() {
         Avatar
       </Text>
 
-      <Avatar
-        css={{ marginBottom: '30px' }}
-        alt="Colm Tuite"
-        src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
-        fallback="C"
-      />
+      <Flex css={{ gap: '$4', mb: '$4' }}>
+        {[1, 2, 3, 4, 5].map((size) => (
+          <Avatar
+            size={size as any}
+            shape="square"
+            alt="Colm Tuite"
+            src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+            fallback="C"
+          />
+        ))}
+      </Flex>
 
       <Flex css={{ gap: '$4' }}>
         {[1, 2, 3, 4, 5].map((size) => (
@@ -34,6 +39,7 @@ export default function Closed() {
             alt="Colm Tuite"
             src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
             fallback="C"
+            statusColor="green"
           />
         ))}
       </Flex>

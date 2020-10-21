@@ -1,4 +1,7 @@
-import { styled } from '../stitches.config';
+import { StitchesProps, StitchesVariants, styled } from '../stitches.config';
+
+export type StatusProps = StitchesProps<typeof Status>;
+export type StatusVariants = StitchesVariants<typeof Status>;
 
 export const Status = styled.div({
   borderRadius: '$round',
@@ -15,19 +18,19 @@ export const Status = styled.div({
       },
     },
     color: {
-      'gray': {
+      gray: {
         backgroundColor: '$gray900',
       },
-      'blue': {
+      blue: {
         backgroundColor: '$blue800',
       },
-      'green': {
+      green: {
         backgroundColor: '$green800',
       },
-      'yellow': {
+      yellow: {
         backgroundColor: '$yellow800',
       },
-      'red': {
+      red: {
         backgroundColor: '$red800',
       },
     },
