@@ -9,6 +9,8 @@ import { Code } from '../components/Code';
 import { Flex } from '../components/Flex';
 import { Paragraph } from '../composites/Paragraph';
 
+import { Title } from '../composites/Title';
+
 export function Color() {
   return (
     <Section size="3">
@@ -591,6 +593,8 @@ export function Color() {
           </Box>
         </Grid>
       </Container>
+
+      <Box css={{ backgroundColor: '$red800', height: '100vh', p: '$9', mt: '$9' }}><Title css={{ color: 'white' }}>This should look good and pass contrast ratio.</Title></Box>
     </Section>
   );
 }
