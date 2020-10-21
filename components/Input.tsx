@@ -9,6 +9,7 @@ export const Input = styled.input({
   flexShrink: 0,
   fontFamily: 'inherit',
   lineHeight: '1',
+  margin: '0',
   outline: 'none',
   padding: '0',
   width: '100%',
@@ -25,7 +26,7 @@ export const Input = styled.input({
   borderRadius: '$1',
   color: '$hiContrast',
   fontVariantNumeric: 'tabular-nums',
-  
+
   ':focus': {
     boxShadow: 'inset 0px 0px 0px 1px $blue800, 0px 0px 0px 1px $blue800',
   },
@@ -69,6 +70,9 @@ export const Input = styled.input({
     cursor: {
       default: {
         cursor: 'default',
+        ':focus': {
+          cursor: 'text',
+        },
       },
     },
   },

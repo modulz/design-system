@@ -1243,6 +1243,11 @@
   resolved "https://registry.yarnpkg.com/@modulz/radix-icons/-/radix-icons-2.4.1.tgz#3423adcc4cf647fe44f5c3a21d10ddd61876a949"
   integrity sha512-U5/v/x+QnPiazReaNnQBV1wAQ5I3mRiycJclbQd+YiWQQMFNmj91AFHZE+mxntipAPfmslTnJfYRUX4DQVjr5g==
 
+"@modulz/radix-icons@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@modulz/radix-icons/-/radix-icons-3.1.0.tgz#c8f0b3457fd4e0cc47dafea436d525eeb72e6993"
+  integrity sha512-excH405b7GDP5qm6vbwNpBQ+CAqSvcN4uLD6TUp5eIHWrxljEfwE56QusQf3NYAIcc/ec914ZS+HLlq1Rx2D2Q==
+
 "@next/env@9.5.4":
   version "9.5.4"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-9.5.4.tgz#950f3370151a940ecac6e7e19cf125e6113e101e"
