@@ -5,7 +5,7 @@ import { darkThemeClass } from '../stitches.config';
 import { Button } from '../components/Button';
 
 function App({ Component, pageProps }) {
-  const [theme, setTheme] = React.useState(darkThemeClass);
+  const [theme, setTheme] = React.useState(undefined);
 
   React.useEffect(() => {
     document.body.className = '';
