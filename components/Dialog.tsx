@@ -9,6 +9,7 @@ import { Overlay } from './Overlay';
 import { Panel } from './Panel';
 import { IconButton } from './IconButton';
 
+export type { DialogContentProps, DialogCloseProps } from '@interop-ui/react-dialog';
 export type DialogProps = DialogPrimitiveProps & {
   children: React.ReactNode;
 };
@@ -21,8 +22,6 @@ export function Dialog({ children, ...props }: DialogProps) {
     </DialogPrimitive>
   );
 }
-
-Dialog.Trigger = DialogPrimitive.Trigger;
 
 function DialogContent({ children, ...props }: DialogContentProps) {
   return (
@@ -37,7 +36,7 @@ function DialogContent({ children, ...props }: DialogContentProps) {
         minWidth: 200,
         maxWidth: 'fit-content',
         maxHeight: '85vh',
-        padding: 20,
+        padding: '$4',
         marginTop: '-5vh',
       }}
     >
@@ -53,5 +52,6 @@ function DialogContent({ children, ...props }: DialogContentProps) {
   );
 }
 
+Dialog.Trigger = DialogPrimitive.Trigger;
 Dialog.Content = DialogContent;
 Dialog.Close = DialogPrimitive.Close;

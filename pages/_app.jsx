@@ -5,7 +5,7 @@ import { darkThemeClass } from '../stitches.config';
 import { Button } from '../components/Button';
 
 function App({ Component, pageProps }) {
-  const [theme, setTheme] = React.useState(undefined);
+  const [theme, setTheme] = React.useState('theme-default');
 
   React.useEffect(() => {
     document.body.className = '';
@@ -25,7 +25,7 @@ function App({ Component, pageProps }) {
       <Button
         variant="ghost"
         style={{ position: 'fixed', zIndex: 999, left: 260, top: 45 }}
-        onClick={() => setTheme(theme ? undefined : darkThemeClass)}
+        onClick={() => setTheme(theme === 'theme-default' ? darkThemeClass : 'theme-default')}
       >
         Toggle theme
       </Button>

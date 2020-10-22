@@ -12,9 +12,11 @@ export default function Closed() {
   return (
     <Box
       css={{
-        minHeight: '100vh',
+        height: '100vh',
         backgroundColor: '$loContrast',
-        padding: '10vw',
+        py: '130px',
+        px: '260px',
+        overflowY: 'auto',
       }}
     >
       <Text size="5" css={{ mt: '$7', mb: '$4' }}>
@@ -52,13 +54,11 @@ export default function Closed() {
 
       <Flex css={{ gap: '$4' }}>
         <Dialog>
-          <Dialog.Trigger as={Button}>Delete repo</Dialog.Trigger>
+          <Dialog.Trigger as={Button}>Open Dialog</Dialog.Trigger>
           <Dialog.Content>
-            <Text css={{ marginBottom: '$4' }}>Are you sure?</Text>
+            <Text css={{ marginBottom: '$4' }}>Hello, from Dialog.</Text>
             <Flex css={{ justifyContent: 'space-between' }}>
-              <Dialog.Close as={Button} variant="green">
-                Agree to terms
-              </Dialog.Close>
+              <Dialog.Close as={Button}>Bye.</Dialog.Close>
             </Flex>
           </Dialog.Content>
         </Dialog>
@@ -69,8 +69,17 @@ export default function Closed() {
       </Text>
 
       <Popover>
-        <Popover.Trigger as={Button}>Open popover</Popover.Trigger>
+        <Popover.Trigger as={Button}>Open Popover</Popover.Trigger>
         <Popover.Content>
+          <Text>Hello, from Popover.</Text>
+        </Popover.Content>
+      </Popover>
+
+      <Popover>
+        <Popover.Trigger as={Button} css={{ ml: '$4' }}>
+          Open Popover (top)
+        </Popover.Trigger>
+        <Popover.Content side="top">
           <Text>Hello, from Popover.</Text>
         </Popover.Content>
       </Popover>
@@ -79,7 +88,7 @@ export default function Closed() {
         Tooltip
       </Text>
 
-      <Tooltip content="Tooltip shows on top by default">
+      <Tooltip content="Tooltip shows on top by default.">
         <Button>Top</Button>
       </Tooltip>
 

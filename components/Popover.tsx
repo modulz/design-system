@@ -10,23 +10,25 @@ import { Box } from './Box';
 import { Panel } from './Panel';
 import { IconButton } from './IconButton';
 
+export type { PopoverTriggerProps } from '@interop-ui/react-popover';
 export type PopoverProps = PopoverPrimitiveProps & {
   children: React.ReactNode;
 };
+export type PopoverContentProps = PopoverPositionProps;
 
 export function Popover({ children, ...props }: PopoverProps) {
   return <PopoverPrimitive {...props}>{children}</PopoverPrimitive>;
 }
 
-function PopoverContent({ children, ...props }: PopoverPositionProps) {
+function PopoverContent({ children, ...props }: PopoverContentProps) {
   return (
     <PopoverPrimitive.Position sideOffset={0} {...props}>
       <PopoverPrimitive.Content
         as={Panel}
         css={{
-          width: 250,
-          height: 150,
-          padding: 20,
+          minWidth: 200,
+          maxWidth: 'fit-content',
+          padding: '$4',
         }}
       >
         {children}
