@@ -4,17 +4,18 @@ import {
   DialogProps as DialogPrimitiveProps,
   styles,
 } from '@interop-ui/react-dialog';
+import { Cross2Icon } from '@modulz/radix-icons';
 import { Overlay } from './Overlay';
 import { Panel } from './Panel';
-import { Button } from './Button';
+import { IconButton } from './IconButton';
 
 export type DialogProps = DialogPrimitiveProps & {
   children: React.ReactNode;
 };
 
-export function Dialog({ children }: DialogProps) {
+export function Dialog({ children, ...props }: DialogProps) {
   return (
-    <DialogPrimitive>
+    <DialogPrimitive {...props}>
       <DialogPrimitive.Overlay as={Overlay} css={styles.overlay} />
       {children}
     </DialogPrimitive>
@@ -41,8 +42,12 @@ function DialogContent({ children, ...props }: DialogContentProps) {
       }}
     >
       {children}
-      <Dialog.Close as={Button} css={{ position: 'absolute', top: '$2', right: '$2' }}>
-        X
+      <Dialog.Close
+        as={IconButton}
+        variant="ghost"
+        css={{ position: 'absolute', top: '$2', right: '$2' }}
+      >
+        <Cross2Icon />
       </Dialog.Close>
     </DialogPrimitive.Content>
   );

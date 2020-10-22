@@ -5,6 +5,8 @@ import { Text } from '../components/Text';
 import { Button } from '../components/Button';
 import { Flex } from '../components/Flex';
 import { Dialog } from '../components/Dialog';
+import { Popover } from '../components/Popover';
+import { Tooltip } from '../components/Tooltip';
 
 export default function Closed() {
   return (
@@ -61,6 +63,27 @@ export default function Closed() {
           </Dialog.Content>
         </Dialog>
       </Flex>
+
+      <Text size="5" css={{ mt: '$9', mb: '$4' }}>
+        Popover
+      </Text>
+
+      <Popover>
+        <Popover.Trigger as={Button}>Open popover</Popover.Trigger>
+        <Popover.Content>Hello</Popover.Content>
+      </Popover>
+
+      <Text size="5" css={{ mt: '$9', mb: '$4' }}>
+        Tooltip
+      </Text>
+
+      <Tooltip content="Tooltip shows on top by default">
+        <Button>Top</Button>
+      </Tooltip>
+
+      <Tooltip content="You get the idea." side="bottom">
+        <Button css={{ ml: '$4' }}>Bottom</Button>
+      </Tooltip>
     </Box>
   );
 }
