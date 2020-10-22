@@ -17,6 +17,7 @@ export default {
   plugins: [
     typescript({
       clean: true,
+      tsconfig: 'tsconfig-rollup.json',
       typescript: require('typescript'),
     }),
   ],
