@@ -6,6 +6,7 @@ import {
   styles,
 } from '@interop-ui/react-popover';
 import { Cross2Icon } from '@modulz/radix-icons';
+import { Box } from './Box';
 import { Panel } from './Panel';
 import { IconButton } from './IconButton';
 
@@ -37,7 +38,13 @@ function PopoverContent({ children, ...props }: PopoverPositionProps) {
           <Cross2Icon />
         </PopoverPrimitive.Close>
       </PopoverPrimitive.Content>
-      <PopoverPrimitive.Arrow width={13} height={7} style={{ ...styles.arrow, fill: 'white' }} />
+      <Box css={{ color: '$panel' }}>
+        <PopoverPrimitive.Arrow
+          width={13}
+          height={7}
+          style={{ ...styles.arrow, fill: 'currentColor' }}
+        />
+      </Box>
     </PopoverPrimitive.Position>
   );
 }
