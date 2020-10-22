@@ -7,8 +7,13 @@ import { Button } from '../components/Button';
 function App({ Component, pageProps }) {
   const [theme, setTheme] = React.useState(darkThemeClass);
 
+  React.useEffect(() => {
+    document.body.className = '';
+    document.body.classList.add(theme);
+  }, [theme]);
+
   return (
-    <div className={theme}>
+    <div>
       <Head>
         <title>Design System</title>
         <link rel="stylesheet" href="https://core.modulz.app/fonts/fonts.css" />

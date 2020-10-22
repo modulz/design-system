@@ -70,7 +70,9 @@ export default function Closed() {
 
       <Popover>
         <Popover.Trigger as={Button}>Open popover</Popover.Trigger>
-        <Popover.Content>Hello</Popover.Content>
+        <Popover.Content>
+          <Text>Hello, from Popover.</Text>
+        </Popover.Content>
       </Popover>
 
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
