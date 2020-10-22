@@ -21,7 +21,7 @@ import { Avatar } from '../components/Avatar';
 import { AvatarGroup } from '../components/Avatar';
 import { AvatarNestedItem } from '../components/Avatar';
 import { Tabs } from '@interop-ui/react-tabs';
-import { SimpleToggle } from '../components/ToggleButton';
+import { SimpleToggle } from '../components/SimpleToggle';
 import { SimpleSwitch } from '../components/Switch';
 import { Switch } from '../components/Switch';
 import { Status } from '../components/Status';

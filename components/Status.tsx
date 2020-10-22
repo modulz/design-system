@@ -1,4 +1,4 @@
-import { StitchesProps, StitchesVariants, styled } from '../stitches.config';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 
 export type StatusProps = StitchesProps<typeof Status>;
 export type StatusVariants = StitchesVariants<typeof Status>;

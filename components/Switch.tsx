@@ -1,8 +1,14 @@
 import { styled } from '../stitches.config';
-import { Switch as SwitchPrimitive, styles } from '@interop-ui/react-switch';
+import {
+  Switch as SwitchPrimitive,
+  styles,
+  SwitchProps as SwitchPrimitiveProps,
+} from '@interop-ui/react-switch';
 
-const Track = styled('input', {
-  ...(styles.root as any),
+export type SwitchProps = SwitchPrimitiveProps;
+
+const Track = styled('button', {
+  ...styles.root,
   width: 30,
   height: 7,
   backgroundColor: '$gray500',
@@ -14,13 +20,14 @@ const Track = styled('input', {
 });
 
 const Thumb = styled('span', {
-  ...(styles.thumb as any),
+  ...styles.thumb,
+  position: 'absolute',
   width: 19,
   height: 19,
   backgroundColor: '$gray700',
   borderRadius: '$round',
   transition: 'all 100ms ease',
-  mt: -1,
+  mt: '-9px',
   '&:hover': {
     backgroundColor: '$gray900',
   },
@@ -29,7 +36,7 @@ const Thumb = styled('span', {
   },
 });
 
-export function Switch(props) {
+export function Switch(props: SwitchProps) {
   return (
     <SwitchPrimitive as={Track} {...props}>
       <SwitchPrimitive.Thumb as={Thumb} />

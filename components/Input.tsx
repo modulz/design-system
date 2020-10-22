@@ -1,6 +1,9 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 
-export const Input = styled.input({
+export type InputProps = StitchesProps<typeof Input>;
+export type InputVariants = StitchesVariants<typeof Input>;
+
+export const Input = styled('input', {
   // Reset
   appearance: 'none',
   backgroundColor: 'transparent',

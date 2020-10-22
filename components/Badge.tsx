@@ -1,6 +1,7 @@
-import { styled, StitchesProps } from '../stitches.config';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 
 export type BadgeProps = StitchesProps<typeof Badge>;
+export type BadgeVariants = StitchesVariants<typeof Badge>;
 
 export const Badge = styled('span', {
   // Reset

@@ -1,12 +1,21 @@
-import { styled, StitchesProps } from '../stitches.config';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 import {
   Avatar as AvatarPrimitive,
   styles,
   AvatarProps as AvatarPrimitiveProps,
 } from '@interop-ui/react-avatar';
 import { Box } from './Box';
-import { Status } from './Status';
-import type { StatusVariants } from './Status';
+import { Status, StatusVariants } from './Status';
+
+type StatusColors = Pick<StatusVariants, 'color'>;
+export type AvatarProps = AvatarPrimitiveProps &
+  StitchesProps<typeof StyledAvatar> & {
+    alt?: string;
+    src?: string;
+    fallback?: React.ReactNode;
+    status?: StatusColors['color'];
+  };
+export type AvatarVariants = StitchesVariants<typeof Avatar>;
 
 export const StyledAvatar = styled(AvatarPrimitive, {
   ...styles.root,
@@ -18,27 +27,27 @@ export const StyledAvatar = styled(AvatarPrimitive, {
 
   variants: {
     size: {
-      1: {
+      '1': {
         width: '$3',
         height: '$3',
       },
-      2: {
+      '2': {
         width: '$5',
         height: '$5',
       },
-      3: {
+      '3': {
         width: '$6',
         height: '$6',
       },
-      4: {
+      '4': {
         width: '$7',
         height: '$7',
       },
-      5: {
+      '5': {
         width: '$8',
         height: '$8',
       },
-      6: {
+      '6': {
         width: '$9',
         height: '$9',
       },
@@ -90,50 +99,40 @@ const AvatarFallback = styled(AvatarPrimitive.Fallback, {
 
   variants: {
     size: {
-      1: {
+      '1': {
         fontSize: '11px',
       },
-      2: {
+      '1': {
         fontSize: '$3',
       },
-      3: {
+      '1': {
         fontSize: '$6',
       },
-      4: {
+      '1': {
         fontSize: '$7',
       },
-      5: {
+      '1': {
         fontSize: '$9',
       },
-      6: {
+      '1': {
         fontSize: '$9',
       },
     },
   },
 });
 
-export const AvatarNestedItem = styled.div({
+export const AvatarNestedItem = styled('div', {
   boxShadow: '0 0 0 2px $loContrast',
   borderRadius: '50%',
 });
 
-export const AvatarGroup = styled.div({
+export const AvatarGroup = styled('div', {
   display: 'flex',
   flexDirection: 'row-reverse',
   [`${AvatarNestedItem}:nth-child(n+2)`]: {
     marginRight: '-$1',
   },
 });
-
-type Colors = Pick<StatusVariants, 'color'>;
-
-export type AvatarProps = AvatarPrimitiveProps &
-  StitchesProps<typeof StyledAvatar> & {
-    alt?: string;
-    src?: string;
-    fallback?: React.ReactNode;
-    statusColor?: Colors['color'];
-  };
 
 export function Avatar({
   alt,
@@ -142,7 +141,7 @@ export function Avatar({
   size = '2',
   shape = 'square',
   css,
-  statusColor,
+  status,
   ...props
 }: AvatarProps) {
   return (
@@ -169,7 +168,7 @@ export function Avatar({
           mb: '-3px',
         }}
       >
-        {statusColor && <Status size={size > 2 ? '2' : '1'} color={statusColor} />}
+        {status && <Status size={size > 2 ? '2' : '1'} color={status} />}
       </Box>
     </Box>
   );

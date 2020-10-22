@@ -1,8 +1,11 @@
-import { styled } from '../stitches.config';
-import { ToggleButton, styles as togglebuttonStyles } from '@interop-ui/react-toggle-button';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
+import { ToggleButton, styles, ToggleButtonProps } from '@interop-ui/react-toggle-button';
+
+export type SimpleToggleProps = ToggleButtonProps & StitchesProps<typeof SimpleToggle>;
+export type SimpleToggleVariants = StitchesVariants<typeof SimpleToggle>;
 
 export const SimpleToggle = styled(ToggleButton, {
-  ...(togglebuttonStyles.root as any),
+  ...styles.root,
   display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -10,15 +13,16 @@ export const SimpleToggle = styled(ToggleButton, {
   height: '$5',
   width: '$5',
   transition: 'all 40ms linear',
+  backgroundColor: '$gray200',
 
   ':hover': {
     backgroundColor: '$gray300',
   },
 
   '&[data-state="on"]': {
-    backgroundColor: '$gray400',
+    backgroundColor: '$gray600',
     ':hover': {
-      backgroundColor: '$gray400',
+      backgroundColor: '$gray700',
     },
   },
 
@@ -31,6 +35,6 @@ export const SimpleToggle = styled(ToggleButton, {
       square: {
         borderRadius: '$1',
       },
-    }
-  }
+    },
+  },
 });

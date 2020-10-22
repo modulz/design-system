@@ -43,7 +43,7 @@ export default function Closed() {
             alt="Colm Tuite"
             src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
             fallback="C"
-            statusColor="green"
+            status="green"
           />
         ))}
       </Flex>

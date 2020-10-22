@@ -1,6 +1,9 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 
-export const IconButton = styled.button({
+export type IconButtonProps = StitchesProps<typeof IconButton>;
+export type IconButtonVariants = StitchesVariants<typeof IconButton>;
+
+export const IconButton = styled('button', {
   // Reset
   alignItems: 'center',
   appearance: 'none',
