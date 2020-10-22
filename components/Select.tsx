@@ -10,5 +10,5 @@ export const Select = styled.select({
   boxShadow: 'inset 0 0 0 1px $gray600',
   pl: '$1',
   borderRadius: '$1',
-  color: '$hiContrast'
+  color: '$hiContrast',
 });

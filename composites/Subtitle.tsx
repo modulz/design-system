@@ -6,7 +6,7 @@ export function Subtitle(props) {
       as="h2"
       size={{
         initial: '5',
-        bp2: '6'
+        bp2: '6',
       }}
       {...props}
       css={{
@@ -21,6 +21,6 @@ export function Subtitle(props) {
           ...props.bp2,
         },
       }}
-     />
+    />
   );
 }
