@@ -4,7 +4,7 @@
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "preserve",
+    "jsx": "react",
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -14,10 +14,6 @@
     "sourceMap": true,
     "strict": true,
     "target": "es5",
-    "noImplicitAny": false,
-    "lib": ["dom", "es2017"],
-    "allowJs": true,
-    "isolatedModules": true
   },
   "exclude": ["node_modules", "pages"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]

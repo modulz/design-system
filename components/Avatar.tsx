@@ -1,3 +1,4 @@
+import React from 'react';
 import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 import {
   Avatar as AvatarPrimitive,
