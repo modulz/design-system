@@ -24,7 +24,7 @@ export default function Closed() {
       </Text>
 
       <Flex css={{ gap: '$4', mb: '$4' }}>
-        {[1, 2, 3, 4, 5].map((size) => (
+        {[1, 2, 3, 4, 5, 6].map((size) => (
           <Avatar
             size={size as any}
             shape="square"
@@ -35,8 +35,8 @@ export default function Closed() {
         ))}
       </Flex>
 
-      <Flex css={{ gap: '$4' }}>
-        {[1, 2, 3, 4, 5].map((size) => (
+      <Flex css={{ gap: '$4', mb: '$4' }}>
+        {[1, 2, 3, 4, 5, 6].map((size) => (
           <Avatar
             size={size as any}
             shape="square"
@@ -45,6 +45,12 @@ export default function Closed() {
             fallback="C"
             status="green"
           />
+        ))}
+      </Flex>
+
+      <Flex css={{ gap: '$4' }}>
+        {[1, 2, 3, 4, 5, 6].map((size) => (
+          <Avatar size={size as any} shape="square" fallback="C" status="green" />
         ))}
       </Flex>
 

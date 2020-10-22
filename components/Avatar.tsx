@@ -102,19 +102,19 @@ const AvatarFallback = styled(AvatarPrimitive.Fallback, {
       '1': {
         fontSize: '11px',
       },
-      '1': {
+      '2': {
         fontSize: '$3',
       },
-      '1': {
+      '3': {
         fontSize: '$6',
       },
-      '1': {
+      '4': {
         fontSize: '$7',
       },
-      '1': {
+      '5': {
         fontSize: '$9',
       },
-      '1': {
+      '6': {
         fontSize: '$9',
       },
     },
