@@ -50,7 +50,12 @@ export default function Closed() {
 
       <Flex css={{ gap: '$4' }}>
         {[1, 2, 3, 4, 5, 6].map((size) => (
-          <Avatar size={size as any} shape="square" fallback="C" status="green" />
+          <Avatar
+            size={size as any}
+            shape="square"
+            fallback="C"
+            status="green"
+          />
         ))}
       </Flex>
 

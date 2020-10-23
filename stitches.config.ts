@@ -184,7 +184,8 @@ export const theme = {
     $bronze900: 'hsl(16,38%,44%)',
   },
   fonts: {
-    $untitled: 'Untitled Sans, -apple-system, BlinkMacSystemFont, system-ui, sans-serif',
+    $untitled:
+      'Untitled Sans, -apple-system, BlinkMacSystemFont, system-ui, sans-serif',
     $mono: 'Söhne Mono, menlo, monospace',
   },
   space: {

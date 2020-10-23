@@ -5,7 +5,8 @@ import {
   CheckboxProps as CheckboxPrimitiveProps,
 } from '@interop-ui/react-checkbox';
 
-export type CheckboxProps = CheckboxPrimitiveProps & StitchesProps<typeof Checkbox>;
+export type CheckboxProps = CheckboxPrimitiveProps &
+  StitchesProps<typeof Checkbox>;
 export type CheckboxVariants = StitchesVariants<typeof Checkbox>;
 
 export const Checkbox = styled(checkboxPrimitive, {

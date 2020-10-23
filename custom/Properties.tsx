@@ -30,7 +30,12 @@ export function Properties() {
         <Box css={{ pb: '$9' }}>
           <Box css={{ borderTop: '1px solid $gray300', py: '$1' }}>
             <Flex
-              css={{ px: '$3', my: '$1', alignItems: 'center', justifyContent: 'space-between' }}
+              css={{
+                px: '$3',
+                my: '$1',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
             >
               <Box>
                 <Text size="1" css={{ fontWeight: '500' }}>
@@ -264,7 +269,12 @@ export function Properties() {
 
           <Box css={{ borderTop: '1px solid $gray500', py: '$1' }}>
             <Flex
-              css={{ px: '$3', my: '$1', alignItems: 'center', justifyContent: 'space-between' }}
+              css={{
+                px: '$3',
+                my: '$1',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
             >
               <Box>
                 <Text size="1" css={{ fontWeight: '500' }}>
@@ -439,7 +449,12 @@ export function Properties() {
 
           <Box css={{ borderTop: '1px solid $gray500', py: '$1' }}>
             <Flex
-              css={{ px: '$3', my: '$1', alignItems: 'center', justifyContent: 'space-between' }}
+              css={{
+                px: '$3',
+                my: '$1',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
             >
               <Box>
                 <Text size="1" css={{ fontWeight: '500' }}>
@@ -629,7 +644,11 @@ export function Properties() {
                 {/* <Tooltip label="X Offset" side="bottom" align="center"> */}
                 <Text
                   size="1"
-                  css={{ color: '$gray900', display: 'block', textAlign: 'center' }}
+                  css={{
+                    color: '$gray900',
+                    display: 'block',
+                    textAlign: 'center',
+                  }}
                   style={{ lineHeight: 1 }}
                 >
                   X
@@ -640,7 +659,11 @@ export function Properties() {
                 {/* <Tooltip label="Y Offset" side="bottom" align="center"> */}
                 <Text
                   size="1"
-                  css={{ color: '$gray900', display: 'block', textAlign: 'center' }}
+                  css={{
+                    color: '$gray900',
+                    display: 'block',
+                    textAlign: 'center',
+                  }}
                   style={{ lineHeight: 1 }}
                 >
                   Y
@@ -651,7 +674,11 @@ export function Properties() {
                 {/* <Tooltip label="Blur" side="bottom" align="center"> */}
                 <Text
                   size="1"
-                  css={{ color: '$gray900', display: 'block', textAlign: 'center' }}
+                  css={{
+                    color: '$gray900',
+                    display: 'block',
+                    textAlign: 'center',
+                  }}
                   style={{ lineHeight: 1 }}
                 >
                   B
@@ -662,7 +689,11 @@ export function Properties() {
                 {/* <Tooltip label="Spread" side="bottom" align="center"> */}
                 <Text
                   size="1"
-                  css={{ color: '$gray900', display: 'block', textAlign: 'center' }}
+                  css={{
+                    color: '$gray900',
+                    display: 'block',
+                    textAlign: 'center',
+                  }}
                   style={{ lineHeight: 1 }}
                 >
                   S
@@ -674,7 +705,12 @@ export function Properties() {
 
           <Box css={{ borderTop: '1px solid $gray500', py: '$1' }}>
             <Flex
-              css={{ px: '$3', my: '$1', alignItems: 'center', justifyContent: 'space-between' }}
+              css={{
+                px: '$3',
+                my: '$1',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
             >
               <Box>
                 <Text size="1" css={{ fontWeight: '500' }}>
@@ -777,7 +813,12 @@ export function Properties() {
 
           <Box css={{ borderTop: '1px solid $gray500', py: '$1' }}>
             <Flex
-              css={{ px: '$3', my: '$1', alignItems: 'center', justifyContent: 'space-between' }}
+              css={{
+                px: '$3',
+                my: '$1',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
             >
               <Box>
                 <Text size="1" css={{ fontWeight: '500' }}>
@@ -1224,7 +1265,12 @@ export function Properties() {
 
           <Box css={{ borderTop: '1px solid $gray500', py: '$1' }}>
             <Flex
-              css={{ px: '$3', my: '$1', alignItems: 'center', justifyContent: 'space-between' }}
+              css={{
+                px: '$3',
+                my: '$1',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
             >
               <Box>
                 <Text size="1" css={{ fontWeight: '500' }}>

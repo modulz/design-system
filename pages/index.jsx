@@ -32,12 +32,21 @@ import { Dialog, DialogContent, DialogButton } from '../components/Dialog';
 
 import { Checkbox, styles as checkboxStyles } from '@interop-ui/react-checkbox';
 import { Label, styles as labelStyles } from '@interop-ui/react-label';
-import { Dialog as DialogPrimitive, styles as dialogStyles } from '@interop-ui/react-dialog';
+import {
+  Dialog as DialogPrimitive,
+  styles as dialogStyles,
+} from '@interop-ui/react-dialog';
 import { Tooltip, styles as tooltipStyles } from '@interop-ui/react-tooltip';
 import { Popover, styles as popoverStyles } from '@interop-ui/react-popover';
 import { Accordion } from '@interop-ui/react-accordion';
-import { AlertDialog, styles as alertDialogStyles } from '@interop-ui/react-alert-dialog';
-import { ProgressBar, styles as progressBarStyles } from '@interop-ui/react-progress-bar';
+import {
+  AlertDialog,
+  styles as alertDialogStyles,
+} from '@interop-ui/react-alert-dialog';
+import {
+  ProgressBar,
+  styles as progressBarStyles,
+} from '@interop-ui/react-progress-bar';
 
 import { Title } from '../composites/Title';
 import { Subtitle } from '../composites/Subtitle';
@@ -76,9 +85,21 @@ function Home() {
                   viewBox="0 0 15 15"
                   fill="none"
                 >
-                  <path d="M2.5 2.5H12.5" stroke="currentColor" strokeLinecap="round" />
-                  <path d="M2.5 7.5H12.5" stroke="currentColor" strokeLnecap="round" />
-                  <path d="M2.5 12.5H12.5" stroke="currentColor" strokLinecap="round" />
+                  <path
+                    d="M2.5 2.5H12.5"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M2.5 7.5H12.5"
+                    stroke="currentColor"
+                    strokeLnecap="round"
+                  />
+                  <path
+                    d="M2.5 12.5H12.5"
+                    stroke="currentColor"
+                    strokLinecap="round"
+                  />
                 </svg>
               </IconButton>
             </Box>
@@ -240,10 +261,12 @@ function Home() {
         <ScrollArea>
           <Section size={3}>
             <Container size="2">
-              <Title css={{ ta: 'center', mb: '$3' }}>Radix UI test suite</Title>
+              <Title css={{ ta: 'center', mb: '$3' }}>
+                Radix UI test suite
+              </Title>
               <Subtitle css={{ ta: 'center' }}>
-                An environment for testing tokens, theming, and components on Radix UI design
-                system.
+                An environment for testing tokens, theming, and components on
+                Radix UI design system.
               </Subtitle>
             </Container>
           </Section>
@@ -276,7 +299,13 @@ function Home() {
 
           <Section size={3}>
             <Container size="1">
-              <Box css={{ p: '$5', border: '1px solid $gray500', borderRadius: '$2' }}>
+              <Box
+                css={{
+                  p: '$5',
+                  border: '1px solid $gray500',
+                  borderRadius: '$2',
+                }}
+              >
                 <form>
                   <Input
                     type="email"
@@ -305,11 +334,13 @@ function Home() {
             </Container>
             <Container size="2" css={{ my: '$9' }}>
               <Paragraph>
-                This is a really long paragraph of text, to demonstrate prose text, like for
-                example, the kind you might read in a blog post. The reason we're using prose here
-                is because the most common use case for this container size is longform text. So
-                we're previewing some longform text here so we can make sure the container width
-                provides an optimal line length for this font size.
+                This is a really long paragraph of text, to demonstrate prose
+                text, like for example, the kind you might read in a blog post.
+                The reason we're using prose here is because the most common use
+                case for this container size is longform text. So we're
+                previewing some longform text here so we can make sure the
+                container width provides an optimal line length for this font
+                size.
               </Paragraph>
             </Container>
             <Container size="3" css={{ my: '$9' }}>
@@ -321,29 +352,36 @@ function Home() {
               >
                 <Box>
                   <Text as="p" size="4" css={{ lineHeight: '27px' }}>
-                    This is a much shorter paragraph of text, to demonstrate narrow text container.
-                    The reason we're using text here is because one common use case for this
-                    container size is a 3-up grid.
+                    This is a much shorter paragraph of text, to demonstrate
+                    narrow text container. The reason we're using text here is
+                    because one common use case for this container size is a
+                    3-up grid.
                   </Text>
                 </Box>
                 <Box>
                   <Text as="p" size="4" css={{ lineHeight: '27px' }}>
-                    This is a much shorter paragraph of text, to demonstrate narrow text container.
-                    The reason we're using text here is because one common use case for this
-                    container size is a 3-up grid.
+                    This is a much shorter paragraph of text, to demonstrate
+                    narrow text container. The reason we're using text here is
+                    because one common use case for this container size is a
+                    3-up grid.
                   </Text>
                 </Box>
                 <Box>
                   <Text as="p" size="4" css={{ lineHeight: '27px' }}>
-                    This is a much shorter paragraph of text, to demonstrate narrow text container.
-                    The reason we're using text here is because one common use case for this
-                    container size is a 3-up grid.
+                    This is a much shorter paragraph of text, to demonstrate
+                    narrow text container. The reason we're using text here is
+                    because one common use case for this container size is a
+                    3-up grid.
                   </Text>
                 </Box>
               </Grid>
             </Container>
             <Container size="4">
-              <Text as="p" size="3" css={{ ta: 'center', bc: '$gray200', py: '$2' }}>
+              <Text
+                as="p"
+                size="3"
+                css={{ ta: 'center', bc: '$gray200', py: '$2' }}
+              >
                 No max width
               </Text>
             </Container>
@@ -358,11 +396,18 @@ function Home() {
               <Text
                 size="6"
                 as="h4"
-                css={{ fontWeight: 500, lineHeight: '27px', mb: '$8', mb: '$1' }}
+                css={{
+                  fontWeight: 500,
+                  lineHeight: '27px',
+                  mb: '$8',
+                  mb: '$1',
+                }}
               >
                 Tracking test
               </Text>
-              <Paragraph css={{ mb: '$7' }}>Tracking should be tight and sexi.</Paragraph>
+              <Paragraph css={{ mb: '$7' }}>
+                Tracking should be tight and sexi.
+              </Paragraph>
             </Container>
             <Container size="2">
               <Flex css={{ fd: 'column', gap: '$4' }}>
@@ -370,7 +415,11 @@ function Home() {
                   <Text size={2} css={{ color: '$gray900', width: '65px' }}>
                     900
                   </Text>
-                  <Text size={9} as="h1" css={{ fontWeight: 500, lineHeight: '55px' }}>
+                  <Text
+                    size={9}
+                    as="h1"
+                    css={{ fontWeight: 500, lineHeight: '55px' }}
+                  >
                     The quick brown fox
                   </Text>
                 </Flex>
@@ -378,7 +427,11 @@ function Home() {
                   <Text size={2} css={{ color: '$gray900', width: '65px' }}>
                     800
                   </Text>
-                  <Text size={8} as="h2" css={{ fontWeight: 500, lineHeight: '37px' }}>
+                  <Text
+                    size={8}
+                    as="h2"
+                    css={{ fontWeight: 500, lineHeight: '37px' }}
+                  >
                     The quick brown fox jumped
                   </Text>
                 </Flex>
@@ -386,7 +439,11 @@ function Home() {
                   <Text size={2} css={{ color: '$gray900', width: '65px' }}>
                     700
                   </Text>
-                  <Text size={7} as="h3" css={{ fontWeight: 500, lineHeight: '30px' }}>
+                  <Text
+                    size={7}
+                    as="h3"
+                    css={{ fontWeight: 500, lineHeight: '30px' }}
+                  >
                     The quick brown fox jumped
                   </Text>
                 </Flex>
@@ -445,13 +502,19 @@ function Home() {
               <Text
                 size="6"
                 as="h4"
-                css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}
+                css={{
+                  fontWeight: 500,
+                  lineHeight: '27px',
+                  mt: '$8',
+                  mb: '$1',
+                }}
               >
                 Corrective indent test
               </Text>
               <Paragraph css={{ mb: '$7' }}>
-                Text should be aligned with the yellow box along the left edge. There's some optical
-                shit going on here too, so this is not gospel.
+                Text should be aligned with the yellow box along the left edge.
+                There's some optical shit going on here too, so this is not
+                gospel.
               </Paragraph>
             </Container>
             <Container size="2">
@@ -460,7 +523,11 @@ function Home() {
                   <Text size={2} css={{ color: '$gray900', width: '65px' }}>
                     900
                   </Text>
-                  <Text size={9} as="h1" css={{ fontWeight: 500, lineHeight: '55px' }}>
+                  <Text
+                    size={9}
+                    as="h1"
+                    css={{ fontWeight: 500, lineHeight: '55px' }}
+                  >
                     The quick brown fox
                   </Text>
                 </Flex>
@@ -468,7 +535,11 @@ function Home() {
                   <Text size={2} css={{ color: '$gray900', width: '65px' }}>
                     800
                   </Text>
-                  <Text size={8} as="h2" css={{ fontWeight: 500, lineHeight: '37px' }}>
+                  <Text
+                    size={8}
+                    as="h2"
+                    css={{ fontWeight: 500, lineHeight: '37px' }}
+                  >
                     The quick brown fox jumped
                   </Text>
                 </Flex>
@@ -476,7 +547,11 @@ function Home() {
                   <Text size={2} css={{ color: '$gray900', width: '65px' }}>
                     700
                   </Text>
-                  <Text size={7} as="h3" css={{ fontWeight: 500, lineHeight: '30px' }}>
+                  <Text
+                    size={7}
+                    as="h3"
+                    css={{ fontWeight: 500, lineHeight: '30px' }}
+                  >
                     The quick brown fox jumped
                   </Text>
                 </Flex>
@@ -546,7 +621,12 @@ function Home() {
               <Text
                 size="6"
                 as="h4"
-                css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}
+                css={{
+                  fontWeight: 500,
+                  lineHeight: '27px',
+                  mt: '$8',
+                  mb: '$1',
+                }}
               >
                 Text components
               </Text>
@@ -557,17 +637,19 @@ function Home() {
               <Flex css={{ fd: 'column', gap: '$6' }}>
                 <Title>This is a title</Title>
                 <Subtitle>
-                  This is a subtitle, used to support a title or heading. It defaults to h2 but can
-                  be rendered as any h level.
+                  This is a subtitle, used to support a title or heading. It
+                  defaults to h2 but can be rendered as any h level.
                 </Subtitle>
                 <Heading>This is a large heading</Heading>
                 <Subheading>This is a small heading</Subheading>
                 <Paragraph>
-                  This is a really long paragraph of text, to demonstrate prose text, like for
-                  example, the kind you might read in a blog post. The reason we're using prose here
-                  is because the most common use case for this container size is longform text. So
-                  we're previewing some longform text here so we can make sure the container width
-                  provides an optimal line length for this font size.
+                  This is a really long paragraph of text, to demonstrate prose
+                  text, like for example, the kind you might read in a blog
+                  post. The reason we're using prose here is because the most
+                  common use case for this container size is longform text. So
+                  we're previewing some longform text here so we can make sure
+                  the container width provides an optimal line length for this
+                  font size.
                 </Paragraph>
               </Flex>
             </Container>
@@ -579,7 +661,15 @@ function Home() {
 
           <Section size={3}>
             <Container size="3">
-              <Flex css={{ ai: 'center', jc: 'center', gap: '$5', fw: 'wrap', mb: '$7' }}>
+              <Flex
+                css={{
+                  ai: 'center',
+                  jc: 'center',
+                  gap: '$5',
+                  fw: 'wrap',
+                  mb: '$7',
+                }}
+              >
                 <Badge size={1}>Coming soon</Badge>
                 <Badge size={2}>Coming soon</Badge>
               </Flex>
@@ -674,10 +764,10 @@ function Home() {
                 <Link css={{}} href="#">
                   This is a link
                 </Link>{' '}
-                Traditional business literature won’t help you solve it- most of that stuff is
-                focused on life after product/market fit, after the Trough of Sorrow. A lot of
-                startup stuff is focused on the initial phases, when you don’t have a team, idea, or
-                investors.
+                Traditional business literature won’t help you solve it- most of
+                that stuff is focused on life after product/market fit, after
+                the Trough of Sorrow. A lot of startup stuff is focused on the
+                initial phases, when you don’t have a team, idea, or investors.
               </Paragraph>
               <Link variant="blue" css={{}} href="#">
                 This is a link
@@ -694,7 +784,11 @@ function Home() {
 
           <Section size={3}>
             <Container size="2">
-              <Input size={1} placeholder="Search components..." css={{ mb: '$6' }} />
+              <Input
+                size={1}
+                placeholder="Search components..."
+                css={{ mb: '$6' }}
+              />
               <Input size={2} placeholder="Search components..." />
             </Container>
           </Section>
@@ -706,11 +800,13 @@ function Home() {
           <Section size={3}>
             <Container size="2">
               <Paragraph>
-                There are 5 variants to choose from. Use <Code>console.log('Radix').console</Code>{' '}
-                is for positive states. Traditional business literature won’t help you solve it-
-                most of that stuff is focused on life after product/market fit, after the Trough of
-                Sorrow. A lot of startup stuff is focused on the initial phases, when you don’t have
-                a team, idea, or investors.
+                There are 5 variants to choose from. Use{' '}
+                <Code>console.log('Radix').console</Code> is for positive
+                states. Traditional business literature won’t help you solve it-
+                most of that stuff is focused on life after product/market fit,
+                after the Trough of Sorrow. A lot of startup stuff is focused on
+                the initial phases, when you don’t have a team, idea, or
+                investors.
               </Paragraph>
             </Container>
           </Section>
@@ -730,7 +826,9 @@ function Home() {
           <Section size={3}>
             <Container size="2">
               <AlertDialog>
-                <AlertDialog.Trigger as={Button}>Alert Dialog</AlertDialog.Trigger>
+                <AlertDialog.Trigger as={Button}>
+                  Alert Dialog
+                </AlertDialog.Trigger>
                 <AlertDialog.Overlay as={Overlay} />
                 {/* <AlertDialog.Content
                 as={Panel}
@@ -771,16 +869,22 @@ function Home() {
                     Dialog Heading
                   </Text>
                   <Text size={3} as="p" css={{ lineHeight: '25px' }}>
-                    There are 5 variants to choose from. Use is for positive states. This is a link
-                    Traditional business literature won’t help you solve it- most of that stuff is
-                    focused on life after product/market fit, after the Trough of Sorrow.
+                    There are 5 variants to choose from. Use is for positive
+                    states. This is a link Traditional business literature won’t
+                    help you solve it- most of that stuff is focused on life
+                    after product/market fit, after the Trough of Sorrow.
                   </Text>
                 </Dialog.Content>
               </Dialog>
 
               <DialogPrimitive>
-                <DialogPrimitive.Trigger as={Button}>Dialog</DialogPrimitive.Trigger>
-                <DialogPrimitive.Overlay as={Overlay} style={{ ...dialogStyles.overlay }} />
+                <DialogPrimitive.Trigger as={Button}>
+                  Dialog
+                </DialogPrimitive.Trigger>
+                <DialogPrimitive.Overlay
+                  as={Overlay}
+                  style={{ ...dialogStyles.overlay }}
+                />
                 <DialogPrimitive.Content
                   as={Panel}
                   css={{
@@ -799,9 +903,10 @@ function Home() {
                     Dialog Heading
                   </Text>
                   <Text size={3} as="p" css={{ lineHeight: '25px' }}>
-                    There are 5 variants to choose from. Use is for positive states. This is a link
-                    Traditional business literature won’t help you solve it- most of that stuff is
-                    focused on life after product/market fit, after the Trough of Sorrow.
+                    There are 5 variants to choose from. Use is for positive
+                    states. This is a link Traditional business literature won’t
+                    help you solve it- most of that stuff is focused on life
+                    after product/market fit, after the Trough of Sorrow.
                   </Text>
                   <Popover>
                     <Popover.Trigger as={Button}>Open</Popover.Trigger>
@@ -839,7 +944,11 @@ function Home() {
                   >
                     <Tooltip>
                       <Tooltip.Trigger as="div">
-                        <DialogPrimitive.Close as={IconButton} variant="ghost" aria-label="Close">
+                        <DialogPrimitive.Close
+                          as={IconButton}
+                          variant="ghost"
+                          aria-label="Close"
+                        >
                           <svg
                             width="15"
                             height="15"
@@ -856,7 +965,11 @@ function Home() {
                           </svg>
                         </DialogPrimitive.Close>
                       </Tooltip.Trigger>
-                      <Tooltip.Position side="top" align="center" sideOffset={0}>
+                      <Tooltip.Position
+                        side="top"
+                        align="center"
+                        sideOffset={0}
+                      >
                         <Tooltip.Content
                           aria-label="Close"
                           as={Box}
@@ -867,7 +980,11 @@ function Home() {
                             maxWidth: 300,
                           }}
                         >
-                          <Text size={1} as="p" css={{ lineHeight: '17px', color: '$loContrast' }}>
+                          <Text
+                            size={1}
+                            as="p"
+                            css={{ lineHeight: '17px', color: '$loContrast' }}
+                          >
                             Close
                           </Text>
                         </Tooltip.Content>
@@ -934,7 +1051,11 @@ function Home() {
                         'rgba(22, 23, 24, 0.35) 0px 10px 38px -10px, rgba(22, 23, 24, 0.2) 0px 10px 20px -15px',
                     }}
                   >
-                    <Popover.Close as={IconButton} variant="ghost" aria-label="Close">
+                    <Popover.Close
+                      as={IconButton}
+                      variant="ghost"
+                      aria-label="Close"
+                    >
                       <svg
                         width="15"
                         height="15"
@@ -963,7 +1084,11 @@ function Home() {
                               'rgba(22, 23, 24, 0.35) 0px 10px 38px -10px, rgba(22, 23, 24, 0.2) 0px 10px 20px -15px',
                           }}
                         >
-                          <Popover.Close as={IconButton} variant="ghost" aria-label="Close">
+                          <Popover.Close
+                            as={IconButton}
+                            variant="ghost"
+                            aria-label="Close"
+                          >
                             <svg
                               width="15"
                               height="15"
@@ -1003,7 +1128,11 @@ function Home() {
                     <Text size={4} as="h6" css={{ fontWeight: 500 }}>
                       fwefewfw w few fw
                     </Text>
-                    <Popover.Close as={IconButton} variant="ghost" aria-label="Close">
+                    <Popover.Close
+                      as={IconButton}
+                      variant="ghost"
+                      aria-label="Close"
+                    >
                       <svg
                         width="15"
                         height="15"
@@ -1020,7 +1149,10 @@ function Home() {
                       </svg>
                     </Popover.Close>
                     <Tabs defaultSelectedId="tab3">
-                      <Tabs.List aria-label="Tabs example" style={{ display: 'flex' }}>
+                      <Tabs.List
+                        aria-label="Tabs example"
+                        style={{ display: 'flex' }}
+                      >
                         <Tabs.Tab
                           as={Box}
                           id="tab1"
@@ -1122,8 +1254,8 @@ function Home() {
                         </Box>
                         <Box>
                           <Text size={2} as="p" css={{ lineHeight: '20px' }}>
-                            Hi Colm, Now that the summer is over it'd be great to re-ignite our
-                            earlier discussions.
+                            Hi Colm, Now that the summer is over it'd be great
+                            to re-ignite our earlier discussions.
                           </Text>
                         </Box>
                       </Tabs.Panel>
@@ -1132,8 +1264,9 @@ function Home() {
                           <Input size={2} placeholder="Search" />
                         </Box>
                         <Text size={3} as="p" css={{ lineHeight: '20px' }}>
-                          I discussed Modulz with the team last week and we'd be interested in
-                          exploring the round you're looking to raise.
+                          I discussed Modulz with the team last week and we'd be
+                          interested in exploring the round you're looking to
+                          raise.
                         </Text>
                       </Tabs.Panel>
                       <Tabs.Panel id="tab3">
@@ -1141,8 +1274,9 @@ function Home() {
                           <Input size={2} placeholder="Search" />
                         </Box>
                         <Text size={3} as="p" css={{ lineHeight: '20px' }}>
-                          Would you be open to a follow-up call with myself and our General Partner
-                          Jos? Happy to jump on a quick call to discuss.
+                          Would you be open to a follow-up call with myself and
+                          our General Partner Jos? Happy to jump on a quick call
+                          to discuss.
                         </Text>
                       </Tabs.Panel>
                     </Tabs>
@@ -1187,10 +1321,12 @@ function Home() {
                   </Accordion.Button>
                   <Accordion.Panel>
                     <Text size={3}>
-                      I’m an investor with Menlo Ventures. I’ve been impressed by what you have been
-                      building at Modulz and wanted to reach out. It’s an area that I’ve been
-                      spending time in alongside with my colleague, who formerly lead product and
-                      growth at Evernote. Would love to connect with you if you are open to it.
+                      I’m an investor with Menlo Ventures. I’ve been impressed
+                      by what you have been building at Modulz and wanted to
+                      reach out. It’s an area that I’ve been spending time in
+                      alongside with my colleague, who formerly lead product and
+                      growth at Evernote. Would love to connect with you if you
+                      are open to it.
                     </Text>
                   </Accordion.Panel>
                 </Accordion.Item>
@@ -1222,14 +1358,20 @@ function Home() {
                   </Accordion.Button>
                   <Accordion.Panel>
                     <Text size={3}>
-                      I’m an investor with Menlo Ventures. I’ve been impressed by what you have been
-                      building at Modulz and wanted to reach out. It’s an area that I’ve been
-                      spending time in alongside with my colleague, who formerly lead product and
-                      growth at Evernote. Would love to connect with you if you are open to it.
+                      I’m an investor with Menlo Ventures. I’ve been impressed
+                      by what you have been building at Modulz and wanted to
+                      reach out. It’s an area that I’ve been spending time in
+                      alongside with my colleague, who formerly lead product and
+                      growth at Evernote. Would love to connect with you if you
+                      are open to it.
                     </Text>
                   </Accordion.Panel>
                 </Accordion.Item>
-                <Accordion.Item value="three" disabled style={{ lineHeight: 1 }}>
+                <Accordion.Item
+                  value="three"
+                  disabled
+                  style={{ lineHeight: 1 }}
+                >
                   <Accordion.Button
                     style={{
                       width: '100%',
@@ -1244,10 +1386,12 @@ function Home() {
                   </Accordion.Button>
                   <Accordion.Panel>
                     <Text size={3}>
-                      I’m an investor with Menlo Ventures. I’ve been impressed by what you have been
-                      building at Modulz and wanted to reach out. It’s an area that I’ve been
-                      spending time in alongside with my colleague, who formerly lead product and
-                      growth at Evernote. Would love to connect with you if you are open to it.
+                      I’m an investor with Menlo Ventures. I’ve been impressed
+                      by what you have been building at Modulz and wanted to
+                      reach out. It’s an area that I’ve been spending time in
+                      alongside with my colleague, who formerly lead product and
+                      growth at Evernote. Would love to connect with you if you
+                      are open to it.
                     </Text>
                   </Accordion.Panel>
                 </Accordion.Item>
@@ -1280,10 +1424,12 @@ function Home() {
                   </Accordion.Button>
                   <Accordion.Panel>
                     <Text size={3}>
-                      I’m an investor with Menlo Ventures. I’ve been impressed by what you have been
-                      building at Modulz and wanted to reach out. It’s an area that I’ve been
-                      spending time in alongside with my colleague, who formerly lead product and
-                      growth at Evernote. Would love to connect with you if you are open to it.
+                      I’m an investor with Menlo Ventures. I’ve been impressed
+                      by what you have been building at Modulz and wanted to
+                      reach out. It’s an area that I’ve been spending time in
+                      alongside with my colleague, who formerly lead product and
+                      growth at Evernote. Would love to connect with you if you
+                      are open to it.
                     </Text>
                   </Accordion.Panel>
                 </Accordion.Item>
@@ -1304,7 +1450,10 @@ function Home() {
           <Section size={3}>
             <Container size="2" css={{ py: '$7' }}>
               <Tabs defaultSelectedId="tab3">
-                <Tabs.List aria-label="Tabs example" style={{ display: 'flex' }}>
+                <Tabs.List
+                  aria-label="Tabs example"
+                  style={{ display: 'flex' }}
+                >
                   <Tabs.Tab
                     as={Box}
                     id="tab1"
@@ -1402,20 +1551,21 @@ function Home() {
                 <Separator css={{ width: '100%', mb: '$4' }} />
                 <Tabs.Panel id="tab1">
                   <Text size={3} as="p" css={{ lineHeight: '20px' }}>
-                    Hi Colm, Now that the summer is over it'd be great to re-ignite our earlier
-                    discussions.
+                    Hi Colm, Now that the summer is over it'd be great to
+                    re-ignite our earlier discussions.
                   </Text>
                 </Tabs.Panel>
                 <Tabs.Panel id="tab2">
                   <Text size={3} as="p" css={{ lineHeight: '20px' }}>
-                    I discussed Modulz with the team last week and we'd be interested in exploring
-                    the round you're looking to raise.
+                    I discussed Modulz with the team last week and we'd be
+                    interested in exploring the round you're looking to raise.
                   </Text>
                 </Tabs.Panel>
                 <Tabs.Panel id="tab3">
                   <Text size={3} as="p" css={{ lineHeight: '20px' }}>
-                    Would you be open to a follow-up call with myself and our General Partner Jos?
-                    Happy to jump on a quick call to discuss.
+                    Would you be open to a follow-up call with myself and our
+                    General Partner Jos? Happy to jump on a quick call to
+                    discuss.
                   </Text>
                 </Tabs.Panel>
               </Tabs>

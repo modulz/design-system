@@ -14,21 +14,11 @@
     "sourceMap": true,
     "strict": true,
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "noImplicitAny": false,
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "isolatedModules": true
   },
-  "exclude": [
-    "node_modules",
-    "pages"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "exclude": ["node_modules", "pages"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

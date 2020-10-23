@@ -111,8 +111,14 @@ export function Avatars() {
                     stroke="currentColor"
                     strokeWidth="2"
                   ></circle>
-                  <path d="M12.8184 31.3218L31.8709 20.3218" stroke="currentColor"></path>
-                  <path d="M3.31836 14.8674L22.3709 3.86743" stroke="currentColor"></path>
+                  <path
+                    d="M12.8184 31.3218L31.8709 20.3218"
+                    stroke="currentColor"
+                  ></path>
+                  <path
+                    d="M3.31836 14.8674L22.3709 3.86743"
+                    stroke="currentColor"
+                  ></path>
                   <path
                     d="M8.65332 29.1077L25.9738 19.1077"
                     stroke="currentColor"
@@ -592,8 +598,14 @@ export function Avatars() {
                     stroke="currentColor"
                     stroke-width="2"
                   ></circle>
-                  <path d="M12.8184 31.3218L31.8709 20.3218" stroke="currentColor"></path>
-                  <path d="M3.31836 14.8674L22.3709 3.86743" stroke="currentColor"></path>
+                  <path
+                    d="M12.8184 31.3218L31.8709 20.3218"
+                    stroke="currentColor"
+                  ></path>
+                  <path
+                    d="M3.31836 14.8674L22.3709 3.86743"
+                    stroke="currentColor"
+                  ></path>
                   <path
                     d="M8.65332 29.1077L25.9738 19.1077"
                     stroke="currentColor"

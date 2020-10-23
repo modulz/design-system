@@ -66,7 +66,8 @@ export const Input = styled('input', {
           boxShadow: 'inset 0 0 0 1px $gray300',
         },
         ':focus': {
-          boxShadow: 'rgb(96, 179, 251) 0px 0px 0px 1px inset, rgb(96, 179, 251) 0px 0px 0px 1px',
+          boxShadow:
+            'rgb(96, 179, 251) 0px 0px 0px 1px inset, rgb(96, 179, 251) 0px 0px 0px 1px',
         },
       },
     },

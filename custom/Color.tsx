@@ -316,12 +316,17 @@ export function Color() {
       </Container>
 
       <Container size="2">
-        <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>
+        <Text
+          size="6"
+          as="h4"
+          css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}
+        >
           Warm & cool hues
         </Text>
         <Paragraph css={{ mb: '$7' }}>
-          There are 8 warm hues and 8 cool hues. All <Code>800</Code> colors should be balanced
-          optically, especially if they are adjacent on the spectrum.
+          There are 8 warm hues and 8 cool hues. All <Code>800</Code> colors
+          should be balanced optically, especially if they are adjacent on the
+          spectrum.
         </Paragraph>
       </Container>
 
@@ -339,28 +344,68 @@ export function Color() {
             </Text>
           </Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$yellow800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$yellow800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$orange800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$orange800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$gold800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$gold800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$brown800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$brown800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$bronze800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$bronze800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$red800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$red800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$crimson800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$crimson800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$pink800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$pink800',
+            }}
           ></Flex>
           <Flex css={{ ai: 'center', jc: 'center', height: 100 }}>
             <Text size="3" css={{ color: '$gray900' }}>
@@ -368,36 +413,76 @@ export function Color() {
             </Text>
           </Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$purple800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$purple800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$violet800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$violet800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$indigo800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$indigo800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$blue800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$blue800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$turquoise800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$turquoise800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$teal800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$teal800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$green800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$green800',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$lime800' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$lime800',
+            }}
           ></Flex>
         </Grid>
       </Container>
 
       <Container size="2">
         <Paragraph css={{ my: '$7' }}>
-          All <Code>200</Code> colors should be balanced optically, especially if they are adjacent
-          on the spectrum.
+          All <Code>200</Code> colors should be balanced optically, especially
+          if they are adjacent on the spectrum.
         </Paragraph>
       </Container>
 
@@ -415,28 +500,68 @@ export function Color() {
             </Text>
           </Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$yellow200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$yellow200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$orange200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$orange200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$gold200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$gold200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$brown200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$brown200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$bronze200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$bronze200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$red200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$red200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$crimson200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$crimson200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$pink200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$pink200',
+            }}
           ></Flex>
           <Flex css={{ ai: 'center', jc: 'center', height: 100 }}>
             <Text size="3" css={{ color: '$gray900' }}>
@@ -444,39 +569,84 @@ export function Color() {
             </Text>
           </Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$purple200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$purple200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$violet200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$violet200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$indigo200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$indigo200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$blue200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$blue200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$turquoise200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$turquoise200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$teal200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$teal200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$green200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$green200',
+            }}
           ></Flex>
           <Flex
-            css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$lime200' }}
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$lime200',
+            }}
           ></Flex>
         </Grid>
       </Container>
 
       <Container size="2">
-        <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>
+        <Text
+          size="6"
+          as="h4"
+          css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}
+        >
           Text color test
         </Text>
         <Paragraph css={{ mb: '$7' }}>
-          The <Code>900</Code> text color should look good and pass AA on all background colors.
-          Text should also pass on the <Code>800</Code> backgrounds.
+          The <Code>900</Code> text color should look good and pass AA on all
+          background colors. Text should also pass on the <Code>800</Code>{' '}
+          backgrounds.
         </Paragraph>
       </Container>
 
@@ -493,17 +663,38 @@ export function Color() {
               Red
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$red100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$red100',
+            }}
+          >
             <Text size="3" css={{ color: '$red900' }}>
               Red
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$red200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$red200',
+            }}
+          >
             <Text size="3" css={{ color: '$red900' }}>
               Red
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$red800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$red800',
+            }}
+          >
             <Text size="3" css={{ color: 'white' }}>
               Red
             </Text>
@@ -514,17 +705,38 @@ export function Color() {
               Crimson
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$crimson100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$crimson100',
+            }}
+          >
             <Text size="3" css={{ color: '$crimson900' }}>
               Crimson
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$crimson200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$crimson200',
+            }}
+          >
             <Text size="3" css={{ color: '$crimson900' }}>
               Crimson
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$crimson800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$crimson800',
+            }}
+          >
             <Text size="3" css={{ color: 'white' }}>
               Crimson
             </Text>
@@ -535,17 +747,38 @@ export function Color() {
               Pink
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$pink100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$pink100',
+            }}
+          >
             <Text size="3" css={{ color: '$pink900' }}>
               Pink
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$pink200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$pink200',
+            }}
+          >
             <Text size="3" css={{ color: '$pink900' }}>
               Pink
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$pink800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$pink800',
+            }}
+          >
             <Text size="3" css={{ color: 'white' }}>
               Pink
             </Text>
@@ -556,17 +789,38 @@ export function Color() {
               Purple
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$purple100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$purple100',
+            }}
+          >
             <Text size="3" css={{ color: '$purple900' }}>
               Purple
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$purple200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$purple200',
+            }}
+          >
             <Text size="3" css={{ color: '$purple900' }}>
               Purple
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$purple800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$purple800',
+            }}
+          >
             <Text size="3" css={{ color: 'white' }}>
               Purple
             </Text>
@@ -577,17 +831,38 @@ export function Color() {
               Violet
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$violet100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$violet100',
+            }}
+          >
             <Text size="3" css={{ color: '$violet900' }}>
               Violet
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$violet200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$violet200',
+            }}
+          >
             <Text size="3" css={{ color: '$violet900' }}>
               Violet
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$violet800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$violet800',
+            }}
+          >
             <Text size="3" css={{ color: 'white' }}>
               Violet
             </Text>
@@ -598,17 +873,38 @@ export function Color() {
               Indigo
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$indigo100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$indigo100',
+            }}
+          >
             <Text size="3" css={{ color: '$indigo900' }}>
               Indigo
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$indigo200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$indigo200',
+            }}
+          >
             <Text size="3" css={{ color: '$indigo900' }}>
               Indigo
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$indigo800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$indigo800',
+            }}
+          >
             <Text size="3" css={{ color: 'white' }}>
               Indigo
             </Text>
@@ -619,17 +915,38 @@ export function Color() {
               Blue
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$blue100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$blue100',
+            }}
+          >
             <Text size="3" css={{ color: '$blue900' }}>
               Blue
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$blue200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$blue200',
+            }}
+          >
             <Text size="3" css={{ color: '$blue900' }}>
               Blue
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$blue800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$blue800',
+            }}
+          >
             <Text size="3" css={{ color: 'white' }}>
               Blue
             </Text>
@@ -640,17 +957,38 @@ export function Color() {
               Turquoise
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$turquoise100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$turquoise100',
+            }}
+          >
             <Text size="3" css={{ color: '$turquoise900' }}>
               Turquoise
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$turquoise200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$turquoise200',
+            }}
+          >
             <Text size="3" css={{ color: '$turquoise900' }}>
               Turquoise
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$turquoise800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$turquoise800',
+            }}
+          >
             <Text size="3" css={{ color: 'white' }}>
               Turquoise
             </Text>
@@ -661,17 +999,38 @@ export function Color() {
               Teal
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$teal100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$teal100',
+            }}
+          >
             <Text size="3" css={{ color: '$teal900' }}>
               Teal
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$teal200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$teal200',
+            }}
+          >
             <Text size="3" css={{ color: '$teal900' }}>
               Teal
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$teal800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$teal800',
+            }}
+          >
             <Text size="3" css={{ color: 'white' }}>
               Teal
             </Text>
@@ -682,17 +1041,38 @@ export function Color() {
               Green
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$green100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$green100',
+            }}
+          >
             <Text size="3" css={{ color: '$green900' }}>
               Green
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$green200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$green200',
+            }}
+          >
             <Text size="3" css={{ color: '$green900' }}>
               Green
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$green800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$green800',
+            }}
+          >
             <Text size="3" css={{ color: 'white' }}>
               Green
             </Text>
@@ -703,17 +1083,38 @@ export function Color() {
               Lime
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$lime100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$lime100',
+            }}
+          >
             <Text size="3" css={{ color: '$lime900' }}>
               Lime
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$lime200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$lime200',
+            }}
+          >
             <Text size="3" css={{ color: '$lime900' }}>
               Lime
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$lime800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$lime800',
+            }}
+          >
             <Text size="3" css={{ color: 'black' }}>
               Lime
             </Text>
@@ -724,17 +1125,38 @@ export function Color() {
               Yellow
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$yellow100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$yellow100',
+            }}
+          >
             <Text size="3" css={{ color: '$yellow900' }}>
               Yellow
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$yellow200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$yellow200',
+            }}
+          >
             <Text size="3" css={{ color: '$yellow900' }}>
               Yellow
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$yellow800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$yellow800',
+            }}
+          >
             <Text size="3" css={{ color: 'black' }}>
               Yellow
             </Text>
@@ -745,17 +1167,38 @@ export function Color() {
               Orange
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$orange100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$orange100',
+            }}
+          >
             <Text size="3" css={{ color: '$orange900' }}>
               Orange
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$orange200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$orange200',
+            }}
+          >
             <Text size="3" css={{ color: '$orange900' }}>
               Orange
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$orange800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$orange800',
+            }}
+          >
             <Text size="3" css={{ color: 'white' }}>
               Orange
             </Text>
@@ -766,17 +1209,38 @@ export function Color() {
               Bronze
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$bronze100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$bronze100',
+            }}
+          >
             <Text size="3" css={{ color: '$bronze900' }}>
               Bronze
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$bronze200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$bronze200',
+            }}
+          >
             <Text size="3" css={{ color: '$bronze900' }}>
               Bronze
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$bronze800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$bronze800',
+            }}
+          >
             <Text size="3" css={{ color: 'white' }}>
               Bronze
             </Text>
@@ -787,17 +1251,38 @@ export function Color() {
               Gold
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$gold100' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$gold100',
+            }}
+          >
             <Text size="3" css={{ color: '$gold900' }}>
               Gold
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$gold200' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$gold200',
+            }}
+          >
             <Text size="3" css={{ color: '$gold900' }}>
               Gold
             </Text>
           </Flex>
-          <Flex css={{ ai: 'center', jc: 'center', height: 100, backgroundColor: '$gold800' }}>
+          <Flex
+            css={{
+              ai: 'center',
+              jc: 'center',
+              height: 100,
+              backgroundColor: '$gold800',
+            }}
+          >
             <Text size="3" css={{ color: 'white' }}>
               Gold
             </Text>
@@ -806,21 +1291,41 @@ export function Color() {
       </Container>
 
       <Container size="2">
-        <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>
+        <Text
+          size="6"
+          as="h4"
+          css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}
+        >
           Lines
         </Text>
         <Paragraph css={{ mb: '$7' }}>
-          The <Code>500</Code> line should be very subtle, but visible on all backgrounds.
+          The <Code>500</Code> line should be very subtle, but visible on all
+          backgrounds.
         </Paragraph>
       </Container>
 
       <Container size="2">
         <Flex css={{ position: 'relative' }}>
-          <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$loContrast' }}></Box>
-          <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray100' }}></Box>
-          <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray200' }}></Box>
-          <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray300' }}></Box>
-          <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray400' }}></Box>
+          <Box
+            css={{
+              fb: '0',
+              fg: '1',
+              height: 160,
+              backgroundColor: '$loContrast',
+            }}
+          ></Box>
+          <Box
+            css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray100' }}
+          ></Box>
+          <Box
+            css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray200' }}
+          ></Box>
+          <Box
+            css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray300' }}
+          ></Box>
+          <Box
+            css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray400' }}
+          ></Box>
           <Box
             css={{
               position: 'absolute',
@@ -836,8 +1341,9 @@ export function Color() {
 
       <Container size="2">
         <Paragraph css={{ my: '$7' }}>
-          These <Code>500</Code> lines should have a nice constrast against the <Code>100</Code>{' '}
-          background. Make sure the borders don't look too harsh or vibrant.
+          These <Code>500</Code> lines should have a nice constrast against the{' '}
+          <Code>100</Code> background. Make sure the borders don't look too
+          harsh or vibrant.
         </Paragraph>
       </Container>
 
@@ -857,7 +1363,11 @@ export function Color() {
               border: '1px solid $red500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$red900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$red900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -869,7 +1379,11 @@ export function Color() {
               border: '1px solid $red500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$crimson900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$crimson900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -881,7 +1395,11 @@ export function Color() {
               border: '1px solid $pink500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$pink900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$pink900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -893,7 +1411,11 @@ export function Color() {
               border: '1px solid $purple500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$purple900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$purple900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -905,7 +1427,11 @@ export function Color() {
               border: '1px solid $violet500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$violet900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$violet900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -917,7 +1443,11 @@ export function Color() {
               border: '1px solid $indigo500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$indigo900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$indigo900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -929,7 +1459,11 @@ export function Color() {
               border: '1px solid $blue500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$blue900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$blue900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -941,7 +1475,11 @@ export function Color() {
               border: '1px solid $turquoise500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$turquoise900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$turquoise900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -953,7 +1491,11 @@ export function Color() {
               border: '1px solid $teal500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$teal900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$teal900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -965,7 +1507,11 @@ export function Color() {
               border: '1px solid $green500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$green900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$green900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -977,7 +1523,11 @@ export function Color() {
               border: '1px solid $lime500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$lime900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$lime900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -989,7 +1539,11 @@ export function Color() {
               border: '1px solid $yellow500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$yellow900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$yellow900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -1001,7 +1555,11 @@ export function Color() {
               border: '1px solid $orange500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$orange900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$orange900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -1013,7 +1571,11 @@ export function Color() {
               border: '1px solid $bronze500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$bronze900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$bronze900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
@@ -1025,15 +1587,23 @@ export function Color() {
               border: '1px solid $gold500',
             }}
           >
-            <Text size="3" as="p" css={{ color: '$gold900', lineHeight: '23px' }}>
+            <Text
+              size="3"
+              as="p"
+              css={{ color: '$gold900', lineHeight: '23px' }}
+            >
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
         </Grid>
       </Container>
 
-      <Box css={{ backgroundColor: '$red800', height: '100vh', p: '$9', mt: '$9' }}>
-        <Title css={{ color: 'white' }}>This should look good and pass contrast ratio.</Title>
+      <Box
+        css={{ backgroundColor: '$red800', height: '100vh', p: '$9', mt: '$9' }}
+      >
+        <Title css={{ color: 'white' }}>
+          This should look good and pass contrast ratio.
+        </Title>
       </Box>
     </Section>
   );

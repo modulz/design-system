@@ -23,13 +23,22 @@ export function Tooltip({
   ...props
 }: TooltipProps) {
   return (
-    <TooltipPrimitive isOpen={isOpen} defaultIsOpen={defaultIsOpen} onIsOpenChange={onIsOpenChange}>
+    <TooltipPrimitive
+      isOpen={isOpen}
+      defaultIsOpen={defaultIsOpen}
+      onIsOpenChange={onIsOpenChange}
+    >
       <TooltipPrimitive.Trigger
         as={React.forwardRef((props, forwardedRef) =>
           React.cloneElement(children, { ...props, ref: forwardedRef })
         )}
       />
-      <TooltipPrimitive.Position side="top" align="center" sideOffset={0} {...props}>
+      <TooltipPrimitive.Position
+        side="top"
+        align="center"
+        sideOffset={0}
+        {...props}
+      >
         <TooltipPrimitive.Content>
           <Box
             css={{
@@ -39,7 +48,11 @@ export function Tooltip({
               maxWidth: 300,
             }}
           >
-            <Text size="1" as="p" css={{ lineHeight: '17px', color: '$loContrast' }}>
+            <Text
+              size="1"
+              as="p"
+              css={{ lineHeight: '17px', color: '$loContrast' }}
+            >
               {content}
             </Text>
           </Box>

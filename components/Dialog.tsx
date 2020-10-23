@@ -10,7 +10,10 @@ import { Overlay } from './Overlay';
 import { Panel } from './Panel';
 import { IconButton } from './IconButton';
 
-export type { DialogContentProps, DialogCloseProps } from '@interop-ui/react-dialog';
+export type {
+  DialogContentProps,
+  DialogCloseProps,
+} from '@interop-ui/react-dialog';
 export type DialogProps = DialogPrimitiveProps & {
   children: React.ReactNode;
 };

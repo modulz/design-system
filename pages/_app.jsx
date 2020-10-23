@@ -16,7 +16,10 @@ function App({ Component, pageProps }) {
     <div>
       <Head>
         <title>Design System</title>
-        <link rel="stylesheet" href="https://develop.modulz.app/fonts/fonts.css" />
+        <link
+          rel="stylesheet"
+          href="https://develop.modulz.app/fonts/fonts.css"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
@@ -25,7 +28,9 @@ function App({ Component, pageProps }) {
       <Button
         variant="ghost"
         style={{ position: 'fixed', zIndex: 999, left: 260, top: 45 }}
-        onClick={() => setTheme(theme === 'theme-default' ? darkThemeClass : 'theme-default')}
+        onClick={() =>
+          setTheme(theme === 'theme-default' ? darkThemeClass : 'theme-default')
+        }
       >
         Toggle theme
       </Button>
