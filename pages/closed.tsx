@@ -5,6 +5,7 @@ import { Text } from '../components/Text';
 import { Button } from '../components/Button';
 import { Flex } from '../components/Flex';
 import { Dialog } from '../components/Dialog';
+import { AlertDialog } from '../components/AlertDialog';
 import { Popover } from '../components/Popover';
 import { Tooltip } from '../components/Tooltip';
 import { ProgressBar } from '../components/ProgressBar';
@@ -27,6 +28,7 @@ export default function Closed() {
       <Flex css={{ gap: '$4', mb: '$4' }}>
         {[1, 2, 3, 4, 5, 6].map((size) => (
           <Avatar
+            key={`one${size}`}
             size={size as any}
             shape="square"
             alt="Colm Tuite"
@@ -39,6 +41,7 @@ export default function Closed() {
       <Flex css={{ gap: '$4', mb: '$4' }}>
         {[1, 2, 3, 4, 5, 6].map((size) => (
           <Avatar
+            key={`two${size}`}
             size={size as any}
             shape="square"
             alt="Colm Tuite"
@@ -51,7 +54,13 @@ export default function Closed() {
 
       <Flex css={{ gap: '$4' }}>
         {[1, 2, 3, 4, 5, 6].map((size) => (
-          <Avatar size={size as any} shape="square" fallback="C" status="green" />
+          <Avatar
+            size={size as any}
+            shape="square"
+            fallback="C"
+            status="green"
+            key={`three${size}`}
+          />
         ))}
       </Flex>
 
@@ -59,17 +68,32 @@ export default function Closed() {
         Dialog
       </Text>
 
-      <Flex css={{ gap: '$4' }}>
-        <Dialog>
-          <Dialog.Trigger as={Button}>Open Dialog</Dialog.Trigger>
-          <Dialog.Content>
-            <Text css={{ marginBottom: '$4' }}>Hello, from Dialog.</Text>
-            <Flex css={{ justifyContent: 'space-between' }}>
-              <Dialog.Close as={Button}>Bye.</Dialog.Close>
-            </Flex>
-          </Dialog.Content>
-        </Dialog>
-      </Flex>
+      <Dialog>
+        <Dialog.Trigger as={Button}>Open Dialog</Dialog.Trigger>
+        <Dialog.Content>
+          <Text css={{ mb: '$4' }}>Hello, from Dialog.</Text>
+          <Dialog.Close as={Button}>Bye.</Dialog.Close>
+        </Dialog.Content>
+      </Dialog>
+
+      <Text size="5" css={{ mt: '$9', mb: '$4' }}>
+        AlertDialog
+      </Text>
+
+      <AlertDialog>
+        <AlertDialog.Trigger as={Button}>Open AlertDialog</AlertDialog.Trigger>
+        <AlertDialog.Content>
+          <AlertDialog.Title as={Text} css={{ mb: '$4' }}>
+            Hello, from AlertDialog.
+          </AlertDialog.Title>
+          <Flex css={{ justifyContent: 'space-between' }}>
+            <AlertDialog.Action as={Button}>Ok</AlertDialog.Action>
+            <AlertDialog.Cancel as={Button} variant="red">
+              Cancel
+            </AlertDialog.Cancel>
+          </Flex>
+        </AlertDialog.Content>
+      </AlertDialog>
 
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
         Popover

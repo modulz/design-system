@@ -880,16 +880,7 @@ function Home() {
                   <Popover>
                     <Popover.Trigger as={Button}>Open</Popover.Trigger>
 
-                    <Popover.Content
-                      style={{
-                        boxSizing: 'border-box',
-                        backgroundColor: 'white',
-                        padding: 20,
-                        borderRadius: 5,
-                        boxShadow:
-                          'rgba(22, 23, 24, 0.35) 0px 10px 38px -10px, rgba(22, 23, 24, 0.2) 0px 10px 20px -15px',
-                      }}
-                    >
+                    <Popover.Content>
                       <Popover.Close as={IconButton} variant="ghost" aria-label="Close">
                         <svg
                           width="15"

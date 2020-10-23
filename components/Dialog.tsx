@@ -10,10 +10,7 @@ import { Overlay } from './Overlay';
 import { Panel } from './Panel';
 import { IconButton } from './IconButton';
 
-export type {
-  DialogContentProps,
-  DialogCloseProps,
-} from '@interop-ui/react-dialog';
+export type { DialogContentProps, DialogCloseProps } from '@interop-ui/react-dialog';
 export type DialogProps = DialogPrimitiveProps & {
   children: React.ReactNode;
 };
@@ -30,8 +27,8 @@ export function Dialog({ children, ...props }: DialogProps) {
 function DialogContent({ children, ...props }: DialogContentProps) {
   return (
     <DialogPrimitive.Content
-      as={Panel}
       {...props}
+      as={Panel}
       css={{
         ...styles.content,
         top: '50%',

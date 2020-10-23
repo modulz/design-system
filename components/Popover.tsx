@@ -35,7 +35,11 @@ function PopoverContent({ children, ...props }: PopoverContentProps) {
         <PopoverPrimitive.Close
           as={IconButton}
           variant="ghost"
-          css={{ position: 'absolute', top: '$2', right: '$2' }}
+          css={{
+            position: 'absolute',
+            top: '$2',
+            right: '$2',
+          }}
         >
           <Cross2Icon />
         </PopoverPrimitive.Close>
@@ -44,7 +48,10 @@ function PopoverContent({ children, ...props }: PopoverContentProps) {
         <PopoverPrimitive.Arrow
           width={13}
           height={7}
-          style={{ ...styles.arrow, fill: 'currentColor' }}
+          style={{
+            ...styles.arrow,
+            fill: 'currentColor',
+          }}
         />
       </Box>
     </PopoverPrimitive.Position>
