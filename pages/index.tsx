@@ -30,11 +30,11 @@ import { Tooltip } from '../components/Tooltip';
 import { Dialog } from '../components/Dialog';
 import { Popover } from '../components/Popover';
 import { Checkbox } from '../components/Checkbox';
+import { ProgressBar } from '../components/ProgressBar';
 
 import { Label, styles as labelStyles } from '@interop-ui/react-label';
 import { Accordion } from '@interop-ui/react-accordion';
 import { AlertDialog, styles as alertDialogStyles } from '@interop-ui/react-alert-dialog';
-import { ProgressBar, styles as progressBarStyles } from '@interop-ui/react-progress-bar';
 
 import { Title } from '../composites/Title';
 import { Subtitle } from '../composites/Subtitle';
@@ -835,27 +835,19 @@ function Home() {
 
           <Section size="3">
             <Container size="2">
-              <ProgressBar
-                max={100}
-                value={75}
-                style={{
-                  ...progressBarStyles.root,
-                  height: '5px',
-                  overflow: 'hidden',
-                  borderRadius: '999px',
-                  background:
-                    'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)',
-                }}
-              >
-                <ProgressBar.Indicator
-                  style={{
-                    ...progressBarStyles.indicator,
-                    width: '100%',
-                    background: 'gainsboro',
-                    transform: 'translateX(75%)',
-                  }}
-                />
-              </ProgressBar>
+              <Box css={{ mb: '$4' }}>
+                <ProgressBar max={100} value={0} />
+              </Box>
+
+              <Box css={{ mb: '$4' }}>
+                <ProgressBar max={100} value={30} />
+              </Box>
+              <Box css={{ mb: '$4' }}>
+                <ProgressBar max={100} value={60} />
+              </Box>
+              <Box css={{ mb: '$4' }}>
+                <ProgressBar max={100} value={100} />
+              </Box>
             </Container>
           </Section>
 

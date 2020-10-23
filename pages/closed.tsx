@@ -7,6 +7,7 @@ import { Flex } from '../components/Flex';
 import { Dialog } from '../components/Dialog';
 import { Popover } from '../components/Popover';
 import { Tooltip } from '../components/Tooltip';
+import { ProgressBar } from '../components/ProgressBar';
 
 export default function Closed() {
   return (
@@ -50,12 +51,7 @@ export default function Closed() {
 
       <Flex css={{ gap: '$4' }}>
         {[1, 2, 3, 4, 5, 6].map((size) => (
-          <Avatar
-            size={size as any}
-            shape="square"
-            fallback="C"
-            status="green"
-          />
+          <Avatar size={size as any} shape="square" fallback="C" status="green" />
         ))}
       </Flex>
 
@@ -106,6 +102,23 @@ export default function Closed() {
       <Tooltip content="You get the idea." side="bottom">
         <Button css={{ ml: '$4' }}>Bottom</Button>
       </Tooltip>
+
+      <Text size="5" css={{ mt: '$9', mb: '$4' }}>
+        ProgressBar
+      </Text>
+
+      <Box css={{ mb: '$4' }}>
+        <ProgressBar max={100} value={0} />
+      </Box>
+      <Box css={{ mb: '$4' }}>
+        <ProgressBar max={100} value={30} />
+      </Box>
+      <Box css={{ mb: '$4' }}>
+        <ProgressBar max={100} value={60} />
+      </Box>
+      <Box css={{ mb: '$4' }}>
+        <ProgressBar max={100} value={100} />
+      </Box>
     </Box>
   );
 }
