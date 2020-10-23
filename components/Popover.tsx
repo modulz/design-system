@@ -10,7 +10,7 @@ import { Box } from './Box';
 import { Panel } from './Panel';
 import { IconButton } from './IconButton';
 
-export type { PopoverTriggerProps } from '@interop-ui/react-popover';
+export type { PopoverTriggerProps, PopoverCloseProps } from '@interop-ui/react-popover';
 export type PopoverProps = PopoverPrimitiveProps & {
   children: React.ReactNode;
 };
@@ -53,3 +53,4 @@ function PopoverContent({ children, ...props }: PopoverContentProps) {
 
 Popover.Trigger = PopoverPrimitive.Trigger;
 Popover.Content = PopoverContent;
+Popover.Close = PopoverPrimitive.Close;

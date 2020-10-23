@@ -23,11 +23,7 @@ export { Container } from './components/Container';
 export type { ContainerProps, ContainerVariants } from './components/Container';
 
 export { Dialog } from './components/Dialog';
-export type {
-  DialogProps,
-  DialogContentProps,
-  DialogCloseProps,
-} from './components/Dialog';
+export type { DialogProps, DialogContentProps, DialogCloseProps } from './components/Dialog';
 
 export { Flex } from './components/Flex';
 export type { FlexProps } from './components/Flex';
@@ -36,10 +32,7 @@ export { Grid } from './components/Grid';
 export type { GridProps } from './components/Grid';
 
 export { IconButton } from './components/IconButton';
-export type {
-  IconButtonProps,
-  IconButtonVariants,
-} from './components/IconButton';
+export type { IconButtonProps, IconButtonVariants } from './components/IconButton';
 
 export { Image } from './components/Image';
 export type { ImageProps } from './components/Image';
@@ -64,6 +57,7 @@ export type {
   PopoverProps,
   PopoverTriggerProps,
   PopoverContentProps,
+  PopoverCloseProps,
 } from './components/Popover';
 
 // TODO
@@ -85,10 +79,7 @@ export { Text } from './components/Text';
 export type { TextProps, TextVariants } from './components/Text';
 
 export { SimpleToggle } from './components/SimpleToggle';
-export type {
-  SimpleToggleProps,
-  SimpleToggleVariants,
-} from './components/SimpleToggle';
+export type { SimpleToggleProps, SimpleToggleVariants } from './components/SimpleToggle';
 
 export { Tooltip } from './components/Tooltip';
 export type { TooltipProps } from './components/Tooltip';
@@ -96,10 +87,4 @@ export type { TooltipProps } from './components/Tooltip';
 export { TreeItem } from './components/TreeItem';
 export type { TreeItemProps, TreeItemVariants } from './components/TreeItem';
 
-export {
-  css,
-  styled,
-  theme,
-  darkTheme,
-  darkThemeClass,
-} from './stitches.config';
+export { css, styled, theme, darkTheme, darkThemeClass } from './stitches.config';
