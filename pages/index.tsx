@@ -20,7 +20,6 @@ import { darkTheme } from '../stitches.config';
 import { Avatar } from '../components/Avatar';
 import { AvatarGroup } from '../components/Avatar';
 import { AvatarNestedItem } from '../components/Avatar';
-import { Tabs } from '@interop-ui/react-tabs';
 import { SimpleToggle } from '../components/SimpleToggle';
 import { Switch } from '../components/Switch';
 import { Status } from '../components/Status';
@@ -31,10 +30,11 @@ import { Dialog } from '../components/Dialog';
 import { Popover } from '../components/Popover';
 import { Checkbox } from '../components/Checkbox';
 import { ProgressBar } from '../components/ProgressBar';
+import { AlertDialog } from '../components/AlertDialog';
+import { Tabs } from '../components/Tabs';
 
 import { Label, styles as labelStyles } from '@interop-ui/react-label';
 import { Accordion } from '@interop-ui/react-accordion';
-import { AlertDialog, styles as alertDialogStyles } from '@interop-ui/react-alert-dialog';
 
 import { Title } from '../composites/Title';
 import { Subtitle } from '../composites/Subtitle';
@@ -756,29 +756,20 @@ function Home() {
             <Container size="2">
               <AlertDialog>
                 <AlertDialog.Trigger as={Button}>Alert Dialog</AlertDialog.Trigger>
-                <AlertDialog.Overlay as={Overlay} />
-                {/* <AlertDialog.Content
-                as={Panel}
-                css={{
-                  ...alertDialogStyles.content,
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  minWidth: 200,
-                  maxWidth: 'fit-content',
-                  maxHeight: '85vh',
-                  padding: 20,
-                  marginTop: '-5vh',
-                }}>
-                <AlertDialog.Title as={Subheading}>Are you sure?</AlertDialog.Title>
-                <AlertDialog.Description as={Text} css={{ mt: '$2' }}>
-                  This will do a very dangerous thing. Thar be dragons!
-                </AlertDialog.Description>
-                <Flex css={{ jc: 'flex-end', gap: '$3', mt: '$5' }}>
-                  <AlertDialog.Cancel as={Button} variant="ghost">Cancel</AlertDialog.Cancel>
-                  <AlertDialog.Action as={Button} variant="red">Delete</AlertDialog.Action>
-                </Flex>
-              </AlertDialog.Content> */}
+                <AlertDialog.Content>
+                  <AlertDialog.Title as={Subheading}>Are you sure?</AlertDialog.Title>
+                  <AlertDialog.Description as={Text} css={{ mt: '$2' }}>
+                    This will do a very dangerous thing. Thar be dragons!
+                  </AlertDialog.Description>
+                  <Flex css={{ jc: 'flex-end', gap: '$3', mt: '$5' }}>
+                    <AlertDialog.Cancel as={Button} variant="ghost">
+                      Cancel
+                    </AlertDialog.Cancel>
+                    <AlertDialog.Action as={Button} variant="red">
+                      Delete
+                    </AlertDialog.Action>
+                  </Flex>
+                </AlertDialog.Content>
               </AlertDialog>
             </Container>
           </Section>
@@ -926,20 +917,8 @@ function Home() {
                     </svg>
                   </Popover.Close>
                   <Tabs defaultSelectedId="tab3">
-                    <Tabs.List aria-label="Tabs example" style={{ display: 'flex' }}>
-                      <Tabs.Tab
-                        as={Box}
-                        id="tab1"
-                        css={{
-                          height: '$5',
-                          display: 'inline-flex',
-                          lineHeight: 1,
-                          px: '$2',
-                          userSelect: 'none',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                        }}
-                      >
+                    <Tabs.List aria-label="Tabs example">
+                      <Tabs.Tab id="tab1">
                         <Box css={{ mr: '$1' }}>
                           <svg
                             width="15"
@@ -958,19 +937,7 @@ function Home() {
                         </Box>
                         <Text size="2">Tab 1</Text>
                       </Tabs.Tab>
-                      <Tabs.Tab
-                        as={Box}
-                        id="tab2"
-                        css={{
-                          height: '$5',
-                          display: 'inline-flex',
-                          lineHeight: 1,
-                          px: '$2',
-                          userSelect: 'none',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                        }}
-                      >
+                      <Tabs.Tab id="tab2">
                         <Box css={{ mr: '$1' }}>
                           <svg
                             width="15"
@@ -989,19 +956,7 @@ function Home() {
                         </Box>
                         <Text size="2">Tab 2</Text>
                       </Tabs.Tab>
-                      <Tabs.Tab
-                        as={Box}
-                        id="tab3"
-                        css={{
-                          height: '$5',
-                          display: 'inline-flex',
-                          lineHeight: 1,
-                          px: '$2',
-                          userSelect: 'none',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                        }}
-                      >
+                      <Tabs.Tab id="tab3">
                         <Box css={{ mr: '$1' }}>
                           <svg
                             width="15"
@@ -1021,7 +976,7 @@ function Home() {
                         <Text size="2">Tab 3</Text>
                       </Tabs.Tab>
                     </Tabs.List>
-                    <Separator css={{ width: '100%', mb: '$4' }} />
+
                     <Tabs.Panel id="tab1">
                       <Box css={{ p: '$3' }}>
                         <Input size="2" placeholder="Search" />
@@ -1209,20 +1164,8 @@ function Home() {
           <Section size="3">
             <Container size="2" css={{ py: '$7' }}>
               <Tabs defaultSelectedId="tab3">
-                <Tabs.List aria-label="Tabs example" style={{ display: 'flex' }}>
-                  <Tabs.Tab
-                    as={Box}
-                    id="tab1"
-                    css={{
-                      height: '$5',
-                      display: 'inline-flex',
-                      lineHeight: 1,
-                      px: '$2',
-                      userSelect: 'none',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                    }}
-                  >
+                <Tabs.List aria-label="Tabs example">
+                  <Tabs.Tab id="tab1">
                     <Box css={{ mr: '$1' }}>
                       <svg
                         width="15"
@@ -1241,19 +1184,7 @@ function Home() {
                     </Box>
                     <Text size="2">Tab 1</Text>
                   </Tabs.Tab>
-                  <Tabs.Tab
-                    as={Box}
-                    id="tab2"
-                    css={{
-                      height: '$5',
-                      display: 'inline-flex',
-                      lineHeight: 1,
-                      px: '$2',
-                      userSelect: 'none',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                    }}
-                  >
+                  <Tabs.Tab id="tab2">
                     <Box css={{ mr: '$1' }}>
                       <svg
                         width="15"
@@ -1272,19 +1203,7 @@ function Home() {
                     </Box>
                     <Text size="2">Tab 2</Text>
                   </Tabs.Tab>
-                  <Tabs.Tab
-                    as={Box}
-                    id="tab3"
-                    css={{
-                      height: '$5',
-                      display: 'inline-flex',
-                      lineHeight: 1,
-                      px: '$2',
-                      userSelect: 'none',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                    }}
-                  >
+                  <Tabs.Tab id="tab3">
                     <Box css={{ mr: '$1' }}>
                       <svg
                         width="15"
@@ -1304,7 +1223,6 @@ function Home() {
                     <Text size="2">Tab 3</Text>
                   </Tabs.Tab>
                 </Tabs.List>
-                <Separator css={{ width: '100%', mb: '$4' }} />
                 <Tabs.Panel id="tab1">
                   <Text size="3" as="p" css={{ lineHeight: '20px' }}>
                     Hi Colm, Now that the summer is over it'd be great to re-ignite our earlier

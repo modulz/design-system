@@ -1,4 +1,5 @@
 import React from 'react';
+import { styled } from '../stitches.config';
 import {
   Dialog as DialogPrimitive,
   DialogContentProps,
@@ -24,23 +25,21 @@ export function Dialog({ children, ...props }: DialogProps) {
   );
 }
 
-function DialogContent({ children, ...props }: DialogContentProps) {
-  return (
-    <DialogPrimitive.Content
-      {...props}
-      as={Panel}
-      css={{
-        ...styles.content,
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        minWidth: 200,
-        maxWidth: 'fit-content',
-        maxHeight: '85vh',
-        padding: '$4',
-        marginTop: '-5vh',
-      }}
-    >
+const StyledContent = styled(Panel, {
+  ...styles.content,
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  minWidth: 200,
+  maxWidth: 'fit-content',
+  maxHeight: '85vh',
+  padding: '$4',
+  marginTop: '-5vh',
+});
+
+const DialogContent = React.forwardRef<HTMLDivElement, DialogContentProps>(
+  ({ children, ...props }, forwardedRef) => (
+    <DialogPrimitive.Content {...props} ref={forwardedRef} as={StyledContent}>
       {children}
       <Dialog.Close
         as={IconButton}
@@ -50,8 +49,8 @@ function DialogContent({ children, ...props }: DialogContentProps) {
         <Cross2Icon />
       </Dialog.Close>
     </DialogPrimitive.Content>
-  );
-}
+  )
+);
 
 Dialog.Trigger = DialogPrimitive.Trigger;
 Dialog.Content = DialogContent;

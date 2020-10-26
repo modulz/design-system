@@ -11,6 +11,7 @@ import { Panel } from './Panel';
 export type {
   AlertDialogContentProps,
   AlertDialogTitleProps,
+  AlertDialogDescriptionProps,
   AlertDialogActionProps,
   AlertDialogCancelProps,
 } from '@interop-ui/react-alert-dialog';
@@ -51,5 +52,6 @@ function AlertDialogContent({ children, ...props }: AlertDialogContentProps) {
 AlertDialog.Trigger = AlertDialogPrimitive.Trigger;
 AlertDialog.Content = AlertDialogContent;
 AlertDialog.Title = AlertDialogPrimitive.Title;
+AlertDialog.Description = AlertDialogPrimitive.Description;
 AlertDialog.Action = AlertDialogPrimitive.Action;
 AlertDialog.Cancel = AlertDialogPrimitive.Cancel;

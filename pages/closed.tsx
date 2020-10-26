@@ -9,6 +9,7 @@ import { AlertDialog } from '../components/AlertDialog';
 import { Popover } from '../components/Popover';
 import { Tooltip } from '../components/Tooltip';
 import { ProgressBar } from '../components/ProgressBar';
+import { Tabs } from '../components/Tabs';
 
 export default function Closed() {
   return (
@@ -143,6 +144,26 @@ export default function Closed() {
       <Box css={{ mb: '$4' }}>
         <ProgressBar max={100} value={100} />
       </Box>
+
+      <Text size="5" css={{ mt: '$9', mb: '$4' }}>
+        Tabs
+      </Text>
+
+      <Tabs defaultSelectedId="tab-one">
+        <Tabs.List>
+          <Tabs.Tab id="tab-one">One</Tabs.Tab>
+          <Tabs.Tab id="tab-two">Two</Tabs.Tab>
+          <Tabs.Tab id="tab-three">Three</Tabs.Tab>
+        </Tabs.List>
+        <Tabs.Panel id="tab-one">
+          <Box>
+            <Text>Panel 1</Text>
+            <Button>Test</Button>
+          </Box>
+        </Tabs.Panel>
+        <Tabs.Panel id="tab-two">Panel 2</Tabs.Panel>
+        <Tabs.Panel id="tab-three">Panel 3</Tabs.Panel>
+      </Tabs>
     </Box>
   );
 }

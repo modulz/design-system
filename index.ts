@@ -6,6 +6,7 @@ export type {
   AlertDialogProps,
   AlertDialogContentProps,
   AlertDialogTitleProps,
+  AlertDialogDescriptionProps,
   AlertDialogActionProps,
   AlertDialogCancelProps,
 } from './components/AlertDialog';
@@ -89,6 +90,9 @@ export type { TextProps, TextVariants } from './components/Text';
 
 export { SimpleToggle } from './components/SimpleToggle';
 export type { SimpleToggleProps, SimpleToggleVariants } from './components/SimpleToggle';
+
+export { Tabs } from './components/Tabs';
+export type { TabsProps, TabsListProps, TabsTabProps, TabsPanelProps } from './components/Tabs';
 
 export { Tooltip } from './components/Tooltip';
 export type { TooltipProps } from './components/Tooltip';
