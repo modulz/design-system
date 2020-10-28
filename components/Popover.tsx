@@ -17,7 +17,7 @@ export type PopoverProps = PopoverPrimitiveProps & {
   children: React.ReactNode;
 };
 export type PopoverContentProps = PopoverPositionProps & StitchesProps<typeof Content>;
-export type PopoveCloseProps = PopoverPrimitiveCloseProps & StitchesProps<typeof Close>;
+export type PopoverCloseProps = PopoverPrimitiveCloseProps & StitchesProps<typeof Close>;
 
 export function Popover({ children, ...props }: PopoverProps) {
   return <PopoverPrimitive {...props}>{children}</PopoverPrimitive>;
