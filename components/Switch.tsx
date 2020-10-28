@@ -14,6 +14,7 @@ const Track = styled('button', {
   height: 7,
   backgroundColor: '$gray500',
   borderRadius: '$pill',
+  position: 'relative',
   my: 5,
   '&[data-state="checked"]': {
     backgroundColor: '$gray800',

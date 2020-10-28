@@ -1,4 +1,5 @@
 import React from 'react';
+import { styled, css } from '../stitches.config';
 import {
   Tooltip as TooltipPrimitive,
   styles,
@@ -7,6 +8,15 @@ import {
 } from '@interop-ui/react-tooltip';
 import { Box } from './Box';
 import { Text } from './Text';
+
+const fadeIn = css.keyframes({
+  '0%': { opacity: 0 },
+  '100%': { opacity: 1 },
+});
+
+const Wrapper = styled('div', {
+  animation: `${fadeIn} 133ms ease-out`,
+});
 
 export type TooltipProps = TooltipPrimitiveProps &
   TooltipPositionProps & {
@@ -30,39 +40,41 @@ export function Tooltip({
         )}
       />
       <TooltipPrimitive.Position side="top" align="center" sideOffset={0} {...props}>
-        <TooltipPrimitive.Content>
-          <Box
-            css={{
-              backgroundColor: '$hiContrast',
-              borderRadius: '$2',
-              padding: '$1 $2',
-              maxWidth: 300,
-            }}
-          >
-            <Text
-              size="1"
-              as="p"
+        <Wrapper>
+          <TooltipPrimitive.Content>
+            <Box
               css={{
-                lineHeight: '17px',
-                color: '$loContrast',
+                backgroundColor: '$hiContrast',
+                borderRadius: '$2',
+                padding: '$1 $2',
+                maxWidth: 300,
               }}
             >
-              {content}
-            </Text>
-          </Box>
-        </TooltipPrimitive.Content>
+              <Text
+                size="1"
+                as="p"
+                css={{
+                  lineHeight: '17px',
+                  color: '$loContrast',
+                }}
+              >
+                {content}
+              </Text>
+            </Box>
+          </TooltipPrimitive.Content>
 
-        <Box css={{ color: '$hiContrast' }}>
-          <TooltipPrimitive.Arrow
-            offset={0}
-            width={13}
-            height={7}
-            style={{
-              ...styles.arrow,
-              fill: 'currentColor',
-            }}
-          />
-        </Box>
+          <Box css={{ color: '$hiContrast' }}>
+            <TooltipPrimitive.Arrow
+              offset={0}
+              width={13}
+              height={7}
+              style={{
+                ...styles.arrow,
+                fill: 'currentColor',
+              }}
+            />
+          </Box>
+        </Wrapper>
       </TooltipPrimitive.Position>
     </TooltipPrimitive>
   );

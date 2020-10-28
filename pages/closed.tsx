@@ -10,6 +10,10 @@ import { Popover } from '../components/Popover';
 import { Tooltip } from '../components/Tooltip';
 import { ProgressBar } from '../components/ProgressBar';
 import { Tabs } from '../components/Tabs';
+import { Accordion } from '../components/Accordion';
+import { Label } from '../components/Label';
+import { Switch } from '../components/Switch';
+import { SimpleToggle } from '../components/SimpleToggle';
 
 export default function Closed() {
   return (
@@ -151,19 +155,78 @@ export default function Closed() {
 
       <Tabs defaultSelectedId="tab-one">
         <Tabs.List>
-          <Tabs.Tab id="tab-one">One</Tabs.Tab>
-          <Tabs.Tab id="tab-two">Two</Tabs.Tab>
-          <Tabs.Tab id="tab-three">Three</Tabs.Tab>
+          <Tabs.Tab id="tab-one">
+            <Text size="4">One</Text>
+          </Tabs.Tab>
+          <Tabs.Tab id="tab-two">
+            <Text size="4">Two</Text>
+          </Tabs.Tab>
+          <Tabs.Tab id="tab-three">
+            <Text size="4">Three</Text>
+          </Tabs.Tab>
         </Tabs.List>
         <Tabs.Panel id="tab-one">
           <Box>
             <Text>Panel 1</Text>
-            <Button>Test</Button>
+            <Button css={{ mt: '$2' }}>Test focus</Button>
           </Box>
         </Tabs.Panel>
-        <Tabs.Panel id="tab-two">Panel 2</Tabs.Panel>
-        <Tabs.Panel id="tab-three">Panel 3</Tabs.Panel>
+        <Tabs.Panel id="tab-two">
+          <Text>Panel 2</Text>
+        </Tabs.Panel>
+        <Tabs.Panel id="tab-three">
+          <Text>Panel 3</Text>
+        </Tabs.Panel>
       </Tabs>
+
+      <Text size="5" css={{ mt: '$9', mb: '$4' }}>
+        Accordion
+      </Text>
+
+      <Accordion>
+        <Accordion.Item value="accordion-one">
+          <Accordion.Button>
+            <Text size="4">Accordion one</Text>
+          </Accordion.Button>
+          <Accordion.Panel>
+            <Text size="4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </Text>
+          </Accordion.Panel>
+        </Accordion.Item>
+        <Accordion.Item value="accordion-two">
+          <Accordion.Button>
+            <Text size="4">Accordion two</Text>
+          </Accordion.Button>
+          <Accordion.Panel>
+            <Text size="4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </Text>
+          </Accordion.Panel>
+        </Accordion.Item>
+      </Accordion>
+
+      <Text size="5" css={{ mt: '$9', mb: '$4' }}>
+        Label
+      </Text>
+
+      <Label size="3">Label</Label>
+
+      <Text size="5" css={{ mt: '$9', mb: '$4' }}>
+        Switch
+      </Text>
+
+      <Switch />
+
+      <Text size="5" css={{ mt: '$9', mb: '$4' }}>
+        SimpleToggle
+      </Text>
+
+      <SimpleToggle />
     </Box>
   );
 }

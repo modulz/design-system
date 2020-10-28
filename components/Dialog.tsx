@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled } from '../stitches.config';
+import { styled, css } from '../stitches.config';
 import {
   Dialog as DialogPrimitive,
   DialogContentProps,
@@ -16,10 +16,25 @@ export type DialogProps = DialogPrimitiveProps & {
   children: React.ReactNode;
 };
 
+const fadeIn = css.keyframes({
+  '0%': { opacity: 0 },
+  '100%': { opacity: 1 },
+});
+
+const moveDown = css.keyframes({
+  '0%': { transform: 'translate(-50%, calc(-50% - 10px))' },
+  '100%': { transform: 'translate(-50%, -50%)' },
+});
+
+const StyledOverlay = styled(Overlay, {
+  ...styles.overlay,
+  animation: `${fadeIn} 333ms ease-out`,
+});
+
 export function Dialog({ children, ...props }: DialogProps) {
   return (
     <DialogPrimitive {...props}>
-      <DialogPrimitive.Overlay as={Overlay} css={styles.overlay} />
+      <DialogPrimitive.Overlay as={StyledOverlay} />
       {children}
     </DialogPrimitive>
   );
@@ -35,6 +50,11 @@ const StyledContent = styled(Panel, {
   maxHeight: '85vh',
   padding: '$4',
   marginTop: '-5vh',
+  animation: `${fadeIn} 333ms ease-out, ${moveDown} 133ms ease-out`,
+
+  '&:focus': {
+    outline: 'none',
+  },
 });
 
 const DialogContent = React.forwardRef<HTMLDivElement, DialogContentProps>(

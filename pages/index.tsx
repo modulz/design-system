@@ -32,8 +32,8 @@ import { Checkbox } from '../components/Checkbox';
 import { ProgressBar } from '../components/ProgressBar';
 import { AlertDialog } from '../components/AlertDialog';
 import { Tabs } from '../components/Tabs';
+import { Label } from '../components/Label';
 
-import { Label, styles as labelStyles } from '@interop-ui/react-label';
 import { Accordion } from '@interop-ui/react-accordion';
 
 import { Title } from '../composites/Title';
@@ -1575,7 +1575,7 @@ function Home() {
 
           <Section size="3">
             <Container size="2" css={{ py: '$7' }}>
-              <Label style={labelStyles.root}>
+              <Label>
                 <span>fwefwe</span>
                 <Checkbox />
               </Label>

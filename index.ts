@@ -1,3 +1,11 @@
+export { Accordion } from './components/Accordion';
+export type {
+  AccordionProps,
+  AccordionButtonProps,
+  AccordionItemProps,
+  AccordionPanelProps,
+} from './components/Accordion';
+
 export { Avatar } from './components/Avatar';
 export type { AvatarProps, AvatarVariants } from './components/Avatar';
 

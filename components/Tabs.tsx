@@ -9,7 +9,6 @@ import {
   TabsPanelProps as TabsPanelPrimitiveProps,
 } from '@interop-ui/react-tabs';
 import { Separator } from './Separator';
-import { Text } from './Text';
 
 export type TabsProps = TabsPrimitiveProps & StitchesProps<typeof StyledTabs>;
 export type TabsTabProps = TabsTabPrimitiveProps & StitchesProps<typeof StyledTab>;
