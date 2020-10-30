@@ -12,6 +12,7 @@ import { Tooltip } from '../components/Tooltip';
 import { ProgressBar } from '../components/ProgressBar';
 import { Tabs } from '../components/Tabs';
 import { Accordion } from '../components/Accordion';
+import { Accordion as FramerAccordion } from '../components/FramerAccordion';
 import { Label } from '../components/Label';
 import { Switch } from '../components/Switch';
 import { SimpleToggle } from '../components/SimpleToggle';
@@ -222,6 +223,37 @@ export default function Closed() {
           </Accordion.Panel>
         </Accordion.Item>
       </Accordion>
+
+      <Text size="5" css={{ mt: '$9', mb: '$4' }}>
+        FramerAccordion
+      </Text>
+
+      <FramerAccordion>
+        <FramerAccordion.Item value="accordion-one">
+          <FramerAccordion.Button>
+            <Text size="4">FramerAccordion one</Text>
+          </FramerAccordion.Button>
+          <FramerAccordion.Panel>
+            <Text size="4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </Text>
+          </FramerAccordion.Panel>
+        </FramerAccordion.Item>
+        <FramerAccordion.Item value="accordion-two">
+          <FramerAccordion.Button>
+            <Text size="4">FramerAccordion two</Text>
+          </FramerAccordion.Button>
+          <FramerAccordion.Panel>
+            <Text size="4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </Text>
+          </FramerAccordion.Panel>
+        </FramerAccordion.Item>
+      </FramerAccordion>
 
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
         Label
