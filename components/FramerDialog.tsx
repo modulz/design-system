@@ -86,8 +86,6 @@ const DialogContent = React.forwardRef<HTMLDivElement, DialogContentProps>(
             ref={forwardedRef}
             as={motion.div}
             initial={{
-              backgroundColor: 'white',
-              padding: '20px',
               x: '-50%',
               y: '-50%',
               top: '50%',
@@ -102,14 +100,22 @@ const DialogContent = React.forwardRef<HTMLDivElement, DialogContentProps>(
             animate={{ scale: 1 }}
             exit={{ opacity: 0, scale: 2 }}
           >
-            {children}
-            <Dialog.Close
-              as={IconButton}
-              variant="ghost"
-              css={{ position: 'absolute', top: '$2', right: '$2' }}
+            <Panel
+              css={{
+                backgroundColor: '$loContrast',
+                padding: '$4',
+                position: 'relative',
+              }}
             >
-              <Cross2Icon />
-            </Dialog.Close>
+              {children}
+              <Dialog.Close
+                as={IconButton}
+                variant="ghost"
+                css={{ position: 'absolute', top: '$1', right: '$1' }}
+              >
+                <Cross2Icon />
+              </Dialog.Close>
+            </Panel>
           </DialogPrimitive.Content>
         )}
       </AnimatePresence>
