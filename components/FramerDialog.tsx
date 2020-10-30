@@ -59,22 +59,6 @@ export function Dialog({
   );
 }
 
-const StyledContent = styled(Panel, {
-  ...styles.content,
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  minWidth: 200,
-  maxWidth: 'fit-content',
-  maxHeight: '85vh',
-  padding: '$4',
-  marginTop: '-5vh',
-
-  '&:focus': {
-    outline: 'none',
-  },
-});
-
 const DialogContent = React.forwardRef<HTMLDivElement, DialogContentProps>(
   ({ children, ...props }, forwardedRef) => {
     const context = React.useContext(Context);
