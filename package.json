@@ -33,6 +33,7 @@
     "@modulz/radix-icons": "^3.2.0",
     "@next/mdx": "^9.5.5",
     "@stitches/react": "0.0.3-canary.4",
+    "framer-motion": "^2.9.4",
     "next": "9.5.5",
     "react": "17.0.1",
     "react-dom": "17.0.1"

@@ -5,6 +5,7 @@ import { Text } from '../components/Text';
 import { Button } from '../components/Button';
 import { Flex } from '../components/Flex';
 import { Dialog } from '../components/Dialog';
+import { Dialog as FramerDialog } from '../components/FramerDialog';
 import { AlertDialog } from '../components/AlertDialog';
 import { Popover } from '../components/Popover';
 import { Tooltip } from '../components/Tooltip';
@@ -80,6 +81,18 @@ export default function Closed() {
           <Dialog.Close as={Button}>Bye.</Dialog.Close>
         </Dialog.Content>
       </Dialog>
+
+      <Text size="5" css={{ mt: '$9', mb: '$4' }}>
+        Dialog with Framer Motion
+      </Text>
+
+      <FramerDialog>
+        <FramerDialog.Trigger as={Button}>Open FramerDialog</FramerDialog.Trigger>
+        <FramerDialog.Content>
+          <Text css={{ mb: '$4' }}>Hello, from FramerDialog.</Text>
+          <FramerDialog.Close as={Button}>Bye.</FramerDialog.Close>
+        </FramerDialog.Content>
+      </FramerDialog>
 
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
         AlertDialog
