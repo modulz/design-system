@@ -1,6 +1,8 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesProps } from '../stitches.config';
 
-export const Card = styled.div({
+export type CardProps = StitchesProps<typeof Card>;
+
+export const Card = styled('div', {
   // Reset
   boxSizing: 'border-box',
   flexShrink: 0,

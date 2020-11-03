@@ -1,6 +1,9 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 
-export const Badge = styled.span({
+export type BadgeProps = StitchesProps<typeof Badge>;
+export type BadgeVariants = StitchesVariants<typeof Badge>;
+
+export const Badge = styled('span', {
   // Reset
   alignItems: 'center',
   appearance: 'none',
@@ -34,12 +37,12 @@ export const Badge = styled.span({
 
   variants: {
     size: {
-      1: {
+      '1': {
         height: '$3',
         px: '$1',
         fontSize: '$1',
       },
-      2: {
+      '2': {
         height: '$5',
         px: '$3',
         fontSize: '$2',

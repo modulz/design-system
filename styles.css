@@ -1,4 +1,6 @@
-html { overflow-y: hidden; }
+html {
+  overflow-y: hidden;
+}
 
 body {
   margin: 0;

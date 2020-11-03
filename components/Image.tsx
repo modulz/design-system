@@ -1,6 +1,8 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesProps } from '../stitches.config';
 
-export const Image = styled.img({
+export type ImageProps = StitchesProps<typeof Image>;
+
+export const Image = styled('img', {
   // Reset
   verticalAlign: 'middle',
   maxWidth: '100%',

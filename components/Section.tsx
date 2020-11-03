@@ -1,6 +1,9 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 
-export const Section = styled.section({
+export type SectionProps = StitchesProps<typeof Section>;
+export type SectionVariants = StitchesVariants<typeof Section>;
+
+export const Section = styled('section', {
   // Reset
   boxSizing: 'border-box',
   flexShrink: 0,

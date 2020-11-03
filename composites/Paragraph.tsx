@@ -6,7 +6,7 @@ export function Paragraph(props) {
       as="p"
       size={{
         initial: '3',
-        bp2: '4'
+        bp2: '4',
       }}
       {...props}
       css={{
@@ -18,8 +18,8 @@ export function Paragraph(props) {
         bp2: {
           lineHeight: '28px',
           ...props.bp2,
-        }
+        },
       }}
-     />
+    />
   );
 }

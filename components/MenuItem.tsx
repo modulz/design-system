@@ -1,6 +1,9 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 
-export const MenuItem = styled.div({
+export type MenuItemProps = StitchesProps<typeof MenuItem>;
+export type MenuItemVariants = StitchesVariants<typeof MenuItem>;
+
+export const MenuItem = styled('div', {
   // Reset
   alignItems: 'center',
   appearance: 'none',
