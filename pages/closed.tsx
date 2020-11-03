@@ -11,6 +11,7 @@ import { Popover } from '../components/Popover';
 import { Tooltip } from '../components/Tooltip';
 import { ProgressBar } from '../components/ProgressBar';
 import { Tabs } from '../components/Tabs';
+import { Tabs as FramerTabs } from '../components/FramerTabs';
 import { Accordion } from '../components/Accordion';
 import { Accordion as FramerAccordion } from '../components/FramerAccordion';
 import { Label } from '../components/Label';
@@ -192,6 +193,36 @@ export default function Closed() {
           <Text>Panel 3</Text>
         </Tabs.Panel>
       </Tabs>
+
+      <Text size="5" css={{ mt: '$9', mb: '$4' }}>
+        FramerTabs
+      </Text>
+
+      <FramerTabs defaultSelectedId="tab-one">
+        <FramerTabs.List>
+          <FramerTabs.Tab id="tab-one">
+            <Text size="4">One</Text>
+          </FramerTabs.Tab>
+          <FramerTabs.Tab id="tab-two">
+            <Text size="4">Two</Text>
+          </FramerTabs.Tab>
+          <FramerTabs.Tab id="tab-three">
+            <Text size="4">Three</Text>
+          </FramerTabs.Tab>
+        </FramerTabs.List>
+        <FramerTabs.Panel id="tab-one">
+          <Box>
+            <Text>Panel 1</Text>
+            <Button css={{ mt: '$2' }}>Test focus</Button>
+          </Box>
+        </FramerTabs.Panel>
+        <FramerTabs.Panel id="tab-two">
+          <Text>Panel 2</Text>
+        </FramerTabs.Panel>
+        <FramerTabs.Panel id="tab-three">
+          <Text>Panel 3</Text>
+        </FramerTabs.Panel>
+      </FramerTabs>
 
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
         Accordion
