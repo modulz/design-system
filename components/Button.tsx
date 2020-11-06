@@ -1,6 +1,9 @@
-import { styled } from '../stitches.config';
+import { StitchesProps, StitchesVariants, styled } from '../stitches.config';
 
-export const Button = styled.button({
+export type ButtonProps = StitchesProps<typeof Button>;
+export type ButtonVariants = StitchesVariants<typeof Button>;
+
+export const Button = styled('button', {
   // Reset
   alignItems: 'center',
   appearance: 'none',
@@ -8,6 +11,7 @@ export const Button = styled.button({
   display: 'inline-flex',
   justifyContent: 'center',
   lineHeight: '1',
+  margin: '0',
   outline: 'none',
   padding: '0',
   textDecoration: 'none',
@@ -32,7 +36,7 @@ export const Button = styled.button({
   fontSize: '$2',
   fontWeight: 500,
   fontVariantNumeric: 'tabular-nums',
-  
+
   ':hover': {
     boxShadow: 'inset 0 0 0 1px $gray700',
   },

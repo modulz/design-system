@@ -1,6 +1,9 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 
-export const TreeItem = styled.div({
+export type TreeItemProps = StitchesProps<typeof TreeItem>;
+export type TreeItemVariants = StitchesVariants<typeof TreeItem>;
+
+export const TreeItem = styled('div', {
   // Reset
   alignItems: 'center',
   boxSizing: 'border-box',

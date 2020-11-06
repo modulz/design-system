@@ -1,6 +1,9 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 
-export const IconButton = styled.button({
+export type IconButtonProps = StitchesProps<typeof IconButton>;
+export type IconButtonVariants = StitchesVariants<typeof IconButton>;
+
+export const IconButton = styled('button', {
   // Reset
   alignItems: 'center',
   appearance: 'none',
@@ -38,6 +41,10 @@ export const IconButton = styled.button({
   ':active': {
     backgroundColor: '$gray100',
   },
+  ':focus': {
+    borderColor: '$gray700',
+    boxShadow: '0 0 0 1px $gray700',
+  },
   ':disabled': {
     pointerEvents: 'none',
     backgroundColor: 'transparent',
@@ -66,14 +73,24 @@ export const IconButton = styled.button({
         ':hover': {
           backgroundColor: '$gray200',
         },
+        ':focus': {
+          boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
+        },
         ':active': {
           backgroundColor: '$gray300',
         },
       },
       raised: {
-        boxShadow: '0 16px 32px hsl(206deg 12% 5% / 25%), 0 3px 5px hsl(0deg 0% 0% / 10%)',
+        boxShadow:
+          '0 0 transparent, 0 16px 32px hsl(206deg 12% 5% / 25%), 0 3px 5px hsl(0deg 0% 0% / 10%)',
         ':hover': {
-          boxShadow: '0 16px 32px hsl(206deg 12% 5% / 25%), 0 3px 5px hsl(0deg 0% 0% / 10%)',
+          boxShadow:
+            '0 0 transparent, 0 16px 32px hsl(206deg 12% 5% / 25%), 0 3px 5px hsl(0deg 0% 0% / 10%)',
+        },
+        ':focus': {
+          borderColor: '$gray700',
+          boxShadow:
+            '0 0 0 1px $gray700, 0 16px 32px hsl(206deg 12% 5% / 25%), 0 3px 5px hsl(0deg 0% 0% / 10%)',
         },
         ':active': {
           backgroundColor: '$gray300',

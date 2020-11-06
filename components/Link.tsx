@@ -1,6 +1,9 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 
-export const Link = styled.a({
+export type LinkProps = StitchesProps<typeof Link>;
+export type LinkVariants = StitchesVariants<typeof Link>;
+
+export const Link = styled('a', {
   // Reset
   boxSizing: 'border-box',
   flexShrink: 0,

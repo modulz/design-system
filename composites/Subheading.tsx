@@ -6,10 +6,11 @@ export function Subheading(props) {
       as="h4"
       size={{
         initial: '5',
-        bp2: '6'
+        bp2: '6',
       }}
       css={{
         fontWeight: 500,
+        fontVariantNumeric: 'proportional-nums',
         ...props.css,
         initial: {
           lineHeight: '25px',
@@ -18,9 +19,9 @@ export function Subheading(props) {
         bp2: {
           lineHeight: '30px',
           ...props.bp2,
-        }
+        },
       }}
       {...props}
-     />
+    />
   );
 }

@@ -1,5 +1,7 @@
 import { createStyled } from '@stitches/react';
 
+export * from '@stitches/react';
+
 export const theme = {
   colors: {
     $hiContrast: 'hsl(206,10%,5%)',
@@ -182,7 +184,8 @@ export const theme = {
     $bronze900: 'hsl(16,38%,44%)',
   },
   fonts: {
-    $untitled: 'Untitled Sans, -apple-system, BlinkMacSystemFont, system-ui, sans-serif',
+    $untitled:
+      'Untitled Sans, -apple-system, BlinkMacSystemFont, system-ui, sans-serif',
     $mono: 'Söhne Mono, menlo, monospace',
   },
   space: {

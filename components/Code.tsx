@@ -1,6 +1,9 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 
-export const Code = styled.code({
+export type CodeProps = StitchesProps<typeof Code>;
+export type CodeVariants = StitchesVariants<typeof Code>;
+
+export const Code = styled('code', {
   backgroundColor: '$violet200',
   color: '$violet900',
   fontFamily: '$mono',

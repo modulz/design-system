@@ -11,6 +11,7 @@ export function Title(props) {
       {...props}
       css={{
         fontWeight: 500,
+        fontVariantNumeric: 'proportional-nums',
         ...props.css,
         initial: {
           lineHeight: '35px',

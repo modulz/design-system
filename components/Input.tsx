@@ -1,6 +1,9 @@
-import { styled } from '../stitches.config';
+import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 
-export const Input = styled.input({
+export type InputProps = StitchesProps<typeof Input>;
+export type InputVariants = StitchesVariants<typeof Input>;
+
+export const Input = styled('input', {
   // Reset
   appearance: 'none',
   backgroundColor: 'transparent',
@@ -9,6 +12,7 @@ export const Input = styled.input({
   flexShrink: 0,
   fontFamily: 'inherit',
   lineHeight: '1',
+  margin: '0',
   outline: 'none',
   padding: '0',
   width: '100%',
@@ -25,7 +29,7 @@ export const Input = styled.input({
   borderRadius: '$1',
   color: '$hiContrast',
   fontVariantNumeric: 'tabular-nums',
-  
+
   ':focus': {
     boxShadow: 'inset 0px 0px 0px 1px $blue800, 0px 0px 0px 1px $blue800',
   },
@@ -62,13 +66,17 @@ export const Input = styled.input({
           boxShadow: 'inset 0 0 0 1px $gray300',
         },
         ':focus': {
-          boxShadow: 'rgb(96, 179, 251) 0px 0px 0px 1px inset, rgb(96, 179, 251) 0px 0px 0px 1px',
+          boxShadow:
+            'rgb(96, 179, 251) 0px 0px 0px 1px inset, rgb(96, 179, 251) 0px 0px 0px 1px',
         },
       },
     },
     cursor: {
       default: {
         cursor: 'default',
+        ':focus': {
+          cursor: 'text',
+        },
       },
     },
   },

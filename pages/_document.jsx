@@ -1,5 +1,5 @@
 import React from 'react';
-import NextDocument, { Head, Main, NextScript } from 'next/document';
+import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 import { css } from '../stitches.config';
 
 export default class Document extends NextDocument {
@@ -34,13 +34,13 @@ export default class Document extends NextDocument {
 
   render() {
     return (
-      <html lang="en">
-        <Head></Head>
+      <Html lang="en">
+        <Head />
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
