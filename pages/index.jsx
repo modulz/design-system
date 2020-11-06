@@ -50,6 +50,8 @@ import { Properties } from '../custom/Properties';
 import { Color } from '../custom/Color';
 import { Avatars } from '../custom/Avatars';
 
+import { styled } from '../stitches.config';
+
 function Home() {
   return (
 
@@ -547,7 +549,7 @@ function Home() {
                 padding: 20,
                 marginTop: '-5vh',
               }}>
-                <Text size={5} as="h6" css={{ fontWeight: 500, mb: '$3' }}>Dialog Heading</Text>
+                <Text size={5} as="h6" css={{ color: '$hiContrast', fontWeight: 500, mb: '$3' }}>Dialog Heading</Text>
                 <Text size={3} as="p" css={{ lineHeight: '25px' }}>There are 5 variants to choose from. Use is for positive states. This is a link Traditional business literature won’t help you solve it- most of that stuff is focused on life after product/market fit, after the Trough of Sorrow.</Text>
                 <Popover>
                   <Popover.Trigger as={Button}>Open</Popover.Trigger>

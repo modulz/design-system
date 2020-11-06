@@ -64,11 +64,11 @@ export const Button = styled.button({
         boxShadow: 'none',
         color: 'white',
         ':hover': {
-          backgroundColor: '$blue600',
+          backgroundColor: '$blue900',
           boxShadow: 'none',
         },
         ':active': {
-          backgroundColor: '$blue600',
+          backgroundColor: '$blue700',
           boxShadow: 'none',
         },
         ':focus': {
