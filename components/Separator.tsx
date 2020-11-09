@@ -6,28 +6,32 @@ export type SeparatorVariants = StitchesVariants<typeof Separator>;
 
 export const Separator = styled(SeparatorPrimitive, {
   ...styles.root,
-  // flexShrink: 0,
-
-  height: '1px',
+  flexShrink: 0,
   backgroundColor: '$gray500',
-
-  '[data-orientation="horizontal"]': {
-    height: '1px',
-    width: '50px',
-  },
-
-  '[data-orientation="vertical"]': {
-    width: '1px',
-    height: '50px',
-  },
 
   variants: {
     size: {
       '1': {
-        width: '$3',
+        '&[data-orientation="horizontal"]': {
+          height: '1px',
+          width: '$3',
+        },
+      
+        '&[data-orientation="vertical"]': {
+          width: '1px',
+          height: '$3',
+        },
       },
       '2': {
-        width: '$7',
+        '&[data-orientation="horizontal"]': {
+          height: '1px',
+          width: '$3',
+        },
+      
+        '&[data-orientation="vertical"]': {
+          width: '1px',
+          height: '$7',
+        },
       },
     },
   },
