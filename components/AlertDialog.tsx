@@ -1,24 +1,26 @@
 import React from 'react';
-import { styled, css } from '../stitches.config';
+import { styled, css, StitchesProps } from '../stitches.config';
 import {
   AlertDialog as AlertDialogPrimitive,
-  AlertDialogContentProps,
   AlertDialogProps as AlertDialogPrimitiveProps,
   styles,
+  AlertDialogContentProps as AlertDialogPrimitiveContentProps,
 } from '@interop-ui/react-alert-dialog';
 import { Overlay } from './Overlay';
 import { Panel } from './Panel';
 
 export type {
-  AlertDialogContentProps,
   AlertDialogTitleProps,
   AlertDialogDescriptionProps,
   AlertDialogActionProps,
   AlertDialogCancelProps,
 } from '@interop-ui/react-alert-dialog';
+
 export type AlertDialogProps = AlertDialogPrimitiveProps & {
   children: React.ReactNode;
 };
+export type AlertDialogContentProps = AlertDialogPrimitiveContentProps &
+  StitchesProps<typeof StyledContent>;
 
 const fadeIn = css.keyframes({
   '0%': { opacity: 0 },
@@ -39,7 +41,7 @@ export function AlertDialog({ children, ...props }: AlertDialogProps) {
   );
 }
 
-const StyledContent = styled(Panel, {
+const StyledContent = styled(AlertDialogPrimitive.Content, {
   ...styles.content,
   top: '50%',
   left: '50%',
@@ -58,9 +60,9 @@ const StyledContent = styled(Panel, {
 
 function AlertDialogContent({ children, ...props }: AlertDialogContentProps) {
   return (
-    <AlertDialogPrimitive.Content {...props} as={StyledContent}>
+    <StyledContent {...props} as={Panel}>
       {children}
-    </AlertDialogPrimitive.Content>
+    </StyledContent>
   );
 }
 AlertDialog.Trigger = AlertDialogPrimitive.Trigger;

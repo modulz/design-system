@@ -40,7 +40,7 @@ export function Dialog({ children, ...props }: DialogProps) {
   );
 }
 
-const StyledContent = styled(Panel, {
+const StyledContent = styled(DialogPrimitive.Content, {
   ...styles.content,
   top: '50%',
   left: '50%',
@@ -57,18 +57,21 @@ const StyledContent = styled(Panel, {
   },
 });
 
+const StyledCloseButton = styled(DialogPrimitive.Close, {
+  ...styles.close,
+  position: 'absolute',
+  top: '$2',
+  right: '$2',
+});
+
 const DialogContent = React.forwardRef<HTMLDivElement, DialogContentProps>(
   ({ children, ...props }, forwardedRef) => (
-    <DialogPrimitive.Content {...props} ref={forwardedRef} as={StyledContent}>
+    <StyledContent {...props} ref={forwardedRef} as={Panel}>
       {children}
-      <Dialog.Close
-        as={IconButton}
-        variant="ghost"
-        css={{ position: 'absolute', top: '$2', right: '$2' }}
-      >
+      <StyledCloseButton as={IconButton} variant="ghost">
         <Cross2Icon />
-      </Dialog.Close>
-    </DialogPrimitive.Content>
+      </StyledCloseButton>
+    </StyledContent>
   )
 );
 
