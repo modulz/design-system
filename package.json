@@ -31,20 +31,20 @@
     "@interop-ui/react-tooltip": "^0.0.1-9",
     "@interop-ui/react-utils": "^0.0.1-9",
     "@modulz/radix-icons": "^3.2.0",
-    "@next/mdx": "^9.5.5",
     "@stitches/react": "0.0.3-canary.4",
-    "framer-motion": "^2.9.4",
-    "next": "9.5.5",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "framer-motion": "^2.9.4"
   },
   "devDependencies": {
+    "@next/mdx": "^9.5.5",
     "@types/node": "^14.14.2",
     "@types/react": "^16.9.53",
     "husky": ">=4",
     "lint-staged": ">=10",
+    "next": "9.5.5",
     "np": "^6.5.0",
     "prettier": "^2.1.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "rollup": "^2.32.1",
     "rollup-plugin-typescript2": "^0.28.0",
     "typescript": "^4.0.3"
