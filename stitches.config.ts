@@ -1,4 +1,5 @@
 import { createStyled } from '@stitches/react';
+export * from '@stitches/react';
 
 export const theme = {
   colors: {
