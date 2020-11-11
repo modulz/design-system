@@ -11,7 +11,7 @@ import { Popover } from '../components/Popover';
 import { Tooltip } from '../components/Tooltip';
 import { ProgressBar } from '../components/ProgressBar';
 import { Tabs } from '../components/Tabs';
-import { Tabs as FramerTabs } from '../components/FramerTabs';
+import { Tabs as AnimatedTabs } from '../components/AnimatedTabs';
 import { Accordion } from '../components/Accordion';
 import { Accordion as FramerAccordion } from '../components/FramerAccordion';
 import { Label } from '../components/Label';
@@ -195,34 +195,381 @@ export default function Closed() {
       </Tabs>
 
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
-        FramerTabs
+        AnimatedTabs
       </Text>
 
-      <FramerTabs defaultSelectedId="tab-one">
-        <FramerTabs.List>
-          <FramerTabs.Tab id="tab-one">
-            <Text size="4">One</Text>
-          </FramerTabs.Tab>
-          <FramerTabs.Tab id="tab-two">
-            <Text size="4">Two</Text>
-          </FramerTabs.Tab>
-          <FramerTabs.Tab id="tab-three">
-            <Text size="4">Three</Text>
-          </FramerTabs.Tab>
-        </FramerTabs.List>
-        <FramerTabs.Panel id="tab-one">
-          <Box>
-            <Text>Panel 1</Text>
-            <Button css={{ mt: '$2' }}>Test focus</Button>
-          </Box>
-        </FramerTabs.Panel>
-        <FramerTabs.Panel id="tab-two">
-          <Text>Panel 2</Text>
-        </FramerTabs.Panel>
-        <FramerTabs.Panel id="tab-three">
-          <Text>Panel 3</Text>
-        </FramerTabs.Panel>
-      </FramerTabs>
+      <AnimatedTabs defaultSelectedId="tab-one">
+        <AnimatedTabs.List>
+          <AnimatedTabs.Tab
+            id="tab-one"
+            css={{
+              '&[data-state="active"]': {
+                backgroundColor: '$red600',
+              },
+            }}
+          >
+            <Text size="2">One</Text>
+          </AnimatedTabs.Tab>
+          <AnimatedTabs.Tab
+            id="tab-two"
+            css={{
+              '&[data-state="active"]': {
+                backgroundColor: '$blue600',
+              },
+            }}
+          >
+            <Text size="2">Two</Text>
+          </AnimatedTabs.Tab>
+          <AnimatedTabs.Tab
+            id="tab-three"
+            css={{
+              '&[data-state="active"]': {
+                backgroundColor: '$purple600',
+              },
+            }}
+          >
+            <Text size="2">Three</Text>
+          </AnimatedTabs.Tab>
+        </AnimatedTabs.List>
+        <Box css={{ position: 'relative' }}>
+          <AnimatedTabs.Panel id="tab-one" css={{ backgroundColor: '$red600' }}>
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '50%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '20%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '20%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '20%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '30%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '30%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+          </AnimatedTabs.Panel>
+          <AnimatedTabs.Panel id="tab-two" css={{ backgroundColor: '$blue600' }}>
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '50%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '20%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '20%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '20%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '30%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '30%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+          </AnimatedTabs.Panel>
+          <AnimatedTabs.Panel id="tab-three" css={{ backgroundColor: '$purple600' }}>
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '50%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '20%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '20%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '20%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '30%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '30%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+            <Box
+              css={{
+                backgroundColor: '$loContrast',
+                height: '$2',
+                width: '10%',
+                borderRadius: '15px',
+                my: '$2',
+              }}
+            />
+          </AnimatedTabs.Panel>
+        </Box>
+      </AnimatedTabs>
 
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
         Accordion

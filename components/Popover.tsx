@@ -54,7 +54,7 @@ const Close = styled(PopoverPrimitive.Close, {
   ...styles.close,
 });
 
-const Wrapper = styled.div({
+const Wrapper = styled('div', {
   animation: `${fadeIn} 333ms ease-out, ${moveDown} 133ms ease-out`,
 });
 
