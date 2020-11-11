@@ -29,7 +29,7 @@ const fadeIn = css.keyframes({
 });
 
 const moveDown = css.keyframes({
-  '0%': { transform: 'translateY(-10px)' },
+  '0%': { transform: 'translateY(-4px)' },
   '100%': { transform: 'translateY(0)' },
 });
 
@@ -55,7 +55,7 @@ const Close = styled(PopoverPrimitive.Close, {
 });
 
 const Wrapper = styled.div({
-  animation: `${fadeIn} 333ms ease-out, ${moveDown} 133ms ease-out`,
+  animation: `${fadeIn} 50ms linear, ${moveDown} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
 });
 
 const Arrow = styled(PopoverPrimitive.Arrow, {

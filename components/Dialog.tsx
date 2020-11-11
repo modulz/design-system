@@ -28,7 +28,7 @@ const moveDown = css.keyframes({
 
 const StyledOverlay = styled(Overlay, {
   ...styles.overlay,
-  animation: `${fadeIn} 125ms ease-out`,
+  animation: `${fadeIn} 125ms linear`,
 });
 
 export function Dialog({ children, ...props }: DialogProps) {
@@ -50,7 +50,7 @@ const StyledContent = styled(Panel, {
   maxHeight: '85vh',
   padding: '$4',
   marginTop: '-5vh',
-  animation: `${fadeIn} 125ms ease-out, ${moveDown} 125ms cubic-bezier(0.25, 1, 0.5, 1)`,
+  animation: `${fadeIn} 125ms linear, ${moveDown} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
 
   '&:focus': {
     outline: 'none',
