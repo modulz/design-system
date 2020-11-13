@@ -7,6 +7,7 @@ import { Flex } from '../components/Flex';
 import { Grid } from '../components/Grid';
 import { Badge } from '../components/Badge';
 import { Text } from '../components/Text';
+import { Kbd } from '../components/Kbd';
 import { Link } from '../components/Link';
 import { Separator } from '../components/Separator';
 import { Code } from '../components/Code';
