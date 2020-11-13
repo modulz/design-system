@@ -14,6 +14,5 @@ export const Kbd = styled('kbd', {
   height: '$5',
   whiteSpace: 'nowrap',
   px: '5px',
-  textTransform: 'lowercase',
   userSelect: 'none',
 });
