@@ -43,7 +43,6 @@ const Content = styled(PopoverPrimitive.Content, {
   ...styles.content,
   minWidth: 200,
   maxWidth: 'fit-content',
-  padding: '$4',
 
   '&:focus': {
     outline: 'none',
