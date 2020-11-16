@@ -568,7 +568,7 @@ function Home() {
                     >
                       <Popover.Close as={Button} variant="ghost">Close</Popover.Close>
                     </Popover.Content>
-                    <Popover.Arrow width={13} height={7} style={{ ...popoverStyles.arrow, fill: 'white' }} />
+                    <Popover.Arrow width={11} height={5} style={{ ...popoverStyles.arrow, fill: 'white' }} />
                   </Popover.Position>
                 </Popover>
                 <Box css={{
@@ -599,8 +599,8 @@ function Home() {
                       </Tooltip.Content>
                       <Tooltip.Arrow
                         offset={0}
-                        width={13}
-                        height={7}
+                        width={11}
+                        height={5}
                         style={{ ...tooltipStyles.arrow, fill: 'black' }}
                       />
                     </Tooltip.Position>

@@ -55,8 +55,8 @@ export function Tooltip({
         <Box css={{ color: '$transparentExtreme' }}>
           <TooltipPrimitive.Arrow
             offset={0}
-            width={13}
-            height={7}
+            width={11}
+            height={5}
             style={{
               ...styles.arrow,
               fill: 'currentColor',

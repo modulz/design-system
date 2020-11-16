@@ -79,7 +79,7 @@ const PopoverContent = React.forwardRef<
         </Close>
       </Content>
       <Box css={{ color: '$panel' }}>
-        <Arrow width={13} height={7} />
+        <Arrow width={11} height={5} />
       </Box>
     </Wrapper>
   </Position>
