@@ -80,7 +80,7 @@ export const Button = styled('button', {
         },
       },
       green: {
-        backgroundColor: '$green500',
+        backgroundColor: '$green800',
         boxShadow: 'none',
         color: 'white',
         ':hover': {

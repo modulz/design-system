@@ -257,13 +257,11 @@ export function Avatars() {
               <AvatarNestedItem>
                 <Avatar
                   size="2"
-                  inactive
                   alt="John Smith"
                   src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                   fallback="J"
                 />
               </AvatarNestedItem>
-
               <AvatarNestedItem>
                 <Avatar
                   size="2"
@@ -272,24 +270,58 @@ export function Avatars() {
                   fallback="J"
                 />
               </AvatarNestedItem>
-
               <AvatarNestedItem>
                 <Avatar
                   size="2"
-                  inactive
                   alt="John Smith"
                   src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                   fallback="J"
                 />
               </AvatarNestedItem>
-
               <AvatarNestedItem>
                 <Avatar
                   size="2"
-                  inactive
                   alt="John Smith"
                   src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                   fallback="J"
+                />
+              </AvatarNestedItem>
+            </AvatarGroup>
+            <AvatarGroup>
+              <AvatarNestedItem>
+                <Avatar
+                  size="2"
+                  alt="John Smith"
+                  src=""
+                  fallback="J"
+                  color="blue"
+                />
+              </AvatarNestedItem>
+              <AvatarNestedItem>
+                <Avatar
+                  size="2"
+                  alt="John Smith"
+                  src=""
+                  fallback="J"
+                  color="violet"
+                />
+              </AvatarNestedItem>
+              <AvatarNestedItem>
+                <Avatar
+                  size="2"
+                  alt="John Smith"
+                  src=""
+                  fallback="J"
+                  color="green"
+                />
+              </AvatarNestedItem>
+              <AvatarNestedItem>
+                <Avatar
+                  size="2"
+                  alt="John Smith"
+                  src=""
+                  fallback="J"
+                  color="yellow"
                 />
               </AvatarNestedItem>
             </AvatarGroup>
