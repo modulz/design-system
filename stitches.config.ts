@@ -8,10 +8,10 @@ export const theme = {
     $loContrast: 'white',
 
     $canvas: 'hsl(0,0%,93%)',
-
     $panel: 'white',
     $shadowLight: 'hsla(206,22%,7%,.35)',
     $shadowDark: 'hsla(206,22%,7%,.2)',
+    $transparentExtreme: 'hsla(0,0%,0%,.97)',
 
     $gray100: 'hsl(206,22%,99%)',
     $gray200: 'hsl(206,12%,96%)',
@@ -242,10 +242,10 @@ export const darkTheme = {
   $loContrast: 'hsl(206,8%,8%)',
 
   $canvas: 'hsl(0,0%,15%)',
-
   $panel: 'hsl(206,7%,14%)',
   $shadowLight: 'hsla(206,22%,7%,.35)',
   $shadowDark: 'hsla(206,22%,7%,.2)',
+  $transparentExtreme: 'hsla(0,100%,100%,.97)',
 
   $gray100: 'hsl(206,8%,12%)',
   $gray200: 'hsl(206,7%,14%)',

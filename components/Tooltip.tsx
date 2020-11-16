@@ -34,7 +34,7 @@ export function Tooltip({
         <TooltipPrimitive.Content>
           <Box
             css={{
-              backgroundColor: '$hiContrast',
+              backgroundColor: '$transparentExtreme',
               borderRadius: '$1',
               padding: '$1 $2',
               maxWidth: 300,
@@ -52,7 +52,7 @@ export function Tooltip({
           </Box>
         </TooltipPrimitive.Content>
 
-        <Box css={{ color: '$hiContrast' }}>
+        <Box css={{ color: '$transparentExtreme' }}>
           <TooltipPrimitive.Arrow
             offset={0}
             width={13}
