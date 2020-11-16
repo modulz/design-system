@@ -1,8 +1,5 @@
 import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 
-export type CodeProps = StitchesProps<typeof Code>;
-export type CodeVariants = StitchesVariants<typeof Code>;
-
 export const Kbd = styled('kbd', {
   alignItems: 'center',
   backgroundColor: '$gray200',

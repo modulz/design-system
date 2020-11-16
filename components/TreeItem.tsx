@@ -38,15 +38,6 @@ export const TreeItem = styled('div', {
           backgroundColor: '$gray400',
         },
       },
-      blue: {
-        backgroundColor: '$blue200',
-        ':hover': {
-          backgroundColor: '$blue300',
-        },
-        ':active': {
-          backgroundColor: '$blue400',
-        },
-      },
       red: {
         backgroundColor: '$red200',
         ':hover': {
@@ -54,6 +45,24 @@ export const TreeItem = styled('div', {
         },
         ':active': {
           backgroundColor: '$red400',
+        },
+      },
+      crimson: {
+        backgroundColor: '$crimson200',
+        ':hover': {
+          backgroundColor: '$crimson300',
+        },
+        ':active': {
+          backgroundColor: '$crimson400',
+        },
+      },
+      pink: {
+        backgroundColor: '$pink200',
+        ':hover': {
+          backgroundColor: '$pink300',
+        },
+        ':active': {
+          backgroundColor: '$pink400',
         },
       },
       purple: {
@@ -74,13 +83,40 @@ export const TreeItem = styled('div', {
           backgroundColor: '$violet400',
         },
       },
-      orange: {
-        backgroundColor: '$orange200',
+      indigo: {
+        backgroundColor: '$indigo200',
         ':hover': {
-          backgroundColor: '$orange300',
+          backgroundColor: '$indigo300',
         },
         ':active': {
-          backgroundColor: '$orange400',
+          backgroundColor: '$indigo400',
+        },
+      },
+      blue: {
+        backgroundColor: '$blue200',
+        ':hover': {
+          backgroundColor: '$blue300',
+        },
+        ':active': {
+          backgroundColor: '$blue400',
+        },
+      },
+      turquoise: {
+        backgroundColor: '$turquoise200',
+        ':hover': {
+          backgroundColor: '$turquoise300',
+        },
+        ':active': {
+          backgroundColor: '$turquoise400',
+        },
+      },
+      teal: {
+        backgroundColor: '$teal200',
+        ':hover': {
+          backgroundColor: '$teal300',
+        },
+        ':active': {
+          backgroundColor: '$teal400',
         },
       },
       green: {
@@ -92,6 +128,15 @@ export const TreeItem = styled('div', {
           backgroundColor: '$green400',
         },
       },
+      lime: {
+        backgroundColor: '$lime200',
+        ':hover': {
+          backgroundColor: '$lime300',
+        },
+        ':active': {
+          backgroundColor: '$lime400',
+        },
+      },
       yellow: {
         backgroundColor: '$yellow200',
         ':hover': {
@@ -99,6 +144,42 @@ export const TreeItem = styled('div', {
         },
         ':active': {
           backgroundColor: '$yellow400',
+        },
+      },
+      orange: {
+        backgroundColor: '$orange200',
+        ':hover': {
+          backgroundColor: '$orange300',
+        },
+        ':active': {
+          backgroundColor: '$orange400',
+        },
+      },
+      gold: {
+        backgroundColor: '$gold200',
+        ':hover': {
+          backgroundColor: '$gold300',
+        },
+        ':active': {
+          backgroundColor: '$gold400',
+        },
+      },
+      brown: {
+        backgroundColor: '$brown200',
+        ':hover': {
+          backgroundColor: '$brown300',
+        },
+        ':active': {
+          backgroundColor: '$brown400',
+        },
+      },
+      bronze: {
+        backgroundColor: '$bronze200',
+        ':hover': {
+          backgroundColor: '$bronze300',
+        },
+        ':active': {
+          backgroundColor: '$bronze400',
         },
       },
     },

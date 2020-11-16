@@ -100,7 +100,7 @@ export function Avatars() {
               alt="John Smith"
               src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
               fallback="J"
-              as="button"
+              // as="button"
             />
 
             <Avatar
@@ -109,7 +109,7 @@ export function Avatars() {
               alt="John Smith"
               src=""
               fallback="J"
-              as="button"
+              // as="button"
             />
 
             <Avatar
@@ -119,14 +119,14 @@ export function Avatars() {
               src=""
               fallback="J"
               color="violet"
-              as="button"
+              // as="button"
             />
 
             <Avatar
               size="3"
               interactive
               alt="John Smith"
-              as="button"
+              // as="button"
               fallback={
                 <Link2Icon />
               }
