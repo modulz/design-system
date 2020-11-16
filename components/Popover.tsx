@@ -29,7 +29,7 @@ const fadeIn = css.keyframes({
 });
 
 const moveDown = css.keyframes({
-  '0%': { transform: 'translateY(-4px)' },
+  '0%': { transform: 'translateY(-3px)' },
   '100%': { transform: 'translateY(0)' },
 });
 
