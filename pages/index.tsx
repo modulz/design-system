@@ -120,7 +120,7 @@ function Home() {
             </Box>
             <Separator orientation="vertical" size="1" css={{ mx: '$3' }} />
             <Box css={{ mr: '$3' }}>
-              <Tooltip content="Frame (F)" side="bottom" align="center">
+              <Tooltip content="Frame component is an environment for testing tokens, theming, and components on Radix UI design system. (F)" side="bottom" align="center">
                 <IconButton variant="ghost">
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.28975 14.2949L10.293 13.4531L8.36328 9.23438L12.2695 8.96484L3.5 1.14999V12.7L6.36719 10.0859L8.28975 14.2949Z" stroke="#0488FC" fill="#CDE7FE"></path></svg>
                 </IconButton>

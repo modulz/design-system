@@ -35,7 +35,7 @@ export function Tooltip({
           <Box
             css={{
               backgroundColor: '$hiContrast',
-              borderRadius: '$2',
+              borderRadius: '$1',
               padding: '$1 $2',
               maxWidth: 300,
             }}
@@ -44,7 +44,6 @@ export function Tooltip({
               size="1"
               as="p"
               css={{
-                lineHeight: '17px',
                 color: '$loContrast',
               }}
             >
