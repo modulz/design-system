@@ -1652,10 +1652,8 @@ function Home() {
 
           <Section size="3">
             <Container size="2" css={{ py: '$7' }}>
-              <Label>
-                <span>fwefwe</span>
-                <Checkbox />
-              </Label>
+              <Checkbox css={{ mr: '$5' }} />
+              <Checkbox size="2" css={{ mr: '$5' }} />
             </Container>
           </Section>
 
