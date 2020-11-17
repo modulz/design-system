@@ -35,6 +35,7 @@ export const StyledAvatar = styled(AvatarPrimitive, {
   outline: 'none',
   padding: '0',
   fontWeight: '500',
+  color: '$hiContrast',
 
   variants: {
     size: {
@@ -64,6 +65,10 @@ export const StyledAvatar = styled(AvatarPrimitive, {
       },
     },
     color: {
+      'hiContrast': {
+        backgroundColor: '$hiContrast',
+        color: '$loContrast'
+      },
       'gray': {
         backgroundColor: '$gray400',
       },
@@ -162,7 +167,6 @@ const AvatarImage = styled(AvatarPrimitive.Image, {
 });
 
 const AvatarFallback = styled(AvatarPrimitive.Fallback, {
-  color: '$hiContrast',
   textTransform: 'uppercase',
 
   variants: {
