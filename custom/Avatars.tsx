@@ -21,7 +21,7 @@ export function Avatars() {
             <Avatar
               size="1"
               alt="John Smith"
-              src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+              src=""
               fallback="J"
             />
 
