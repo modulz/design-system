@@ -9,15 +9,6 @@ import {
 import { Box } from './Box';
 import { Text } from './Text';
 
-const fadeIn = css.keyframes({
-  '0%': { opacity: 0 },
-  '100%': { opacity: 1 },
-});
-
-const Wrapper = styled('div', {
-  animation: `${fadeIn} 133ms ease-out`,
-});
-
 export type TooltipProps = TooltipPrimitiveProps &
   TooltipPositionProps & {
     children: React.ReactElement;
@@ -40,41 +31,38 @@ export function Tooltip({
         )}
       />
       <TooltipPrimitive.Position side="top" align="center" sideOffset={0} {...props}>
-        <Wrapper>
-          <TooltipPrimitive.Content>
-            <Box
+        <TooltipPrimitive.Content>
+          <Box
+            css={{
+              backgroundColor: '$transparentExtreme',
+              borderRadius: '$1',
+              padding: '$1 $2',
+              maxWidth: 300,
+            }}
+          >
+            <Text
+              size="1"
+              as="p"
               css={{
-                backgroundColor: '$hiContrast',
-                borderRadius: '$2',
-                padding: '$1 $2',
-                maxWidth: 300,
+                color: '$loContrast',
               }}
             >
-              <Text
-                size="1"
-                as="p"
-                css={{
-                  lineHeight: '17px',
-                  color: '$loContrast',
-                }}
-              >
-                {content}
-              </Text>
-            </Box>
-          </TooltipPrimitive.Content>
-
-          <Box css={{ color: '$hiContrast' }}>
-            <TooltipPrimitive.Arrow
-              offset={0}
-              width={13}
-              height={7}
-              style={{
-                ...styles.arrow,
-                fill: 'currentColor',
-              }}
-            />
+              {content}
+            </Text>
           </Box>
-        </Wrapper>
+        </TooltipPrimitive.Content>
+
+        <Box css={{ color: '$transparentExtreme' }}>
+          <TooltipPrimitive.Arrow
+            offset={0}
+            width={11}
+            height={5}
+            style={{
+              ...styles.arrow,
+              fill: 'currentColor',
+            }}
+          />
+        </Box>
       </TooltipPrimitive.Position>
     </TooltipPrimitive>
   );

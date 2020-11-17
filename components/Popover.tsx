@@ -29,7 +29,7 @@ const fadeIn = css.keyframes({
 });
 
 const moveDown = css.keyframes({
-  '0%': { transform: 'translateY(-10px)' },
+  '0%': { transform: 'translateY(-3px)' },
   '100%': { transform: 'translateY(0)' },
 });
 
@@ -43,7 +43,6 @@ const Content = styled(PopoverPrimitive.Content, {
   ...styles.content,
   minWidth: 200,
   maxWidth: 'fit-content',
-  padding: '$4',
 
   '&:focus': {
     outline: 'none',
@@ -54,8 +53,8 @@ const Close = styled(PopoverPrimitive.Close, {
   ...styles.close,
 });
 
-const Wrapper = styled('div', {
-  animation: `${fadeIn} 333ms ease-out, ${moveDown} 133ms ease-out`,
+const Wrapper = styled.div({
+  animation: `${fadeIn} 50ms linear, ${moveDown} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
 });
 
 const Arrow = styled(PopoverPrimitive.Arrow, {
@@ -80,7 +79,7 @@ const PopoverContent = React.forwardRef<
         </Close>
       </Content>
       <Box css={{ color: '$panel' }}>
-        <Arrow width={13} height={7} />
+        <Arrow width={11} height={5} />
       </Box>
     </Wrapper>
   </Position>

@@ -155,36 +155,6 @@ export function Properties() {
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
               <Box css={{ flexBasis: '0', flexGrow: 1 }}>
-                <Text size="1">Padding X</Text>
-              </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
-                <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
-                </Box>
-                <Box css={{ ml: '$1', mr: '-$1' }}>
-                  <IconButton variant="ghost">
-                    <MinusIcon />
-                  </IconButton>
-                </Box>
-              </Flex>
-            </Flex>
-            <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
-                <Text size="1">Padding Y</Text>
-              </Box>
-              <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
-                <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
-                </Box>
-                <Box css={{ ml: '$1', mr: '-$1' }}>
-                  <IconButton variant="ghost">
-                    <MinusIcon />
-                  </IconButton>
-                </Box>
-              </Flex>
-            </Flex>
-            <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Text size="1">Padding Top</Text>
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
@@ -288,9 +258,6 @@ export function Properties() {
               </Box>
             </Flex>
             <Flex css={{ ai: 'center', px: '$3', py: '$1' }}>
-              <Box css={{ flexBasis: '0', flexGrow: 1 }}>
-                <Text size="1">Typeface</Text>
-              </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
                   <Select css={{ width: '100%' }}>
