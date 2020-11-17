@@ -15,17 +15,17 @@ export type TabsTabProps = TabsTabPrimitiveProps & StitchesProps<typeof StyledTa
 export type TabsListProps = TabsListPrimitiveProps & StitchesProps<typeof StyledTabsList>;
 export type TabsPanelProps = TabsPanelPrimitiveProps & StitchesProps<typeof StyledTabsPanel>;
 
-const StyledTabs = styled('div', { ...styles.root });
+const StyledTabs = styled(TabsPrimitive, { ...styles.root });
 
 // Not able to use `forwardRef` here because then I can't add
 // static props to it (eg: Tabs.List)
 // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/34757
 // export const Tabs = React.forwardRef<HTMLDivElement, TabsProps>((props, forwardedRef) => (
-//   <TabsPrimitive as={StyledTabs} ref={forwardedRef} {...props} />
+//   <StyledTabs ref={forwardedRef} {...props} />
 // ));
 
 export function Tabs(props: TabsProps) {
-  return <TabsPrimitive as={StyledTabs} {...props} />;
+  return <StyledTabs {...props} />;
 }
 
 const StyledTab = styled(TabsPrimitive.Tab, {

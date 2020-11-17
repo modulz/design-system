@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled, StitchesProps } from '../stitches.config';
+import { styled, css, StitchesProps } from '../stitches.config';
 import {
   Tabs as TabsPrimitive,
   styles,
@@ -8,15 +8,15 @@ import {
   TabsTabProps as TabsTabPrimitiveProps,
   TabsPanelProps as TabsPanelPrimitiveProps,
 } from '@interop-ui/react-tabs';
-import { Separator } from './Separator';
-import { motion, AnimatePresence } from 'framer-motion';
 
 export type TabsProps = TabsPrimitiveProps & StitchesProps<typeof StyledTabs>;
 export type TabsTabProps = TabsTabPrimitiveProps & StitchesProps<typeof StyledTab>;
 export type TabsListProps = TabsListPrimitiveProps & StitchesProps<typeof StyledTabsList>;
 export type TabsPanelProps = TabsPanelPrimitiveProps & StitchesProps<typeof StyledTabsPanel>;
 
-const StyledTabs = styled('div', { ...styles.root });
+const StyledTabs = styled('div', {
+  ...styles.root,
+});
 
 // Not able to use `forwardRef` here because then I can't add
 // static props to it (eg: Tabs.List)
@@ -39,13 +39,16 @@ const StyledTab = styled(TabsPrimitive.Tab, {
   alignItems: 'center',
   justifyContent: 'center',
 
-  '&:focus': {
-    outline: 'none',
-    boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
-  },
+  transition: 'background 200ms ease-out',
+  borderRadius: '4px 4px 0 0',
 
   '&[data-state="active"]': {
-    boxShadow: '0 1px 0 0 $gray900',
+    transitionDelay: '400ms',
+    transitionDuration: '400ms',
+  },
+
+  '&:focus': {
+    outline: 'none',
   },
 });
 
@@ -59,27 +62,50 @@ const StyledTabsList = styled(TabsPrimitive.List, {
 });
 
 const TabsList = React.forwardRef<HTMLDivElement, TabsListProps>((props, forwardedRef) => (
-  <>
-    <StyledTabsList ref={forwardedRef} {...props} />
-    <Separator />
-  </>
+  <StyledTabsList ref={forwardedRef} {...props} />
 ));
+
+const hide = css.keyframes({
+  '0%': {
+    opacity: 1,
+  },
+  '100%': {
+    opacity: 0,
+  },
+});
+const show = css.keyframes({
+  '0%': {
+    opacity: 0,
+  },
+  '100%': {
+    opacity: 1,
+  },
+});
 
 const StyledTabsPanel = styled(TabsPrimitive.Panel, {
   ...styles.tabPanel,
   padding: '$2',
+
+  '&[data-state="inactive"]': {
+    opacity: 0,
+    display: 'block',
+    animation: `${hide} 200ms ease-out forwards`,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+  },
+  '&[data-state="active"]': {
+    opacity: 0,
+    animation: `${show} 400ms 400ms ease-out forwards`,
+  },
+
   '&:focus': {
     outline: 'none',
     boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
   },
 });
 
-const TabsPanel = React.forwardRef<HTMLDivElement, TabsPanelProps>((props, forwardedRef) => (
-  <StyledTabsPanel ref={forwardedRef} {...props}>
-    <motion.div key={`tab`}>{props.children}</motion.div>
-  </StyledTabsPanel>
-));
-
 Tabs.Tab = Tab;
 Tabs.List = TabsList;
-Tabs.Panel = TabsPanel;
+Tabs.Panel = StyledTabsPanel;
