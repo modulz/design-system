@@ -19,7 +19,13 @@ export type AvatarProps = AvatarPrimitiveProps &
 export type AvatarVariants = StitchesVariants<typeof Avatar>;
 
 export const StyledAvatar = styled(AvatarPrimitive, {
-  ...styles.root,
+  alignItems: 'center',
+  justifyContent: 'center',
+  verticalAlign: 'middle',
+  overflow: 'hidden',
+  userSelect: 'none',
+  boxSizing: 'border-box',
+  display: 'flex',
   position: 'relative',
   boxShadow: 'inset 0px 0px 1px rgba(0, 0, 0, 0.12)',
   border: 'none',
@@ -148,7 +154,11 @@ export const StyledAvatar = styled(AvatarPrimitive, {
 });
 
 const AvatarImage = styled(AvatarPrimitive.Image, {
-  ...styles.image,
+  display: 'flex',
+  objectFit: 'cover',
+  boxSizing: 'border-box',
+  height: '100%',
+  width: '100%',
 });
 
 const AvatarFallback = styled(AvatarPrimitive.Fallback, {
