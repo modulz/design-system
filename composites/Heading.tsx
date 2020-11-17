@@ -1,9 +1,12 @@
-import { Text } from '../components/Text';
+import { Text, TextProps } from '../components/Text';
 
-export function Heading(props) {
+export type HeadingProps = Omit<TextProps, 'size'>;
+
+export function Heading(props: HeadingProps) {
   return (
     <Text
       as="h3"
+      {...props}
       size={{
         initial: '6',
         bp2: '7',
@@ -11,17 +14,14 @@ export function Heading(props) {
       css={{
         fontWeight: 500,
         fontVariantNumeric: 'proportional-nums',
-        ...props.css,
-        initial: {
-          lineHeight: '25px',
-          ...props.initial,
-        },
+        lineHeight: '25px',
+        ...(props.css as any),
+
         bp2: {
           lineHeight: '30px',
-          ...props.bp2,
+          ...(props.css?.bp2 as any),
         },
       }}
-      {...props}
     />
   );
 }

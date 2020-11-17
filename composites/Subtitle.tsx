@@ -1,24 +1,24 @@
-import { Text } from '../components/Text';
+import { Text, TextProps } from '../components/Text';
 
-export function Subtitle(props) {
+export type SubtitleProps = Omit<TextProps, 'size'>;
+
+export function Subtitle(props: SubtitleProps) {
   return (
     <Text
       as="h2"
+      {...props}
       size={{
         initial: '5',
         bp2: '6',
       }}
-      {...props}
       css={{
         color: '$gray900',
-        ...props.css,
-        initial: {
-          lineHeight: '27px',
-          ...props.initial,
-        },
+        lineHeight: '27px',
+        ...(props.css as any),
+
         bp2: {
           lineHeight: '29px',
-          ...props.bp2,
+          ...(props.css?.bp2 as any),
         },
       }}
     />

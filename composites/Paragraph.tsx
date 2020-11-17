@@ -1,23 +1,23 @@
-import { Text } from '../components/Text';
+import { Text, TextProps } from '../components/Text';
 
-export function Paragraph(props) {
+export type ParagraphProps = Omit<TextProps, 'size'>;
+
+export function Paragraph(props: ParagraphProps) {
   return (
     <Text
       as="p"
+      {...props}
       size={{
         initial: '3',
         bp2: '4',
       }}
-      {...props}
       css={{
-        ...props.css,
-        initial: {
-          lineHeight: '25px',
-          ...props.initial,
-        },
+        lineHeight: '25px',
+        ...(props.css as any),
+
         bp2: {
           lineHeight: '28px',
-          ...props.bp2,
+          ...(props.css?.bp2 as any),
         },
       }}
     />
