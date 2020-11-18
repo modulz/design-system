@@ -13,6 +13,7 @@ export type TooltipProps = TooltipPrimitiveProps &
   TooltipPositionProps & {
     children: React.ReactElement;
     content: React.ReactNode;
+    multiline?: boolean;
   };
 
 const fadeIn = css.keyframes({
@@ -55,12 +56,27 @@ const Position = styled(TooltipPrimitive.Position, {
   },
 });
 
+const Content = styled(TooltipPrimitive.Content, {
+  backgroundColor: '$transparentExtreme',
+  borderRadius: '$1',
+  padding: '$1 $2',
+
+  variants: {
+    multiline: {
+      true: {
+        maxWidth: 300,
+      },
+    },
+  },
+});
+
 export function Tooltip({
   children,
   content,
   isOpen,
   defaultIsOpen,
   onIsOpenChange,
+  multiline,
   ...props
 }: TooltipProps) {
   return (
@@ -70,31 +86,23 @@ export function Tooltip({
           React.cloneElement(children, { ...props, ref: forwardedRef })
         )}
       />
-      <Position side="top" align="center" sideOffset={0} {...props}>
-        <TooltipPrimitive.Content>
-          <Box
+      <Position side="top" align="center" {...props}>
+        <Content multiline={multiline}>
+          <Text
+            size="1"
+            as="p"
             css={{
-              backgroundColor: '$transparentExtreme',
-              borderRadius: '$1',
-              padding: '$1 $2',
-              maxWidth: 300,
+              color: '$loContrast',
+              lineHeight: multiline ? '1.5' : undefined,
             }}
           >
-            <Text
-              size="1"
-              as="p"
-              css={{
-                color: '$loContrast',
-              }}
-            >
-              {content}
-            </Text>
-          </Box>
-        </TooltipPrimitive.Content>
+            {content}
+          </Text>
+        </Content>
 
         <Box css={{ color: '$transparentExtreme' }}>
           <TooltipPrimitive.Arrow
-            offset={0}
+            offset={5}
             width={11}
             height={5}
             style={{

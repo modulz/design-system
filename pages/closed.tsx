@@ -155,6 +155,17 @@ export default function Closed() {
         <Button css={{ ml: '$4' }}>Left</Button>
       </Tooltip>
 
+      <Tooltip content="This is a really long paragraph of text, to demonstrate how it looks inside a Tooltip. The tooltip has a multiline prop which can be applied to increase the line height and set a max width. Give it a go and see how it works. Cheers.">
+        <Button css={{ ml: '$4' }}>Long text</Button>
+      </Tooltip>
+
+      <Tooltip
+        content="This is a really long paragraph of text, to demonstrate how it looks inside a Tooltip. The tooltip has a multiline prop which can be applied to increase the line height and set a max width. Give it a go and see how it works. Cheers."
+        multiline
+      >
+        <Button css={{ ml: '$4' }}>Long text with multiline</Button>
+      </Tooltip>
+
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
         ProgressBar
       </Text>
