@@ -30,3 +30,7 @@ body,
   position: relative;
   z-index: 0;
 }
+
+img {
+  vertical-align: middle;
+}

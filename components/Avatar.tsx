@@ -19,12 +19,22 @@ export type AvatarProps = AvatarPrimitiveProps &
 export type AvatarVariants = StitchesVariants<typeof Avatar>;
 
 export const StyledAvatar = styled(AvatarPrimitive, {
-  ...styles.root,
+  alignItems: 'center',
+  justifyContent: 'center',
+  verticalAlign: 'middle',
+  overflow: 'hidden',
+  userSelect: 'none',
+  boxSizing: 'border-box',
+  display: 'flex',
   position: 'relative',
   boxShadow: 'inset 0px 0px 1px rgba(0, 0, 0, 0.12)',
-  backgroundImage: 'linear-gradient(gray, black)',
   border: 'none',
+  fontFamily: 'inherit',
+  lineHeight: '1',
+  margin: '0',
   outline: 'none',
+  padding: '0',
+  fontWeight: '500',
 
   variants: {
     size: {
@@ -53,6 +63,59 @@ export const StyledAvatar = styled(AvatarPrimitive, {
         height: '$9',
       },
     },
+    color: {
+      'gray': {
+        backgroundColor: '$gray400',
+      },
+      'red': {
+        backgroundColor: '$red400',
+      },
+      'crimson': {
+        backgroundColor: '$crimson400',
+      },
+      'pink': {
+        backgroundColor: '$pink400',
+      },
+      'purple': {
+        backgroundColor: '$purple400',
+      },
+      'violet': {
+        backgroundColor: '$violet400',
+      },
+      'indigo': {
+        backgroundColor: '$indigo400',
+      },
+      'blue': {
+        backgroundColor: '$blue400',
+      },
+      'turquoise': {
+        backgroundColor: '$turquoise400',
+      },
+      'teal': {
+        backgroundColor: '$teal400',
+      },
+      'green': {
+        backgroundColor: '$green400',
+      },
+      'lime': {
+        backgroundColor: '$lime400',
+      },
+      'yellow': {
+        backgroundColor: '$yellow400',
+      },
+      'orange': {
+        backgroundColor: '$orange400',
+      },
+      'gold': {
+        backgroundColor: '$gold400',
+      },
+      'brown': {
+        backgroundColor: '$brown400',
+      },
+      'bronze': {
+        backgroundColor: '$bronze400',
+      },
+    },
     shape: {
       square: {
         borderRadius: '$2',
@@ -75,10 +138,10 @@ export const StyledAvatar = styled(AvatarPrimitive, {
           right: '0',
           bottom: '0',
           left: '0',
-          backgroundColor: 'rgba(0,0,0,.1)',
+          backgroundColor: 'rgba(0,0,0,.04)',
           opacity: '0',
           pointerEvents: 'none',
-          transition: 'opacity 40ms linear',
+          transition: 'opacity 25ms linear',
         },
         ':hover': {
           '::after': {
@@ -91,11 +154,15 @@ export const StyledAvatar = styled(AvatarPrimitive, {
 });
 
 const AvatarImage = styled(AvatarPrimitive.Image, {
-  ...styles.image,
+  display: 'flex',
+  objectFit: 'cover',
+  boxSizing: 'border-box',
+  height: '100%',
+  width: '100%',
 });
 
 const AvatarFallback = styled(AvatarPrimitive.Fallback, {
-  color: 'white',
+  color: '$hiContrast',
   textTransform: 'uppercase',
 
   variants: {
@@ -104,7 +171,7 @@ const AvatarFallback = styled(AvatarPrimitive.Fallback, {
         fontSize: '11px',
       },
       '2': {
-        fontSize: '$3',
+        fontSize: '$4',
       },
       '3': {
         fontSize: '$6',
@@ -113,7 +180,7 @@ const AvatarFallback = styled(AvatarPrimitive.Fallback, {
         fontSize: '$7',
       },
       '5': {
-        fontSize: '$9',
+        fontSize: '$8',
       },
       '6': {
         fontSize: '$9',
@@ -140,7 +207,8 @@ export function Avatar({
   src,
   fallback,
   size = '2',
-  shape = 'square',
+  color = 'gray',
+  shape = 'circle',
   css,
   status,
   ...props
@@ -154,7 +222,7 @@ export function Avatar({
         width: 'fit-content',
       }}
     >
-      <StyledAvatar {...props} size={size} shape={shape}>
+      <StyledAvatar {...props} size={size} color={color} shape={shape}>
         <AvatarImage alt={alt} src={src} />
         <AvatarFallback size={size}>{fallback}</AvatarFallback>
       </StyledAvatar>

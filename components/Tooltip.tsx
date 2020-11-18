@@ -9,6 +9,12 @@ import {
 import { Box } from './Box';
 import { Text } from './Text';
 
+export type TooltipProps = TooltipPrimitiveProps &
+  TooltipPositionProps & {
+    children: React.ReactElement;
+    content: React.ReactNode;
+  };
+
 const fadeIn = css.keyframes({
   '0%': { opacity: 0 },
   '100%': { opacity: 1 },
@@ -49,12 +55,6 @@ const Position = styled(TooltipPrimitive.Position, {
   },
 });
 
-export type TooltipProps = TooltipPrimitiveProps &
-  TooltipPositionProps & {
-    children: React.ReactElement;
-    content: React.ReactNode;
-  };
-
 export function Tooltip({
   children,
   content,
@@ -74,8 +74,8 @@ export function Tooltip({
         <TooltipPrimitive.Content>
           <Box
             css={{
-              backgroundColor: '$hiContrast',
-              borderRadius: '$2',
+              backgroundColor: '$transparentExtreme',
+              borderRadius: '$1',
               padding: '$1 $2',
               maxWidth: 300,
             }}
@@ -84,7 +84,6 @@ export function Tooltip({
               size="1"
               as="p"
               css={{
-                lineHeight: '17px',
                 color: '$loContrast',
               }}
             >
@@ -93,11 +92,11 @@ export function Tooltip({
           </Box>
         </TooltipPrimitive.Content>
 
-        <Box css={{ color: '$hiContrast' }}>
+        <Box css={{ color: '$transparentExtreme' }}>
           <TooltipPrimitive.Arrow
             offset={0}
-            width={13}
-            height={7}
+            width={11}
+            height={5}
             style={{
               ...styles.arrow,
               fill: 'currentColor',

@@ -9,6 +9,7 @@ import { Flex } from '../components/Flex';
 import { Avatar, AvatarGroup, AvatarNestedItem } from '../components/Avatar';
 import { Status } from '../components/Status';
 import { Subheading } from '../composites/Subheading';
+import { Link2Icon } from '@modulz/radix-icons'
 
 export function Avatars() {
   return (
@@ -19,15 +20,13 @@ export function Avatars() {
           <Flex css={{ ai: 'center', gap: '$6' }}>
             <Avatar
               size="1"
-              shape="square"
               alt="John Smith"
-              src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+              src=""
               fallback="J"
             />
 
             <Avatar
               size="2"
-              shape="square"
               alt="John Smith"
               src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
               fallback="J"
@@ -35,7 +34,6 @@ export function Avatars() {
 
             <Avatar
               size="3"
-              shape="square"
               alt="John Smith"
               src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
               fallback="J"
@@ -43,7 +41,6 @@ export function Avatars() {
 
             <Avatar
               size="4"
-              shape="square"
               alt="John Smith"
               src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
               fallback="J"
@@ -51,7 +48,13 @@ export function Avatars() {
 
             <Avatar
               size="5"
-              shape="square"
+              alt="John Smith"
+              src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+              fallback="J"
+            />
+
+            <Avatar
+              size="6"
               alt="John Smith"
               src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
               fallback="J"
@@ -60,89 +63,72 @@ export function Avatars() {
 
           <Subheading>Avatar fallback</Subheading>
           <Flex css={{ ai: 'center', gap: '$6' }}>
-            <Avatar size="1" shape="square" alt="John Smith" fallback="J" />
+            <Avatar size="1" alt="John Smith" fallback="F" />
+            <Avatar size="2" alt="John Smith" fallback="F" />
+            <Avatar size="3" alt="John Smith" fallback="F" />
+            <Avatar size="4" alt="John Smith" fallback="F" />
+            <Avatar size="5" alt="John Smith" fallback="F" />
+            <Avatar size="6" alt="John Smith" fallback="F" />
+          </Flex>
 
-            <Avatar size="2" shape="square" alt="John Smith" fallback="J" />
-
-            <Avatar size="3" shape="square" alt="John Smith" fallback="J" />
-
-            <Avatar size="4" shape="square" alt="John Smith" fallback="J" />
-
-            <Avatar size="5" shape="square" alt="John Smith" fallback="J" />
+          <Subheading>Avatar colors</Subheading>
+          <Flex css={{ ai: 'center', gap: '$3' }}>
+            <Avatar alt="John Smith" fallback="F" />
+            <Avatar alt="John Smith" fallback="F" color="red" />
+            <Avatar alt="John Smith" fallback="F" color="crimson" />
+            <Avatar alt="John Smith" fallback="F" color="pink" />
+            <Avatar alt="John Smith" fallback="F" color="purple" />
+            <Avatar alt="John Smith" fallback="F" color="violet" />
+            <Avatar alt="John Smith" fallback="F" color="indigo" />
+            <Avatar alt="John Smith" fallback="F" color="blue" />
+            <Avatar alt="John Smith" fallback="F" color="turquoise" />
+            <Avatar alt="John Smith" fallback="F" color="teal" />
+            <Avatar alt="John Smith" fallback="F" color="green" />
+            <Avatar alt="John Smith" fallback="F" color="lime" />
+            <Avatar alt="John Smith" fallback="F" color="yellow" />
+            <Avatar alt="John Smith" fallback="F" color="orange" />
+            <Avatar alt="John Smith" fallback="F" color="gold" />
+            <Avatar alt="John Smith" fallback="F" color="brown" />
+            <Avatar alt="John Smith" fallback="F" color="bronze" />
           </Flex>
 
           <Subheading>Interactive avatar</Subheading>
           <Flex css={{ gap: '$6' }}>
             <Avatar
               size="3"
-              shape="square"
               interactive
               alt="John Smith"
               src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
               fallback="J"
+              // as="button"
             />
 
             <Avatar
               size="3"
-              shape="square"
               interactive
               alt="John Smith"
-              src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+              src=""
               fallback="J"
+              // as="button"
             />
 
             <Avatar
               size="3"
-              shape="square"
               interactive
               alt="John Smith"
+              src=""
+              fallback="J"
+              color="violet"
+              // as="button"
+            />
+
+            <Avatar
+              size="3"
+              interactive
+              alt="John Smith"
+              // as="button"
               fallback={
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="35"
-                  height="35"
-                  viewBox="0 0 35 35"
-                  fill="none"
-                >
-                  <circle
-                    cx="17.5"
-                    cy="17.5"
-                    r="14.5"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  ></circle>
-                  <path d="M12.8184 31.3218L31.8709 20.3218" stroke="currentColor"></path>
-                  <path d="M3.31836 14.8674L22.3709 3.86743" stroke="currentColor"></path>
-                  <path
-                    d="M8.65332 29.1077L25.9738 19.1077"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                  <path
-                    d="M9.21582 16.0815L26.5363 6.08154"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                  ></path>
-                  <path
-                    d="M13.2334 14.2297L22.5099 21.1077"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                  <path
-                    d="M16.6973 12.2302L25.9736 19.1078"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                  <path
-                    d="M9.21582 16.0815L19.0459 23.1078"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                </svg>
+                <Link2Icon />
               }
             />
           </Flex>
@@ -177,6 +163,63 @@ export function Avatars() {
               </Popover.Position> */}
             </Popover>
           </Flex>
+
+          <Subheading>Inactive avatar</Subheading>
+          <Flex css={{ gap: '$2' }}>
+            <Avatar
+              size="2"
+              inactive
+              alt="John Smith"
+              src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+              fallback="D"
+            />
+            <Avatar
+              size="2"
+              inactive
+              alt="John Smith"
+              src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+              fallback="R"
+            />
+            <Avatar
+              size="2"
+              alt="John Smith"
+              src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+              fallback="A"
+            />
+            <Avatar
+              size="2"
+              alt="John Smith"
+              src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+              fallback="J"
+            />
+            <Avatar
+              size="2"
+              inactive
+              alt="John Smith"
+              src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+              fallback="F"
+            />
+          </Flex>
+          <Flex css={{ ai: 'center', gap: '$2' }}>
+            <Avatar alt="John Smith" fallback="F" inactive />
+            <Avatar alt="John Smith" fallback="F" color="red" />
+            <Avatar alt="John Smith" fallback="F" color="crimson" />
+            <Avatar alt="John Smith" fallback="F" color="pink" />
+            <Avatar alt="John Smith" fallback="F" inactive color="purple" />
+            <Avatar alt="John Smith" fallback="F" color="violet" />
+            <Avatar alt="John Smith" fallback="F" color="indigo" />
+            <Avatar alt="John Smith" fallback="F" color="blue" />
+            <Avatar alt="John Smith" fallback="F" inactive color="turquoise" />
+            <Avatar alt="John Smith" fallback="F" inactive color="teal" />
+            <Avatar alt="John Smith" fallback="F" inactive color="green" />
+            <Avatar alt="John Smith" fallback="F" color="lime" />
+            <Avatar alt="John Smith" fallback="F" inactive color="yellow" />
+            <Avatar alt="John Smith" fallback="F" inactive color="orange" />
+            <Avatar alt="John Smith" fallback="F" color="gold" />
+            <Avatar alt="John Smith" fallback="F" color="brown" />
+            <Avatar alt="John Smith" fallback="F" inactive color="bronze" />
+          </Flex>
+
           <Subheading>Grouped avatars</Subheading>
           <Flex>
             <AvatarGroup>
@@ -214,43 +257,71 @@ export function Avatars() {
               <AvatarNestedItem>
                 <Avatar
                   size="2"
-                  shape="square"
-                  inactive
                   alt="John Smith"
                   src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                   fallback="J"
                 />
               </AvatarNestedItem>
-
               <AvatarNestedItem>
                 <Avatar
                   size="2"
-                  shape="square"
                   alt="John Smith"
                   src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                   fallback="J"
                 />
               </AvatarNestedItem>
-
               <AvatarNestedItem>
                 <Avatar
                   size="2"
-                  shape="square"
-                  inactive
                   alt="John Smith"
                   src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                   fallback="J"
                 />
               </AvatarNestedItem>
-
               <AvatarNestedItem>
                 <Avatar
                   size="2"
-                  shape="square"
-                  inactive
                   alt="John Smith"
                   src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                   fallback="J"
+                />
+              </AvatarNestedItem>
+            </AvatarGroup>
+            <AvatarGroup>
+              <AvatarNestedItem>
+                <Avatar
+                  size="2"
+                  alt="John Smith"
+                  src=""
+                  fallback="J"
+                  color="blue"
+                />
+              </AvatarNestedItem>
+              <AvatarNestedItem>
+                <Avatar
+                  size="2"
+                  alt="John Smith"
+                  src=""
+                  fallback="J"
+                  color="violet"
+                />
+              </AvatarNestedItem>
+              <AvatarNestedItem>
+                <Avatar
+                  size="2"
+                  alt="John Smith"
+                  src=""
+                  fallback="J"
+                  color="green"
+                />
+              </AvatarNestedItem>
+              <AvatarNestedItem>
+                <Avatar
+                  size="2"
+                  alt="John Smith"
+                  src=""
+                  fallback="J"
+                  color="yellow"
                 />
               </AvatarNestedItem>
             </AvatarGroup>
@@ -265,7 +336,6 @@ export function Avatars() {
             >
               <Avatar
                 size="3"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -284,7 +354,6 @@ export function Avatars() {
               >
                 <Avatar
                   size="1"
-                  shape="square"
                   alt="John Smith"
                   src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                   fallback="J"
@@ -302,7 +371,6 @@ export function Avatars() {
             >
               <Avatar
                 size="3"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -331,7 +399,6 @@ export function Avatars() {
             >
               <Avatar
                 size="3"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -358,7 +425,6 @@ export function Avatars() {
             >
               <Avatar
                 size="3"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -385,7 +451,6 @@ export function Avatars() {
             >
               <Avatar
                 size="3"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -412,7 +477,6 @@ export function Avatars() {
             >
               <Avatar
                 size="3"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -442,7 +506,6 @@ export function Avatars() {
             >
               <Avatar
                 size="2"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -469,7 +532,6 @@ export function Avatars() {
             >
               <Avatar
                 size="2"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -496,7 +558,6 @@ export function Avatars() {
             >
               <Avatar
                 size="2"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -523,7 +584,6 @@ export function Avatars() {
             >
               <Avatar
                 size="2"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -550,7 +610,6 @@ export function Avatars() {
             >
               <Avatar
                 size="2"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -576,7 +635,6 @@ export function Avatars() {
           <Flex>
             <Avatar
               size="4"
-              shape="square"
               fallback={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -633,7 +691,6 @@ export function Avatars() {
             <button style={{ border: 'none', backgroundColor: 'transparent' }}>
               <Avatar
                 size="5"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -645,7 +702,6 @@ export function Avatars() {
             <button style={{ border: 'none', backgroundColor: 'transparent' }}>
               <Avatar
                 size="5"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -657,7 +713,6 @@ export function Avatars() {
             <button style={{ border: 'none', backgroundColor: 'transparent' }}>
               <Avatar
                 size="5"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -669,7 +724,6 @@ export function Avatars() {
             <button style={{ border: 'none', backgroundColor: 'transparent' }}>
               <Avatar
                 size="5"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"
@@ -681,7 +735,6 @@ export function Avatars() {
             <button style={{ border: 'none', backgroundColor: 'transparent' }}>
               <Avatar
                 size="5"
-                shape="square"
                 alt="John Smith"
                 src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                 fallback="J"

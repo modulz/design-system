@@ -61,16 +61,12 @@ const Position = styled(PopoverPrimitive.Position, {
   '&[data-side=left]': {
     animation: `${fadeIn} 133ms ease-out, ${slideLeft} 100ms ease-out`,
   },
-  '&:focus': {
-    outline: 'none',
-  },
 });
 
 const Content = styled(PopoverPrimitive.Content, {
   ...styles.content,
   minWidth: 200,
   maxWidth: 'fit-content',
-  padding: '$4',
 
   '&:focus': {
     outline: 'none',
@@ -98,7 +94,7 @@ const PopoverContent = React.forwardRef<
       </Close>
     </Content>
     <Box css={{ color: '$panel' }}>
-      <Arrow width={13} height={7} />
+      <Arrow width={11} height={5} />
     </Box>
   </Position>
 ));
