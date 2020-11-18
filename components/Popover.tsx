@@ -28,12 +28,39 @@ const fadeIn = css.keyframes({
   '100%': { opacity: 1 },
 });
 
-const moveDown = css.keyframes({
+const slideUp = css.keyframes({
+  '0%': { transform: 'translateY(10px)' },
+  '100%': { transform: 'translateY(0)' },
+});
+
+const slideDown = css.keyframes({
   '0%': { transform: 'translateY(-10px)' },
   '100%': { transform: 'translateY(0)' },
 });
 
+const slideRight = css.keyframes({
+  '0%': { transform: 'translateX(-10px)' },
+  '100%': { transform: 'translateX(0)' },
+});
+
+const slideLeft = css.keyframes({
+  '0%': { transform: 'translateX(10px)' },
+  '100%': { transform: 'translateX(0)' },
+});
+
 const Position = styled(PopoverPrimitive.Position, {
+  '&[data-side=top]': {
+    animation: `${fadeIn} 133ms ease-out, ${slideUp} 100ms ease-out`,
+  },
+  '&[data-side=bottom]': {
+    animation: `${fadeIn} 133ms ease-out, ${slideDown} 100ms ease-out`,
+  },
+  '&[data-side=right]': {
+    animation: `${fadeIn} 133ms ease-out, ${slideRight} 100ms ease-out`,
+  },
+  '&[data-side=left]': {
+    animation: `${fadeIn} 133ms ease-out, ${slideLeft} 100ms ease-out`,
+  },
   '&:focus': {
     outline: 'none',
   },
@@ -54,10 +81,6 @@ const Close = styled(PopoverPrimitive.Close, {
   ...styles.close,
 });
 
-const Wrapper = styled('div', {
-  animation: `${fadeIn} 333ms ease-out, ${moveDown} 133ms ease-out`,
-});
-
 const Arrow = styled(PopoverPrimitive.Arrow, {
   ...styles.arrow,
   fill: 'currentColor',
@@ -68,21 +91,15 @@ const PopoverContent = React.forwardRef<
   PopoverContentProps
 >(({ children, ...props }, fowardedRef) => (
   <Position sideOffset={0} {...props} ref={fowardedRef}>
-    <Wrapper>
-      <Content as={Panel}>
-        {children}
-        <Close
-          as={IconButton}
-          variant="ghost"
-          css={{ position: 'absolute', top: '$1', right: '$1' }}
-        >
-          <Cross2Icon />
-        </Close>
-      </Content>
-      <Box css={{ color: '$panel' }}>
-        <Arrow width={13} height={7} />
-      </Box>
-    </Wrapper>
+    <Content as={Panel}>
+      {children}
+      <Close as={IconButton} variant="ghost" css={{ position: 'absolute', top: '$1', right: '$1' }}>
+        <Cross2Icon />
+      </Close>
+    </Content>
+    <Box css={{ color: '$panel' }}>
+      <Arrow width={13} height={7} />
+    </Box>
   </Position>
 ));
 

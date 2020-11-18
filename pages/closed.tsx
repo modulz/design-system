@@ -147,6 +147,14 @@ export default function Closed() {
         <Button css={{ ml: '$4' }}>Bottom</Button>
       </Tooltip>
 
+      <Tooltip content="You get the idea." side="right">
+        <Button css={{ ml: '$4' }}>Right</Button>
+      </Tooltip>
+
+      <Tooltip content="You get the idea." side="left">
+        <Button css={{ ml: '$4' }}>Left</Button>
+      </Tooltip>
+
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
         ProgressBar
       </Text>

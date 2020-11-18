@@ -14,8 +14,39 @@ const fadeIn = css.keyframes({
   '100%': { opacity: 1 },
 });
 
-const Wrapper = styled('div', {
-  animation: `${fadeIn} 133ms ease-out`,
+const slideUp = css.keyframes({
+  '0%': { transform: 'translateY(10px)' },
+  '100%': { transform: 'translateY(0)' },
+});
+
+const slideDown = css.keyframes({
+  '0%': { transform: 'translateY(-10px)' },
+  '100%': { transform: 'translateY(0)' },
+});
+
+const slideRight = css.keyframes({
+  '0%': { transform: 'translateX(-10px)' },
+  '100%': { transform: 'translateX(0)' },
+});
+
+const slideLeft = css.keyframes({
+  '0%': { transform: 'translateX(10px)' },
+  '100%': { transform: 'translateX(0)' },
+});
+
+const Position = styled(TooltipPrimitive.Position, {
+  '&[data-side=top]': {
+    animation: `${fadeIn} 133ms ease-out, ${slideUp} 100ms ease-out`,
+  },
+  '&[data-side=bottom]': {
+    animation: `${fadeIn} 133ms ease-out, ${slideDown} 100ms ease-out`,
+  },
+  '&[data-side=right]': {
+    animation: `${fadeIn} 133ms ease-out, ${slideRight} 100ms ease-out`,
+  },
+  '&[data-side=left]': {
+    animation: `${fadeIn} 133ms ease-out, ${slideLeft} 100ms ease-out`,
+  },
 });
 
 export type TooltipProps = TooltipPrimitiveProps &
@@ -39,43 +70,41 @@ export function Tooltip({
           React.cloneElement(children, { ...props, ref: forwardedRef })
         )}
       />
-      <TooltipPrimitive.Position side="top" align="center" sideOffset={0} {...props}>
-        <Wrapper>
-          <TooltipPrimitive.Content>
-            <Box
+      <Position side="top" align="center" sideOffset={0} {...props}>
+        <TooltipPrimitive.Content>
+          <Box
+            css={{
+              backgroundColor: '$hiContrast',
+              borderRadius: '$2',
+              padding: '$1 $2',
+              maxWidth: 300,
+            }}
+          >
+            <Text
+              size="1"
+              as="p"
               css={{
-                backgroundColor: '$hiContrast',
-                borderRadius: '$2',
-                padding: '$1 $2',
-                maxWidth: 300,
+                lineHeight: '17px',
+                color: '$loContrast',
               }}
             >
-              <Text
-                size="1"
-                as="p"
-                css={{
-                  lineHeight: '17px',
-                  color: '$loContrast',
-                }}
-              >
-                {content}
-              </Text>
-            </Box>
-          </TooltipPrimitive.Content>
-
-          <Box css={{ color: '$hiContrast' }}>
-            <TooltipPrimitive.Arrow
-              offset={0}
-              width={13}
-              height={7}
-              style={{
-                ...styles.arrow,
-                fill: 'currentColor',
-              }}
-            />
+              {content}
+            </Text>
           </Box>
-        </Wrapper>
-      </TooltipPrimitive.Position>
+        </TooltipPrimitive.Content>
+
+        <Box css={{ color: '$hiContrast' }}>
+          <TooltipPrimitive.Arrow
+            offset={0}
+            width={13}
+            height={7}
+            style={{
+              ...styles.arrow,
+              fill: 'currentColor',
+            }}
+          />
+        </Box>
+      </Position>
     </TooltipPrimitive>
   );
 }
