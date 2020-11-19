@@ -68,7 +68,6 @@ export const AccordionButton = React.forwardRef<HTMLButtonElement, AccordionButt
     <StyledHeader>
       <StyledButton ref={forwardedRef}>
         {children}
-
         <ChevronDownIcon />
       </StyledButton>
     </StyledHeader>
