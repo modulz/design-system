@@ -31,6 +31,7 @@ import { Tooltip } from '../components/Tooltip';
 import { Dialog } from '../components/Dialog';
 import { Popover } from '../components/Popover';
 import { Checkbox } from '../components/Checkbox';
+import { Radio } from '../components/Radio';
 import { ProgressBar } from '../components/ProgressBar';
 import { AlertDialog } from '../components/AlertDialog';
 import { Tabs } from '../components/Tabs';
@@ -1654,6 +1655,17 @@ function Home() {
             <Container size="2" css={{ py: '$7' }}>
               <Checkbox css={{ mr: '$5' }} />
               <Checkbox size="2" css={{ mr: '$5' }} />
+            </Container>
+          </Section>
+
+          <Flex css={{ jc: 'center' }}>
+            <Separator size="2" />
+          </Flex>
+
+          <Section size="3">
+            <Container size="2" css={{ py: '$7' }}>
+              <Radio css={{ mr: '$5' }} />
+              <Radio size="2" css={{ mr: '$5' }} />
             </Container>
           </Section>
 
