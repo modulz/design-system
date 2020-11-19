@@ -6,7 +6,8 @@ import {
 } from '@interop-ui/react-progress-bar';
 
 const StyledProgressBar = styled(ProgressBarPrimitive, {
-  // ...styles.root,
+  boxSizing: 'border-box',
+  position: 'relative',
   height: '$1',
   overflow: 'hidden',
   borderRadius: '9999px',
@@ -15,7 +16,12 @@ const StyledProgressBar = styled(ProgressBarPrimitive, {
 });
 
 const ProgressBarIndicator = styled(ProgressBarPrimitive.Indicator, {
-  // ...styles.indicator,
+  boxSizing: 'border-box',
+  position: 'absolute',
+  top: 0,
+  right: 0,
+  bottom: 0,
+  left: 0,
   width: '100%',
   backgroundColor: '$gray300',
   transition: 'transform 100ms ease-out',
