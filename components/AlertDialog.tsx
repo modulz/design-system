@@ -3,7 +3,6 @@ import { styled, css, StitchesProps } from '../stitches.config';
 import {
   AlertDialog as AlertDialogPrimitive,
   AlertDialogProps as AlertDialogPrimitiveProps,
-  styles,
   AlertDialogContentProps as AlertDialogPrimitiveContentProps,
 } from '@interop-ui/react-alert-dialog';
 import { Overlay } from './Overlay';
@@ -33,7 +32,11 @@ const moveDown = css.keyframes({
 });
 
 const StyledOverlay = styled(Overlay, {
-  ...styles.overlay,
+  position: 'fixed',
+  top: 0,
+  right: 0,
+  bottom: 0,
+  left: 0,
   animation: `${fadeIn} 125ms ease-out`,
 });
 
@@ -47,7 +50,7 @@ export function AlertDialog({ children, ...props }: AlertDialogProps) {
 }
 
 const StyledContent = styled(AlertDialogPrimitive.Content, {
-  ...styles.content,
+  position: 'fixed',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',

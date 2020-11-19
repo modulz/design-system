@@ -2,7 +2,6 @@ import React from 'react';
 import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 import {
   Avatar as AvatarPrimitive,
-  styles,
   AvatarProps as AvatarPrimitiveProps,
 } from '@interop-ui/react-avatar';
 import { Box } from './Box';
@@ -35,6 +34,7 @@ export const StyledAvatar = styled(AvatarPrimitive, {
   outline: 'none',
   padding: '0',
   fontWeight: '500',
+  color: '$hiContrast',
 
   variants: {
     size: {
@@ -64,55 +64,59 @@ export const StyledAvatar = styled(AvatarPrimitive, {
       },
     },
     color: {
-      'gray': {
+      hiContrast: {
+        backgroundColor: '$hiContrast',
+        color: '$loContrast',
+      },
+      gray: {
         backgroundColor: '$gray400',
       },
-      'red': {
+      red: {
         backgroundColor: '$red400',
       },
-      'crimson': {
+      crimson: {
         backgroundColor: '$crimson400',
       },
-      'pink': {
+      pink: {
         backgroundColor: '$pink400',
       },
-      'purple': {
+      purple: {
         backgroundColor: '$purple400',
       },
-      'violet': {
+      violet: {
         backgroundColor: '$violet400',
       },
-      'indigo': {
+      indigo: {
         backgroundColor: '$indigo400',
       },
-      'blue': {
+      blue: {
         backgroundColor: '$blue400',
       },
-      'turquoise': {
+      turquoise: {
         backgroundColor: '$turquoise400',
       },
-      'teal': {
+      teal: {
         backgroundColor: '$teal400',
       },
-      'green': {
+      green: {
         backgroundColor: '$green400',
       },
-      'lime': {
+      lime: {
         backgroundColor: '$lime400',
       },
-      'yellow': {
+      yellow: {
         backgroundColor: '$yellow400',
       },
-      'orange': {
+      orange: {
         backgroundColor: '$orange400',
       },
-      'gold': {
+      gold: {
         backgroundColor: '$gold400',
       },
-      'brown': {
+      brown: {
         backgroundColor: '$brown400',
       },
-      'bronze': {
+      bronze: {
         backgroundColor: '$bronze400',
       },
     },
@@ -162,7 +166,6 @@ const AvatarImage = styled(AvatarPrimitive.Image, {
 });
 
 const AvatarFallback = styled(AvatarPrimitive.Fallback, {
-  color: '$hiContrast',
   textTransform: 'uppercase',
 
   variants: {
@@ -226,19 +229,21 @@ export function Avatar({
         <AvatarImage alt={alt} src={src} />
         <AvatarFallback size={size}>{fallback}</AvatarFallback>
       </StyledAvatar>
-      <Box
-        css={{
-          position: 'absolute',
-          bottom: '0',
-          right: '0',
-          boxShadow: '0 0 0 3px $loContrast',
-          borderRadius: '$round',
-          mr: '-3px',
-          mb: '-3px',
-        }}
-      >
-        {status && <Status size={size > 2 ? '2' : '1'} color={status} />}
-      </Box>
+      {status && (
+        <Box
+          css={{
+            position: 'absolute',
+            bottom: '0',
+            right: '0',
+            boxShadow: '0 0 0 3px $loContrast',
+            borderRadius: '$round',
+            mr: '-3px',
+            mb: '-3px',
+          }}
+        >
+          <Status size={size > 2 ? '2' : '1'} color={status} />
+        </Box>
+      )}
     </Box>
   );
 }

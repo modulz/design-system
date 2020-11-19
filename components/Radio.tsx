@@ -1,17 +1,16 @@
 import React from 'react';
 import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 import {
-  Checkbox as CheckboxPrimitive,
-  CheckboxProps as CheckboxPrimitiveProps,
-} from '@interop-ui/react-checkbox';
-import { CheckIcon } from '@modulz/radix-icons';
+  RadioGroup as RadioGroupPrimitive,
+  RadioProps as RadioGroupPrimitiveProps,
+} from '@interop-ui/react-radio-group';
 
-export type CheckboxProps = CheckboxPrimitiveProps &
-  StitchesProps<typeof StyledCheckbox> &
-  CheckboxVariants;
-export type CheckboxVariants = StitchesVariants<typeof StyledCheckbox>;
+export type RadioProps = RadioGroupPrimitiveProps &
+  StitchesProps<typeof StyledRadio> &
+  RadioVariants;
+export type RadioVariants = StitchesVariants<typeof StyledRadio>;
 
-const StyledCheckbox = styled(CheckboxPrimitive, {
+const StyledRadio = styled(RadioGroupPrimitive, {
   borderRadius: '$1',
   color: '$hiContrast',
   boxShadow: 'inset 0 0 0 1px $gray600',
@@ -38,7 +37,8 @@ const StyledCheckbox = styled(CheckboxPrimitive, {
     },
   },
 });
-const StyledIndicator = styled(CheckboxPrimitive.Indicator, {
+
+const StyledIndicator = styled(RadioGroupPrimitive.Indicator, {
   alignItems: 'center',
   display: 'flex',
   height: '100%',
@@ -46,12 +46,10 @@ const StyledIndicator = styled(CheckboxPrimitive.Indicator, {
   width: '100%',
 });
 
-export function Checkbox({ size = '1', css, ...props }: CheckboxProps) {
+export function Radio({ size = '1', css, ...props }: RadioProps) {
   return (
-    <StyledCheckbox {...props} size={size}>
-      <StyledIndicator>
-        <CheckIcon />
-      </StyledIndicator>
-    </StyledCheckbox>
+    <StyledRadio {...props} size={size}>
+      <StyledIndicator />
+    </StyledRadio>
   );
 }

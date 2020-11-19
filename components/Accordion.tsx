@@ -2,7 +2,6 @@ import React from 'react';
 import { styled, StitchesProps } from '../stitches.config';
 import {
   Accordion as AccordionPrimitive,
-  styles,
   AccordionProps as AccordionPrimitiveProps,
   AccordionItemProps as AccordionPrimitiveItemProps,
   AccordionButtonProps as AccordionPrimitiveButtonProps,
@@ -16,17 +15,13 @@ export type AccordionButtonProps = AccordionPrimitiveButtonProps &
   StitchesProps<typeof StyledButton>;
 export type AccordionPanelProps = AccordionPrimitivePanelProps & StitchesProps<typeof StyledPanel>;
 
-const StyledAccordion = styled(AccordionPrimitive, {
-  ...styles.root,
-});
+const StyledAccordion = styled(AccordionPrimitive, {});
 
 export function Accordion(props: AccordionProps) {
   return <StyledAccordion {...props} />;
 }
 
 const StyledItem = styled(AccordionPrimitive.Item, {
-  ...styles.item,
-
   borderTop: '1px solid $gray700',
 
   '&:last-of-type': {
@@ -34,12 +29,9 @@ const StyledItem = styled(AccordionPrimitive.Item, {
   },
 });
 
-const StyledHeader = styled(AccordionPrimitive.Header, {
-  ...styles.header,
-});
+const StyledHeader = styled(AccordionPrimitive.Header, {});
 
 const StyledButton = styled(AccordionPrimitive.Button, {
-  ...styles.button,
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
@@ -75,7 +67,6 @@ export const AccordionButton = React.forwardRef<HTMLButtonElement, AccordionButt
 );
 
 const StyledPanel = styled(AccordionPrimitive.Panel, {
-  ...styles.panel,
   p: '$2',
   mt: '$2',
 });

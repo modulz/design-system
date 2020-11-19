@@ -1,11 +1,12 @@
 import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
-import { Separator as SeparatorPrimitive, styles } from '@interop-ui/react-separator';
+import { Separator as SeparatorPrimitive } from '@interop-ui/react-separator';
 
 export type SeparatorProps = StitchesProps<typeof Separator>;
 export type SeparatorVariants = StitchesVariants<typeof Separator>;
 
 export const Separator = styled(SeparatorPrimitive, {
-  ...styles.root,
+  border: 'none',
+  margin: 0,
   flexShrink: 0,
   backgroundColor: '$gray500',
 

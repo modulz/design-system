@@ -3,9 +3,8 @@ import { styled, StitchesProps, css } from '../stitches.config';
 import {
   Popover as PopoverPrimitive,
   PopoverProps as PopoverPrimitiveProps,
-  PopoverPositionProps,
+  PopoverPopperProps,
   PopoverCloseProps as PopoverPrimitiveCloseProps,
-  styles,
 } from '@interop-ui/react-popover';
 import { Cross2Icon } from '@modulz/radix-icons';
 import { Box } from './Box';
@@ -16,7 +15,7 @@ export type { PopoverTriggerProps } from '@interop-ui/react-popover';
 export type PopoverProps = PopoverPrimitiveProps & {
   children: React.ReactNode;
 };
-export type PopoverContentProps = PopoverPositionProps & StitchesProps<typeof Content>;
+export type PopoverContentProps = PopoverPopperProps & StitchesProps<typeof Content>;
 export type PopoverCloseProps = PopoverPrimitiveCloseProps & StitchesProps<typeof Close>;
 
 export function Popover({ children, ...props }: PopoverProps) {
@@ -48,7 +47,7 @@ const slideLeft = css.keyframes({
   '100%': { transform: 'translateX(0)' },
 });
 
-const Position = styled(PopoverPrimitive.Position, {
+const Popper = styled(PopoverPrimitive.Popper, {
   '&[data-side=top]': {
     animation: `${fadeIn} 133ms ease-out, ${slideUp} 100ms ease-out`,
   },
@@ -64,7 +63,6 @@ const Position = styled(PopoverPrimitive.Position, {
 });
 
 const Content = styled(PopoverPrimitive.Content, {
-  ...styles.content,
   minWidth: 200,
   maxWidth: 'fit-content',
   padding: '$4',
@@ -74,20 +72,17 @@ const Content = styled(PopoverPrimitive.Content, {
   },
 });
 
-const Close = styled(PopoverPrimitive.Close, {
-  ...styles.close,
-});
+const Close = styled(PopoverPrimitive.Close, {});
 
 const Arrow = styled(PopoverPrimitive.Arrow, {
-  ...styles.arrow,
   fill: 'currentColor',
 });
 
 const PopoverContent = React.forwardRef<
-  React.ElementRef<typeof PopoverPrimitive.Position>,
+  React.ElementRef<typeof PopoverPrimitive.Popper>,
   PopoverContentProps
 >(({ children, ...props }, fowardedRef) => (
-  <Position sideOffset={0} {...props} ref={fowardedRef}>
+  <Popper sideOffset={0} {...props} ref={fowardedRef}>
     <Content as={Panel}>
       {children}
       <Close as={IconButton} variant="ghost" css={{ position: 'absolute', top: '$1', right: '$1' }}>
@@ -97,7 +92,7 @@ const PopoverContent = React.forwardRef<
     <Box css={{ color: '$panel' }}>
       <Arrow width={11} height={5} />
     </Box>
-  </Position>
+  </Popper>
 ));
 
 Popover.Trigger = PopoverPrimitive.Trigger;

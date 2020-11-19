@@ -90,6 +90,7 @@ export function Avatars() {
             <Avatar alt="John Smith" fallback="F" color="gold" />
             <Avatar alt="John Smith" fallback="F" color="brown" />
             <Avatar alt="John Smith" fallback="F" color="bronze" />
+            <Avatar alt="John Smith" fallback="F" color="hiContrast" />
           </Flex>
 
           <Subheading>Interactive avatar</Subheading>

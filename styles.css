@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   overflow-y: hidden;
 }
@@ -33,4 +39,27 @@ body,
 
 img {
   vertical-align: middle;
+}
+
+button {
+  align-items: center;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-align: inherit;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+button::before,
+button::after {
+  box-sizing: border-box;
 }

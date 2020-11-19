@@ -28,7 +28,7 @@ export function Properties() {
     >
       <ScrollArea>
         <Box css={{ pb: '$9' }}>
-          <Box css={{ borderTop: '1px solid $gray300', py: '$1' }}>
+          <Box css={{ py: '$1' }}>
             <Flex
               css={{
                 px: '$3',

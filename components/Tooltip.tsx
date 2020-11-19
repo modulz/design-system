@@ -2,15 +2,14 @@ import React from 'react';
 import { styled, css } from '../stitches.config';
 import {
   Tooltip as TooltipPrimitive,
-  styles,
   TooltipProps as TooltipPrimitiveProps,
-  TooltipPositionProps,
+  TooltipPopperProps,
 } from '@interop-ui/react-tooltip';
 import { Box } from './Box';
 import { Text } from './Text';
 
 export type TooltipProps = TooltipPrimitiveProps &
-  TooltipPositionProps & {
+  TooltipPopperProps & {
     children: React.ReactElement;
     content: React.ReactNode;
     multiline?: boolean;
@@ -41,7 +40,7 @@ const slideLeft = css.keyframes({
   '100%': { transform: 'translateX(0)' },
 });
 
-const Position = styled(TooltipPrimitive.Position, {
+const Popper = styled(TooltipPrimitive.Popper, {
   '&[data-side=top]': {
     animation: `${fadeIn} 133ms ease-out, ${slideUp} 100ms ease-out`,
   },
@@ -86,7 +85,7 @@ export function Tooltip({
           React.cloneElement(children, { ...props, ref: forwardedRef })
         )}
       />
-      <Position side="top" align="center" {...props}>
+      <Popper side="top" align="center" {...props}>
         <Content multiline={multiline}>
           <Text
             size="1"
@@ -106,12 +105,12 @@ export function Tooltip({
             width={11}
             height={5}
             style={{
-              ...styles.arrow,
+              // ...styles.arrow,
               fill: 'currentColor',
             }}
           />
         </Box>
-      </Position>
+      </Popper>
     </TooltipPrimitive>
   );
 }
