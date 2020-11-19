@@ -2,7 +2,6 @@ import React from 'react';
 import { styled, css } from '../stitches.config';
 import {
   Tooltip as TooltipPrimitive,
-  styles,
   TooltipProps as TooltipPrimitiveProps,
   TooltipPositionProps,
 } from '@interop-ui/react-tooltip';
@@ -58,7 +57,7 @@ export function Tooltip({
             width={11}
             height={5}
             style={{
-              ...styles.arrow,
+              // ...styles.arrow,
               fill: 'currentColor',
             }}
           />

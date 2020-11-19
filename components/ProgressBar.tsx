@@ -3,11 +3,10 @@ import { styled } from '../stitches.config';
 import {
   ProgressBar as ProgressBarPrimitive,
   ProgressBarProps,
-  styles,
 } from '@interop-ui/react-progress-bar';
 
 const StyledProgressBar = styled(ProgressBarPrimitive, {
-  ...styles.root,
+  // ...styles.root,
   height: '$1',
   overflow: 'hidden',
   borderRadius: '9999px',
@@ -16,7 +15,7 @@ const StyledProgressBar = styled(ProgressBarPrimitive, {
 });
 
 const ProgressBarIndicator = styled(ProgressBarPrimitive.Indicator, {
-  ...styles.indicator,
+  // ...styles.indicator,
   width: '100%',
   backgroundColor: '$gray300',
   transition: 'transform 100ms ease-out',

@@ -5,7 +5,6 @@ import {
   PopoverProps as PopoverPrimitiveProps,
   PopoverPositionProps,
   PopoverCloseProps as PopoverPrimitiveCloseProps,
-  styles,
 } from '@interop-ui/react-popover';
 import { Cross2Icon } from '@modulz/radix-icons';
 import { Box } from './Box';
@@ -40,7 +39,7 @@ const Position = styled(PopoverPrimitive.Position, {
 });
 
 const Content = styled(PopoverPrimitive.Content, {
-  ...styles.content,
+  // ...styles.content,
   minWidth: 200,
   maxWidth: 'fit-content',
 
@@ -50,7 +49,7 @@ const Content = styled(PopoverPrimitive.Content, {
 });
 
 const Close = styled(PopoverPrimitive.Close, {
-  ...styles.close,
+  // ...styles.close,
 });
 
 const Wrapper = styled.div({
@@ -58,7 +57,7 @@ const Wrapper = styled.div({
 });
 
 const Arrow = styled(PopoverPrimitive.Arrow, {
-  ...styles.arrow,
+  // ...styles.arrow,
   fill: 'currentColor',
 });
 

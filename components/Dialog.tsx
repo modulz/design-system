@@ -4,7 +4,6 @@ import {
   Dialog as DialogPrimitive,
   DialogContentProps,
   DialogProps as DialogPrimitiveProps,
-  styles,
 } from '@interop-ui/react-dialog';
 import { Cross2Icon } from '@modulz/radix-icons';
 import { Overlay } from './Overlay';
@@ -27,7 +26,7 @@ const moveDown = css.keyframes({
 });
 
 const StyledOverlay = styled(Overlay, {
-  ...styles.overlay,
+  // ...styles.overlay,
   animation: `${fadeIn} 125ms linear`,
 });
 
@@ -41,7 +40,7 @@ export function Dialog({ children, ...props }: DialogProps) {
 }
 
 const StyledContent = styled(DialogPrimitive.Content, {
-  ...styles.content,
+  // ...styles.content,
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
@@ -58,7 +57,7 @@ const StyledContent = styled(DialogPrimitive.Content, {
 });
 
 const StyledCloseButton = styled(DialogPrimitive.Close, {
-  ...styles.close,
+  // ...styles.close,
   position: 'absolute',
   top: '$2',
   right: '$2',
