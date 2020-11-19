@@ -36,6 +36,7 @@ import { ProgressBar } from '../components/ProgressBar';
 import { AlertDialog } from '../components/AlertDialog';
 import { Tabs } from '../components/Tabs';
 import { Label } from '../components/Label';
+import { Skeleton } from '../components/Skeleton';
 
 import { Accordion } from '@interop-ui/react-accordion';
 
@@ -615,6 +616,51 @@ function Home() {
                   we're previewing some longform text here so we can make sure the container width
                   provides an optimal line length for this font size.
                 </Paragraph>
+              </Flex>
+            </Container>
+          </Section>
+
+          <Flex css={{ jc: 'center' }}>
+            <Separator size="2" />
+          </Flex>
+
+          <Section size="3">
+            <Container size="2">
+              <Flex
+                css={{
+                  ai: 'center',
+                  gap: '$5',
+                  fw: 'wrap',
+                  mb: '$7',
+                }}
+              >
+                <Skeleton variant="avatar1" />
+                <Skeleton variant="avatar2" />
+                <Skeleton variant="avatar3" />
+                <Skeleton variant="avatar4" />
+                <Skeleton variant="avatar5" />
+                <Skeleton variant="avatar6" />
+              </Flex>
+              <Flex
+                css={{
+                  fd: 'column',
+                  gap: '$4',
+                  mb: '$7',
+                }}
+              >
+                <Skeleton variant="text" />
+                <Skeleton variant="text" css={{ width: '75%' }} />
+                <Skeleton variant="text" />
+                <Skeleton variant="text" css={{ width: '50%' }} />
+              </Flex>
+              <Flex
+                css={{
+                  fd: 'column',
+                  gap: '$4',
+                  mb: '$7',
+                }}
+              >
+                <Skeleton variant="button" />
               </Flex>
             </Container>
           </Section>
