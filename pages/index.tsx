@@ -1097,131 +1097,27 @@ function Home() {
           <Section size="3">
             <Container size="2">
               <Accordion>
-                <Accordion.Item value="one" style={{ lineHeight: 1 }}>
-                  <Accordion.Button
-                    style={{
-                      width: '100%',
-                      border: 'none',
-                      display: 'block',
-                      padding: 10,
-                      lineHeight: 1,
-                      verticalAlign: 'middle',
-                    }}
-                  >
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645C11.1583 3.45118 10.8417 3.45118 10.6464 3.64645L7.5 6.79289L4.35355 3.64645C4.15829 3.45118 3.84171 3.45118 3.64645 3.64645C3.45118 3.84171 3.45118 4.15829 3.64645 4.35355L6.79289 7.5L3.64645 10.6464C3.45118 10.8417 3.45118 11.1583 3.64645 11.3536C3.84171 11.5488 4.15829 11.5488 4.35355 11.3536L7.5 8.20711L10.6464 11.3536C10.8417 11.5488 11.1583 11.5488 11.3536 11.3536C11.5488 11.1583 11.5488 10.8417 11.3536 10.6464L8.20711 7.5L11.3536 4.35355Z"
-                        fill="currentColor"
-                      />
-                    </svg>
+                <Accordion.Item value="accordion-one">
+                  <Accordion.Button>
+                    <Text size="4">Accordion one</Text>
                   </Accordion.Button>
                   <Accordion.Panel>
-                    <Text size="3">
-                      I’m an investor with Menlo Ventures. I’ve been impressed by what you have been
-                      building at Modulz and wanted to reach out. It’s an area that I’ve been
-                      spending time in alongside with my colleague, who formerly lead product and
-                      growth at Evernote. Would love to connect with you if you are open to it.
+                    <Text size="4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </Text>
                   </Accordion.Panel>
                 </Accordion.Item>
-                <Accordion.Item value="two" style={{ lineHeight: 1 }}>
-                  <Accordion.Button
-                    style={{
-                      width: '100%',
-                      border: 'none',
-                      display: 'block',
-                      padding: 10,
-                      lineHeight: 1,
-                      verticalAlign: 'middle',
-                    }}
-                  >
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645C11.1583 3.45118 10.8417 3.45118 10.6464 3.64645L7.5 6.79289L4.35355 3.64645C4.15829 3.45118 3.84171 3.45118 3.64645 3.64645C3.45118 3.84171 3.45118 4.15829 3.64645 4.35355L6.79289 7.5L3.64645 10.6464C3.45118 10.8417 3.45118 11.1583 3.64645 11.3536C3.84171 11.5488 4.15829 11.5488 4.35355 11.3536L7.5 8.20711L10.6464 11.3536C10.8417 11.5488 11.1583 11.5488 11.3536 11.3536C11.5488 11.1583 11.5488 10.8417 11.3536 10.6464L8.20711 7.5L11.3536 4.35355Z"
-                        fill="currentColor"
-                      />
-                    </svg>
+                <Accordion.Item value="accordion-two">
+                  <Accordion.Button>
+                    <Text size="4">Accordion two</Text>
                   </Accordion.Button>
                   <Accordion.Panel>
-                    <Text size="3">
-                      I’m an investor with Menlo Ventures. I’ve been impressed by what you have been
-                      building at Modulz and wanted to reach out. It’s an area that I’ve been
-                      spending time in alongside with my colleague, who formerly lead product and
-                      growth at Evernote. Would love to connect with you if you are open to it.
-                    </Text>
-                  </Accordion.Panel>
-                </Accordion.Item>
-                <Accordion.Item value="three" disabled style={{ lineHeight: 1 }}>
-                  <Accordion.Button
-                    style={{
-                      width: '100%',
-                      border: 'none',
-                      display: 'block',
-                      padding: 10,
-                      lineHeight: 1,
-                      verticalAlign: 'middle',
-                    }}
-                  >
-                    Three (disabled)
-                  </Accordion.Button>
-                  <Accordion.Panel>
-                    <Text size="3">
-                      I’m an investor with Menlo Ventures. I’ve been impressed by what you have been
-                      building at Modulz and wanted to reach out. It’s an area that I’ve been
-                      spending time in alongside with my colleague, who formerly lead product and
-                      growth at Evernote. Would love to connect with you if you are open to it.
-                    </Text>
-                  </Accordion.Panel>
-                </Accordion.Item>
-                <Accordion.Item value="four" style={{ lineHeight: 1 }}>
-                  <Accordion.Button
-                    style={{
-                      width: '100%',
-                      border: 'none',
-                      display: 'block',
-                      padding: 10,
-                      lineHeight: 1,
-                      verticalAlign: 'middle',
-                    }}
-                  >
-                    <Text>Four</Text>
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645C11.1583 3.45118 10.8417 3.45118 10.6464 3.64645L7.5 6.79289L4.35355 3.64645C4.15829 3.45118 3.84171 3.45118 3.64645 3.64645C3.45118 3.84171 3.45118 4.15829 3.64645 4.35355L6.79289 7.5L3.64645 10.6464C3.45118 10.8417 3.45118 11.1583 3.64645 11.3536C3.84171 11.5488 4.15829 11.5488 4.35355 11.3536L7.5 8.20711L10.6464 11.3536C10.8417 11.5488 11.1583 11.5488 11.3536 11.3536C11.5488 11.1583 11.5488 10.8417 11.3536 10.6464L8.20711 7.5L11.3536 4.35355Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </Accordion.Button>
-                  <Accordion.Panel>
-                    <Text size="3">
-                      I’m an investor with Menlo Ventures. I’ve been impressed by what you have been
-                      building at Modulz and wanted to reach out. It’s an area that I’ve been
-                      spending time in alongside with my colleague, who formerly lead product and
-                      growth at Evernote. Would love to connect with you if you are open to it.
+                    <Text size="4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </Text>
                   </Accordion.Panel>
                 </Accordion.Item>
