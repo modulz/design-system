@@ -15,7 +15,10 @@ export type TabsListProps = TabsListPrimitiveProps & StitchesProps<typeof Styled
 export type TabsPanelProps = TabsPanelPrimitiveProps & StitchesProps<typeof StyledTabsPanel>;
 
 const StyledTabs = styled(TabsPrimitive, {
-  // ...styles.root
+  display: 'flex',
+  '&[data-orientation="horizontal"]': {
+    flexDirection: 'column',
+  },
 });
 
 // Not able to use `forwardRef` here because then I can't add
@@ -30,7 +33,7 @@ export function Tabs(props: TabsProps) {
 }
 
 const StyledTab = styled(TabsPrimitive.Tab, {
-  // ...styles.tab,
+  flexShrink: 0,
   height: '$5',
   display: 'inline-flex',
   lineHeight: 1,
@@ -54,8 +57,11 @@ const Tab = React.forwardRef<HTMLDivElement, TabsTabProps>((props, forwardedRef)
 ));
 
 const StyledTabsList = styled(TabsPrimitive.List, {
-  // ...styles.tabList,
+  flexShrink: 0,
   display: 'flex',
+  '&[data-orientation="vertical"]': {
+    flexDirection: 'column',
+  },
 });
 
 const TabsList = React.forwardRef<HTMLDivElement, TabsListProps>((props, forwardedRef) => (
@@ -66,7 +72,7 @@ const TabsList = React.forwardRef<HTMLDivElement, TabsListProps>((props, forward
 ));
 
 const StyledTabsPanel = styled(TabsPrimitive.Panel, {
-  // ...styles.tabPanel,
+  flexGrow: 1,
   padding: '$2',
   '&:focus': {
     outline: 'none',

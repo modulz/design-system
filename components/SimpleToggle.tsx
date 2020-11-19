@@ -5,7 +5,6 @@ export type SimpleToggleProps = ToggleButtonProps & StitchesProps<typeof SimpleT
 export type SimpleToggleVariants = StitchesVariants<typeof SimpleToggle>;
 
 export const SimpleToggle = styled(ToggleButton, {
-  // ...styles.root,
   display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'center',
