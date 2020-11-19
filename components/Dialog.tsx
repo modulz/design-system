@@ -26,7 +26,11 @@ const moveDown = css.keyframes({
 });
 
 const StyledOverlay = styled(Overlay, {
-  // ...styles.overlay,
+  position: 'fixed',
+  top: 0,
+  right: 0,
+  bottom: 0,
+  left: 0,
   animation: `${fadeIn} 125ms linear`,
 });
 
@@ -40,7 +44,7 @@ export function Dialog({ children, ...props }: DialogProps) {
 }
 
 const StyledContent = styled(DialogPrimitive.Content, {
-  // ...styles.content,
+  position: 'fixed',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
@@ -57,7 +61,6 @@ const StyledContent = styled(DialogPrimitive.Content, {
 });
 
 const StyledCloseButton = styled(DialogPrimitive.Close, {
-  // ...styles.close,
   position: 'absolute',
   top: '$2',
   right: '$2',
