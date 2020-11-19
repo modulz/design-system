@@ -58,6 +58,9 @@ export type { ImageProps } from './components/Image';
 export { Input } from './components/Input';
 export type { InputProps, InputVariants } from './components/Input';
 
+export { Kbd } from './components/Kbd';
+export type { KbdProps } from './components/Kbd';
+
 export { Link } from './components/Link';
 export type { LinkProps, LinkVariants } from './components/Link';
 
@@ -87,6 +90,9 @@ export type { SectionProps, SectionVariants } from './components/Section';
 export { Separator } from './components/Separator';
 export type { SeparatorProps, SeparatorVariants } from './components/Separator';
 
+export { Skeleton } from './components/Skeleton';
+export type { SkeletonProps, SkeletonVariants } from './components/Skeleton';
+
 export { Status } from './components/Status';
 export type { StatusProps, StatusVariants } from './components/Status';
 
@@ -107,6 +113,9 @@ export type { TooltipProps } from './components/Tooltip';
 
 export { TreeItem } from './components/TreeItem';
 export type { TreeItemProps, TreeItemVariants } from './components/TreeItem';
+
+export { VerifiedBadge } from './components/VerifiedBadge';
+export type { VerifiedBadgeProps } from './components/VerifiedBadge';
 
 // Composites
 export { Heading } from './composites/Heading';
