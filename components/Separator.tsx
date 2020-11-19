@@ -5,7 +5,7 @@ export type SeparatorProps = StitchesProps<typeof Separator>;
 export type SeparatorVariants = StitchesVariants<typeof Separator>;
 
 export const Separator = styled(SeparatorPrimitive, {
-  // ...styles.root,
+  border: 'none',
   flexShrink: 0,
   backgroundColor: '$gray500',
 
