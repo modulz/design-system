@@ -1,3 +1,4 @@
+import React from 'react';
 import { Text, TextProps } from '../components/Text';
 
 export type SubtitleProps = Omit<TextProps, 'size'>;

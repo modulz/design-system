@@ -1,4 +1,4 @@
-import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
+import { styled, StitchesProps } from '../stitches.config';
 
 export type KbdProps = StitchesProps<typeof Kbd>;
 

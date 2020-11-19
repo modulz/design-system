@@ -32,8 +32,7 @@
     "@interop-ui/react-tooltip": "0.0.1-12",
     "@interop-ui/react-utils": "0.0.1-12",
     "@modulz/radix-icons": "^3.2.0",
-    "@stitches/react": "0.0.3-canary.4",
-    "framer-motion": "^2.9.4"
+    "@stitches/react": "0.0.3-canary.4"
   },
   "devDependencies": {
     "@next/mdx": "^10.0.1",
