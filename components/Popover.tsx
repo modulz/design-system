@@ -3,7 +3,7 @@ import { styled, StitchesProps, css } from '../stitches.config';
 import {
   Popover as PopoverPrimitive,
   PopoverProps as PopoverPrimitiveProps,
-  PopoverPositionProps,
+  PopoverPopperProps,
   PopoverCloseProps as PopoverPrimitiveCloseProps,
 } from '@interop-ui/react-popover';
 import { Cross2Icon } from '@modulz/radix-icons';
@@ -15,7 +15,7 @@ export type { PopoverTriggerProps } from '@interop-ui/react-popover';
 export type PopoverProps = PopoverPrimitiveProps & {
   children: React.ReactNode;
 };
-export type PopoverContentProps = PopoverPositionProps & StitchesProps<typeof Content>;
+export type PopoverContentProps = PopoverPopperProps & StitchesProps<typeof Content>;
 export type PopoverCloseProps = PopoverPrimitiveCloseProps & StitchesProps<typeof Close>;
 
 export function Popover({ children, ...props }: PopoverProps) {
@@ -32,7 +32,7 @@ const moveDown = css.keyframes({
   '100%': { transform: 'translateY(0)' },
 });
 
-const Position = styled(PopoverPrimitive.Position, {
+const Popper = styled(PopoverPrimitive.Popper, {
   '&:focus': {
     outline: 'none',
   },
@@ -47,8 +47,7 @@ const Content = styled(PopoverPrimitive.Content, {
   },
 });
 
-const Close = styled(PopoverPrimitive.Close, {
-});
+const Close = styled(PopoverPrimitive.Close, {});
 
 const Wrapper = styled.div({
   animation: `${fadeIn} 50ms linear, ${moveDown} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
@@ -59,10 +58,10 @@ const Arrow = styled(PopoverPrimitive.Arrow, {
 });
 
 const PopoverContent = React.forwardRef<
-  React.ElementRef<typeof PopoverPrimitive.Position>,
+  React.ElementRef<typeof PopoverPrimitive.Popper>,
   PopoverContentProps
 >(({ children, ...props }, fowardedRef) => (
-  <Position sideOffset={0} {...props} ref={fowardedRef}>
+  <Popper sideOffset={0} {...props} ref={fowardedRef}>
     <Wrapper>
       <Content as={Panel}>
         {children}
@@ -78,7 +77,7 @@ const PopoverContent = React.forwardRef<
         <Arrow width={11} height={5} />
       </Box>
     </Wrapper>
-  </Position>
+  </Popper>
 ));
 
 Popover.Trigger = PopoverPrimitive.Trigger;

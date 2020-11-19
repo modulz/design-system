@@ -3,13 +3,13 @@ import { styled, css } from '../stitches.config';
 import {
   Tooltip as TooltipPrimitive,
   TooltipProps as TooltipPrimitiveProps,
-  TooltipPositionProps,
+  TooltipPopperProps,
 } from '@interop-ui/react-tooltip';
 import { Box } from './Box';
 import { Text } from './Text';
 
 export type TooltipProps = TooltipPrimitiveProps &
-  TooltipPositionProps & {
+  TooltipPopperProps & {
     children: React.ReactElement;
     content: React.ReactNode;
   };
@@ -29,7 +29,7 @@ export function Tooltip({
           React.cloneElement(children, { ...props, ref: forwardedRef })
         )}
       />
-      <TooltipPrimitive.Position side="top" align="center" sideOffset={0} {...props}>
+      <TooltipPrimitive.Popper side="top" align="center" sideOffset={0} {...props}>
         <TooltipPrimitive.Content>
           <Box
             css={{
@@ -62,7 +62,7 @@ export function Tooltip({
             }}
           />
         </Box>
-      </TooltipPrimitive.Position>
+      </TooltipPrimitive.Popper>
     </TooltipPrimitive>
   );
 }
