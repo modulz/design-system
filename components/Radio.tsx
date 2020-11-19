@@ -2,12 +2,13 @@ import React from 'react';
 import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 import {
   RadioGroup as RadioGroupPrimitive,
-  RadioProps as RadioGroupPrimitiveProps
+  RadioProps as RadioGroupPrimitiveProps,
 } from '@interop-ui/react-radio-group';
 
 export type RadioProps = RadioGroupPrimitiveProps &
-  StitchesProps<typeof Radio>;
-export type RadioVariants = StitchesVariants<typeof Radio>;
+  StitchesProps<typeof StyledRadio> &
+  RadioVariants;
+export type RadioVariants = StitchesVariants<typeof StyledRadio>;
 
 const StyledRadio = styled(RadioGroupPrimitive, {
   borderRadius: '$1',
@@ -33,8 +34,8 @@ const StyledRadio = styled(RadioGroupPrimitive, {
         width: '$5',
         height: '$5',
       },
-    }
-  }
+    },
+  },
 });
 
 const StyledIndicator = styled(RadioGroupPrimitive.Indicator, {
@@ -45,11 +46,7 @@ const StyledIndicator = styled(RadioGroupPrimitive.Indicator, {
   width: '100%',
 });
 
-export function Radio({
-  size = '1',
-  css,
-  ...props
-}: RadioGroupPrimitiveProps) {
+export function Radio({ size = '1', css, ...props }: RadioProps) {
   return (
     <StyledRadio {...props} size={size}>
       <StyledIndicator />

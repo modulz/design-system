@@ -2,13 +2,14 @@ import React from 'react';
 import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 import {
   Checkbox as CheckboxPrimitive,
-  CheckboxProps as CheckboxPrimitiveProps
+  CheckboxProps as CheckboxPrimitiveProps,
 } from '@interop-ui/react-checkbox';
-import { CheckIcon } from '@modulz/radix-icons'
+import { CheckIcon } from '@modulz/radix-icons';
 
 export type CheckboxProps = CheckboxPrimitiveProps &
-  StitchesProps<typeof Checkbox>;
-export type CheckboxVariants = StitchesVariants<typeof Checkbox>;
+  StitchesProps<typeof StyledCheckbox> &
+  CheckboxVariants;
+export type CheckboxVariants = StitchesVariants<typeof StyledCheckbox>;
 
 const StyledCheckbox = styled(CheckboxPrimitive, {
   borderRadius: '$1',
@@ -34,8 +35,8 @@ const StyledCheckbox = styled(CheckboxPrimitive, {
         width: '$5',
         height: '$5',
       },
-    }
-  }
+    },
+  },
 });
 const StyledIndicator = styled(CheckboxPrimitive.Indicator, {
   alignItems: 'center',
@@ -45,11 +46,7 @@ const StyledIndicator = styled(CheckboxPrimitive.Indicator, {
   width: '100%',
 });
 
-export function Checkbox({
-  size = '1',
-  css,
-  ...props
-}: CheckboxPrimitiveProps) {
+export function Checkbox({ size = '1', css, ...props }: CheckboxProps) {
   return (
     <StyledCheckbox {...props} size={size}>
       <StyledIndicator>

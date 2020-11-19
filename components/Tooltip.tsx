@@ -40,7 +40,7 @@ const slideLeft = css.keyframes({
   '100%': { transform: 'translateX(0)' },
 });
 
-const Position = styled(TooltipPrimitive.Position, {
+const Popper = styled(TooltipPrimitive.Popper, {
   '&[data-side=top]': {
     animation: `${fadeIn} 133ms ease-out, ${slideUp} 100ms ease-out`,
   },
@@ -85,7 +85,7 @@ export function Tooltip({
           React.cloneElement(children, { ...props, ref: forwardedRef })
         )}
       />
-      <Position side="top" align="center" {...props}>
+      <Popper side="top" align="center" {...props}>
         <Content multiline={multiline}>
           <Text
             size="1"
@@ -110,7 +110,7 @@ export function Tooltip({
             }}
           />
         </Box>
-      </Position>
+      </Popper>
     </TooltipPrimitive>
   );
 }
