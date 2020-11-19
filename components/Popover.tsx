@@ -39,7 +39,6 @@ const Position = styled(PopoverPrimitive.Position, {
 });
 
 const Content = styled(PopoverPrimitive.Content, {
-  // ...styles.content,
   minWidth: 200,
   maxWidth: 'fit-content',
 
@@ -49,7 +48,6 @@ const Content = styled(PopoverPrimitive.Content, {
 });
 
 const Close = styled(PopoverPrimitive.Close, {
-  // ...styles.close,
 });
 
 const Wrapper = styled.div({
@@ -57,7 +55,6 @@ const Wrapper = styled.div({
 });
 
 const Arrow = styled(PopoverPrimitive.Arrow, {
-  // ...styles.arrow,
   fill: 'currentColor',
 });
 
