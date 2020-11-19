@@ -31,7 +31,7 @@ export const IconButton = styled('button', {
   // Custom
   backgroundColor: '$loContrast',
   border: '1px solid $gray600',
-  borderRadius: '$round',
+  borderRadius: '$1',
   height: '$5',
   width: '$5',
   transition: 'all 40ms linear',
