@@ -9,7 +9,9 @@ import { Text } from './Text';
 export type LabelProps = LabelPrimitiveProps & StitchesProps<typeof StyledLabel>;
 
 const StyledLabel = styled(Text, {
-  // ...styles.root,
+  display: 'inline-block',
+  verticalAlign: 'middle',
+  cursor: 'default',
 });
 
 export const Label = React.forwardRef<HTMLSpanElement, LabelProps>((props, forwardedRef) => (
