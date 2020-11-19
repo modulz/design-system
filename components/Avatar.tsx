@@ -2,7 +2,6 @@ import React from 'react';
 import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 import {
   Avatar as AvatarPrimitive,
-  styles,
   AvatarProps as AvatarPrimitiveProps,
 } from '@interop-ui/react-avatar';
 import { Box } from './Box';
