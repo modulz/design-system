@@ -6,6 +6,7 @@ export type SeparatorVariants = StitchesVariants<typeof Separator>;
 
 export const Separator = styled(SeparatorPrimitive, {
   border: 'none',
+  margin: 0,
   flexShrink: 0,
   backgroundColor: '$gray500',
 

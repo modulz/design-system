@@ -2,6 +2,7 @@ import React from 'react';
 import { styled, StitchesProps } from '../stitches.config';
 import {
   Accordion as AccordionPrimitive,
+  styles,
   AccordionProps as AccordionPrimitiveProps,
   AccordionItemProps as AccordionPrimitiveItemProps,
   AccordionButtonProps as AccordionPrimitiveButtonProps,
@@ -16,7 +17,7 @@ export type AccordionButtonProps = AccordionPrimitiveButtonProps &
 export type AccordionPanelProps = AccordionPrimitivePanelProps & StitchesProps<typeof StyledPanel>;
 
 const StyledAccordion = styled(AccordionPrimitive, {
-  maxWidth: '20em',
+  ...styles.root,
 });
 
 export function Accordion(props: AccordionProps) {
@@ -24,7 +25,9 @@ export function Accordion(props: AccordionProps) {
 }
 
 const StyledItem = styled(AccordionPrimitive.Item, {
-  borderBottom: '1px solid purple',
+  ...styles.item,
+
+  borderTop: '1px solid $gray700',
 
   '&:last-of-type': {
     borderBottom: '1px solid $gray700',
@@ -32,19 +35,16 @@ const StyledItem = styled(AccordionPrimitive.Item, {
 });
 
 const StyledHeader = styled(AccordionPrimitive.Header, {
-  margin: 0,
+  ...styles.header,
 });
 
 const StyledButton = styled(AccordionPrimitive.Button, {
-  width: '100%',
-  boxSizing: 'border-box',
-  appearance: 'none',
-  border: 'none',
-  padding: 10,
-  backgroundColor: 'black',
-  color: 'white',
-  fontFamily: 'inherit',
-  fontSize: '1.2em',
+  ...styles.button,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  p: '$2',
+  color: '$hiContrast',
 
   '&:hover': {
     backgroundColor: '$gray200',
@@ -75,8 +75,9 @@ export const AccordionButton = React.forwardRef<HTMLButtonElement, AccordionButt
 );
 
 const StyledPanel = styled(AccordionPrimitive.Panel, {
-  padding: 10,
-  lineHeight: 1.5,
+  ...styles.panel,
+  p: '$2',
+  mt: '$2',
 });
 
 Accordion.Item = StyledItem;
