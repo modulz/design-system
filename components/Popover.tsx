@@ -27,20 +27,45 @@ const fadeIn = css.keyframes({
   '100%': { opacity: 1 },
 });
 
-const moveDown = css.keyframes({
-  '0%': { transform: 'translateY(-3px)' },
+const slideUp = css.keyframes({
+  '0%': { transform: 'translateY(10px)' },
   '100%': { transform: 'translateY(0)' },
 });
 
-const Popper = styled(PopoverPrimitive.Popper, {
-  '&:focus': {
-    outline: 'none',
+const slideDown = css.keyframes({
+  '0%': { transform: 'translateY(-10px)' },
+  '100%': { transform: 'translateY(0)' },
+});
+
+const slideRight = css.keyframes({
+  '0%': { transform: 'translateX(-10px)' },
+  '100%': { transform: 'translateX(0)' },
+});
+
+const slideLeft = css.keyframes({
+  '0%': { transform: 'translateX(10px)' },
+  '100%': { transform: 'translateX(0)' },
+});
+
+const Position = styled(PopoverPrimitive.Position, {
+  '&[data-side=top]': {
+    animation: `${fadeIn} 133ms ease-out, ${slideUp} 100ms ease-out`,
+  },
+  '&[data-side=bottom]': {
+    animation: `${fadeIn} 133ms ease-out, ${slideDown} 100ms ease-out`,
+  },
+  '&[data-side=right]': {
+    animation: `${fadeIn} 133ms ease-out, ${slideRight} 100ms ease-out`,
+  },
+  '&[data-side=left]': {
+    animation: `${fadeIn} 133ms ease-out, ${slideLeft} 100ms ease-out`,
   },
 });
 
 const Content = styled(PopoverPrimitive.Content, {
   minWidth: 200,
   maxWidth: 'fit-content',
+  padding: '$4',
 
   '&:focus': {
     outline: 'none',
@@ -48,10 +73,6 @@ const Content = styled(PopoverPrimitive.Content, {
 });
 
 const Close = styled(PopoverPrimitive.Close, {});
-
-const Wrapper = styled.div({
-  animation: `${fadeIn} 50ms linear, ${moveDown} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
-});
 
 const Arrow = styled(PopoverPrimitive.Arrow, {
   fill: 'currentColor',
@@ -61,23 +82,17 @@ const PopoverContent = React.forwardRef<
   React.ElementRef<typeof PopoverPrimitive.Popper>,
   PopoverContentProps
 >(({ children, ...props }, fowardedRef) => (
-  <Popper sideOffset={0} {...props} ref={fowardedRef}>
-    <Wrapper>
-      <Content as={Panel}>
-        {children}
-        <Close
-          as={IconButton}
-          variant="ghost"
-          css={{ position: 'absolute', top: '$1', right: '$1' }}
-        >
-          <Cross2Icon />
-        </Close>
-      </Content>
-      <Box css={{ color: '$panel' }}>
-        <Arrow width={11} height={5} />
-      </Box>
-    </Wrapper>
-  </Popper>
+  <Position sideOffset={0} {...props} ref={fowardedRef}>
+    <Content as={Panel}>
+      {children}
+      <Close as={IconButton} variant="ghost" css={{ position: 'absolute', top: '$1', right: '$1' }}>
+        <Cross2Icon />
+      </Close>
+    </Content>
+    <Box css={{ color: '$panel' }}>
+      <Arrow width={11} height={5} />
+    </Box>
+  </Position>
 ));
 
 Popover.Trigger = PopoverPrimitive.Trigger;

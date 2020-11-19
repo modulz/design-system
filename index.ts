@@ -108,4 +108,21 @@ export type { TooltipProps } from './components/Tooltip';
 export { TreeItem } from './components/TreeItem';
 export type { TreeItemProps, TreeItemVariants } from './components/TreeItem';
 
+// Composites
+export { Heading } from './composites/Heading';
+export type { HeadingProps } from './composites/Heading';
+
+export { Paragraph } from './composites/Paragraph';
+export type { ParagraphProps } from './composites/Paragraph';
+
+export { Subheading } from './composites/Subheading';
+export type { SubheadingProps } from './composites/Subheading';
+
+export { Subtitle } from './composites/Subtitle';
+export type { SubtitleProps } from './composites/Subtitle';
+
+export { Title } from './composites/Title';
+export type { TitleProps } from './composites/Title';
+
+// Stitches
 export { css, styled, theme, darkTheme, darkThemeClass } from './stitches.config';

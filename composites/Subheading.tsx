@@ -1,9 +1,12 @@
-import { Text } from '../components/Text';
+import { Text, TextProps } from '../components/Text';
 
-export function Subheading(props) {
+export type SubheadingProps = Omit<TextProps, 'size'>;
+
+export function Subheading(props: SubheadingProps) {
   return (
     <Text
       as="h4"
+      {...props}
       size={{
         initial: '5',
         bp2: '6',
@@ -11,17 +14,14 @@ export function Subheading(props) {
       css={{
         fontWeight: 500,
         fontVariantNumeric: 'proportional-nums',
-        ...props.css,
-        initial: {
-          lineHeight: '25px',
-          ...props.initial,
-        },
+        lineHeight: '25px',
+        ...(props.css as any),
+
         bp2: {
           lineHeight: '30px',
-          ...props.bp2,
+          ...(props.css?.bp2 as any),
         },
       }}
-      {...props}
     />
   );
 }

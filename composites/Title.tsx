@@ -1,25 +1,25 @@
-import { Text } from '../components/Text';
+import { Text, TextProps } from '../components/Text';
 
-export function Title(props) {
+export type TitleProps = Omit<TextProps, 'size'>;
+
+export function Title(props: TitleProps) {
   return (
     <Text
       as="h1"
+      {...props}
       size={{
         initial: '8',
         bp2: '9',
       }}
-      {...props}
       css={{
         fontWeight: 500,
         fontVariantNumeric: 'proportional-nums',
-        ...props.css,
-        initial: {
-          lineHeight: '35px',
-          ...props.initial,
-        },
+        lineHeight: '35px',
+        ...(props.css as any),
+
         bp2: {
           lineHeight: '55px',
-          ...props.bp2,
+          ...(props.css?.bp2 as any),
         },
       }}
     />
