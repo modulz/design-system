@@ -11,7 +11,7 @@ export type RadioProps = RadioGroupPrimitiveProps &
 export type RadioVariants = StitchesVariants<typeof StyledRadio>;
 
 const StyledRadio = styled(RadioGroupPrimitive, {
-  borderRadius: '$1',
+  borderRadius: '$round',
   color: '$hiContrast',
   boxShadow: 'inset 0 0 0 1px $gray600',
   overflow: 'hidden',

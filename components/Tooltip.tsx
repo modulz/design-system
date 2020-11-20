@@ -15,9 +15,7 @@ export type TooltipProps = TooltipPrimitiveProps &
     multiline?: boolean;
   };
 
-const Popper = styled(TooltipPrimitive.Popper, {
-
-});
+const Popper = styled(TooltipPrimitive.Popper, {});
 
 const Content = styled(TooltipPrimitive.Content, {
   backgroundColor: '$transparentExtreme',
