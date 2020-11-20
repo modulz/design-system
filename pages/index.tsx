@@ -178,7 +178,7 @@ function Home() {
               </Tooltip>
             </Box>
             <Box css={{ mr: '$3' }}>
-              <Tooltip content="Box (B)" side="bottom" align="center">
+              <Tooltip content="Like how in Gmail, the search input is left aligned with the content you're searching. I don't think it works well to have a tiny search button hidden over in the corner, disjointed from the content you're searching." side="bottom" align="center" multiline>
                 <IconButton variant="ghost">
                   <svg
                     width="15"
