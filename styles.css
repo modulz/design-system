@@ -48,6 +48,7 @@ button {
   border: none;
   box-sizing: border-box;
   display: inline-flex;
+  font: inherit;
   justify-content: center;
   line-height: 1;
   margin: 0;
@@ -62,4 +63,14 @@ button {
 button::before,
 button::after {
   box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
