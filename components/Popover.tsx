@@ -28,37 +28,37 @@ const fadeIn = css.keyframes({
 });
 
 const slideUp = css.keyframes({
-  '0%': { transform: 'translateY(10px)' },
+  '0%': { transform: 'translateY(3px)' },
   '100%': { transform: 'translateY(0)' },
 });
 
 const slideDown = css.keyframes({
-  '0%': { transform: 'translateY(-10px)' },
+  '0%': { transform: 'translateY(-3px)' },
   '100%': { transform: 'translateY(0)' },
 });
 
 const slideRight = css.keyframes({
-  '0%': { transform: 'translateX(-10px)' },
+  '0%': { transform: 'translateX(-3px)' },
   '100%': { transform: 'translateX(0)' },
 });
 
 const slideLeft = css.keyframes({
-  '0%': { transform: 'translateX(10px)' },
+  '0%': { transform: 'translateX(3px)' },
   '100%': { transform: 'translateX(0)' },
 });
 
 const Popper = styled(PopoverPrimitive.Popper, {
   '&[data-side=top]': {
-    animation: `${fadeIn} 133ms ease-out, ${slideUp} 100ms ease-out`,
+    animation: `${fadeIn} 125ms cubic-bezier(0.22, 1, 0.36, 1), ${slideUp} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
   },
   '&[data-side=bottom]': {
-    animation: `${fadeIn} 133ms ease-out, ${slideDown} 100ms ease-out`,
+    animation: `${fadeIn} 125ms cubic-bezier(0.22, 1, 0.36, 1), ${slideDown} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
   },
   '&[data-side=right]': {
-    animation: `${fadeIn} 133ms ease-out, ${slideRight} 100ms ease-out`,
+    animation: `${fadeIn} 125ms cubic-bezier(0.22, 1, 0.36, 1), ${slideRight} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
   },
   '&[data-side=left]': {
-    animation: `${fadeIn} 133ms ease-out, ${slideLeft} 100ms ease-out`,
+    animation: `${fadeIn} 125ms cubic-bezier(0.22, 1, 0.36, 1), ${slideLeft} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
   },
 });
 

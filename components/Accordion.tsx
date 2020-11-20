@@ -22,10 +22,10 @@ export function Accordion(props: AccordionProps) {
 }
 
 const StyledItem = styled(AccordionPrimitive.Item, {
-  borderTop: '1px solid $gray700',
+  borderTop: '1px solid $gray500',
 
   '&:last-of-type': {
-    borderBottom: '1px solid $gray700',
+    borderBottom: '1px solid $gray500',
   },
 });
 
@@ -37,14 +37,19 @@ const StyledButton = styled(AccordionPrimitive.Button, {
   justifyContent: 'space-between',
   p: '$2',
   color: '$hiContrast',
+  width: '100%',
 
   '&:hover': {
-    backgroundColor: '$gray200',
+    backgroundColor: '$gray100',
   },
 
   '&:focus': {
     outline: 'none',
     boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
+  },
+
+  svg: {
+    transition: 'transform 175ms cubic-bezier(0.65, 0, 0.35, 1)'
   },
 
   // TODO: check if there should be a data-state attr
@@ -68,7 +73,6 @@ export const AccordionButton = React.forwardRef<HTMLButtonElement, AccordionButt
 
 const StyledPanel = styled(AccordionPrimitive.Panel, {
   p: '$2',
-  mt: '$2',
 });
 
 Accordion.Item = StyledItem;

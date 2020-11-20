@@ -37,8 +37,7 @@ import { AlertDialog } from '../components/AlertDialog';
 import { Tabs } from '../components/Tabs';
 import { Label } from '../components/Label';
 import { Skeleton } from '../components/Skeleton';
-
-import { Accordion } from '@interop-ui/react-accordion';
+import { Accordion } from '../components/Accordion';
 
 import { Title } from '../composites/Title';
 import { Subtitle } from '../composites/Subtitle';
@@ -178,7 +177,7 @@ function Home() {
               </Tooltip>
             </Box>
             <Box css={{ mr: '$3' }}>
-              <Tooltip content="Box (B)" side="bottom" align="center">
+              <Tooltip content="Like how in Gmail, the search input is left aligned with the content you're searching. I don't think it works well to have a tiny search button hidden over in the corner, disjointed from the content you're searching." side="bottom" align="center" multiline>
                 <IconButton variant="ghost">
                   <svg
                     width="15"
@@ -1142,32 +1141,48 @@ function Home() {
 
           <Section size="3">
             <Container size="2">
-              <Accordion>
-                <Accordion.Item value="accordion-one">
-                  <Accordion.Button>
-                    <Text size="4">Accordion one</Text>
-                  </Accordion.Button>
-                  <Accordion.Panel>
-                    <Text size="4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </Text>
-                  </Accordion.Panel>
-                </Accordion.Item>
-                <Accordion.Item value="accordion-two">
-                  <Accordion.Button>
-                    <Text size="4">Accordion two</Text>
-                  </Accordion.Button>
-                  <Accordion.Panel>
-                    <Text size="4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </Text>
-                  </Accordion.Panel>
-                </Accordion.Item>
-              </Accordion>
+            <Accordion>
+              <Accordion.Item value="accordion-one">
+                <Accordion.Button>
+                  <Text size="3" css={{ fontWeight: 500 }}>Accordion one</Text>
+                </Accordion.Button>
+                <Accordion.Panel>
+                  <Text size="3" css={{ lineHeight: '23px' }}>
+                    The other main improvement is with tables, which we'll probably use a lot. With horizontal overflow on small devices and when zoomed in, tables are a pain to navigate. I added a focus wrapper that will announce the table context to the user when focused, which also allows keyboard users to navigate the overflow more easily.
+                  </Text>
+                </Accordion.Panel>
+              </Accordion.Item>
+              <Accordion.Item value="accordion-two">
+                <Accordion.Button>
+                  <Text size="3" css={{ fontWeight: 500 }}>Accordion two</Text>
+                </Accordion.Button>
+                <Accordion.Panel>
+                  <Text size="3" css={{ lineHeight: '23px' }}>
+                    The other main improvement is with tables, which we'll probably use a lot. With horizontal overflow on small devices and when zoomed in, tables are a pain to navigate. I added a focus wrapper that will announce the table context to the user when focused, which also allows keyboard users to navigate the overflow more easily.
+                  </Text>
+                </Accordion.Panel>
+              </Accordion.Item>
+              <Accordion.Item value="accordion-three">
+                <Accordion.Button>
+                  <Text size="3" css={{ fontWeight: 500 }}>Accordion one</Text>
+                </Accordion.Button>
+                <Accordion.Panel>
+                  <Text size="3" css={{ lineHeight: '23px' }}>
+                    The other main improvement is with tables, which we'll probably use a lot. With horizontal overflow on small devices and when zoomed in, tables are a pain to navigate. I added a focus wrapper that will announce the table context to the user when focused, which also allows keyboard users to navigate the overflow more easily.
+                  </Text>
+                </Accordion.Panel>
+              </Accordion.Item>
+              <Accordion.Item value="accordion-four">
+                <Accordion.Button>
+                  <Text size="3" css={{ fontWeight: 500 }}>Accordion two</Text>
+                </Accordion.Button>
+                <Accordion.Panel>
+                  <Text size="3" css={{ lineHeight: '23px' }}>
+                    The other main improvement is with tables, which we'll probably use a lot. With horizontal overflow on small devices and when zoomed in, tables are a pain to navigate. I added a focus wrapper that will announce the table context to the user when focused, which also allows keyboard users to navigate the overflow more easily.
+                  </Text>
+                </Accordion.Panel>
+              </Accordion.Item>
+            </Accordion>
             </Container>
           </Section>
 

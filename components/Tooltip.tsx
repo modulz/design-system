@@ -15,44 +15,8 @@ export type TooltipProps = TooltipPrimitiveProps &
     multiline?: boolean;
   };
 
-const fadeIn = css.keyframes({
-  '0%': { opacity: 0 },
-  '100%': { opacity: 1 },
-});
-
-const slideUp = css.keyframes({
-  '0%': { transform: 'translateY(10px)' },
-  '100%': { transform: 'translateY(0)' },
-});
-
-const slideDown = css.keyframes({
-  '0%': { transform: 'translateY(-10px)' },
-  '100%': { transform: 'translateY(0)' },
-});
-
-const slideRight = css.keyframes({
-  '0%': { transform: 'translateX(-10px)' },
-  '100%': { transform: 'translateX(0)' },
-});
-
-const slideLeft = css.keyframes({
-  '0%': { transform: 'translateX(10px)' },
-  '100%': { transform: 'translateX(0)' },
-});
-
 const Popper = styled(TooltipPrimitive.Popper, {
-  '&[data-side=top]': {
-    animation: `${fadeIn} 133ms ease-out, ${slideUp} 100ms ease-out`,
-  },
-  '&[data-side=bottom]': {
-    animation: `${fadeIn} 133ms ease-out, ${slideDown} 100ms ease-out`,
-  },
-  '&[data-side=right]': {
-    animation: `${fadeIn} 133ms ease-out, ${slideRight} 100ms ease-out`,
-  },
-  '&[data-side=left]': {
-    animation: `${fadeIn} 133ms ease-out, ${slideLeft} 100ms ease-out`,
-  },
+
 });
 
 const Content = styled(TooltipPrimitive.Content, {
@@ -63,7 +27,7 @@ const Content = styled(TooltipPrimitive.Content, {
   variants: {
     multiline: {
       true: {
-        maxWidth: 300,
+        maxWidth: 250,
       },
     },
   },
@@ -105,7 +69,6 @@ export function Tooltip({
             width={11}
             height={5}
             style={{
-              // ...styles.arrow,
               fill: 'currentColor',
             }}
           />
