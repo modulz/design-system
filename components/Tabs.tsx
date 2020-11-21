@@ -59,7 +59,7 @@ const StyledTab = styled(TabsPrimitive.Tab, {
     height: 2,
     backgroundColor: '$blue800',
     opacity: 0,
-    transform: 'scaleX(.5)',
+    transform: 'scaleX(.75)',
     transition: 'transform 175ms cubic-bezier(0.22, 1, 0.36, 1)',
   },
 
@@ -76,7 +76,7 @@ const StyledTab = styled(TabsPrimitive.Tab, {
 
     '::after': {
       transform: 'scaleX(1)',
-      transform: 'scaleY(.5)',
+      transform: 'scaleY(.75)',
       transitionDuration: '350ms',
     },
 
