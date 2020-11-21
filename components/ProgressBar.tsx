@@ -1,9 +1,12 @@
 import React from 'react';
-import { styled, css } from '../stitches.config';
+import { styled, css, StitchesProps, StitchesVariants } from '../stitches.config';
 import {
   ProgressBar as ProgressBarPrimitive,
   ProgressBarProps,
 } from '@interop-ui/react-progress-bar';
+
+export type ProgressBarProps = StitchesProps<typeof ProgressBar>;
+export type ProgressBarVariants = StitchesVariants<typeof ProgressBar>;
 
 const indeterminateProgress = css.keyframes({
   '0%': {
