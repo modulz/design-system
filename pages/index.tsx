@@ -949,18 +949,19 @@ function Home() {
 
           <Section size="3">
             <Container size="2">
-              <Box css={{ mb: '$4' }}>
+              <Box css={{ mb: '$6' }}>
                 <ProgressBar max={100} value={0} />
               </Box>
-
-              <Box css={{ mb: '$4' }}>
-                <ProgressBar max={100} value={30} />
+              <Box css={{ mb: '$6' }}>
+                <Text size="2">Download 50% complete</Text>
+                <ProgressBar max={100} value={50} css={{ my: '$2' }} />
+                <Text size="1" css={{ color: '$gray900' }}>46 hours remaining</Text>
               </Box>
-              <Box css={{ mb: '$4' }}>
-                <ProgressBar max={100} value={60} />
-              </Box>
-              <Box css={{ mb: '$4' }}>
+              <Box css={{ mb: '$6' }}>
                 <ProgressBar max={100} value={100} />
+              </Box>
+              <Box css={{ mb: '$6' }}>
+                <ProgressBar color="blue" max={100} value={50} />
               </Box>
             </Container>
           </Section>
