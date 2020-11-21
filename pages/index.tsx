@@ -1199,83 +1199,103 @@ function Home() {
 
           <Section size="3">
             <Container size="2" css={{ py: '$7' }}>
-              <Tabs defaultSelectedId="tab3">
-                <Tabs.List aria-label="Tabs example">
-                  <Tabs.Tab id="tab1">
-                    <Box css={{ mr: '$1' }}>
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M5.5 0.5C5.5 0.223858 5.72386 0 6 0H7.5H9C9.27614 0 9.5 0.223858 9.5 0.5C9.5 0.776142 9.27614 1 9 1H8V2.11922C9.09835 2.20409 10.119 2.56622 10.992 3.13572C11.0116 3.10851 11.0336 3.08252 11.0581 3.05806L11.8581 2.25806C12.1021 2.01398 12.4979 2.01398 12.7419 2.25806C12.986 2.50214 12.986 2.89786 12.7419 3.14194L11.9671 3.91682C13.1595 5.07925 13.9 6.70314 13.9 8.49998C13.9 12.0346 11.0346 14.9 7.5 14.9C3.96538 14.9 1.1 12.0346 1.1 8.49998C1.1 5.13362 3.69906 2.3743 7 2.11922V1H6C5.72386 1 5.5 0.776142 5.5 0.5ZM2.1 8.49998C2.1 5.51764 4.51766 3.09998 7.5 3.09998C10.4823 3.09998 12.9 5.51764 12.9 8.49998C12.9 11.4823 10.4823 13.9 7.5 13.9C4.51766 13.9 2.1 11.4823 2.1 8.49998ZM8 4.5C8 4.22386 7.77614 4 7.5 4C7.22386 4 7 4.22386 7 4.5V9.5C7 9.77614 7.22386 10 7.5 10C7.77614 10 8 9.77614 8 9.5V4.5Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </Box>
-                    <Text size="2">Tab 1</Text>
+              <Tabs defaultSelectedId="tab-one">
+                <Tabs.List>
+                  <Tabs.Tab id="tab-one">
+                    General
                   </Tabs.Tab>
-                  <Tabs.Tab id="tab2">
-                    <Box css={{ mr: '$1' }}>
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M5.5 0.5C5.5 0.223858 5.72386 0 6 0H7.5H9C9.27614 0 9.5 0.223858 9.5 0.5C9.5 0.776142 9.27614 1 9 1H8V2.11922C9.09835 2.20409 10.119 2.56622 10.992 3.13572C11.0116 3.10851 11.0336 3.08252 11.0581 3.05806L11.8581 2.25806C12.1021 2.01398 12.4979 2.01398 12.7419 2.25806C12.986 2.50214 12.986 2.89786 12.7419 3.14194L11.9671 3.91682C13.1595 5.07925 13.9 6.70314 13.9 8.49998C13.9 12.0346 11.0346 14.9 7.5 14.9C3.96538 14.9 1.1 12.0346 1.1 8.49998C1.1 5.13362 3.69906 2.3743 7 2.11922V1H6C5.72386 1 5.5 0.776142 5.5 0.5ZM2.1 8.49998C2.1 5.51764 4.51766 3.09998 7.5 3.09998C10.4823 3.09998 12.9 5.51764 12.9 8.49998C12.9 11.4823 10.4823 13.9 7.5 13.9C4.51766 13.9 2.1 11.4823 2.1 8.49998ZM8 4.5C8 4.22386 7.77614 4 7.5 4C7.22386 4 7 4.22386 7 4.5V9.5C7 9.77614 7.22386 10 7.5 10C7.77614 10 8 9.77614 8 9.5V4.5Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </Box>
-                    <Text size="2">Tab 2</Text>
+                  <Tabs.Tab id="tab-two">
+                    Hosting
                   </Tabs.Tab>
-                  <Tabs.Tab id="tab3">
-                    <Box css={{ mr: '$1' }}>
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M5.5 0.5C5.5 0.223858 5.72386 0 6 0H7.5H9C9.27614 0 9.5 0.223858 9.5 0.5C9.5 0.776142 9.27614 1 9 1H8V2.11922C9.09835 2.20409 10.119 2.56622 10.992 3.13572C11.0116 3.10851 11.0336 3.08252 11.0581 3.05806L11.8581 2.25806C12.1021 2.01398 12.4979 2.01398 12.7419 2.25806C12.986 2.50214 12.986 2.89786 12.7419 3.14194L11.9671 3.91682C13.1595 5.07925 13.9 6.70314 13.9 8.49998C13.9 12.0346 11.0346 14.9 7.5 14.9C3.96538 14.9 1.1 12.0346 1.1 8.49998C1.1 5.13362 3.69906 2.3743 7 2.11922V1H6C5.72386 1 5.5 0.776142 5.5 0.5ZM2.1 8.49998C2.1 5.51764 4.51766 3.09998 7.5 3.09998C10.4823 3.09998 12.9 5.51764 12.9 8.49998C12.9 11.4823 10.4823 13.9 7.5 13.9C4.51766 13.9 2.1 11.4823 2.1 8.49998ZM8 4.5C8 4.22386 7.77614 4 7.5 4C7.22386 4 7 4.22386 7 4.5V9.5C7 9.77614 7.22386 10 7.5 10C7.77614 10 8 9.77614 8 9.5V4.5Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </Box>
-                    <Text size="2">Tab 3</Text>
+                  <Tabs.Tab id="tab-three">
+                    Editor
+                  </Tabs.Tab>
+                  <Tabs.Tab id="tab-four">
+                    Billing
+                  </Tabs.Tab>
+                  <Tabs.Tab id="tab-five">
+                    SEO
                   </Tabs.Tab>
                 </Tabs.List>
-                <Tabs.Panel id="tab1">
-                  <Text size="3" as="p" css={{ lineHeight: '20px' }}>
-                    Hi Colm, Now that the summer is over it'd be great to re-ignite our earlier
-                    discussions.
-                  </Text>
+                <Tabs.Panel id="tab-one">
+                  <Text>Panel 1</Text>
                 </Tabs.Panel>
-                <Tabs.Panel id="tab2">
-                  <Text size="3" as="p" css={{ lineHeight: '20px' }}>
-                    I discussed Modulz with the team last week and we'd be interested in exploring
-                    the round you're looking to raise.
-                  </Text>
+                <Tabs.Panel id="tab-two">
+                  <Text>Panel 2</Text>
                 </Tabs.Panel>
-                <Tabs.Panel id="tab3">
-                  <Text size="3" as="p" css={{ lineHeight: '20px' }}>
-                    Would you be open to a follow-up call with myself and our General Partner Jos?
-                    Happy to jump on a quick call to discuss.
-                  </Text>
+                <Tabs.Panel id="tab-three">
+                  <Text>Panel 3</Text>
+                </Tabs.Panel>
+                <Tabs.Panel id="tab-four">
+                  <Text>Panel 4</Text>
+                </Tabs.Panel>
+                <Tabs.Panel id="tab-five">
+                  <Text>Panel 5</Text>
+                </Tabs.Panel>
+              </Tabs>
+
+              <Tabs defaultSelectedId="tab-one" orientation="vertical" css={{ mt: '$9' }}>
+                <Tabs.List>
+                  <Tabs.Tab id="tab-one">
+                    General
+                  </Tabs.Tab>
+                  <Tabs.Tab id="tab-two">
+                    Hosting
+                  </Tabs.Tab>
+                  <Tabs.Tab id="tab-three">
+                    Editor
+                  </Tabs.Tab>
+                  <Tabs.Tab id="tab-four">
+                    Billing
+                  </Tabs.Tab>
+                  <Tabs.Tab id="tab-five">
+                    SEO
+                  </Tabs.Tab>
+                  <Tabs.Tab id="tab-six">
+                    Forms
+                  </Tabs.Tab>
+                  <Tabs.Tab id="tab-seven">
+                    Fonts
+                  </Tabs.Tab>
+                  <Tabs.Tab id="tab-eight">
+                    Backups
+                  </Tabs.Tab>
+                  <Tabs.Tab id="tab-nine">
+                    Integrations
+                  </Tabs.Tab>
+                  <Tabs.Tab id="tab-ten">
+                    Custom code
+                  </Tabs.Tab>
+                </Tabs.List>
+                <Tabs.Panel id="tab-one">
+                  <Text>Panel 1</Text>
+                </Tabs.Panel>
+                <Tabs.Panel id="tab-two">
+                  <Text>Panel 2</Text>
+                </Tabs.Panel>
+                <Tabs.Panel id="tab-three">
+                  <Text>Panel 3</Text>
+                </Tabs.Panel>
+                <Tabs.Panel id="tab-four">
+                  <Text>Panel 4</Text>
+                </Tabs.Panel>
+                <Tabs.Panel id="tab-five">
+                  <Text>Panel 5</Text>
+                </Tabs.Panel>
+                <Tabs.Panel id="tab-six">
+                  <Text>Panel 6</Text>
+                </Tabs.Panel>
+                <Tabs.Panel id="tab-seven">
+                  <Text>Panel 7</Text>
+                </Tabs.Panel>
+                <Tabs.Panel id="tab-eight">
+                  <Text>Panel 8</Text>
+                </Tabs.Panel>
+                <Tabs.Panel id="tab-nine">
+                  <Text>Panel 9</Text>
+                </Tabs.Panel>
+                <Tabs.Panel id="tab-ten">
+                  <Text>Panel 10</Text>
                 </Tabs.Panel>
               </Tabs>
             </Container>
