@@ -108,6 +108,9 @@ export type { SimpleToggleProps, SimpleToggleVariants } from './components/Simpl
 export { Tabs } from './components/Tabs';
 export type { TabsProps, TabsListProps, TabsTabProps, TabsPanelProps } from './components/Tabs';
 
+export { TabLink } from './components/TabLink';
+export type { TabLinkProps, TabLinkVariants } from './components/TabLink';
+
 export { Tooltip } from './components/Tooltip';
 export type { TooltipProps } from './components/Tooltip';
 
