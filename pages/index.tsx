@@ -29,6 +29,7 @@ import { Status } from '../components/Status';
 import { ScrollArea } from '../components/Scrollbar';
 import { Overlay } from '../components/Overlay';
 import { Tooltip } from '../components/Tooltip';
+import { Slider } from '../components/Slider';
 import { Dialog } from '../components/Dialog';
 import { Popover } from '../components/Popover';
 import { Checkbox } from '../components/Checkbox';
@@ -1364,6 +1365,18 @@ function Home() {
                   Settings
                 </TabLink>
               </Flex>
+            </Container>
+          </Section>
+
+          <Flex css={{ jc: 'center' }}>
+            <Separator size="2" />
+          </Flex>
+
+          <Section size="3">
+            <Container size="2">
+              <Box css={{ width: '100px' }}>
+                <Slider />
+              </Box>
             </Container>
           </Section>
 
