@@ -9,6 +9,6 @@ export const Select = styled.select({
   fontSize: '$1',
   boxShadow: 'inset 0 0 0 1px $gray600',
   pl: '$1',
-  borderRadius: 0,
+  borderRadius: '$2',
   color: '$hiContrast',
 });

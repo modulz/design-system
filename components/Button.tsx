@@ -28,7 +28,7 @@ export const Button = styled('button', {
   backgroundColor: '$loContrast',
   border: 'none',
   boxShadow: 'inset 0 0 0 1px $gray600',
-  borderRadius: '$1',
+  borderRadius: '$2',
   color: '$hiContrast',
   height: '$5',
   px: '$2',

@@ -9,5 +9,5 @@ export const Card = styled('div', {
 
   // Custom
   border: '1px solid $gray400',
-  borderRadius: '$2',
+  borderRadius: '$3',
 });

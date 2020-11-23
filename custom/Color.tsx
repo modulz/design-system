@@ -316,17 +316,12 @@ export function Color() {
       </Container>
 
       <Container size="2">
-        <Text
-          size="6"
-          as="h4"
-          css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}
-        >
+        <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>
           Warm & cool hues
         </Text>
         <Paragraph css={{ mb: '$7' }}>
-          There are 8 warm hues and 8 cool hues. All <Code>800</Code> colors
-          should be balanced optically, especially if they are adjacent on the
-          spectrum.
+          There are 8 warm hues and 8 cool hues. All <Code>800</Code> colors should be balanced
+          optically, especially if they are adjacent on the spectrum.
         </Paragraph>
       </Container>
 
@@ -481,8 +476,8 @@ export function Color() {
 
       <Container size="2">
         <Paragraph css={{ my: '$7' }}>
-          All <Code>200</Code> colors should be balanced optically, especially
-          if they are adjacent on the spectrum.
+          All <Code>200</Code> colors should be balanced optically, especially if they are adjacent
+          on the spectrum.
         </Paragraph>
       </Container>
 
@@ -636,17 +631,12 @@ export function Color() {
       </Container>
 
       <Container size="2">
-        <Text
-          size="6"
-          as="h4"
-          css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}
-        >
+        <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>
           Text color test
         </Text>
         <Paragraph css={{ mb: '$7' }}>
-          The <Code>900</Code> text color should look good and pass AA on all
-          background colors. Text should also pass on the <Code>800</Code>{' '}
-          backgrounds.
+          The <Code>900</Code> text color should look good and pass AA on all background colors.
+          Text should also pass on the <Code>800</Code> backgrounds.
         </Paragraph>
       </Container>
 
@@ -1291,16 +1281,11 @@ export function Color() {
       </Container>
 
       <Container size="2">
-        <Text
-          size="6"
-          as="h4"
-          css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}
-        >
+        <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>
           Lines
         </Text>
         <Paragraph css={{ mb: '$7' }}>
-          The <Code>500</Code> line should be very subtle, but visible on all
-          backgrounds.
+          The <Code>500</Code> line should be very subtle, but visible on all backgrounds.
         </Paragraph>
       </Container>
 
@@ -1314,18 +1299,10 @@ export function Color() {
               backgroundColor: '$loContrast',
             }}
           ></Box>
-          <Box
-            css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray100' }}
-          ></Box>
-          <Box
-            css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray200' }}
-          ></Box>
-          <Box
-            css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray300' }}
-          ></Box>
-          <Box
-            css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray400' }}
-          ></Box>
+          <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray100' }}></Box>
+          <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray200' }}></Box>
+          <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray300' }}></Box>
+          <Box css={{ fb: '0', fg: '1', height: 160, backgroundColor: '$gray400' }}></Box>
           <Box
             css={{
               position: 'absolute',
@@ -1341,9 +1318,8 @@ export function Color() {
 
       <Container size="2">
         <Paragraph css={{ my: '$7' }}>
-          These <Code>500</Code> lines should have a nice constrast against the{' '}
-          <Code>100</Code> background. Make sure the borders don't look too
-          harsh or vibrant.
+          These <Code>500</Code> lines should have a nice constrast against the <Code>100</Code>{' '}
+          background. Make sure the borders don't look too harsh or vibrant.
         </Paragraph>
       </Container>
 
@@ -1358,252 +1334,188 @@ export function Color() {
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$red100',
               border: '1px solid $red500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$red900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$red900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$crimson100',
               border: '1px solid $red500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$crimson900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$crimson900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$pink100',
               border: '1px solid $pink500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$pink900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$pink900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$purple100',
               border: '1px solid $purple500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$purple900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$purple900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$violet100',
               border: '1px solid $violet500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$violet900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$violet900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$indigo100',
               border: '1px solid $indigo500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$indigo900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$indigo900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$blue100',
               border: '1px solid $blue500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$blue900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$blue900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$turquoise100',
               border: '1px solid $turquoise500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$turquoise900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$turquoise900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$teal100',
               border: '1px solid $teal500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$teal900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$teal900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$green100',
               border: '1px solid $green500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$green900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$green900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$lime100',
               border: '1px solid $lime500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$lime900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$lime900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$yellow100',
               border: '1px solid $yellow500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$yellow900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$yellow900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$orange100',
               border: '1px solid $orange500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$orange900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$orange900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$bronze100',
               border: '1px solid $bronze500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$bronze900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$bronze900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
           <Box
             css={{
               p: '$3',
-              borderRadius: '$2',
+              borderRadius: '$3',
               backgroundColor: '$gold100',
               border: '1px solid $gold500',
             }}
           >
-            <Text
-              size="3"
-              as="p"
-              css={{ color: '$gold900', lineHeight: '23px' }}
-            >
+            <Text size="3" as="p" css={{ color: '$gold900', lineHeight: '23px' }}>
               Warning: obsessing over color is a terrible idea. Chill down ffs.
             </Text>
           </Box>
         </Grid>
       </Container>
 
-      <Box
-        css={{ backgroundColor: '$red800', height: '100vh', p: '$9', mt: '$9' }}
-      >
-        <Title css={{ color: 'white' }}>
-          This should look good and pass contrast ratio.
-        </Title>
+      <Box css={{ backgroundColor: '$red800', height: '100vh', p: '$9', mt: '$9' }}>
+        <Title css={{ color: 'white' }}>This should look good and pass contrast ratio.</Title>
       </Box>
     </Section>
   );

@@ -339,7 +339,7 @@ function Home() {
                 css={{
                   p: '$5',
                   border: '1px solid $gray500',
-                  borderRadius: '$2',
+                  borderRadius: '$3',
                 }}
               >
                 <form>
