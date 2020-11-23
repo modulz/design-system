@@ -15,7 +15,7 @@ const SliderTrack = styled(SliderPrimitive.Track, {
   position: 'relative',
   flexGrow: 1,
   backgroundColor: '$gray600',
-  borderRadius: '$pill',
+  borderRadius: '$round',
   '&[data-orientation="horizontal"]': {
     height: 2,
   },
@@ -44,6 +44,10 @@ const SliderThumb = styled(SliderPrimitive.Thumb, {
   height: 15,
   outline: 'none',
   opacity: '0',
+  backgroundColor: 'white',
+  boxShadow: '0 0 1px rgba(0,0,0,.3), 0 1px 4px rgba(0,0,0,.15)',
+  borderRadius: '$round',
+  outline: 'none',
 
   '::after': {
     content: '""',
@@ -56,30 +60,12 @@ const SliderThumb = styled(SliderPrimitive.Thumb, {
     backgroundColor: 'hsla(0,0%,0%,.035)',
     transform: 'scale(1)',
     borderRadius: '$round',
-    transition: 'transform 100ms cubic-bezier(0.22, 1, 0.36, 1)',
+    transition: 'transform 200ms cubic-bezier(0.22, 1, 0.36, 1)',
   },
 
   ':focus': {
     '::after': {
       transform: 'scale(2)',
-    },
-  },
-
-  '&::before': {
-    content: '""',
-    position: 'absolute',
-    zIndex: -1,
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    borderRadius: '$round',
-    width: 15,
-    height: 15,
-    backgroundColor: 'white',
-    boxShadow: '0 0 1px rgba(0,0,0,.3), 0 1px 4px rgba(0,0,0,.15)',
-    '&:focus': {
-      outline: 'none',
-      boxShadow: '0 0 0 2px red',
     },
   },
 });
