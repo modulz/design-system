@@ -34,8 +34,8 @@ const StyledProgressBar = styled(ProgressBarPrimitive, {
   '&[data-state="indeterminate"]': {
     backgroundColor: '$gray300',
     '::after': {
-      animationName: `${indeterminateProgress}`,
-      animationDuration: `1500ms`,
+      animationName: indeterminateProgress,
+      animationDuration: '1500ms',
       animationIterationCount: 'infinite',
       animationTimingFunction: 'cubic-bezier(0.65, 0, 0.35, 1)',
       backgroundColor: '$gray600',
@@ -52,12 +52,13 @@ const StyledProgressBar = styled(ProgressBarPrimitive, {
 
   '&[data-state="complete"]': {
     backgroundColor: '$green800',
+    backgroundImage: 'none',
   },
 
   variants: {
     color: {
       blue: {
-        background: '$blue800',
+        backgroundColor: '$blue800',
       },
       gradient: {
         background:
@@ -79,12 +80,12 @@ const ProgressBarIndicator = styled(ProgressBarPrimitive.Indicator, {
   transition: 'transform 150ms cubic-bezier(0.65, 0, 0.35, 1)',
 });
 
-export function ProgressBar({ value = 0, max = 100, ...props }: ProgressBarProps) {
+export function ProgressBar({ value, max = 100, ...props }: ProgressBarProps) {
   const percentage = value != null ? Math.round((value / max) * 100) : null;
 
   return (
     <div>
-      <StyledProgressBar {...props}>
+      <StyledProgressBar {...props} value={value} max={max}>
         <ProgressBarIndicator style={{ transform: `translateX(${percentage}%)` }} />
       </StyledProgressBar>
     </div>
