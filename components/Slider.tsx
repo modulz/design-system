@@ -102,7 +102,7 @@ export const StyledSlider = styled(SliderPrimitive, {
   },
 });
 
-export function Slider({ color = 'gray', css, ...props }: SliderProps) {
+export function Slider({ color = 'gray', ...props }: SliderProps) {
   return (
     <StyledSlider color={color} {...props}>
       <SliderTrack>
