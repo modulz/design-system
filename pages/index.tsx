@@ -13,21 +13,11 @@ import { Separator } from '../components/Separator';
 import { VerifiedBadge } from '../components/VerifiedBadge';
 import { Code } from '../components/Code';
 import { Input } from '../components/Input';
-import { Image } from '../components/Image';
-import { MenuItem } from '../components/MenuItem';
 import { Section } from '../components/Section';
-import { Card } from '../components/Card';
-import { TreeItem } from '../components/TreeItem';
-import { darkTheme } from '../stitches.config';
 import { Avatar } from '../components/Avatar';
 import { TabLink } from '../components/TabLink';
-import { AvatarGroup } from '../components/Avatar';
-import { AvatarNestedItem } from '../components/Avatar';
 import { SimpleToggle } from '../components/SimpleToggle';
-import { Switch } from '../components/Switch';
-import { Status } from '../components/Status';
 import { ScrollArea } from '../components/Scrollbar';
-import { Overlay } from '../components/Overlay';
 import { Tooltip } from '../components/Tooltip';
 import { Slider } from '../components/Slider';
 import { Dialog } from '../components/Dialog';
@@ -125,15 +115,38 @@ function Home() {
             <Box css={{ mr: '$3' }}>
               <Tooltip content="Frame (F)" side="bottom" align="center">
                 <IconButton variant="ghost">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.28975 14.2949L10.293 13.4531L8.36328 9.23438L12.2695 8.96484L3.5 1.14999V12.7L6.36719 10.0859L8.28975 14.2949Z" stroke="#0488FC" fill="#CDE7FE"></path></svg>
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.28975 14.2949L10.293 13.4531L8.36328 9.23438L12.2695 8.96484L3.5 1.14999V12.7L6.36719 10.0859L8.28975 14.2949Z"
+                      stroke="#0488FC"
+                      fill="#CDE7FE"
+                    ></path>
+                  </svg>
                 </IconButton>
               </Tooltip>
             </Box>
             <Box>
               <Tooltip content="Box (B)" side="bottom" align="center">
                 <IconButton variant="ghost">
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.81126 1.64706C6.62184 2.87918 6.68264 3.88523 6.76844 5.30499C6.78411 5.56426 6.80061 5.83732 6.81658 6.12808C6.83107 6.39208 6.63754 6.62172 6.37491 6.65217C6.11228 6.68262 5.87134 6.50334 5.82505 6.24304L5.74891 5.81488L5.74751 5.80698L5.74757 5.80697C5.64404 5.16528 5.48351 4.25481 5.17803 3.44741C4.86239 2.61315 4.4486 2.04126 3.93439 1.86046C3.64993 1.76102 3.41899 1.84278 3.25864 2.01052C3.08743 2.18962 2.99757 2.47065 3.06266 2.75399C3.21456 3.34424 3.44624 3.9167 3.69832 4.51802C3.72078 4.57158 3.74342 4.62543 3.76618 4.67954C3.99536 5.22457 4.23615 5.7972 4.4164 6.39081L4.41688 6.39238C4.56196 6.87586 4.65642 7.2595 4.73082 7.56165C4.7603 7.68138 4.78663 7.78831 4.81172 7.88359C4.86764 8.09606 4.77832 8.32014 4.59158 8.43588C4.40483 8.55161 4.16441 8.53188 3.99903 8.38725C3.73745 8.15848 3.51497 7.92784 3.31813 7.71802C3.27623 7.67335 3.23599 7.63018 3.19701 7.58838C3.04774 7.42826 2.91709 7.28812 2.78331 7.16029C2.45985 6.85122 2.18394 6.68004 1.80581 6.64369L1.8032 6.64343C1.56114 6.61888 1.41399 6.66441 1.31752 6.72627C1.21894 6.78947 1.11982 6.90416 1.03779 7.11235C0.974298 7.29079 1.0096 7.63817 1.183 7.96911L1.18738 7.97747L1.1873 7.97751C1.39076 8.3843 1.73514 8.81549 2.17271 9.29261C2.38911 9.52857 2.62096 9.76808 2.86215 10.017L2.87419 10.0294C3.11001 10.2728 3.35418 10.5248 3.59172 10.7822C4.4254 11.6857 5.27638 12.7533 5.46257 14H11.5086C11.5636 12.4353 11.8755 11.268 12.2875 10.1346C12.4453 9.70042 12.612 9.28414 12.7825 8.85831C13.1097 8.0414 13.4509 7.18938 13.7705 6.10824C14.0989 4.99737 14.0097 4.37034 13.8613 4.03985C13.717 3.71858 13.4914 3.61787 13.3815 3.59606C13.1381 3.54774 13.0384 3.60947 12.9698 3.67901C12.867 3.78316 12.7698 3.98273 12.6921 4.30269C12.6166 4.61345 12.5752 4.96517 12.533 5.32501L12.5298 5.35285C12.4924 5.67242 12.4505 6.03016 12.3664 6.30098C12.3591 6.32872 12.3403 6.39048 12.3039 6.45073C12.2896 6.47431 12.2563 6.52576 12.1979 6.57539C12.1381 6.6261 12.0104 6.70818 11.8309 6.69312C11.6519 6.6781 11.5401 6.57649 11.4902 6.51769C11.441 6.45982 11.4166 6.40431 11.4064 6.37905C11.374 6.29889 11.3688 6.22183 11.3684 6.21495C11.3684 6.21471 11.3684 6.21455 11.3683 6.21449C11.3662 6.18952 11.3653 6.16555 11.3649 6.14783C11.3638 6.09607 11.366 5.97483 11.366 5.99375V5.98124L11.3661 5.98125C11.3748 5.63581 11.3912 5.29816 11.4073 4.96608C11.4428 4.23646 11.477 3.5337 11.4245 2.8342L11.4241 2.82934L11.4242 2.82934C11.3916 2.32997 11.0493 2.00228 10.7007 1.9228C10.5305 1.88401 10.369 1.90601 10.2346 1.9835C10.1029 2.05946 9.95532 2.21318 9.85737 2.51394L9.85627 2.51726C9.81522 2.6404 9.77294 2.87753 9.73602 3.2124C9.70041 3.53542 9.67334 3.91279 9.65152 4.29418C9.63286 4.62033 9.61781 4.9584 9.6043 5.26194C9.58724 5.64529 9.57263 5.97357 9.5563 6.1532C9.55566 6.16016 9.55488 6.1671 9.55396 6.17402C9.55394 6.17418 9.55391 6.17442 9.55387 6.17475C9.553 6.1816 9.54743 6.22574 9.53102 6.27505C9.52585 6.29055 9.5148 6.32156 9.49497 6.35785C9.48133 6.38282 9.43143 6.47226 9.32411 6.54051C9.26274 6.57954 9.17656 6.61517 9.07102 6.61843C8.96437 6.62172 8.87306 6.59085 8.80465 6.55119C8.68583 6.48232 8.63139 6.38545 8.61694 6.35919C8.58236 6.29634 8.56958 6.23952 8.56712 6.22859L8.56688 6.22752C8.56231 6.20761 8.55978 6.19114 8.55851 6.18225C8.55587 6.16376 8.55442 6.14728 8.55364 6.13737C8.55059 6.09904 8.54881 6.04539 8.5475 5.99283C8.5447 5.88064 8.5429 5.71798 8.54171 5.54767C8.53932 5.20582 8.53932 4.81919 8.53932 4.70952V4.70925C8.53932 3.66544 8.53835 2.65372 8.4471 1.64372C8.39179 1.24127 8.06274 1.00455 7.64357 1.00005C7.22395 0.995552 6.87914 1.22704 6.81126 1.64706ZM9.41216 1.3617C9.21466 0.448484 8.3991 0.00810324 7.6543 0.00011154C6.86448 -0.00836308 5.98758 0.465881 5.82361 1.49037L5.8236 1.49037L5.82315 1.49334C5.78236 1.7584 5.75225 2.01481 5.73086 2.26652C5.39419 1.67364 4.92618 1.14894 4.26547 0.916859L4.2649 0.916661C3.586 0.679114 2.94916 0.887087 2.53579 1.31952C2.13411 1.73971 1.94435 2.36742 2.09028 2.98746L2.09018 2.98748L2.09266 2.99713C2.26474 3.66808 2.52393 4.30316 2.77609 4.90465C2.79811 4.95717 2.82006 5.00941 2.84191 5.06139C3.02135 5.48842 3.19375 5.89866 3.33867 6.31256C2.964 5.98142 2.51922 5.70796 1.90273 5.6484C1.48861 5.60663 1.10387 5.67536 0.777769 5.88444C0.454203 6.0919 0.240634 6.40405 0.10415 6.75406L0.104069 6.75403L0.100831 6.76281C-0.0997077 7.30698 0.0521502 7.96325 0.294996 8.42896C0.563936 8.96499 0.987161 9.47942 1.43572 9.96851C1.66295 10.2163 1.90441 10.4656 2.14397 10.7129L2.15227 10.7214C2.39068 10.9675 2.6276 11.212 2.85681 11.4604C3.80755 12.4907 4.49999 13.4637 4.49999 14.5C4.49999 14.7761 4.72384 15 4.99999 15H12C12.2761 15 12.5 14.7761 12.5 14.5C12.5 12.8212 12.8021 11.6462 13.2273 10.4763C13.3653 10.0968 13.5215 9.70582 13.6867 9.29251C14.0238 8.44925 14.398 7.513 14.7295 6.39175C15.0956 5.15324 15.0559 4.25903 14.7735 3.63017C14.4869 2.99207 13.9797 2.6953 13.5762 2.6152C13.1276 2.52614 12.7367 2.60475 12.4268 2.83081C12.4252 2.80773 12.4236 2.78468 12.4219 2.76167C12.3587 1.8105 11.6907 1.12285 10.923 0.947821C10.5346 0.859287 10.1111 0.900393 9.73505 1.11724C9.61849 1.18446 9.51051 1.26623 9.41216 1.3617ZM8.90706 2.20261C8.90725 2.20206 8.90743 2.20151 8.90761 2.20096L9.38194 2.35911L8.90652 2.20428C8.9067 2.20372 8.90688 2.20317 8.90706 2.20261Z" fill="#0488FC"></path>
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.81126 1.64706C6.62184 2.87918 6.68264 3.88523 6.76844 5.30499C6.78411 5.56426 6.80061 5.83732 6.81658 6.12808C6.83107 6.39208 6.63754 6.62172 6.37491 6.65217C6.11228 6.68262 5.87134 6.50334 5.82505 6.24304L5.74891 5.81488L5.74751 5.80698L5.74757 5.80697C5.64404 5.16528 5.48351 4.25481 5.17803 3.44741C4.86239 2.61315 4.4486 2.04126 3.93439 1.86046C3.64993 1.76102 3.41899 1.84278 3.25864 2.01052C3.08743 2.18962 2.99757 2.47065 3.06266 2.75399C3.21456 3.34424 3.44624 3.9167 3.69832 4.51802C3.72078 4.57158 3.74342 4.62543 3.76618 4.67954C3.99536 5.22457 4.23615 5.7972 4.4164 6.39081L4.41688 6.39238C4.56196 6.87586 4.65642 7.2595 4.73082 7.56165C4.7603 7.68138 4.78663 7.78831 4.81172 7.88359C4.86764 8.09606 4.77832 8.32014 4.59158 8.43588C4.40483 8.55161 4.16441 8.53188 3.99903 8.38725C3.73745 8.15848 3.51497 7.92784 3.31813 7.71802C3.27623 7.67335 3.23599 7.63018 3.19701 7.58838C3.04774 7.42826 2.91709 7.28812 2.78331 7.16029C2.45985 6.85122 2.18394 6.68004 1.80581 6.64369L1.8032 6.64343C1.56114 6.61888 1.41399 6.66441 1.31752 6.72627C1.21894 6.78947 1.11982 6.90416 1.03779 7.11235C0.974298 7.29079 1.0096 7.63817 1.183 7.96911L1.18738 7.97747L1.1873 7.97751C1.39076 8.3843 1.73514 8.81549 2.17271 9.29261C2.38911 9.52857 2.62096 9.76808 2.86215 10.017L2.87419 10.0294C3.11001 10.2728 3.35418 10.5248 3.59172 10.7822C4.4254 11.6857 5.27638 12.7533 5.46257 14H11.5086C11.5636 12.4353 11.8755 11.268 12.2875 10.1346C12.4453 9.70042 12.612 9.28414 12.7825 8.85831C13.1097 8.0414 13.4509 7.18938 13.7705 6.10824C14.0989 4.99737 14.0097 4.37034 13.8613 4.03985C13.717 3.71858 13.4914 3.61787 13.3815 3.59606C13.1381 3.54774 13.0384 3.60947 12.9698 3.67901C12.867 3.78316 12.7698 3.98273 12.6921 4.30269C12.6166 4.61345 12.5752 4.96517 12.533 5.32501L12.5298 5.35285C12.4924 5.67242 12.4505 6.03016 12.3664 6.30098C12.3591 6.32872 12.3403 6.39048 12.3039 6.45073C12.2896 6.47431 12.2563 6.52576 12.1979 6.57539C12.1381 6.6261 12.0104 6.70818 11.8309 6.69312C11.6519 6.6781 11.5401 6.57649 11.4902 6.51769C11.441 6.45982 11.4166 6.40431 11.4064 6.37905C11.374 6.29889 11.3688 6.22183 11.3684 6.21495C11.3684 6.21471 11.3684 6.21455 11.3683 6.21449C11.3662 6.18952 11.3653 6.16555 11.3649 6.14783C11.3638 6.09607 11.366 5.97483 11.366 5.99375V5.98124L11.3661 5.98125C11.3748 5.63581 11.3912 5.29816 11.4073 4.96608C11.4428 4.23646 11.477 3.5337 11.4245 2.8342L11.4241 2.82934L11.4242 2.82934C11.3916 2.32997 11.0493 2.00228 10.7007 1.9228C10.5305 1.88401 10.369 1.90601 10.2346 1.9835C10.1029 2.05946 9.95532 2.21318 9.85737 2.51394L9.85627 2.51726C9.81522 2.6404 9.77294 2.87753 9.73602 3.2124C9.70041 3.53542 9.67334 3.91279 9.65152 4.29418C9.63286 4.62033 9.61781 4.9584 9.6043 5.26194C9.58724 5.64529 9.57263 5.97357 9.5563 6.1532C9.55566 6.16016 9.55488 6.1671 9.55396 6.17402C9.55394 6.17418 9.55391 6.17442 9.55387 6.17475C9.553 6.1816 9.54743 6.22574 9.53102 6.27505C9.52585 6.29055 9.5148 6.32156 9.49497 6.35785C9.48133 6.38282 9.43143 6.47226 9.32411 6.54051C9.26274 6.57954 9.17656 6.61517 9.07102 6.61843C8.96437 6.62172 8.87306 6.59085 8.80465 6.55119C8.68583 6.48232 8.63139 6.38545 8.61694 6.35919C8.58236 6.29634 8.56958 6.23952 8.56712 6.22859L8.56688 6.22752C8.56231 6.20761 8.55978 6.19114 8.55851 6.18225C8.55587 6.16376 8.55442 6.14728 8.55364 6.13737C8.55059 6.09904 8.54881 6.04539 8.5475 5.99283C8.5447 5.88064 8.5429 5.71798 8.54171 5.54767C8.53932 5.20582 8.53932 4.81919 8.53932 4.70952V4.70925C8.53932 3.66544 8.53835 2.65372 8.4471 1.64372C8.39179 1.24127 8.06274 1.00455 7.64357 1.00005C7.22395 0.995552 6.87914 1.22704 6.81126 1.64706ZM9.41216 1.3617C9.21466 0.448484 8.3991 0.00810324 7.6543 0.00011154C6.86448 -0.00836308 5.98758 0.465881 5.82361 1.49037L5.8236 1.49037L5.82315 1.49334C5.78236 1.7584 5.75225 2.01481 5.73086 2.26652C5.39419 1.67364 4.92618 1.14894 4.26547 0.916859L4.2649 0.916661C3.586 0.679114 2.94916 0.887087 2.53579 1.31952C2.13411 1.73971 1.94435 2.36742 2.09028 2.98746L2.09018 2.98748L2.09266 2.99713C2.26474 3.66808 2.52393 4.30316 2.77609 4.90465C2.79811 4.95717 2.82006 5.00941 2.84191 5.06139C3.02135 5.48842 3.19375 5.89866 3.33867 6.31256C2.964 5.98142 2.51922 5.70796 1.90273 5.6484C1.48861 5.60663 1.10387 5.67536 0.777769 5.88444C0.454203 6.0919 0.240634 6.40405 0.10415 6.75406L0.104069 6.75403L0.100831 6.76281C-0.0997077 7.30698 0.0521502 7.96325 0.294996 8.42896C0.563936 8.96499 0.987161 9.47942 1.43572 9.96851C1.66295 10.2163 1.90441 10.4656 2.14397 10.7129L2.15227 10.7214C2.39068 10.9675 2.6276 11.212 2.85681 11.4604C3.80755 12.4907 4.49999 13.4637 4.49999 14.5C4.49999 14.7761 4.72384 15 4.99999 15H12C12.2761 15 12.5 14.7761 12.5 14.5C12.5 12.8212 12.8021 11.6462 13.2273 10.4763C13.3653 10.0968 13.5215 9.70582 13.6867 9.29251C14.0238 8.44925 14.398 7.513 14.7295 6.39175C15.0956 5.15324 15.0559 4.25903 14.7735 3.63017C14.4869 2.99207 13.9797 2.6953 13.5762 2.6152C13.1276 2.52614 12.7367 2.60475 12.4268 2.83081C12.4252 2.80773 12.4236 2.78468 12.4219 2.76167C12.3587 1.8105 11.6907 1.12285 10.923 0.947821C10.5346 0.859287 10.1111 0.900393 9.73505 1.11724C9.61849 1.18446 9.51051 1.26623 9.41216 1.3617ZM8.90706 2.20261C8.90725 2.20206 8.90743 2.20151 8.90761 2.20096L9.38194 2.35911L8.90652 2.20428C8.9067 2.20372 8.90688 2.20317 8.90706 2.20261Z"
+                      fill="#0488FC"
+                    ></path>
                   </svg>
                 </IconButton>
               </Tooltip>
@@ -179,7 +192,12 @@ function Home() {
               </Tooltip>
             </Box>
             <Box css={{ mr: '$3' }}>
-              <Tooltip content="Like how in Gmail, the search input is left aligned with the content you're searching. I don't think it works well to have a tiny search button hidden over in the corner, disjointed from the content you're searching." side="bottom" align="center" multiline>
+              <Tooltip
+                content="Like how in Gmail, the search input is left aligned with the content you're searching. I don't think it works well to have a tiny search button hidden over in the corner, disjointed from the content you're searching."
+                side="bottom"
+                align="center"
+                multiline
+              >
                 <IconButton variant="ghost">
                   <svg
                     width="15"
@@ -228,7 +246,20 @@ function Home() {
             <Box css={{ mr: '$3' }}>
               <Tooltip content="Frame (F)" side="bottom" align="center">
                 <IconButton variant="ghost">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 3L2.49999 3.00002C1.67157 3.00002 0.999999 3.67159 0.999999 4.50002V9.50002C0.999999 10.3284 1.67157 11 2.5 11H7.50002C7.63263 11 7.75981 11.0527 7.85358 11.1465L9.99999 13.2929V11.5C9.99999 11.2239 10.2239 11 10.5 11H12.5C13.3284 11 14 10.3284 14 9.50002V4.5C14 3.67157 13.3284 3 12.5 3ZM2.49999 2.00002L12.5 2C13.8807 2 15 3.11928 15 4.5V9.50002C15 10.8807 13.8807 12 12.5 12H11V14.5C11 14.7022 10.8782 14.8845 10.6913 14.9619C10.5045 15.0393 10.2894 14.9965 10.1464 14.8535L7.29292 12H2.5C1.11929 12 0 10.8807 0 9.50002V4.50002C0 3.11931 1.11928 2.00002 2.49999 2.00002Z" fill="#0488FC" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 3L2.49999 3.00002C1.67157 3.00002 0.999999 3.67159 0.999999 4.50002V9.50002C0.999999 10.3284 1.67157 11 2.5 11H7.50002C7.63263 11 7.75981 11.0527 7.85358 11.1465L9.99999 13.2929V11.5C9.99999 11.2239 10.2239 11 10.5 11H12.5C13.3284 11 14 10.3284 14 9.50002V4.5C14 3.67157 13.3284 3 12.5 3ZM2.49999 2.00002L12.5 2C13.8807 2 15 3.11928 15 4.5V9.50002C15 10.8807 13.8807 12 12.5 12H11V14.5C11 14.7022 10.8782 14.8845 10.6913 14.9619C10.5045 15.0393 10.2894 14.9965 10.1464 14.8535L7.29292 12H2.5C1.11929 12 0 10.8807 0 9.50002V4.50002C0 3.11931 1.11928 2.00002 2.49999 2.00002Z"
+                      fill="#0488FC"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
                 </IconButton>
               </Tooltip>
             </Box>
@@ -753,28 +784,61 @@ function Home() {
             <Separator size="2" />
           </Flex>
 
-          <Section size={3}>
+          <Section size="3">
             <Container size="2">
               <Flex css={{ ai: 'center', jc: 'space-between' }}>
-                <Text>
-                  Resize selected object
-                </Text>
+                <Text>Resize selected object</Text>
                 <Flex css={{ ai: 'center', gap: '$1' }}>
-                  <Kbd>
-                    Cmd
-                  </Kbd>
+                  <Kbd>Cmd</Kbd>
                   <Box css={{ color: '$gray800' }}>
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </Box>
                   <Kbd>
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 1C7.66148 1 7.81301 1.07798 7.90687 1.20938L12.9069 8.20938C13.0157 8.36179 13.0303 8.56226 12.9446 8.72879C12.8589 8.89533 12.6873 9 12.5 9H10V11.5C10 11.7761 9.77614 12 9.5 12H5.5C5.22386 12 5 11.7761 5 11.5V9H2.5C2.31271 9 2.14112 8.89533 2.05542 8.72879C1.96972 8.56226 1.98427 8.36179 2.09314 8.20938L7.09314 1.20938C7.18699 1.07798 7.33853 1 7.5 1ZM3.4716 8H5.5C5.77614 8 6 8.22386 6 8.5V11H9V8.5C9 8.22386 9.22386 8 9.5 8H11.5284L7.5 2.36023L3.4716 8Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.5 1C7.66148 1 7.81301 1.07798 7.90687 1.20938L12.9069 8.20938C13.0157 8.36179 13.0303 8.56226 12.9446 8.72879C12.8589 8.89533 12.6873 9 12.5 9H10V11.5C10 11.7761 9.77614 12 9.5 12H5.5C5.22386 12 5 11.7761 5 11.5V9H2.5C2.31271 9 2.14112 8.89533 2.05542 8.72879C1.96972 8.56226 1.98427 8.36179 2.09314 8.20938L7.09314 1.20938C7.18699 1.07798 7.33853 1 7.5 1ZM3.4716 8H5.5C5.77614 8 6 8.22386 6 8.5V11H9V8.5C9 8.22386 9.22386 8 9.5 8H11.5284L7.5 2.36023L3.4716 8Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </Kbd>
                   <Box css={{ color: '$gray800' }}>
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </Box>
-                  <Kbd>
-                    Up
-                  </Kbd>
+                  <Kbd>Up</Kbd>
                 </Flex>
               </Flex>
             </Container>
@@ -784,7 +848,7 @@ function Home() {
             <Separator size="2" />
           </Flex>
 
-          <Section size={3}>
+          <Section size="3">
             <Container size="2">
               <Flex css={{ ai: 'baseline' }}>
                 <Text size="3" css={{ fontWeight: '500' }}>
@@ -957,7 +1021,9 @@ function Home() {
               <Box css={{ mb: '$6' }}>
                 <Text size="2">Download 50% complete</Text>
                 <ProgressBar max={100} value={50} css={{ my: '$2' }} />
-                <Text size="1" css={{ color: '$gray900' }}>46 hours remaining</Text>
+                <Text size="1" css={{ color: '$gray900' }}>
+                  46 hours remaining
+                </Text>
               </Box>
               <Box css={{ mb: '$6' }}>
                 <ProgressBar max={100} value={100} />
@@ -1144,48 +1210,72 @@ function Home() {
 
           <Section size="3">
             <Container size="2">
-            <Accordion>
-              <Accordion.Item value="accordion-one">
-                <Accordion.Button>
-                  <Text size="3" css={{ fontWeight: 500 }}>Accordion one</Text>
-                </Accordion.Button>
-                <Accordion.Panel>
-                  <Text size="3" css={{ lineHeight: '23px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With horizontal overflow on small devices and when zoomed in, tables are a pain to navigate. I added a focus wrapper that will announce the table context to the user when focused, which also allows keyboard users to navigate the overflow more easily.
-                  </Text>
-                </Accordion.Panel>
-              </Accordion.Item>
-              <Accordion.Item value="accordion-two">
-                <Accordion.Button>
-                  <Text size="3" css={{ fontWeight: 500 }}>Accordion two</Text>
-                </Accordion.Button>
-                <Accordion.Panel>
-                  <Text size="3" css={{ lineHeight: '23px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With horizontal overflow on small devices and when zoomed in, tables are a pain to navigate. I added a focus wrapper that will announce the table context to the user when focused, which also allows keyboard users to navigate the overflow more easily.
-                  </Text>
-                </Accordion.Panel>
-              </Accordion.Item>
-              <Accordion.Item value="accordion-three">
-                <Accordion.Button>
-                  <Text size="3" css={{ fontWeight: 500 }}>Accordion one</Text>
-                </Accordion.Button>
-                <Accordion.Panel>
-                  <Text size="3" css={{ lineHeight: '23px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With horizontal overflow on small devices and when zoomed in, tables are a pain to navigate. I added a focus wrapper that will announce the table context to the user when focused, which also allows keyboard users to navigate the overflow more easily.
-                  </Text>
-                </Accordion.Panel>
-              </Accordion.Item>
-              <Accordion.Item value="accordion-four">
-                <Accordion.Button>
-                  <Text size="3" css={{ fontWeight: 500 }}>Accordion two</Text>
-                </Accordion.Button>
-                <Accordion.Panel>
-                  <Text size="3" css={{ lineHeight: '23px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot. With horizontal overflow on small devices and when zoomed in, tables are a pain to navigate. I added a focus wrapper that will announce the table context to the user when focused, which also allows keyboard users to navigate the overflow more easily.
-                  </Text>
-                </Accordion.Panel>
-              </Accordion.Item>
-            </Accordion>
+              <Accordion>
+                <Accordion.Item value="accordion-one">
+                  <Accordion.Button>
+                    <Text size="3" css={{ fontWeight: 500 }}>
+                      Accordion one
+                    </Text>
+                  </Accordion.Button>
+                  <Accordion.Panel>
+                    <Text size="3" css={{ lineHeight: '23px' }}>
+                      The other main improvement is with tables, which we'll probably use a lot.
+                      With horizontal overflow on small devices and when zoomed in, tables are a
+                      pain to navigate. I added a focus wrapper that will announce the table context
+                      to the user when focused, which also allows keyboard users to navigate the
+                      overflow more easily.
+                    </Text>
+                  </Accordion.Panel>
+                </Accordion.Item>
+                <Accordion.Item value="accordion-two">
+                  <Accordion.Button>
+                    <Text size="3" css={{ fontWeight: 500 }}>
+                      Accordion two
+                    </Text>
+                  </Accordion.Button>
+                  <Accordion.Panel>
+                    <Text size="3" css={{ lineHeight: '23px' }}>
+                      The other main improvement is with tables, which we'll probably use a lot.
+                      With horizontal overflow on small devices and when zoomed in, tables are a
+                      pain to navigate. I added a focus wrapper that will announce the table context
+                      to the user when focused, which also allows keyboard users to navigate the
+                      overflow more easily.
+                    </Text>
+                  </Accordion.Panel>
+                </Accordion.Item>
+                <Accordion.Item value="accordion-three">
+                  <Accordion.Button>
+                    <Text size="3" css={{ fontWeight: 500 }}>
+                      Accordion one
+                    </Text>
+                  </Accordion.Button>
+                  <Accordion.Panel>
+                    <Text size="3" css={{ lineHeight: '23px' }}>
+                      The other main improvement is with tables, which we'll probably use a lot.
+                      With horizontal overflow on small devices and when zoomed in, tables are a
+                      pain to navigate. I added a focus wrapper that will announce the table context
+                      to the user when focused, which also allows keyboard users to navigate the
+                      overflow more easily.
+                    </Text>
+                  </Accordion.Panel>
+                </Accordion.Item>
+                <Accordion.Item value="accordion-four">
+                  <Accordion.Button>
+                    <Text size="3" css={{ fontWeight: 500 }}>
+                      Accordion two
+                    </Text>
+                  </Accordion.Button>
+                  <Accordion.Panel>
+                    <Text size="3" css={{ lineHeight: '23px' }}>
+                      The other main improvement is with tables, which we'll probably use a lot.
+                      With horizontal overflow on small devices and when zoomed in, tables are a
+                      pain to navigate. I added a focus wrapper that will announce the table context
+                      to the user when focused, which also allows keyboard users to navigate the
+                      overflow more easily.
+                    </Text>
+                  </Accordion.Panel>
+                </Accordion.Item>
+              </Accordion>
             </Container>
           </Section>
 
@@ -1203,21 +1293,11 @@ function Home() {
             <Container size="2" css={{ py: '$7' }}>
               <Tabs defaultSelectedId="tab-one">
                 <Tabs.List>
-                  <Tabs.Tab id="tab-one">
-                    General
-                  </Tabs.Tab>
-                  <Tabs.Tab id="tab-two">
-                    Hosting
-                  </Tabs.Tab>
-                  <Tabs.Tab id="tab-three">
-                    Editor
-                  </Tabs.Tab>
-                  <Tabs.Tab id="tab-four">
-                    Billing
-                  </Tabs.Tab>
-                  <Tabs.Tab id="tab-five">
-                    SEO
-                  </Tabs.Tab>
+                  <Tabs.Tab id="tab-one">General</Tabs.Tab>
+                  <Tabs.Tab id="tab-two">Hosting</Tabs.Tab>
+                  <Tabs.Tab id="tab-three">Editor</Tabs.Tab>
+                  <Tabs.Tab id="tab-four">Billing</Tabs.Tab>
+                  <Tabs.Tab id="tab-five">SEO</Tabs.Tab>
                 </Tabs.List>
                 <Tabs.Panel id="tab-one">
                   <Text>Panel 1</Text>
@@ -1238,36 +1318,16 @@ function Home() {
 
               <Tabs defaultSelectedId="tab-one" orientation="vertical" css={{ mt: '$9' }}>
                 <Tabs.List>
-                  <Tabs.Tab id="tab-one">
-                    General
-                  </Tabs.Tab>
-                  <Tabs.Tab id="tab-two">
-                    Hosting
-                  </Tabs.Tab>
-                  <Tabs.Tab id="tab-three">
-                    Editor
-                  </Tabs.Tab>
-                  <Tabs.Tab id="tab-four">
-                    Billing
-                  </Tabs.Tab>
-                  <Tabs.Tab id="tab-five">
-                    SEO
-                  </Tabs.Tab>
-                  <Tabs.Tab id="tab-six">
-                    Forms
-                  </Tabs.Tab>
-                  <Tabs.Tab id="tab-seven">
-                    Fonts
-                  </Tabs.Tab>
-                  <Tabs.Tab id="tab-eight">
-                    Backups
-                  </Tabs.Tab>
-                  <Tabs.Tab id="tab-nine">
-                    Integrations
-                  </Tabs.Tab>
-                  <Tabs.Tab id="tab-ten">
-                    Custom code
-                  </Tabs.Tab>
+                  <Tabs.Tab id="tab-one">General</Tabs.Tab>
+                  <Tabs.Tab id="tab-two">Hosting</Tabs.Tab>
+                  <Tabs.Tab id="tab-three">Editor</Tabs.Tab>
+                  <Tabs.Tab id="tab-four">Billing</Tabs.Tab>
+                  <Tabs.Tab id="tab-five">SEO</Tabs.Tab>
+                  <Tabs.Tab id="tab-six">Forms</Tabs.Tab>
+                  <Tabs.Tab id="tab-seven">Fonts</Tabs.Tab>
+                  <Tabs.Tab id="tab-eight">Backups</Tabs.Tab>
+                  <Tabs.Tab id="tab-nine">Integrations</Tabs.Tab>
+                  <Tabs.Tab id="tab-ten">Custom code</Tabs.Tab>
                 </Tabs.List>
                 <Tabs.Panel id="tab-one">
                   <Text>Panel 1</Text>
@@ -1312,55 +1372,172 @@ function Home() {
               <Flex css={{ borderBottom: '1px solid $gray500' }}>
                 <TabLink href="#" active>
                   <Box css={{ mr: '$1' }}>
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.96424 2.68571C10.0668 2.42931 9.94209 2.13833 9.6857 2.03577C9.4293 1.93322 9.13832 2.05792 9.03576 2.31432L5.03576 12.3143C4.9332 12.5707 5.05791 12.8617 5.3143 12.9642C5.5707 13.0668 5.86168 12.9421 5.96424 12.6857L9.96424 2.68571ZM3.85355 5.14646C4.04882 5.34172 4.04882 5.6583 3.85355 5.85356L2.20711 7.50001L3.85355 9.14646C4.04882 9.34172 4.04882 9.6583 3.85355 9.85356C3.65829 10.0488 3.34171 10.0488 3.14645 9.85356L1.14645 7.85356C0.951184 7.6583 0.951184 7.34172 1.14645 7.14646L3.14645 5.14646C3.34171 4.9512 3.65829 4.9512 3.85355 5.14646ZM11.1464 5.14646C11.3417 4.9512 11.6583 4.9512 11.8536 5.14646L13.8536 7.14646C14.0488 7.34172 14.0488 7.6583 13.8536 7.85356L11.8536 9.85356C11.6583 10.0488 11.3417 10.0488 11.1464 9.85356C10.9512 9.6583 10.9512 9.34172 11.1464 9.14646L12.7929 7.50001L11.1464 5.85356C10.9512 5.6583 10.9512 5.34172 11.1464 5.14646Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.96424 2.68571C10.0668 2.42931 9.94209 2.13833 9.6857 2.03577C9.4293 1.93322 9.13832 2.05792 9.03576 2.31432L5.03576 12.3143C4.9332 12.5707 5.05791 12.8617 5.3143 12.9642C5.5707 13.0668 5.86168 12.9421 5.96424 12.6857L9.96424 2.68571ZM3.85355 5.14646C4.04882 5.34172 4.04882 5.6583 3.85355 5.85356L2.20711 7.50001L3.85355 9.14646C4.04882 9.34172 4.04882 9.6583 3.85355 9.85356C3.65829 10.0488 3.34171 10.0488 3.14645 9.85356L1.14645 7.85356C0.951184 7.6583 0.951184 7.34172 1.14645 7.14646L3.14645 5.14646C3.34171 4.9512 3.65829 4.9512 3.85355 5.14646ZM11.1464 5.14646C11.3417 4.9512 11.6583 4.9512 11.8536 5.14646L13.8536 7.14646C14.0488 7.34172 14.0488 7.6583 13.8536 7.85356L11.8536 9.85356C11.6583 10.0488 11.3417 10.0488 11.1464 9.85356C10.9512 9.6583 10.9512 9.34172 11.1464 9.14646L12.7929 7.50001L11.1464 5.85356C10.9512 5.6583 10.9512 5.34172 11.1464 5.14646Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </Box>
                   Code
                 </TabLink>
                 <TabLink href="#">
                   <Box css={{ mr: '$1' }}>
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.4449 0.608765C8.0183 -0.107015 6.9817 -0.107015 6.55509 0.608766L0.161178 11.3368C-0.275824 12.07 0.252503 13 1.10608 13H13.8939C14.7475 13 15.2758 12.07 14.8388 11.3368L8.4449 0.608765ZM7.4141 1.12073C7.45288 1.05566 7.54712 1.05566 7.5859 1.12073L13.9798 11.8488C14.0196 11.9154 13.9715 12 13.8939 12H1.10608C1.02849 12 0.980454 11.9154 1.02018 11.8488L7.4141 1.12073ZM6.8269 4.48611C6.81221 4.10423 7.11783 3.78663 7.5 3.78663C7.88217 3.78663 8.18778 4.10423 8.1731 4.48612L8.01921 8.48701C8.00848 8.766 7.7792 8.98664 7.5 8.98664C7.2208 8.98664 6.99151 8.766 6.98078 8.48701L6.8269 4.48611ZM8.24989 10.476C8.24989 10.8902 7.9141 11.226 7.49989 11.226C7.08567 11.226 6.74989 10.8902 6.74989 10.476C6.74989 10.0618 7.08567 9.72599 7.49989 9.72599C7.9141 9.72599 8.24989 10.0618 8.24989 10.476Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.4449 0.608765C8.0183 -0.107015 6.9817 -0.107015 6.55509 0.608766L0.161178 11.3368C-0.275824 12.07 0.252503 13 1.10608 13H13.8939C14.7475 13 15.2758 12.07 14.8388 11.3368L8.4449 0.608765ZM7.4141 1.12073C7.45288 1.05566 7.54712 1.05566 7.5859 1.12073L13.9798 11.8488C14.0196 11.9154 13.9715 12 13.8939 12H1.10608C1.02849 12 0.980454 11.9154 1.02018 11.8488L7.4141 1.12073ZM6.8269 4.48611C6.81221 4.10423 7.11783 3.78663 7.5 3.78663C7.88217 3.78663 8.18778 4.10423 8.1731 4.48612L8.01921 8.48701C8.00848 8.766 7.7792 8.98664 7.5 8.98664C7.2208 8.98664 6.99151 8.766 6.98078 8.48701L6.8269 4.48611ZM8.24989 10.476C8.24989 10.8902 7.9141 11.226 7.49989 11.226C7.08567 11.226 6.74989 10.8902 6.74989 10.476C6.74989 10.0618 7.08567 9.72599 7.49989 9.72599C7.9141 9.72599 8.24989 10.0618 8.24989 10.476Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </Box>
                   Issues
                 </TabLink>
                 <TabLink href="#">
                   <Box css={{ mr: '$1' }}>
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.94969 7.49989C9.94969 8.85288 8.85288 9.94969 7.49989 9.94969C6.14691 9.94969 5.0501 8.85288 5.0501 7.49989C5.0501 6.14691 6.14691 5.0501 7.49989 5.0501C8.85288 5.0501 9.94969 6.14691 9.94969 7.49989ZM10.8632 8C10.6213 9.64055 9.20764 10.8997 7.49989 10.8997C5.79214 10.8997 4.37847 9.64055 4.13662 8H0.5C0.223858 8 0 7.77614 0 7.5C0 7.22386 0.223858 7 0.5 7H4.13659C4.37835 5.35935 5.79206 4.1001 7.49989 4.1001C9.20772 4.1001 10.6214 5.35935 10.8632 7H14.5C14.7761 7 15 7.22386 15 7.5C15 7.77614 14.7761 8 14.5 8H10.8632Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.94969 7.49989C9.94969 8.85288 8.85288 9.94969 7.49989 9.94969C6.14691 9.94969 5.0501 8.85288 5.0501 7.49989C5.0501 6.14691 6.14691 5.0501 7.49989 5.0501C8.85288 5.0501 9.94969 6.14691 9.94969 7.49989ZM10.8632 8C10.6213 9.64055 9.20764 10.8997 7.49989 10.8997C5.79214 10.8997 4.37847 9.64055 4.13662 8H0.5C0.223858 8 0 7.77614 0 7.5C0 7.22386 0.223858 7 0.5 7H4.13659C4.37835 5.35935 5.79206 4.1001 7.49989 4.1001C9.20772 4.1001 10.6214 5.35935 10.8632 7H14.5C14.7761 7 15 7.22386 15 7.5C15 7.77614 14.7761 8 14.5 8H10.8632Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </Box>
                   Pull requests
                 </TabLink>
                 <TabLink href="#">
                   <Box css={{ mr: '$1' }}>
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.76447 3.12199C5.63151 3.04859 6.56082 3 7.5 3C8.43918 3 9.36849 3.04859 10.2355 3.12199C11.2796 3.21037 11.9553 3.27008 12.472 3.39203C12.9425 3.50304 13.2048 3.64976 13.4306 3.88086C13.4553 3.90618 13.4902 3.94414 13.5133 3.97092C13.7126 4.20149 13.8435 4.4887 13.918 5.03283C13.9978 5.6156 14 6.37644 14 7.52493C14 8.66026 13.9978 9.41019 13.9181 9.98538C13.8439 10.5206 13.7137 10.8061 13.5125 11.0387C13.4896 11.0651 13.4541 11.1038 13.4296 11.1287C13.2009 11.3625 12.9406 11.5076 12.4818 11.6164C11.9752 11.7365 11.3143 11.7942 10.2878 11.8797C9.41948 11.9521 8.47566 12 7.5 12C6.52434 12 5.58052 11.9521 4.7122 11.8797C3.68572 11.7942 3.02477 11.7365 2.51816 11.6164C2.05936 11.5076 1.7991 11.3625 1.57037 11.1287C1.54593 11.1038 1.51035 11.0651 1.48748 11.0387C1.28628 10.8061 1.15612 10.5206 1.08193 9.98538C1.00221 9.41019 1 8.66026 1 7.52493C1 6.37644 1.00216 5.6156 1.082 5.03283C1.15654 4.4887 1.28744 4.20149 1.48666 3.97092C1.5098 3.94414 1.54468 3.90618 1.56942 3.88086C1.7952 3.64976 2.05752 3.50304 2.52796 3.39203C3.04473 3.27008 3.7204 3.21037 4.76447 3.12199ZM0 7.52493C0 5.28296 0 4.16198 0.729985 3.31713C0.766457 3.27491 0.815139 3.22194 0.854123 3.18204C1.63439 2.38339 2.64963 2.29744 4.68012 2.12555C5.56923 2.05028 6.52724 2 7.5 2C8.47276 2 9.43077 2.05028 10.3199 2.12555C12.3504 2.29744 13.3656 2.38339 14.1459 3.18204C14.1849 3.22194 14.2335 3.27491 14.27 3.31713C15 4.16198 15 5.28296 15 7.52493C15 9.74012 15 10.8477 14.2688 11.6929C14.2326 11.7348 14.1832 11.7885 14.1444 11.8281C13.3629 12.6269 12.3655 12.71 10.3709 12.8763C9.47971 12.9505 8.50782 13 7.5 13C6.49218 13 5.52028 12.9505 4.62915 12.8763C2.63446 12.71 1.63712 12.6269 0.855558 11.8281C0.816844 11.7885 0.767442 11.7348 0.731221 11.6929C0 10.8477 0 9.74012 0 7.52493ZM5.25 5.38264C5.25 5.20225 5.43522 5.08124 5.60041 5.15369L10.428 7.27105C10.6274 7.35853 10.6274 7.64147 10.428 7.72895L5.60041 9.84631C5.43522 9.91876 5.25 9.79775 5.25 9.61736V5.38264Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.76447 3.12199C5.63151 3.04859 6.56082 3 7.5 3C8.43918 3 9.36849 3.04859 10.2355 3.12199C11.2796 3.21037 11.9553 3.27008 12.472 3.39203C12.9425 3.50304 13.2048 3.64976 13.4306 3.88086C13.4553 3.90618 13.4902 3.94414 13.5133 3.97092C13.7126 4.20149 13.8435 4.4887 13.918 5.03283C13.9978 5.6156 14 6.37644 14 7.52493C14 8.66026 13.9978 9.41019 13.9181 9.98538C13.8439 10.5206 13.7137 10.8061 13.5125 11.0387C13.4896 11.0651 13.4541 11.1038 13.4296 11.1287C13.2009 11.3625 12.9406 11.5076 12.4818 11.6164C11.9752 11.7365 11.3143 11.7942 10.2878 11.8797C9.41948 11.9521 8.47566 12 7.5 12C6.52434 12 5.58052 11.9521 4.7122 11.8797C3.68572 11.7942 3.02477 11.7365 2.51816 11.6164C2.05936 11.5076 1.7991 11.3625 1.57037 11.1287C1.54593 11.1038 1.51035 11.0651 1.48748 11.0387C1.28628 10.8061 1.15612 10.5206 1.08193 9.98538C1.00221 9.41019 1 8.66026 1 7.52493C1 6.37644 1.00216 5.6156 1.082 5.03283C1.15654 4.4887 1.28744 4.20149 1.48666 3.97092C1.5098 3.94414 1.54468 3.90618 1.56942 3.88086C1.7952 3.64976 2.05752 3.50304 2.52796 3.39203C3.04473 3.27008 3.7204 3.21037 4.76447 3.12199ZM0 7.52493C0 5.28296 0 4.16198 0.729985 3.31713C0.766457 3.27491 0.815139 3.22194 0.854123 3.18204C1.63439 2.38339 2.64963 2.29744 4.68012 2.12555C5.56923 2.05028 6.52724 2 7.5 2C8.47276 2 9.43077 2.05028 10.3199 2.12555C12.3504 2.29744 13.3656 2.38339 14.1459 3.18204C14.1849 3.22194 14.2335 3.27491 14.27 3.31713C15 4.16198 15 5.28296 15 7.52493C15 9.74012 15 10.8477 14.2688 11.6929C14.2326 11.7348 14.1832 11.7885 14.1444 11.8281C13.3629 12.6269 12.3655 12.71 10.3709 12.8763C9.47971 12.9505 8.50782 13 7.5 13C6.49218 13 5.52028 12.9505 4.62915 12.8763C2.63446 12.71 1.63712 12.6269 0.855558 11.8281C0.816844 11.7885 0.767442 11.7348 0.731221 11.6929C0 10.8477 0 9.74012 0 7.52493ZM5.25 5.38264C5.25 5.20225 5.43522 5.08124 5.60041 5.15369L10.428 7.27105C10.6274 7.35853 10.6274 7.64147 10.428 7.72895L5.60041 9.84631C5.43522 9.91876 5.25 9.79775 5.25 9.61736V5.38264Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </Box>
                   Actions
                 </TabLink>
                 <TabLink href="#">
                   <Box css={{ mr: '$1' }}>
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5C0 1.22386 0.223858 1 0.5 1H2.5C2.77614 1 3 1.22386 3 1.5C3 1.77614 2.77614 2 2.5 2H0.5C0.223858 2 0 1.77614 0 1.5ZM4 1.5C4 1.22386 4.22386 1 4.5 1H14.5C14.7761 1 15 1.22386 15 1.5C15 1.77614 14.7761 2 14.5 2H4.5C4.22386 2 4 1.77614 4 1.5ZM4 4.5C4 4.22386 4.22386 4 4.5 4H11.5C11.7761 4 12 4.22386 12 4.5C12 4.77614 11.7761 5 11.5 5H4.5C4.22386 5 4 4.77614 4 4.5ZM0 7.5C0 7.22386 0.223858 7 0.5 7H2.5C2.77614 7 3 7.22386 3 7.5C3 7.77614 2.77614 8 2.5 8H0.5C0.223858 8 0 7.77614 0 7.5ZM4 7.5C4 7.22386 4.22386 7 4.5 7H14.5C14.7761 7 15 7.22386 15 7.5C15 7.77614 14.7761 8 14.5 8H4.5C4.22386 8 4 7.77614 4 7.5ZM4 10.5C4 10.2239 4.22386 10 4.5 10H11.5C11.7761 10 12 10.2239 12 10.5C12 10.7761 11.7761 11 11.5 11H4.5C4.22386 11 4 10.7761 4 10.5ZM0 13.5C0 13.2239 0.223858 13 0.5 13H2.5C2.77614 13 3 13.2239 3 13.5C3 13.7761 2.77614 14 2.5 14H0.5C0.223858 14 0 13.7761 0 13.5ZM4 13.5C4 13.2239 4.22386 13 4.5 13H14.5C14.7761 13 15 13.2239 15 13.5C15 13.7761 14.7761 14 14.5 14H4.5C4.22386 14 4 13.7761 4 13.5Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.5C0 1.22386 0.223858 1 0.5 1H2.5C2.77614 1 3 1.22386 3 1.5C3 1.77614 2.77614 2 2.5 2H0.5C0.223858 2 0 1.77614 0 1.5ZM4 1.5C4 1.22386 4.22386 1 4.5 1H14.5C14.7761 1 15 1.22386 15 1.5C15 1.77614 14.7761 2 14.5 2H4.5C4.22386 2 4 1.77614 4 1.5ZM4 4.5C4 4.22386 4.22386 4 4.5 4H11.5C11.7761 4 12 4.22386 12 4.5C12 4.77614 11.7761 5 11.5 5H4.5C4.22386 5 4 4.77614 4 4.5ZM0 7.5C0 7.22386 0.223858 7 0.5 7H2.5C2.77614 7 3 7.22386 3 7.5C3 7.77614 2.77614 8 2.5 8H0.5C0.223858 8 0 7.77614 0 7.5ZM4 7.5C4 7.22386 4.22386 7 4.5 7H14.5C14.7761 7 15 7.22386 15 7.5C15 7.77614 14.7761 8 14.5 8H4.5C4.22386 8 4 7.77614 4 7.5ZM4 10.5C4 10.2239 4.22386 10 4.5 10H11.5C11.7761 10 12 10.2239 12 10.5C12 10.7761 11.7761 11 11.5 11H4.5C4.22386 11 4 10.7761 4 10.5ZM0 13.5C0 13.2239 0.223858 13 0.5 13H2.5C2.77614 13 3 13.2239 3 13.5C3 13.7761 2.77614 14 2.5 14H0.5C0.223858 14 0 13.7761 0 13.5ZM4 13.5C4 13.2239 4.22386 13 4.5 13H14.5C14.7761 13 15 13.2239 15 13.5C15 13.7761 14.7761 14 14.5 14H4.5C4.22386 14 4 13.7761 4 13.5Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </Box>
                   Projects
                 </TabLink>
                 <TabLink href="#">
                   <Box css={{ mr: '$1' }}>
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.2 1H4.17741H4.1774C3.86936 0.999988 3.60368 0.999978 3.38609 1.02067C3.15576 1.04257 2.92825 1.09113 2.71625 1.22104C2.51442 1.34472 2.34473 1.51442 2.22104 1.71625C2.09113 1.92825 2.04257 2.15576 2.02067 2.38609C1.99998 2.60367 1.99999 2.86935 2 3.17738V3.1774V3.2V11.8V11.8226V11.8226C1.99999 12.1307 1.99998 12.3963 2.02067 12.6139C2.04257 12.8442 2.09113 13.0717 2.22104 13.2837C2.34473 13.4856 2.51442 13.6553 2.71625 13.779C2.92825 13.9089 3.15576 13.9574 3.38609 13.9793C3.60368 14 3.86937 14 4.17741 14H4.2H10.8H10.8226C11.1306 14 11.3963 14 11.6139 13.9793C11.8442 13.9574 12.0717 13.9089 12.2837 13.779C12.4856 13.6553 12.6553 13.4856 12.779 13.2837C12.9089 13.0717 12.9574 12.8442 12.9793 12.6139C13 12.3963 13 12.1306 13 11.8226V11.8V3.2V3.17741C13 2.86936 13 2.60368 12.9793 2.38609C12.9574 2.15576 12.9089 1.92825 12.779 1.71625C12.6553 1.51442 12.4856 1.34472 12.2837 1.22104C12.0717 1.09113 11.8442 1.04257 11.6139 1.02067C11.3963 0.999978 11.1306 0.999988 10.8226 1H10.8H4.2ZM3.23875 2.07368C3.26722 2.05623 3.32362 2.03112 3.48075 2.01618C3.64532 2.00053 3.86298 2 4.2 2H10.8C11.137 2 11.3547 2.00053 11.5193 2.01618C11.6764 2.03112 11.7328 2.05623 11.7613 2.07368C11.8285 2.11491 11.8851 2.17147 11.9263 2.23875C11.9438 2.26722 11.9689 2.32362 11.9838 2.48075C11.9995 2.64532 12 2.86298 12 3.2V11.8C12 12.137 11.9995 12.3547 11.9838 12.5193C11.9689 12.6764 11.9438 12.7328 11.9263 12.7613C11.8851 12.8285 11.8285 12.8851 11.7613 12.9263C11.7328 12.9438 11.6764 12.9689 11.5193 12.9838C11.3547 12.9995 11.137 13 10.8 13H4.2C3.86298 13 3.64532 12.9995 3.48075 12.9838C3.32362 12.9689 3.26722 12.9438 3.23875 12.9263C3.17147 12.8851 3.11491 12.8285 3.07368 12.7613C3.05624 12.7328 3.03112 12.6764 3.01618 12.5193C3.00053 12.3547 3 12.137 3 11.8V3.2C3 2.86298 3.00053 2.64532 3.01618 2.48075C3.03112 2.32362 3.05624 2.26722 3.07368 2.23875C3.11491 2.17147 3.17147 2.11491 3.23875 2.07368ZM5 10C4.72386 10 4.5 10.2239 4.5 10.5C4.5 10.7761 4.72386 11 5 11H8C8.27614 11 8.5 10.7761 8.5 10.5C8.5 10.2239 8.27614 10 8 10H5ZM4.5 7.5C4.5 7.22386 4.72386 7 5 7H10C10.2761 7 10.5 7.22386 10.5 7.5C10.5 7.77614 10.2761 8 10 8H5C4.72386 8 4.5 7.77614 4.5 7.5ZM5 4C4.72386 4 4.5 4.22386 4.5 4.5C4.5 4.77614 4.72386 5 5 5H10C10.2761 5 10.5 4.77614 10.5 4.5C10.5 4.22386 10.2761 4 10 4H5Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.2 1H4.17741H4.1774C3.86936 0.999988 3.60368 0.999978 3.38609 1.02067C3.15576 1.04257 2.92825 1.09113 2.71625 1.22104C2.51442 1.34472 2.34473 1.51442 2.22104 1.71625C2.09113 1.92825 2.04257 2.15576 2.02067 2.38609C1.99998 2.60367 1.99999 2.86935 2 3.17738V3.1774V3.2V11.8V11.8226V11.8226C1.99999 12.1307 1.99998 12.3963 2.02067 12.6139C2.04257 12.8442 2.09113 13.0717 2.22104 13.2837C2.34473 13.4856 2.51442 13.6553 2.71625 13.779C2.92825 13.9089 3.15576 13.9574 3.38609 13.9793C3.60368 14 3.86937 14 4.17741 14H4.2H10.8H10.8226C11.1306 14 11.3963 14 11.6139 13.9793C11.8442 13.9574 12.0717 13.9089 12.2837 13.779C12.4856 13.6553 12.6553 13.4856 12.779 13.2837C12.9089 13.0717 12.9574 12.8442 12.9793 12.6139C13 12.3963 13 12.1306 13 11.8226V11.8V3.2V3.17741C13 2.86936 13 2.60368 12.9793 2.38609C12.9574 2.15576 12.9089 1.92825 12.779 1.71625C12.6553 1.51442 12.4856 1.34472 12.2837 1.22104C12.0717 1.09113 11.8442 1.04257 11.6139 1.02067C11.3963 0.999978 11.1306 0.999988 10.8226 1H10.8H4.2ZM3.23875 2.07368C3.26722 2.05623 3.32362 2.03112 3.48075 2.01618C3.64532 2.00053 3.86298 2 4.2 2H10.8C11.137 2 11.3547 2.00053 11.5193 2.01618C11.6764 2.03112 11.7328 2.05623 11.7613 2.07368C11.8285 2.11491 11.8851 2.17147 11.9263 2.23875C11.9438 2.26722 11.9689 2.32362 11.9838 2.48075C11.9995 2.64532 12 2.86298 12 3.2V11.8C12 12.137 11.9995 12.3547 11.9838 12.5193C11.9689 12.6764 11.9438 12.7328 11.9263 12.7613C11.8851 12.8285 11.8285 12.8851 11.7613 12.9263C11.7328 12.9438 11.6764 12.9689 11.5193 12.9838C11.3547 12.9995 11.137 13 10.8 13H4.2C3.86298 13 3.64532 12.9995 3.48075 12.9838C3.32362 12.9689 3.26722 12.9438 3.23875 12.9263C3.17147 12.8851 3.11491 12.8285 3.07368 12.7613C3.05624 12.7328 3.03112 12.6764 3.01618 12.5193C3.00053 12.3547 3 12.137 3 11.8V3.2C3 2.86298 3.00053 2.64532 3.01618 2.48075C3.03112 2.32362 3.05624 2.26722 3.07368 2.23875C3.11491 2.17147 3.17147 2.11491 3.23875 2.07368ZM5 10C4.72386 10 4.5 10.2239 4.5 10.5C4.5 10.7761 4.72386 11 5 11H8C8.27614 11 8.5 10.7761 8.5 10.5C8.5 10.2239 8.27614 10 8 10H5ZM4.5 7.5C4.5 7.22386 4.72386 7 5 7H10C10.2761 7 10.5 7.22386 10.5 7.5C10.5 7.77614 10.2761 8 10 8H5C4.72386 8 4.5 7.77614 4.5 7.5ZM5 4C4.72386 4 4.5 4.22386 4.5 4.5C4.5 4.77614 4.72386 5 5 5H10C10.2761 5 10.5 4.77614 10.5 4.5C10.5 4.22386 10.2761 4 10 4H5Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </Box>
                   Wiki
                 </TabLink>
                 <TabLink href="#">
                   <Box css={{ mr: '$1' }}>
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 4.63601C5 3.76031 5.24219 3.1054 5.64323 2.67357C6.03934 2.24705 6.64582 1.9783 7.5014 1.9783C8.35745 1.9783 8.96306 2.24652 9.35823 2.67208C9.75838 3.10299 10 3.75708 10 4.63325V5.99999H5V4.63601ZM4 5.99999V4.63601C4 3.58148 4.29339 2.65754 4.91049 1.99307C5.53252 1.32329 6.42675 0.978302 7.5014 0.978302C8.57583 0.978302 9.46952 1.32233 10.091 1.99162C10.7076 2.65557 11 3.57896 11 4.63325V5.99999H12C12.5523 5.99999 13 6.44771 13 6.99999V13C13 13.5523 12.5523 14 12 14H3C2.44772 14 2 13.5523 2 13V6.99999C2 6.44771 2.44772 5.99999 3 5.99999H4ZM3 6.99999H12V13H3V6.99999Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 4.63601C5 3.76031 5.24219 3.1054 5.64323 2.67357C6.03934 2.24705 6.64582 1.9783 7.5014 1.9783C8.35745 1.9783 8.96306 2.24652 9.35823 2.67208C9.75838 3.10299 10 3.75708 10 4.63325V5.99999H5V4.63601ZM4 5.99999V4.63601C4 3.58148 4.29339 2.65754 4.91049 1.99307C5.53252 1.32329 6.42675 0.978302 7.5014 0.978302C8.57583 0.978302 9.46952 1.32233 10.091 1.99162C10.7076 2.65557 11 3.57896 11 4.63325V5.99999H12C12.5523 5.99999 13 6.44771 13 6.99999V13C13 13.5523 12.5523 14 12 14H3C2.44772 14 2 13.5523 2 13V6.99999C2 6.44771 2.44772 5.99999 3 5.99999H4ZM3 6.99999H12V13H3V6.99999Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </Box>
                   Security
                 </TabLink>
                 <TabLink href="#">
                   <Box css={{ mr: '$1' }}>
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 1C11.7761 1 12 1.22386 12 1.5V13.5C12 13.7761 11.7761 14 11.5 14C11.2239 14 11 13.7761 11 13.5V1.5C11 1.22386 11.2239 1 11.5 1ZM9.5 3C9.77614 3 10 3.22386 10 3.5V13.5C10 13.7761 9.77614 14 9.5 14C9.22386 14 9 13.7761 9 13.5V3.5C9 3.22386 9.22386 3 9.5 3ZM13.5 3C13.7761 3 14 3.22386 14 3.5V13.5C14 13.7761 13.7761 14 13.5 14C13.2239 14 13 13.7761 13 13.5V3.5C13 3.22386 13.2239 3 13.5 3ZM5.5 4C5.77614 4 6 4.22386 6 4.5V13.5C6 13.7761 5.77614 14 5.5 14C5.22386 14 5 13.7761 5 13.5V4.5C5 4.22386 5.22386 4 5.5 4ZM1.5 5C1.77614 5 2 5.22386 2 5.5V13.5C2 13.7761 1.77614 14 1.5 14C1.22386 14 1 13.7761 1 13.5V5.5C1 5.22386 1.22386 5 1.5 5ZM7.5 5C7.77614 5 8 5.22386 8 5.5V13.5C8 13.7761 7.77614 14 7.5 14C7.22386 14 7 13.7761 7 13.5V5.5C7 5.22386 7.22386 5 7.5 5ZM3.5 7C3.77614 7 4 7.22386 4 7.5V13.5C4 13.7761 3.77614 14 3.5 14C3.22386 14 3 13.7761 3 13.5V7.5C3 7.22386 3.22386 7 3.5 7Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.5 1C11.7761 1 12 1.22386 12 1.5V13.5C12 13.7761 11.7761 14 11.5 14C11.2239 14 11 13.7761 11 13.5V1.5C11 1.22386 11.2239 1 11.5 1ZM9.5 3C9.77614 3 10 3.22386 10 3.5V13.5C10 13.7761 9.77614 14 9.5 14C9.22386 14 9 13.7761 9 13.5V3.5C9 3.22386 9.22386 3 9.5 3ZM13.5 3C13.7761 3 14 3.22386 14 3.5V13.5C14 13.7761 13.7761 14 13.5 14C13.2239 14 13 13.7761 13 13.5V3.5C13 3.22386 13.2239 3 13.5 3ZM5.5 4C5.77614 4 6 4.22386 6 4.5V13.5C6 13.7761 5.77614 14 5.5 14C5.22386 14 5 13.7761 5 13.5V4.5C5 4.22386 5.22386 4 5.5 4ZM1.5 5C1.77614 5 2 5.22386 2 5.5V13.5C2 13.7761 1.77614 14 1.5 14C1.22386 14 1 13.7761 1 13.5V5.5C1 5.22386 1.22386 5 1.5 5ZM7.5 5C7.77614 5 8 5.22386 8 5.5V13.5C8 13.7761 7.77614 14 7.5 14C7.22386 14 7 13.7761 7 13.5V5.5C7 5.22386 7.22386 5 7.5 5ZM3.5 7C3.77614 7 4 7.22386 4 7.5V13.5C4 13.7761 3.77614 14 3.5 14C3.22386 14 3 13.7761 3 13.5V7.5C3 7.22386 3.22386 7 3.5 7Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </Box>
                   Insights
                 </TabLink>
                 <TabLink href="#">
                   <Box css={{ mr: '$1' }}>
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.07095 0.650238C6.67391 0.650238 6.32977 0.925096 6.24198 1.31231L6.0039 2.36247C5.6249 2.47269 5.26335 2.62363 4.92436 2.81013L4.01335 2.23585C3.67748 2.02413 3.23978 2.07312 2.95903 2.35386L2.35294 2.95996C2.0722 3.2407 2.0232 3.6784 2.23493 4.01427L2.80942 4.92561C2.62307 5.2645 2.47227 5.62594 2.36216 6.00481L1.31209 6.24287C0.924883 6.33065 0.650024 6.6748 0.650024 7.07183V7.92897C0.650024 8.32601 0.924883 8.67015 1.31209 8.75794L2.36228 8.99603C2.47246 9.375 2.62335 9.73652 2.80979 10.0755L2.2354 10.9867C2.02367 11.3225 2.07267 11.7602 2.35341 12.041L2.95951 12.6471C3.24025 12.9278 3.67795 12.9768 4.01382 12.7651L4.92506 12.1907C5.26384 12.377 5.62516 12.5278 6.0039 12.6379L6.24198 13.6881C6.32977 14.0753 6.67391 14.3502 7.07095 14.3502H7.92809C8.32512 14.3502 8.66927 14.0753 8.75705 13.6881L8.99505 12.6383C9.37411 12.5282 9.73573 12.3773 10.0748 12.1909L10.986 12.7653C11.3218 12.977 11.7595 12.928 12.0403 12.6473L12.6464 12.0412C12.9271 11.7604 12.9761 11.3227 12.7644 10.9869L12.1902 10.076C12.3768 9.73688 12.5278 9.37515 12.638 8.99596L13.6879 8.75794C14.0751 8.67015 14.35 8.32601 14.35 7.92897V7.07183C14.35 6.6748 14.0751 6.33065 13.6879 6.24287L12.6381 6.00488C12.528 5.62578 12.3771 5.26414 12.1906 4.92507L12.7648 4.01407C12.9766 3.6782 12.9276 3.2405 12.6468 2.95975L12.0407 2.35366C11.76 2.07292 11.3223 2.02392 10.9864 2.23565L10.0755 2.80989C9.73622 2.62328 9.37437 2.47229 8.99505 2.36209L8.75705 1.31231C8.66927 0.925096 8.32512 0.650238 7.92809 0.650238H7.07095ZM4.92053 3.81251C5.44724 3.44339 6.05665 3.18424 6.71543 3.06839L7.07095 1.50024H7.92809L8.28355 3.06816C8.94267 3.18387 9.5524 3.44302 10.0794 3.81224L11.4397 2.9547L12.0458 3.56079L11.1882 4.92117C11.5573 5.44798 11.8164 6.0575 11.9321 6.71638L13.5 7.07183V7.92897L11.932 8.28444C11.8162 8.94342 11.557 9.55301 11.1878 10.0798L12.0453 11.4402L11.4392 12.0462L10.0787 11.1886C9.55192 11.5576 8.94241 11.8166 8.28355 11.9323L7.92809 13.5002H7.07095L6.71543 11.932C6.0569 11.8162 5.44772 11.5572 4.92116 11.1883L3.56055 12.046L2.95445 11.4399L3.81213 10.0794C3.4431 9.55266 3.18403 8.94326 3.06825 8.2845L1.50002 7.92897V7.07183L3.06818 6.71632C3.18388 6.05765 3.44283 5.44833 3.81171 4.92165L2.95398 3.561L3.56008 2.95491L4.92053 3.81251ZM9.02496 7.50008C9.02496 8.34226 8.34223 9.02499 7.50005 9.02499C6.65786 9.02499 5.97513 8.34226 5.97513 7.50008C5.97513 6.65789 6.65786 5.97516 7.50005 5.97516C8.34223 5.97516 9.02496 6.65789 9.02496 7.50008ZM9.92496 7.50008C9.92496 8.83932 8.83929 9.92499 7.50005 9.92499C6.1608 9.92499 5.07513 8.83932 5.07513 7.50008C5.07513 6.16084 6.1608 5.07516 7.50005 5.07516C8.83929 5.07516 9.92496 6.16084 9.92496 7.50008Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.07095 0.650238C6.67391 0.650238 6.32977 0.925096 6.24198 1.31231L6.0039 2.36247C5.6249 2.47269 5.26335 2.62363 4.92436 2.81013L4.01335 2.23585C3.67748 2.02413 3.23978 2.07312 2.95903 2.35386L2.35294 2.95996C2.0722 3.2407 2.0232 3.6784 2.23493 4.01427L2.80942 4.92561C2.62307 5.2645 2.47227 5.62594 2.36216 6.00481L1.31209 6.24287C0.924883 6.33065 0.650024 6.6748 0.650024 7.07183V7.92897C0.650024 8.32601 0.924883 8.67015 1.31209 8.75794L2.36228 8.99603C2.47246 9.375 2.62335 9.73652 2.80979 10.0755L2.2354 10.9867C2.02367 11.3225 2.07267 11.7602 2.35341 12.041L2.95951 12.6471C3.24025 12.9278 3.67795 12.9768 4.01382 12.7651L4.92506 12.1907C5.26384 12.377 5.62516 12.5278 6.0039 12.6379L6.24198 13.6881C6.32977 14.0753 6.67391 14.3502 7.07095 14.3502H7.92809C8.32512 14.3502 8.66927 14.0753 8.75705 13.6881L8.99505 12.6383C9.37411 12.5282 9.73573 12.3773 10.0748 12.1909L10.986 12.7653C11.3218 12.977 11.7595 12.928 12.0403 12.6473L12.6464 12.0412C12.9271 11.7604 12.9761 11.3227 12.7644 10.9869L12.1902 10.076C12.3768 9.73688 12.5278 9.37515 12.638 8.99596L13.6879 8.75794C14.0751 8.67015 14.35 8.32601 14.35 7.92897V7.07183C14.35 6.6748 14.0751 6.33065 13.6879 6.24287L12.6381 6.00488C12.528 5.62578 12.3771 5.26414 12.1906 4.92507L12.7648 4.01407C12.9766 3.6782 12.9276 3.2405 12.6468 2.95975L12.0407 2.35366C11.76 2.07292 11.3223 2.02392 10.9864 2.23565L10.0755 2.80989C9.73622 2.62328 9.37437 2.47229 8.99505 2.36209L8.75705 1.31231C8.66927 0.925096 8.32512 0.650238 7.92809 0.650238H7.07095ZM4.92053 3.81251C5.44724 3.44339 6.05665 3.18424 6.71543 3.06839L7.07095 1.50024H7.92809L8.28355 3.06816C8.94267 3.18387 9.5524 3.44302 10.0794 3.81224L11.4397 2.9547L12.0458 3.56079L11.1882 4.92117C11.5573 5.44798 11.8164 6.0575 11.9321 6.71638L13.5 7.07183V7.92897L11.932 8.28444C11.8162 8.94342 11.557 9.55301 11.1878 10.0798L12.0453 11.4402L11.4392 12.0462L10.0787 11.1886C9.55192 11.5576 8.94241 11.8166 8.28355 11.9323L7.92809 13.5002H7.07095L6.71543 11.932C6.0569 11.8162 5.44772 11.5572 4.92116 11.1883L3.56055 12.046L2.95445 11.4399L3.81213 10.0794C3.4431 9.55266 3.18403 8.94326 3.06825 8.2845L1.50002 7.92897V7.07183L3.06818 6.71632C3.18388 6.05765 3.44283 5.44833 3.81171 4.92165L2.95398 3.561L3.56008 2.95491L4.92053 3.81251ZM9.02496 7.50008C9.02496 8.34226 8.34223 9.02499 7.50005 9.02499C6.65786 9.02499 5.97513 8.34226 5.97513 7.50008C5.97513 6.65789 6.65786 5.97516 7.50005 5.97516C8.34223 5.97516 9.02496 6.65789 9.02496 7.50008ZM9.92496 7.50008C9.92496 8.83932 8.83929 9.92499 7.50005 9.92499C6.1608 9.92499 5.07513 8.83932 5.07513 7.50008C5.07513 6.16084 6.1608 5.07516 7.50005 5.07516C8.83929 5.07516 9.92496 6.16084 9.92496 7.50008Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </Box>
                   Settings
                 </TabLink>
@@ -1375,7 +1552,7 @@ function Home() {
           <Section size="3">
             <Container size="2">
               <Box css={{ width: '100px' }}>
-                <Slider />
+                <Slider defaultValue={50} />
               </Box>
             </Container>
           </Section>

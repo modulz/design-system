@@ -9,7 +9,7 @@ export type SliderProps = SliderPrimitiveProps &
   StitchesProps<typeof StyledSlider> & {
     alt?: string;
   };
-export type SliderVariants = StitchesVariants<typeof Slider>;
+export type SliderVariants = StitchesVariants<typeof StyledSlider>;
 
 const SliderTrack = styled(SliderPrimitive.Track, {
   position: 'relative',
@@ -52,7 +52,7 @@ const SliderThumb = styled(SliderPrimitive.Thumb, {
     right: 0,
     bottom: 0,
     left: 0,
-    zIndex: -2,  
+    zIndex: -2,
     backgroundColor: 'hsla(0,0%,0%,.035)',
     transform: 'scale(1)',
     borderRadius: '$round',
@@ -62,7 +62,7 @@ const SliderThumb = styled(SliderPrimitive.Thumb, {
   ':focus': {
     '::after': {
       transform: 'scale(2)',
-    }
+    },
   },
 
   '&::before': {
@@ -101,7 +101,7 @@ export const StyledSlider = styled(SliderPrimitive, {
   variants: {
     color: {
       gray: {
-        // 
+        //
       },
     },
   },
@@ -116,13 +116,9 @@ export const StyledSlider = styled(SliderPrimitive, {
   },
 });
 
-export function Slider({
-  color = 'gray',
-  css,
-  ...props
-}: SliderProps) {
+export function Slider({ color = 'gray', css, ...props }: SliderProps) {
   return (
-    <StyledSlider {...props} color={color} defaultValue={10}>
+    <StyledSlider color={color} {...props}>
       <SliderTrack>
         <SliderRange />
       </SliderTrack>

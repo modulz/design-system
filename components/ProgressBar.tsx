@@ -1,27 +1,25 @@
 import React from 'react';
-import { styled, css, StitchesVariants } from '../stitches.config';
+import { styled, css, StitchesProps, StitchesVariants } from '../stitches.config';
 import {
   ProgressBar as ProgressBarPrimitive,
   ProgressBarProps as ProgressBarPrimitiveProps,
 } from '@interop-ui/react-progress-bar';
 
-export type ProgressBarProps = ProgressBarPrimitiveProps & {
-  children: React.ReactNode;
-};
-export type ProgressBarVariants = StitchesVariants<typeof ProgressBar>;
+export type ProgressBarProps = ProgressBarPrimitiveProps & StitchesProps<typeof StyledProgressBar>;
+export type ProgressBarVariants = StitchesVariants<typeof StyledProgressBar>;
 
 const indeterminateProgress = css.keyframes({
   '0%': {
     transform: 'scaleX(1) translateX(-100%)',
-    transformOrigin: 'left'
+    transformOrigin: 'left',
   },
   '50%': {
     transform: 'scaleX(1) translateX(1000%)',
-    transformOrigin: 'left'
+    transformOrigin: 'left',
   },
   '100%': {
     transform: 'scaleX(1) translateX(2000%)',
-    transformOrigin: 'left'
+    transformOrigin: 'left',
   },
 });
 
@@ -49,7 +47,7 @@ const StyledProgressBar = styled(ProgressBarPrimitive, {
       bottom: 0,
       left: 0,
       width: '5%',
-    }
+    },
   },
 
   '&[data-state="complete"]': {
@@ -62,10 +60,11 @@ const StyledProgressBar = styled(ProgressBarPrimitive, {
         background: '$blue800',
       },
       gradient: {
-        background: 'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)',
-      }
-    }
-  }
+        background:
+          'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)',
+      },
+    },
+  },
 });
 
 const ProgressBarIndicator = styled(ProgressBarPrimitive.Indicator, {

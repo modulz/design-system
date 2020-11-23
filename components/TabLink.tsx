@@ -3,7 +3,7 @@ import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 export type TabLinkProps = StitchesProps<typeof TabLink>;
 export type TabLinkVariants = StitchesVariants<typeof TabLink>;
 
-export const TabLink = styled.a({
+export const TabLink = styled('a', {
   position: 'relative',
   flexShrink: 0,
   height: '$6',

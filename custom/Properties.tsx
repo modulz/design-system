@@ -10,7 +10,6 @@ import { Flex } from '../components/Flex';
 import { IconButton } from '../components/IconButton';
 import { Input } from '../components/Input';
 import { Select } from '../components/Select';
-import { MenuItem } from '../components/MenuItem';
 import { Text } from '../components/Text';
 import { ScrollArea } from '../components/Scrollbar';
 
@@ -54,7 +53,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
+                  <Input size="1" cursor="default" defaultValue="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -69,7 +68,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
+                  <Input size="1" cursor="default" defaultValue="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -84,7 +83,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
+                  <Input size="1" cursor="default" defaultValue="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -99,7 +98,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
+                  <Input size="1" cursor="default" defaultValue="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -114,7 +113,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
+                  <Input size="1" cursor="default" defaultValue="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -129,7 +128,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
+                  <Input size="1" cursor="default" defaultValue="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -144,7 +143,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
+                  <Input size="1" cursor="default" defaultValue="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -159,7 +158,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
+                  <Input size="1" cursor="default" defaultValue="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -174,7 +173,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
+                  <Input size="1" cursor="default" defaultValue="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -189,7 +188,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
+                  <Input size="1" cursor="default" defaultValue="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -204,7 +203,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
+                  <Input size="1" cursor="default" defaultValue="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -279,7 +278,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="16" />
+                  <Input size="1" cursor="default" defaultValue="16" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -353,7 +352,7 @@ export function Properties() {
                   </IconButton>
                 </Box>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="b5b5b5" />
+                  <Input size="1" cursor="default" defaultValue="b5b5b5" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -368,7 +367,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="1" />
+                  <Input size="1" cursor="default" defaultValue="1" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -383,7 +382,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0" />
+                  <Input size="1" cursor="default" defaultValue="0" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -482,7 +481,7 @@ export function Properties() {
                 <Input
                   size="1"
                   cursor="default"
-                  value="0"
+                  defaultValue="0"
                   css={{
                     borderTopRightRadius: 0,
                     borderBottomRightRadius: 0,
@@ -494,7 +493,7 @@ export function Properties() {
                 <Input
                   size="1"
                   cursor="default"
-                  value="0"
+                  defaultValue="0"
                   css={{ borderRadius: 0, width: 'calc(100% + 1px)' }}
                 />
               </Box>
@@ -502,7 +501,7 @@ export function Properties() {
                 <Input
                   size="1"
                   cursor="default"
-                  value="0"
+                  defaultValue="0"
                   css={{ borderRadius: 0, width: 'calc(100% + 1px)' }}
                 />
               </Box>
@@ -510,7 +509,7 @@ export function Properties() {
                 <Input
                   size="1"
                   cursor="default"
-                  value="0"
+                  defaultValue="0"
                   css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                 />
               </Box>
@@ -568,7 +567,7 @@ export function Properties() {
                 <Input
                   size="1"
                   cursor="default"
-                  value="0"
+                  defaultValue="0"
                   css={{
                     borderTopRightRadius: 0,
                     borderBottomRightRadius: 0,
@@ -580,7 +579,7 @@ export function Properties() {
                 <Input
                   size="1"
                   cursor="default"
-                  value="0"
+                  defaultValue="0"
                   css={{ borderRadius: 0, width: 'calc(100% + 1px)' }}
                 />
               </Box>
@@ -588,7 +587,7 @@ export function Properties() {
                 <Input
                   size="1"
                   cursor="default"
-                  value="0"
+                  defaultValue="0"
                   css={{ borderRadius: 0, width: 'calc(100% + 1px)' }}
                 />
               </Box>
@@ -596,7 +595,7 @@ export function Properties() {
                 <Input
                   size="1"
                   cursor="default"
-                  value="0"
+                  defaultValue="0"
                   css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                 />
               </Box>
@@ -722,7 +721,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="5"
+                    defaultValue="5"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -765,7 +764,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="100%"
+                    defaultValue="100%"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -817,7 +816,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="0°"
+                    defaultValue="0°"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -847,7 +846,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="0°"
+                    defaultValue="0°"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -877,7 +876,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="0°"
+                    defaultValue="0°"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -907,7 +906,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="0°"
+                    defaultValue="0°"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -937,7 +936,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="100%"
+                    defaultValue="100%"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -967,7 +966,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="100%"
+                    defaultValue="100%"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -997,7 +996,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="100%"
+                    defaultValue="100%"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -1027,7 +1026,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="100%"
+                    defaultValue="100%"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -1057,7 +1056,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="0°"
+                    defaultValue="0°"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -1087,7 +1086,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="0°"
+                    defaultValue="0°"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -1117,7 +1116,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="0"
+                    defaultValue="0"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -1147,7 +1146,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="0"
+                    defaultValue="0"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -1177,7 +1176,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="0"
+                    defaultValue="0"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -1219,7 +1218,7 @@ export function Properties() {
               </Box>
               <Flex css={{ flexBasis: '0', flexGrow: 1 }}>
                 <Box css={{ flexGrow: 1 }}>
-                  <Input size="1" cursor="default" value="0°" />
+                  <Input size="1" cursor="default" defaultValue="0°" />
                 </Box>
                 <Box css={{ ml: '$1', mr: '-$1' }}>
                   <IconButton variant="ghost">
@@ -1276,7 +1275,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="100ms"
+                    defaultValue="100ms"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
@@ -1313,7 +1312,7 @@ export function Properties() {
                   <Input
                     size="1"
                     cursor="default"
-                    value="100ms"
+                    defaultValue="100ms"
                     css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
                   />
                 </Box>
