@@ -5,7 +5,7 @@ export type SkeletonVariants = StitchesVariants<typeof Skeleton>;
 
 const pulse = css.keyframes({
   '0%': { opacity: 0 },
-  '100%': { opacity: '100%' }
+  '100%': { opacity: '100%' },
 });
 
 export const Skeleton = styled('div', {
@@ -64,7 +64,7 @@ export const Skeleton = styled('div', {
         height: '$1',
       },
       button: {
-        borderRadius: '$1',
+        borderRadius: '$2',
         height: '$5',
         width: '$8',
       },

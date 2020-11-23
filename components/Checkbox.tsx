@@ -12,7 +12,6 @@ export type CheckboxProps = CheckboxPrimitiveProps &
 export type CheckboxVariants = StitchesVariants<typeof StyledCheckbox>;
 
 const StyledCheckbox = styled(CheckboxPrimitive, {
-  borderRadius: '$1',
   color: '$hiContrast',
   boxShadow: 'inset 0 0 0 1px $gray600',
   overflow: 'hidden',
@@ -30,10 +29,12 @@ const StyledCheckbox = styled(CheckboxPrimitive, {
       '1': {
         width: '$3',
         height: '$3',
+        borderRadius: '$1',
       },
       '2': {
         width: '$5',
         height: '$5',
+        borderRadius: '$2',
       },
     },
   },
