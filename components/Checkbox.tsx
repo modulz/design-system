@@ -46,7 +46,7 @@ const StyledIndicator = styled(CheckboxPrimitive.Indicator, {
   width: '100%',
 });
 
-export function Checkbox({ size = '1', css, ...props }: CheckboxProps) {
+export function Checkbox({ size = '1', ...props }: CheckboxProps) {
   return (
     <StyledCheckbox {...props} size={size}>
       <StyledIndicator>
