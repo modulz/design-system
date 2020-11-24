@@ -15,8 +15,25 @@ export function RadioGroup(props: RadioGroupPrimitiveProps) {
   return <RadioGroupPrimitive {...props} />;
 }
 
+const StyledIndicator = styled(RadioGroupPrimitive.Indicator, {
+  alignItems: 'center',
+  display: 'flex',
+  height: '100%',
+  justifyContent: 'center',
+  width: '100%',
+  position: 'relative',
+  '&:after': {
+    content: '""',
+    display: 'block',
+    width: '7px',
+    height: '7px',
+    borderRadius: '50%',
+    backgroundColor: '$blue800',
+  },
+});
+
 const StyledRadio = styled(RadioGroupPrimitive.Item, {
-  borderRadius: '$round',
+  borderRadius: '50%',
   color: '$hiContrast',
   boxShadow: 'inset 0 0 0 1px $gray600',
   overflow: 'hidden',
@@ -38,25 +55,15 @@ const StyledRadio = styled(RadioGroupPrimitive.Item, {
       '2': {
         width: '$5',
         height: '$5',
+
+        [`& ${StyledIndicator}`]: {
+          '&:after': {
+            width: '$3',
+            height: '$3',
+          },
+        },
       },
     },
-  },
-});
-
-const StyledIndicator = styled(RadioGroupPrimitive.Indicator, {
-  alignItems: 'center',
-  display: 'flex',
-  height: '100%',
-  justifyContent: 'center',
-  width: '100%',
-  position: 'relative',
-  '&:after': {
-    content: '""',
-    display: 'block',
-    width: '$1',
-    height: '$1',
-    borderRadius: '$round',
-    backgroundColor: '$hiContrast',
   },
 });
 
