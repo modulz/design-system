@@ -4,6 +4,7 @@ import { Avatar } from '../components/Avatar';
 import { Text } from '../components/Text';
 import { Button } from '../components/Button';
 import { Flex } from '../components/Flex';
+import { IconButton } from '../components/IconButton';
 import { Dialog } from '../components/Dialog';
 import { AlertDialog } from '../components/AlertDialog';
 import { Popover } from '../components/Popover';
@@ -14,13 +15,14 @@ import { Accordion } from '../components/Accordion';
 import { Label } from '../components/Label';
 import { Switch } from '../components/Switch';
 import { SimpleToggle } from '../components/SimpleToggle';
+import { Cross2Icon } from '@modulz/radix-icons';
 
 export default function Closed() {
   return (
     <Box
       css={{
         height: '100vh',
-        backgroundColor: '$loContrast',
+        backgroundColor: '$blue500',
         py: '130px',
         px: '260px',
         overflowY: 'auto',
@@ -99,14 +101,14 @@ export default function Closed() {
           </Flex>
         </AlertDialog.Content>
       </AlertDialog>
-
+      <Box css={{ height: '10000px' }} />
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
         Popover
       </Text>
 
       <Popover>
         <Popover.Trigger as={Button}>Open Popover</Popover.Trigger>
-        <Popover.Content>
+        <Popover.Content css={{ padding: '$4' }}>
           <Text>Hello, from Popover.</Text>
         </Popover.Content>
       </Popover>
@@ -115,7 +117,32 @@ export default function Closed() {
         <Popover.Trigger as={Button} css={{ ml: '$4' }}>
           Open Popover (top)
         </Popover.Trigger>
-        <Popover.Content side="top">
+        <Popover.Content side="left" css={{ height: '300px', padding: '$4' }}>
+          <Text>Hello, from Popover.</Text>
+        </Popover.Content>
+      </Popover>
+
+      <Popover>
+        <Popover.Trigger as={Button} css={{ ml: '$4' }}>
+          With close button
+        </Popover.Trigger>
+        <Popover.Content side="top" css={{ padding: '$4' }}>
+          <Text>Hello, from Popover.</Text>
+          <Popover.Close
+            as={IconButton}
+            variant="ghost"
+            css={{ position: 'absolute', top: '$1', right: '$1' }}
+          >
+            <Cross2Icon />
+          </Popover.Close>
+        </Popover.Content>
+      </Popover>
+
+      <Popover>
+        <Popover.Trigger as={Button} css={{ ml: '$4' }}>
+          Without arrow
+        </Popover.Trigger>
+        <Popover.Content side="top" hideArrow>
           <Text>Hello, from Popover.</Text>
         </Popover.Content>
       </Popover>
@@ -246,6 +273,8 @@ export default function Closed() {
       </Text>
 
       <SimpleToggle />
+
+      <Box css={{ height: '10000px' }} />
     </Box>
   );
 }

@@ -15,8 +15,9 @@ export type { PopoverTriggerProps } from '@interop-ui/react-popover';
 export type PopoverProps = PopoverPrimitiveProps & {
   children: React.ReactNode;
 };
-export type PopoverContentProps = PopoverPopperProps & StitchesProps<typeof Content>;
-export type PopoverCloseProps = PopoverPrimitiveCloseProps & StitchesProps<typeof Close>;
+export type PopoverContentProps = PopoverPopperProps &
+  StitchesProps<typeof Content> & { hideArrow?: boolean };
+export type PopoverCloseProps = PopoverPrimitiveCloseProps & StitchesProps<typeof CloseButton>;
 
 export function Popover({ children, ...props }: PopoverProps) {
   return <PopoverPrimitive {...props}>{children}</PopoverPrimitive>;
@@ -48,6 +49,9 @@ const slideLeft = css.keyframes({
 });
 
 const Popper = styled(PopoverPrimitive.Popper, {
+  '&:focus': {
+    outline: 'none',
+  },
   '&[data-side=top]': {
     animation: `${fadeIn} 125ms cubic-bezier(0.22, 1, 0.36, 1), ${slideUp} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
   },
@@ -65,14 +69,10 @@ const Popper = styled(PopoverPrimitive.Popper, {
 const Content = styled(PopoverPrimitive.Content, {
   minWidth: 200,
   maxWidth: 'fit-content',
-  padding: '$4',
-
-  '&:focus': {
-    outline: 'none',
-  },
+  minHeight: '$6',
 });
 
-const Close = styled(PopoverPrimitive.Close, {});
+const CloseButton = styled(PopoverPrimitive.Close, {});
 
 const Arrow = styled(PopoverPrimitive.Arrow, {
   fill: 'currentColor',
@@ -81,17 +81,16 @@ const Arrow = styled(PopoverPrimitive.Arrow, {
 const PopoverContent = React.forwardRef<
   React.ElementRef<typeof PopoverPrimitive.Popper>,
   PopoverContentProps
->(({ children, ...props }, fowardedRef) => (
+>(({ children, css, hideArrow, ...props }, fowardedRef) => (
   <Popper sideOffset={0} {...props} ref={fowardedRef}>
-    <Content as={Panel}>
+    <Content as={Panel} css={css}>
       {children}
-      <Close as={IconButton} variant="ghost" css={{ position: 'absolute', top: '$1', right: '$1' }}>
-        <Cross2Icon />
-      </Close>
     </Content>
-    <Box css={{ color: '$panel' }}>
-      <Arrow width={11} height={5} />
-    </Box>
+    {!hideArrow && (
+      <Box css={{ color: '$panel' }}>
+        <Arrow width={11} height={5} offset={5} />
+      </Box>
+    )}
   </Popper>
 ));
 
