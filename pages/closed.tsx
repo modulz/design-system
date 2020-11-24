@@ -22,7 +22,6 @@ export default function Closed() {
     <Box
       css={{
         height: '100vh',
-        backgroundColor: '$blue500',
         py: '130px',
         px: '260px',
         overflowY: 'auto',
@@ -101,7 +100,6 @@ export default function Closed() {
           </Flex>
         </AlertDialog.Content>
       </AlertDialog>
-      <Box css={{ height: '10000px' }} />
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
         Popover
       </Text>
@@ -273,8 +271,6 @@ export default function Closed() {
       </Text>
 
       <SimpleToggle />
-
-      <Box css={{ height: '10000px' }} />
     </Box>
   );
 }
