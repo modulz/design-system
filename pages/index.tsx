@@ -569,7 +569,7 @@ function Home() {
 
           <Section size="3">
             <Container size="2">
-            <Flex css={{ gap: '$6' }}>
+              <Flex css={{ gap: '$6' }}>
                 <Button>Button</Button>
                 <Button size="large">Button</Button>
               </Flex>

@@ -6,7 +6,7 @@ export type ControlGroupProps = StitchesProps<typeof ControlGroup>;
 
 export const ControlGroup = styled('div', {
   display: 'flex',
-  [`& ${Button}`]: {
+  '& button': {
     borderRadius: 0,
     boxShadow: 'inset 0 1px 0 0 $gray600, inset -1px 0 0 0 $gray600, inset 0 -1px 0 0 $gray600',
     ':hover': {
@@ -26,7 +26,7 @@ export const ControlGroup = styled('div', {
       boxShadow: 'inset 0 1px 0 0 $gray600, inset -1px 0 0 0 $gray600, inset 0 -1px 0 0 $gray600',
     }
   },
-  [`& ${Input}`]: {
+  '& input': {
     borderRadius: 0,
     boxShadow: 'inset 0 1px 0 0 $gray600, inset -1px 0 0 0 $gray600, inset 0 -1px 0 0 $gray600',
     ':first-child': {
