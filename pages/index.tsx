@@ -6,6 +6,7 @@ import { Box } from '../components/Box';
 import { Flex } from '../components/Flex';
 import { Grid } from '../components/Grid';
 import { Badge } from '../components/Badge';
+import { ControlGroup } from '../components/ControlGroup';
 import { Text } from '../components/Text';
 import { Link } from '../components/Link';
 import { Kbd } from '../components/Kbd';
@@ -568,15 +569,42 @@ function Home() {
 
           <Section size="3">
             <Container size="2">
-              <Flex css={{ gap: '$6' }}>
+            <Flex css={{ gap: '$6' }}>
+                <Button>Button</Button>
+                <Button size="large">Button</Button>
+              </Flex>
+              <Flex css={{ mt: '$6', gap: '$6' }}>
                 <Button>Button</Button>
                 <Button variant="blue">Important</Button>
                 <Button variant="green">Secure</Button>
                 <Button variant="red">Warning</Button>
-                <Button variant="ghost">Warning</Button>
-                <Button variant="red" state="disabled">Warning</Button>
+                {/* <Button variant="ghost">Warning</Button> */}
+                <Button variant="red" state="active">Warning</Button>
                 <Button variant="red" state="waiting">Warning</Button>
               </Flex>
+              <ControlGroup css={{ mt: '$6' }}>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+              </ControlGroup>
+              <ControlGroup css={{ mt: '$6' }}>
+                <Button>Button</Button>
+                <Button>Button</Button>
+              </ControlGroup>
+              <ControlGroup css={{ mt: '$6' }}>
+                <Button>Button</Button>
+                <Input size="1" placeholder="Hello world" />
+              </ControlGroup>
+              <ControlGroup css={{ mt: '$6' }}>
+                <Input size="1" placeholder="Hello world" />
+                <Button>Button</Button>
+              </ControlGroup>
+              <ControlGroup css={{ mt: '$6' }}>
+                <Input size="1" placeholder="Hello world" />
+                <Input size="1" placeholder="Hello world" />
+                <Input size="1" placeholder="Hello world" />
+              </ControlGroup>
             </Container>
           </Section>
 

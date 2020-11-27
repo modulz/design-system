@@ -9,7 +9,6 @@ export const Input = styled('input', {
   backgroundColor: 'transparent',
   borderWidth: '0',
   boxSizing: 'border-box',
-  flexShrink: 0,
   fontFamily: 'inherit',
   lineHeight: '1',
   margin: '0',
@@ -29,9 +28,11 @@ export const Input = styled('input', {
   borderRadius: '$2',
   color: '$hiContrast',
   fontVariantNumeric: 'tabular-nums',
+  position: 'relative',
 
   ':focus': {
     boxShadow: 'inset 0px 0px 0px 1px $blue800, 0px 0px 0px 1px $blue800',
+    zIndex: '1',
   },
   ':read-only': {
     color: '$gray500',

@@ -36,6 +36,7 @@ export const Button = styled('button', {
   fontSize: '$2',
   fontWeight: 500,
   fontVariantNumeric: 'tabular-nums',
+  position: 'relative',
 
   ':hover': {
     boxShadow: 'inset 0 0 0 1px $gray700',
@@ -46,6 +47,7 @@ export const Button = styled('button', {
   },
   ':focus': {
     boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
+    zIndex: '1',
   },
   ':disabled': {
     pointerEvents: 'none',
@@ -64,9 +66,9 @@ export const Button = styled('button', {
     },
     variant: {
       blue: {
-        backgroundColor: '$blue800',
-        boxShadow: 'none',
-        color: 'white',
+        backgroundColor: '$blue100',
+        boxShadow: 'inset 0 0 0 1px $blue600',
+        color: '$blue900',
         ':hover': {
           backgroundColor: '$blue900',
           boxShadow: 'none',
@@ -80,9 +82,9 @@ export const Button = styled('button', {
         },
       },
       green: {
-        backgroundColor: '$green800',
-        boxShadow: 'none',
-        color: 'white',
+        backgroundColor: '$green100',
+        boxShadow: 'inset 0 0 0 1px $green600',
+        color: '$green900',
         ':hover': {
           backgroundColor: '$green600',
           boxShadow: 'none',
@@ -118,22 +120,30 @@ export const Button = styled('button', {
     state: {
       active: {
         backgroundColor: '$gray300',
-        boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+        boxShadow: 'inset 0 0 0 1px $gray700',
+        color: '$gray900',
         ':hover': {
-          boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+          backgroundColor: '$gray400',
         },
         ':active': {
-          backgroundColor: '$gray300',
+          backgroundColor: '$gray400',
+        },
+        ':focus': {
+          boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
         },
       },
       waiting: {
         backgroundColor: '$gray300',
-        boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+        boxShadow: 'inset 0 0 0 1px $gray700',
+        color: 'transparent',
         ':hover': {
-          boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+          backgroundColor: '$gray400',
         },
         ':active': {
-          backgroundColor: '$gray300',
+          backgroundColor: '$gray400',
+        },
+        ':focus': {
+          boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
         },
       },
     },
