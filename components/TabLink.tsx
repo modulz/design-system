@@ -22,10 +22,16 @@ export const TabLink = styled('a', {
     color: '$hiContrast',
   },
 
+  '&:focus': {
+    // color: '$hiContrast',
+    boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
+  },
+
   variants: {
     active: {
       true: {
         color: '$hiContrast',
+        cursor: 'default',
         '::after': {
           position: 'absolute',
           content: '""',
