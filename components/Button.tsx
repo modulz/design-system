@@ -50,10 +50,10 @@ export const Button = styled('button', {
     zIndex: '1',
   },
   ':disabled': {
+    backgroundColor: '$gray100',
+    boxShadow: 'inset 0 0 0 1px $gray600',
+    color: '$gray700',
     pointerEvents: 'none',
-    backgroundColor: '$gray200',
-    boxShadow: 'inset 0 0 0 1px $gray400',
-    color: '$gray400',
   },
 
   variants: {
@@ -70,15 +70,14 @@ export const Button = styled('button', {
         boxShadow: 'inset 0 0 0 1px $blue600',
         color: '$blue900',
         ':hover': {
-          backgroundColor: '$blue900',
-          boxShadow: 'none',
+          boxShadow: 'inset 0 0 0 1px $blue700',
         },
         ':active': {
-          backgroundColor: '$blue700',
-          boxShadow: 'none',
+          backgroundColor: '$blue200',
+          boxShadow: 'inset 0 0 0 1px $blue700',
         },
         ':focus': {
-          boxShadow: 'inset 0 0 0 1px $blue500, 0 0 0 1px $blue500',
+          boxShadow: 'inset 0 0 0 1px $blue700, 0 0 0 1px $blue700',
         },
       },
       green: {
@@ -86,21 +85,28 @@ export const Button = styled('button', {
         boxShadow: 'inset 0 0 0 1px $green600',
         color: '$green900',
         ':hover': {
-          backgroundColor: '$green600',
-          boxShadow: 'none',
+          boxShadow: 'inset 0 0 0 1px $green700',
         },
         ':active': {
-          backgroundColor: '$green600',
-          boxShadow: 'none',
+          backgroundColor: '$green200',
+          boxShadow: 'inset 0 0 0 1px $green700',
         },
         ':focus': {
-          boxShadow: 'inset 0 0 0 1px $green500, 0 0 0 1px $green500',
+          boxShadow: 'inset 0 0 0 1px $green700, 0 0 0 1px $green700',
         },
       },
       red: {
         color: '$red900',
+        ':hover': {
+          backgroundColor: '$red100',
+          boxShadow: 'inset 0 0 0 1px $red700',
+        },
+        ':active': {
+          backgroundColor: '$red200',
+          boxShadow: 'inset 0 0 0 1px $red700',
+        },
         ':focus': {
-          boxShadow: 'inset 0 0 0 1px $red500, 0 0 0 1px $red500',
+          boxShadow: 'inset 0 0 0 1px $red700, 0 0 0 1px $red700',
         },
       },
       ghost: {
@@ -116,6 +122,38 @@ export const Button = styled('button', {
           boxShadow: 'none',
         },
       },
+      transparentWhite: {
+        backgroundColor: 'hsla(0,100%,100%,.2)',
+        boxShadow: 'none',
+        color: 'white',
+        ':hover': {
+          backgroundColor: 'hsla(0,100%,100%,.25)',
+          boxShadow: 'none',
+        },
+        ':active': {
+          backgroundColor: 'hsla(0,100%,100%,.3)',
+          boxShadow: 'none',
+        },
+        ':focus': {
+          boxShadow: 'inset 0 0 0 1px hsla(0,100%,100%,.35), 0 0 0 1px hsla(0,100%,100%,.35)',
+        },
+      },
+      transparentBlack: {
+        backgroundColor: 'hsla(0,0%,0%,.2)',
+        boxShadow: 'none',
+        color: 'black',
+        ':hover': {
+          backgroundColor: 'hsla(0,0%,0%,.25)',
+          boxShadow: 'none',
+        },
+        ':active': {
+          backgroundColor: 'hsla(0,0%,0%,.3)',
+          boxShadow: 'none',
+        },
+        ':focus': {
+          boxShadow: 'inset 0 0 0 1px hsla(0,0%,0%,.35), 0 0 0 1px hsla(0,0%,0%,.35)',
+        },
+      },
     },
     state: {
       active: {
@@ -124,6 +162,7 @@ export const Button = styled('button', {
         color: '$gray900',
         ':hover': {
           backgroundColor: '$gray400',
+          boxShadow: 'inset 0 0 0 1px $gray700',
         },
         ':active': {
           backgroundColor: '$gray400',
@@ -136,14 +175,16 @@ export const Button = styled('button', {
         backgroundColor: '$gray300',
         boxShadow: 'inset 0 0 0 1px $gray700',
         color: 'transparent',
+        pointerEvents: 'none',
         ':hover': {
           backgroundColor: '$gray400',
+          boxShadow: 'inset 0 0 0 1px $gray700',
         },
         ':active': {
           backgroundColor: '$gray400',
         },
         ':focus': {
-          boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
+          boxShadow: 'inset 0 0 0 1px $gray700',
         },
       },
     },

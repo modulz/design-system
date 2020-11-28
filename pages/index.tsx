@@ -578,9 +578,79 @@ function Home() {
                 <Button variant="blue">Important</Button>
                 <Button variant="green">Secure</Button>
                 <Button variant="red">Warning</Button>
-                {/* <Button variant="ghost">Warning</Button> */}
-                <Button variant="red" state="active">Warning</Button>
-                <Button variant="red" state="waiting">Warning</Button>
+                <Button variant="ghost">Ghost</Button>
+              </Flex>
+              <Box css={{
+                position: 'relative',
+                mt: '$6'
+              }}>
+                <img src="https://images.unsplash.com/photo-1447690709975-318628b14c57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" />
+                <Box css={{
+                  position: 'absolute',
+                  bottom: 0,
+                  right: 0,
+                  m: '$4'
+                }}>
+                  <Button variant="transparentWhite">Transparent</Button>
+                </Box>
+              </Box>
+              <Box css={{
+                position: 'relative',
+                mt: '$6'
+              }}>
+                <img src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" />
+                <Box css={{
+                  position: 'absolute',
+                  bottom: 0,
+                  right: 0,
+                  m: '$4'
+                }}>
+                  <Button variant="transparentBlack">Transparent</Button>
+                </Box>
+              </Box>
+              <Flex css={{ mt: '$6', gap: '$6' }}>
+                <Button variant="red" disabled>Disabled</Button>
+                <Button variant="red" state="active">Active</Button>
+                <Button variant="red" state="waiting" disabled>Waiting</Button>
+              </Flex>
+              <Flex css={{ gap: '$6', mt: '$6' }}>
+                <Button>
+                  <Box css={{
+                    mr: '$1'
+                  }}>
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                  </Box>
+                  Button
+                </Button>
+                <Button variant="blue">
+                  Button
+                  <Box css={{
+                    ml: '$1'
+                  }}>
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                  </Box>
+                </Button>
+                <Button variant="green">
+                  <Box css={{
+                    mr: '$1'
+                  }}>
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                  </Box>
+                  Button
+                  <Box css={{
+                    ml: '$1'
+                  }}>
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                  </Box>
+                </Button>
+                <Button size="large">
+                  <Box css={{
+                      mr: '$2'
+                    }}>
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                  </Box>
+                  Button
+                </Button>
               </Flex>
               <ControlGroup css={{ mt: '$6' }}>
                 <Button>Button</Button>
@@ -604,6 +674,10 @@ function Home() {
                 <Input size="1" placeholder="Hello world" />
                 <Input size="1" placeholder="Hello world" />
                 <Input size="1" placeholder="Hello world" />
+              </ControlGroup>
+              <ControlGroup css={{ mt: '$6' }}>
+                <Input size="2" placeholder="Hello world" />
+                <Button size="large">Button</Button>
               </ControlGroup>
             </Container>
           </Section>
