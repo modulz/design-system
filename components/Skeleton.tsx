@@ -63,6 +63,12 @@ export const Skeleton = styled('div', {
       text: {
         height: '$1',
       },
+      title: {
+        height: '$5',
+      },
+      heading: {
+        height: '$3',
+      },
       button: {
         borderRadius: '$2',
         height: '$5',
