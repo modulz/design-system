@@ -9,6 +9,7 @@ export const Separator = styled(SeparatorPrimitive, {
   margin: 0,
   flexShrink: 0,
   backgroundColor: '$gray500',
+  cursor: 'default',
 
   variants: {
     size: {

@@ -209,7 +209,7 @@ export const theme = {
     $9: '80px',
   },
   fontSizes: {
-    $1: '12px',
+    $1: '11px',
     $2: '13px',
     $3: '15px',
     $4: '17px',
