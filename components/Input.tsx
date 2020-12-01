@@ -6,7 +6,6 @@ export type InputVariants = StitchesVariants<typeof Input>;
 export const Input = styled('input', {
   // Reset
   appearance: 'none',
-  backgroundColor: 'transparent',
   borderWidth: '0',
   boxSizing: 'border-box',
   fontFamily: 'inherit',

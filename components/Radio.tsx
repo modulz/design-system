@@ -2,7 +2,7 @@ import React from 'react';
 import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
 import {
   RadioGroup as RadioGroupPrimitive,
-  RadioProps as RadioGroupPrimitiveProps,
+  RadioGroupProps as RadioGroupPrimitiveProps,
   RadioGroupItemProps,
 } from '@interop-ui/react-radio-group';
 import { CheckIcon } from '@modulz/radix-icons';

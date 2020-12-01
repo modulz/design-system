@@ -47,7 +47,6 @@ const SliderThumb = styled(SliderPrimitive.Thumb, {
   backgroundColor: 'white',
   boxShadow: '0 0 1px rgba(0,0,0,.3), 0 1px 4px rgba(0,0,0,.15)',
   borderRadius: '$round',
-  outline: 'none',
 
   '::after': {
     content: '""',
