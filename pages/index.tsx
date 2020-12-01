@@ -12,6 +12,7 @@ import { Link } from '../components/Link';
 import { Kbd } from '../components/Kbd';
 import { Separator } from '../components/Separator';
 import { VerifiedBadge } from '../components/VerifiedBadge';
+import { Card } from '../components/Card';
 import { Code } from '../components/Code';
 import { Input } from '../components/Input';
 import { Section } from '../components/Section';
@@ -979,6 +980,37 @@ function Home() {
                 Sorrow. A lot of startup stuff is focused on the initial phases, when you don’t have
                 a team, idea, or investors.
               </Paragraph>
+            </Container>
+          </Section>
+
+          <Flex css={{ jc: 'center' }}>
+            <Separator size="2" />
+          </Flex>
+
+          <Section size="3">
+            <Container size="3">
+              <Flex css={{ gap: '$3' }}>
+                <Box css={{ width: 250 }}>
+                  <Card css={{ p: '$4' }}>
+                    <Subheading css={{ mb: '$1' }}>
+                      Modulz raises $4.2M to close the gap between design and code
+                    </Subheading>
+                    <Text size="3" css={{ color: '$gray900', lineHeight: '23px' }}>
+                      Modulz is a visual code editor that empowers teams to design, develop, document and deploy a design system, without writing code.
+                    </Text>
+                  </Card>
+                </Box>
+                <Box css={{ width: 250 }}>
+                  <Card as="a" href="#" css={{ p: '$4' }} interactive>
+                    <Subheading css={{ mb: '$1' }}>
+                      Modulz raises $4.2M to close the gap between design and code
+                    </Subheading>
+                    <Text size="3" css={{ color: '$gray900', lineHeight: '23px' }}>
+                      Modulz is a visual code editor that empowers teams to design, develop, document and deploy a design system, without writing code.
+                    </Text>
+                  </Card>
+                </Box>
+              </Flex>
             </Container>
           </Section>
 

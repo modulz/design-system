@@ -9,17 +9,17 @@ export function Subheading(props: SubheadingProps) {
       as="h4"
       {...props}
       size={{
-        initial: '5',
-        bp2: '6',
+        initial: '4',
+        bp2: '5',
       }}
       css={{
         fontWeight: 500,
         fontVariantNumeric: 'proportional-nums',
-        lineHeight: '25px',
+        lineHeight: '20px',
         ...(props.css as any),
 
         bp2: {
-          lineHeight: '30px',
+          lineHeight: '23px',
           ...(props.css?.bp2 as any),
         },
       }}
