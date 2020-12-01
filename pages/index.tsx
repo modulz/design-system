@@ -773,7 +773,7 @@ function Home() {
             <Container size="2">
               <Subheading css={{ mb: '$6'}}>InputWrapper</Subheading>
               <Box css={{ position: 'relative', width: '225px' }}>
-                <Input size="1" placeholder="Hello world" css={{ pl: 22 }} />
+                <Input size="2" placeholder="Hello world" css={{ pl: 22 }} />
                 <Flex css={{
                   position: 'absolute',
                   top: 0,
@@ -803,7 +803,7 @@ function Home() {
               </Box>
 
               <Box css={{ position: 'relative', width: '225px', mt: '$6' }}>
-                <Input size="1" placeholder="Hello world" />
+                <Input size="2" placeholder="Hello world" />
                 <Flex css={{
                   position: 'absolute',
                   top: 0,
