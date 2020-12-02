@@ -26,7 +26,6 @@ export const StyledAvatar = styled(AvatarPrimitive, {
   boxSizing: 'border-box',
   display: 'flex',
   position: 'relative',
-  boxShadow: 'inset 0px 0px 1px rgba(0, 0, 0, 0.12)',
   border: 'none',
   fontFamily: 'inherit',
   lineHeight: '1',
@@ -35,6 +34,17 @@ export const StyledAvatar = styled(AvatarPrimitive, {
   padding: '0',
   fontWeight: '500',
   color: '$hiContrast',
+
+  ':before': {
+    content: '""',
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    borderRadius: '$round',
+    boxShadow: 'inset 0px 0px 1px rgba(0, 0, 0, 0.12)',
+  },
 
   variants: {
     size: {
