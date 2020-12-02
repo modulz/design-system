@@ -34,17 +34,24 @@ export const Input = styled('input', {
     boxShadow: 'inset 0px 0px 0px 1px $blue700, 0px 0px 0px 1px $blue700',
     zIndex: '1',
   },
-  ':read-only': {
-    color: '$gray500',
+  '::placeholder': {
+    color: '$gray800',
   },
   ':disabled': {
     pointerEvents: 'none',
     backgroundColor: '$gray100',
-    color: '$gray500',
+    color: '$gray700',
     cursor: 'not-allowed',
+    '::placeholder': {
+      color: '$gray600',
+    },
   },
-  '::placeholder': {
-    color: '$gray800',
+  ':read-only': {
+    backgroundColor: '$gray100',
+    // color: '$gray900',
+    ':focus': {
+      boxShadow: 'inset 0px 0px 0px 1px $gray600',
+    },
   },
 
   variants: {
