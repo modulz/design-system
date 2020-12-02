@@ -13,6 +13,7 @@ import { Kbd } from '../components/Kbd';
 import { Separator } from '../components/Separator';
 import { VerifiedBadge } from '../components/VerifiedBadge';
 import { Card } from '../components/Card';
+import { Image } from '../components/Image';
 import { Code } from '../components/Code';
 import { Input } from '../components/Input';
 import { Section } from '../components/Section';
@@ -991,8 +992,8 @@ function Home() {
           <Container size="3">
             <Flex css={{ gap: '$3' }}>
               <Box css={{ width: 250 }}>
-                <Card css={{ p: '$4' }}>
-                  <Subheading css={{ mb: '$1' }}>
+                <Card css={{ p: '$3' }}>
+                  <Subheading css={{ mb: '$2' }}>
                     Modulz raises $4.2M to close the gap between design and code
                     </Subheading>
                   <Text size="3" css={{ color: '$gray900', lineHeight: '23px' }}>
@@ -1001,34 +1002,88 @@ function Home() {
                 </Card>
               </Box>
               <Box css={{ width: 250 }}>
-                <Card as="a" href="#" css={{ p: '$4' }} interactive>
-                  <Subheading css={{ mb: '$1' }}>
+                <Card as="a" href="#" css={{ p: '$3' }} variant="interactive">
+                  <Subheading css={{ mb: '$2' }}>
                     Modulz raises $4.2M to close the gap between design and code
                     </Subheading>
                   <Text size="3" css={{ color: '$gray900', lineHeight: '23px' }}>
                     Modulz is a visual code editor that empowers teams to design, develop, document and deploy a design system, without writing code.
-                    </Text>
+                  </Text>
+                  <Flex css={{ ai: 'center', jc: 'space-between', mt: '$3' }}>
+                    <Flex css={{ ai: 'center' }}>
+                      <Avatar
+                        size="2"
+                        alt="John Smith"
+                        src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+                        fallback="J"
+                        css={{
+                          mr: '$1'
+                        }}
+                      />
+                      <Text size="2" css={{ color: '$gray900' }}>Colm Tuite</Text>
+                    </Flex>
+                    <Box>
+                      <Text size="2" css={{ color: '$gray900' }}>May 2020</Text>
+                    </Box>
+                  </Flex>
                 </Card>
               </Box>
               <Box css={{ width: 250 }}>
-                <Card as="a" href="#" interactive>
-                  <img src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" />
-                  <Subheading css={{ mb: '$1' }}>
-                    Modulz raises $4.2M to close the gap between design and code
-                    </Subheading>
-                  <Text size="3" css={{ color: '$gray900', lineHeight: '23px' }}>
-                    Modulz is a visual code editor that empowers teams to design, develop, document and deploy a design system, without writing code.
+                <Card as="a" href="#" variant="interactive">
+                  <Image src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" css={{ btlr: '$3', btrr: '$3' }} />
+                  <Box css={{ p: '$3' }}>
+                    <Subheading css={{ mb: '$2' }}>
+                      Modulz raises $4.2M to close the gap between design and code
+                      </Subheading>
+                    <Text size="3" css={{ color: '$gray900', lineHeight: '23px' }}>
+                      Modulz is a visual code editor that empowers teams to design, develop, document and deploy a design system, without writing code.
                     </Text>
+                    <Flex css={{ ai: 'center', jc: 'space-between', mt: '$3' }}>
+                      <Flex css={{ ai: 'center' }}>
+                        <Avatar
+                          size="2"
+                          alt="John Smith"
+                          src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+                          fallback="J"
+                          css={{
+                            mr: '$1'
+                          }}
+                        />
+                        <Text size="2" css={{ color: '$gray900' }}>Colm Tuite</Text>
+                      </Flex>
+                      <Box>
+                        <Text size="2" css={{ color: '$gray900' }}>May 2020</Text>
+                      </Box>
+                    </Flex>
+                  </Box>
                 </Card>
               </Box>
               <Box css={{ width: 250 }}>
-                <Card as="a" href="#" css={{ p: '$4' }} interactive>
-                  <Subheading css={{ mb: '$1' }}>
+                <Card as="a" href="#" variant="ghost" css={{ p: '$3' }}>
+                  <Image src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" css={{ br: '$1', mb: '$3' }} />
+                  <Subheading css={{ mb: '$2' }}>
                     Modulz raises $4.2M to close the gap between design and code
                     </Subheading>
                   <Text size="3" css={{ color: '$gray900', lineHeight: '23px' }}>
                     Modulz is a visual code editor that empowers teams to design, develop, document and deploy a design system, without writing code.
-                    </Text>
+                  </Text>
+                  <Flex css={{ ai: 'center', jc: 'space-between', mt: '$3' }}>
+                    <Flex css={{ ai: 'center' }}>
+                      <Avatar
+                        size="2"
+                        alt="John Smith"
+                        src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
+                        fallback="J"
+                        css={{
+                          mr: '$1'
+                        }}
+                      />
+                      <Text size="2" css={{ color: '$gray900' }}>Colm Tuite</Text>
+                    </Flex>
+                    <Box>
+                      <Text size="2" css={{ color: '$gray900' }}>May 2020</Text>
+                    </Box>
+                  </Flex>
                 </Card>
               </Box>
             </Flex>

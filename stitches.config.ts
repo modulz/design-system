@@ -495,22 +495,22 @@ export const { styled, css } = createStyled({
     bc: (value: keyof typeof theme['colors'] | (string & {})) => ({
       backgroundColor: value,
     }),
-    //
-    // br: (value: keyof typeof theme['radii'] | (string & {})) => ({
-    //   borderRadius: value,
-    // }),
-    // btrr: (value: keyof typeof theme['radii'] | (string & {})) => ({
-    //   borderTopRightRadius: value,
-    // }),
-    // bbrr: (value: keyof typeof theme['radii'] | (string & {})) => ({
-    //   borderBottomRightRadius: value,
-    // }),
-    // bblr: (value: keyof typeof theme['radii'] | (string & {})) => ({
-    //   borderBottomLeftRadius: value,
-    // }),
-    // btlr: (value: keyof typeof theme['radii'] | (string & {})) => ({
-    //   borderTopLeftRadius: value,
-    // }),
+
+    br: (value: keyof typeof theme['radii'] | (string & {})) => ({
+      borderRadius: value,
+    }),
+    btrr: (value: keyof typeof theme['radii'] | (string & {})) => ({
+      borderTopRightRadius: value,
+    }),
+    bbrr: (value: keyof typeof theme['radii'] | (string & {})) => ({
+      borderBottomRightRadius: value,
+    }),
+    bblr: (value: keyof typeof theme['radii'] | (string & {})) => ({
+      borderBottomLeftRadius: value,
+    }),
+    btlr: (value: keyof typeof theme['radii'] | (string & {})) => ({
+      borderTopLeftRadius: value,
+    }),
 
     bs: (value) => ({ boxShadow: value }),
 
