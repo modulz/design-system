@@ -17,9 +17,9 @@ export const theme = {
     $gray300: 'hsl(206,12%,95%)',
     $gray400: 'hsl(206,12%,93%)',
     $gray500: 'hsl(206,11%,92%)',
-    $gray600: 'hsl(206,10%,87%)',
+    $gray600: 'hsl(206,10%,86%)',
     $gray700: 'hsl(206,10%,80%)',
-    $gray800: 'hsl(206,10%,54%)',
+    $gray800: 'hsl(206,7%,56%)',
     $gray900: 'hsl(206,10%,44%)',
 
     $red100: 'hsl(351,100%,98%)',
@@ -27,8 +27,8 @@ export const theme = {
     $red300: 'hsl(351,96%,95%)',
     $red400: 'hsl(355,94%,92%)',
     $red500: 'hsl(353,90%,91%)',
-    $red600: 'hsl(353,90%,76%)',
-    $red700: 'hsl(356,100%,70%)',
+    $red600: 'hsl(353,82%,85%)',
+    $red700: 'hsl(356,82%,80%)',
     $red800: 'hsl(356,91%,59%)',
     $red900: 'hsl(356,79%,48%)',
 
@@ -87,50 +87,50 @@ export const theme = {
     $blue300: 'hsl(206,100%,94%)',
     $blue400: 'hsl(206,100%,90%)',
     $blue500: 'hsl(206,100%,85%)',
-    $blue600: 'hsl(206,100%,75%)',
-    $blue700: 'hsl(206,100%,70%)',
+    $blue600: 'hsl(206,95%,78%)',
+    $blue700: 'hsl(206,95%,70%)',
     $blue800: 'hsl(206,100%,50%)',
     $blue900: 'hsl(211,100%,45%)',
 
     $turquoise100: 'hsl(190,100%,99%)',
-    $turquoise200: 'hsl(190,100%,98%)',
+    $turquoise200: 'hsl(190,100%,94%)',
     $turquoise300: 'hsl(190,100%,94%)',
     $turquoise400: 'hsl(190,85%,87%)',
     $turquoise500: 'hsl(190,85%,80%)',
     $turquoise600: 'hsl(190,75%,70%)',
     $turquoise700: 'hsl(190,75%,67%)',
     $turquoise800: 'hsl(190,95%,41%)',
-    $turquoise900: 'hsl(190,100%,34%)',
+    $turquoise900: 'hsl(190,100%,30%)',
 
     $teal100: 'hsl(174,100%,99%)',
-    $teal200: 'hsl(174,100%,98%)',
+    $teal200: 'hsl(174,93%,93%)',
     $teal300: 'hsl(174,100%,94%)',
     $teal400: 'hsl(174,75%,85%)',
     $teal500: 'hsl(174,78%,60%)',
     $teal600: 'hsl(174,60%,60%)',
     $teal700: 'hsl(174,60%,55%)',
     $teal800: 'hsl(174,100%,36%)',
-    $teal900: 'hsl(174,100%,28%)',
+    $teal900: 'hsl(174,100%,27%)',
 
     $green100: 'hsl(152,75%,98%)',
     $green200: 'hsl(152,72%,94%)',
     $green300: 'hsl(150,72%,92%)',
     $green400: 'hsl(150,72%,89%)',
     $green500: 'hsl(148,60%,60%)',
-    $green600: 'hsl(148,58%,60%)',
-    $green700: 'hsl(148,60%,57%)',
+    $green600: 'hsl(148,46%,71%)',
+    $green700: 'hsl(148,46%,62%)',
     $green800: 'hsl(148,70%,44%)',
-    $green900: 'hsl(148,70%,44%)',
+    $green900: 'hsl(148,67%,30%)',
 
     $lime100: 'hsl(78,100%,98%)',
-    $lime200: 'hsl(78,98%,95%)',
-    $lime300: 'hsl(78,92%,86%)',
+    $lime200: 'hsl(78,99%,88%)',
+    $lime300: 'hsl(78,95%,86%)',
     $lime400: 'hsl(78,92%,81%)',
     $lime500: 'hsl(78,100%,65%)',
     $lime600: 'hsl(78,88%,60%)',
     $lime700: 'hsl(78,84%,55%)',
     $lime800: 'hsl(78,69%,50%)',
-    $lime900: 'hsl(78,80%,44%)',
+    $lime900: 'hsl(78,85%,28%)',
 
     $yellow100: 'hsl(42,100%,98%)',
     $yellow200: 'hsl(45,98%,93%)',
@@ -140,7 +140,7 @@ export const theme = {
     $yellow600: 'hsl(52,100%,60%)',
     $yellow700: 'hsl(52,100%,54%)',
     $yellow800: 'hsl(52,99%,49%)',
-    $yellow900: 'hsl(52,100%,44%)',
+    $yellow900: 'hsl(52,100%,30%)',
 
     $orange100: 'hsl(36,100%,98%)',
     $orange200: 'hsl(36,100%,95%)',
@@ -150,7 +150,7 @@ export const theme = {
     $orange600: 'hsl(36,100%,60%)',
     $orange700: 'hsl(36,100%,57%)',
     $orange800: 'hsl(36,100%,53%)',
-    $orange900: 'hsl(36,100%,44%)',
+    $orange900: 'hsl(36,100%,35%)',
 
     $gold100: 'hsl(36,90%,98%)',
     $gold200: 'hsl(36,90%,95%)',
@@ -209,7 +209,7 @@ export const theme = {
     $9: '80px',
   },
   fontSizes: {
-    $1: '12px',
+    $1: '11px',
     $2: '13px',
     $3: '15px',
     $4: '17px',
@@ -259,8 +259,8 @@ export const darkTheme = {
   $red300: 'hsl(346,70%,11%)',
   $red400: 'hsl(346,70%,13%)',
   $red500: 'hsl(348,90%,20%)',
-  $red600: 'hsl(350,90%,40%)',
-  $red700: 'hsl(352,100%,50%)',
+  $red600: 'hsl(350,80%,25%)',
+  $red700: 'hsl(352,80%,30%)',
   $red900: 'hsl(352,79%,65%)',
 
   // $crimson100: 'hsl(336,100%,98%)',
@@ -317,7 +317,8 @@ export const darkTheme = {
   $blue300: 'hsl(212,42%,13%)',
   $blue400: 'hsl(212,42%,15%)',
   $blue500: 'hsl(211,55%,16%)',
-  $blue700: 'hsl(209,100%,84%)',
+  $blue600: 'hsl(209,55%,22%)',
+  $blue700: 'hsl(209,55%,30%)',
   // $blue800: 'hsl(206,100%,50%)',
   $blue900: 'hsl(206,100%,60%)',
 
@@ -346,8 +347,8 @@ export const darkTheme = {
   $green300: 'hsl(152,72%,12%)',
   $green400: 'hsl(152,72%,14%)',
   $green500: 'hsl(150,60%,20%)',
-  $green600: 'hsl(150,60%,40%)',
-  $green700: 'hsl(148,60%,50%)',
+  $green600: 'hsl(150,60%,24%)',
+  $green700: 'hsl(148,60%,30%)',
   $green900: 'hsl(148,58%,60%)',
 
   // $lime100: 'hsl(78,100%,98%)',
@@ -494,22 +495,22 @@ export const { styled, css } = createStyled({
     bc: (value: keyof typeof theme['colors'] | (string & {})) => ({
       backgroundColor: value,
     }),
-    //
-    // br: (value: keyof typeof theme['radii'] | (string & {})) => ({
-    //   borderRadius: value,
-    // }),
-    // btrr: (value: keyof typeof theme['radii'] | (string & {})) => ({
-    //   borderTopRightRadius: value,
-    // }),
-    // bbrr: (value: keyof typeof theme['radii'] | (string & {})) => ({
-    //   borderBottomRightRadius: value,
-    // }),
-    // bblr: (value: keyof typeof theme['radii'] | (string & {})) => ({
-    //   borderBottomLeftRadius: value,
-    // }),
-    // btlr: (value: keyof typeof theme['radii'] | (string & {})) => ({
-    //   borderTopLeftRadius: value,
-    // }),
+
+    br: (value: keyof typeof theme['radii'] | (string & {})) => ({
+      borderRadius: value,
+    }),
+    btrr: (value: keyof typeof theme['radii'] | (string & {})) => ({
+      borderTopRightRadius: value,
+    }),
+    bbrr: (value: keyof typeof theme['radii'] | (string & {})) => ({
+      borderBottomRightRadius: value,
+    }),
+    bblr: (value: keyof typeof theme['radii'] | (string & {})) => ({
+      borderBottomLeftRadius: value,
+    }),
+    btlr: (value: keyof typeof theme['radii'] | (string & {})) => ({
+      borderTopLeftRadius: value,
+    }),
 
     bs: (value) => ({ boxShadow: value }),
 

@@ -29,7 +29,7 @@ export { Button } from './components/Button';
 export type { ButtonProps, ButtonVariants } from './components/Button';
 
 export { Card } from './components/Card';
-export type { CardProps } from './components/Card';
+export type { CardProps, CardVariants } from './components/Card';
 
 export { Checkbox } from './components/Checkbox';
 export type { CheckboxProps, CheckboxVariants } from './components/Checkbox';
@@ -39,6 +39,9 @@ export type { CodeProps, CodeVariants } from './components/Code';
 
 export { Container } from './components/Container';
 export type { ContainerProps, ContainerVariants } from './components/Container';
+
+export { ControlGroup } from './components/ControlGroup';
+export type { ControlGroupProps } from './components/ControlGroup';
 
 export { Dialog } from './components/Dialog';
 export type { DialogProps, DialogContentProps, DialogCloseProps } from './components/Dialog';
@@ -84,6 +87,9 @@ export type {
 // TODO
 // export { Scrollbar } from './components/Scrollbar';
 
+export { Radio } from './components/Radio';
+export type { RadioProps, RadioVariants } from './components/Radio';
+
 export { Section } from './components/Section';
 export type { SectionProps, SectionVariants } from './components/Section';
 
@@ -107,6 +113,9 @@ export type { SimpleToggleProps, SimpleToggleVariants } from './components/Simpl
 
 export { Tabs } from './components/Tabs';
 export type { TabsProps, TabsListProps, TabsTabProps, TabsPanelProps } from './components/Tabs';
+
+export { TabLink } from './components/TabLink';
+export type { TabLinkProps, TabLinkVariants } from './components/TabLink';
 
 export { Tooltip } from './components/Tooltip';
 export type { TooltipProps } from './components/Tooltip';

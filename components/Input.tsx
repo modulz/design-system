@@ -6,10 +6,8 @@ export type InputVariants = StitchesVariants<typeof Input>;
 export const Input = styled('input', {
   // Reset
   appearance: 'none',
-  backgroundColor: 'transparent',
   borderWidth: '0',
   boxSizing: 'border-box',
-  flexShrink: 0,
   fontFamily: 'inherit',
   lineHeight: '1',
   margin: '0',
@@ -25,48 +23,77 @@ export const Input = styled('input', {
   },
 
   // Custom
+  backgroundColor: '$loContrast',
   boxShadow: 'inset 0 0 0 1px $gray600',
   borderRadius: '$2',
   color: '$hiContrast',
   fontVariantNumeric: 'tabular-nums',
+  position: 'relative',
 
   ':focus': {
-    boxShadow: 'inset 0px 0px 0px 1px $blue800, 0px 0px 0px 1px $blue800',
+    boxShadow: 'inset 0px 0px 0px 1px $blue700, 0px 0px 0px 1px $blue700',
+    zIndex: '1',
   },
-  ':read-only': {
-    color: '$gray500',
+  '::placeholder': {
+    color: '$gray800',
   },
   ':disabled': {
     pointerEvents: 'none',
     backgroundColor: '$gray100',
-    color: '$gray500',
+    color: '$gray700',
     cursor: 'not-allowed',
+    '::placeholder': {
+      color: '$gray600',
+    },
   },
-  '::placeholder': {
-    color: '$gray800',
+  ':read-only': {
+    backgroundColor: '$gray100',
+    // color: '$gray900',
+    ':focus': {
+      boxShadow: 'inset 0px 0px 0px 1px $gray600',
+    },
   },
 
   variants: {
     size: {
       '1': {
-        p: '$1',
+        height: '$5',
         fontSize: '$1',
+        px: '$1',
       },
       '2': {
-        pt: 8,
-        px: '$2',
-        pb: 8,
+        height: '$5',
+        fontSize: '$2',
+        px: '$1',
+      },
+      '3': {
+        height: '$6',
         fontSize: '$3',
+        px: '$2',
       },
     },
     variant: {
       ghost: {
         boxShadow: 'none',
         ':hover': {
-          boxShadow: 'inset 0 0 0 1px $gray300',
+          boxShadow: 'inset 0 0 0 1px $gray600',
         },
         ':focus': {
-          boxShadow: 'rgb(96, 179, 251) 0px 0px 0px 1px inset, rgb(96, 179, 251) 0px 0px 0px 1px',
+          boxShadow: 'inset 0px 0px 0px 1px $blue700, 0px 0px 0px 1px $blue700',
+        },
+      },
+    },
+    state: {
+      invalid: {
+        boxShadow: 'inset 0 0 0 1px $red600',
+        ':focus': {
+          boxShadow: 'inset 0px 0px 0px 1px $red700, 0px 0px 0px 1px $red700',
+        },
+      },
+      valid: {
+        boxShadow: 'inset 0 0 0 1px $green600',
+        ':focus': {
+          boxShadow: 'inset 0px 0px 0px 1px $green700, 0px 0px 0px 1px $green700',
         },
       },
     },
@@ -76,6 +103,9 @@ export const Input = styled('input', {
         ':focus': {
           cursor: 'text',
         },
+      },
+      text: {
+        cursor: 'text',
       },
     },
   },

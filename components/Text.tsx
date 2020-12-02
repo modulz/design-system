@@ -30,6 +30,7 @@ export const Text = styled('span', {
       },
       '5': {
         fontSize: '$5',
+        letterSpacing: '-.015em',
       },
       '6': {
         fontSize: '$6',

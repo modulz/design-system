@@ -17,7 +17,7 @@ export function Paragraph(props: ParagraphProps) {
         ...(props.css as any),
 
         bp2: {
-          lineHeight: '28px',
+          lineHeight: '27px',
           ...(props.css?.bp2 as any),
         },
       }}

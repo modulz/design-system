@@ -36,6 +36,7 @@ export const Button = styled('button', {
   fontSize: '$2',
   fontWeight: 500,
   fontVariantNumeric: 'tabular-nums',
+  position: 'relative',
 
   ':hover': {
     boxShadow: 'inset 0 0 0 1px $gray700',
@@ -46,17 +47,18 @@ export const Button = styled('button', {
   },
   ':focus': {
     boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
+    zIndex: '1',
   },
   ':disabled': {
+    backgroundColor: '$gray100',
+    boxShadow: 'inset 0 0 0 1px $gray600',
+    color: '$gray700',
     pointerEvents: 'none',
-    backgroundColor: '$gray200',
-    boxShadow: 'inset 0 0 0 1px $gray400',
-    color: '$gray400',
   },
 
   variants: {
     size: {
-      large: {
+      "2": {
         height: '$6',
         px: '$3',
         fontSize: '$3',
@@ -64,41 +66,47 @@ export const Button = styled('button', {
     },
     variant: {
       blue: {
-        backgroundColor: '$blue800',
-        boxShadow: 'none',
-        color: 'white',
+        backgroundColor: '$blue100',
+        boxShadow: 'inset 0 0 0 1px $blue600',
+        color: '$blue900',
         ':hover': {
-          backgroundColor: '$blue900',
-          boxShadow: 'none',
+          boxShadow: 'inset 0 0 0 1px $blue700',
         },
         ':active': {
-          backgroundColor: '$blue700',
-          boxShadow: 'none',
+          backgroundColor: '$blue200',
+          boxShadow: 'inset 0 0 0 1px $blue700',
         },
         ':focus': {
-          boxShadow: 'inset 0 0 0 1px $blue500, 0 0 0 1px $blue500',
+          boxShadow: 'inset 0 0 0 1px $blue700, 0 0 0 1px $blue700',
         },
       },
       green: {
-        backgroundColor: '$green800',
-        boxShadow: 'none',
-        color: 'white',
+        backgroundColor: '$green100',
+        boxShadow: 'inset 0 0 0 1px $green600',
+        color: '$green900',
         ':hover': {
-          backgroundColor: '$green600',
-          boxShadow: 'none',
+          boxShadow: 'inset 0 0 0 1px $green700',
         },
         ':active': {
-          backgroundColor: '$green600',
-          boxShadow: 'none',
+          backgroundColor: '$green200',
+          boxShadow: 'inset 0 0 0 1px $green700',
         },
         ':focus': {
-          boxShadow: 'inset 0 0 0 1px $green500, 0 0 0 1px $green500',
+          boxShadow: 'inset 0 0 0 1px $green700, 0 0 0 1px $green700',
         },
       },
       red: {
         color: '$red900',
+        ':hover': {
+          backgroundColor: '$red100',
+          boxShadow: 'inset 0 0 0 1px $red700',
+        },
+        ':active': {
+          backgroundColor: '$red200',
+          boxShadow: 'inset 0 0 0 1px $red700',
+        },
         ':focus': {
-          boxShadow: 'inset 0 0 0 1px $red500, 0 0 0 1px $red500',
+          boxShadow: 'inset 0 0 0 1px $red700, 0 0 0 1px $red700',
         },
       },
       ghost: {
@@ -114,26 +122,69 @@ export const Button = styled('button', {
           boxShadow: 'none',
         },
       },
+      transparentWhite: {
+        backgroundColor: 'hsla(0,100%,100%,.2)',
+        boxShadow: 'none',
+        color: 'white',
+        ':hover': {
+          backgroundColor: 'hsla(0,100%,100%,.25)',
+          boxShadow: 'none',
+        },
+        ':active': {
+          backgroundColor: 'hsla(0,100%,100%,.3)',
+          boxShadow: 'none',
+        },
+        ':focus': {
+          boxShadow: 'inset 0 0 0 1px hsla(0,100%,100%,.35), 0 0 0 1px hsla(0,100%,100%,.35)',
+        },
+      },
+      transparentBlack: {
+        backgroundColor: 'hsla(0,0%,0%,.2)',
+        boxShadow: 'none',
+        color: 'black',
+        ':hover': {
+          backgroundColor: 'hsla(0,0%,0%,.25)',
+          boxShadow: 'none',
+        },
+        ':active': {
+          backgroundColor: 'hsla(0,0%,0%,.3)',
+          boxShadow: 'none',
+        },
+        ':focus': {
+          boxShadow: 'inset 0 0 0 1px hsla(0,0%,0%,.35), 0 0 0 1px hsla(0,0%,0%,.35)',
+        },
+      },
     },
     state: {
       active: {
         backgroundColor: '$gray300',
-        boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+        boxShadow: 'inset 0 0 0 1px $gray700',
+        color: '$gray900',
         ':hover': {
-          boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+          backgroundColor: '$gray400',
+          boxShadow: 'inset 0 0 0 1px $gray700',
         },
         ':active': {
-          backgroundColor: '$gray300',
+          backgroundColor: '$gray400',
+        },
+        ':focus': {
+          boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
         },
       },
       waiting: {
         backgroundColor: '$gray300',
-        boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+        boxShadow: 'inset 0 0 0 1px $gray700',
+        color: 'transparent',
+        pointerEvents: 'none',
         ':hover': {
-          boxShadow: 'inset 0 0 0 1px hsl(206,10%,76%)',
+          backgroundColor: '$gray400',
+          boxShadow: 'inset 0 0 0 1px $gray700',
         },
         ':active': {
-          backgroundColor: '$gray300',
+          backgroundColor: '$gray400',
+        },
+        ':focus': {
+          boxShadow: 'inset 0 0 0 1px $gray700',
         },
       },
     },

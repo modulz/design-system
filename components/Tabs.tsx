@@ -37,18 +37,38 @@ const StyledTab = styled(TabsPrimitive.Tab, {
   height: '$5',
   display: 'inline-flex',
   lineHeight: 1,
+  fontSize: '$2',
   px: '$2',
   userSelect: 'none',
+  outline: 'none',
   alignItems: 'center',
   justifyContent: 'center',
+  color: '$gray900',
+  border: '1px solid transparent',
+  borderTopLeftRadius: '$2',
+  borderTopRightRadius: '$2',
+  zIndex: '10',
 
-  '&:focus': {
-    outline: 'none',
-    boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
+  '&:hover': {
+    color: '$hiContrast',
   },
 
   '&[data-state="active"]': {
-    boxShadow: '0 1px 0 0 $gray900',
+    color: '$hiContrast',
+    borderColor: '$gray500',
+    borderBottomColor: 'white',
+  },
+
+  '&[data-orientation="vertical"]': {
+    justifyContent: 'flex-start',
+    borderTopRightRadius: 0,
+    borderBottomLeftRadius: '$2',
+    borderBottomColor: 'transparent',
+
+    '&[data-state="active"]': {
+      borderBottomColor: '$gray500',
+      borderRightColor: 'white',
+    },
   },
 });
 
@@ -59,9 +79,12 @@ const Tab = React.forwardRef<HTMLDivElement, TabsTabProps>((props, forwardedRef)
 const StyledTabsList = styled(TabsPrimitive.List, {
   flexShrink: 0,
   display: 'flex',
+  boxShadow: 'inset 0 -1px 0 $gray500',
+
   '&[data-orientation="vertical"]': {
     flexDirection: 'column',
-  },
+    boxShadow: 'inset -1px 0 0 $gray500',
+  }
 });
 
 const TabsList = React.forwardRef<HTMLDivElement, TabsListProps>((props, forwardedRef) => (
@@ -73,7 +96,6 @@ const TabsList = React.forwardRef<HTMLDivElement, TabsListProps>((props, forward
 
 const StyledTabsPanel = styled(TabsPrimitive.Panel, {
   flexGrow: 1,
-  padding: '$2',
   '&:focus': {
     outline: 'none',
     boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
