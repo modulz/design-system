@@ -934,19 +934,13 @@ function Home() {
 
         <Section size="3">
           <Container size="2">
-            <Flex css={{ gap: '$6' }}>
-              <Text size="3" css={{ color: '$gray900' }}>
-                Documentation
-                </Text>
-              <Text size="5" css={{ color: '$blue600' }}>
-                Documentation
-                </Text>
-              <Text size="3" css={{ color: '$gray900' }}>
-                About
-                </Text>
-              <Text size="3" css={{ color: '$gray900' }}>
-                Blog
-                </Text>
+            <Flex css={{ gap: '$6', mb: '$6' }}>
+              <Link variant="blue" css={{}} href="#">
+                This is a link
+              </Link>
+              <Link variant="subtle" css={{}} href="#">
+                This is a link
+              </Link>
             </Flex>
 
             <Paragraph>
@@ -958,13 +952,7 @@ function Home() {
                 focused on life after product/market fit, after the Trough of Sorrow. A lot of
                 startup stuff is focused on the initial phases, when you don’t have a team, idea, or
                 investors.
-              </Paragraph>
-            <Link variant="blue" css={{}} href="#">
-              This is a link
-              </Link>
-            <Link variant="subtle" css={{}} href="#">
-              This is a link
-              </Link>
+            </Paragraph>
           </Container>
         </Section>
 

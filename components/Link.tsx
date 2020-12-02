@@ -22,11 +22,11 @@ export const Link = styled('a', {
 
   // Custom
   color: '$hiContrast',
-  borderBottom: '1px solid $gray400',
+  borderBottom: '1px solid $gray500',
   lineHeight: 'inherit',
-  transition: 'all 50ms linear',
+  // transition: 'all 50ms linear',
   ':hover': {
-    borderColor: '$gray500',
+    borderColor: '$gray700',
   },
   variants: {
     size: {
@@ -46,7 +46,7 @@ export const Link = styled('a', {
         },
       },
       subtle: {
-        color: '$gray600',
+        color: '$gray900',
         borderColor: 'transparent',
         ':hover': {
           borderColor: '$gray300',
