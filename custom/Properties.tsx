@@ -22,7 +22,8 @@ export function Properties() {
         right: '0',
         bottom: '0',
         width: '250px',
-        borderLeft: '1px solid $gray500',
+        borderLeft: '1px solid $canvas',
+        backgroundColor: '$loContrast',
       }}
     >
       <ScrollArea>
