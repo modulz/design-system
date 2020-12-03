@@ -6,6 +6,7 @@ import { Box } from '../components/Box';
 import { Flex } from '../components/Flex';
 import { Grid } from '../components/Grid';
 import { Badge } from '../components/Badge';
+import { Switch } from '../components/Switch';
 import { ControlGroup } from '../components/ControlGroup';
 import { Text } from '../components/Text';
 import { Link } from '../components/Link';
@@ -1083,14 +1084,6 @@ function Home() {
         </Flex>
 
         <Section size="3">
-          <Container size="2">{/* <Switch /> */}</Container>
-        </Section>
-
-        <Flex css={{ jc: 'center' }}>
-          <Separator size="2" />
-        </Flex>
-
-        <Section size="3">
           <Container size="2">
             <AlertDialog>
               <AlertDialog.Trigger as={Button}>Alert Dialog</AlertDialog.Trigger>
@@ -1910,6 +1903,13 @@ function Home() {
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
+
+        <Section size="3">
+          <Container size="2">
+            <Switch />
+            <Switch size="2" css={{ ml: '$6' }} />
+          </Container>
+        </Section>
       </Box>
     </Box>
   );

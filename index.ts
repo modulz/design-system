@@ -103,7 +103,7 @@ export { Status } from './components/Status';
 export type { StatusProps, StatusVariants } from './components/Status';
 
 export { Switch } from './components/Switch';
-export type { SwitchProps } from './components/Switch';
+export type { SwitchProps, SwitchVariants } from './components/Switch';
 
 export { Text } from './components/Text';
 export type { TextProps, TextVariants } from './components/Text';
