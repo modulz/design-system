@@ -176,44 +176,44 @@ function Home() {
 
         <Section size="3">
           <Container size="2">
-            <Text as="h4">
+            <Subheading as="h4" css={{ mb: '$6' }}>
               Text
-              </Text>
+            </Subheading>
             <Flex css={{ fd: 'column', gap: '$4' }}>
               <Flex css={{ ai: 'center' }}>
                 <Text size="9" as="h1" css={{ fontWeight: 500, lineHeight: '55px' }}>
                   The quick brown fox
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="8" as="h2" css={{ fontWeight: 500, lineHeight: '37px' }}>
                   The quick brown fox jumped
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="7" as="h3" css={{ fontWeight: 500, lineHeight: '30px' }}>
                   The quick brown fox jumped
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="6" as="p" css={{ lineHeight: '30px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="5" as="p" css={{ lineHeight: '29px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="4" as="p" css={{ lineHeight: '29px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="3" as="p" css={{ lineHeight: '25px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="2" as="p" css={{ lineHeight: '20px' }}>
@@ -222,6 +222,83 @@ function Home() {
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="1" as="p" css={{ lineHeight: '20px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+            </Flex>
+            <Flex css={{ fd: 'column', gap: '$4', mt: '$6' }}>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="h1" color="red" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="h2" color="crimson" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="h3" color="pink" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="purple" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="violet" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="indigo" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="blue" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="turquoise" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="teal" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="green" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="lime" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="yellow" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="orange" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="gold" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="bronze" css={{ lineHeight: '30px' }}>
                   The quick brown fox jumped over the lazy dog.
                   </Text>
               </Flex>
