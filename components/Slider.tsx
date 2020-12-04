@@ -5,10 +5,7 @@ import {
   SliderProps as SliderPrimitiveProps,
 } from '@interop-ui/react-slider';
 
-export type SliderProps = SliderPrimitiveProps &
-  StitchesProps<typeof StyledSlider> & {
-    alt?: string;
-  };
+export type SliderProps = SliderPrimitiveProps & StitchesProps<typeof StyledSlider>;
 export type SliderVariants = StitchesVariants<typeof StyledSlider>;
 
 const SliderTrack = styled(SliderPrimitive.Track, {
@@ -77,6 +74,7 @@ export const StyledSlider = styled(SliderPrimitive, {
   userSelect: 'none',
   touchAction: 'none',
   height: 15,
+  flexGrow: 1,
 
   '&[data-orientation="vertical"]': {
     flexDirection: 'column',
@@ -102,12 +100,19 @@ export const StyledSlider = styled(SliderPrimitive, {
 });
 
 export function Slider({ color = 'gray', ...props }: SliderProps) {
+  const hasRange = Array.isArray(props.defaultValue || (props as any).value);
+  const thumbsArray = hasRange
+    ? props.defaultValue || (props as any).value
+    : [props.defaultValue || (props as any).value];
+
   return (
     <StyledSlider color={color} {...props}>
       <SliderTrack>
         <SliderRange />
       </SliderTrack>
-      <SliderThumb />
+      {thumbsArray.map((_, i) => (
+        <SliderThumb key={i} />
+      ))}
     </StyledSlider>
   );
 }

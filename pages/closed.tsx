@@ -15,6 +15,7 @@ import { Accordion } from '../components/Accordion';
 import { Label } from '../components/Label';
 import { Switch } from '../components/Switch';
 import { SimpleToggle } from '../components/SimpleToggle';
+import { Slider } from '../components/Slider';
 import { Cross2Icon } from '@modulz/radix-icons';
 
 export default function Closed() {
@@ -271,6 +272,15 @@ export default function Closed() {
       </Text>
 
       <SimpleToggle />
+
+      <Text size="5" css={{ mt: '$9', mb: '$4' }}>
+        Slider
+      </Text>
+
+      <Flex css={{ gap: '$4' }}>
+        <Slider defaultValue={25} />
+        <Slider defaultValue={[25, 75]} />
+      </Flex>
     </Box>
   );
 }
