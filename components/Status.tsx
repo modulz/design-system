@@ -4,17 +4,17 @@ export type StatusProps = StitchesProps<typeof Status>;
 export type StatusVariants = StitchesVariants<typeof Status>;
 
 export const Status = styled.div({
-  borderRadius: '$round',
+  borderRadius: '50%',
 
   variants: {
     size: {
       '1': {
-        width: '6px',
-        height: '6px',
+        width: '5px',
+        height: '5px',
       },
       '2': {
-        width: '$2',
-        height: '$2',
+        width: 9,
+        height: 9,
       },
     },
     color: {
