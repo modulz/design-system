@@ -20,8 +20,8 @@ const SliderTrack = styled(SliderPrimitive.Track, {
     height: 2,
   },
   '&[data-orientation="vertical"]': {
-    width: 4,
-    height: 300,
+    width: 2,
+    height: 100,
   },
 });
 
