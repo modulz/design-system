@@ -1022,7 +1022,7 @@ function Home() {
         <Section size="3">
           <Container size="2">
             <Paragraph>
-              There are 5 variants to choose from. Use <Code>console.log('Radix').console</Code>{' '}
+              There are 5 variants to choose from. Use <Code size="2">console.log('Radix').console</Code>{' '}
                 is for positive states. Traditional business literature won’t help you solve it-
                 most of that stuff is focused on life after product/market fit, after the Trough of
                 Sorrow. A lot of startup stuff is focused on the initial phases, when you don’t have

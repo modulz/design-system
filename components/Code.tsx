@@ -12,10 +12,14 @@ export const Code = styled('code', {
   padding: '0 3px 2px 3px',
 
   variants: {
-    size: {
-      large: {
-        px: '$3',
-        fontSize: '$2',
+    color: {
+      gray: {
+        backgroundColor: '$gray200',
+        color: '$gray900',
+      },
+      violet: {
+        backgroundColor: '$violet200',
+        color: '$violet900',
       },
     },
   },
