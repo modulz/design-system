@@ -26,6 +26,7 @@ const Content = styled(TooltipPrimitive.Content, {
     multiline: {
       true: {
         maxWidth: 250,
+        pb: 7
       },
     },
   },
@@ -50,7 +51,7 @@ export function Tooltip({
       <Popper side="top" align="center" {...props}>
         <Content multiline={multiline}>
           <Text
-            size="1"
+            size="2"
             as="p"
             css={{
               color: '$loContrast',
