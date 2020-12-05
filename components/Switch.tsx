@@ -31,8 +31,14 @@ const Track = styled('button', {
   backgroundColor: '$gray400',
   borderRadius: '$pill',
   position: 'relative',
+  ':focus': {
+    boxShadow: '0 0 0 2px $gray700',
+  },
   '&[data-state="checked"]': {
     backgroundColor: '$blue800',
+    ':focus': {
+      boxShadow: '0 0 0 2px $blue700',
+    },
   },
 
   variants: {
