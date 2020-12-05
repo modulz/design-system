@@ -18,8 +18,9 @@ const Thumb = styled('span', {
   backgroundColor: 'white',
   borderRadius: '$round',
   boxShadow: 'rgba(0, 0, 0, 0.3) 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 1px 2px;',
-  transition: 'transform 125ms cubic-bezier(0.22, 1, 0.36, 1)',
+  transition: 'transform 100ms cubic-bezier(0.22, 1, 0.36, 1)',
   transform: 'translateX(1px)',
+  willChange: 'transform',
   '&[data-state="checked"]': {
     transform: 'translateX(11px)',
   },
