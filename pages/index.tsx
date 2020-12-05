@@ -6,6 +6,7 @@ import { Box } from '../components/Box';
 import { Flex } from '../components/Flex';
 import { Grid } from '../components/Grid';
 import { Badge } from '../components/Badge';
+import { Switch } from '../components/Switch';
 import { ControlGroup } from '../components/ControlGroup';
 import { Text } from '../components/Text';
 import { Link } from '../components/Link';
@@ -13,6 +14,7 @@ import { Kbd } from '../components/Kbd';
 import { Separator } from '../components/Separator';
 import { VerifiedBadge } from '../components/VerifiedBadge';
 import { Card } from '../components/Card';
+import { Textarea } from '../components/Textarea';
 import { Image } from '../components/Image';
 import { Code } from '../components/Code';
 import { Input } from '../components/Input';
@@ -32,18 +34,20 @@ import { AlertDialog } from '../components/AlertDialog';
 import { Tabs } from '../components/Tabs';
 import { Label } from '../components/Label';
 import { Skeleton } from '../components/Skeleton';
+import { RadioCard } from '../components/RadioCard';
 import { Accordion } from '../components/Accordion';
-
-import { Title } from '../composites/Title';
-import { Subtitle } from '../composites/Subtitle';
-import { Heading } from '../composites/Heading';
-import { Subheading } from '../composites/Subheading';
-import { Paragraph } from '../composites/Paragraph';
+import { Title } from '../components/Title';
+import { Subtitle } from '../components/Subtitle';
+import { Heading } from '../components/Heading';
+import { Subheading } from '../components/Subheading';
+import { Paragraph } from '../components/Paragraph';
 
 import { Layers } from '../custom/Layers';
 import { Properties } from '../custom/Properties';
 import { Color } from '../custom/Color';
 import { Avatars } from '../custom/Avatars';
+import { CheckIcon } from '@modulz/radix-icons';
+import { Status } from '../components/Status';
 
 function Home() {
   return (
@@ -173,44 +177,44 @@ function Home() {
 
         <Section size="3">
           <Container size="2">
-            <Text as="h4">
+            <Subheading as="h4" css={{ mb: '$6' }}>
               Text
-              </Text>
+            </Subheading>
             <Flex css={{ fd: 'column', gap: '$4' }}>
               <Flex css={{ ai: 'center' }}>
                 <Text size="9" as="h1" css={{ fontWeight: 500, lineHeight: '55px' }}>
                   The quick brown fox
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="8" as="h2" css={{ fontWeight: 500, lineHeight: '37px' }}>
                   The quick brown fox jumped
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="7" as="h3" css={{ fontWeight: 500, lineHeight: '30px' }}>
                   The quick brown fox jumped
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="6" as="p" css={{ lineHeight: '30px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="5" as="p" css={{ lineHeight: '29px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="4" as="p" css={{ lineHeight: '29px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="3" as="p" css={{ lineHeight: '25px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="2" as="p" css={{ lineHeight: '20px' }}>
@@ -219,6 +223,83 @@ function Home() {
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="1" as="p" css={{ lineHeight: '20px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+            </Flex>
+            <Flex css={{ fd: 'column', gap: '$4', mt: '$6' }}>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="h1" color="red" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="h2" color="crimson" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="h3" color="pink" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="purple" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="violet" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="indigo" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="blue" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="turquoise" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="teal" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="green" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="lime" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="yellow" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="orange" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="gold" css={{ lineHeight: '30px' }}>
+                  The quick brown fox jumped over the lazy dog.
+                  </Text>
+              </Flex>
+              <Flex css={{ ai: 'center' }}>
+                <Text size="6" as="p" color="bronze" css={{ lineHeight: '30px' }}>
                   The quick brown fox jumped over the lazy dog.
                   </Text>
               </Flex>
@@ -512,11 +593,11 @@ function Home() {
         </Flex>
 
         <Section size="3">
-          <Container size="3">
+          <Container size="2">
+            <Subheading css={{ mb: '$6' }}>Badge</Subheading>
             <Flex
               css={{
                 ai: 'center',
-                jc: 'center',
                 gap: '$5',
                 fw: 'wrap',
                 mb: '$7',
@@ -525,10 +606,13 @@ function Home() {
               <Badge size="1">Coming soon</Badge>
               <Badge size="2">Coming soon</Badge>
             </Flex>
-            <Flex css={{ jc: 'center', gap: '$5', fw: 'wrap' }}>
+            <Flex css={{ gap: '$5', fw: 'wrap' }}>
               <Badge size="2" variant="red">
-                New
-                </Badge>
+                <Box css={{ mr: 5 }}>
+                  <Status size="1" color="red" />
+                </Box>
+                Live
+              </Badge>
               <Badge size="2" variant="crimson">
                 Approved
                 </Badge>
@@ -571,6 +655,59 @@ function Home() {
               <Badge size="2" variant="bronze">
                 Runner-up
                 </Badge>
+            </Flex>
+            <Flex css={{ gap: '$5', fw: 'wrap', mt: '$6' }}>
+              <Badge as="a" href="#" size="2" variant="red" interactive>
+                New
+                </Badge>
+              <Badge as="button" size="2" variant="crimson" interactive>
+                Approved
+                </Badge>
+              <Badge as="button" size="2" variant="pink" interactive>
+                Pending
+                </Badge>
+              <Badge as="button" size="2" variant="purple" interactive>
+                Failed
+                <Box css={{ ml: 5 }}>
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.18179 6.18181C4.35753 6.00608 4.64245 6.00608 4.81819 6.18181L7.49999 8.86362L10.1818 6.18181C10.3575 6.00608 10.6424 6.00608 10.8182 6.18181C10.9939 6.35755 10.9939 6.64247 10.8182 6.81821L7.81819 9.81821C7.73379 9.9026 7.61934 9.95001 7.49999 9.95001C7.38064 9.95001 7.26618 9.9026 7.18179 9.81821L4.18179 6.81821C4.00605 6.64247 4.00605 6.35755 4.18179 6.18181Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </Box>
+              </Badge>
+              <Badge as="button" size="2" variant="violet" interactive>
+                New
+                </Badge>
+              <Badge as="button" size="2" variant="indigo" interactive>
+                Approved
+                </Badge>
+              <Badge as="button" size="2" variant="blue" interactive>
+                Pending
+                </Badge>
+              <Badge as="button" size="2" variant="turquoise" interactive>
+                Failed
+                </Badge>
+              <Badge as="button" size="2" variant="teal" interactive>
+                New
+                </Badge>
+              <Badge as="button" size="2" variant="green" interactive>
+                Approved
+                </Badge>
+              <Badge as="button" size="2" variant="lime" interactive>
+                Pending
+                </Badge>
+              <Badge as="button" size="2" variant="yellow" interactive>
+                Failed
+                </Badge>
+              <Badge as="button" size="2" variant="orange" interactive>
+                Failed
+                </Badge>
+              <Badge as="button" size="2" variant="gold" interactive>
+                Winner
+                </Badge>
+              <Badge as="button" size="2" variant="bronze" interactive>
+                Runner-up
+              </Badge>
+              <Badge as="button" size="2" variant="bronze" interactive disabled>
+                Disabled
+              </Badge>
             </Flex>
           </Container>
         </Section>
@@ -852,6 +989,25 @@ function Home() {
 
         <Section size="3">
           <Container size="2">
+            <Subheading css={{ mb: '$6' }}>Textarea</Subheading>
+            <Flex css={{ ai: 'flex-start', gap: '$6' }}>
+              <Textarea size="1" placeholder="Size 1"></Textarea>
+              <Textarea size="2" placeholder="Size 1"></Textarea>
+              <Textarea size="3" placeholder="Size 1"></Textarea>
+            </Flex>
+            <Flex css={{ ai: 'flex-start', gap: '$6', mt: '$6' }}>
+              <Textarea size="2" placeholder="Size 1" disabled></Textarea>
+              <Textarea size="2" placeholder="Size 1" readOnly defaultValue="eihuweofjew"></Textarea>
+            </Flex>
+          </Container>
+        </Section>
+
+        <Flex css={{ jc: 'center' }}>
+          <Separator size="2" />
+        </Flex>
+
+        <Section size="3">
+          <Container size="2">
             <Flex css={{ ai: 'center', jc: 'space-between' }}>
               <Text>Resize selected object</Text>
               <Flex css={{ ai: 'center', gap: '$1' }}>
@@ -935,17 +1091,20 @@ function Home() {
         <Section size="3">
           <Container size="2">
             <Flex css={{ gap: '$6', mb: '$6' }}>
-              <Link variant="blue" css={{}} href="#">
-                This is a link
+              <Link variant="blue" href="#">
+                <Text size="4">Link with jy descenders</Text>
               </Link>
-              <Link variant="subtle" css={{}} href="#">
-                This is a link
+              <Link variant="subtle" href="#">
+                <Text size="4">Link with jy descenders</Text>
+              </Link>
+              <Link variant="contrast" href="#">
+                <Text size="4">Link with jy descenders</Text>
               </Link>
             </Flex>
 
             <Paragraph>
               There are 5 variants to choose from. Use is for positive states.{' '}
-              <Link css={{}} href="#">
+              <Link variant="contrast" href="#">
                 This is a link
                 </Link>{' '}
                 Traditional business literature won’t help you solve it- most of that stuff is
@@ -963,7 +1122,7 @@ function Home() {
         <Section size="3">
           <Container size="2">
             <Paragraph>
-              There are 5 variants to choose from. Use <Code>console.log('Radix').console</Code>{' '}
+              There are 5 variants to choose from. Use <Code size="2">console.log('Radix').console</Code>{' '}
                 is for positive states. Traditional business literature won’t help you solve it-
                 most of that stuff is focused on life after product/market fit, after the Trough of
                 Sorrow. A lot of startup stuff is focused on the initial phases, when you don’t have
@@ -1076,14 +1235,6 @@ function Home() {
               </Box>
             </Flex>
           </Container>
-        </Section>
-
-        <Flex css={{ jc: 'center' }}>
-          <Separator size="2" />
-        </Flex>
-
-        <Section size="3">
-          <Container size="2">{/* <Switch /> */}</Container>
         </Section>
 
         <Flex css={{ jc: 'center' }}>
@@ -1556,6 +1707,13 @@ function Home() {
             <Box css={{ width: '100px' }}>
               <Slider defaultValue={50} />
             </Box>
+            <Flex css={{ gap: '$4' }}>
+              <Slider defaultValue={25} />
+              <Slider defaultValue={[25, 75]} />
+            </Flex>
+            <Box css={{ mt: '$6' }}>
+              <Slider defaultValue={50} orientation="vertical" />
+            </Box>
           </Container>
         </Section>
 
@@ -1910,6 +2068,54 @@ function Home() {
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
+
+        <Section size="3">
+          <Container size="2" css={{ py: '$7' }}>
+            <RadioGroup defaultValue="1">
+              <RadioCard.Radio value="1" css={{ mb: '$2' }}>
+                <Flex css={{ alignItems: 'center' }}>
+                  <Text size="5" css={{ fontWeight: '500', lineHeight: '25px', mr: '$6' }}>
+                    2.5GHz 14-core Intel Xeon W processor, Turbo Boost up to 4.3GHz
+                  </Text>
+                  <Text size="4" color="gray">
+                    -$1600
+                  </Text>
+                </Flex>
+              </RadioCard.Radio>
+              <RadioCard.Radio value="2" css={{ mb: '$2' }}>
+                <Flex css={{ alignItems: 'center' }}>
+                  <Text size="5" css={{ fontWeight: '500', lineHeight: '25px', mr: '$6' }}>
+                    2.5GHz 14-core Intel Xeon W processor, Turbo Boost up to 4.3GHz
+                  </Text>
+                  <Text size="4" color="gray">
+                    -$800
+                  </Text>
+                </Flex>
+              </RadioCard.Radio>
+              <RadioCard.Radio value="3" css={{ mb: '$2' }}>
+                <Flex css={{ alignItems: 'center' }}>
+                  <Text size="5" css={{ fontWeight: '500', lineHeight: '25px', mr: '$6' }}>
+                    2.5GHz 14-core Intel Xeon W processor, Turbo Boost up to 4.3GHz
+                  </Text>
+                  <Text size="4" color="gray">
+                    
+                  </Text>
+                </Flex>
+              </RadioCard.Radio>
+            </RadioGroup>
+          </Container>
+        </Section>
+
+        <Flex css={{ jc: 'center' }}>
+          <Separator size="2" />
+        </Flex>
+
+        <Section size="3">
+          <Container size="2">
+            <Switch />
+            <Switch size="2" css={{ ml: '$6' }} />
+          </Container>
+        </Section>
       </Box>
     </Box>
   );

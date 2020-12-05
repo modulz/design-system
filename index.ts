@@ -52,6 +52,9 @@ export type { FlexProps } from './components/Flex';
 export { Grid } from './components/Grid';
 export type { GridProps } from './components/Grid';
 
+export { Heading } from './components/Heading';
+export type { HeadingProps } from './components/Heading';
+
 export { IconButton } from './components/IconButton';
 export type { IconButtonProps, IconButtonVariants } from './components/IconButton';
 
@@ -73,6 +76,9 @@ export type { MenuItemProps, MenuItemVariants } from './components/MenuItem';
 export { Overlay } from './components/Overlay';
 export type { OverlayProps } from './components/Overlay';
 
+export { Paragraph } from './components/Paragraph';
+export type { ParagraphProps } from './components/Paragraph';
+
 export { Panel } from './components/Panel';
 export type { PanelProps, PanelVariants } from './components/Panel';
 
@@ -90,6 +96,9 @@ export type {
 export { Radio } from './components/Radio';
 export type { RadioProps, RadioVariants } from './components/Radio';
 
+export { RadioCard } from './components/RadioCard';
+export type { RadioCardProps, RadioCardVariants } from './components/RadioCard';
+
 export { Section } from './components/Section';
 export type { SectionProps, SectionVariants } from './components/Section';
 
@@ -102,11 +111,20 @@ export type { SkeletonProps, SkeletonVariants } from './components/Skeleton';
 export { Status } from './components/Status';
 export type { StatusProps, StatusVariants } from './components/Status';
 
+export { Subheading } from './components/Subheading';
+export type { SubheadingProps } from './components/Subheading';
+
+export { Subtitle } from './components/Subtitle';
+export type { SubtitleProps } from './components/Subtitle';
+
 export { Switch } from './components/Switch';
-export type { SwitchProps } from './components/Switch';
+export type { SwitchProps, SwitchVariants } from './components/Switch';
 
 export { Text } from './components/Text';
 export type { TextProps, TextVariants } from './components/Text';
+
+export { Textarea } from './components/Textarea';
+export type { TextareaProps, TextareaVariants } from './components/Textarea';
 
 export { SimpleToggle } from './components/SimpleToggle';
 export type { SimpleToggleProps, SimpleToggleVariants } from './components/SimpleToggle';
@@ -117,6 +135,9 @@ export type { TabsProps, TabsListProps, TabsTabProps, TabsPanelProps } from './c
 export { TabLink } from './components/TabLink';
 export type { TabLinkProps, TabLinkVariants } from './components/TabLink';
 
+export { Title } from './components/Title';
+export type { TitleProps } from './components/Title';
+
 export { Tooltip } from './components/Tooltip';
 export type { TooltipProps } from './components/Tooltip';
 
@@ -125,22 +146,6 @@ export type { TreeItemProps, TreeItemVariants } from './components/TreeItem';
 
 export { VerifiedBadge } from './components/VerifiedBadge';
 export type { VerifiedBadgeProps } from './components/VerifiedBadge';
-
-// Composites
-export { Heading } from './composites/Heading';
-export type { HeadingProps } from './composites/Heading';
-
-export { Paragraph } from './composites/Paragraph';
-export type { ParagraphProps } from './composites/Paragraph';
-
-export { Subheading } from './composites/Subheading';
-export type { SubheadingProps } from './composites/Subheading';
-
-export { Subtitle } from './composites/Subtitle';
-export type { SubtitleProps } from './composites/Subtitle';
-
-export { Title } from './composites/Title';
-export type { TitleProps } from './composites/Title';
 
 // Stitches
 export { css, styled, theme, darkTheme, darkThemeClass } from './stitches.config';

@@ -30,12 +30,11 @@ import { Tabs } from '../components/Tabs';
 import { Label } from '../components/Label';
 import { Skeleton } from '../components/Skeleton';
 import { Accordion } from '../components/Accordion';
-
-import { Title } from '../composites/Title';
-import { Subtitle } from '../composites/Subtitle';
-import { Heading } from '../composites/Heading';
-import { Subheading } from '../composites/Subheading';
-import { Paragraph } from '../composites/Paragraph';
+import { Title } from '../components/Title';
+import { Subtitle } from '../components/Subtitle';
+import { Heading } from '../components/Heading';
+import { Subheading } from '../components/Subheading';
+import { Paragraph } from '../components/Paragraph';
 
 import { Layers } from '../custom/Layers';
 import { Properties } from '../custom/Properties';

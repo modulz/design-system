@@ -9,7 +9,6 @@ export const Card = styled('div', {
   textDecoration: 'none',
   color: 'inherit',
   flexShrink: 0,
-  // border: '1px solid $gray600',
   borderRadius: '$3',
   outline: 'none',
   position: 'relative',
@@ -23,6 +22,7 @@ export const Card = styled('div', {
     left: 0,
     boxShadow: 'inset 0 0 0 1px rgba(0,0,0,.1)',
     borderRadius: '$3',
+    pointerEvents: 'none',
   },
 
   variants: {
@@ -42,6 +42,7 @@ export const Card = styled('div', {
       ghost: {
         backgroundColor: 'transparent',
         transition: 'transform 200ms cubic-bezier(0.22, 1, 0.36, 1), background-color 25ms linear',
+        willChange: 'transform',
         '::before': {
           boxShadow: '0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)',
           opacity: '0',

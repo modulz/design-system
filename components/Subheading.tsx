@@ -1,25 +1,25 @@
 import React from 'react';
-import { Text, TextProps } from '../components/Text';
+import { Text, TextProps } from './Text';
 
-export type HeadingProps = Omit<TextProps, 'size'>;
+export type SubheadingProps = Omit<TextProps, 'size'>;
 
-export function Heading(props: HeadingProps) {
+export function Subheading(props: SubheadingProps) {
   return (
     <Text
-      as="h3"
+      as="h4"
       {...props}
       size={{
-        initial: '6',
-        bp2: '7',
+        initial: '4',
+        bp2: '5',
       }}
       css={{
         fontWeight: 500,
         fontVariantNumeric: 'proportional-nums',
-        lineHeight: '25px',
+        lineHeight: '20px',
         ...(props.css as any),
 
         bp2: {
-          lineHeight: '30px',
+          lineHeight: '23px',
           ...(props.css?.bp2 as any),
         },
       }}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, TextProps } from '../components/Text';
+import { Text, TextProps } from './Text';
 
 export type TitleProps = Omit<TextProps, 'size'>;
 
