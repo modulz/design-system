@@ -52,6 +52,9 @@ export type { FlexProps } from './components/Flex';
 export { Grid } from './components/Grid';
 export type { GridProps } from './components/Grid';
 
+export { Heading } from './components/Heading';
+export type { HeadingProps } from './components/Heading';
+
 export { IconButton } from './components/IconButton';
 export type { IconButtonProps, IconButtonVariants } from './components/IconButton';
 
@@ -72,6 +75,9 @@ export type { MenuItemProps, MenuItemVariants } from './components/MenuItem';
 
 export { Overlay } from './components/Overlay';
 export type { OverlayProps } from './components/Overlay';
+
+export { Paragraph } from './components/Paragraph';
+export type { ParagraphProps } from './components/Paragraph';
 
 export { Panel } from './components/Panel';
 export type { PanelProps, PanelVariants } from './components/Panel';
@@ -102,6 +108,12 @@ export type { SkeletonProps, SkeletonVariants } from './components/Skeleton';
 export { Status } from './components/Status';
 export type { StatusProps, StatusVariants } from './components/Status';
 
+export { Subheading } from './components/Subheading';
+export type { SubheadingProps } from './components/Subheading';
+
+export { Subtitle } from './components/Subtitle';
+export type { SubtitleProps } from './components/Subtitle';
+
 export { Switch } from './components/Switch';
 export type { SwitchProps, SwitchVariants } from './components/Switch';
 
@@ -120,6 +132,9 @@ export type { TabsProps, TabsListProps, TabsTabProps, TabsPanelProps } from './c
 export { TabLink } from './components/TabLink';
 export type { TabLinkProps, TabLinkVariants } from './components/TabLink';
 
+export { Title } from './components/Title';
+export type { TitleProps } from './components/Title';
+
 export { Tooltip } from './components/Tooltip';
 export type { TooltipProps } from './components/Tooltip';
 
@@ -128,22 +143,6 @@ export type { TreeItemProps, TreeItemVariants } from './components/TreeItem';
 
 export { VerifiedBadge } from './components/VerifiedBadge';
 export type { VerifiedBadgeProps } from './components/VerifiedBadge';
-
-// Composites
-export { Heading } from './components/Heading';
-export type { HeadingProps } from './components/Heading';
-
-export { Paragraph } from './components/Paragraph';
-export type { ParagraphProps } from './components/Paragraph';
-
-export { Subheading } from './components/Subheading';
-export type { SubheadingProps } from './components/Subheading';
-
-export { Subtitle } from './components/Subtitle';
-export type { SubtitleProps } from './components/Subtitle';
-
-export { Title } from './components/Title';
-export type { TitleProps } from './components/Title';
 
 // Stitches
 export { css, styled, theme, darkTheme, darkThemeClass } from './stitches.config';
