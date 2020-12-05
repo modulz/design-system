@@ -79,8 +79,10 @@ const Tab = React.forwardRef<HTMLDivElement, TabsTabProps>((props, forwardedRef)
 const StyledTabsList = styled(TabsPrimitive.List, {
   flexShrink: 0,
   display: 'flex',
-  boxShadow: 'inset 0 -1px 0 $gray500',
-
+  '&:focus': {
+    outline: 'none',
+    boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
+  },
   '&[data-orientation="vertical"]': {
     flexDirection: 'column',
     boxShadow: 'inset -1px 0 0 $gray500',
