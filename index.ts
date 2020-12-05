@@ -96,6 +96,9 @@ export type {
 export { Radio } from './components/Radio';
 export type { RadioProps, RadioVariants } from './components/Radio';
 
+export { RadioCard } from './components/RadioCard';
+export type { RadioCardProps, RadioCardVariants } from './components/RadioCard';
+
 export { Section } from './components/Section';
 export type { SectionProps, SectionVariants } from './components/Section';
 

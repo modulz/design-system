@@ -34,6 +34,7 @@ import { AlertDialog } from '../components/AlertDialog';
 import { Tabs } from '../components/Tabs';
 import { Label } from '../components/Label';
 import { Skeleton } from '../components/Skeleton';
+import { RadioCard } from '../components/RadioCard';
 import { Accordion } from '../components/Accordion';
 import { Title } from '../components/Title';
 import { Subtitle } from '../components/Subtitle';
@@ -2060,6 +2061,47 @@ function Home() {
             <RadioGroup defaultValue="1">
               <RadioGroup.Radio value="1" css={{ mr: '$5' }} />
               <RadioGroup.Radio value="2" size="2" css={{ mr: '$5' }} />
+            </RadioGroup>
+          </Container>
+        </Section>
+
+        <Flex css={{ jc: 'center' }}>
+          <Separator size="2" />
+        </Flex>
+
+        <Section size="3">
+          <Container size="2" css={{ py: '$7' }}>
+            <RadioGroup defaultValue="1">
+              <RadioCard.Radio value="1" css={{ mb: '$2' }}>
+                <Flex css={{ alignItems: 'center' }}>
+                  <Text size="5" css={{ fontWeight: '500', lineHeight: '25px', mr: '$6' }}>
+                    2.5GHz 14-core Intel Xeon W processor, Turbo Boost up to 4.3GHz
+                  </Text>
+                  <Text size="4" color="gray">
+                    -$1600
+                  </Text>
+                </Flex>
+              </RadioCard.Radio>
+              <RadioCard.Radio value="2" css={{ mb: '$2' }}>
+                <Flex css={{ alignItems: 'center' }}>
+                  <Text size="5" css={{ fontWeight: '500', lineHeight: '25px', mr: '$6' }}>
+                    2.5GHz 14-core Intel Xeon W processor, Turbo Boost up to 4.3GHz
+                  </Text>
+                  <Text size="4" color="gray">
+                    -$800
+                  </Text>
+                </Flex>
+              </RadioCard.Radio>
+              <RadioCard.Radio value="3" css={{ mb: '$2' }}>
+                <Flex css={{ alignItems: 'center' }}>
+                  <Text size="5" css={{ fontWeight: '500', lineHeight: '25px', mr: '$6' }}>
+                    2.5GHz 14-core Intel Xeon W processor, Turbo Boost up to 4.3GHz
+                  </Text>
+                  <Text size="4" color="gray">
+                    
+                  </Text>
+                </Flex>
+              </RadioCard.Radio>
             </RadioGroup>
           </Container>
         </Section>
