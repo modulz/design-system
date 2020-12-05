@@ -7,7 +7,7 @@ export const Link = styled('a', {
   flexShrink: 0,
   outline: 'none',
   textDecorationLine: 'none',
-  textUnderlineOffset: '2px',
+  textUnderlineOffset: '3px',
   textDecorationColor: '$gray300',
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',
   lineHeight: 'inherit',
