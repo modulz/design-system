@@ -14,6 +14,7 @@ import { Kbd } from '../components/Kbd';
 import { Separator } from '../components/Separator';
 import { VerifiedBadge } from '../components/VerifiedBadge';
 import { Card } from '../components/Card';
+import { Textarea } from '../components/Textarea';
 import { Image } from '../components/Image';
 import { Code } from '../components/Code';
 import { Input } from '../components/Input';
@@ -979,6 +980,25 @@ function Home() {
               </Flex>
             </Box>
 
+          </Container>
+        </Section>
+
+        <Flex css={{ jc: 'center' }}>
+          <Separator size="2" />
+        </Flex>
+
+        <Section size="3">
+          <Container size="2">
+            <Subheading css={{ mb: '$6' }}>Textarea</Subheading>
+            <Flex css={{ ai: 'flex-start', gap: '$6' }}>
+              <Textarea size="1" placeholder="Size 1"></Textarea>
+              <Textarea size="2" placeholder="Size 1"></Textarea>
+              <Textarea size="3" placeholder="Size 1"></Textarea>
+            </Flex>
+            <Flex css={{ ai: 'flex-start', gap: '$6', mt: '$6' }}>
+              <Textarea size="2" placeholder="Size 1" disabled></Textarea>
+              <Textarea size="2" placeholder="Size 1" readOnly defaultValue="eihuweofjew"></Textarea>
+            </Flex>
           </Container>
         </Section>
 

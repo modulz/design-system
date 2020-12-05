@@ -108,6 +108,9 @@ export type { SwitchProps, SwitchVariants } from './components/Switch';
 export { Text } from './components/Text';
 export type { TextProps, TextVariants } from './components/Text';
 
+export { Textarea } from './components/Textarea';
+export type { TextareaProps, TextareaVariants } from './components/Textarea';
+
 export { SimpleToggle } from './components/SimpleToggle';
 export type { SimpleToggleProps, SimpleToggleVariants } from './components/SimpleToggle';
 
