@@ -4,52 +4,47 @@ export type LinkProps = StitchesProps<typeof Link>;
 export type LinkVariants = StitchesVariants<typeof Link>;
 
 export const Link = styled('a', {
-  // Reset
-  boxSizing: 'border-box',
   flexShrink: 0,
   outline: 'none',
-  textDecoration: 'none',
+  textDecorationLine: 'none',
+  textUnderlineOffset: '2px',
+  textDecorationColor: '$gray300',
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-  ':disabled': {
-    pointerEvents: 'none',
-  },
-  '::before': {
-    boxSizing: 'border-box',
-  },
-  '::after': {
-    boxSizing: 'border-box',
-  },
-
-  // Custom
-  color: '$hiContrast',
-  borderBottom: '1px solid $gray500',
   lineHeight: 'inherit',
-  // transition: 'all 50ms linear',
   ':hover': {
-    borderColor: '$gray700',
+    textDecorationLine: 'underline',
+  },
+  ':focus': {
+    outlineWidth: '2px',
+    outlineStyle: 'solid',
+    outlineOffset: '2px',
+    textDecorationLine: 'none',
   },
   variants: {
-    size: {
-      large: {
-        height: '$5',
-        px: '$3',
-        fontSize: '$2',
-      },
-    },
     variant: {
       blue: {
         color: '$blue900',
-        textDecoration: 'none',
-        borderColor: 'transparent',
-        ':hover': {
-          borderColor: '$blue300',
+        textDecorationColor: '$blue300',
+        ':focus': {
+          outlineColor: '$blue700',
         },
       },
       subtle: {
         color: '$gray900',
-        borderColor: 'transparent',
+        textDecorationColor: '$gray300',
+        ':focus': {
+          outlineColor: '$gray700',
+        },
+      },
+      contrast: {
+        color: 'inherit',
+        textDecoration: 'underline',
+        textDecorationColor: '$gray300',
         ':hover': {
-          borderColor: '$gray300',
+          textDecorationColor: '$gray600',
+        },
+        ':focus': {
+          outlineColor: '$gray700',
         },
       },
     },

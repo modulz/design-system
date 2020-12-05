@@ -1091,17 +1091,20 @@ function Home() {
         <Section size="3">
           <Container size="2">
             <Flex css={{ gap: '$6', mb: '$6' }}>
-              <Link variant="blue" css={{}} href="#">
-                This is a link
+              <Link variant="blue" href="#">
+                <Text size="4">Link with jy descenders</Text>
               </Link>
-              <Link variant="subtle" css={{}} href="#">
-                This is a link
+              <Link variant="subtle" href="#">
+                <Text size="4">Link with jy descenders</Text>
+              </Link>
+              <Link variant="contrast" href="#">
+                <Text size="4">Link with jy descenders</Text>
               </Link>
             </Flex>
 
             <Paragraph>
               There are 5 variants to choose from. Use is for positive states.{' '}
-              <Link css={{}} href="#">
+              <Link variant="contrast" href="#">
                 This is a link
                 </Link>{' '}
                 Traditional business literature won’t help you solve it- most of that stuff is
