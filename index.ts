@@ -130,20 +130,20 @@ export { VerifiedBadge } from './components/VerifiedBadge';
 export type { VerifiedBadgeProps } from './components/VerifiedBadge';
 
 // Composites
-export { Heading } from './composites/Heading';
-export type { HeadingProps } from './composites/Heading';
+export { Heading } from './components/Heading';
+export type { HeadingProps } from './components/Heading';
 
-export { Paragraph } from './composites/Paragraph';
-export type { ParagraphProps } from './composites/Paragraph';
+export { Paragraph } from './components/Paragraph';
+export type { ParagraphProps } from './components/Paragraph';
 
-export { Subheading } from './composites/Subheading';
-export type { SubheadingProps } from './composites/Subheading';
+export { Subheading } from './components/Subheading';
+export type { SubheadingProps } from './components/Subheading';
 
-export { Subtitle } from './composites/Subtitle';
-export type { SubtitleProps } from './composites/Subtitle';
+export { Subtitle } from './components/Subtitle';
+export type { SubtitleProps } from './components/Subtitle';
 
-export { Title } from './composites/Title';
-export type { TitleProps } from './composites/Title';
+export { Title } from './components/Title';
+export type { TitleProps } from './components/Title';
 
 // Stitches
 export { css, styled, theme, darkTheme, darkThemeClass } from './stitches.config';

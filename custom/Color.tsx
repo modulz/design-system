@@ -7,9 +7,9 @@ import { Container } from '../components/Container';
 import { Grid } from '../components/Grid';
 import { Code } from '../components/Code';
 import { Flex } from '../components/Flex';
-import { Paragraph } from '../composites/Paragraph';
+import { Paragraph } from '../components/Paragraph';
 
-import { Title } from '../composites/Title';
+import { Title } from '../components/Title';
 
 export function Color() {
   return (

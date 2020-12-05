@@ -8,7 +8,7 @@ import { Container } from '../components/Container';
 import { Flex } from '../components/Flex';
 import { Avatar, AvatarGroup, AvatarNestedItem } from '../components/Avatar';
 import { Status } from '../components/Status';
-import { Subheading } from '../composites/Subheading';
+import { Subheading } from '../components/Subheading';
 import { Link2Icon } from '@modulz/radix-icons'
 
 export function Avatars() {
