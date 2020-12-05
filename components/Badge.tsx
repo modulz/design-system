@@ -36,7 +36,7 @@ export const Badge = styled('span', {
 
   // Custom
   backgroundColor: '$gray200',
-  borderRadius: '$round',
+  borderRadius: '$pill',
   color: '$gray900',
   whiteSpace: 'nowrap',
   fontVariantNumeric: 'tabular-nums',

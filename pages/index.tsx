@@ -1684,9 +1684,10 @@ function Home() {
             <Box css={{ width: '100px' }}>
               <Slider defaultValue={50} />
             </Box>
-            <Box css={{ width: '100px', mt: '$6'}}>
-              <Slider defaultValue={[25, 50, 75]} onChange={() => {}} />
-            </Box>
+            <Flex css={{ gap: '$4' }}>
+              <Slider defaultValue={25} />
+              <Slider defaultValue={[25, 75]} />
+            </Flex>
             <Box css={{ mt: '$6' }}>
               <Slider defaultValue={50} orientation="vertical" />
             </Box>

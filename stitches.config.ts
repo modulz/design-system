@@ -223,7 +223,8 @@ export const theme = {
     $1: '3px',
     $2: '5px',
     $3: '7px',
-    $round: '9999px',
+    $round: '50%',
+    $pill: '9999px',
   },
   zIndices: {
     $1: '100',

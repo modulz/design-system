@@ -12,7 +12,7 @@ const SliderTrack = styled(SliderPrimitive.Track, {
   position: 'relative',
   flexGrow: 1,
   backgroundColor: '$gray600',
-  borderRadius: '$round',
+  borderRadius: '$pill',
   '&[data-orientation="horizontal"]': {
     height: 2,
   },
