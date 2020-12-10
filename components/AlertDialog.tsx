@@ -1,25 +1,20 @@
 import React from 'react';
 import { styled, css, StitchesProps } from '../stitches.config';
-import {
-  AlertDialog as AlertDialogPrimitive,
-  AlertDialogProps as AlertDialogPrimitiveProps,
-  AlertDialogContentProps as AlertDialogPrimitiveContentProps,
-} from '@interop-ui/react-alert-dialog';
+import * as AlertDialogPrimitive from '@interop-ui/react-alert-dialog';
 import { Overlay } from './Overlay';
 import { Panel } from './Panel';
 
-export type {
-  AlertDialogTitleProps,
-  AlertDialogDescriptionProps,
-  AlertDialogActionProps,
-  AlertDialogCancelProps,
-} from '@interop-ui/react-alert-dialog';
+export type AlertDialogTitleProps = React.ComponentProps<typeof AlertDialogPrimitive.Title>;
+export type AlertDialogDescriptionProps = React.ComponentProps<
+  typeof AlertDialogPrimitive.Description
+>;
+export type AlertDialogActionProps = React.ComponentProps<typeof AlertDialogPrimitive.Action>;
+export type AlertDialogCancelProps = React.ComponentProps<typeof AlertDialogPrimitive.Cancel>;
 
-export type AlertDialogProps = AlertDialogPrimitiveProps & {
+export type AlertDialogProps = {
   children: React.ReactNode;
 };
-export type AlertDialogContentProps = AlertDialogPrimitiveContentProps &
-  StitchesProps<typeof StyledContent>;
+export type AlertDialogContentProps = StitchesProps<typeof StyledContent>;
 
 const fadeIn = css.keyframes({
   '0%': { opacity: 0 },
@@ -42,10 +37,10 @@ const StyledOverlay = styled(Overlay, {
 
 export function AlertDialog({ children, ...props }: AlertDialogProps) {
   return (
-    <AlertDialogPrimitive {...props}>
+    <AlertDialogPrimitive.Root {...props}>
       <AlertDialogPrimitive.Overlay as={StyledOverlay} />
       {children}
-    </AlertDialogPrimitive>
+    </AlertDialogPrimitive.Root>
   );
 }
 

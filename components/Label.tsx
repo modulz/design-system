@@ -1,12 +1,10 @@
 import React from 'react';
 import { StitchesProps, styled } from '../stitches.config';
-import {
-  Label as LabelPrimitive,
-  LabelProps as LabelPrimitiveProps,
-} from '@interop-ui/react-label';
+import * as LabelPrimitive from '@interop-ui/react-label';
 import { Text } from './Text';
 
-export type LabelProps = LabelPrimitiveProps & StitchesProps<typeof StyledLabel>;
+export type LabelProps = React.ComponentProps<typeof LabelPrimitive.Root> &
+  StitchesProps<typeof StyledLabel>;
 
 const StyledLabel = styled(Text, {
   display: 'inline-block',
@@ -15,5 +13,5 @@ const StyledLabel = styled(Text, {
 });
 
 export const Label = React.forwardRef<HTMLSpanElement, LabelProps>((props, forwardedRef) => (
-  <StyledLabel ref={forwardedRef} {...props} />
+  <StyledLabel ref={forwardedRef} as={LabelPrimitive.Root} {...props} />
 ));

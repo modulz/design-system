@@ -4,18 +4,18 @@ import { Avatar } from '../components/Avatar';
 import { Text } from '../components/Text';
 import { Button } from '../components/Button';
 import { Flex } from '../components/Flex';
-import { IconButton } from '../components/IconButton';
+// import { IconButton } from '../components/IconButton';
 import { Dialog } from '../components/Dialog';
 import { AlertDialog } from '../components/AlertDialog';
-import { Popover } from '../components/Popover';
-import { Tooltip } from '../components/Tooltip';
-import { ProgressBar } from '../components/ProgressBar';
-import { Tabs } from '../components/Tabs';
+// import { Popover } from '../components/Popover';
+// import { Tooltip } from '../components/Tooltip';
+// import { ProgressBar } from '../components/ProgressBar';
+// import { Tabs } from '../components/Tabs';
 import { Accordion } from '../components/Accordion';
 import { Label } from '../components/Label';
-import { Switch } from '../components/Switch';
-import { SimpleToggle } from '../components/SimpleToggle';
-import { Slider } from '../components/Slider';
+// import { Switch } from '../components/Switch';
+// import { SimpleToggle } from '../components/SimpleToggle';
+// import { Slider } from '../components/Slider';
 import { Cross2Icon } from '@modulz/radix-icons';
 
 export default function Closed() {
@@ -78,6 +78,7 @@ export default function Closed() {
       <Dialog>
         <Dialog.Trigger as={Button}>Open Dialog</Dialog.Trigger>
         <Dialog.Content>
+          <Dialog.CrossCloseButton />
           <Text css={{ mb: '$4' }}>Hello, from Dialog.</Text>
           <Dialog.Close as={Button}>Bye.</Dialog.Close>
         </Dialog.Content>
@@ -101,6 +102,7 @@ export default function Closed() {
           </Flex>
         </AlertDialog.Content>
       </AlertDialog>
+      {/*
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
         Popover
       </Text>
@@ -222,7 +224,7 @@ export default function Closed() {
         <Tabs.Panel id="tab-three">
           <Text>Panel 3</Text>
         </Tabs.Panel>
-      </Tabs>
+			</Tabs> */}
 
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
         Accordion
@@ -260,7 +262,7 @@ export default function Closed() {
       </Text>
 
       <Label size="3">Label</Label>
-
+      {/*
       <Text size="5" css={{ mt: '$9', mb: '$4' }}>
         Switch
       </Text>
@@ -280,7 +282,7 @@ export default function Closed() {
       <Flex css={{ gap: '$4' }}>
         <Slider defaultValue={25} />
         <Slider defaultValue={[25, 75]} />
-      </Flex>
+      </Flex> */}
     </Box>
   );
 }

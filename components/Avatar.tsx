@@ -1,23 +1,19 @@
 import React from 'react';
 import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
-import {
-  Avatar as AvatarPrimitive,
-  AvatarProps as AvatarPrimitiveProps,
-} from '@interop-ui/react-avatar';
+import * as AvatarPrimitive from '@interop-ui/react-avatar';
 import { Box } from './Box';
 import { Status, StatusVariants } from './Status';
 
 type StatusColors = Pick<StatusVariants, 'color'>;
-export type AvatarProps = AvatarPrimitiveProps &
-  StitchesProps<typeof StyledAvatar> & {
-    alt?: string;
-    src?: string;
-    fallback?: React.ReactNode;
-    status?: StatusColors['color'];
-  };
-export type AvatarVariants = StitchesVariants<typeof Avatar>;
+export type AvatarProps = StitchesProps<typeof StyledAvatar> & {
+  alt?: string;
+  src?: string;
+  fallback?: React.ReactNode;
+  status?: StatusColors['color'];
+};
+export type AvatarVariants = StitchesVariants<typeof StyledAvatar>;
 
-export const StyledAvatar = styled(AvatarPrimitive, {
+export const StyledAvatar = styled(AvatarPrimitive.Root, {
   alignItems: 'center',
   justifyContent: 'center',
   verticalAlign: 'middle',

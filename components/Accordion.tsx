@@ -1,27 +1,12 @@
 import React from 'react';
 import { styled, StitchesProps } from '../stitches.config';
-import {
-  Accordion as AccordionPrimitive,
-  AccordionProps as AccordionPrimitiveProps,
-  AccordionItemProps as AccordionPrimitiveItemProps,
-  AccordionButtonProps as AccordionPrimitiveButtonProps,
-  AccordionPanelProps as AccordionPrimitivePanelProps,
-} from '@interop-ui/react-accordion';
+import * as AccordionPrimitive from '@interop-ui/react-accordion';
+import { forwardRefWithAs } from '@interop-ui/react-polymorphic';
 import { ChevronDownIcon } from '@modulz/radix-icons';
 
-export type AccordionProps = AccordionPrimitiveProps & StitchesProps<typeof StyledAccordion>;
-export type AccordionItemProps = AccordionPrimitiveItemProps & StitchesProps<typeof StyledItem>;
-export type AccordionButtonProps = AccordionPrimitiveButtonProps &
-  StitchesProps<typeof StyledButton>;
-export type AccordionPanelProps = AccordionPrimitivePanelProps & StitchesProps<typeof StyledPanel>;
+const Root = styled(AccordionPrimitive.Root, {});
 
-const StyledAccordion = styled(AccordionPrimitive, {});
-
-export function Accordion(props: AccordionProps) {
-  return <StyledAccordion {...props} />;
-}
-
-const StyledItem = styled(AccordionPrimitive.Item, {
+const Item = styled(AccordionPrimitive.Item, {
   borderTop: '1px solid $gray500',
 
   '&:last-of-type': {
@@ -29,9 +14,9 @@ const StyledItem = styled(AccordionPrimitive.Item, {
   },
 });
 
-const StyledHeader = styled(AccordionPrimitive.Header, {});
+const Header = styled(AccordionPrimitive.Header, {});
 
-const StyledButton = styled(AccordionPrimitive.Button, {
+const Button = styled(AccordionPrimitive.Button, {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
@@ -49,7 +34,7 @@ const StyledButton = styled(AccordionPrimitive.Button, {
   },
 
   svg: {
-    transition: 'transform 175ms cubic-bezier(0.65, 0, 0.35, 1)'
+    transition: 'transform 175ms cubic-bezier(0.65, 0, 0.35, 1)',
   },
 
   // TODO: check if there should be a data-state attr
@@ -60,21 +45,25 @@ const StyledButton = styled(AccordionPrimitive.Button, {
   },
 });
 
-export const AccordionButton = React.forwardRef<HTMLButtonElement, AccordionButtonProps>(
-  ({ children }, forwardedRef) => (
-    <StyledHeader>
-      <StyledButton ref={forwardedRef}>
-        {children}
-        <ChevronDownIcon />
-      </StyledButton>
-    </StyledHeader>
-  )
-);
-
-const StyledPanel = styled(AccordionPrimitive.Panel, {
+const Panel = styled(AccordionPrimitive.Panel, {
   p: '$2',
 });
 
-Accordion.Item = StyledItem;
-Accordion.Button = AccordionButton;
-Accordion.Panel = StyledPanel;
+const AccordionButton = forwardRefWithAs<typeof AccordionPrimitive.Button>(
+  ({ children, ...props }, forwardedRef) => (
+    <Header>
+      <Button ref={forwardedRef} {...props}>
+        {children}
+        <ChevronDownIcon />
+      </Button>
+    </Header>
+  )
+);
+
+const AccordionPackage = Object.assign(Root, {
+  Item,
+  Button: AccordionButton,
+  Panel,
+});
+
+export { AccordionPackage as Accordion };

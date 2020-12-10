@@ -1,17 +1,14 @@
 import React from 'react';
 import { styled, css } from '../stitches.config';
-import {
-  Dialog as DialogPrimitive,
-  DialogContentProps,
-  DialogProps as DialogPrimitiveProps,
-} from '@interop-ui/react-dialog';
+import * as DialogPrimitive from '@interop-ui/react-dialog';
 import { Cross2Icon } from '@modulz/radix-icons';
 import { Overlay } from './Overlay';
 import { Panel } from './Panel';
 import { IconButton } from './IconButton';
 
-export type { DialogContentProps, DialogCloseProps } from '@interop-ui/react-dialog';
-export type DialogProps = DialogPrimitiveProps & {
+export type DialogContentProps = React.ComponentProps<typeof DialogPrimitive.Content>;
+export type DialogCloseProps = React.ComponentProps<typeof DialogPrimitive.Close>;
+export type DialogProps = React.ComponentProps<typeof DialogPrimitive.Root> & {
   children: React.ReactNode;
 };
 
@@ -36,10 +33,10 @@ const StyledOverlay = styled(Overlay, {
 
 export function Dialog({ children, ...props }: DialogProps) {
   return (
-    <DialogPrimitive {...props}>
+    <DialogPrimitive.Root {...props}>
       <DialogPrimitive.Overlay as={StyledOverlay} />
       {children}
-    </DialogPrimitive>
+    </DialogPrimitive.Root>
   );
 }
 
@@ -70,13 +67,22 @@ const DialogContent = React.forwardRef<HTMLDivElement, DialogContentProps>(
   ({ children, ...props }, forwardedRef) => (
     <StyledContent {...props} ref={forwardedRef} as={Panel}>
       {children}
-      <StyledCloseButton as={IconButton} variant="ghost">
+      {/* <StyledCloseButton as={IconButton} variant="ghost">
         <Cross2Icon />
-      </StyledCloseButton>
+      </StyledCloseButton> */}
     </StyledContent>
   )
 );
 
+const CrossCloseButton = React.forwardRef<HTMLButtonElement>((props, forwardedRef) => {
+  return (
+    <DialogPrimitive.Close {...props} ref={forwardedRef} as={IconButton}>
+      <Cross2Icon />
+    </DialogPrimitive.Close>
+  );
+});
+
 Dialog.Trigger = DialogPrimitive.Trigger;
 Dialog.Content = DialogContent;
 Dialog.Close = DialogPrimitive.Close;
+Dialog.CrossCloseButton = CrossCloseButton;

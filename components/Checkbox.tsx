@@ -1,17 +1,12 @@
 import React from 'react';
 import { styled, StitchesProps, StitchesVariants } from '../stitches.config';
-import {
-  Checkbox as CheckboxPrimitive,
-  CheckboxProps as CheckboxPrimitiveProps,
-} from '@interop-ui/react-checkbox';
+import * as CheckboxPrimitive from '@interop-ui/react-checkbox';
 import { CheckIcon } from '@modulz/radix-icons';
 
-export type CheckboxProps = CheckboxPrimitiveProps &
-  StitchesProps<typeof StyledCheckbox> &
-  CheckboxVariants;
+export type CheckboxProps = StitchesProps<typeof StyledCheckbox> & CheckboxVariants;
 export type CheckboxVariants = StitchesVariants<typeof StyledCheckbox>;
 
-const StyledCheckbox = styled(CheckboxPrimitive, {
+const StyledCheckbox = styled(CheckboxPrimitive.Root, {
   color: '$hiContrast',
   boxShadow: 'inset 0 0 0 1px $gray600',
   overflow: 'hidden',
