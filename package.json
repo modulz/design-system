@@ -32,13 +32,17 @@
     "@interop-ui/react-toggle-button": "0.0.1-13",
     "@interop-ui/react-tooltip": "0.0.1-12",
     "@interop-ui/react-utils": "0.0.1-12",
-    "@modulz/radix-icons": "^3.2.0",
+    "@modulz/radix-icons": "^3.3.0",
     "@stitches/react": "0.0.3-canary.4"
   },
   "devDependencies": {
     "@next/mdx": "^10.0.1",
+    "@types/bezier-easing": "^2.1.2",
+    "@types/chroma-js": "^2.1.2",
     "@types/node": "^14.14.7",
     "@types/react": "^16.9.56",
+    "bezier-easing": "^2.1.0",
+    "chroma-js": "^2.1.0",
     "husky": ">=4",
     "lint-staged": ">=10",
     "next": "10.0.1",

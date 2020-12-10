@@ -8,8 +8,8 @@ import { Grid } from '../components/Grid';
 import { Code } from '../components/Code';
 import { Flex } from '../components/Flex';
 import { Paragraph } from '../components/Paragraph';
-
 import { Title } from '../components/Title';
+import { ColorTools } from './ColorTools/ColorTools';
 
 export function Color() {
   return (
@@ -1348,7 +1348,7 @@ export function Color() {
               p: '$3',
               borderRadius: '$3',
               backgroundColor: '$crimson100',
-              border: '1px solid $red500',
+              border: '1px solid $crimson500',
             }}
           >
             <Text size="3" as="p" css={{ color: '$crimson900', lineHeight: '23px' }}>
@@ -1513,10 +1513,11 @@ export function Color() {
           </Box>
         </Grid>
       </Container>
-
+      {/*
       <Box css={{ backgroundColor: '$red800', height: '100vh', p: '$9', mt: '$9' }}>
         <Title css={{ color: 'white' }}>This should look good and pass contrast ratio.</Title>
       </Box>
+      */}
     </Section>
   );
 }
