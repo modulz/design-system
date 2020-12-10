@@ -360,7 +360,7 @@ function Test() {
                     <Text size="2" css={{ color: '$gray900' }}>
                       Forgot password
                     </Text>
-                    <Button size="large" variant="blue">
+                    <Button size="2" variant="blue">
                       Log in
                     </Button>
                   </Flex>
@@ -1047,7 +1047,7 @@ function Test() {
                 </Popover.Content>
               </Popover>
 
-              <Popover hideArrow="true">
+              <Popover>
                 <Popover.Trigger as={Button}>Popover</Popover.Trigger>
                 <Popover.Content css={{ padding: '$4' }}>
                   <Text>Hello, from Popover.</Text>
