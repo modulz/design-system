@@ -43,10 +43,10 @@ const pink = {
   hue_start: 310,
   hue_end: 322,
   sat_start: 3,
-  sat_end: 55,
-  sat_curve: '0.740, 0.290, 0.820, 0.450',
+  sat_end: 50,
+  sat_curve: '0.710, 0.445, 0.820, 0.450',
   lum_start: 100,
-  lum_end: 94,
+  lum_end: 90,
 };
 
 const purple = {
@@ -63,18 +63,18 @@ const violet = {
   hue_start: 252,
   hue_end: 252,
   sat_start: 2,
-  sat_end: 50,
-  sat_curve: '0.700, 0.415, 0.745, 0.465',
+  sat_end: 48,
+  sat_curve: '0.690, 0.375, 0.745, 0.465',
   lum_start: 100,
   lum_end: 95,
 };
 
 const indigo = {
-  hue_start: 228,
-  hue_end: 228,
+  hue_start: 226,
+  hue_end: 226,
   sat_start: 2,
-  sat_end: 50,
-  sat_curve: '0.605, 0.370, 0.680, 0.430',
+  sat_end: 49,
+  sat_curve: '0.585, 0.305, 0.770, 0.490',
   lum_start: 100,
   lum_end: 93,
 };
@@ -91,10 +91,10 @@ const blue = {
 
 const turquoise = {
   hue_start: 185,
-  hue_end: 190,
+  hue_end: 187,
   sat_start: 3,
-  sat_end: 54,
-  sat_curve: '0.515, 0.260, 0.700, 0.770',
+  sat_end: 60,
+  sat_curve: '0.765, 0.485, 0.805, 0.740',
   lum_start: 100,
   lum_end: 92,
 };
@@ -104,9 +104,9 @@ const teal = {
   hue_end: 174,
   sat_start: 4,
   sat_end: 72,
-  sat_curve: '0.680, 0.420, 0.700, 0.725',
+  sat_curve: '0.690, 0.315, 0.860, 0.620',
   lum_start: 100,
-  lum_end: 82,
+  lum_end: 84,
 };
 
 const green = {
@@ -114,7 +114,7 @@ const green = {
   hue_end: 145,
   sat_start: 4,
   sat_end: 57,
-  sat_curve: '0.650, 0.380, 0.810, 0.595',
+  sat_curve: '0.640, 0.275, 0.860, 0.630',
   lum_start: 100,
   lum_end: 84,
 };
@@ -124,9 +124,9 @@ const lime = {
   hue_end: 78,
   sat_start: 4,
   sat_end: 82,
-  sat_curve: '0.310, 0.205, 0.760, 0.765',
-  lum_start: 100,
-  lum_end: 93,
+  sat_curve: '0.505, 0.435, 0.860, 0.605',
+  lum_start: 99,
+  lum_end: 92,
 };
 
 const yellow = {
@@ -134,17 +134,17 @@ const yellow = {
   hue_end: 52,
   sat_start: 6,
   sat_end: 100,
-  sat_curve: '0.415, 0.245, 0.730, 0.455',
-  lum_start: 100,
+  sat_curve: '0.380, 0.335, 0.890, 0.255',
+  lum_start: 99.5,
   lum_end: 100,
 };
 
 const orange = {
   hue_start: 36,
   hue_end: 36,
-  sat_start: 4,
+  sat_start: 7,
   sat_end: 86,
-  sat_curve: '0.700, 0.415, 0.745, 0.465',
+  sat_curve: '0.535, 0.290, 0.885, 0.510',
   lum_start: 100,
   lum_end: 100,
 };
