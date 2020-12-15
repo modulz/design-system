@@ -11,6 +11,9 @@ export const Text = styled('span', {
   fontVariantNumeric: 'tabular-nums',
   display: 'block',
 
+  // Custom
+  color: '$hiContrast',
+
   variants: {
     size: {
       '1': {
