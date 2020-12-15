@@ -9,7 +9,7 @@ import { Flex } from '../components/Flex';
 import { Avatar, AvatarGroup, AvatarNestedItem } from '../components/Avatar';
 import { Status } from '../components/Status';
 import { Subheading } from '../components/Subheading';
-import { Link2Icon } from '@modulz/radix-icons'
+import { Link2Icon } from '@modulz/radix-icons';
 
 export function Avatars() {
   return (
@@ -18,12 +18,7 @@ export function Avatars() {
         <Subheading>Avatar sizes</Subheading>
         <Flex css={{ fd: 'column', gap: '$6' }}>
           <Flex css={{ ai: 'center', gap: '$6' }}>
-            <Avatar
-              size="1"
-              alt="John Smith"
-              src=""
-              fallback="J"
-            />
+            <Avatar size="1" alt="John Smith" src="" fallback="J" />
 
             <Avatar
               size="2"
@@ -128,41 +123,13 @@ export function Avatars() {
               interactive
               alt="John Smith"
               // as="button"
-              fallback={
-                <Link2Icon />
-              }
+              fallback={<Link2Icon />}
             />
           </Flex>
 
           <Subheading>Interactive avatar with tooltip and popover</Subheading>
           <Flex css={{ gap: '$6' }}>
-            <Popover>
-              {/* <Popover.Trigger as={props => <MyAvatar as="button" {...props} />} size="3" interactive>
-                <Avatar.Image
-                  alt="John Smith"
-                  src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
-                />
-                <Avatar.Fallback>
-                  C
-                </Avatar.Fallback>
-              </Popover.Trigger>
-              <Popover.Position side="bottom" align="end">
-                <Popover.Content
-                  style={{
-                    ...popoverStyles.content,
-                    backgroundColor: 'white',
-                    borderRadius: 5,
-                    py: '$3',
-                    boxShadow: 'rgba(22, 23, 24, 0.35) 0px 10px 38px -10px, rgba(22, 23, 24, 0.2) 0px 10px 20px -15px',
-                  }}
-                >
-                  <MenuItem><Text size="2">This is a button</Text></MenuItem>
-                  <MenuItem><Text size="2">This is another button</Text></MenuItem>
-                  <MenuItem><Text size="2">One more?</Text></MenuItem>
-                  <MenuItem><Text size="2">Sure why not</Text></MenuItem>
-                </Popover.Content>
-              </Popover.Position> */}
-            </Popover>
+            <Popover>Popover content</Popover>
           </Flex>
 
           <Subheading>Inactive avatar</Subheading>
@@ -290,40 +257,16 @@ export function Avatars() {
             </AvatarGroup>
             <AvatarGroup>
               <AvatarNestedItem>
-                <Avatar
-                  size="2"
-                  alt="John Smith"
-                  src=""
-                  fallback="J"
-                  color="blue"
-                />
+                <Avatar size="2" alt="John Smith" src="" fallback="J" color="blue" />
               </AvatarNestedItem>
               <AvatarNestedItem>
-                <Avatar
-                  size="2"
-                  alt="John Smith"
-                  src=""
-                  fallback="J"
-                  color="violet"
-                />
+                <Avatar size="2" alt="John Smith" src="" fallback="J" color="violet" />
               </AvatarNestedItem>
               <AvatarNestedItem>
-                <Avatar
-                  size="2"
-                  alt="John Smith"
-                  src=""
-                  fallback="J"
-                  color="green"
-                />
+                <Avatar size="2" alt="John Smith" src="" fallback="J" color="green" />
               </AvatarNestedItem>
               <AvatarNestedItem>
-                <Avatar
-                  size="2"
-                  alt="John Smith"
-                  src=""
-                  fallback="J"
-                  color="yellow"
-                />
+                <Avatar size="2" alt="John Smith" src="" fallback="J" color="yellow" />
               </AvatarNestedItem>
             </AvatarGroup>
           </Flex>

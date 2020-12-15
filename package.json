@@ -33,6 +33,8 @@
     "@interop-ui/react-tooltip": "0.0.1-12",
     "@interop-ui/react-utils": "0.0.1-12",
     "@modulz/radix-icons": "^3.2.0",
+    "@radix-ui/react-menu": "0.0.1",
+    "@radix-ui/react-polymorphic": "0.0.1",
     "@stitches/react": "0.0.3-canary.4"
   },
   "devDependencies": {
