@@ -21,7 +21,7 @@ const gray = {
   sat_start: 0.5,
   sat_end: 5,
   sat_curve: '0.630, 0.575, 0.495, 0.115',
-  lum_start: 99.4,
+  lum_start: 99,
   lum_end: 82,
   overrides: {
     8: 'hsl(206,6%,56%)',
