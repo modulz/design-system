@@ -24,7 +24,7 @@ const gray = {
   lum_start: 99.4,
   lum_end: 82,
   overrides: {
-    8: 'hsl(206,6%,55%)',
+    8: 'hsl(206,6%,56%)',
     9: 'hsl(206,6%,44%)',
   },
 };
@@ -50,26 +50,33 @@ const crimson = {
   sat_curve: '0.655, 0.325, 0.815, 0.480',
   lum_start: 100,
   lum_end: 94,
+  overrides: {
+    9: 'hsl(336,79%,46%)',
+  },
 };
 
 const pink = {
-  hue_start: 310,
+  hue_start: 322,
   hue_end: 322,
   sat_start: 3,
-  sat_end: 50,
+  sat_end: 55,
   sat_curve: '0.710, 0.445, 0.820, 0.450',
   lum_start: 100,
-  lum_end: 90,
+  lum_end: 95,
+  overrides: {
+    8: 'hsl(322,75%,60%)',
+    9: 'hsl(322,80%,44%)',
+  },
 };
 
 const purple = {
   hue_start: 280,
   hue_end: 272,
   sat_start: 2,
-  sat_end: 45,
+  sat_end: 47,
   sat_curve: '0.700, 0.415, 0.745, 0.465',
   lum_start: 100,
-  lum_end: 91,
+  lum_end: 89,
 };
 
 const violet = {
@@ -80,6 +87,9 @@ const violet = {
   sat_curve: '0.690, 0.375, 0.745, 0.465',
   lum_start: 100,
   lum_end: 95,
+  overrides: {
+    9: 'hsl(250, 55%, 48%)',
+  },
 };
 
 const indigo = {
@@ -100,99 +110,134 @@ const blue = {
   sat_curve: '0.700, 0.415, 0.745, 0.465',
   lum_start: 100,
   lum_end: 98,
+  overrides: {
+    9: 'hsl(211,100%,44%)',
+  },
 };
 
 const turquoise = {
   hue_start: 185,
-  hue_end: 187,
+  hue_end: 190,
   sat_start: 3.5,
-  sat_end: 60,
+  sat_end: 68,
   sat_curve: '0.765, 0.485, 0.805, 0.740',
   lum_start: 99.5,
   lum_end: 92,
+  overrides: {
+    8: 'hsl(190, 88%, 40%)',
+    9: 'hsl(190, 90%, 30%)',
+  },
 };
 
 const teal = {
-  hue_start: 167,
-  hue_end: 174,
+  hue_start: 165,
+  hue_end: 172,
   sat_start: 5,
-  sat_end: 72,
+  sat_end: 75,
   sat_curve: '0.690, 0.315, 0.860, 0.620',
   lum_start: 100,
-  lum_end: 84,
+  lum_end: 80,
+  overrides: {
+    8: 'hsl(173, 82%, 36%)',
+    9: 'hsl(174, 100%, 24.5%)',
+  },
 };
 
 const green = {
   hue_start: 130,
-  hue_end: 145,
+  hue_end: 144,
   sat_start: 4,
-  sat_end: 57,
+  sat_end: 58,
   sat_curve: '0.640, 0.275, 0.860, 0.630',
   lum_start: 100,
   lum_end: 84,
+  overrides: {
+    8: 'hsl(145, 67%, 40%)',
+    9: 'hsl(148, 70%, 30%)',
+  },
 };
 
 const lime = {
-  hue_start: 70,
-  hue_end: 78,
+  hue_start: 85,
+  hue_end: 76,
   sat_start: 6,
-  sat_end: 82,
-  sat_curve: '0.505, 0.435, 0.860, 0.605',
+  sat_end: 85,
+  sat_curve: '0.425, 0.150, 0.860, 0.605',
   lum_start: 99.5,
-  lum_end: 92,
+  lum_end: 85,
+  overrides: {
+    8: 'hsl(77, 85%, 47%)',
+    9: 'hsl(78, 80%, 25%)',
+  },
 };
 
 const yellow = {
   hue_start: 55,
   hue_end: 52,
-  sat_start: 6,
-  sat_end: 100,
-  sat_curve: '0.490, 0.315, 0.725, 0.430',
+  sat_start: 7,
+  sat_end: 90,
+  sat_curve: '0.830, 0.585, 0.660, 0.820',
   lum_start: 100,
-  lum_end: 100,
+  lum_end: 94,
+  overrides: {
+    8: 'hsl(52, 99%, 52%)',
+    9: 'hsl(40, 90%, 30%)',
+  },
 };
 
 const orange = {
   hue_start: 40,
   hue_end: 36,
   sat_start: 5,
-  sat_end: 86,
-  sat_curve: '0.535, 0.290, 0.885, 0.510',
+  sat_end: 90,
+  sat_curve: '0.555, 0.270, 0.710, 0.510',
   lum_start: 100,
-  lum_end: 100,
-};
-
-const gold = {
-  hue_start: 42,
-  hue_end: 36,
-  sat_start: 3,
-  sat_end: 43,
-  sat_curve: '0.700, 0.415, 0.745, 0.465',
-  lum_start: 99.5,
-  lum_end: 75,
+  lum_end: 98,
+  overrides: {
+    8: 'hsl(38, 100%, 54%)',
+    9: 'hsl(27, 100%, 36%)',
+  },
 };
 
 const brown = {
   hue_start: 30,
   hue_end: 28,
   sat_start: 3,
-  sat_end: 43,
+  sat_end: 55,
   sat_curve: '0.700, 0.415, 0.745, 0.465',
   lum_start: 99.5,
-  lum_end: 75,
+  lum_end: 85,
+  overrides: {
+    8: 'hsl(28, 48%, 52%)',
+    9: 'hsl(28, 60%, 34%)',
+  },
 };
 
 const bronze = {
-  hue_start: 16,
+  hue_start: 18,
   hue_end: 16,
   sat_start: 3,
-  sat_end: 43,
-  sat_curve: '0.700, 0.415, 0.745, 0.465',
+  sat_end: 36,
+  sat_curve: '0.590, 0.415, 0.720, 0.475',
   lum_start: 100,
+  lum_end: 78,
+  overrides: {
+    8: 'hsl(16, 28%, 52%)',
+    9: 'hsl(16, 30%, 43%)',
+  },
+};
+
+const gold = {
+  hue_start: 50,
+  hue_end: 36,
+  sat_start: 3,
+  sat_end: 40,
+  sat_curve: '0.700, 0.415, 0.745, 0.465',
+  lum_start: 99.5,
   lum_end: 75,
   overrides: {
-    // 8: 'hsl(20, 35%, 50%)',
-    // 9: 'hsl(18, 38%, 44%)',
+    8: 'hsl(36, 30%, 52%)',
+    9: 'hsl(36, 26%, 40%)',
   },
 };
 
@@ -226,9 +271,9 @@ export function ColorTools() {
         <Scale name="lime" scale={lime} />
         <Scale name="yellow" scale={yellow} />
         <Scale name="orange" scale={orange} />
-        <Scale name="gold" scale={gold} />
         <Scale name="brown" scale={brown} />
         <Scale name="bronze" scale={bronze} />
+        <Scale name="gold" scale={gold} />
       </ScrollArea>
     </Box>
   );
@@ -280,7 +325,6 @@ function Scale({ name, scale }: ScaleProps) {
 
   React.useEffect(() => {
     const newCurveParams = curve.split(',').map(parseFloat) as BezierParams;
-    // const lumCurveParams = curves.easeOutCubic.split(',').map(parseFloat) as BezierParams;
 
     const [x1, y1, x2, y2] = newCurveParams;
     const lumCurveParams = [1 - x2, 1 - y2, 1 - x1, 1 - y1] as BezierParams;
@@ -516,7 +560,7 @@ function Scale({ name, scale }: ScaleProps) {
                     name !== 'lime' &&
                     name !== 'yellow' &&
                     name !== 'orange' &&
-                    (contrastInfo['loContrast'] >= 3.33
+                    (contrastInfo['loContrast'] >= 3
                       ? `AA Large Text Pass ${contrastInfo['loContrast'].toFixed(2)}`
                       : `AA Large Text Fail ${contrastInfo['loContrast'].toFixed(2)}`)
                 }
@@ -525,7 +569,7 @@ function Scale({ name, scale }: ScaleProps) {
                   index === 7 &&
                     contrastInfo &&
                     (name === 'lime' || name === 'yellow' || name === 'orange') &&
-                    (contrastInfo['hiContrast'] >= 3.33
+                    (contrastInfo['hiContrast'] >= 3
                       ? `AA Large Text Pass ${contrastInfo['hiContrast'].toFixed(2)}`
                       : `AA Large Text Fail ${contrastInfo['hiContrast'].toFixed(2)}`)
                 }
