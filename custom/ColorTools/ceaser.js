@@ -1,3 +1,11 @@
+/**
+ * Create an easing curve
+ * @param {HTMLElement} canvas
+ * @param {HTMLElement} code
+ * @param {string} curve
+ * @param {(newCurve: string) => void} onChange
+ */
+
 export function createCeaser(canvas, code, curve, onChange) {
   var ctx = canvas.getContext('2d');
   var supportsTouch = 'createTouch' in document;
