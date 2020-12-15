@@ -1,16 +1,9 @@
 import React from 'react';
-// import { Popover } from '@interop-ui/react-popover';
-// import { Tooltip } from '@interop-ui/react-tooltip';
-
 import { Box } from '../components/Box';
-// import { Text } from '../components/Text';
 import { Section } from '../components/Section';
 import { Container } from '../components/Container';
 import { Flex } from '../components/Flex';
-// import { Avatar, AvatarGroup, AvatarNestedItem } from '../components/Avatar';
-// import { Status } from '../components/Status';
 import { Subheading } from '../components/Subheading';
-// import { Link2Icon } from '@modulz/radix-icons';
 
 import {
   Menu,
