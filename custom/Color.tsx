@@ -28,7 +28,7 @@ export function Color() {
             ai: 'center',
           }}
         >
-          />
+          <Box />
           <Box css={{ ta: 'center', pb: '$2' }}>
             <Text css={{ fontSize: '$2', color: '$gray900' }}>100</Text>
           </Box>

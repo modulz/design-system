@@ -74,7 +74,7 @@ const purple = {
   hue_end: 272,
   sat_start: 2,
   sat_end: 47,
-  sat_curve: '0.700, 0.415, 0.745, 0.465',
+  sat_curve: '0.700, 0.415, 0.925, 0.540',
   lum_start: 100,
   lum_end: 89,
 };
@@ -146,14 +146,14 @@ const teal = {
 const green = {
   hue_start: 130,
   hue_end: 144,
-  sat_start: 4,
+  sat_start: 5,
   sat_end: 58,
   sat_curve: '0.640, 0.275, 0.860, 0.630',
   lum_start: 100,
   lum_end: 84,
   overrides: {
     8: 'hsl(145, 67%, 40%)',
-    9: 'hsl(148, 70%, 30%)',
+    9: 'hsl(148, 69%, 30%)',
   },
 };
 
@@ -174,28 +174,28 @@ const lime = {
 const yellow = {
   hue_start: 55,
   hue_end: 52,
-  sat_start: 7,
+  sat_start: 9,
   sat_end: 90,
   sat_curve: '0.830, 0.585, 0.660, 0.820',
   lum_start: 100,
   lum_end: 94,
   overrides: {
     8: 'hsl(52, 99%, 52%)',
-    9: 'hsl(40, 90%, 30%)',
+    9: 'hsl(40, 80%, 32%)',
   },
 };
 
 const orange = {
   hue_start: 40,
   hue_end: 36,
-  sat_start: 5,
+  sat_start: 6,
   sat_end: 90,
   sat_curve: '0.555, 0.270, 0.710, 0.510',
   lum_start: 100,
   lum_end: 98,
   overrides: {
     8: 'hsl(38, 100%, 54%)',
-    9: 'hsl(27, 100%, 36%)',
+    9: 'hsl(27, 65%, 36%)',
   },
 };
 
@@ -209,7 +209,7 @@ const brown = {
   lum_end: 85,
   overrides: {
     8: 'hsl(28, 48%, 52%)',
-    9: 'hsl(28, 60%, 34%)',
+    9: 'hsl(20, 50%, 37%)',
   },
 };
 
