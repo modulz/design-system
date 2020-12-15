@@ -148,7 +148,7 @@ const green = {
   hue_end: 144,
   sat_start: 5,
   sat_end: 55,
-  sat_curve: '0.640, 0.275, 0.860, 0.630',
+  sat_curve: '0.645, 0.260, 0.860, 0.630',
   lum_start: 100,
   lum_end: 77,
   overrides: {
