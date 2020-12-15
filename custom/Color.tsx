@@ -1,5 +1,4 @@
 import { Box } from '../components/Box';
-import { MenuItem } from '../components/MenuItem';
 import { Text } from '../components/Text';
 import { ScrollArea } from '../components/Scrollbar';
 import { Section } from '../components/Section';

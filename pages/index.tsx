@@ -42,54 +42,46 @@ import { Heading } from '../components/Heading';
 import { Subheading } from '../components/Subheading';
 import { Paragraph } from '../components/Paragraph';
 
-import { Layers } from '../custom/Layers';
-import { Properties } from '../custom/Properties';
-import { Color } from '../custom/Color';
+// import { Color } from '../custom/Color';
 import { Avatars } from '../custom/Avatars';
-import { CheckIcon } from '@modulz/radix-icons';
+import { Menus } from '../custom/Menus';
 import { Status } from '../components/Status';
 
 function Home() {
   return (
     <Box>
-
       <Box css={{ bc: '$loContrast', height: '100%' }}>
         <Section size="3">
           <Container size="2">
             <Title css={{ ta: 'center', mb: '$3' }}>Radix UI test suite</Title>
             <Subtitle css={{ ta: 'center' }}>
-              An environment for testing tokens, theming, and components on Radix UI design
-              system.
-              </Subtitle>
+              An environment for testing tokens, theming, and components on Radix UI design system.
+            </Subtitle>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Section size="1" css={{ bc: '$gray200' }}>
             <Text as="p" size="4" css={{ ta: 'center' }}>
               Section 1
-              </Text>
+            </Text>
           </Section>
           <Section size="2" css={{ bc: '$gray200', my: '$1' }}>
             <Text as="p" size="4" css={{ ta: 'center' }}>
               Section 2
-              </Text>
+            </Text>
           </Section>
           <Section size="3" css={{ bc: '$gray200' }}>
             <Text as="p" size="4" css={{ ta: 'center' }}>
               Section 3
-              </Text>
+            </Text>
           </Section>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="1">
             <Box
@@ -117,22 +109,22 @@ function Home() {
                 <Flex css={{ ai: 'center', jc: 'space-between' }}>
                   <Text size="2" css={{ color: '$gray900' }}>
                     Forgot password
-                    </Text>
+                  </Text>
                   <Button size="2" variant="blue">
                     Log in
-                    </Button>
+                  </Button>
                 </Flex>
               </form>
             </Box>
           </Container>
           <Container size="2" css={{ my: '$9' }}>
             <Paragraph>
-              This is a really long paragraph of text, to demonstrate prose text, like for
-              example, the kind you might read in a blog post. The reason we're using prose here
-              is because the most common use case for this container size is longform text. So
-              we're previewing some longform text here so we can make sure the container width
-              provides an optimal line length for this font size.
-              </Paragraph>
+              This is a really long paragraph of text, to demonstrate prose text, like for example,
+              the kind you might read in a blog post. The reason we're using prose here is because
+              the most common use case for this container size is longform text. So we're previewing
+              some longform text here so we can make sure the container width provides an optimal
+              line length for this font size.
+            </Paragraph>
           </Container>
           <Container size="3" css={{ my: '$9' }}>
             <Grid
@@ -144,40 +136,38 @@ function Home() {
               <Box>
                 <Text as="p" size="4" css={{ lineHeight: '27px' }}>
                   This is a much shorter paragraph of text, to demonstrate narrow text container.
-                  The reason we're using text here is because one common use case for this
-                  container size is a 3-up grid.
-                  </Text>
+                  The reason we're using text here is because one common use case for this container
+                  size is a 3-up grid.
+                </Text>
               </Box>
               <Box>
                 <Text as="p" size="4" css={{ lineHeight: '27px' }}>
                   This is a much shorter paragraph of text, to demonstrate narrow text container.
-                  The reason we're using text here is because one common use case for this
-                  container size is a 3-up grid.
-                  </Text>
+                  The reason we're using text here is because one common use case for this container
+                  size is a 3-up grid.
+                </Text>
               </Box>
               <Box>
                 <Text as="p" size="4" css={{ lineHeight: '27px' }}>
                   This is a much shorter paragraph of text, to demonstrate narrow text container.
-                  The reason we're using text here is because one common use case for this
-                  container size is a 3-up grid.
-                  </Text>
+                  The reason we're using text here is because one common use case for this container
+                  size is a 3-up grid.
+                </Text>
               </Box>
             </Grid>
           </Container>
           <Container size="4">
             <Text as="p" size="3" css={{ ta: 'center', bc: '$gray200', py: '$2' }}>
               No max width
-              </Text>
+            </Text>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
-            <Subheading as="h4" css={{ mb: '$6' }}>
+            <Subheading as={'h4' as any} css={{ mb: '$6' }}>
               Text
             </Subheading>
             <Flex css={{ fd: 'column', gap: '$4' }}>
@@ -219,12 +209,12 @@ function Home() {
               <Flex css={{ ai: 'center' }}>
                 <Text size="2" as="p" css={{ lineHeight: '20px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="1" as="p" css={{ lineHeight: '20px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
             </Flex>
             <Flex css={{ fd: 'column', gap: '$4', mt: '$6' }}>
@@ -266,42 +256,42 @@ function Home() {
               <Flex css={{ ai: 'center' }}>
                 <Text size="6" as="p" color="turquoise" css={{ lineHeight: '30px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="6" as="p" color="teal" css={{ lineHeight: '30px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="6" as="p" color="green" css={{ lineHeight: '30px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="6" as="p" color="lime" css={{ lineHeight: '30px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="6" as="p" color="yellow" css={{ lineHeight: '30px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="6" as="p" color="orange" css={{ lineHeight: '30px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="6" as="p" color="gold" css={{ lineHeight: '30px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
               <Flex css={{ ai: 'center' }}>
                 <Text size="6" as="p" color="bronze" css={{ lineHeight: '30px' }}>
                   The quick brown fox jumped over the lazy dog.
-                  </Text>
+                </Text>
               </Flex>
             </Flex>
           </Container>
@@ -318,17 +308,17 @@ function Home() {
               }}
             >
               Text components
-              </Text>
+            </Text>
             <Paragraph css={{ mb: '$7' }}>
               A set of pre-formatted components for setting text.
-              </Paragraph>
+            </Paragraph>
 
             <Flex css={{ fd: 'column', gap: '$6' }}>
               <Title>This is a title</Title>
               <Subtitle>
-                This is a subtitle, used to support a title or heading. It defaults to h2 but can
-                be rendered as any h level.
-                </Subtitle>
+                This is a subtitle, used to support a title or heading. It defaults to h2 but can be
+                rendered as any h level.
+              </Subtitle>
               <Heading>This is a large heading</Heading>
               <Subheading>This is a small heading</Subheading>
               <Paragraph>
@@ -337,15 +327,13 @@ function Home() {
                 is because the most common use case for this container size is longform text. So
                 we're previewing some longform text here so we can make sure the container width
                 provides an optimal line length for this font size.
-                </Paragraph>
+              </Paragraph>
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Flex
@@ -396,11 +384,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Flex css={{ ai: 'center' }}>
@@ -587,11 +573,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Subheading css={{ mb: '$6' }}>Badge</Subheading>
@@ -615,93 +599,106 @@ function Home() {
               </Badge>
               <Badge size="2" variant="crimson">
                 Approved
-                </Badge>
+              </Badge>
               <Badge size="2" variant="pink">
                 Pending
-                </Badge>
+              </Badge>
               <Badge size="2" variant="purple">
                 Failed
-                </Badge>
+              </Badge>
               <Badge size="2" variant="violet">
                 New
-                </Badge>
+              </Badge>
               <Badge size="2" variant="indigo">
                 Approved
-                </Badge>
+              </Badge>
               <Badge size="2" variant="blue">
                 Pending
-                </Badge>
+              </Badge>
               <Badge size="2" variant="turquoise">
                 Failed
-                </Badge>
+              </Badge>
               <Badge size="2" variant="teal">
                 New
-                </Badge>
+              </Badge>
               <Badge size="2" variant="green">
                 Approved
-                </Badge>
+              </Badge>
               <Badge size="2" variant="lime">
                 Pending
-                </Badge>
+              </Badge>
               <Badge size="2" variant="yellow">
                 Failed
-                </Badge>
+              </Badge>
               <Badge size="2" variant="orange">
                 Failed
-                </Badge>
+              </Badge>
               <Badge size="2" variant="gold">
                 Winner
-                </Badge>
+              </Badge>
               <Badge size="2" variant="bronze">
                 Runner-up
-                </Badge>
+              </Badge>
             </Flex>
             <Flex css={{ gap: '$5', fw: 'wrap', mt: '$6' }}>
               <Badge as="a" href="#" size="2" variant="red" interactive>
                 New
-                </Badge>
+              </Badge>
               <Badge as="button" size="2" variant="crimson" interactive>
                 Approved
-                </Badge>
+              </Badge>
               <Badge as="button" size="2" variant="pink" interactive>
                 Pending
-                </Badge>
+              </Badge>
               <Badge as="button" size="2" variant="purple" interactive>
                 Failed
                 <Box css={{ ml: 5 }}>
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.18179 6.18181C4.35753 6.00608 4.64245 6.00608 4.81819 6.18181L7.49999 8.86362L10.1818 6.18181C10.3575 6.00608 10.6424 6.00608 10.8182 6.18181C10.9939 6.35755 10.9939 6.64247 10.8182 6.81821L7.81819 9.81821C7.73379 9.9026 7.61934 9.95001 7.49999 9.95001C7.38064 9.95001 7.26618 9.9026 7.18179 9.81821L4.18179 6.81821C4.00605 6.64247 4.00605 6.35755 4.18179 6.18181Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.18179 6.18181C4.35753 6.00608 4.64245 6.00608 4.81819 6.18181L7.49999 8.86362L10.1818 6.18181C10.3575 6.00608 10.6424 6.00608 10.8182 6.18181C10.9939 6.35755 10.9939 6.64247 10.8182 6.81821L7.81819 9.81821C7.73379 9.9026 7.61934 9.95001 7.49999 9.95001C7.38064 9.95001 7.26618 9.9026 7.18179 9.81821L4.18179 6.81821C4.00605 6.64247 4.00605 6.35755 4.18179 6.18181Z"
+                      fill="currentColor"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
                 </Box>
               </Badge>
               <Badge as="button" size="2" variant="violet" interactive>
                 New
-                </Badge>
+              </Badge>
               <Badge as="button" size="2" variant="indigo" interactive>
                 Approved
-                </Badge>
+              </Badge>
               <Badge as="button" size="2" variant="blue" interactive>
                 Pending
-                </Badge>
+              </Badge>
               <Badge as="button" size="2" variant="turquoise" interactive>
                 Failed
-                </Badge>
+              </Badge>
               <Badge as="button" size="2" variant="teal" interactive>
                 New
-                </Badge>
+              </Badge>
               <Badge as="button" size="2" variant="green" interactive>
                 Approved
-                </Badge>
+              </Badge>
               <Badge as="button" size="2" variant="lime" interactive>
                 Pending
-                </Badge>
+              </Badge>
               <Badge as="button" size="2" variant="yellow" interactive>
                 Failed
-                </Badge>
+              </Badge>
               <Badge as="button" size="2" variant="orange" interactive>
                 Failed
-                </Badge>
+              </Badge>
               <Badge as="button" size="2" variant="gold" interactive>
                 Winner
-                </Badge>
+              </Badge>
               <Badge as="button" size="2" variant="bronze" interactive>
                 Runner-up
               </Badge>
@@ -711,11 +708,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Subheading css={{ mb: '$6' }}>Button</Subheading>
@@ -730,77 +725,149 @@ function Home() {
               <Button variant="red">Warning</Button>
               <Button variant="ghost">Ghost</Button>
             </Flex>
-            <Box css={{
-              position: 'relative',
-              mt: '$6'
-            }}>
+            <Box
+              css={{
+                position: 'relative',
+                mt: '$6',
+              }}
+            >
               <img src="https://images.unsplash.com/photo-1447690709975-318628b14c57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" />
-              <Box css={{
-                position: 'absolute',
-                bottom: 0,
-                right: 0,
-                m: '$4'
-              }}>
+              <Box
+                css={{
+                  position: 'absolute',
+                  bottom: 0,
+                  right: 0,
+                  m: '$4',
+                }}
+              >
                 <Button variant="transparentWhite">Transparent</Button>
               </Box>
             </Box>
-            <Box css={{
-              position: 'relative',
-              mt: '$6'
-            }}>
+            <Box
+              css={{
+                position: 'relative',
+                mt: '$6',
+              }}
+            >
               <img src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" />
-              <Box css={{
-                position: 'absolute',
-                bottom: 0,
-                right: 0,
-                m: '$4'
-              }}>
+              <Box
+                css={{
+                  position: 'absolute',
+                  bottom: 0,
+                  right: 0,
+                  m: '$4',
+                }}
+              >
                 <Button variant="transparentBlack">Transparent</Button>
               </Box>
             </Box>
             <Flex css={{ mt: '$6', gap: '$6' }}>
-              <Button variant="red" disabled>Disabled</Button>
-              <Button variant="red" state="active">Active</Button>
-              <Button variant="red" state="waiting" disabled>Waiting</Button>
+              <Button variant="red" disabled>
+                Disabled
+              </Button>
+              <Button variant="red" state="active">
+                Active
+              </Button>
+              <Button variant="red" state="waiting" disabled>
+                Waiting
+              </Button>
             </Flex>
             <Flex css={{ gap: '$6', mt: '$6' }}>
               <Button>
-                <Box css={{
-                  mr: '$1'
-                }}>
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                <Box
+                  css={{
+                    mr: '$1',
+                  }}
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
+                      fill="currentColor"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
                 </Box>
-                  Button
-                </Button>
+                Button
+              </Button>
               <Button variant="blue">
                 Button
-                  <Box css={{
-                  ml: '$1'
-                }}>
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                <Box
+                  css={{
+                    ml: '$1',
+                  }}
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                      fill="currentColor"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
                 </Box>
               </Button>
               <Button variant="green">
-                <Box css={{
-                  mr: '$1'
-                }}>
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                <Box
+                  css={{
+                    mr: '$1',
+                  }}
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
+                      fill="currentColor"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
                 </Box>
-                  Button
-                  <Box css={{
-                  ml: '$1'
-                }}>
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                Button
+                <Box
+                  css={{
+                    ml: '$1',
+                  }}
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                      fill="currentColor"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
                 </Box>
               </Button>
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Subheading css={{ mb: '$6' }}>Input</Subheading>
@@ -830,11 +897,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Subheading css={{ mb: '$6' }}>ControlGroup</Subheading>
@@ -866,76 +931,137 @@ function Home() {
               <Button size="2">Button</Button>
             </ControlGroup>
 
-            <Flex css={{ position: 'relative', width: '225px', mt: '$6', overflow: 'hidden', borderRadius: '$2' }}>
-              <Flex css={{
-                backgroundColor: '$gray200',
-                userSelect: 'none',
-                alignItems: 'center',
-                justifyContent: 'center',
-                minWidth: '$5',
-                boxShadow: 'inset 0 0 0 1px $gray600',
-                fontSize: '$2',
-                color: '$gray900',
-                flexShrink: 0,
-                px: '$1',
-              }}>
+            <Flex
+              css={{
+                position: 'relative',
+                width: '225px',
+                mt: '$6',
+                overflow: 'hidden',
+                borderRadius: '$2',
+              }}
+            >
+              <Flex
+                css={{
+                  backgroundColor: '$gray200',
+                  userSelect: 'none',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  minWidth: '$5',
+                  boxShadow: 'inset 0 0 0 1px $gray600',
+                  fontSize: '$2',
+                  color: '$gray900',
+                  flexShrink: 0,
+                  px: '$1',
+                }}
+              >
                 www.
-                </Flex>
+              </Flex>
               <Input size="2" placeholder="Hello world" />
             </Flex>
 
-            <Flex css={{ position: 'relative', width: '225px', mt: '$6', overflow: 'hidden', borderRadius: '$2' }}>
+            <Flex
+              css={{
+                position: 'relative',
+                width: '225px',
+                mt: '$6',
+                overflow: 'hidden',
+                borderRadius: '$2',
+              }}
+            >
               <Input size="2" placeholder="Hello world" />
-              <Flex css={{
-                backgroundColor: '$gray200',
-                userSelect: 'none',
-                alignItems: 'center',
-                justifyContent: 'center',
-                minWidth: '$5',
-                boxShadow: 'inset 0 0 0 1px $gray600',
-                fontSize: '$2',
-                color: '$gray900',
-                flexShrink: 0,
-                px: '$1',
-              }}>
+              <Flex
+                css={{
+                  backgroundColor: '$gray200',
+                  userSelect: 'none',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  minWidth: '$5',
+                  boxShadow: 'inset 0 0 0 1px $gray600',
+                  fontSize: '$2',
+                  color: '$gray900',
+                  flexShrink: 0,
+                  px: '$1',
+                }}
+              >
                 .com
-                </Flex>
+              </Flex>
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Subheading css={{ mb: '$6' }}>InputWrapper</Subheading>
             <Box css={{ position: 'relative', width: '225px' }}>
               <Input size="2" placeholder="Hello world" css={{ pl: 22 }} />
-              <Flex css={{
-                position: 'absolute',
-                top: 0,
-                right: 0,
-                bottom: 0,
-                left: 0,
-                pointerEvents: 'none',
-                zIndex: '1',
-                justifyContent: 'space-between',
-                ai: 'center',
-              }}>
+              <Flex
+                css={{
+                  position: 'absolute',
+                  top: 0,
+                  right: 0,
+                  bottom: 0,
+                  left: 0,
+                  pointerEvents: 'none',
+                  zIndex: '1',
+                  justifyContent: 'space-between',
+                  ai: 'center',
+                }}
+              >
                 <Flex css={{ ai: 'center', cursor: 'default', p: '$1' }}>
-                  <Flex css={{ ai: 'center', jc: 'center', color: '$gray900', width: 15, height: 15 }}>
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 6.5C10 8.433 8.433 10 6.5 10C4.567 10 3 8.433 3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5ZM9.30884 10.0159C8.53901 10.6318 7.56251 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5C11 7.56251 10.6318 8.53901 10.0159 9.30884L12.8536 12.1464C13.0488 12.3417 13.0488 12.6583 12.8536 12.8536C12.6583 13.0488 12.3417 13.0488 12.1464 12.8536L9.30884 10.0159Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                  <Flex
+                    css={{ ai: 'center', jc: 'center', color: '$gray900', width: 15, height: 15 }}
+                  >
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 6.5C10 8.433 8.433 10 6.5 10C4.567 10 3 8.433 3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5ZM9.30884 10.0159C8.53901 10.6318 7.56251 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5C11 7.56251 10.6318 8.53901 10.0159 9.30884L12.8536 12.1464C13.0488 12.3417 13.0488 12.6583 12.8536 12.8536C12.6583 13.0488 12.3417 13.0488 12.1464 12.8536L9.30884 10.0159Z"
+                        fill="currentColor"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
                   </Flex>
                 </Flex>
                 <Flex css={{ ai: 'center', cursor: 'default', p: '$1', pointerEvents: 'auto' }}>
                   <IconButton variant="ghost" css={{ width: 15, height: 15, borderRadius: '$1' }}>
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+                        fill="currentColor"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
                   </IconButton>
                   <Separator size="1" orientation="vertical" css={{ mx: '$1' }} />
                   <IconButton variant="ghost" css={{ width: 15, height: 15, borderRadius: '$1' }}>
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                        fill="currentColor"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
                   </IconButton>
                 </Flex>
               </Flex>
@@ -943,50 +1069,58 @@ function Home() {
 
             <Box css={{ position: 'relative', width: '225px', mt: '$6' }}>
               <Input size="2" placeholder="Hello world" />
-              <Flex css={{
-                position: 'absolute',
-                top: 0,
-                right: 0,
-                bottom: 0,
-                left: 0,
-                pointerEvents: 'none',
-                zIndex: '1',
-                justifyContent: 'flex-end',
-                ai: 'center',
-              }}>
+              <Flex
+                css={{
+                  position: 'absolute',
+                  top: 0,
+                  right: 0,
+                  bottom: 0,
+                  left: 0,
+                  pointerEvents: 'none',
+                  zIndex: '1',
+                  justifyContent: 'flex-end',
+                  ai: 'center',
+                }}
+              >
                 <Flex css={{ ai: 'center', p: '$1' }}>
-                  <Button variant="blue" css={{ pointerEvents: 'auto', height: 19, px: '$1', borderRadius: '$1' }}>Invite</Button>
+                  <Button
+                    variant="blue"
+                    css={{ pointerEvents: 'auto', height: 19, px: '$1', borderRadius: '$1' }}
+                  >
+                    Invite
+                  </Button>
                 </Flex>
               </Flex>
             </Box>
 
             <Box css={{ position: 'relative', width: '225px', mt: '$6' }}>
               <Input size="2" placeholder="Hello world" />
-              <Flex css={{
-                position: 'absolute',
-                top: 0,
-                right: 0,
-                bottom: 0,
-                left: 0,
-                pointerEvents: 'none',
-                zIndex: '1',
-                justifyContent: 'flex-end',
-                px: '$1',
-                ai: 'center',
-              }}>
+              <Flex
+                css={{
+                  position: 'absolute',
+                  top: 0,
+                  right: 0,
+                  bottom: 0,
+                  left: 0,
+                  pointerEvents: 'none',
+                  zIndex: '1',
+                  justifyContent: 'flex-end',
+                  px: '$1',
+                  ai: 'center',
+                }}
+              >
                 <Flex css={{ ai: 'center' }}>
-                  <Button variant="blue" css={{ pointerEvents: 'auto' }}>Invite</Button>
+                  <Button variant="blue" css={{ pointerEvents: 'auto' }}>
+                    Invite
+                  </Button>
                 </Flex>
               </Flex>
             </Box>
-
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Subheading css={{ mb: '$6' }}>Textarea</Subheading>
@@ -997,15 +1131,18 @@ function Home() {
             </Flex>
             <Flex css={{ ai: 'flex-start', gap: '$6', mt: '$6' }}>
               <Textarea size="2" placeholder="Size 1" disabled></Textarea>
-              <Textarea size="2" placeholder="Size 1" readOnly defaultValue="eihuweofjew"></Textarea>
+              <Textarea
+                size="2"
+                placeholder="Size 1"
+                readOnly
+                defaultValue="eihuweofjew"
+              ></Textarea>
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Flex css={{ ai: 'center', jc: 'space-between' }}>
@@ -1065,29 +1202,25 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Flex css={{ ai: 'baseline' }}>
               <Text size="3" css={{ fontWeight: '500' }}>
                 Colm Tuite
-                </Text>
+              </Text>
               <VerifiedBadge css={{ as: 'center', mx: '$1' }} />
               <Text size="3" css={{ color: '$gray900' }}>
                 @colmtuite
-                </Text>
+              </Text>
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Flex css={{ gap: '$6', mb: '$6' }}>
@@ -1106,35 +1239,30 @@ function Home() {
               There are 5 variants to choose from. Use is for positive states.{' '}
               <Link variant="contrast" href="#">
                 This is a link
-                </Link>{' '}
-                Traditional business literature won’t help you solve it- most of that stuff is
-                focused on life after product/market fit, after the Trough of Sorrow. A lot of
-                startup stuff is focused on the initial phases, when you don’t have a team, idea, or
-                investors.
+              </Link>{' '}
+              Traditional business literature won’t help you solve it- most of that stuff is focused
+              on life after product/market fit, after the Trough of Sorrow. A lot of startup stuff
+              is focused on the initial phases, when you don’t have a team, idea, or investors.
             </Paragraph>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Paragraph>
-              There are 5 variants to choose from. Use <Code size="2">console.log('Radix').console</Code>{' '}
-                is for positive states. Traditional business literature won’t help you solve it-
-                most of that stuff is focused on life after product/market fit, after the Trough of
-                Sorrow. A lot of startup stuff is focused on the initial phases, when you don’t have
-                a team, idea, or investors.
-              </Paragraph>
+              There are 5 variants to choose from. Use <Code>console.log('Radix').console</Code> is
+              for positive states. Traditional business literature won’t help you solve it- most of
+              that stuff is focused on life after product/market fit, after the Trough of Sorrow. A
+              lot of startup stuff is focused on the initial phases, when you don’t have a team,
+              idea, or investors.
+            </Paragraph>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="3">
             <Flex css={{ gap: '$3' }}>
@@ -1142,19 +1270,21 @@ function Home() {
                 <Card css={{ p: '$3' }}>
                   <Subheading css={{ mb: '$2' }}>
                     Modulz raises $4.2M to close the gap between design and code
-                    </Subheading>
+                  </Subheading>
                   <Text size="3" css={{ color: '$gray900', lineHeight: '23px' }}>
-                    Modulz is a visual code editor that empowers teams to design, develop, document and deploy a design system, without writing code.
-                    </Text>
+                    Modulz is a visual code editor that empowers teams to design, develop, document
+                    and deploy a design system, without writing code.
+                  </Text>
                 </Card>
               </Box>
               <Box css={{ width: 250 }}>
                 <Card as="a" href="#" css={{ p: '$3' }} variant="interactive">
                   <Subheading css={{ mb: '$2' }}>
                     Modulz raises $4.2M to close the gap between design and code
-                    </Subheading>
+                  </Subheading>
                   <Text size="3" css={{ color: '$gray900', lineHeight: '23px' }}>
-                    Modulz is a visual code editor that empowers teams to design, develop, document and deploy a design system, without writing code.
+                    Modulz is a visual code editor that empowers teams to design, develop, document
+                    and deploy a design system, without writing code.
                   </Text>
                   <Flex css={{ ai: 'center', jc: 'space-between', mt: '$3' }}>
                     <Flex css={{ ai: 'center' }}>
@@ -1164,26 +1294,34 @@ function Home() {
                         src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                         fallback="J"
                         css={{
-                          mr: '$1'
+                          mr: '$1',
                         }}
                       />
-                      <Text size="2" css={{ color: '$gray900' }}>Colm Tuite</Text>
+                      <Text size="2" css={{ color: '$gray900' }}>
+                        Colm Tuite
+                      </Text>
                     </Flex>
                     <Box>
-                      <Text size="2" css={{ color: '$gray900' }}>May 2020</Text>
+                      <Text size="2" css={{ color: '$gray900' }}>
+                        May 2020
+                      </Text>
                     </Box>
                   </Flex>
                 </Card>
               </Box>
               <Box css={{ width: 250 }}>
                 <Card as="a" href="#" variant="interactive">
-                  <Image src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" css={{ btlr: '$3', btrr: '$3' }} />
+                  <Image
+                    src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80"
+                    css={{ btlr: '$3', btrr: '$3' }}
+                  />
                   <Box css={{ p: '$3' }}>
                     <Subheading css={{ mb: '$2' }}>
                       Modulz raises $4.2M to close the gap between design and code
-                      </Subheading>
+                    </Subheading>
                     <Text size="3" css={{ color: '$gray900', lineHeight: '23px' }}>
-                      Modulz is a visual code editor that empowers teams to design, develop, document and deploy a design system, without writing code.
+                      Modulz is a visual code editor that empowers teams to design, develop,
+                      document and deploy a design system, without writing code.
                     </Text>
                     <Flex css={{ ai: 'center', jc: 'space-between', mt: '$3' }}>
                       <Flex css={{ ai: 'center' }}>
@@ -1193,13 +1331,17 @@ function Home() {
                           src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                           fallback="J"
                           css={{
-                            mr: '$1'
+                            mr: '$1',
                           }}
                         />
-                        <Text size="2" css={{ color: '$gray900' }}>Colm Tuite</Text>
+                        <Text size="2" css={{ color: '$gray900' }}>
+                          Colm Tuite
+                        </Text>
                       </Flex>
                       <Box>
-                        <Text size="2" css={{ color: '$gray900' }}>May 2020</Text>
+                        <Text size="2" css={{ color: '$gray900' }}>
+                          May 2020
+                        </Text>
                       </Box>
                     </Flex>
                   </Box>
@@ -1207,12 +1349,16 @@ function Home() {
               </Box>
               <Box css={{ width: 250 }}>
                 <Card as="a" href="#" variant="ghost" css={{ p: '$3' }}>
-                  <Image src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" css={{ br: '$1', mb: '$3' }} />
+                  <Image
+                    src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80"
+                    css={{ br: '$1', mb: '$3' }}
+                  />
                   <Subheading css={{ mb: '$2' }}>
                     Modulz raises $4.2M to close the gap between design and code
-                    </Subheading>
+                  </Subheading>
                   <Text size="3" css={{ color: '$gray900', lineHeight: '23px' }}>
-                    Modulz is a visual code editor that empowers teams to design, develop, document and deploy a design system, without writing code.
+                    Modulz is a visual code editor that empowers teams to design, develop, document
+                    and deploy a design system, without writing code.
                   </Text>
                   <Flex css={{ ai: 'center', jc: 'space-between', mt: '$3' }}>
                     <Flex css={{ ai: 'center' }}>
@@ -1222,13 +1368,17 @@ function Home() {
                         src="https://pbs.twimg.com/profile_images/864164353771229187/Catw6Nmh_400x400.jpg"
                         fallback="J"
                         css={{
-                          mr: '$1'
+                          mr: '$1',
                         }}
                       />
-                      <Text size="2" css={{ color: '$gray900' }}>Colm Tuite</Text>
+                      <Text size="2" css={{ color: '$gray900' }}>
+                        Colm Tuite
+                      </Text>
                     </Flex>
                     <Box>
-                      <Text size="2" css={{ color: '$gray900' }}>May 2020</Text>
+                      <Text size="2" css={{ color: '$gray900' }}>
+                        May 2020
+                      </Text>
                     </Box>
                   </Flex>
                 </Card>
@@ -1236,11 +1386,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <AlertDialog>
@@ -1249,24 +1397,22 @@ function Home() {
                 <AlertDialog.Title as={Subheading}>Are you sure?</AlertDialog.Title>
                 <AlertDialog.Description as={Text} css={{ mt: '$2' }}>
                   This will do a very dangerous thing. Thar be dragons!
-                  </AlertDialog.Description>
+                </AlertDialog.Description>
                 <Flex css={{ jc: 'flex-end', gap: '$3', mt: '$5' }}>
                   <AlertDialog.Cancel as={Button} variant="ghost">
                     Cancel
-                    </AlertDialog.Cancel>
+                  </AlertDialog.Cancel>
                   <AlertDialog.Action as={Button} variant="red">
                     Delete
-                    </AlertDialog.Action>
+                  </AlertDialog.Action>
                 </Flex>
               </AlertDialog.Content>
             </AlertDialog>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Dialog>
@@ -1274,12 +1420,12 @@ function Home() {
               <Dialog.Content>
                 <Text size="5" as="h6" css={{ fontWeight: 500, mb: '$3' }}>
                   Dialog Heading
-                  </Text>
+                </Text>
                 <Text size="3" as="p" css={{ lineHeight: '25px' }}>
                   There are 5 variants to choose from. Use is for positive states. This is a link
                   Traditional business literature won’t help you solve it- most of that stuff is
                   focused on life after product/market fit, after the Trough of Sorrow.
-                  </Text>
+                </Text>
               </Dialog.Content>
             </Dialog>
 
@@ -1289,30 +1435,28 @@ function Home() {
               <Dialog.Content>
                 <Text size="5" as="h6" css={{ fontWeight: 500, mb: '$3' }}>
                   Dialog Heading
-                  </Text>
+                </Text>
                 <Text size="3" as="p" css={{ lineHeight: '25px' }}>
                   There are 5 variants to choose from. Use is for positive states. This is a link
                   Traditional business literature won’t help you solve it- most of that stuff is
                   focused on life after product/market fit, after the Trough of Sorrow.
-                  </Text>
+                </Text>
 
                 <Popover>
                   <Popover.Trigger as={Button}>Open</Popover.Trigger>
                   <Popover.Content>
                     <Popover.Close as={Button} variant="ghost">
                       Close
-                      </Popover.Close>
+                    </Popover.Close>
                   </Popover.Content>
                 </Popover>
               </Dialog.Content>
             </Dialog>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Box css={{ mb: '$6' }}>
@@ -1324,7 +1468,7 @@ function Home() {
               <ProgressBar max={100} value={80} css={{ my: '$2' }} />
               <Text size="1" css={{ color: '$gray900' }}>
                 46 hours remaining
-                </Text>
+              </Text>
             </Box>
             <Box css={{ mb: '$6' }}>
               <ProgressBar max={100} color="gradient" value={100} />
@@ -1334,11 +1478,9 @@ function Home() {
             </Box>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Popover>
@@ -1348,7 +1490,7 @@ function Home() {
               </Popover.Content>
             </Popover>
 
-            <Popover hideArrow="true">
+            <Popover>
               <Popover.Trigger as={Button}>Popover</Popover.Trigger>
               <Popover.Content css={{ padding: '$4' }}>
                 <Text>Hello, from Popover.</Text>
@@ -1356,11 +1498,9 @@ function Home() {
             </Popover>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Accordion>
@@ -1368,80 +1508,76 @@ function Home() {
                 <Accordion.Button>
                   <Text size="3" css={{ fontWeight: 500 }}>
                     Accordion one
-                    </Text>
+                  </Text>
                 </Accordion.Button>
                 <Accordion.Panel>
                   <Text size="3" css={{ lineHeight: '23px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot.
-                    With horizontal overflow on small devices and when zoomed in, tables are a
-                    pain to navigate. I added a focus wrapper that will announce the table context
-                    to the user when focused, which also allows keyboard users to navigate the
-                    overflow more easily.
-                    </Text>
+                    The other main improvement is with tables, which we'll probably use a lot. With
+                    horizontal overflow on small devices and when zoomed in, tables are a pain to
+                    navigate. I added a focus wrapper that will announce the table context to the
+                    user when focused, which also allows keyboard users to navigate the overflow
+                    more easily.
+                  </Text>
                 </Accordion.Panel>
               </Accordion.Item>
               <Accordion.Item value="accordion-two">
                 <Accordion.Button>
                   <Text size="3" css={{ fontWeight: 500 }}>
                     Accordion two
-                    </Text>
+                  </Text>
                 </Accordion.Button>
                 <Accordion.Panel>
                   <Text size="3" css={{ lineHeight: '23px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot.
-                    With horizontal overflow on small devices and when zoomed in, tables are a
-                    pain to navigate. I added a focus wrapper that will announce the table context
-                    to the user when focused, which also allows keyboard users to navigate the
-                    overflow more easily.
-                    </Text>
+                    The other main improvement is with tables, which we'll probably use a lot. With
+                    horizontal overflow on small devices and when zoomed in, tables are a pain to
+                    navigate. I added a focus wrapper that will announce the table context to the
+                    user when focused, which also allows keyboard users to navigate the overflow
+                    more easily.
+                  </Text>
                 </Accordion.Panel>
               </Accordion.Item>
               <Accordion.Item value="accordion-three">
                 <Accordion.Button>
                   <Text size="3" css={{ fontWeight: 500 }}>
                     Accordion one
-                    </Text>
+                  </Text>
                 </Accordion.Button>
                 <Accordion.Panel>
                   <Text size="3" css={{ lineHeight: '23px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot.
-                    With horizontal overflow on small devices and when zoomed in, tables are a
-                    pain to navigate. I added a focus wrapper that will announce the table context
-                    to the user when focused, which also allows keyboard users to navigate the
-                    overflow more easily.
-                    </Text>
+                    The other main improvement is with tables, which we'll probably use a lot. With
+                    horizontal overflow on small devices and when zoomed in, tables are a pain to
+                    navigate. I added a focus wrapper that will announce the table context to the
+                    user when focused, which also allows keyboard users to navigate the overflow
+                    more easily.
+                  </Text>
                 </Accordion.Panel>
               </Accordion.Item>
               <Accordion.Item value="accordion-four">
                 <Accordion.Button>
                   <Text size="3" css={{ fontWeight: 500 }}>
                     Accordion two
-                    </Text>
+                  </Text>
                 </Accordion.Button>
                 <Accordion.Panel>
                   <Text size="3" css={{ lineHeight: '23px' }}>
-                    The other main improvement is with tables, which we'll probably use a lot.
-                    With horizontal overflow on small devices and when zoomed in, tables are a
-                    pain to navigate. I added a focus wrapper that will announce the table context
-                    to the user when focused, which also allows keyboard users to navigate the
-                    overflow more easily.
-                    </Text>
+                    The other main improvement is with tables, which we'll probably use a lot. With
+                    horizontal overflow on small devices and when zoomed in, tables are a pain to
+                    navigate. I added a focus wrapper that will announce the table context to the
+                    user when focused, which also allows keyboard users to navigate the overflow
+                    more easily.
+                  </Text>
                 </Accordion.Panel>
               </Accordion.Item>
             </Accordion>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Avatars />
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2" css={{ py: '$7' }}>
             <Tabs defaultSelectedId="tab-one">
@@ -1515,11 +1651,9 @@ function Home() {
             </Tabs>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="3" css={{ py: '$7' }}>
             <Flex css={{ borderBottom: '1px solid $gray500' }}>
@@ -1540,8 +1674,8 @@ function Home() {
                     ></path>
                   </svg>
                 </Box>
-                  Code
-                </TabLink>
+                Code
+              </TabLink>
               <TabLink href="#">
                 <Box css={{ mr: '$1' }}>
                   <svg
@@ -1559,8 +1693,8 @@ function Home() {
                     ></path>
                   </svg>
                 </Box>
-                  Issues
-                </TabLink>
+                Issues
+              </TabLink>
               <TabLink href="#">
                 <Box css={{ mr: '$1' }}>
                   <svg
@@ -1578,8 +1712,8 @@ function Home() {
                     ></path>
                   </svg>
                 </Box>
-                  Pull requests
-                </TabLink>
+                Pull requests
+              </TabLink>
               <TabLink href="#">
                 <Box css={{ mr: '$1' }}>
                   <svg
@@ -1597,8 +1731,8 @@ function Home() {
                     ></path>
                   </svg>
                 </Box>
-                  Actions
-                </TabLink>
+                Actions
+              </TabLink>
               <TabLink href="#">
                 <Box css={{ mr: '$1' }}>
                   <svg
@@ -1616,8 +1750,8 @@ function Home() {
                     ></path>
                   </svg>
                 </Box>
-                  Projects
-                </TabLink>
+                Projects
+              </TabLink>
               <TabLink href="#">
                 <Box css={{ mr: '$1' }}>
                   <svg
@@ -1635,8 +1769,8 @@ function Home() {
                     ></path>
                   </svg>
                 </Box>
-                  Wiki
-                </TabLink>
+                Wiki
+              </TabLink>
               <TabLink href="#">
                 <Box css={{ mr: '$1' }}>
                   <svg
@@ -1654,8 +1788,8 @@ function Home() {
                     ></path>
                   </svg>
                 </Box>
-                  Security
-                </TabLink>
+                Security
+              </TabLink>
               <TabLink href="#">
                 <Box css={{ mr: '$1' }}>
                   <svg
@@ -1673,8 +1807,8 @@ function Home() {
                     ></path>
                   </svg>
                 </Box>
-                  Insights
-                </TabLink>
+                Insights
+              </TabLink>
               <TabLink href="#">
                 <Box css={{ mr: '$1' }}>
                   <svg
@@ -1692,16 +1826,14 @@ function Home() {
                     ></path>
                   </svg>
                 </Box>
-                  Settings
-                </TabLink>
+                Settings
+              </TabLink>
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Box css={{ width: '100px' }}>
@@ -1709,18 +1841,16 @@ function Home() {
             </Box>
             <Flex css={{ gap: '$4' }}>
               <Slider defaultValue={25} />
-              <Slider defaultValue={[25, 75]} />
+              {/* <Slider defaultValue={[25, 75]} /> */}
             </Flex>
             <Box css={{ mt: '$6' }}>
               <Slider defaultValue={50} orientation="vertical" />
             </Box>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Grid
@@ -2040,22 +2170,18 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2" css={{ py: '$7' }}>
             <Checkbox css={{ mr: '$5' }} />
             <Checkbox size="2" css={{ mr: '$5' }} />
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2" css={{ py: '$7' }}>
             <RadioGroup defaultValue="1">
@@ -2064,11 +2190,9 @@ function Home() {
             </RadioGroup>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2" css={{ py: '$7' }}>
             <RadioGroup defaultValue="1">
@@ -2097,25 +2221,22 @@ function Home() {
                   <Text size="5" css={{ fontWeight: '500', lineHeight: '25px', mr: '$6' }}>
                     2.5GHz 14-core Intel Xeon W processor, Turbo Boost up to 4.3GHz
                   </Text>
-                  <Text size="4" color="gray">
-                    
-                  </Text>
+                  <Text size="4" color="gray"></Text>
                 </Flex>
               </RadioCard.Radio>
             </RadioGroup>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Switch />
             <Switch size="2" css={{ ml: '$6' }} />
           </Container>
         </Section>
+        <Menus />
       </Box>
     </Box>
   );

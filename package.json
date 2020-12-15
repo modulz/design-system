@@ -32,7 +32,8 @@
     "@interop-ui/react-toggle-button": "0.0.1-13",
     "@interop-ui/react-tooltip": "0.0.1-12",
     "@interop-ui/react-utils": "0.0.1-12",
-    "@modulz/radix-icons": "^3.2.0",
+    "@modulz/radix-icons": "^3.3.0",
+    "@radix-ui/react-menu": "0.0.1",
     "@stitches/react": "0.0.3-canary.4"
   },
   "devDependencies": {
