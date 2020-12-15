@@ -8,6 +8,12 @@ import * as curves from './curves';
 import generate from './generate.js';
 import bezier from 'bezier-easing';
 import { EyeClosedIcon, EyeOpenIcon, CodeIcon, BlendingModeIcon } from '@modulz/radix-icons';
+import chroma from 'chroma-js';
+
+// Constants for color generation
+const steps = 7;
+const sat_rate = 100;
+const modifier = 10;
 
 const gray = {
   hue_start: 206,
@@ -17,22 +23,29 @@ const gray = {
   sat_curve: '0.630, 0.575, 0.495, 0.115',
   lum_start: 99.4,
   lum_end: 82,
+  overrides: {
+    8: 'hsl(206,6%,55%)',
+    9: 'hsl(206,6%,44%)',
+  },
 };
 
 const red = {
   hue_start: 351,
-  hue_end: 356,
+  hue_end: 355,
   sat_start: 3,
-  sat_end: 34,
-  sat_curve: '0.520, 0.405, 0.625, 0.505',
+  sat_end: 49,
+  sat_curve: '0.655, 0.340, 0.800, 0.510',
   lum_start: 100,
-  lum_end: 97,
+  lum_end: 95,
+  overrides: {
+    9: 'hsl(356, 80%, 47%)',
+  },
 };
 
 const crimson = {
   hue_start: 332,
   hue_end: 336,
-  sat_start: 4,
+  sat_start: 3,
   sat_end: 51,
   sat_curve: '0.655, 0.325, 0.815, 0.480',
   lum_start: 100,
@@ -82,7 +95,7 @@ const indigo = {
 const blue = {
   hue_start: 206,
   hue_end: 206,
-  sat_start: 2,
+  sat_start: 2.5,
   sat_end: 57,
   sat_curve: '0.700, 0.415, 0.745, 0.465',
   lum_start: 100,
@@ -92,17 +105,17 @@ const blue = {
 const turquoise = {
   hue_start: 185,
   hue_end: 187,
-  sat_start: 3,
+  sat_start: 3.5,
   sat_end: 60,
   sat_curve: '0.765, 0.485, 0.805, 0.740',
-  lum_start: 100,
+  lum_start: 99.5,
   lum_end: 92,
 };
 
 const teal = {
   hue_start: 167,
   hue_end: 174,
-  sat_start: 4,
+  sat_start: 5,
   sat_end: 72,
   sat_curve: '0.690, 0.315, 0.860, 0.620',
   lum_start: 100,
@@ -120,29 +133,29 @@ const green = {
 };
 
 const lime = {
-  hue_start: 75,
+  hue_start: 70,
   hue_end: 78,
-  sat_start: 4,
+  sat_start: 6,
   sat_end: 82,
   sat_curve: '0.505, 0.435, 0.860, 0.605',
-  lum_start: 99,
+  lum_start: 99.5,
   lum_end: 92,
 };
 
 const yellow = {
-  hue_start: 44,
+  hue_start: 55,
   hue_end: 52,
   sat_start: 6,
   sat_end: 100,
-  sat_curve: '0.380, 0.335, 0.890, 0.255',
-  lum_start: 99.5,
+  sat_curve: '0.490, 0.315, 0.725, 0.430',
+  lum_start: 100,
   lum_end: 100,
 };
 
 const orange = {
-  hue_start: 36,
+  hue_start: 40,
   hue_end: 36,
-  sat_start: 7,
+  sat_start: 5,
   sat_end: 86,
   sat_curve: '0.535, 0.290, 0.885, 0.510',
   lum_start: 100,
@@ -151,21 +164,21 @@ const orange = {
 
 const gold = {
   hue_start: 42,
-  hue_end: 35,
+  hue_end: 36,
   sat_start: 3,
   sat_end: 43,
   sat_curve: '0.700, 0.415, 0.745, 0.465',
-  lum_start: 99,
+  lum_start: 99.5,
   lum_end: 75,
 };
 
 const brown = {
-  hue_start: 33,
-  hue_end: 31,
+  hue_start: 30,
+  hue_end: 28,
   sat_start: 3,
   sat_end: 43,
   sat_curve: '0.700, 0.415, 0.745, 0.465',
-  lum_start: 99,
+  lum_start: 99.5,
   lum_end: 75,
 };
 
@@ -177,6 +190,10 @@ const bronze = {
   sat_curve: '0.700, 0.415, 0.745, 0.465',
   lum_start: 100,
   lum_end: 75,
+  overrides: {
+    // 8: 'hsl(20, 35%, 50%)',
+    // 9: 'hsl(18, 38%, 44%)',
+  },
 };
 
 export function ColorTools() {
@@ -219,28 +236,44 @@ export function ColorTools() {
 
 type ScaleProps = {
   name: string;
-  scale: typeof red;
+  scale: Omit<typeof red, 'overrides'> & { overrides?: Record<string, string> };
 };
+
 type BezierParams = [number, number, number, number];
+
+type ContrastInfo = {
+  // Contrast of 900 text on 100 background
+  '100': number;
+  // Contrast of 900 text on 200 background
+  '200': number;
+  // Contrast of hiContrast on 800 background
+  hiContrast: number;
+  // Contrast of loContrast on 800 background
+  loContrast: number;
+};
 
 function Scale({ name, scale }: ScaleProps) {
   const [isEnabled, setIsEnabled] = React.useState(true);
   const [showCode, setShowCode] = React.useState(false);
   const [curve, setCurve] = React.useState(scale.sat_curve);
   const [colors, setColors] = React.useState<ReturnType<typeof generate>>([]);
+  const [contrastInfo, setContrastInfo] = React.useState<ContrastInfo>();
 
   const originalColors = React.useRef<string[]>([]);
 
   React.useEffect(() => {
     if (originalColors.current.length === 0) {
+      const computedStyles = getComputedStyle(document.documentElement);
       originalColors.current = [
-        document.documentElement.style.getPropertyValue(`--colors-${name}100`),
-        document.documentElement.style.getPropertyValue(`--colors-${name}200`),
-        document.documentElement.style.getPropertyValue(`--colors-${name}300`),
-        document.documentElement.style.getPropertyValue(`--colors-${name}400`),
-        document.documentElement.style.getPropertyValue(`--colors-${name}500`),
-        document.documentElement.style.getPropertyValue(`--colors-${name}600`),
-        document.documentElement.style.getPropertyValue(`--colors-${name}700`),
+        computedStyles.getPropertyValue(`--colors-${name}100`),
+        computedStyles.getPropertyValue(`--colors-${name}200`),
+        computedStyles.getPropertyValue(`--colors-${name}300`),
+        computedStyles.getPropertyValue(`--colors-${name}400`),
+        computedStyles.getPropertyValue(`--colors-${name}500`),
+        computedStyles.getPropertyValue(`--colors-${name}600`),
+        computedStyles.getPropertyValue(`--colors-${name}700`),
+        computedStyles.getPropertyValue(`--colors-${name}800`),
+        computedStyles.getPropertyValue(`--colors-${name}900`),
       ];
     }
   }, []);
@@ -252,17 +285,73 @@ function Scale({ name, scale }: ScaleProps) {
     const [x1, y1, x2, y2] = newCurveParams;
     const lumCurveParams = [1 - x2, 1 - y2, 1 - x1, 1 - y1] as BezierParams;
 
-    const newColors = generate({
+    let newColors = generate({
       specs: {
-        steps: 7,
-        sat_rate: 100,
-        modifier: 10,
+        steps,
+        sat_rate,
+        modifier,
         ...scale,
         hue_curve: bezier(...newCurveParams),
         sat_curve: bezier(...newCurveParams),
         lum_curve: bezier(...lumCurveParams),
       },
     });
+
+    // Push 800 and 900 into the scale
+    [originalColors.current[7], originalColors.current[8]].forEach((color, index) => {
+      index = index + 7;
+
+      // Copying from generate.js to match scale object format
+      const contrastWhite = chroma.contrast(color, 'white').toFixed(2);
+      const contrastBlack = chroma.contrast(color, 'black').toFixed(2);
+      const displayColor = parseFloat(contrastWhite) >= 4.5 ? 'white' : 'black';
+      const colorObj = {
+        hex: chroma(color).hex(),
+        hue: chroma(color).hsv()[0],
+        sat: chroma(color).hsv()[1],
+        lum: chroma(color).hsv()[2],
+        hsv: chroma(color).hsv(),
+        hsl: chroma(color).hsl(),
+        rgb: chroma(color).rgb(),
+        hueRange: [scale.hue_start, scale.hue_end],
+        steps,
+        label: modifier * index,
+        contrastBlack,
+        contrastWhite,
+        displayColor,
+      };
+      newColors[index] = colorObj;
+    });
+
+    // Push overrides into the scale too
+    const overrides = (scale as any).overrides as Record<string, string>;
+    if (overrides) {
+      Object.keys(overrides).forEach((key) => {
+        const index = parseInt(key);
+        const color = overrides[index];
+
+        // Copying from generate.js to match scale object format
+        const contrastWhite = chroma.contrast(color, 'white').toFixed(2);
+        const contrastBlack = chroma.contrast(color, 'black').toFixed(2);
+        const displayColor = parseFloat(contrastWhite) >= 4.5 ? 'white' : 'black';
+        const colorObj = {
+          hex: chroma(color).hex(),
+          hue: chroma(color).hsv()[0],
+          sat: chroma(color).hsv()[1],
+          lum: chroma(color).hsv()[2],
+          hsv: chroma(color).hsv(),
+          hsl: chroma(color).hsl(),
+          rgb: chroma(color).rgb(),
+          hueRange: [scale.hue_start, scale.hue_end],
+          steps,
+          label: modifier * index,
+          contrastBlack,
+          contrastWhite,
+          displayColor,
+        };
+        newColors[index - 1] = colorObj;
+      });
+    }
 
     setColors(newColors);
   }, [scale, curve]);
@@ -276,6 +365,25 @@ function Scale({ name, scale }: ScaleProps) {
       document.documentElement.style.setProperty(`--colors-${name}500`, originalColors.current[4]);
       document.documentElement.style.setProperty(`--colors-${name}600`, originalColors.current[5]);
       document.documentElement.style.setProperty(`--colors-${name}700`, originalColors.current[6]);
+      document.documentElement.style.setProperty(`--colors-${name}800`, originalColors.current[7]);
+      document.documentElement.style.setProperty(`--colors-${name}900`, originalColors.current[8]);
+
+      // Get contrast ratios
+      const step100 = originalColors.current[0];
+      const step200 = originalColors.current[1];
+      const step800 = originalColors.current[7];
+      const step900 = originalColors.current[8];
+      const computedStyles = getComputedStyle(document.documentElement);
+      const hiContrast = computedStyles.getPropertyValue(`--colors-hiContrast`);
+      const loContrast = computedStyles.getPropertyValue(`--colors-loContrast`);
+      const contrastInfo = {
+        '100': chroma.contrast(step100, step900),
+        '200': chroma.contrast(step200, step900),
+        hiContrast: chroma.contrast(step800, hiContrast),
+        loContrast: chroma.contrast(step800, loContrast),
+      };
+
+      setContrastInfo(contrastInfo);
     }
   }, [isEnabled]);
 
@@ -283,7 +391,30 @@ function Scale({ name, scale }: ScaleProps) {
     if (isEnabled) {
       colors.forEach((color, index) => {
         document.documentElement.style.setProperty(`--colors-${name}${index + 1}00`, color.hex);
+        //
+        // if (index > 1 && index < 6) {
+        //   document.documentElement.style.setProperty(`--colors-${name}${index + 1}00`, '#fff');
+        // }
       });
+
+      if (colors.length) {
+        // Get contrast ratios
+        const step100 = colors[0].hex;
+        const step200 = colors[1].hex;
+        const step800 = colors[7]?.hex || originalColors.current[7];
+        const step900 = colors[8]?.hex || originalColors.current[8];
+        const computedStyles = getComputedStyle(document.documentElement);
+        const hiContrast = computedStyles.getPropertyValue(`--colors-hiContrast`);
+        const loContrast = computedStyles.getPropertyValue(`--colors-loContrast`);
+        const contrastInfo = {
+          '100': chroma.contrast(step100, step900),
+          '200': chroma.contrast(step200, step900),
+          hiContrast: chroma.contrast(step800, hiContrast),
+          loContrast: chroma.contrast(step800, loContrast),
+        };
+
+        setContrastInfo(contrastInfo);
+      }
     }
   }, [isEnabled, name, colors]);
 
@@ -341,7 +472,69 @@ function Scale({ name, scale }: ScaleProps) {
                 $${name}${index + 1}00:
                 'hsl(${h.toFixed()},
                 ${(s * 100).toFixed()}%,
-                ${(l * 100).toFixed()}%)',`}
+                ${(l * 100).toFixed(1)}%)',`}
+              </Text>
+            )}
+            {!showCode && (index <= 1 || index === 7) && (
+              <Text
+                css={{
+                  fontSize: '10px',
+                  width: '100%',
+                  display: 'block',
+                  fontFamily: '$mono',
+                  lineHeight: '25px',
+                  textAlign: 'right',
+                  paddingRight: '5px',
+                  color:
+                    index === 7 && contrastInfo
+                      ? name === 'lime' || name === 'yellow' || name === 'orange'
+                        ? '$hiContrast'
+                        : '$loContrast'
+                      : `var(--colors-${name}900)`,
+                }}
+              >
+                {
+                  // Step 100 contrast
+                  index === 0 &&
+                    contrastInfo &&
+                    (contrastInfo['100'] >= 4.5
+                      ? `AA Pass ${contrastInfo['100'].toFixed(2)}`
+                      : `AA Fail ${contrastInfo['100'].toFixed(2)}`)
+                }
+                {
+                  // Step 200 contrast
+                  index === 1 &&
+                    contrastInfo &&
+                    (contrastInfo['200'] >= 4.5
+                      ? `AA Pass ${contrastInfo['200'].toFixed(2)}`
+                      : `AA Fail ${contrastInfo['200'].toFixed(2)}`)
+                }
+                {
+                  // Step 800 contrast with white
+                  index === 7 &&
+                    contrastInfo &&
+                    name !== 'lime' &&
+                    name !== 'yellow' &&
+                    name !== 'orange' &&
+                    (contrastInfo['loContrast'] >= 3.33
+                      ? `AA Large Text Pass ${contrastInfo['loContrast'].toFixed(2)}`
+                      : `AA Large Text Fail ${contrastInfo['loContrast'].toFixed(2)}`)
+                }
+                {
+                  // Lime, yellow, orange 800 contrast with black
+                  index === 7 &&
+                    contrastInfo &&
+                    (name === 'lime' || name === 'yellow' || name === 'orange') &&
+                    (contrastInfo['hiContrast'] >= 3.33
+                      ? `AA Large Text Pass ${contrastInfo['hiContrast'].toFixed(2)}`
+                      : `AA Large Text Fail ${contrastInfo['hiContrast'].toFixed(2)}`)
+                }
+                {/* {index === 7 &&
+                  contrastInfo &&
+                  `AA Pass ${Math.max(
+                    contrastInfo['hiContrast'],
+                    contrastInfo['loContrast']
+                  ).toFixed(2)}`} */}
               </Text>
             )}
           </Box>

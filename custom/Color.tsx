@@ -1280,6 +1280,86 @@ export function Color() {
         </Grid>
       </Container>
 
+      <Container size="3">
+        <Flex css={{ fd: 'column', gap: '$4', mt: '$6' }}>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="h1" color="red" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="h2" color="crimson" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="h3" color="pink" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="p" color="purple" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="p" color="violet" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="p" color="indigo" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="p" color="blue" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="p" color="turquoise" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="p" color="teal" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="p" color="green" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="p" color="lime" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="p" color="yellow" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="p" color="orange" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="p" color="gold" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+          <Flex css={{ ai: 'center', jc: 'center' }}>
+            <Text size="6" as="p" color="bronze" css={{ lineHeight: '30px' }}>
+              The quick brown fox jumped over the lazy dog.
+            </Text>
+          </Flex>
+        </Flex>
+      </Container>
+
       <Container size="2">
         <Text size="6" as="h4" css={{ fontWeight: 500, lineHeight: '27px', mt: '$8', mb: '$1' }}>
           Lines
