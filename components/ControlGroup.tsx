@@ -12,7 +12,6 @@ export const ControlGroup = styled('div', {
   zIndex: 0,
 
   '& button': {
-    position: 'relative',
     borderRadius: 0,
     boxShadow: 'inset 0 1px $gray600, inset -1px 0 $gray600, inset 0 -1px $gray600',
     ':hover': {
