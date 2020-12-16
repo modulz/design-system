@@ -27,7 +27,7 @@ export const Separator = styled(SeparatorPrimitive, {
       '2': {
         '&[data-orientation="horizontal"]': {
           height: '1px',
-          width: '$3',
+          width: '$7',
         },
       
         '&[data-orientation="vertical"]': {
