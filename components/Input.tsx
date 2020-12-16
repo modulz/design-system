@@ -28,11 +28,9 @@ export const Input = styled('input', {
   borderRadius: '$2',
   color: '$hiContrast',
   fontVariantNumeric: 'tabular-nums',
-  position: 'relative',
 
   ':focus': {
     boxShadow: 'inset 0px 0px 0px 1px $blue700, 0px 0px 0px 1px $blue700',
-    zIndex: '1',
   },
   '::placeholder': {
     color: '$gray800',
