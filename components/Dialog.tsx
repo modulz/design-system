@@ -5,7 +5,7 @@ import {
   DialogContentProps,
   DialogProps as DialogPrimitiveProps,
 } from '@interop-ui/react-dialog';
-import { Cross2Icon } from '@modulz/radix-icons';
+import { Cross1Icon } from '@modulz/radix-icons';
 import { Overlay } from './Overlay';
 import { Panel } from './Panel';
 import { IconButton } from './IconButton';
@@ -31,7 +31,7 @@ const StyledOverlay = styled(Overlay, {
   right: 0,
   bottom: 0,
   left: 0,
-  animation: `${fadeIn} 125ms linear`,
+  // animation: `${fadeIn} 125ms linear`,
 });
 
 export function Dialog({ children, ...props }: DialogProps) {
@@ -53,7 +53,11 @@ const StyledContent = styled(DialogPrimitive.Content, {
   maxHeight: '85vh',
   padding: '$4',
   marginTop: '-5vh',
-  animation: `${fadeIn} 125ms linear, ${moveDown} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
+  // animation: `${fadeIn} 125ms linear, ${moveDown} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
+
+  // Among other things, prevents text alignment inconsistencies when dialog can't be centered in the viewport evenly.
+  // Affects animated and non-animated dialogs alike.
+  willChange: 'transform',
 
   '&:focus': {
     outline: 'none',
@@ -71,7 +75,7 @@ const DialogContent = React.forwardRef<HTMLDivElement, DialogContentProps>(
     <StyledContent {...props} ref={forwardedRef} as={Panel}>
       {children}
       <StyledCloseButton as={IconButton} variant="ghost">
-        <Cross2Icon />
+        <Cross1Icon />
       </StyledCloseButton>
     </StyledContent>
   )
