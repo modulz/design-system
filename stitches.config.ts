@@ -183,7 +183,7 @@ export const theme = {
     $gold900: 'hsl(36, 26%, 40.0%)',
   },
   fonts: {
-    $untitled: 'Untitled Sans, -apple-system, BlinkMacSystemFont, system-ui, sans-serif',
+    $untitled: 'Untitled Sans, -apple-system, system-ui, sans-serif',
     $mono: 'Söhne Mono, menlo, monospace',
   },
   space: {
