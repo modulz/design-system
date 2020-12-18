@@ -60,7 +60,7 @@ const pink = {
   hue_end: 322,
   sat_start: 3,
   sat_end: 55,
-  sat_curve: '0.710, 0.445, 0.820, 0.450',
+  sat_curve: '0.700, 0.370, 0.820, 0.450',
   lum_start: 100,
   lum_end: 95,
   overrides: {
@@ -107,7 +107,7 @@ const blue = {
   hue_end: 206,
   sat_start: 2.5,
   sat_end: 57,
-  sat_curve: '0.700, 0.415, 0.745, 0.465',
+  sat_curve: '0.700, 0.415, 0.620, 0.520',
   lum_start: 100,
   lum_end: 98,
   overrides: {
