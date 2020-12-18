@@ -106,10 +106,10 @@ const blue = {
   hue_start: 206,
   hue_end: 206,
   sat_start: 2.5,
-  sat_end: 57,
-  sat_curve: '0.700, 0.415, 0.620, 0.520',
+  sat_end: 62,
+  sat_curve: '0.695, 0.390, 0.695, 0.505',
   lum_start: 100,
-  lum_end: 98,
+  lum_end: 99,
   overrides: {
     9: 'hsl(211,100%,44%)',
   },
