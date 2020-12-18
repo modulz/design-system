@@ -44,8 +44,9 @@ import { Paragraph } from '../components/Paragraph';
 
 import { Layers } from '../custom/Layers';
 import { Properties } from '../custom/Properties';
+// import { Color } from '../custom/Color';
 import { Avatars } from '../custom/Avatars';
-import { CheckIcon } from '@modulz/radix-icons';
+import { Menus } from '../custom/Menus';
 import { Status } from '../components/Status';
 
 function Home() {
@@ -60,11 +61,9 @@ function Home() {
             </Subtitle>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Section size="1" css={{ bc: '$gray200' }}>
             <Text as="p" size="4" css={{ ta: 'center' }}>
@@ -82,11 +81,9 @@ function Home() {
             </Text>
           </Section>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="1">
             <Box
@@ -167,14 +164,12 @@ function Home() {
             </Text>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
-            <Subheading as="h4" css={{ mb: '$6' }}>
+            <Subheading as={'h4' as any} css={{ mb: '$6' }}>
               Text
             </Subheading>
             <Flex css={{ fd: 'column', gap: '$4' }}>
@@ -338,11 +333,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Flex
@@ -393,11 +386,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Flex css={{ ai: 'center' }}>
@@ -584,11 +575,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Subheading css={{ mb: '$6' }}>Badge</Subheading>
@@ -676,8 +665,8 @@ function Home() {
                     <path
                       d="M4.18179 6.18181C4.35753 6.00608 4.64245 6.00608 4.81819 6.18181L7.49999 8.86362L10.1818 6.18181C10.3575 6.00608 10.6424 6.00608 10.8182 6.18181C10.9939 6.35755 10.9939 6.64247 10.8182 6.81821L7.81819 9.81821C7.73379 9.9026 7.61934 9.95001 7.49999 9.95001C7.38064 9.95001 7.26618 9.9026 7.18179 9.81821L4.18179 6.81821C4.00605 6.64247 4.00605 6.35755 4.18179 6.18181Z"
                       fill="currentColor"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                 </Box>
@@ -721,11 +710,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Subheading css={{ mb: '$6' }}>Button</Subheading>
@@ -804,8 +791,8 @@ function Home() {
                     <path
                       d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
                       fill="currentColor"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                 </Box>
@@ -828,8 +815,8 @@ function Home() {
                     <path
                       d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
                       fill="currentColor"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                 </Box>
@@ -850,8 +837,8 @@ function Home() {
                     <path
                       d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
                       fill="currentColor"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                 </Box>
@@ -871,8 +858,8 @@ function Home() {
                     <path
                       d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
                       fill="currentColor"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                 </Box>
@@ -880,11 +867,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Subheading css={{ mb: '$6' }}>Input</Subheading>
@@ -914,11 +899,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Subheading css={{ mb: '$6' }}>ControlGroup</Subheading>
@@ -1007,11 +990,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Subheading css={{ mb: '$6' }}>InputWrapper</Subheading>
@@ -1044,8 +1025,8 @@ function Home() {
                       <path
                         d="M10 6.5C10 8.433 8.433 10 6.5 10C4.567 10 3 8.433 3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5ZM9.30884 10.0159C8.53901 10.6318 7.56251 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5C11 7.56251 10.6318 8.53901 10.0159 9.30884L12.8536 12.1464C13.0488 12.3417 13.0488 12.6583 12.8536 12.8536C12.6583 13.0488 12.3417 13.0488 12.1464 12.8536L9.30884 10.0159Z"
                         fill="currentColor"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                       ></path>
                     </svg>
                   </Flex>
@@ -1062,8 +1043,8 @@ function Home() {
                       <path
                         d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
                         fill="currentColor"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                       ></path>
                     </svg>
                   </IconButton>
@@ -1079,8 +1060,8 @@ function Home() {
                       <path
                         d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
                         fill="currentColor"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                       ></path>
                     </svg>
                   </IconButton>
@@ -1139,11 +1120,9 @@ function Home() {
             </Box>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Subheading css={{ mb: '$6' }}>Textarea</Subheading>
@@ -1163,11 +1142,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Flex css={{ ai: 'center', jc: 'space-between' }}>
@@ -1227,11 +1204,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Flex css={{ ai: 'baseline' }}>
@@ -1245,11 +1220,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Flex css={{ gap: '$6', mb: '$6' }}>
@@ -1275,27 +1248,23 @@ function Home() {
             </Paragraph>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Paragraph>
-              There are 5 variants to choose from. Use{' '}
-              <Code size="2">console.log('Radix').console</Code> is for positive states. Traditional
-              business literature won’t help you solve it- most of that stuff is focused on life
-              after product/market fit, after the Trough of Sorrow. A lot of startup stuff is
-              focused on the initial phases, when you don’t have a team, idea, or investors.
+              There are 5 variants to choose from. Use <Code>console.log('Radix').console</Code> is
+              for positive states. Traditional business literature won’t help you solve it- most of
+              that stuff is focused on life after product/market fit, after the Trough of Sorrow. A
+              lot of startup stuff is focused on the initial phases, when you don’t have a team,
+              idea, or investors.
             </Paragraph>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="3">
             <Flex css={{ gap: '$3' }}>
@@ -1419,11 +1388,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <AlertDialog>
@@ -1445,11 +1412,9 @@ function Home() {
             </AlertDialog>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Dialog>
@@ -1491,11 +1456,9 @@ function Home() {
             </Dialog>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Box css={{ mb: '$6' }}>
@@ -1517,11 +1480,9 @@ function Home() {
             </Box>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Popover>
@@ -1531,7 +1492,7 @@ function Home() {
               </Popover.Content>
             </Popover>
 
-            <Popover hideArrow="true">
+            <Popover>
               <Popover.Trigger as={Button}>Popover</Popover.Trigger>
               <Popover.Content css={{ padding: '$4' }}>
                 <Text>Hello, from Popover.</Text>
@@ -1539,11 +1500,9 @@ function Home() {
             </Popover>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Accordion>
@@ -1614,17 +1573,13 @@ function Home() {
             </Accordion>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Avatars />
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2" css={{ py: '$7' }}>
             <Tabs defaultSelectedId="tab-one">
@@ -1698,11 +1653,9 @@ function Home() {
             </Tabs>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="3" css={{ py: '$7' }}>
             <Flex css={{ borderBottom: '1px solid $gray500' }}>
@@ -1880,11 +1833,9 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Box css={{ width: '100px' }}>
@@ -1892,18 +1843,16 @@ function Home() {
             </Box>
             <Flex css={{ gap: '$4' }}>
               <Slider defaultValue={25} />
-              <Slider defaultValue={[25, 75]} />
+              {/* <Slider defaultValue={[25, 75]} /> */}
             </Flex>
             <Box css={{ mt: '$6' }}>
               <Slider defaultValue={50} orientation="vertical" />
             </Box>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Grid
@@ -2223,22 +2172,18 @@ function Home() {
             </Flex>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2" css={{ py: '$7' }}>
             <Checkbox css={{ mr: '$5' }} />
             <Checkbox size="2" css={{ mr: '$5' }} />
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2" css={{ py: '$7' }}>
             <RadioGroup defaultValue="1">
@@ -2247,11 +2192,9 @@ function Home() {
             </RadioGroup>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2" css={{ py: '$7' }}>
             <RadioGroup defaultValue="1">
@@ -2286,17 +2229,16 @@ function Home() {
             </RadioGroup>
           </Container>
         </Section>
-
         <Flex css={{ jc: 'center' }}>
           <Separator size="2" />
         </Flex>
-
         <Section size="3">
           <Container size="2">
             <Switch />
             <Switch size="2" css={{ ml: '$6' }} />
           </Container>
         </Section>
+        <Menus />
       </Box>
     </Box>
   );

@@ -18,7 +18,7 @@ export function Subtitle(props: SubtitleProps) {
         ...(props.css as any),
 
         bp2: {
-          lineHeight: '29px',
+          lineHeight: '30px',
           ...(props.css?.bp2 as any),
         },
       }}

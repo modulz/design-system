@@ -181,10 +181,11 @@ const AvatarFallback = styled(AvatarPrimitive.Fallback, {
   variants: {
     size: {
       '1': {
-        fontSize: '11px',
+        fontSize: '10px',
+        lineHeight: '15px',
       },
       '2': {
-        fontSize: '$4',
+        fontSize: '$3',
       },
       '3': {
         fontSize: '$6',

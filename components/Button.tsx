@@ -36,7 +36,6 @@ export const Button = styled('button', {
   fontSize: '$2',
   fontWeight: 500,
   fontVariantNumeric: 'tabular-nums',
-  position: 'relative',
 
   ':hover': {
     boxShadow: 'inset 0 0 0 1px $gray700',
@@ -47,7 +46,6 @@ export const Button = styled('button', {
   },
   ':focus': {
     boxShadow: 'inset 0 0 0 1px $gray700, 0 0 0 1px $gray700',
-    zIndex: '1',
   },
   ':disabled': {
     backgroundColor: '$gray100',
@@ -58,7 +56,7 @@ export const Button = styled('button', {
 
   variants: {
     size: {
-      "2": {
+      '2': {
         height: '$6',
         px: '$3',
         fontSize: '$3',

@@ -70,8 +70,26 @@ export type { KbdProps } from './components/Kbd';
 export { Link } from './components/Link';
 export type { LinkProps, LinkVariants } from './components/Link';
 
-export { MenuItem } from './components/MenuItem';
-export type { MenuItemProps, MenuItemVariants } from './components/MenuItem';
+export {
+  Menu,
+  MenuCheckboxItem,
+  MenuGroup,
+  MenuItem,
+  MenuLabel,
+  MenuRadioGroup,
+  MenuRadioItem,
+  MenuSeparator,
+} from './components/Menu';
+export type {
+  MenuProps,
+  MenuCheckboxItemProps,
+  MenuGroupProps,
+  MenuItemProps,
+  MenuLabelProps,
+  MenuRadioGroupProps,
+  MenuRadioItemProps,
+  MenuSeparatorProps,
+} from './components/Menu';
 
 export { Overlay } from './components/Overlay';
 export type { OverlayProps } from './components/Overlay';
