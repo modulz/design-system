@@ -27,10 +27,10 @@ export const Kbd = styled('kbd', {
   mx: '2px',
 
   // Size 2
-  px: '$1',
-  height: '$4',
+  px: '0.5em',
+  height: '$5',
   minWidth: '2em',
-  fontSize: '$1',
+  fontSize: '$2',
 
   variants: {
     size: {
@@ -43,17 +43,46 @@ export const Kbd = styled('kbd', {
     },
     width: {
       shift: {
-        pr: '2.5em',
+        width: '4em',
+        justifyContent: 'flex-start',
       },
       command: {
-        pl: '1em',
+        width: '3em',
+        justifyContent: 'flex-end',
       },
       space: {
-        px: '3.5em',
-      },
-      return: {
-        px: '0.9em',
+        width: '8em',
       },
     },
   },
 });
+
+Kbd.compoundVariant(
+  {
+    size: '1',
+    width: 'shift',
+  },
+  {
+    width: '3em',
+  }
+);
+
+Kbd.compoundVariant(
+  {
+    size: '1',
+    width: 'command',
+  },
+  {
+    width: '2.5em',
+  }
+);
+
+Kbd.compoundVariant(
+  {
+    size: '1',
+    width: 'space',
+  },
+  {
+    width: '5em',
+  }
+);

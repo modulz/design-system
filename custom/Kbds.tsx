@@ -14,6 +14,53 @@ export function Kbds() {
 
         <Grid css={{ gridTemplateColumns: 'repeat(3, 1fr)', my: '$5' }}>
           <Box>
+            <Flex css={{ mb: '31px' }}>
+              <Kbd>Space</Kbd>
+            </Flex>
+            <Flex css={{ mb: '31px' }}>
+              <Kbd>Enter</Kbd>
+            </Flex>
+            <Flex css={{ mb: '31px' }}>
+              <Kbd>Tab</Kbd>
+            </Flex>
+            <Flex css={{ mb: '31px' }}>
+              <Kbd>Shift + Tab</Kbd>
+            </Flex>
+            <Flex css={{ mb: '31px' }}>
+              <Kbd>Esc</Kbd>
+            </Flex>
+          </Box>
+          <Box>
+            <Flex css={{ mb: '$5' }}>
+              <Kbd>I</Kbd>
+              <Kbd>A</Kbd>
+              <Kbd>W</Kbd>
+            </Flex>
+            <Flex css={{ mb: '$5' }}>
+              <Kbd>⇧</Kbd>
+              <Kbd>⌘</Kbd>
+              <Kbd>A</Kbd>
+            </Flex>
+            <Flex css={{ mb: '$5' }}>
+              <Kbd>⌘ + Tab</Kbd>
+            </Flex>
+            <Flex css={{ mb: '$5' }}>
+              <Kbd width="command">⌘</Kbd>
+              <Kbd>Tab</Kbd>
+            </Flex>
+            <Flex css={{ mb: '$5' }}>
+              <Kbd width="shift">⇧</Kbd>
+              <Kbd>↑</Kbd>
+            </Flex>
+            <Flex css={{ mb: '$5' }}>
+              <Kbd width="shift">⇧</Kbd>
+              <Kbd>Tab</Kbd>
+            </Flex>
+            <Flex css={{ mb: '$5' }}>
+              <Kbd width="space">Space</Kbd>
+            </Flex>
+          </Box>
+          <Box>
             <Flex css={{ mb: '$5' }}>
               <Kbd size="1">I</Kbd>
               <Kbd size="1">A</Kbd>
@@ -49,53 +96,6 @@ export function Kbds() {
               <Kbd size="1" width="space">
                 Space
               </Kbd>
-            </Flex>
-          </Box>
-          <Box>
-            <Flex css={{ mb: '$5' }}>
-              <Kbd>I</Kbd>
-              <Kbd>A</Kbd>
-              <Kbd>W</Kbd>
-            </Flex>
-            <Flex css={{ mb: '$5' }}>
-              <Kbd>⇧</Kbd>
-              <Kbd>⌘</Kbd>
-              <Kbd>A</Kbd>
-            </Flex>
-            <Flex css={{ mb: '$5' }}>
-              <Kbd>⌘ + Tab</Kbd>
-            </Flex>
-            <Flex css={{ mb: '$5' }}>
-              <Kbd width="command">⌘</Kbd>
-              <Kbd>Tab</Kbd>
-            </Flex>
-            <Flex css={{ mb: '$5' }}>
-              <Kbd width="shift">⇧</Kbd>
-              <Kbd>↑</Kbd>
-            </Flex>
-            <Flex css={{ mb: '$5' }}>
-              <Kbd width="shift">⇧</Kbd>
-              <Kbd>Tab</Kbd>
-            </Flex>
-            <Flex css={{ mb: '$5' }}>
-              <Kbd width="space">Space</Kbd>
-            </Flex>
-          </Box>
-          <Box>
-            <Flex css={{ mb: '$5' }}>
-              <Kbd>Space</Kbd>
-            </Flex>
-            <Flex css={{ mb: '$5' }}>
-              <Kbd>Enter</Kbd>
-            </Flex>
-            <Flex css={{ mb: '$5' }}>
-              <Kbd>Tab</Kbd>
-            </Flex>
-            <Flex css={{ mb: '$5' }}>
-              <Kbd>Shift + Tab</Kbd>
-            </Flex>
-            <Flex css={{ mb: '$5' }}>
-              <Kbd>Esc</Kbd>
             </Flex>
           </Box>
         </Grid>
