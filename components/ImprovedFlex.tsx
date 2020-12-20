@@ -89,7 +89,8 @@ export const ImprovedFlex = (React.forwardRef<HTMLDivElement, Props>(
               justifyContent,
               alignItems,
               alignContent,
-              '& > *': {
+              // Injection oooordeeerrr
+              '&& > *': {
                 margin: 'calc(var(--row-gap) / 2) calc(var(--column-gap) / 2)',
               },
             }}
