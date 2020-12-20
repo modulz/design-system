@@ -53,21 +53,19 @@ const Test = dynamic(() => import('../components/ImprovedFlex'), { ssr: false })
 
 function Home() {
   return (
-    <Box
-      css={{
-        ' > *': {
-          margin: 'calc(var(--row-gap) / 2) calc(var(--column-gap) / 2)',
-        },
-      }}
-    >
+    <Box>
       <Box css={{ bc: '$loContrast', height: '100%' }}>
         <Section size="3">
           <Container size="2">
-            <Test></Test>
             <Title css={{ ta: 'center', mb: '$3' }}>Radix UI test suite</Title>
             <Subtitle css={{ ta: 'center' }}>
               An environment for testing tokens, theming, and components on Radix UI design system.
             </Subtitle>
+          </Container>
+        </Section>
+        <Section size="3">
+          <Container size="2">
+            <Test></Test>
           </Container>
         </Section>
         <Flex css={{ jc: 'center' }}>
