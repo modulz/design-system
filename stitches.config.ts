@@ -412,126 +412,130 @@ export const darkTheme = {
   $bronze900: 'hsl(18,50%,61%)',
 } as const;
 
+export const utils = {
+  p: (value) => ({
+    paddingTop: value,
+    paddingBottom: value,
+    paddingLeft: value,
+    paddingRight: value,
+  }),
+  pt: (value) => ({
+    paddingTop: value,
+  }),
+  pr: (value) => ({
+    paddingRight: value,
+  }),
+  pb: (value) => ({
+    paddingBottom: value,
+  }),
+  pl: (value) => ({
+    paddingLeft: value,
+  }),
+  px: (value) => ({
+    paddingLeft: value,
+    paddingRight: value,
+  }),
+  py: (value) => ({
+    paddingTop: value,
+    paddingBottom: value,
+  }),
+
+  m: (value) => ({
+    marginTop: value,
+    marginBottom: value,
+    marginLeft: value,
+    marginRight: value,
+  }),
+  mt: (value) => ({
+    marginTop: value,
+  }),
+  mr: (value) => ({
+    marginRight: value,
+  }),
+  mb: (value) => ({
+    marginBottom: value,
+  }),
+  ml: (value) => ({
+    marginLeft: value,
+  }),
+  mx: (value) => ({
+    marginLeft: value,
+    marginRight: value,
+  }),
+  my: (value) => ({
+    marginTop: value,
+    marginBottom: value,
+  }),
+
+  ta: (value) => ({ textAlign: value }),
+
+  fd: (value) => ({ flexDirection: value }),
+  fw: (value) => ({ flexWrap: value }),
+
+  ai: (value) => ({ alignItems: value }),
+  ac: (value) => ({ alignContent: value }),
+  jc: (value) => ({ justifyContent: value }),
+  as: (value) => ({ alignSelf: value }),
+  fg: (value) => ({ flexGrow: value }),
+  fs: (value) => ({ flexShrink: value }),
+  fb: (value) => ({ flexBasis: value }),
+
+  bc: (value: keyof typeof theme['colors'] | (string & {})) => ({
+    backgroundColor: value,
+  }),
+
+  br: (value: keyof typeof theme['radii'] | (string & {})) => ({
+    borderRadius: value,
+  }),
+  btrr: (value: keyof typeof theme['radii'] | (string & {})) => ({
+    borderTopRightRadius: value,
+  }),
+  bbrr: (value: keyof typeof theme['radii'] | (string & {})) => ({
+    borderBottomRightRadius: value,
+  }),
+  bblr: (value: keyof typeof theme['radii'] | (string & {})) => ({
+    borderBottomLeftRadius: value,
+  }),
+  btlr: (value: keyof typeof theme['radii'] | (string & {})) => ({
+    borderTopLeftRadius: value,
+  }),
+
+  bs: (value) => ({ boxShadow: value }),
+
+  lh: (value) => ({ lineHeight: value }),
+
+  ox: (value) => ({ overflowX: value }),
+  oy: (value) => ({ overflowY: value }),
+
+  pe: (value) => ({ pointerEvents: value }),
+  us: (value) => ({ userSelect: value }),
+
+  // size: (value: keyof typeof theme['sizes'] | (string & {})) => ({
+  //   width: value,
+  //   height: value,
+  // }),
+
+  linearGradient: (value) => ({
+    backgroundImage: `linear-gradient(${value})`,
+  }),
+};
+
+const breakpoints = {
+  default: (rule) => rule,
+  bp1: (rule) => `@media (min-width: 520px) { ${rule} }`,
+  bp2: (rule) => `@media (min-width: 900px) { ${rule} }`,
+  bp3: (rule) => `@media (min-width: 1200px) { ${rule} }`,
+  bp4: (rule) => `@media (min-width: 1800px) { ${rule} }`,
+  motion: (rule) => `@media (prefers-reduced-motion) { ${rule} }`,
+  hover: (rule) => `@media (hover: hover) { ${rule} }`,
+  dark: (rule) => `@media (prefers-color-scheme: dark) { ${rule} }`,
+  light: (rule) => `@media (prefers-color-scheme: light) { ${rule} }`,
+};
+
 export const { styled, css } = createStyled({
   tokens: theme,
-  breakpoints: {
-    default: (rule) => rule,
-    bp1: (rule) => `@media (min-width: 520px) { ${rule} }`,
-    bp2: (rule) => `@media (min-width: 900px) { ${rule} }`,
-    bp3: (rule) => `@media (min-width: 1200px) { ${rule} }`,
-    bp4: (rule) => `@media (min-width: 1800px) { ${rule} }`,
-    motion: (rule) => `@media (prefers-reduced-motion) { ${rule} }`,
-    hover: (rule) => `@media (hover: hover) { ${rule} }`,
-    dark: (rule) => `@media (prefers-color-scheme: dark) { ${rule} }`,
-    light: (rule) => `@media (prefers-color-scheme: light) { ${rule} }`,
-  },
-  utils: {
-    p: (value) => ({
-      paddingTop: value,
-      paddingBottom: value,
-      paddingLeft: value,
-      paddingRight: value,
-    }),
-    pt: (value) => ({
-      paddingTop: value,
-    }),
-    pr: (value) => ({
-      paddingRight: value,
-    }),
-    pb: (value) => ({
-      paddingBottom: value,
-    }),
-    pl: (value) => ({
-      paddingLeft: value,
-    }),
-    px: (value) => ({
-      paddingLeft: value,
-      paddingRight: value,
-    }),
-    py: (value) => ({
-      paddingTop: value,
-      paddingBottom: value,
-    }),
-
-    m: (value) => ({
-      marginTop: value,
-      marginBottom: value,
-      marginLeft: value,
-      marginRight: value,
-    }),
-    mt: (value) => ({
-      marginTop: value,
-    }),
-    mr: (value) => ({
-      marginRight: value,
-    }),
-    mb: (value) => ({
-      marginBottom: value,
-    }),
-    ml: (value) => ({
-      marginLeft: value,
-    }),
-    mx: (value) => ({
-      marginLeft: value,
-      marginRight: value,
-    }),
-    my: (value) => ({
-      marginTop: value,
-      marginBottom: value,
-    }),
-
-    ta: (value) => ({ textAlign: value }),
-
-    fd: (value) => ({ flexDirection: value }),
-    fw: (value) => ({ flexWrap: value }),
-
-    ai: (value) => ({ alignItems: value }),
-    ac: (value) => ({ alignContent: value }),
-    jc: (value) => ({ justifyContent: value }),
-    as: (value) => ({ alignSelf: value }),
-    fg: (value) => ({ flexGrow: value }),
-    fs: (value) => ({ flexShrink: value }),
-    fb: (value) => ({ flexBasis: value }),
-
-    bc: (value: keyof typeof theme['colors'] | (string & {})) => ({
-      backgroundColor: value,
-    }),
-
-    br: (value: keyof typeof theme['radii'] | (string & {})) => ({
-      borderRadius: value,
-    }),
-    btrr: (value: keyof typeof theme['radii'] | (string & {})) => ({
-      borderTopRightRadius: value,
-    }),
-    bbrr: (value: keyof typeof theme['radii'] | (string & {})) => ({
-      borderBottomRightRadius: value,
-    }),
-    bblr: (value: keyof typeof theme['radii'] | (string & {})) => ({
-      borderBottomLeftRadius: value,
-    }),
-    btlr: (value: keyof typeof theme['radii'] | (string & {})) => ({
-      borderTopLeftRadius: value,
-    }),
-
-    bs: (value) => ({ boxShadow: value }),
-
-    lh: (value) => ({ lineHeight: value }),
-
-    ox: (value) => ({ overflowX: value }),
-    oy: (value) => ({ overflowY: value }),
-
-    pe: (value) => ({ pointerEvents: value }),
-    us: (value) => ({ userSelect: value }),
-
-    // size: (value: keyof typeof theme['sizes'] | (string & {})) => ({
-    //   width: value,
-    //   height: value,
-    // }),
-
-    linearGradient: (value) => ({
-      backgroundImage: `linear-gradient(${value})`,
-    }),
-  },
+  breakpoints,
+  utils,
 });
 
 export const darkThemeClass = css.theme({ colors: darkTheme });
