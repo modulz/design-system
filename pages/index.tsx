@@ -47,9 +47,7 @@ import { Avatars } from '../custom/Avatars';
 import { Kbds } from '../custom/Kbds';
 import { Menus } from '../custom/Menus';
 import { Status } from '../components/Status';
-import dynamic from 'next/dynamic';
-
-const Test = dynamic(() => import('../components/ImprovedFlex'), { ssr: false });
+import { Test } from '../components/ImprovedFlex';
 
 function Home() {
   return (
