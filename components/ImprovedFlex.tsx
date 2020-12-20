@@ -71,14 +71,16 @@ export const ImprovedFlex = (React.forwardRef<HTMLDivElement, Props>(
           {/** Except flex related stuff */}
           <Base
             //* stitches has a bug when trying to set custom properties as it mistakes them for vendor prefixed properties
-            style={{
-              '--gap': theme.space[gap] || gap || '0px',
-              '--column-gap': theme.space[columnGap] || columnGap || 'var(--gap)',
-              '--row-gap': theme.space[rowGap] || rowGap || 'var(--gap)',
-              margin: 'calc(var(--row-gap) / -2) calc(var(--column-gap) / -2)',
-              width: 'calc(100%  + var(--column-gap))',
-              height: 'calc(100% + calc(var(--row-gap) / 2 ))',
-            }}
+            style={
+              {
+                '--gap': gap ? theme.space[gap] || gap : '0px',
+                '--column-gap': columnGap ? theme.space[columnGap] || columnGap : 'var(--gap)',
+                '--row-gap': rowGap ? theme.space[rowGap] || rowGap : 'var(--gap)',
+                margin: 'calc(var(--row-gap) / -2) calc(var(--column-gap) / -2)',
+                width: 'calc(100%  + var(--column-gap))',
+                height: 'calc(100% + calc(var(--row-gap) / 2 ))',
+              } as any
+            }
             className={atom}
             css={{
               flexDirection,
