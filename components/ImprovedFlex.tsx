@@ -25,7 +25,7 @@ const Base = styled('div', {
 type Props = { css?: any; style?: React.CSSProperties };
 
 export const ImprovedFlex = (React.forwardRef<HTMLDivElement, Props>(
-  ({ css, className, children, style, ...props }, ref): JSX.Element => {
+  ({ css, children, style, ...props }, ref): JSX.Element => {
     const rCss = resolveUtils(css);
     const gap = (rCss ? rCss.gap : undefined) as string | undefined;
     const columnGap = (rCss ? rCss.columnGap : undefined) as string | undefined;
@@ -62,7 +62,6 @@ export const ImprovedFlex = (React.forwardRef<HTMLDivElement, Props>(
       return (
         /** Everything goes to the wrapper */
         <Base
-          className="container"
           ref={ref}
           css={{
             ...restOfStyles,
