@@ -41,7 +41,6 @@ import { Subtitle } from '../components/Subtitle';
 import { Heading } from '../components/Heading';
 import { Subheading } from '../components/Subheading';
 import { Paragraph } from '../components/Paragraph';
-
 // import { Color } from '../custom/Color';
 import { Avatars } from '../custom/Avatars';
 import { Kbds } from '../custom/Kbds';
