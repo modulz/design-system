@@ -1,4 +1,4 @@
-let isSupported = null;
+let isSupported: null | boolean = null;
 export const flexGapSupported = () => {
   if (typeof isSupported === 'boolean') {
     return isSupported;
@@ -7,7 +7,7 @@ export const flexGapSupported = () => {
   if (typeof window === 'undefined') {
     isSupported = true;
   } else {
-    isSupported = !((d, c = d.createElement('b').style, a = (c.gap = 0)) =>
+    isSupported = !((d, c: any = d.createElement('b').style, a = (c.gap = 0)) =>
       d.documentElement.classList.toggle('noflexgap', !c.gap))(document);
   }
 
