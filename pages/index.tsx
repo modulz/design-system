@@ -41,13 +41,11 @@ import { Subtitle } from '../components/Subtitle';
 import { Heading } from '../components/Heading';
 import { Subheading } from '../components/Subheading';
 import { Paragraph } from '../components/Paragraph';
-
 // import { Color } from '../custom/Color';
 import { Avatars } from '../custom/Avatars';
 import { Kbds } from '../custom/Kbds';
 import { Menus } from '../custom/Menus';
 import { Status } from '../components/Status';
-import { Test } from '../components/ImprovedFlex';
 
 function Home() {
   return (
@@ -59,11 +57,6 @@ function Home() {
             <Subtitle css={{ ta: 'center' }}>
               An environment for testing tokens, theming, and components on Radix UI design system.
             </Subtitle>
-          </Container>
-        </Section>
-        <Section size="3">
-          <Container size="2">
-            <Test></Test>
           </Container>
         </Section>
         <Flex css={{ jc: 'center' }}>

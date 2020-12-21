@@ -1,4 +1,3 @@
-// checks if flex is supposed to be handled
 let isSupported = null;
 export const flexGapSupported = () => {
   if (typeof isSupported === 'boolean') {
