@@ -413,72 +413,72 @@ export const darkTheme = {
 } as const;
 
 export const utils = {
-  p: (value) => ({
+  p: (value: any) => ({
     paddingTop: value,
     paddingBottom: value,
     paddingLeft: value,
     paddingRight: value,
   }),
-  pt: (value) => ({
+  pt: (value: any) => ({
     paddingTop: value,
   }),
-  pr: (value) => ({
+  pr: (value: any) => ({
     paddingRight: value,
   }),
-  pb: (value) => ({
+  pb: (value: any) => ({
     paddingBottom: value,
   }),
-  pl: (value) => ({
+  pl: (value: any) => ({
     paddingLeft: value,
   }),
-  px: (value) => ({
+  px: (value: any) => ({
     paddingLeft: value,
     paddingRight: value,
   }),
-  py: (value) => ({
+  py: (value: any) => ({
     paddingTop: value,
     paddingBottom: value,
   }),
 
-  m: (value) => ({
+  m: (value: any) => ({
     marginTop: value,
     marginBottom: value,
     marginLeft: value,
     marginRight: value,
   }),
-  mt: (value) => ({
+  mt: (value: any) => ({
     marginTop: value,
   }),
-  mr: (value) => ({
+  mr: (value: any) => ({
     marginRight: value,
   }),
-  mb: (value) => ({
+  mb: (value: any) => ({
     marginBottom: value,
   }),
-  ml: (value) => ({
+  ml: (value: any) => ({
     marginLeft: value,
   }),
-  mx: (value) => ({
+  mx: (value: any) => ({
     marginLeft: value,
     marginRight: value,
   }),
-  my: (value) => ({
+  my: (value: any) => ({
     marginTop: value,
     marginBottom: value,
   }),
 
-  ta: (value) => ({ textAlign: value }),
+  ta: (value: any) => ({ textAlign: value }),
 
-  fd: (value) => ({ flexDirection: value }),
-  fw: (value) => ({ flexWrap: value }),
+  fd: (value: any) => ({ flexDirection: value }),
+  fw: (value: any) => ({ flexWrap: value }),
 
-  ai: (value) => ({ alignItems: value }),
-  ac: (value) => ({ alignContent: value }),
-  jc: (value) => ({ justifyContent: value }),
-  as: (value) => ({ alignSelf: value }),
-  fg: (value) => ({ flexGrow: value }),
-  fs: (value) => ({ flexShrink: value }),
-  fb: (value) => ({ flexBasis: value }),
+  ai: (value: any) => ({ alignItems: value }),
+  ac: (value: any) => ({ alignContent: value }),
+  jc: (value: any) => ({ justifyContent: value }),
+  as: (value: any) => ({ alignSelf: value }),
+  fg: (value: any) => ({ flexGrow: value }),
+  fs: (value: any) => ({ flexShrink: value }),
+  fb: (value: any) => ({ flexBasis: value }),
 
   bc: (value: keyof typeof theme['colors'] | (string & {})) => ({
     backgroundColor: value,
@@ -500,36 +500,36 @@ export const utils = {
     borderTopLeftRadius: value,
   }),
 
-  bs: (value) => ({ boxShadow: value }),
+  bs: (value: any) => ({ boxShadow: value }),
 
-  lh: (value) => ({ lineHeight: value }),
+  lh: (value: any) => ({ lineHeight: value }),
 
-  ox: (value) => ({ overflowX: value }),
-  oy: (value) => ({ overflowY: value }),
+  ox: (value: any) => ({ overflowX: value }),
+  oy: (value: any) => ({ overflowY: value }),
 
-  pe: (value) => ({ pointerEvents: value }),
-  us: (value) => ({ userSelect: value }),
+  pe: (value: any) => ({ pointerEvents: value }),
+  us: (value: any) => ({ userSelect: value }),
 
   // size: (value: keyof typeof theme['sizes'] | (string & {})) => ({
   //   width: value,
   //   height: value,
   // }),
 
-  linearGradient: (value) => ({
+  linearGradient: (value: any) => ({
     backgroundImage: `linear-gradient(${value})`,
   }),
 };
 
 const breakpoints = {
-  default: (rule) => rule,
-  bp1: (rule) => `@media (min-width: 520px) { ${rule} }`,
-  bp2: (rule) => `@media (min-width: 900px) { ${rule} }`,
-  bp3: (rule) => `@media (min-width: 1200px) { ${rule} }`,
-  bp4: (rule) => `@media (min-width: 1800px) { ${rule} }`,
-  motion: (rule) => `@media (prefers-reduced-motion) { ${rule} }`,
-  hover: (rule) => `@media (hover: hover) { ${rule} }`,
-  dark: (rule) => `@media (prefers-color-scheme: dark) { ${rule} }`,
-  light: (rule) => `@media (prefers-color-scheme: light) { ${rule} }`,
+  default: (rule: string) => rule,
+  bp1: (rule: string) => `@media (min-width: 520px) { ${rule} }`,
+  bp2: (rule: string) => `@media (min-width: 900px) { ${rule} }`,
+  bp3: (rule: string) => `@media (min-width: 1200px) { ${rule} }`,
+  bp4: (rule: string) => `@media (min-width: 1800px) { ${rule} }`,
+  motion: (rule: string) => `@media (prefers-reduced-motion) { ${rule} }`,
+  hover: (rule: string) => `@media (hover: hover) { ${rule} }`,
+  dark: (rule: string) => `@media (prefers-color-scheme: dark) { ${rule} }`,
+  light: (rule: string) => `@media (prefers-color-scheme: light) { ${rule} }`,
 };
 
 export const { styled, css } = createStyled({
