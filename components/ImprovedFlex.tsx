@@ -1,44 +1,50 @@
-import { styled, theme, utils, css } from '../stitches.config';
+import { styled, theme, utils } from '../stitches.config';
 import { flexGapSupported } from './flexGapSupported';
 import * as React from 'react';
-import { Flex } from './Flex';
-const atom = css({});
 
-// only goes one level deep
-const resolveUtils = (css) => {
-  const resolved = { ...css };
-  for (const key in resolved) {
-    const element = resolved[key];
-    if (key in utils) {
-      Object.assign(resolved, utils[key](element, { tokens: theme, utils }));
-    }
-  }
-  return resolved;
-};
-
-const Base = styled('div', {
+// Base flex that will be used
+// when gap is supported
+const _Flex = styled('div', {
   boxSizing: 'border-box',
   display: 'flex',
 });
+
+const resolveUtils = (css, resolved?: any): any => {
+  const resolvedUtils = resolved || { ...css };
+  for (const key in resolveUtils) {
+    const value = resolveUtils[key];
+    if (typeof value)
+      if (key in utils) {
+        Object.assign(resolveUtils, utils[key](value, { tokens: theme, utils }));
+      } else if (value && typeof value === 'object') {
+        resolveUtils(value, resolvedUtils);
+      }
+  }
+  return resolvedUtils;
+};
 
 // Old stitches types are bad so we're just casting until we start using the new fancy version
 type Props = { css?: any; style?: React.CSSProperties };
 
 export const ImprovedFlex = (React.forwardRef<HTMLDivElement, Props>(
   ({ css, children, style, ...props }, ref): JSX.Element => {
+    const [shouldPolyfill, setShouldPolyfill] = React.useState(false);
+    // make sure that the the shorthand utils are resolved into
+    // real css properties so that the polyfill is able to detect
+    // and redirect them to the correct area
     const rCss = resolveUtils(css);
     const gap = (rCss ? rCss.gap : undefined) as string | undefined;
     const columnGap = (rCss ? rCss.columnGap : undefined) as string | undefined;
     const rowGap = (rCss ? rCss.rowGap : undefined) as string | undefined;
-    const [shouldPolyfill, setShouldPolyfill] = React.useState(false);
 
     // when flexGap is not supported cause a re-render to render the polyfill
     // done this way to avoid defaulting to the polyfill on the server
-    // so with this approach, the poly fill will be triggered on the client
+    // so with this approach, the polyfill will be triggered on the client
     // only for browsers that don't support it
 
     React.useEffect(() => {
       // flex gap isn't supported
+      console.log({ supported: flexGapSupported(), css, rCss });
       if (!flexGapSupported() && (gap || rowGap || columnGap)) {
         // trigger a re-render to polyfill
         setShouldPolyfill(true);
@@ -61,7 +67,7 @@ export const ImprovedFlex = (React.forwardRef<HTMLDivElement, Props>(
       } = rCss;
       return (
         /** Everything goes to the wrapper */
-        <Base
+        <_Flex
           ref={ref}
           css={{
             ...restOfStyles,
@@ -69,19 +75,15 @@ export const ImprovedFlex = (React.forwardRef<HTMLDivElement, Props>(
           {...props}
         >
           {/** Except flex related stuff */}
-          <Base
+          <_Flex
             //* stitches has a bug when trying to set custom properties as it mistakes them for vendor prefixed properties
             style={
               {
                 '--gap': gap ? theme.space[gap] || gap : '0px',
                 '--column-gap': columnGap ? theme.space[columnGap] || columnGap : 'var(--gap)',
                 '--row-gap': rowGap ? theme.space[rowGap] || rowGap : 'var(--gap)',
-                margin: 'calc(var(--row-gap) / -2) calc(var(--column-gap) / -2)',
-                width: 'calc(100%  + var(--column-gap))',
-                height: 'calc(100% + calc(var(--row-gap) / 2 ))',
               } as any
             }
-            className={atom}
             css={{
               flexDirection,
               flexWrap,
@@ -89,21 +91,26 @@ export const ImprovedFlex = (React.forwardRef<HTMLDivElement, Props>(
               justifyContent,
               alignItems,
               alignContent,
-              // Injection oooordeeerrr
+              // && for Injection oooordeeerrr
+              // since atomic stitches has issues with guaranteeing the order
               '&& > *': {
                 margin: 'calc(var(--row-gap) / 2) calc(var(--column-gap) / 2)',
               },
+              // negative margin on the container to accommodate for margin added on the sides by the children
+              margin: 'calc(var(--row-gap) / -2) calc(var(--column-gap) / -2)',
+              // cix the container size
+              width: 'calc(100%  + var(--column-gap))',
+              height: 'calc(100% + calc(var(--row-gap) / 2 ))',
             }}
           >
             {children}
-          </Base>
-        </Base>
+          </_Flex>
+        </_Flex>
       );
     }
-
-    return <Base {...props} children={children} css={rCss} />;
+    return <_Flex {...props} children={children} css={rCss} />;
   }
-) as any) as typeof Base;
+) as any) as typeof _Flex;
 
 export const Test = () => (
   <ImprovedFlex
