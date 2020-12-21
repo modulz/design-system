@@ -13,11 +13,13 @@ const _Flex = styled('div', {
   display: 'flex',
 });
 
-const resolveUtils = (css, resolved = {}): any => {
+// https://pbs.twimg.com/media/EcrZhh8XYAEU_-M?format=jpg&name=small
+// but for real. this will be fixed in the new stitches
+const resolveUtils = (css: any, resolved: any = {}): any => {
   for (const key in css) {
     const value = css[key];
     if (key in utils) {
-      Object.assign(resolved, utils[key](value, { tokens: theme, utils }));
+      Object.assign(resolved, (utils as any)[key](value, { tokens: theme, utils }));
     } else if (typeof value === 'object' && value) {
       resolved[key] = resolved[key] || {};
       Object.assign(resolved[key], resolveUtils(value));
@@ -29,7 +31,7 @@ const resolveUtils = (css, resolved = {}): any => {
 };
 
 // Old stitches types are bad so we're just casting until we start using the new fancy version
-type Props = { css?: any; style?: React.CSSProperties };
+type Props = { css?: any; style?: React.CSSProperties & { [a: string]: string } };
 
 export const Flex = (React.forwardRef<HTMLDivElement, Props>(
   ({ css, children, style, ...props }, ref): JSX.Element => {
@@ -38,7 +40,7 @@ export const Flex = (React.forwardRef<HTMLDivElement, Props>(
     // real css properties so that the polyfill is able to detect
     // and redirect them to the correct area
     const rCss = resolveUtils(css || {});
-    const [gap, columnGap, rowGap] = [
+    const [gap, columnGap, rowGap]: any[] = [
       style?.gap || rCss.gap,
       style?.columnGap || rCss.columnGap,
       style?.rowGap || rCss.rowGap,
@@ -95,23 +97,27 @@ export const Flex = (React.forwardRef<HTMLDivElement, Props>(
             // because we've had issues when flexFlow was set to undefined
             // as it was causing react to reconcile it in a very weird way
             // by ignoring some of its properties
-            style={Object.entries({
-              display: inlineDisplay,
-              flexDirection: inlineFlexDirection,
-              flexFlow: inlineFlexFlow,
-              justifyContent: inlineJustifyContent,
-              alignItems: inlineAlignItems,
-              alignContent: alignContent,
-              //* stitches has a bug when trying to set custom properties as it mistakes them for vendor prefixed properties
-              '--gap': gap ? theme.space[gap] || gap : '0px',
-              '--column-gap': columnGap ? theme.space[columnGap] || columnGap : 'var(--gap)',
-              '--row-gap': rowGap ? theme.space[rowGap] || rowGap : 'var(--gap)',
-            }).reduce((acc, curr) => {
-              if (curr[1] !== undefined) {
-                acc[curr[0]] = curr[1];
-              }
-              return acc;
-            }, {})}
+            style={
+              Object.entries({
+                display: inlineDisplay,
+                flexDirection: inlineFlexDirection,
+                flexFlow: inlineFlexFlow,
+                justifyContent: inlineJustifyContent,
+                alignItems: inlineAlignItems,
+                alignContent: alignContent,
+                //* stitches has a bug when trying to set custom properties as it mistakes them for vendor prefixed properties
+                '--gap': gap ? (theme as any).space[gap] || gap : '0px',
+                // prettier-ignore
+                '--column-gap': columnGap ? (theme as any).space[columnGap] || columnGap : 'var(--gap)',
+                // prettier-ignore
+                '--row-gap': rowGap ? (theme as any).space[rowGap] || rowGap : 'var(--gap)',
+              }).reduce<Record<string, string>>((acc, curr) => {
+                if (curr[1] !== undefined) {
+                  acc[curr[0]] = curr[1];
+                }
+                return acc;
+              }, {}) as React.CSSProperties
+            }
             css={{
               flexWrap,
               flexFlow,
