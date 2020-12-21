@@ -38,7 +38,11 @@ export const Flex = (React.forwardRef<HTMLDivElement, Props>(
     // real css properties so that the polyfill is able to detect
     // and redirect them to the correct area
     const rCss = resolveUtils(css || {});
-    const { gap, columnGap, rowGap } = rCss;
+    const [gap, columnGap, rowGap] = [
+      style?.gap || rCss.gap,
+      style?.columnGap || rCss.columnGap,
+      style?.rowGap || rCss.rowGap,
+    ];
 
     // when flexGap is not supported force a re-render to render the polyfill
     // done this way to avoid defaulting to the polyfill on the server
@@ -56,6 +60,16 @@ export const Flex = (React.forwardRef<HTMLDivElement, Props>(
     // Gap not supported & gap is used:
     if (shouldPolyfill) {
       const {
+        display: inlineDisplay,
+        flexDirection: inlineFlexDirection,
+        flexWrap: inlineFlexWrap,
+        flexFlow: inlineFlexFlow,
+        justifyContent: inlineJustifyContent,
+        alignItems: inlineAlignItems,
+        alignContent: inlineAlignContent,
+        ...restOfInlineStyles
+      } = style || {};
+      const {
         display,
         flexDirection,
         flexWrap,
@@ -69,6 +83,7 @@ export const Flex = (React.forwardRef<HTMLDivElement, Props>(
         /** Everything goes to the wrapper */
         <_Flex
           ref={ref}
+          style={restOfInlineStyles}
           css={{
             ...restOfStyles,
           }}
@@ -76,14 +91,27 @@ export const Flex = (React.forwardRef<HTMLDivElement, Props>(
         >
           {/** Except flex related stuff */}
           <_Flex
-            //* stitches has a bug when trying to set custom properties as it mistakes them for vendor prefixed properties
-            style={
-              {
-                '--gap': gap ? theme.space[gap] || gap : '0px',
-                '--column-gap': columnGap ? theme.space[columnGap] || columnGap : 'var(--gap)',
-                '--row-gap': rowGap ? theme.space[rowGap] || rowGap : 'var(--gap)',
-              } as any
-            }
+            // we're cleaning up any undefined values
+            // because we've had issues when flexFlow was set to undefined
+            // as it was causing react to reconcile it in a very weird way
+            // by ignoring some of its properties
+            style={Object.entries({
+              display: inlineDisplay,
+              flexDirection: inlineFlexDirection,
+              flexFlow: inlineFlexFlow,
+              justifyContent: inlineJustifyContent,
+              alignItems: inlineAlignItems,
+              alignContent: alignContent,
+              //* stitches has a bug when trying to set custom properties as it mistakes them for vendor prefixed properties
+              '--gap': gap ? theme.space[gap] || gap : '0px',
+              '--column-gap': columnGap ? theme.space[columnGap] || columnGap : 'var(--gap)',
+              '--row-gap': rowGap ? theme.space[rowGap] || rowGap : 'var(--gap)',
+            }).reduce((acc, curr) => {
+              if (curr[1] !== undefined) {
+                acc[curr[0]] = curr[1];
+              }
+              return acc;
+            }, {})}
             css={{
               flexWrap,
               flexFlow,
