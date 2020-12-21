@@ -69,7 +69,6 @@ export const Flex = (React.forwardRef<HTMLDivElement, Props>(
         /** Everything goes to the wrapper */
         <_Flex
           ref={ref}
-          className="one"
           css={{
             ...restOfStyles,
           }}
@@ -77,7 +76,6 @@ export const Flex = (React.forwardRef<HTMLDivElement, Props>(
         >
           {/** Except flex related stuff */}
           <_Flex
-            className="two"
             //* stitches has a bug when trying to set custom properties as it mistakes them for vendor prefixed properties
             style={
               {
