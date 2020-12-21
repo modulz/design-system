@@ -21,15 +21,15 @@ export type AlertDialogProps = AlertDialogPrimitiveProps & {
 export type AlertDialogContentProps = AlertDialogPrimitiveContentProps &
   StitchesProps<typeof StyledContent>;
 
-const fadeIn = css.keyframes({
-  '0%': { opacity: 0 },
-  '100%': { opacity: 1 },
-});
+// const fadeIn = css.keyframes({
+//   '0%': { opacity: 0 },
+//   '100%': { opacity: 1 },
+// });
 
-const moveDown = css.keyframes({
-  '0%': { transform: 'translate(-50%, calc(-50% + 2px))' },
-  '100%': { transform: 'translate(-50%, -50%)' },
-});
+// const moveDown = css.keyframes({
+//   '0%': { transform: 'translate(-50%, calc(-50% + 2px))' },
+//   '100%': { transform: 'translate(-50%, -50%)' },
+// });
 
 const StyledOverlay = styled(Overlay, {
   position: 'fixed',
@@ -37,7 +37,7 @@ const StyledOverlay = styled(Overlay, {
   right: 0,
   bottom: 0,
   left: 0,
-  animation: `${fadeIn} 125ms ease-out`,
+  // animation: `${fadeIn} 125ms ease-out`,
 });
 
 export function AlertDialog({ children, ...props }: AlertDialogProps) {
@@ -59,7 +59,7 @@ const StyledContent = styled(AlertDialogPrimitive.Content, {
   maxHeight: '85vh',
   padding: '$4',
   marginTop: '-5vh',
-  animation: `${fadeIn} 125ms ease-out, ${moveDown} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
+  // animation: `${fadeIn} 125ms ease-out, ${moveDown} 125ms cubic-bezier(0.22, 1, 0.36, 1)`,
 
   '&:focus': {
     outline: 'none',
