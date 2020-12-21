@@ -137,6 +137,6 @@ export const Flex = (React.forwardRef<HTMLDivElement, Props>(
       );
     }
     // Gap is supported or no gap is used
-    return <_Flex {...props} children={children} css={rCss} />;
+    return <_Flex {...props} children={children} css={rCss} style={style} />;
   }
 ) as any) as typeof _Flex;
