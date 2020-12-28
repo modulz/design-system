@@ -105,5 +105,19 @@ export const Text = styled('span', {
         color: '$hiContrast',
       },
     },
+    alignment: {
+      'left': {
+        textAlign: 'left',
+      },
+      'center': {
+        textAlign: 'center',
+      },
+      'right': {
+        textAlign: 'right',
+      },
+      'justify': {
+        textAlign: 'justify',
+      },
+    },
   },
 });
