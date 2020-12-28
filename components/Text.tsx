@@ -119,5 +119,19 @@ export const Text = styled('span', {
         textAlign: 'justify',
       },
     },
+    case: {
+      'lower': {
+        textTransform: 'lowercase',
+      },
+      'upper': {
+        textTransform: 'uppercase',
+      },
+      'title': {
+        textTransform: 'capitalize',
+      },
+      'smallCaps': {
+        fontVariant: 'small-caps',
+      },
+    },
   },
 });
